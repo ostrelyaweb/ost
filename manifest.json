@@ -1,0 +1,21 @@
+{
+  "name": "OSTRELYA WEB STUDIO",
+  "short_name": "OSTRELYA",
+  "description": "Web stranice koje donose posao. Modern, mobile-first websites for small businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5ece5",
+  "theme_color": "#f5ece5",
+  "icons": [
+    {
+      "src": "images/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

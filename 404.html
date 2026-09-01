@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — Stranica nije pronađena — OSTRELYA™</title>
+<meta name="description" content="Tražena stranica nije pronađena. Vratite se na početnu stranicu ili nas kontaktirajte." />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#f5ece5" />
+
+<link rel="icon" href="images/favicon.ico" sizes="48x48"><link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32"><link rel="apple-touch-icon" href="images/favicon.png"><link rel="manifest" href="manifest.json">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .error-code {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(80px, 15vw, 160px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    background: linear-gradient(135deg, var(--c-accent-bright), var(--c-accent), hsl(10 50% 45%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+  .error-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 600;
+    color: var(--c-text);
+    margin-bottom: 12px;
+  }
+  .error-desc {
+    font-size: 16px;
+    color: var(--c-text-muted);
+    max-width: 420px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  .error-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<main id="main">
+  <div class="error-page">
+    <div>
+      <p class="error-code">404</p>
+      <h1 class="error-title">Stranica nije pronađena</h1>
+      <p class="error-desc">Stranica koju tražite ne postoji ili je premještena. Vratite se na početnu ili nam se javite.</p>
+      <div class="error-actions">
+        <a class="btn btn-primary btn-lg" href="index.html">Početna stranica →</a>
+        <a class="btn btn-ghost btn-lg" href="kontakt.html">Kontakt →</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+# OSTRELYA WEB STUDIO — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://ostrelya.com/sitemap.xml
+
+# Disallow internal/test pages
+Disallow: /output/
+Disallow: /_preview/
+Disallow: /docs/
