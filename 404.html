@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>404 — Stranica nije pronađena — OSTRELYA™</title>
-<meta name="description" content="Tražena stranica nije pronađena. Vratite se na početnu stranicu ili nas kontaktirajte." />
+<title>404 — Page not found — OSTRELYA™</title>
+<meta name="description" content="The page you requested was not found. Return to the homepage or contact us." />
+<meta http-equiv="Content-Language" content="en" />
 <meta name="robots" content="noindex, nofollow" />
 <meta name="theme-color" content="#f5ece5" />
 
@@ -64,19 +65,34 @@
 <!-- ============ SKIP LINK ============ -->
 <a class="skip-link" href="#main">Skip to content</a>
 
+<button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Croatian" style="position:fixed;top:20px;right:20px;z-index:100;">
+  <span class="lang-flag" aria-hidden="true">🌐</span>
+  <span class="lang-label">Hrvatski</span>
+</button>
+
 <main id="main">
   <div class="error-page">
     <div>
       <p class="error-code">404</p>
-      <h1 class="error-title">Stranica nije pronađena</h1>
-      <p class="error-desc">Stranica koju tražite ne postoji ili je premještena. Vratite se na početnu ili nam se javite.</p>
+      <h1 class="error-title" data-i18n="err.title">Page not found</h1>
+      <p class="error-desc" data-i18n="err.desc">The page you are looking for does not exist or has been moved. Return to the homepage or get in touch with us.</p>
       <div class="error-actions">
-        <a class="btn btn-primary btn-lg" href="index.html">Početna stranica →</a>
-        <a class="btn btn-ghost btn-lg" href="kontakt.html">Kontakt →</a>
+        <a class="btn btn-primary btn-lg" href="index.html" data-i18n="err.home">Home page →</a>
+        <a class="btn btn-ghost btn-lg" href="kontakt.html" data-i18n="err.contact">Contact →</a>
       </div>
     </div>
   </div>
 </main>
 
+<script>
+  window.OSTRELYA_I18N = window.OSTRELYA_I18N || {};
+  window.OSTRELYA_I18N.HR = {
+    "err.title": "Stranica nije pronađena",
+    "err.desc": "Stranica koju tražite ne postoji ili je premještena. Vratite se na početnu ili nam se javite.",
+    "err.home": "Početna stranica →",
+    "err.contact": "Kontakt →"
+  };
+</script>
+<script src="js/i18n.js"></script>
 </body>
 </html>

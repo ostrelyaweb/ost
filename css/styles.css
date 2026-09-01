@@ -466,6 +466,42 @@ section.article-cta,
   color: var(--c-cream);
 }
 
+/* Language toggle */
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-pill);
+  background: var(--c-cream);
+  color: var(--c-text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.lang-toggle:hover {
+  border-color: var(--c-accent);
+  color: var(--c-accent);
+  background: var(--c-accent-bg);
+}
+.lang-toggle .lang-flag {
+  font-size: 15px;
+  line-height: 1;
+}
+.lang-toggle .lang-label {
+  font-size: 13px;
+}
+
+/* Footer language note (unused placeholder) */
+.footer-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
 /* Burger */
 .head-burger {
   display: none;

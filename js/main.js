@@ -280,6 +280,12 @@
   function formatCurrency(n) {
     return "€" + n.toLocaleString("en-US");
   }
+  function i18nLang() {
+    return typeof window.OSTRELYA_I18N === "object" &&
+      typeof window.OSTRELYA_I18N.currentLang === "function"
+      ? window.OSTRELYA_I18N.currentLang()
+      : "en";
+  }
   function calcInstallment(price) {
     var months = 24;
     var monthly = Math.ceil(price / months);
@@ -298,14 +304,18 @@
     var result = calcInstallment(total);
     var hasFast = document.querySelector('.calc-addon-check[data-price="120"]');
     var isFast = hasFast && hasFast.checked;
+    var hr = i18nLang() === "hr";
+    var monthlySuffix = hr ? "/mj" : "/mo";
+    var delivery5 = hr ? "~5 dana" : "~5 days";
+    var delivery10 = hr ? "~10 dana" : "~10 days";
 
     if (calcBase) calcBase.textContent = formatCurrency(activePrice);
     if (calcAddonsEl) calcAddonsEl.textContent = addonsTotal > 0 ? "+" + formatCurrency(addonsTotal) : "€0";
     if (calcAddonsRow) calcAddonsRow.style.display = addonsTotal > 0 ? "flex" : "none";
     if (calcTotal) calcTotal.textContent = formatCurrency(total);
-    if (calcMonthly) calcMonthly.textContent = formatCurrency(result.monthly) + "/mj";
-    if (calcTerm) calcTerm.textContent = result.term + " mjeseci";
-    if (calcDelivery) calcDelivery.textContent = isFast ? "~5 dana" : "~10 dana";
+    if (calcMonthly) calcMonthly.textContent = formatCurrency(result.monthly) + monthlySuffix;
+    if (calcTerm) calcTerm.textContent = result.term + (hr ? " mjeseci" : " months");
+    if (calcDelivery) calcDelivery.textContent = isFast ? delivery5 : delivery10;
 
     if (HAS_GS && !reduceMotion) {
       gsap.fromTo(".calc-result", { scale: 0.97, opacity: 0.6 }, { scale: 1, opacity: 1, duration: 0.35, ease: "power2.out" });
@@ -367,17 +377,28 @@
       e.preventDefault();
       if (honeypot && honeypot.value) return;
 
+      var hr = i18nLang() === "hr";
+      var L = {
+        name: hr ? "Unesite svoje ime." : "Please enter your name.",
+        email: hr ? "Unesite valjanu email adresu." : "Please enter a valid email address.",
+        message: hr ? "Recite nam nešto o svom poslu." : "Tell us something about your business.",
+        errorHead: hr ? "ISPRAVITE GREŠKE ISPOD." : "PLEASE FIX THE ERRORS BELOW.",
+        thanks: hr
+          ? "OTVARAM VAŠ EMAIL PROGRAM — HVALA!"
+          : "OPENING YOUR EMAIL APP — THANKS!"
+      };
+
       clearFieldErrors();
       var name = form.elements.name.value.trim();
       var email = form.elements.email.value.trim();
       var message = form.elements.message.value.trim();
       var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-      if (!name) { setFieldError(form.elements.name, "Unesite svoje ime."); setStatus("ISPRAVITE GREŠKE ISPOD.", "is-error"); form.elements.name.focus(); return; }
-      if (!emailOk) { setFieldError(form.elements.email, "Unesite valjanu email adresu."); setStatus("ISPRAVITE GREŠKE ISPOD.", "is-error"); form.elements.email.focus(); return; }
-      if (!message) { setFieldError(form.elements.message, "Recite nam nešto o svom poslu."); setStatus("ISPRAVITE GREŠKE ISPOD.", "is-error"); form.elements.message.focus(); return; }
+      if (!name) { setFieldError(form.elements.name, L.name); setStatus(L.errorHead, "is-error"); form.elements.name.focus(); return; }
+      if (!emailOk) { setFieldError(form.elements.email, L.email); setStatus(L.errorHead, "is-error"); form.elements.email.focus(); return; }
+      if (!message) { setFieldError(form.elements.message, L.message); setStatus(L.errorHead, "is-error"); form.elements.message.focus(); return; }
 
-      setStatus("OPENING YOUR EMAIL APP — THANKS!", "is-ok");
+      setStatus(L.thanks, "is-ok");
       var subject = encodeURIComponent("Website inquiry — " + (form.elements.business.value.trim() || name));
       var body = encodeURIComponent(
         "Name: " + name + "\n" +
@@ -414,6 +435,13 @@
     });
     setTimeout(showCookieBanner, 2000);
   }
+
+  /* ======================================================================
+     LANGUAGE-CHANGE HANDLER — re-render dynamic (calculator) strings
+     ====================================================================== */
+  document.addEventListener("i18n:change", function () {
+    updateCalc();
+  });
 
   /* ======================================================================
      REFRESH trigger math once fonts + loader settle

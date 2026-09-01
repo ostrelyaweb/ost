@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Održavanje web stranice — zašto je bitno — OSTRELYA™</title>
-<meta name="description" content="Web stranica nije 'napravi i zaboravi'. Zašto redovito održavanje štedi novac i živce." />
+<title>Website Maintenance — Why It Matters — OSTRELYA™</title>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="A website isn't 'build and forget.' Why regular maintenance saves money and headaches." />
 <meta name="author" content="OSTRELYA WEB STUDIO" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#f5ece5" />
@@ -12,8 +13,8 @@
 
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="OSTRELYA WEB STUDIO" />
-<meta property="og:title" content="Održavanje web stranice — zašto je bitno" />
-<meta property="og:description" content="Zašto redovito održavanje štedi novac i živce." />
+<meta property="og:title" content="Website Maintenance — Why It Matters" />
+<meta property="og:description" content="Why regular maintenance saves money and headaches." />
 <meta property="og:url" content="https://ostrelya.com/blog/održavanje-web-stranice-zašto-je-bitno.html" />
 <meta property="og:image" content="https://ostrelya.com/og.png" />
 
@@ -29,8 +30,8 @@
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Održavanje web stranice — zašto je bitno",
-  "description": "Web stranica nije 'napravi i zaboravi'. Zašto redovito održavanje štedi novac i živce.",
+  "headline": "Website Maintenance — Why It Matters",
+  "description": "A website isn't 'build and forget.' Why regular maintenance saves money and headaches.",
   "author": {
     "@type": "Organization",
     "name": "OSTRELYA WEB STUDIO"
@@ -61,10 +62,10 @@
     </a>
 
     <nav class="head-nav" aria-label="Primary">
-      <a href="../index.html">Početna</a>
-      <a href="../usluge.html">Usluge</a>
-      <a href="../blog.html" class="is-active">Blog</a>
-      <a href="../kontakt.html">Kontakt</a>
+      <a href="../index.html" data-i18n="nav.home">Home</a>
+      <a href="../usluge.html" data-i18n="nav.services">Services</a>
+      <a href="../blog.html" class="is-active" data-i18n="nav.blog">Blog</a>
+      <a href="../kontakt.html" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="head-cta">
@@ -76,6 +77,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Start a project
       </a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Croatian">
+        <span class="lang-flag" aria-hidden="true">🌐</span>
+        <span class="lang-label">Hrvatski</span>
+      </button>
       <button class="head-burger" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -85,10 +90,10 @@
 
 <!-- ============ MOBILE MENU ============ -->
 <nav class="mmenu" id="mmenu" aria-label="Mobile" aria-hidden="true" inert>
-  <a href="../index.html">Početna</a>
-  <a href="../usluge.html">Usluge</a>
-  <a href="../blog.html">Blog</a>
-  <a href="../kontakt.html">Kontakt</a>
+  <a href="../index.html" data-i18n="nav.home">Home</a>
+  <a href="../usluge.html" data-i18n="nav.services">Services</a>
+  <a href="../blog.html" data-i18n="nav.blog">Blog</a>
+  <a href="../kontakt.html" data-i18n="nav.contact">Contact</a>
 </nav>
 
 <main id="main">
@@ -96,11 +101,11 @@
   <!-- ============ ARTICLE HERO ============ -->
   <section class="page-hero">
     <div class="wrap">
-      <a class="blog-back" href="../blog.html" data-reveal>← Natrag na blog</a>
-      <p class="page-hero-eyebrow" data-reveal>Održavanje</p>
-      <h1 class="page-hero-title" data-reveal>Održavanje web stranice<br/>— zašto je bitno</h1>
-      <p class="page-hero-sub" data-reveal>Web stranica nije "napravi i zaboravi". Zašto redovito održavanje štedi novac i živce.</p>
-      <div class="blog-article-meta" data-reveal>27. kolovoza 2026 · 5 min čitanja</div>
+      <a class="blog-back" href="../blog.html" data-reveal data-i18n="art.back">← Back to blog</a>
+      <p class="page-hero-eyebrow" data-reveal data-i18n="art.category">Maintenance</p>
+      <h1 class="page-hero-title" data-reveal data-i18n="art.h1">Website maintenance<br/>— why it matters</h1>
+      <p class="page-hero-sub" data-reveal data-i18n="art.intro">A website isn't "build and forget." Why regular maintenance saves money and headaches.</p>
+      <div class="blog-article-meta" data-reveal data-i18n="art.meta">August 27, 2026 · 5 min read</div>
     </div>
   </section>
 
@@ -108,53 +113,53 @@
   <article class="article">
     <div class="wrap article-wrap">
 
-      <p class="article-lead">Vaša web stranica je kao automobil — treba redovito servisiranje da bi radila sigurno i brzo. Evo što se događa kad to zanemarite.</p>
+      <p class="article-lead" data-i18n="art.lead">Your website is like a car — it needs regular servicing to run safely and quickly. Here's what happens when you neglect it.</p>
 
-      <h2>Što je održavanje web stranice?</h2>
-      <p>Održavanje uključuje sve što treba raditi nakon što stranica postane live:</p>
+      <h2 data-i18n="art.h2a">What is website maintenance?</h2>
+      <p data-i18n="art.p1">Maintenance includes everything that needs to be done after the site goes live:</p>
       <ul>
-        <li><strong>Sigurnosna ažuriranja</strong> — zakrpe za ranjivosti koje hakeri koriste</li>
-        <li><strong>Backup</strong> — redovito kopiranje svih podataka</li>
-        <li><strong>SSL certifikat</strong> — osigurava HTTPS vezu (zelena lokota)</li>
-        <li><strong>Ažuriranje softvera</strong> — WordPress, plugini, PHP verzija</li>
-        <li><strong>Monitoring</strong> — praćenje je li stranica dostupna i brza</li>
-        <li><strong>Mali editi</strong> — promjena teksta, slike, nove stranice</li>
+        <li data-i18n="art.li1a"><strong>Security updates</strong> — patches for vulnerabilities that hackers exploit</li>
+        <li data-i18n="art.li1b"><strong>Backup</strong> — regular copying of all data</li>
+        <li data-i18n="art.li1c"><strong>SSL certificate</strong> — ensures HTTPS connection (green padlock)</li>
+        <li data-i18n="art.li1d"><strong>Software updates</strong> — WordPress, plugins, PHP version</li>
+        <li data-i18n="art.li1e"><strong>Monitoring</strong> — tracking whether the site is available and fast</li>
+        <li data-i18n="art.li1f"><strong>Minor edits</strong> — changing text, images, new pages</li>
       </ul>
 
-      <h2>Što se događa bez održavanja?</h2>
-      <p><strong>Mjesec 1–3:</strong> Sve radi. Stranica je nova, softver je aktualan.</p>
-      <p><strong>Mjesec 3–6:</strong> Počinju se pojavljivati manji problemi. Plugin više nije kompatibilan. Stranica je malo sporija.</p>
-      <p><strong>Mjesec 6–12:</strong> Sigurnosne ranjivosti. Stranica može biti hakirana. Google vas kažnjava za sporost. Posjetitelji odlaze.</p>
-      <p><strong>Godinu dana kasnije:</strong> Stranica je zastarjela, nesigurna i nepouzdana. Popravak je skuplji nego da ste održavali.</p>
+      <h2 data-i18n="art.h2b">What happens without maintenance?</h2>
+      <p data-i18n="art.p2"><strong>Month 1–3:</strong> Everything works. The site is new, software is current.</p>
+      <p data-i18n="art.p3"><strong>Month 3–6:</strong> Minor issues start appearing. A plugin is no longer compatible. The site is a bit slower.</p>
+      <p data-i18n="art.p4"><strong>Month 6–12:</strong> Security vulnerabilities. The site can be hacked. Google penalizes you for slowness. Visitors leave.</p>
+      <p data-i18n="art.p5"><strong>A year later:</strong> The site is outdated, insecure, and unreliable. Repairs cost more than maintenance would have.</p>
 
-      <h2>Zašto je toliko bitno?</h2>
-      <p><strong>1. Sigurnost.</strong> Hakeri ciljaju zastarjele stranice. Jedna kompromitirana stranica može uništiti vaš ugled.</p>
-      <p><strong>2. Brzina.</strong> Google kažnjava spore stranice. Svaka sekunda kašnjenja = 7% manje konverzija.</p>
-      <p><strong>3. Povjerenje.</strong> Posjetitelji primjećuju kada stranica ne radi. "This site can't be reached" = izgubljen kupac.</p>
-      <p><strong>4. SEO.</strong> Google preferira aktualne, brze, sigurne stranice. Bez održavanja, padate na ljestvici.</p>
+      <h2 data-i18n="art.h2c">Why is it so important?</h2>
+      <p data-i18n="art.p6"><strong>1. Security.</strong> Hackers target outdated sites. One compromised site can destroy your reputation.</p>
+      <p data-i18n="art.p7"><strong>2. Speed.</strong> Google penalizes slow sites. Every second of delay = 7% fewer conversions.</p>
+      <p data-i18n="art.p8"><strong>3. Trust.</strong> Visitors notice when a site doesn't work. "This site can't be reached" = lost customer.</p>
+      <p data-i18n="art.p9"><strong>4. SEO.</strong> Google prefers current, fast, secure sites. Without maintenance, you drop in rankings.</p>
 
-      <h2>Koliko košta održavanje?</h2>
-      <p>Usporedite troškove:</p>
+      <h2 data-i18n="art.h2d">How much does maintenance cost?</h2>
+      <p data-i18n="art.p10">Compare the costs:</p>
       <ul>
-        <li><strong>Održavanje:</strong> €40–100/mjesečno</li>
-        <li><strong>Popravak nakon hakiranja:</strong> €500–2,000+</li>
-        <li><strong>Gubitak poslovanja zbog nefunkcionalne stranice:</strong> Neprocjenjivo</li>
+        <li data-i18n="art.li2a"><strong>Maintenance:</strong> €40–100/month</li>
+        <li data-i18n="art.li2b"><strong>Repair after hacking:</strong> €500–2,000+</li>
+        <li data-i18n="art.li2c"><strong>Lost business from a non-functional site:</strong> Priceless</li>
       </ul>
-      <p>Održavanje je kao osiguranje — malo mjesečno, velika zaštita.</p>
+      <p data-i18n="art.p11">Maintenance is like insurance — small monthly cost, big protection.</p>
 
-      <h2>Što tražiti od providera?</h2>
+      <h2 data-i18n="art.h2e">What to look for in a provider?</h2>
       <ul>
-        <li><strong>Daily backup</strong> — da se može vratiti na bilo koji dan</li>
-        <li><strong>Security updates</strong> — automatski ili brzo ručno</li>
-        <li><strong>Uptime monitoring</strong> — da vas odmah obavijeste kad padne</li>
-        <li><strong>Small edits</strong> — da možete zatražiti promjene bez dodatne naplate</li>
-        <li><strong>Izvještaji</strong> — da znate što je napravljeno i kada</li>
+        <li data-i18n="art.li3a"><strong>Daily backup</strong> — so you can restore any day</li>
+        <li data-i18n="art.li3b"><strong>Security updates</strong> — automatic or quickly manual</li>
+        <li data-i18n="art.li3c"><strong>Uptime monitoring</strong> — immediate notification when it goes down</li>
+        <li data-i18n="art.li3d"><strong>Small edits</strong> — so you can request changes without extra charges</li>
+        <li data-i18n="art.li3e"><strong>Reports</strong> — so you know what was done and when</li>
       </ul>
 
       <div class="article-cta">
-        <h3>Trebate održavanje?</h3>
-        <p>Naš care plan pokriva sve — hosting, sigurnost, backup i podršku. Jedna poruka, sve riješeno.</p>
-        <a class="btn btn-primary btn-lg" href="../kontakt.html">Saznaj više →</a>
+        <h3 data-i18n="art.cta_h3">Need maintenance?</h3>
+        <p data-i18n="art.cta_p">Our care plan covers everything — hosting, security, backup, and support. One message, everything resolved.</p>
+        <a class="btn btn-primary btn-lg" href="../kontakt.html" data-i18n="art.cta_btn">Learn more →</a>
       </div>
 
     </div>
@@ -162,9 +167,9 @@
 
   <!-- ============ ARTICLE CTA ============ -->
   <section class="article-cta" data-reveal>
-    <h3>Spremni za svoju stranicu?</h3>
-    <p>Pošaljite nam upit i dobit ćete točnu ponudu u 24 sata — bez pritiska, bez obveze.</p>
-    <a class="btn" href="../kontakt.html">Zatraži besplatnu ponudu →</a>
+    <h3 data-i18n="art.cta2_h3">Ready for your website?</h3>
+    <p data-i18n="art.cta2_p">Send us an inquiry and you'll get an exact quote within 24 hours — no pressure, no obligation.</p>
+    <a class="btn" href="../kontakt.html" data-i18n="art.cta2_btn">Get a free quote →</a>
   </section>
 
   <!-- ============ LEAD MAGNET ============ -->
@@ -172,13 +177,13 @@
     <div class="wrap">
       <div class="lead-magnet-inner">
         <div class="lead-magnet-icon" aria-hidden="true">📄</div>
-        <h3>Besplatni vodič: 10 stvari koje vaša web stranica mora imati u 2026.</h3>
-        <p>Prijavite se na naš newsletter i primite besplatni PDF vodič s konkretnim savjetima za web stranicu koja donosi posao.</p>
+        <h3 data-i18n="art.lead_h3">Free guide: 10 things your website must have in 2026.</h3>
+        <p data-i18n="art.lead_p">Sign up for our newsletter and receive a free PDF guide with practical tips for a website that brings business.</p>
         <form class="lead-form" action="/" method="post" netlify>
-          <input type="email" name="email" placeholder="vas@email.com" required aria-label="Email za newsletter" />
-          <button class="btn btn-primary" type="submit">Pošalji vodič →</button>
+          <input type="email" name="email" placeholder="your@email.com" required aria-label="Email for newsletter" />
+          <button class="btn btn-primary" type="submit" data-i18n="art.lead_btn">Send guide →</button>
         </form>
-        <p class="lead-magnet-note">Šaljemo samo korisne savjete. Odjavite se bilo kad.</p>
+        <p class="lead-magnet-note" data-i18n="art.lead_note">We only send useful tips. Unsubscribe anytime.</p>
       </div>
     </div>
   </section>
@@ -196,35 +201,35 @@
   <img src="../images/footer-logo.png" alt="OSTRELYA" width="160" height="55" class="head-logo-img footer-logo-img" loading="lazy" />
 </picture>
         </a>
-        <p>Pretvaramo ideje u web stranice koje rade. Jasno, mjerljivo i pošteno — od prve skice do live stranice.</p>
-        <a class="btn btn-primary footer-cta" href="../kontakt.html">Zatraži ponudu →</a>
+        <p data-i18n="footer.tagline">We turn ideas into websites that work. Clear, measurable, and honest — from the first sketch to a live site.</p>
+        <a class="btn btn-primary footer-cta" href="../kontakt.html" data-i18n="footer.cta">Request a quote →</a>
       </div>
       <div class="footer-col">
-        <h4>Usluge</h4>
+        <h4 data-i18n="footer.services">Services</h4>
         <ul>
-          <li><a href="../usluge.html">Izrada web stranica</a></li>
-          <li><a href="../usluge.html">Održavanje</a></li>
-          <li><a href="../usluge.html">SEO optimizacija</a></li>
-          <li><a href="../index.html#calculator">Konfigurator cijena</a></li>
+          <li><a href="../usluge.html" data-i18n="footer.s1">Web design</a></li>
+          <li><a href="../usluge.html" data-i18n="footer.s2">Maintenance</a></li>
+          <li><a href="../usluge.html" data-i18n="footer.s3">SEO optimization</a></li>
+          <li><a href="../index.html#calculator" data-i18n="footer.s4">Price configurator</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Rješenja</h4>
+        <h4 data-i18n="footer.solutions">Solutions</h4>
         <ul>
-          <li><a href="../usluge.html#work">Web za apartmane</a></li>
-          <li><a href="../usluge.html#work">Web za firme</a></li>
-          <li><a href="../usluge.html#work">Web shop</a></li>
-          <li><a href="../usluge.html#work">Web aplikacije</a></li>
+          <li><a href="../usluge.html#work" data-i18n="footer.r1">Web for apartments</a></li>
+          <li><a href="../usluge.html#work" data-i18n="footer.r2">Web for businesses</a></li>
+          <li><a href="../usluge.html#work" data-i18n="footer.r3">Web shop</a></li>
+          <li><a href="../usluge.html#work" data-i18n="footer.r4">Web applications</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a></li>
-          <li><a href="../kontakt.html">Pošalji upit</a></li>
-          <li class="footer-loc">Hrvatska · BiH · Srbija</li>
+          <li><a href="../kontakt.html" data-i18n="footer.send">Send inquiry</a></li>
+          <li class="footer-loc" data-i18n="footer.locHR">Croatia · BiH · Serbia</li>
           <li class="footer-loc">EU · CA · US</li>
-          <li><a href="../pravila-privatnosti.html">Pravila privatnosti</a></li>
+          <li><a href="../pravila-privatnosti.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
@@ -240,7 +245,7 @@
       </a>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> OSTRELYA™ — sva prava pridržana</span>
+      <span>© <span id="year">2026</span> OSTRELYA™ — <span data-i18n="footer.rights">all rights reserved</span></span>
       <span class="footer-bottom-mid">Balkan · Remote</span>
       <a href="#top" class="footer-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
@@ -258,5 +263,58 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="../js/main.js" defer></script>
+<script>
+  window.OSTRELYA_I18N = window.OSTRELYA_I18N || {};
+  window.OSTRELYA_I18N.HR = {
+    "art.back": "← Natrag na blog",
+    "art.category": "Održavanje",
+    "art.h1": "Održavanje web stranice<br/>— zašto je bitno",
+    "art.intro": "Web stranica nije \"napravi i zaboravi\". Zašto redovito održavanje štedi novac i živce.",
+    "art.meta": "27. kolovoza 2026 · 5 min čitanja",
+    "art.lead": "Vaša web stranica je kao automobil — treba redovito servisiranje da bi radila sigurno i brzo. Evo što se događa kad to zanemarite.",
+    "art.h2a": "Što je održavanje web stranice?",
+    "art.p1": "Održavanje uključuje sve što treba raditi nakon što stranica postane live:",
+    "art.li1a": "<strong>Sigurnosna ažuriranja</strong> — zakrpe za ranjivosti koje hakeri koriste",
+    "art.li1b": "<strong>Backup</strong> — redovito kopiranje svih podataka",
+    "art.li1c": "<strong>SSL certifikat</strong> — osigurava HTTPS vezu (zelena lokota)",
+    "art.li1d": "<strong>Ažuriranje softvera</strong> — WordPress, plugini, PHP verzija",
+    "art.li1e": "<strong>Monitoring</strong> — praćenje je li stranica dostupna i brza",
+    "art.li1f": "<strong>Mali editi</strong> — promjena teksta, slike, nove stranice",
+    "art.h2b": "Što se događa bez održavanja?",
+    "art.p2": "<strong>Mjesec 1–3:</strong> Sve radi. Stranica je nova, softver je aktualan.",
+    "art.p3": "<strong>Mjesec 3–6:</strong> Počinju se pojavljivati manji problemi. Plugin više nije kompatibilan. Stranica je malo sporija.",
+    "art.p4": "<strong>Mjesec 6–12:</strong> Sigurnosne ranjivosti. Stranica može biti hakirana. Google vas kažnjava za sporost. Posjetitelji odlaze.",
+    "art.p5": "<strong>Godinu dana kasnije:</strong> Stranica je zastarjela, nesigurna i nepouzdana. Popravak je skuplji nego da ste održavali.",
+    "art.h2c": "Zašto je toliko bitno?",
+    "art.p6": "<strong>1. Sigurnost.</strong> Hakeri ciljaju zastarjele stranice. Jedna kompromitirana stranica može uništiti vaš ugled.",
+    "art.p7": "<strong>2. Brzina.</strong> Google kažnjava spore stranice. Svaka sekunda kašnjenja = 7% manje konverzija.",
+    "art.p8": "<strong>3. Povjerenje.</strong> Posjetitelji primjećuju kada stranica ne radi. \"This site can't be reached\" = izgubljen kupac.",
+    "art.p9": "<strong>4. SEO.</strong> Google preferira aktualne, brze, sigurne stranice. Bez održavanja, padate na ljestvici.",
+    "art.h2d": "Koliko košta održavanje?",
+    "art.p10": "Usporedite troškove:",
+    "art.li2a": "<strong>Održavanje:</strong> €40–100/mjesečno",
+    "art.li2b": "<strong>Popravak nakon hakiranja:</strong> €500–2,000+",
+    "art.li2c": "<strong>Gubitak poslovanja zbog nefunkcionalne stranice:</strong> Neprocjenjivo",
+    "art.p11": "Održavanje je kao osiguranje — malo mjesečno, velika zaštita.",
+    "art.h2e": "Što tražiti od providera?",
+    "art.li3a": "<strong>Daily backup</strong> — da se može vratiti na bilo koji dan",
+    "art.li3b": "<strong>Security updates</strong> — automatski ili brzo ručno",
+    "art.li3c": "<strong>Uptime monitoring</strong> — da vas odmah obavijeste kad padne",
+    "art.li3d": "<strong>Small edits</strong> — da možete zatražiti promjene bez dodatne naplate",
+    "art.li3e": "<strong>Izvještaji</strong> — da znate što je napravljeno i kada",
+    "art.cta_h3": "Trebate održavanje?",
+    "art.cta_p": "Naš care plan pokriva sve — hosting, sigurnost, backup i podršku. Jedna poruka, sve riješeno.",
+    "art.cta_btn": "Saznaj više →",
+    "art.cta2_h3": "Spremni za svoju stranicu?",
+    "art.cta2_p": "Pošaljite nam upit i dobit ćete točnu ponudu u 24 sata — bez pritiska, bez obveze.",
+    "art.cta2_btn": "Zatraži besplatnu ponudu →",
+    "art.lead_h3": "Besplatni vodič: 10 stvari koje vaša web stranica mora imati u 2026.",
+    "art.lead_p": "Prijavite se na naš newsletter i primite besplatni PDF vodič s konkretnim savjetima za web stranicu koja donosi posao.",
+    "art.lead_btn": "Pošalji vodič →",
+    "art.lead_note": "Šaljemo samo korisne savjete. Odjavite se bilo kad.",
+    "footer.cta": "Zatraži ponudu →"
+  };
+</script>
+<script src="../js/i18n.js"></script>
 </body>
 </html>

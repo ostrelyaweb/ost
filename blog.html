@@ -1,20 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Blog — OSTRELYA™ WEB STUDIO</title>
-<meta name="description" content="Savjeti, vodiči i iskustva o web dizajnu, održavanju i digitalnom nastupu za male firme." />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="Tips, guides and insights on web design, maintenance and digital presence for small businesses." />
 <meta name="author" content="OSTRELYA WEB STUDIO" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#f5ece5" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; form-action 'self' https://ostrelya.com;" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://get.geojs.io; frame-ancestors 'none'; form-action 'self' https://ostrelya.com;" />
 <link rel="canonical" href="https://ostrelya.com/blog.html" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="OSTRELYA WEB STUDIO" />
 <meta property="og:title" content="Blog — OSTRELYA WEB STUDIO" />
-<meta property="og:description" content="Savjeti i vodiči o web dizajnu za male firme." />
+<meta property="og:description" content="Tips and guides on web design for small businesses." />
 <meta property="og:url" content="https://ostrelya.com/blog.html" />
 <meta property="og:image" content="https://ostrelya.com/og.png" />
 
@@ -67,10 +68,10 @@
     </a>
 
     <nav class="head-nav" aria-label="Primary">
-      <a href="index.html">Početna</a>
-      <a href="usluge.html">Usluge</a>
-      <a href="blog.html" class="is-active">Blog</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="usluge.html" data-i18n="nav.services">Services</a>
+      <a href="blog.html" class="is-active" data-i18n="nav.blog">Blog</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="head-cta">
@@ -82,6 +83,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Start a project
       </a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Croatian">
+        <span class="lang-flag" aria-hidden="true">🌐</span>
+        <span class="lang-label">Hrvatski</span>
+      </button>
       <button class="head-burger" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -91,10 +96,10 @@
 
 <!-- ============ MOBILE MENU ============ -->
 <nav class="mmenu" id="mmenu" aria-label="Mobile" aria-hidden="true" inert>
-  <a href="index.html">Početna</a>
-  <a href="usluge.html">Usluge</a>
-  <a href="blog.html">Blog</a>
-  <a href="kontakt.html">Kontakt</a>
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="usluge.html" data-i18n="nav.services">Services</a>
+  <a href="blog.html" data-i18n="nav.blog">Blog</a>
+  <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
 </nav>
 
 <main id="main">
@@ -102,9 +107,9 @@
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
     <div class="wrap">
-      <p class="page-hero-eyebrow" data-reveal>Blog</p>
-      <h1 class="page-hero-title" data-reveal>Savjeti prije<br/>negosite date ponudu.</h1>
-      <p class="page-hero-sub" data-reveal>Što znati, na što paziti i kako donijeti pravu odluku — prije nego potrošite novac.</p>
+      <p class="page-hero-eyebrow" data-reveal data-i18n="blog.hero.eyebrow">Blog</p>
+      <h1 class="page-hero-title" data-reveal data-i18n="blog.hero.title">Tips before<br/>you accept a quote.</h1>
+      <p class="page-hero-sub" data-reveal data-i18n="blog.hero.sub">What to look for, what to watch out for, and how to make the right decision — before you spend money.</p>
     </div>
   </section>
 
@@ -115,34 +120,34 @@
 
         <a class="blog-card" href="blog/što-znati-prije-kupnje-web-stranice.html">
           <div class="blog-card-img" style="background: linear-gradient(135deg, hsl(18 42% 42%) 0%, hsl(27 35% 35%) 100%);">
-            <span class="blog-card-tag">Vodič</span>
+            <span class="blog-card-tag" data-i18n="blogcard1.tag">Guide</span>
           </div>
           <div class="blog-card-body">
-            <p class="blog-card-meta">27. kolovoza 2026 · 6 min</p>
-            <h2 class="blog-card-title">Što znati prije kupnje web stranice</h2>
-            <p class="blog-card-excerpt">Niste sigurni što tražiti? Ovaj vodič pokriva sve što trebate znati prije nego angažirate dizajnera ili agenciju.</p>
+            <p class="blog-card-meta" data-i18n="blogcard1.meta">August 27, 2026 · 6 min read</p>
+            <h2 class="blog-card-title" data-i18n="blogcard1.title">What to know before buying a website</h2>
+            <p class="blog-card-excerpt" data-i18n="blogcard1.excerpt">Not sure what to look for? This guide covers everything you need to know before hiring a designer or agency.</p>
           </div>
         </a>
 
         <a class="blog-card" href="blog/koliko-košta-web-stranica-2026.html">
           <div class="blog-card-img" style="background: linear-gradient(135deg, hsl(128 8% 28%) 0%, hsl(128 8% 18%) 100%);">
-            <span class="blog-card-tag">Cijene</span>
+            <span class="blog-card-tag" data-i18n="blogcard2.tag">Pricing</span>
           </div>
           <div class="blog-card-body">
-            <p class="blog-card-meta">27. kolovoza 2026 · 8 min</p>
-            <h2 class="blog-card-title">Koliko košta web stranica u 2026.</h2>
-            <p class="blog-card-excerpt">Realna cjenovna slika — od jeftinih rješenja do premium pristupa. Bez skrivenih troškova.</p>
+            <p class="blog-card-meta" data-i18n="blogcard2.meta">August 27, 2026 · 8 min read</p>
+            <h2 class="blog-card-title" data-i18n="blogcard2.title">How much does a website cost in 2026?</h2>
+            <p class="blog-card-excerpt" data-i18n="blogcard2.excerpt">A realistic pricing overview — from budget solutions to premium approaches. No hidden costs.</p>
           </div>
         </a>
 
         <a class="blog-card" href="blog/održavanje-web-stranice-zašto-je-bitno.html">
           <div class="blog-card-img" style="background: linear-gradient(135deg, hsl(27 45% 50%) 0%, hsl(18 42% 38%) 100%);">
-            <span class="blog-card-tag">Održavanje</span>
+            <span class="blog-card-tag" data-i18n="blogcard3.tag">Maintenance</span>
           </div>
           <div class="blog-card-body">
-            <p class="blog-card-meta">27. kolovoza 2026 · 5 min</p>
-            <h2 class="blog-card-title">Održavanje web stranice — zašto je bitno</h2>
-            <p class="blog-card-excerpt">Web stranica nije "napravi i zaboravi". Zašto redovito održavanje štedi novac i živce.</p>
+            <p class="blog-card-meta" data-i18n="blogcard3.meta">August 27, 2026 · 5 min read</p>
+            <h2 class="blog-card-title" data-i18n="blogcard3.title">Website maintenance — why it matters</h2>
+            <p class="blog-card-excerpt" data-i18n="blogcard3.excerpt">A website isn't "set it and forget it". Why regular maintenance saves you money and headaches.</p>
           </div>
         </a>
 
@@ -163,35 +168,35 @@
   <img src="images/footer-logo.png" alt="OSTRELYA" width="160" height="55" class="head-logo-img footer-logo-img" loading="lazy" />
 </picture>
         </a>
-        <p>Pretvaramo ideje u web stranice koje rade. Jasno, mjerljivo i pošteno — od prve skice do live stranice.</p>
-        <a class="btn btn-primary footer-cta" href="kontakt.html">Zatraži ponudu →</a>
+        <p data-i18n="footer.tagline">We turn ideas into websites that work. Clear, measurable, and honest — from the first sketch to a live site.</p>
+        <a class="btn btn-primary footer-cta" href="kontakt.html" data-i18n="footer.cta">Get a quote →</a>
       </div>
       <div class="footer-col">
-        <h4>Usluge</h4>
+        <h4 data-i18n="footer.services">Services</h4>
         <ul>
-          <li><a href="usluge.html">Izrada web stranica</a></li>
-          <li><a href="usluge.html">Održavanje</a></li>
-          <li><a href="usluge.html">SEO optimizacija</a></li>
-          <li><a href="index.html#calculator">Konfigurator cijena</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s1">Web design &amp; development</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s2">Maintenance</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s3">SEO optimization</a></li>
+          <li><a href="index.html#calculator" data-i18n="footer.s4">Price configurator</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Rješenja</h4>
+        <h4 data-i18n="footer.solutions">Solutions</h4>
         <ul>
-          <li><a href="usluge.html#work">Web za apartmane</a></li>
-          <li><a href="usluge.html#work">Web za firme</a></li>
-          <li><a href="usluge.html#work">Web shop</a></li>
-          <li><a href="usluge.html#work">Web aplikacije</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r1">Websites for rentals</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r2">Websites for businesses</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r3">Web shop</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r4">Web applications</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a></li>
-          <li><a href="kontakt.html">Pošalji upit</a></li>
-          <li class="footer-loc">Hrvatska · BiH · Srbija</li>
-          <li class="footer-loc">EU · CA · US</li>
-          <li><a href="pravila-privatnosti.html">Pravila privatnosti</a></li>
+          <li><a href="kontakt.html" data-i18n="footer.send">Send inquiry</a></li>
+          <li class="footer-loc" data-i18n="footer.locHR">Croatia · BiH · Serbia</li>
+          <li class="footer-loc" data-i18n="footer.locEU">EU · CA · US</li>
+          <li><a href="pravila-privatnosti.html" data-i18n="footer.privacy">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
@@ -207,7 +212,7 @@
       </a>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> OSTRELYA™ — sva prava pridržana</span>
+      <span>© <span id="year">2026</span> OSTRELYA™ — <span data-i18n="footer.rights">all rights reserved</span></span>
       <span class="footer-bottom-mid">Balkan · Remote</span>
       <a href="#top" class="footer-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
@@ -225,5 +230,27 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="js/main.js" defer></script>
+<script>
+window.OSTRELYA_I18N = {
+  HR: {
+    "blog.hero.eyebrow": "Blog",
+    "blog.hero.title": "Savjeti prije<br/>negosite date ponudu.",
+    "blog.hero.sub": "\u0160to znati, na \u0161to paziti i kako donijeti pravu odluku \u2014 prije nego potro\u0161ite novac.",
+    "blogcard1.tag": "Vodi\u010d",
+    "blogcard1.meta": "27. kolovoza 2026 \u00b7 6 min",
+    "blogcard1.title": "\u0160to znati prije kupnje web stranice",
+    "blogcard1.excerpt": "Niste sigurni \u0161to tra\u017eiti? Ovaj vodi\u010d pokriva sve \u0161to trebate znati prije nego anga\u017eirate dizajnera ili agenciju.",
+    "blogcard2.tag": "Cijene",
+    "blogcard2.meta": "27. kolovoza 2026 \u00b7 8 min",
+    "blogcard2.title": "Koliko ko\u0161ta web stranica u 2026.",
+    "blogcard2.excerpt": "Realna cjenovna slika \u2014 od jeftinih rje\u0161enja do premium pristupa. Bez skrivenih tro\u0161kova.",
+    "blogcard3.tag": "Odr\u017eavanje",
+    "blogcard3.meta": "27. kolovoza 2026 \u00b7 5 min",
+    "blogcard3.title": "Odr\u017eavanje web stranice \u2014 za\u0161to je bitno",
+    "blogcard3.excerpt": "Web stranica nije \"napravi i zaboravi\". Za\u0161to redovito odr\u017eavanje \u0161tedi novac i \u017eivce."
+  }
+};
+</script>
+<script src="js/i18n.js"></script>
 </body>
 </html>

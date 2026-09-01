@@ -1,20 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Usluge — OSTRELYA™ WEB STUDIO</title>
-<meta name="description" content="Web stranice, održavanje i SEO optimizacija za male tvrtke. Dizajn po mjeri, bez šablona, live u ~10 dana." />
+<title>Services — OSTRELYA™ WEB STUDIO</title>
+<meta http-equiv="Content-Language" content="en" />
+<meta name="description" content="Websites, maintenance and SEO optimization for small businesses. Bespoke design, no templates, live in ~10 days." />
 <meta name="author" content="OSTRELYA WEB STUDIO" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#f5ece5" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; form-action 'self' https://ostrelya.com;" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://get.geojs.io; frame-ancestors 'none'; form-action 'self' https://ostrelya.com;" />
 <link rel="canonical" href="https://ostrelya.com/usluge.html" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="OSTRELYA WEB STUDIO" />
-<meta property="og:title" content="Usluge — OSTRELYA WEB STUDIO" />
-<meta property="og:description" content="Web stranice, održavanje i SEO optimizacija za male tvrtke." />
+<meta property="og:title" content="Services — OSTRELYA WEB STUDIO" />
+<meta property="og:description" content="Websites, maintenance and SEO optimization for small businesses." />
 <meta property="og:url" content="https://ostrelya.com/usluge.html" />
 <meta property="og:image" content="https://ostrelya.com/og.png" />
 
@@ -81,10 +82,10 @@
     </a>
 
     <nav class="head-nav" aria-label="Primary">
-      <a href="index.html">Početna</a>
-      <a href="usluge.html" class="is-active">Usluge</a>
-      <a href="blog.html">Blog</a>
-      <a href="kontakt.html">Kontakt</a>
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="usluge.html" class="is-active" data-i18n="nav.services">Services</a>
+      <a href="blog.html" data-i18n="nav.blog">Blog</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
     </nav>
 
     <div class="head-cta">
@@ -96,6 +97,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Start a project
       </a>
+      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Croatian">
+        <span class="lang-flag" aria-hidden="true">🌐</span>
+        <span class="lang-label">Hrvatski</span>
+      </button>
       <button class="head-burger" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -105,10 +110,10 @@
 
 <!-- ============ MOBILE MENU ============ -->
 <nav class="mmenu" id="mmenu" aria-label="Mobile" aria-hidden="true" inert>
-  <a href="index.html">Početna</a>
-  <a href="usluge.html">Usluge</a>
-  <a href="blog.html">Blog</a>
-  <a href="kontakt.html">Kontakt</a>
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="usluge.html" data-i18n="nav.services">Services</a>
+  <a href="blog.html" data-i18n="nav.blog">Blog</a>
+  <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
 </nav>
 
 <main id="main">
@@ -116,9 +121,9 @@
   <!-- ============ PAGE HERO ============ -->
   <section class="page-hero">
     <div class="wrap">
-      <p class="page-hero-eyebrow" data-reveal>Usluge</p>
-      <h1 class="page-hero-title" data-reveal>Odaberi područje —<br/>vidi što dobivaš.</h1>
-      <p class="page-hero-sub" data-reveal>Web stranice, održavanje i rast — sve na jednom mjestu. Dizajn po mjeri, bez šablona.</p>
+      <p class="page-hero-eyebrow" data-reveal data-i18n="page.hero.eyebrow">Services</p>
+      <h1 class="page-hero-title" data-reveal data-i18n="page.hero.title">Choose an area —<br/>see what you get.</h1>
+      <p class="page-hero-sub" data-reveal data-i18n="page.hero.sub">Websites, maintenance and growth — all in one place. Custom design, no templates.</p>
     </div>
   </section>
 
@@ -127,32 +132,32 @@
     <div class="wrap">
 
       <div class="svc-tabs" role="tablist" data-reveal>
-        <button id="tab-web" class="svc-tab is-active" role="tab" aria-selected="true" aria-controls="svc-web" aria-labelledby="tab-web">Web</button>
-        <button id="tab-care" class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-care" aria-labelledby="tab-care">Care</button>
-        <button id="tab-grow" class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-grow" aria-labelledby="tab-grow">SEO &amp; Grow</button>
+        <button id="tab-web" class="svc-tab is-active" role="tab" aria-selected="true" aria-controls="svc-web" aria-labelledby="tab-web" data-i18n="svc.tab.web">Web</button>
+        <button id="tab-care" class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-care" aria-labelledby="tab-care" data-i18n="svc.tab.care">Care</button>
+        <button id="tab-grow" class="svc-tab" role="tab" aria-selected="false" aria-controls="svc-grow" aria-labelledby="tab-grow" data-i18n="svc.tab.grow">SEO &amp; Grow</button>
       </div>
 
       <div class="svc-panel is-active" id="svc-web" role="tabpanel" aria-labelledby="tab-web">
         <div class="svc-layout" data-reveal>
           <div class="svc-left">
-            <p class="svc-headline">Web stranica koja donosi upite, a ne samo posjete.</p>
-            <p class="svc-desc">Prezentacijska web stranica za firmu, obrt ili uslugu — brza, moderna i spremna za Google. Dizajn po mjeri, bez šablona.</p>
+            <p class="svc-headline" data-i18n="svc.web.headline">A website that brings inquiries, not just visits.</p>
+            <p class="svc-desc" data-i18n="svc.web.desc">Presentation website for a company, trade or service — fast, modern and ready for Google. Custom design, no templates.</p>
             <div class="svc-price-row">
-              <span class="svc-from">od</span>
+              <span class="svc-from" data-i18n="svc.web.from">from</span>
               <span class="svc-amount">€250</span>
-              <span class="svc-or">ili</span>
-              <span class="svc-amount">€11/mj</span>
+              <span class="svc-or" data-i18n="svc.web.or">or</span>
+              <span class="svc-amount" data-i18n="svc.web.small">€11/mo</span>
             </div>
-            <a class="btn btn-primary" href="kontakt.html">Izračunaj cijenu →</a>
+            <a class="btn btn-primary" href="kontakt.html" data-i18n="svc.web.cta">Get a price now →</a>
           </div>
           <div class="svc-right">
             <div class="svc-features">
-              <div class="svc-feature"><span class="svc-check">✓</span> Dizajn po mjeri</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> SEO temelji</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Hosting uključen</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> 24 mjesečne rate</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Contact forma</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Mobile-first</div>
+              <div class="svc-feature" data-i18n="svc.web.f1"><span class="svc-check">✓</span> Custom design</div>
+              <div class="svc-feature" data-i18n="svc.web.f2"><span class="svc-check">✓</span> SEO foundations</div>
+              <div class="svc-feature" data-i18n="svc.web.f3"><span class="svc-check">✓</span> Hosting included</div>
+              <div class="svc-feature" data-i18n="svc.web.f4"><span class="svc-check">✓</span> 24 monthly payments</div>
+              <div class="svc-feature" data-i18n="svc.web.f5"><span class="svc-check">✓</span> Contact form</div>
+              <div class="svc-feature" data-i18n="svc.web.f6"><span class="svc-check">✓</span> Mobile-first</div>
             </div>
           </div>
         </div>
@@ -161,20 +166,20 @@
       <div class="svc-panel" id="svc-care" role="tabpanel" aria-labelledby="tab-care">
         <div class="svc-layout" data-reveal>
           <div class="svc-left">
-            <p class="svc-headline">Hosting, domain, security — sve riješeno.</p>
-            <p class="svc-desc">Održavanje vaše web stranice: sigurnosna ažuriranja, backup, monitoring i mali editi na zahtjev. Jedna poruka — gotovo.</p>
+            <p class="svc-headline" data-i18n="svc.care.headline">Hosting, domain, security — all handled.</p>
+            <p class="svc-desc" data-i18n="svc.care.desc">Maintenance for your website: security updates, backups, monitoring and small edits on request. One message — done.</p>
             <div class="svc-price-row">
-              <span class="svc-from">od</span>
-              <span class="svc-amount">€40/mj</span>
+              <span class="svc-from" data-i18n="svc.care.from">from</span>
+              <span class="svc-amount" data-i18n="svc.care.small">€40/mo</span>
             </div>
-            <a class="btn btn-primary" href="kontakt.html">Start care plan →</a>
+            <a class="btn btn-primary" href="kontakt.html" data-i18n="svc.care.cta">Start care plan →</a>
           </div>
           <div class="svc-right">
             <div class="svc-features">
-              <div class="svc-feature"><span class="svc-check">✓</span> Hosting + Domain + SSL</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Security updates</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Daily backup</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Small edits on request</div>
+              <div class="svc-feature" data-i18n="svc.care.f1"><span class="svc-check">✓</span> Hosting + Domain + SSL</div>
+              <div class="svc-feature" data-i18n="svc.care.f2"><span class="svc-check">✓</span> Security updates</div>
+              <div class="svc-feature" data-i18n="svc.care.f3"><span class="svc-check">✓</span> Daily backup</div>
+              <div class="svc-feature" data-i18n="svc.care.f4"><span class="svc-check">✓</span> Small edits on request</div>
             </div>
           </div>
         </div>
@@ -183,20 +188,20 @@
       <div class="svc-panel" id="svc-grow" role="tabpanel" aria-labelledby="tab-grow">
         <div class="svc-layout" data-reveal>
           <div class="svc-left">
-            <p class="svc-headline">Budite prvi kad vas traže.</p>
-            <p class="svc-desc">Basic SEO i Google Business profil — lokalni kupci vas pronalaze kad traže. Dodaci za copy, fotografije i više.</p>
+            <p class="svc-headline" data-i18n="svc.grow.headline">Be first when they search for you.</p>
+            <p class="svc-desc" data-i18n="svc.grow.desc">Basic SEO and a Google Business profile — local customers find you when they search. Add-ons for copy, photos and more.</p>
             <div class="svc-price-row">
-              <span class="svc-from">od</span>
+              <span class="svc-from" data-i18n="svc.grow.from">from</span>
               <span class="svc-amount">€80</span>
             </div>
-            <a class="btn btn-primary" href="kontakt.html">Zatraži ponudu →</a>
+            <a class="btn btn-primary" href="kontakt.html" data-i18n="svc.grow.cta">Request a quote →</a>
           </div>
           <div class="svc-right">
             <div class="svc-features">
-              <div class="svc-feature"><span class="svc-check">✓</span> Basic on-page SEO</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Google Business Profile</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Copywriting add-on</div>
-              <div class="svc-feature"><span class="svc-check">✓</span> Photo add-on</div>
+              <div class="svc-feature" data-i18n="svc.grow.f1"><span class="svc-check">✓</span> Basic on-page SEO</div>
+              <div class="svc-feature" data-i18n="svc.grow.f2"><span class="svc-check">✓</span> Google Business Profile</div>
+              <div class="svc-feature" data-i18n="svc.grow.f3"><span class="svc-check">✓</span> Copywriting add-on</div>
+              <div class="svc-feature" data-i18n="svc.grow.f4"><span class="svc-check">✓</span> Photo add-on</div>
             </div>
           </div>
         </div>
@@ -209,40 +214,40 @@
   <section class="process" id="process">
     <div class="wrap">
       <div class="sec-head" data-reveal>
-        <p class="sec-eyebrow">Metoda</p>
-        <h2>10 dana, 4 koraka.</h2>
+        <p class="sec-eyebrow" data-i18n="svc.process.eyebrow">Method</p>
+        <h2 data-i18n="svc.process.title">10 days, 4 steps.</h2>
       </div>
 
       <div class="process-steps">
         <div class="pro-step" data-reveal>
           <div class="pro-num">01</div>
           <div class="pro-content">
-            <h3>Kickoff</h3>
-            <p>Razgovaramo o vašem poslu, skupljamo tekst i fotografije, dogovaramo stranice.</p>
+            <h3 data-i18n="svc.step1.title">Kickoff</h3>
+            <p data-i18n="svc.step1.desc">We talk about your business, gather text and photos, and agree on the pages.</p>
           </div>
           <div class="pro-line" aria-hidden="true"></div>
         </div>
         <div class="pro-step" data-reveal>
           <div class="pro-num">02</div>
           <div class="pro-content">
-            <h3>Build</h3>
-            <p>Dizajniramo i gradimo vašu stranicu, mobile-first, s pažnjom. Gledate kako nastaje.</p>
+            <h3 data-i18n="svc.step2.title">Build</h3>
+            <p data-i18n="svc.step2.desc">We design and build your site, mobile-first, with care. You watch it come together.</p>
           </div>
           <div class="pro-line" aria-hidden="true"></div>
         </div>
         <div class="pro-step" data-reveal>
           <div class="pro-num">03</div>
           <div class="pro-content">
-            <h3>Review</h3>
-            <p>Dva kruga revizija dok nije kako treba — to je vaše lice online.</p>
+            <h3 data-i18n="svc.step3.title">Review</h3>
+            <p data-i18n="svc.step3.desc">Two rounds of revisions until it's right — this is your face online.</p>
           </div>
           <div class="pro-line" aria-hidden="true"></div>
         </div>
         <div class="pro-step" data-reveal>
           <div class="pro-num">04</div>
           <div class="pro-content">
-            <h3>Launch</h3>
-            <p>Domain, SSL, Google Business, analytics — live i indeksiran. Mi ostajemo na podršci.</p>
+            <h3 data-i18n="svc.step4.title">Launch</h3>
+            <p data-i18n="svc.step4.desc">Domain, SSL, Google Business, analytics — live and indexed. We stay on support.</p>
           </div>
         </div>
       </div>
@@ -253,37 +258,37 @@
   <section class="work" id="work">
     <div class="wrap">
       <div class="sec-head" data-reveal>
-        <p class="sec-eyebrow">Reference</p>
-        <h2>Odabrani projekti.</h2>
+        <p class="sec-eyebrow" data-i18n="svc.work.eyebrow">References</p>
+        <h2 data-i18n="svc.work.title">Selected projects.</h2>
       </div>
 
       <div class="work-grid" data-reveal>
         <a class="work-card work-card-tall" href="../ostrelya-explorations/v1-warm-editorial/index.html">
           <div class="work-card-img" style="background: linear-gradient(160deg, #d4a574 0%, #a67c52 40%, #8b6914 100%);"></div>
           <div class="work-card-overlay">
-            <span class="work-card-tag">Boutique Hotel</span>
-            <p class="work-card-title">V01 — WARM EDITORIAL</p>
+            <span class="work-card-tag" data-i18n="svc.work.tag1">Boutique Hotel</span>
+            <p class="work-card-title" data-i18n="svc.work.title1">V01 — WARM EDITORIAL</p>
           </div>
         </a>
         <a class="work-card" href="../ostrelya-explorations/b1-swiss-brutalist/index.html">
           <div class="work-card-img" style="background: linear-gradient(160deg, #3d3d3d 0%, #2d2d2d 50%, #1a1a1a 100%);"></div>
           <div class="work-card-overlay">
-            <span class="work-card-tag">Auto Garage</span>
-            <p class="work-card-title">B01 — SWISS BRUTALIST</p>
+            <span class="work-card-tag" data-i18n="svc.work.tag2">Auto Garage</span>
+            <p class="work-card-title" data-i18n="svc.work.title2">B01 — SWISS BRUTALIST</p>
           </div>
         </a>
         <a class="work-card" href="../ostrelya-explorations/v13-glassmorphism/index.html">
           <div class="work-card-img" style="background: linear-gradient(160deg, #667eea 0%, #764ba2 50%, #f093fb 100%);"></div>
           <div class="work-card-overlay">
-            <span class="work-card-tag">Café &amp; Bakery</span>
-            <p class="work-card-title">V13 — GLASS UI</p>
+            <span class="work-card-tag" data-i18n="svc.work.tag3">Café &amp; Bakery</span>
+            <p class="work-card-title" data-i18n="svc.work.title3">V13 — GLASS UI</p>
           </div>
         </a>
         <a class="work-card work-card-wide" href="../ostrelya-explorations/v16-dark-oled/index.html">
           <div class="work-card-img" style="background: linear-gradient(160deg, #1a0a2e 0%, #3d1f6d 50%, #6b21a8 100%);"></div>
           <div class="work-card-overlay">
-            <span class="work-card-tag">Art Studio</span>
-            <p class="work-card-title">V16 — DARK OLED</p>
+            <span class="work-card-tag" data-i18n="svc.work.tag4">Art Studio</span>
+            <p class="work-card-title" data-i18n="svc.work.title4">V16 — DARK OLED</p>
           </div>
         </a>
       </div>
@@ -295,10 +300,10 @@
     <div class="wrap">
       <div class="cta-band-inner">
         <div>
-          <p class="cta-band-label">Spremni?</p>
-          <p class="cta-band-text">Javite nam se za besplatnu ponudu.</p>
+          <p class="cta-band-label" data-i18n="svc.cta.label">Ready?</p>
+          <p class="cta-band-text" data-i18n="svc.cta.text">Get in touch for a free quote.</p>
         </div>
-        <a class="btn btn-primary btn-lg" href="kontakt.html">Zatraži ponudu →</a>
+        <a class="btn btn-primary btn-lg" href="kontakt.html" data-i18n="svc.cta.btn">Request a quote →</a>
       </div>
     </div>
   </section>
@@ -316,35 +321,35 @@
   <img src="images/footer-logo.png" alt="OSTRELYA" width="160" height="55" class="head-logo-img footer-logo-img" loading="lazy" />
 </picture>
         </a>
-        <p>Pretvaramo ideje u web stranice koje rade. Jasno, mjerljivo i pošteno — od prve skice do live stranice.</p>
-        <a class="btn btn-primary footer-cta" href="kontakt.html">Zatraži ponudu →</a>
+        <p data-i18n="footer.tagline">We turn ideas into websites that work. Clear, measurable and fair — from first sketch to live site.</p>
+        <a class="btn btn-primary footer-cta" href="kontakt.html" data-i18n="footer.cta">Request a quote →</a>
       </div>
       <div class="footer-col">
-        <h4>Usluge</h4>
+        <h4 data-i18n="footer.services">Services</h4>
         <ul>
-          <li><a href="usluge.html">Izrada web stranica</a></li>
-          <li><a href="usluge.html">Održavanje</a></li>
-          <li><a href="usluge.html">SEO optimizacija</a></li>
-          <li><a href="index.html#calculator">Konfigurator cijena</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s1">Website creation</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s2">Maintenance</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s3">SEO optimization</a></li>
+          <li><a href="index.html#calculator" data-i18n="footer.s4">Price configurator</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Rješenja</h4>
+        <h4 data-i18n="footer.solutions">Solutions</h4>
         <ul>
-          <li><a href="usluge.html#work">Web za apartmane</a></li>
-          <li><a href="usluge.html#work">Web za firme</a></li>
-          <li><a href="usluge.html#work">Web shop</a></li>
-          <li><a href="usluge.html#work">Web aplikacije</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r1">Websites for apartments</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r2">Websites for businesses</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r3">Web shop</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r4">Web apps</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="footer.contact">Contact</h4>
         <ul>
           <li><a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a></li>
-          <li><a href="kontakt.html">Pošalji upit</a></li>
-          <li class="footer-loc">Hrvatska · BiH · Srbija</li>
+          <li><a href="kontakt.html" data-i18n="footer.send">Send inquiry</a></li>
+          <li class="footer-loc" data-i18n="footer.locHR">Croatia · BiH · Serbia</li>
           <li class="footer-loc">EU · CA · US</li>
-          <li><a href="pravila-privatnosti.html">Pravila privatnosti</a></li>
+          <li><a href="pravila-privatnosti.html" data-i18n="footer.privacy">Privacy policy</a></li>
         </ul>
       </div>
     </div>
@@ -360,7 +365,7 @@
       </a>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> OSTRELYA™ — sva prava pridržana</span>
+      <span>© <span id="year">2026</span> OSTRELYA™ — <span data-i18n="footer.rights">all rights reserved</span></span>
       <span class="footer-bottom-mid">Balkan · Remote</span>
       <a href="#top" class="footer-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
@@ -378,5 +383,69 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="js/main.js" defer></script>
+<script>
+  window.OSTRELYA_I18N = window.OSTRELYA_I18N || {};
+  window.OSTRELYA_I18N.HR = {
+    "page.hero.eyebrow": "Usluge",
+    "page.hero.title": "Odaberi područje —<br/>vidi što dobivaš.",
+    "page.hero.sub": "Web stranice, održavanje i rast — sve na jednom mjestu. Dizajn po mjeri, bez šablona.",
+    "svc.tab.web": "Web",
+    "svc.tab.care": "Care",
+    "svc.tab.grow": "SEO & Grow",
+    "svc.web.headline": "Web stranica koja donosi upite, a ne samo posjete.",
+    "svc.web.desc": "Prezentacijska web stranica za firmu, obrt ili uslugu — brza, moderna i spremna za Google. Dizajn po mjeri, bez šablona.",
+    "svc.web.from": "od",
+    "svc.web.or": "ili",
+    "svc.web.small": "€11/mj",
+    "svc.web.cta": "Izračunaj cijenu →",
+    "svc.web.f1": "<span class=\"svc-check\">✓</span> Dizajn po mjeri",
+    "svc.web.f2": "<span class=\"svc-check\">✓</span> SEO temelji",
+    "svc.web.f3": "<span class=\"svc-check\">✓</span> Hosting uključen",
+    "svc.web.f4": "<span class=\"svc-check\">✓</span> 24 mjesečne rate",
+    "svc.web.f5": "<span class=\"svc-check\">✓</span> Contact forma",
+    "svc.web.f6": "<span class=\"svc-check\">✓</span> Mobile-first",
+    "svc.care.headline": "Hosting, domain, security — sve riješeno.",
+    "svc.care.desc": "Održavanje vaše web stranice: sigurnosna ažuriranja, backup, monitoring i mali editi na zahtjev. Jedna poruka — gotovo.",
+    "svc.care.from": "od",
+    "svc.care.small": "€40/mj",
+    "svc.care.cta": "Start care plan →",
+    "svc.care.f1": "<span class=\"svc-check\">✓</span> Hosting + Domain + SSL",
+    "svc.care.f2": "<span class=\"svc-check\">✓</span> Security updates",
+    "svc.care.f3": "<span class=\"svc-check\">✓</span> Daily backup",
+    "svc.care.f4": "<span class=\"svc-check\">✓</span> Small edits on request",
+    "svc.grow.headline": "Budite prvi kad vas traže.",
+    "svc.grow.desc": "Basic SEO i Google Business profil — lokalni kupci vas pronalaze kad traže. Dodaci za copy, fotografije i više.",
+    "svc.grow.from": "od",
+    "svc.grow.cta": "Zatraži ponudu →",
+    "svc.grow.f1": "<span class=\"svc-check\">✓</span> Basic on-page SEO",
+    "svc.grow.f2": "<span class=\"svc-check\">✓</span> Google Business Profile",
+    "svc.grow.f3": "<span class=\"svc-check\">✓</span> Copywriting add-on",
+    "svc.grow.f4": "<span class=\"svc-check\">✓</span> Photo add-on",
+    "svc.process.eyebrow": "Metoda",
+    "svc.process.title": "10 dana, 4 koraka.",
+    "svc.step1.title": "Kickoff",
+    "svc.step1.desc": "Razgovaramo o vašem poslu, skupljamo tekst i fotografije, dogovaramo stranice.",
+    "svc.step2.title": "Build",
+    "svc.step2.desc": "Dizajniramo i gradimo vašu stranicu, mobile-first, s pažnjom. Gledate kako nastaje.",
+    "svc.step3.title": "Review",
+    "svc.step3.desc": "Dva kruga revizija dok nije kako treba — to je vaše lice online.",
+    "svc.step4.title": "Launch",
+    "svc.step4.desc": "Domain, SSL, Google Business, analytics — live i indeksiran. Mi ostajemo na podršci.",
+    "svc.work.eyebrow": "Reference",
+    "svc.work.title": "Odabrani projekti.",
+    "svc.work.tag1": "Boutique Hotel",
+    "svc.work.title1": "V01 — WARM EDITORIAL",
+    "svc.work.tag2": "Auto Garage",
+    "svc.work.title2": "B01 — SWISS BRUTALIST",
+    "svc.work.tag3": "Café & Bakery",
+    "svc.work.title3": "V13 — GLASS UI",
+    "svc.work.tag4": "Art Studio",
+    "svc.work.title4": "V16 — DARK OLED",
+    "svc.cta.label": "Spremni?",
+    "svc.cta.text": "Javite nam se za besplatnu ponudu.",
+    "svc.cta.btn": "Zatraži ponudu →"
+  };
+</script>
+<script src="js/i18n.js"></script>
 </body>
 </html>
