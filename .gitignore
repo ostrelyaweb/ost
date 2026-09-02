@@ -1,0 +1,9 @@
+# Deploy snapshot (separate repo — never tracked here)
+dist/
+
+# Node
+node_modules/
+
+# Build output / previews (not deployable)
+output/
+_preview/
