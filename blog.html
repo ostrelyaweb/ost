@@ -1,21 +1,20 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="hr">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog — OSTRELYA™ WEB STUDIO</title>
-<meta http-equiv="Content-Language" content="en" />
-<meta name="description" content="Tips, guides and insights on web design, maintenance and digital presence for small businesses." />
+<title>Blog — OSTRELYA WEB STUDIO</title>
+<meta http-equiv="Content-Language" content="hr" />
+<meta name="description" content="Savjeti, vodiči i članci o izradi web stranica, SEO optimizaciji i digitalnom marketingu za male firme." />
 <meta name="author" content="OSTRELYA WEB STUDIO" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#f5ece5" />
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://get.geojs.io; frame-ancestors 'none'; form-action 'self' https://ostrelya.com;" />
-<link rel="canonical" href="https://ostrelya.com/blog.html" />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="OSTRELYA WEB STUDIO" />
 <meta property="og:title" content="Blog — OSTRELYA WEB STUDIO" />
-<meta property="og:description" content="Tips and guides on web design for small businesses." />
+<meta property="og:description" content="Savjeti i vodiči za izradu web stranica i SEO." />
 <meta property="og:url" content="https://ostrelya.com/blog.html" />
 <meta property="og:image" content="https://ostrelya.com/og.png" />
 
@@ -51,6 +50,12 @@
   ]
 }
 </script>
+    <meta property="og:locale" content="hr_HR" />
+
+<link rel="canonical" href="https://ostrelya.com/blog.html" />
+<link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog.html" />
+<link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog.html" />
+<link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog.html" />
 </head>
 <body>
 
@@ -68,10 +73,10 @@
     </a>
 
     <nav class="head-nav" aria-label="Primary">
-      <a href="index.html" data-i18n="nav.home">Home</a>
-      <a href="usluge.html" data-i18n="nav.services">Services</a>
+      <a href="index.html" data-i18n="nav.home">Početna</a>
+      <a href="usluge.html" data-i18n="nav.services">Usluge</a>
       <a href="blog.html" class="is-active" data-i18n="nav.blog">Blog</a>
-      <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
+      <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
     </nav>
 
     <div class="head-cta">
@@ -83,10 +88,32 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
         Start a project
       </a>
-      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Croatian">
-        <span class="lang-flag" aria-hidden="true">🌐</span>
-        <span class="lang-label">Hrvatski</span>
-      </button>
+      <div class="lang-dropdown">
+        <button type="button" class="lang-dropdown-toggle" aria-expanded="false" aria-label="Odaberi jezik">
+          <span class="lang-flag">🇭🇷</span>
+          <span class="lang-label">HR</span>
+          <svg class="lang-chevron" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-dropdown-menu">
+          <a href="#" class="lang-dropdown-item is-active">
+            <span class="lang-flag">🇭🇷</span>
+            <span class="lang-name">Hrvatski</span>
+            <span class="lang-check">✓</span>
+          </a>
+          <a href="en/blog.html" class="lang-dropdown-item">
+            <span class="lang-flag">🇬🇧</span>
+            <span class="lang-name">English</span>
+          </a>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
       <button class="head-burger" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
@@ -96,10 +123,10 @@
 
 <!-- ============ MOBILE MENU ============ -->
 <nav class="mmenu" id="mmenu" aria-label="Mobile" aria-hidden="true" inert>
-  <a href="index.html" data-i18n="nav.home">Home</a>
-  <a href="usluge.html" data-i18n="nav.services">Services</a>
+  <a href="index.html" data-i18n="nav.home">Početna</a>
+  <a href="usluge.html" data-i18n="nav.services">Usluge</a>
   <a href="blog.html" data-i18n="nav.blog">Blog</a>
-  <a href="kontakt.html" data-i18n="nav.contact">Contact</a>
+  <a href="kontakt.html" data-i18n="nav.contact">Kontakt</a>
 </nav>
 
 <main id="main">
@@ -168,35 +195,35 @@
   <img src="images/footer-logo.png" alt="OSTRELYA" width="160" height="55" class="head-logo-img footer-logo-img" loading="lazy" />
 </picture>
         </a>
-        <p data-i18n="footer.tagline">We turn ideas into websites that work. Clear, measurable, and honest — from the first sketch to a live site.</p>
-        <a class="btn btn-primary footer-cta" href="kontakt.html" data-i18n="footer.cta">Get a quote →</a>
+        <p data-i18n="footer.tagline">Pretvaramo ideje u web stranice koje rade. Jasno, mjerljivo i pošteno — od prve skice do live stranice.</p>
+        <a class="btn btn-primary footer-cta" href="kontakt.html" data-i18n="footer.cta">Zatraži ponudu →</a>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footer.services">Services</h4>
+        <h4 data-i18n="footer.services">Usluge</h4>
         <ul>
-          <li><a href="usluge.html" data-i18n="footer.s1">Web design &amp; development</a></li>
-          <li><a href="usluge.html" data-i18n="footer.s2">Maintenance</a></li>
-          <li><a href="usluge.html" data-i18n="footer.s3">SEO optimization</a></li>
-          <li><a href="index.html#calculator" data-i18n="footer.s4">Price configurator</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s1">Izrada web stranica</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s2">Održavanje</a></li>
+          <li><a href="usluge.html" data-i18n="footer.s3">SEO optimizacija</a></li>
+          <li><a href="index.html#calculator" data-i18n="footer.s4">Konfigurator cijena</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footer.solutions">Solutions</h4>
+        <h4 data-i18n="footer.solutions">Rješenja</h4>
         <ul>
-          <li><a href="usluge.html#work" data-i18n="footer.r1">Websites for rentals</a></li>
-          <li><a href="usluge.html#work" data-i18n="footer.r2">Websites for businesses</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r1">Web za apartmane</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r2">Web za firme</a></li>
           <li><a href="usluge.html#work" data-i18n="footer.r3">Web shop</a></li>
-          <li><a href="usluge.html#work" data-i18n="footer.r4">Web applications</a></li>
+          <li><a href="usluge.html#work" data-i18n="footer.r4">Web aplikacije</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4 data-i18n="footer.contact">Contact</h4>
+        <h4 data-i18n="footer.contact">Kontakt</h4>
         <ul>
           <li><a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a></li>
-          <li><a href="kontakt.html" data-i18n="footer.send">Send inquiry</a></li>
-          <li class="footer-loc" data-i18n="footer.locHR">Croatia · BiH · Serbia</li>
+          <li><a href="kontakt.html" data-i18n="footer.send">Pošalji upit</a></li>
+          <li class="footer-loc" data-i18n="footer.locHR">Hrvatska · BiH · Srbija</li>
           <li class="footer-loc" data-i18n="footer.locEU">EU · CA · US</li>
-          <li><a href="pravila-privatnosti.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="pravila-privatnosti.html" data-i18n="footer.privacy">Pravila privatnosti</a></li>
         </ul>
       </div>
     </div>
@@ -212,7 +239,7 @@
       </a>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year">2026</span> OSTRELYA™ — <span data-i18n="footer.rights">all rights reserved</span></span>
+      <span>© <span id="year">2026</span> OSTRELYA™ — <span data-i18n="footer.rights">sva prava pridržana</span></span>
       <span class="footer-bottom-mid">Balkan · Remote</span>
       <a href="#top" class="footer-top" aria-label="Back to top">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
@@ -230,27 +257,8 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="js/main.js" defer></script>
-<script>
-window.OSTRELYA_I18N = {
-  HR: {
-    "blog.hero.eyebrow": "Blog",
-    "blog.hero.title": "Savjeti prije<br/>negosite date ponudu.",
-    "blog.hero.sub": "\u0160to znati, na \u0161to paziti i kako donijeti pravu odluku \u2014 prije nego potro\u0161ite novac.",
-    "blogcard1.tag": "Vodi\u010d",
-    "blogcard1.meta": "27. kolovoza 2026 \u00b7 6 min",
-    "blogcard1.title": "\u0160to znati prije kupnje web stranice",
-    "blogcard1.excerpt": "Niste sigurni \u0161to tra\u017eiti? Ovaj vodi\u010d pokriva sve \u0161to trebate znati prije nego anga\u017eirate dizajnera ili agenciju.",
-    "blogcard2.tag": "Cijene",
-    "blogcard2.meta": "27. kolovoza 2026 \u00b7 8 min",
-    "blogcard2.title": "Koliko ko\u0161ta web stranica u 2026.",
-    "blogcard2.excerpt": "Realna cjenovna slika \u2014 od jeftinih rje\u0161enja do premium pristupa. Bez skrivenih tro\u0161kova.",
-    "blogcard3.tag": "Odr\u017eavanje",
-    "blogcard3.meta": "27. kolovoza 2026 \u00b7 5 min",
-    "blogcard3.title": "Odr\u017eavanje web stranice \u2014 za\u0161to je bitno",
-    "blogcard3.excerpt": "Web stranica nije \"napravi i zaboravi\". Za\u0161to redovito odr\u017eavanje \u0161tedi novac i \u017eivce."
-  }
-};
-</script>
-<script src="js/i18n.js"></script>
+
+
 </body>
 </html>
+

@@ -60,7 +60,7 @@
       var target = $(href);
       if (!target) { return; }
       e.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (href === "#top") { window.scrollTo({ top: 0, behavior: "smooth" }); } else { target.scrollIntoView({ behavior: "smooth", block: "start" }); }
       /* close mobile menu if open */
       if (mmenu && mmenu.classList.contains("is-open")) closeMenu(false);
     });
@@ -262,77 +262,187 @@
     });
   });
 
-  /* ======================================================================
-     CALCULATOR — price configurator
+    /* ======================================================================
+     CALCULATOR — simple list configurator
      ====================================================================== */
-  var calcOpts = $$(".calc-opt");
-  var calcAddons = $$(".calc-addon-check");
-  var calcBase = $("#calcBase");
-  var calcAddonsEl = $("#calcAddons");
-  var calcAddonsRow = $("#calcAddonsRow");
-  if (calcAddonsRow) calcAddonsRow.style.display = "none";
-  var calcTotal = $("#calcTotal");
-  var calcMonthly = $("#calcMonthly");
-  var calcTerm = $("#calcTerm");
-  var calcDelivery = $("#calcDelivery");
-  var activePrice = 400;
+  var calcRowsTier = $$("#tier-rows .calc-row");
+  var calcRowsAddon = $$("#addon-rows .calc-row");
+  var ticketName = $("#ticket-name");
+  var ticketLines = $("#ticket-lines");
+  var ticketTotal = $("#ticket-total");
+  var ticketMonthly = $("#ticket-monthly");
+  var ticketTerm = $("#ticket-term");
+  var ticketDays = $("#ticket-days");
+  var mbTotal = $("#mb-total");
+  var mbMonthly = $("#mb-monthly");
+  
+  var activeTier = null;
+  var REPAYMENT_MONTHS = 24;
+  var lastTotal = 0;
+  var lastMonthly = 0;
 
   function formatCurrency(n) {
     return "€" + n.toLocaleString("en-US");
   }
+
   function i18nLang() {
-    return typeof window.OSTRELYA_I18N === "object" &&
-      typeof window.OSTRELYA_I18N.currentLang === "function"
-      ? window.OSTRELYA_I18N.currentLang()
-      : "en";
+    return document.documentElement.lang || "hr";
   }
-  function calcInstallment(price) {
-    var months = 24;
-    var monthly = Math.ceil(price / months);
-    return { monthly: monthly, term: months };
-  }
-  function getAddonsTotal() {
-    var total = 0;
-    calcAddons.forEach(function (cb) {
-      if (cb.checked) total += parseInt(cb.getAttribute("data-price"), 10) || 0;
-    });
-    return total;
-  }
-  function updateCalc() {
-    var addonsTotal = getAddonsTotal();
-    var total = activePrice + addonsTotal;
-    var result = calcInstallment(total);
-    var hasFast = document.querySelector('.calc-addon-check[data-price="120"]');
-    var isFast = hasFast && hasFast.checked;
-    var hr = i18nLang() === "hr";
-    var monthlySuffix = hr ? "/mj" : "/mo";
-    var delivery5 = hr ? "~5 dana" : "~5 days";
-    var delivery10 = hr ? "~10 dana" : "~10 days";
 
-    if (calcBase) calcBase.textContent = formatCurrency(activePrice);
-    if (calcAddonsEl) calcAddonsEl.textContent = addonsTotal > 0 ? "+" + formatCurrency(addonsTotal) : "€0";
-    if (calcAddonsRow) calcAddonsRow.style.display = addonsTotal > 0 ? "flex" : "none";
-    if (calcTotal) calcTotal.textContent = formatCurrency(total);
-    if (calcMonthly) calcMonthly.textContent = formatCurrency(result.monthly) + monthlySuffix;
-    if (calcTerm) calcTerm.textContent = result.term + (hr ? " mjeseci" : " months");
-    if (calcDelivery) calcDelivery.textContent = isFast ? delivery5 : delivery10;
-
-    if (HAS_GS && !reduceMotion) {
-      gsap.fromTo(".calc-result", { scale: 0.97, opacity: 0.6 }, { scale: 1, opacity: 1, duration: 0.35, ease: "power2.out" });
-      gsap.fromTo(".calc-highlight", { y: 6, opacity: 0 }, { y: 0, opacity: 1, duration: 0.3, ease: "power2.out", delay: 0.05 });
+  function animateValue(el, from, to, prefix, suffix) {
+    if (!el) return;
+    prefix = prefix || '€'; suffix = suffix || '';
+    var dur = 350;
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(from + (to - from) * eased);
+      el.textContent = prefix + val.toLocaleString("en-US") + suffix;
+      if (p < 1) window.requestAnimationFrame(step);
     }
+    if (reduceMotion) { el.textContent = prefix + to.toLocaleString("en-US") + suffix; }
+    else { window.requestAnimationFrame(step); }
   }
-  calcOpts.forEach(function (opt) {
-    opt.addEventListener("click", function () {
-      calcOpts.forEach(function (o) { o.classList.remove("is-active"); });
-      opt.classList.add("is-active");
-      activePrice = parseInt(opt.getAttribute("data-price"), 10) || 0;
+
+  function updateCalc() {
+    var hr = i18nLang() === "hr";
+    
+    // Find active tier
+    var tierPrice = 0;
+    var tierName = "Standard";
+    var tierLabel = hr ? "paket" : "package";
+    var activeInput = document.querySelector('input[name="tier"]:checked');
+    if (activeInput) {
+      tierPrice = parseInt(activeInput.value, 10) || 0;
+      tierName = activeInput.getAttribute("data-name") || tierName;
+      var tr = activeInput.closest(".calc-row");
+      if (tr) {
+        var nEl = tr.querySelector(".name");
+        if (nEl) tierName = nEl.textContent; // get translated text
+      }
+    }
+
+    if (ticketName) ticketName.textContent = tierName;
+
+    // Find addons
+    var addonsSum = 0;
+    var chosenAddons = [];
+    var hasFast = false;
+    document.querySelectorAll('.calc-addon-check:checked').forEach(function(cb) {
+      var price = parseInt(cb.getAttribute("data-price"), 10) || 0;
+      addonsSum += price;
+      if (cb.hasAttribute("data-fast")) hasFast = true;
+      
+      var aName = cb.getAttribute("data-name");
+      var tr = cb.closest(".calc-row");
+      if (tr) {
+        var nEl = tr.querySelector(".name");
+        if (nEl) aName = nEl.textContent;
+      }
+      chosenAddons.push({ name: aName, price: price });
+    });
+
+    var total = tierPrice + addonsSum;
+    var monthly = Math.max(1, Math.ceil(total / REPAYMENT_MONTHS));
+
+    // Update lines
+    if (ticketLines) {
+      var html = '<div class="calc-ticket-line"><span class="l">' + tierName + ' ' + tierLabel + '</span><span class="v">€' + tierPrice + '</span></div>';
+      chosenAddons.forEach(function(a) {
+        if (a.price > 0) {
+          html += '<div class="calc-ticket-line"><span class="l">' + a.name + '</span><span class="v">+€' + a.price + '</span></div>';
+        }
+      });
+      ticketLines.innerHTML = html;
+    }
+
+    animateValue(ticketTotal, lastTotal, total, '€', '');
+    animateValue(ticketMonthly, lastMonthly, monthly, '€', '');
+    animateValue(mbTotal, lastTotal, total, '€', '');
+    if (mbMonthly) mbMonthly.textContent = '€' + monthly;
+
+    if (ticketDays) {
+      var daysNum = hasFast ? 5 : 10;
+      ticketDays.textContent = "~" + daysNum + (hr ? " dana" : " days");
+    }
+    if (ticketTerm) {
+      ticketTerm.textContent = REPAYMENT_MONTHS;
+    }
+
+    lastTotal = total;
+    lastMonthly = monthly;
+  }
+
+  calcRowsTier.forEach(function (row) {
+    var input = row.querySelector("input[type='radio']");
+    if (!input) return;
+    input.addEventListener("change", function () {
+      calcRowsTier.forEach(function (r) { r.classList.remove("is-selected"); });
+      row.classList.add("is-selected");
       updateCalc();
     });
   });
-  calcAddons.forEach(function (cb) {
-    cb.addEventListener("change", updateCalc);
+
+  calcRowsAddon.forEach(function (row) {
+    var input = row.querySelector("input[type='checkbox']");
+    if (!input) return;
+    input.addEventListener("change", function () {
+      row.classList.toggle("is-selected", input.checked);
+      updateCalc();
+    });
   });
+
+  // Handle submit buttons
+  function triggerContact() {
+    var activeInput = document.querySelector('input[name="tier"]:checked');
+    var baseName = "Standard";
+    if (activeInput) {
+      var tr = activeInput.closest(".calc-row");
+      if (tr) {
+        var nEl = tr.querySelector(".name");
+        if (nEl) baseName = nEl.textContent;
+      }
+    }
+    var selectedAddons = [];
+    document.querySelectorAll('.calc-addon-check:checked').forEach(function(cb) {
+      var tr = cb.closest(".calc-row");
+      if (tr) {
+        var nEl = tr.querySelector(".name");
+        if (nEl) selectedAddons.push(nEl.textContent);
+      }
+    });
+
+    var isHr = i18nLang() === "hr";
+    var totalText = ticketTotal ? ticketTotal.textContent : "";
+    var monthlyText = ticketMonthly ? ticketMonthly.textContent : "";
+    var deliveryText = ticketDays ? ticketDays.textContent : "";
+
+    var summary = isHr
+      ? "Odabrana konfiguracija:\n• Paket: " + baseName + "\n• Dodaci: " + (selectedAddons.length > 0 ? selectedAddons.join(", ") : "Nema") + "\n• Ukupno: " + totalText + "\n• Mjesečna rata: " + monthlyText + "/mj (24 mjeseca)\n• Rok izrade: " + deliveryText + "\n\nPoruka / Napomena:"
+      : "Selected configuration:\n• Package: " + baseName + "\n• Add-ons: " + (selectedAddons.length > 0 ? selectedAddons.join(", ") : "None") + "\n• Total: " + totalText + "\n• Monthly Rate: " + monthlyText + "/mo (24 months)\n• Delivery: " + deliveryText + "\n\nMessage / Notes:";
+
+    var msgArea = document.getElementById("message");
+    if (msgArea) {
+      msgArea.value = summary;
+    }
+
+    var contactSec = document.getElementById("contact");
+    if (contactSec) {
+      contactSec.scrollIntoView({ behavior: "smooth" });
+      var nameInput = document.getElementById("name");
+      if (nameInput) setTimeout(function () { nameInput.focus(); }, 600);
+    }
+  }
+
+  var calcSubmitBtn = document.getElementById("calcSubmitBtn");
+  var calcMobileBtn = document.getElementById("calcMobileBtn");
+  if (calcSubmitBtn) calcSubmitBtn.addEventListener("click", triggerContact);
+  if (calcMobileBtn) calcMobileBtn.addEventListener("click", triggerContact);
+  
+  // Initial render
+  if (ticketTotal) updateCalc();
 
   /* ======================================================================
      CONTACT FORM — Netlify when deployed, mailto fallback locally
@@ -373,9 +483,7 @@
       }
     }
     form.addEventListener("submit", function (e) {
-      if (form.getAttribute("netlify") != null && window.location.protocol !== "file:") return;
-      e.preventDefault();
-      if (honeypot && honeypot.value) return;
+      if (honeypot && honeypot.value) { e.preventDefault(); return; }
 
       var hr = i18nLang() === "hr";
       var L = {
@@ -384,8 +492,8 @@
         message: hr ? "Recite nam nešto o svom poslu." : "Tell us something about your business.",
         errorHead: hr ? "ISPRAVITE GREŠKE ISPOD." : "PLEASE FIX THE ERRORS BELOW.",
         thanks: hr
-          ? "OTVARAM VAŠ EMAIL PROGRAM — HVALA!"
-          : "OPENING YOUR EMAIL APP — THANKS!"
+          ? "HVALA NA UPITU! USKORO ĆEMO SE JAVITI."
+          : "THANK YOU! WE'LL BE IN TOUCH SHORTLY."
       };
 
       clearFieldErrors();
@@ -398,14 +506,33 @@
       if (!emailOk) { setFieldError(form.elements.email, L.email); setStatus(L.errorHead, "is-error"); form.elements.email.focus(); return; }
       if (!message) { setFieldError(form.elements.message, L.message); setStatus(L.errorHead, "is-error"); form.elements.message.focus(); return; }
 
+      // If Netlify, submit via fetch
+      if (form.getAttribute("netlify") != null && window.location.protocol !== "file:") {
+        e.preventDefault();
+        var formData = new FormData(form);
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(function() {
+          setStatus(L.thanks, "is-ok");
+          form.reset();
+        }).catch(function() {
+          setStatus("Error submitting form. Please try again.", "is-error");
+        });
+        return;
+      }
+
+      // Local mailto fallback
+      e.preventDefault();
       setStatus(L.thanks, "is-ok");
-      var subject = encodeURIComponent("Website inquiry — " + (form.elements.business.value.trim() || name));
-      var body = encodeURIComponent(
+      var subject = encodeURIComponent("Website inquiry — " + (form.elements.business ? form.elements.business.value.trim() : name));
+      var bodyText = encodeURIComponent(
         "Name: " + name + "\n" +
-        "Business: " + (form.elements.business.value.trim() || "-") + "\n" +
+        "Business: " + (form.elements.business ? form.elements.business.value.trim() : "-") + "\n" +
         "Email: " + email + "\n\n" + message
       );
-      window.location.href = "mailto:hello@ostrelya.com?subject=" + subject + "&body=" + body;
+      window.location.href = "mailto:hello@ostrelya.com?subject=" + subject + "&body=" + bodyText;
     });
   }
 
@@ -442,6 +569,25 @@
   document.addEventListener("i18n:change", function () {
     updateCalc();
   });
+
+  /* ======================================================================
+     LANGUAGE DROPDOWN — toggle menu on click / click outside
+     ====================================================================== */
+  var langDropdown = $(".lang-dropdown");
+  var langToggleBtn = $(".lang-dropdown-toggle");
+  if (langDropdown && langToggleBtn) {
+    langToggleBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var isOpen = langDropdown.classList.toggle("is-open");
+      langToggleBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+    document.addEventListener("click", function (e) {
+      if (!langDropdown.contains(e.target)) {
+        langDropdown.classList.remove("is-open");
+        langToggleBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   /* ======================================================================
      REFRESH trigger math once fonts + loader settle

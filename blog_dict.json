@@ -1,0 +1,334 @@
+{
+  "art.back": {
+    "en": "← Back to blog",
+    "hr": "← Natrag na blog"
+  },
+  "art.category": {
+    "en": "Guide",
+    "hr": "Vodič"
+  },
+  "art.h1": {
+    "en": "What to know before<br/>buying a website",
+    "hr": "Što znati prije<br/>kupnje web stranice"
+  },
+  "art.intro": {
+    "en": "A guide for small businesses — what to look for, what to watch out for, and how to make the right decision.",
+    "hr": "Vodič za male firme — što tražiti, na što paziti i kako donijeti pravu odluku."
+  },
+  "art.meta": {
+    "en": "August 27, 2026 · 6 min read",
+    "hr": "27. kolovoza 2026 · 6 min čitanja"
+  },
+  "art.lead": {
+    "en": "A website isn't a luxury — it's a business tool. But if you don't know what to look for, it's easy to spend too much for too little. This guide will help you make an informed decision.",
+    "hr": "Web stranica nije luksuz — ona je poslovni alat. Ali ako ne znate što tražiti, lako potrošite previše za premalo. Ovaj vodič pomoći će vam da donesete informiranu odluku."
+  },
+  "art.h2_1": {
+    "en": "Template Solutions — €300–800",
+    "hr": "Template rješenja — €300–800"
+  },
+  "art.p1": {
+    "en": "Before thinking about design or price, answer the question: <strong>what should the website achieve?",
+    "hr": "Prije nego razmišljate o dizajnu ili cijeni, odgovorite na pitanje: <strong>što stranica treba postići?</strong>"
+  },
+  "art.li1_1": {
+    "en": "Finished design with minor customization",
+    "hr": "Gotov dizajn koji se malo prilagođava"
+  },
+  "art.li1_2": {
+    "en": "Basic pages (home, about, services, contact)",
+    "hr": "Osnovne stranice (početna, o nama, usluge, kontakt)"
+  },
+  "art.li1_3": {
+    "en": "Responsive design",
+    "hr": "Responsivni dizajn"
+  },
+  "art.p2": {
+    "en": "The goal determines everything else — structure, design, price.",
+    "hr": "Cilj određuje sve ostalo — strukturu, dizajn, cijenu."
+  },
+  "art.h2_2": {
+    "en": "Semi-Custom Design — €600–1,500",
+    "hr": "Polu-prilagođeni dizajn — €600–1,500"
+  },
+  "art.p3": {
+    "en": "The price of a website isn't just \"design.\" Here's what you get:",
+    "hr": "Cijena web stranice nije samo \"dizajn\". Evo što dobivate:"
+  },
+  "art.li2_1": {
+    "en": "Custom design within an existing structure",
+    "hr": "Prilagođeni dizajn unutar postojeće strukture"
+  },
+  "art.li2_2": {
+    "en": "SEO foundations from day one",
+    "hr": "SEO temelji od prvog dana"
+  },
+  "art.li2_3": {
+    "en": "Hosting included (often in installments)",
+    "hr": "Hosting uključen (često i na rate)"
+  },
+  "art.li2_4": {
+    "en": "2 rounds of revisions",
+    "hr": "2 kruga revizija"
+  },
+  "art.p4": {
+    "en": "Ask what's included and what's charged extra.",
+    "hr": "Pitajte što je uključeno, a što se dodatno naplaćuje."
+  },
+  "art.h2_3": {
+    "en": "Fully Custom Design — €1,500–4,000",
+    "hr": "Potpuno prilagođeni dizajn — €1,500–4,000"
+  },
+  "art.p5": {
+    "en": "There are two approaches:",
+    "hr": "Postoje dva pristupa:"
+  },
+  "art.li3_1": {
+    "en": "Unique design, no template",
+    "hr": "Unikatni dizajn, bez template-a"
+  },
+  "art.li3_2": {
+    "en": "Advanced features (calculators, booking, integrations)",
+    "hr": "Napredne funkcionalnosti (kalkulatori, booking, integracije)"
+  },
+  "art.li3_3": {
+    "en": "Detailed SEO and analytics",
+    "hr": "Detaljni SEO i analytics"
+  },
+  "art.li3_4": {
+    "en": "Brand identity included",
+    "hr": "Brand identitet uključen"
+  },
+  "art.p6": {
+    "en": "<strong>Template (shablona)",
+    "hr": "<strong>Template (šablona)</strong> — jeftinije, brže, ali ograničeno. Dobivate gotov dizajn koji se malo prilagođava. Problem: isti kao stotine drugih stranica."
+  },
+  "art.h2_4": {
+    "en": "E-commerce — €2,000–10,000+",
+    "hr": "E-commerce — €2,000–10,000+"
+  },
+  "art.p7": {
+    "en": "<strong>Custom design",
+    "hr": "<strong>Dizajn po mjeri</strong> — skuplje, ali jedinstveno. Stranica je napravljena za vaš brend, vaše kupce, vaše ciljeve. Traje dulje, bolje konvertira."
+  },
+  "art.li4_1": {
+    "en": "Shopify / WooCommerce / custom solution",
+    "hr": "Shopify / WooCommerce / custom rješenje"
+  },
+  "art.li4_2": {
+    "en": "Payment gateway integration",
+    "hr": "Payment gateway integracija"
+  },
+  "art.li4_3": {
+    "en": "Product management",
+    "hr": "Upravljanje proizvodima"
+  },
+  "art.li4_4": {
+    "en": "Logistics and shipping",
+    "hr": "Logistika i dostava"
+  },
+  "art.p8": {
+    "en": "For small businesses, the best compromise is often: <strong>semi-custom design",
+    "hr": "Za male firme često je najbolji kompromis: <strong>polu-prilagođeni dizajn</strong> — temelj na provjerenoj strukturi, ali s vašim brendom i potrebama."
+  },
+  "art.h2_5": {
+    "en": "Costs You Forget About",
+    "hr": "Troškovi koje zaboravljate"
+  },
+  "art.p9": {
+    "en": "Over 60% of traffic comes from mobile. If the site doesn't work well on mobile, you're losing most potential customers.",
+    "hr": "Preko 60% prometa dolazi s mobitela. Ako stranica ne radi dobro na mobitelu, gubite većinu potencijalnih kupaca."
+  },
+  "art.li5_1": {
+    "en": "<strong>Domain:",
+    "hr": "<strong>Domena:</strong> €10–20/godišnje"
+  },
+  "art.li5_2": {
+    "en": "<strong>Hosting:",
+    "hr": "<strong>Hosting:</strong> €50–200/godišnje"
+  },
+  "art.li5_3": {
+    "en": "<strong>SSL certificate:",
+    "hr": "<strong>SSL certifikat:</strong> Besplatan (Let's Encrypt) ili €50–100"
+  },
+  "art.li5_4": {
+    "en": "<strong>Maintenance:",
+    "hr": "<strong>Održavanje:</strong> €40–100/mjesečno"
+  },
+  "art.li5_5": {
+    "en": "<strong>SEO:",
+    "hr": "<strong>SEO:</strong> €80–300/mjesečno (opcionalno)"
+  },
+  "art.h2_6": {
+    "en": "How to Choose the Right Option?",
+    "hr": "Kako izabrati pravu opciju?"
+  },
+  "art.p10": {
+    "en": "Ask: <em>\"How will it look on mobile?\"",
+    "hr": "Pitajte: <em>\"Kako će izgledati na mobitelu?\"</em> — i tražite demo na telefonu prije nego platite."
+  },
+  "art.ol1": {
+    "en": "<strong>How urgent is it?",
+    "hr": "<strong>Koliko je hitno?</strong> — Template za 2 tjedna, custom za 2-3 mjeseca"
+  },
+  "art.ol2": {
+    "en": "<strong>How important is the brand?",
+    "hr": "<strong>Koliko je važan brend?</strong> — Ako je ključan, idite na custom"
+  },
+  "art.ol3": {
+    "en": "<strong>What's the budget?",
+    "hr": "<strong>Koliki je budžet?</strong> — Postavite realan budget i držite ga se"
+  },
+  "art.ol4": {
+    "en": "<strong>What do you want to achieve?",
+    "hr": "<strong>Što želite postići?</strong> — Više upita = više ulaganja u SEO i dizajn"
+  },
+  "art.cta_h3": {
+    "en": "Ready for the next step?",
+    "hr": "Spremni za sljedeći korak?"
+  },
+  "art.cta_p": {
+    "en": "Contact us — free consultation, clear quote, no obligation.",
+    "hr": "Javite nam se — besplatna konzultacija, jasna ponuda, bez obveze."
+  },
+  "art.cta_btn": {
+    "en": "Request a quote →",
+    "hr": "Zatraži ponudu →"
+  },
+  "art.cta2_h3": {
+    "en": "Ready for your website?",
+    "hr": "Spremni za svoju stranicu?"
+  },
+  "art.cta2_p": {
+    "en": "Send us an inquiry and you'll get an exact quote within 24 hours — no pressure, no obligation.",
+    "hr": "Pošaljite nam upit i dobit ćete točnu ponudu u 24 sata — bez pritiska, bez obveze."
+  },
+  "art.cta2_btn": {
+    "en": "Get a free quote →",
+    "hr": "Zatraži besplatnu ponudu →"
+  },
+  "art.lead_h3": {
+    "en": "Free guide: 10 things your website must have in 2026.",
+    "hr": "Besplatni vodič: 10 stvari koje vaša web stranica mora imati u 2026."
+  },
+  "art.lead_p": {
+    "en": "Sign up for our newsletter and receive a free PDF guide with practical tips for a website that brings business.",
+    "hr": "Prijavite se na naš newsletter i primite besplatni PDF vodič s konkretnim savjetima za web stranicu koja donosi posao."
+  },
+  "art.lead_btn": {
+    "en": "Send guide →",
+    "hr": "Pošalji vodič →"
+  },
+  "art.lead_note": {
+    "en": "We only send useful tips. Unsubscribe anytime.",
+    "hr": "Šaljemo samo korisne savjete. Odjavite se bilo kad."
+  },
+  "footer.cta": {
+    "en": "Zatraži ponudu →",
+    "hr": "Zatraži ponudu →"
+  },
+  "art.h2a": {
+    "en": "1. Define the goal of the website",
+    "hr": "1. Definirajte cilj stranice"
+  },
+  "art.li1a": {
+    "en": "<strong>Get inquiries",
+    "hr": "<strong>Dobiti upite</strong> — ljudi vas pronalaze, šalju poruku, zovu"
+  },
+  "art.li1b": {
+    "en": "<strong>Sell products",
+    "hr": "<strong>Prodati proizvode</strong> — web shop s košaricom i plaćanjem"
+  },
+  "art.li1c": {
+    "en": "<strong>Inform",
+    "hr": "<strong>Informirati</strong> — restoran, apartman, firmа — osnovne informacije + kontakt"
+  },
+  "art.li1d": {
+    "en": "<strong>Build trust",
+    "hr": "<strong>Izgraditi povjerenje</strong> — portfolio, reference, svjedočanstva"
+  },
+  "art.li1e": {
+    "en": "<strong>Monitoring",
+    "hr": "<strong>Monitoring</strong> — praćenje je li stranica dostupna i brza"
+  },
+  "art.li1f": {
+    "en": "<strong>Minor edits",
+    "hr": "<strong>Mali editi</strong> — promjena teksta, slike, nove stranice"
+  },
+  "art.h2b": {
+    "en": "2. Know what's included in the price",
+    "hr": "2. Znajte što je uključeno u cijenu"
+  },
+  "art.h2c": {
+    "en": "3. Template vs. custom design",
+    "hr": "3. Template vs. dizajn po mjeri"
+  },
+  "art.h2d": {
+    "en": "4. Mobile first",
+    "hr": "4. Mobilni prije svega"
+  },
+  "art.li2a": {
+    "en": "<strong>Design",
+    "hr": "<strong>Dizajn</strong> — izgled, layout, boje, tipografija"
+  },
+  "art.li2b": {
+    "en": "<strong>Development",
+    "hr": "<strong>Development</strong> — kod, responsive prilagodba, funkcionalnosti"
+  },
+  "art.li2c": {
+    "en": "<strong>Content",
+    "hr": "<strong>Sadržaj</strong> — tekstovi, fotografije, SEO optimizacija"
+  },
+  "art.p11": {
+    "en": "Without SEO, your website is like a billboard in a forest. Nobody sees it.",
+    "hr": "Bez SEO-a, vaša stranica je kao billboard u šumi. Nitko je ne vidi."
+  },
+  "art.h2e": {
+    "en": "5. SEO isn't optional — it's the foundation",
+    "hr": "5. SEO nije opcija — to je temelj"
+  },
+  "art.li3a": {
+    "en": "Proper headings (H1, H2, H3)",
+    "hr": "Pravilni naslovi (H1, H2, H3)"
+  },
+  "art.li3b": {
+    "en": "Page descriptions (meta description)",
+    "hr": "Opisi stranica (meta description)"
+  },
+  "art.li3c": {
+    "en": "Alt tags on images",
+    "hr": "Alt tagovi na slikama"
+  },
+  "art.li3d": {
+    "en": "Google Business profile",
+    "hr": "Google Business profil"
+  },
+  "art.li3e": {
+    "en": "Fast loading (under 3 seconds)",
+    "hr": "Brzo učitavanje (ispod 3 sekunde)"
+  },
+  "art.li2d": {
+    "en": "<strong>Hosting + domain",
+    "hr": "<strong>Hosting + domena</strong> — godišnji trošak za održavanje stranice online"
+  },
+  "art.li2e": {
+    "en": "<strong>Maintenance",
+    "hr": "<strong>Održavanje</strong> — sigurnosna ažuriranja, backup, podrška"
+  },
+  "art.p12": {
+    "en": "Essentials you need from day one:",
+    "hr": "Osnove koje morate imati od prvog dana:"
+  },
+  "art.h2f": {
+    "en": "6. Maintenance isn't a cost — it's an investment",
+    "hr": "6. Održavanje nije trošak — to je investicija"
+  },
+  "art.p13": {
+    "en": "A website isn't \"build and forget.\" Security updates, backup, SSL certificate — all of this needs regular attention. Without maintenance, the site becomes vulnerable and slow.",
+    "hr": "Web stranica nije \"napravi i zaboravi\". Sigurnosna ažuriranja, backup, SSL certifikat — sve to treba redovito raditi. Bez održavanja, stranica postaje ranjiva i spor."
+  },
+  "art.p14": {
+    "en": "Your business deserves a website that works, every day.",
+    "hr": "Vaša firma zaslužuje stranicu koja radi, svaki dan."
+  }
+}
