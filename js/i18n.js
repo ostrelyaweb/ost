@@ -138,7 +138,8 @@
     /* ── Cookie banner ── */
     "cookie.text": "Ova stranica koristi kolačiće za poboljšanje vašeg iskustva. Nastavkom korištenja pristajete na uporabu kolačića.",
     "cookie.more": "Saznaj više",
-    "cookie.accept": "Prihvaćam"
+    "cookie.accept": "Prihvaćam",
+    "cookie.reject": "Odbijam"
   };
 
   /* Dictionary for the current page (empty means page has no custom dict) */

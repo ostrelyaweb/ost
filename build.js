@@ -224,6 +224,7 @@ const DICT = {
   },
   "cookie.more": { en: "Learn more", hr: "Saznaj više" },
   "cookie.accept": { en: "Accept", hr: "Prihvaćam" },
+  "cookie.reject": { en: "Decline", hr: "Odbijam" },
   "calc.quoteFor": { hr: "Ponuda za", en: "Quote for" },
   "calc.over": { hr: "na", en: "over" },
   "calc.months": { hr: "mjeseca", en: "months" },
@@ -467,18 +468,33 @@ htmlFiles.forEach(file => {
     let meta = PAGE_META[normalizedFile]; // Extract local dictionary from the HTML file if present (useful for blog posts)
     let localEnDict = null;
     let localHrDict = null;
+    // Safely parse a JS object literal (may contain unquoted keys) without using eval.
+    // Rejects any input containing executable tokens, allowing only object/array/string/number/boolean.
+    function safeParseObject(str) {
+        if (typeof str !== 'string' || !str.trim()) return null;
+        // Strip trailing semicolon
+        const src = str.trim().replace(/;\s*$/, '');
+        // Block executable constructs: function bodies, calls, property access outside literals,
+        // template literals, and identifier values (which would reference real code).
+        const forbidden = /([()]|\bfunction\b|\breturn\b|\bnew\b|\btypeof\b|\bin\b|\binstanceof\b|=>|`|\btrue\b|\bfalse\b|\bnull\b|\bundefined\b)/;
+        // Allow: JSON-ish literals with optional unquoted keys (letters, digits, _ , -, spaces, quotes, braces, brackets, commas, colons)
+        const allowed = /^[\s\w"'\-:/.,{}\[\]]*$/;
+        if (forbidden.test(src) || !allowed.test(src)) return null;
+        // Quote unquoted keys, then hand off to JSON.parse (pure parsing, no code execution).
+        const quoted = src.replace(/([{,]\s*)([A-Za-z_$][\w$]*)\s*:/g, '$1"$2":');
+        try {
+            return JSON.parse(quoted);
+        } catch (e) {
+            return null;
+        }
+    }
     const hrMatch = content.match(/window\.OSTRELYA_I18N(?:\.HR)?\s*=\s*(\{[\s\S]*?\});/);
     if (hrMatch) {
-        try {
-            // Using eval to parse JS object string which might have unquoted keys
-            localHrDict = eval('(' + hrMatch[1] + ')');
-        } catch(e) {}
+        localHrDict = safeParseObject(hrMatch[1]);
     }
     const enMatch = content.match(/window\.OSTRELYA_I18N\.EN\s*=\s*(\{[\s\S]*?\});/);
     if (enMatch) {
-        try {
-            localEnDict = eval('(' + enMatch[1] + ')');
-        } catch(e) {}
+        localEnDict = safeParseObject(enMatch[1]);
     }
 
     // 1. Prepare English Version

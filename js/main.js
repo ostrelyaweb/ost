@@ -547,8 +547,13 @@
      ====================================================================== */
   var cookieBanner = $("#cookieBanner");
   var cookieAccept = $("#cookieAccept");
+  var cookieReject = $("#cookieReject");
   if (cookieBanner && cookieAccept) {
     var cookieKey = "ostrelya_cookie_consent";
+    function closeCookieBanner() {
+      cookieBanner.classList.remove("is-visible");
+      cookieBanner.setAttribute("aria-hidden", "true");
+    }
     function showCookieBanner() {
       if (!localStorage.getItem(cookieKey)) {
         cookieBanner.classList.add("is-visible");
@@ -557,9 +562,14 @@
     }
     cookieAccept.addEventListener("click", function () {
       localStorage.setItem(cookieKey, "accepted");
-      cookieBanner.classList.remove("is-visible");
-      cookieBanner.setAttribute("aria-hidden", "true");
+      closeCookieBanner();
     });
+    if (cookieReject) {
+      cookieReject.addEventListener("click", function () {
+        localStorage.setItem(cookieKey, "rejected");
+        closeCookieBanner();
+      });
+    }
     setTimeout(showCookieBanner, 2000);
   }
 

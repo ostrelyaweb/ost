@@ -4,8 +4,8 @@
   "description": "Web stranice koje donose posao. Modern, mobile-first websites for small businesses.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5ece5",
-  "theme_color": "#f5ece5",
+  "background_color": "#f8fafc",
+  "theme_color": "#f8fafc",
   "icons": [
     {
       "src": "images/favicon.png",
