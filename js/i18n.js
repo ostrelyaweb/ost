@@ -1,9 +1,8 @@
 /* ==========================================================================
    OSTRELYA — i18n engine
    Default content language: ENGLISH (written directly in the HTML).
-   Croatian is served automatically to visitors from:
-     SI (Slovenia) · HR (Croatia) · BA (Bosnia & Herzegovina)
-     RS (Serbia) · ME (Montenegro) · XK (Kosovo) · MK (North Macedonia)
+   Croatian is served when the user selects it via the language selector
+   or is automatically chosen on first visit.
    Visitors can override at any time with the EN/HR toggle in the header.
 
    The HTML keeps the English text inline as a no-JS fallback. Every
@@ -15,19 +14,12 @@
   "use strict";
 
   var LANG_KEY = "ostrelya_lang";          // explicit user override
-  var GEO_KEY = "ostrelya_geo_country";    // last known country code
-
-  /* Countries that should get Croatian by default */
-  var HR_COUNTRIES = ["SI", "HR", "BA", "RS", "ME", "XK", "MK"];
 
   /* --------------------------------------------------------------------
      English dictionary (default content). Keys not listed here stay as the
      inline HTML text (which is already English by construction).
      -------------------------------------------------------------------- */
   var EN = {};
-  /* English additions that differ from the inline default text live here.
-     We keep the inline HTML as the primary English source, so EN doubles as
-     an optional override for strings we intentionally phrase differently. */
 
   /* --------------------------------------------------------------------
      Croatian dictionary
@@ -79,7 +71,7 @@
     "calc.addon.shop": "Web shop",
     "calc.addon.shop.desc": "Košarica, plaćanje, upravljanje proizvodima",
     "calc.addon.photo": "Fotografije",
-    "calc.addon.photo.desc": "Obrada i optimizacija vaših fotografija",
+    "calc.addon.photo.desc": "Obrada i optimizacija vaših Fotografija",
     "calc.addon.copy": "Copywriting",
     "calc.addon.copy.desc": "Profesionalni tekstovi za vaše stranice",
     "calc.addon.hosting": "Domena + hosting (1 god)",
@@ -88,7 +80,6 @@
     "calc.addon.fast.desc": "Gotovo za 5 umjesto 10 dana",
     "calc.addon.care": "Održavanje (besplatno 3 mj)",
     "calc.addon.care.desc": "Besplatno 3 mjeseca, zatim €40/mj",
-    "calc.free": "Besplatno",
     "calc.result.base": "Bazna cijena",
     "calc.result.addons": "Dodaci",
     "calc.result.total": "Ukupno",
@@ -160,78 +151,10 @@
   var currentLang = "en";
 
   /* --------------------------------------------------------------------
-     Country detection — primary source: lightweight CORS-friendly
-     geolocation endpoint (get.geojs.io, no API key). Fallback: brace the
-     user's IANA timezone to infer the Balkans if the network call fails
-     or is blocked. Result is cached in localStorage.
-     -------------------------------------------------------------------- */
-
-  var BALKAN_TZ = [
-    "Europe/Belgrade",   /* Serbia, Montenegro, Croatia, Bosnia, Slovenia */
-    "Europe/Zagreb",     /* Croatia */
-    "Europe/Sarajevo",   /* Bosnia & Herzegovina */
-    "Europe/Ljubljana",  /* Slovenia */
-    "Europe/Skopje",     /* North Macedonia */
-    "Europe/Podgorica",  /* Montenegro */
-    "Europe/Pristina",   /* Kosovo */
-    "Europe/Tirane"      /* Albania (nearby) */
-  ];
-
-  function tzHintsBalkan() {
-    var tz = "";
-    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch (e) {}
-    return BALKAN_TZ.indexOf(tz) >= 0;
-  }
-
-  function detectCountry(cb) {
-    var cached = null;
-    try { cached = localStorage.getItem(GEO_KEY); } catch (e) {}
-
-    if (cached) { cb(cached); return; }
-
-    var done = false;
-    function finish(loc) {
-      if (done) return;
-      done = true;
-      if (loc) { try { localStorage.setItem(GEO_KEY, loc); } catch (e) {} }
-      cb(loc || "");
-    }
-
-    var controller = null;
-    var timedOut = false;
-
-    try {
-      controller = new AbortController();
-    } catch (e) { controller = null; }
-
-    var timer = setTimeout(function () {
-      timedOut = true;
-      if (controller) { try { controller.abort(); } catch (e) {} }
-      finish(tzHintsBalkan() ? "BA" : "");
-    }, 3500);
-
-    var opts = { mode: "cors", cache: "no-store" };
-    if (controller) opts.signal = controller.signal;
-
-    fetch("https://get.geojs.io/v1/ip/geo.json", opts)
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        clearTimeout(timer);
-        var cc = data && (data.country_code || data.country);
-        finish(cc ? String(cc).toUpperCase() : (tzHintsBalkan() ? "BA" : ""));
-      })
-      .catch(function () {
-        clearTimeout(timer);
-        finish(tzHintsBalkan() ? "BA" : "");
-      });
-  }
-
-  function resolveLang(country) {
-    return HR_COUNTRIES.indexOf(country) >= 0 ? "hr" : "en";
-  }
-
-  /* --------------------------------------------------------------------
      Apply language to the whole page
+     English is the inline default; Croatian comes from the HR dict.
+     On English → Croatian swap, the inline English source is captured
+     so it can be correctly restored when switching back.
      -------------------------------------------------------------------- */
   function applyLang(lang) {
     lang = lang === "hr" ? "hr" : "en";
@@ -269,7 +192,7 @@
     document.dispatchEvent(new CustomEvent("i18n:change", { detail: { lang: lang } }));
   }
 
-  /* --------------------------------------------------------------------
+  /* ----------------------------------------------------------------------
      Find the saved/desired language
      -------------------------------------------------------------------- */
   function savedLang() {
@@ -290,11 +213,88 @@
     });
   }
 
-  /* Expose a small public API for other scripts (e.g. main.js) */
-  window.OSTRELYA_I18N = window.OSTRELYA_I18N || {};
-  window.OSTRELYA_I18N.currentLang = function () { return currentLang; };
+  /* ----------------------------------------------------------------------
+     Show language selector on first visit (no saved preference)
+     -------------------------------------------------------------------- */
+  function showLanguageSelector() {
+    /* Remove any existing selector */
+    var existing = document.getElementById('lang-selector-overlay');
+    if (existing) { existing.remove(); return; }
 
-  /* --------------------------------------------------------------------
+    var overlay = document.createElement('div');
+    overlay.id = 'lang-selector-overlay';
+    overlay.style = [
+      'position:fixed',
+      'inset:0',
+      'background:rgba(0,0,0,0.6)',
+      'display:flex',
+      'align-items:center',
+      'justify-content:center',
+      'z-index:9999'
+    ].join(';');
+
+    var modal = document.createElement('div');
+    modal.style = [
+      'background:#fff',
+      'border-radius:8px',
+      'box-shadow:0 4px 24px rgba(0,0,0,0.3)',
+      'padding:40px 32px',
+      'text-align:center',
+      'max-width:360px',
+      'width:90%'
+    ].join(';');
+
+    var title = document.createElement('h2');
+    title.style = 'margin:0 0 24px; font-size:24px;';
+    title.textContent = 'Select language';
+
+    var btnGroup = document.createElement('div');
+    btnGroup.style = 'display:flex; gap:16px; justify-content:center; margin-top:24px;';
+
+    var btnEn = document.createElement('button');
+    btnEn.style = [
+      'flex:1',
+      'padding:12px 24px',
+      'background:#e8e8e8',
+      'border:none',
+      'border-radius:4px',
+      'font-size:16px',
+      'cursor:pointer'
+    ].join(';');
+    btnEn.textContent = 'English';
+    btnEn.addEventListener('click', function() {
+      setSaved('en');
+      overlay.remove();
+      applyLang('en');
+    });
+
+    var btnHr = document.createElement('button');
+    btnHr.style = [
+      'flex:1',
+      'padding:12px 24px',
+      'background:#e8e8e8',
+      'border:none',
+      'border-radius:4px',
+      'font-size:16px',
+      'cursor:pointer'
+    ].join(';');
+    btnHr.textContent = 'Hrvatski';
+    btnHr.addEventListener('click', function() {
+      setSaved('hr');
+      overlay.remove();
+      applyLang('hr');
+    });
+
+    btnGroup.appendChild(btnEn);
+    btnGroup.appendChild(btnHr);
+
+    modal.appendChild(title);
+    modal.appendChild(btnGroup);
+    overlay.appendChild(modal);
+    document.body.appendChild(overlay);
+  }
+
+  /* ----------------------------------------------------------------------
      Boot
      -------------------------------------------------------------------- */
   function boot() {
@@ -306,11 +306,8 @@
       return;
     }
 
-    /* No explicit preference: detect country, then choose language */
-    detectCountry(function (country) {
-      var lang = resolveLang(country);
-      applyLang(lang);
-    });
+    /* No saved preference: show language selector instead of auto-detection */
+    showLanguageSelector();
   }
 
   if (document.readyState === "loading") {
