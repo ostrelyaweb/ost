@@ -231,6 +231,16 @@ const DICT = {
   "calc.ownership": { hr: "Vlasništvo vaše", en: "Fully yours" }
 };
 
+try {
+  const blogDictPath = path.join(srcDir, 'blog_dict.json');
+  if (fs.existsSync(blogDictPath)) {
+    const extraDict = JSON.parse(fs.readFileSync(blogDictPath, 'utf-8'));
+    Object.assign(DICT, extraDict);
+  }
+} catch (err) {
+  console.error("Could not load blog_dict.json:", err);
+}
+
 const PAGE_META = {
     'index.html': {
         title: { hr: 'Web stranice na mjesečne rate | OSTRELYA WEB STUDIO', en: 'Websites on monthly payments | OSTRELYA WEB STUDIO' },
