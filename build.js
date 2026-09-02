@@ -104,6 +104,23 @@ const DICT = {
   "page.contact.title": { en: "Get in touch", hr: "Recite nam o svom poslu." },
   "page.contact.sub": { en: "Send us a message or email — we reply within 24 hours.", hr: "Odgovorit ćemo s jasnim planom i točnom cijenom — bez pritiska, bez obveze." },
 
+  /* ── Blog ── */
+  "blog.hero.eyebrow": { en: "Blog", hr: "Blog" },
+  "blog.hero.title": { en: "Tips before<br/>you accept a quote.", hr: "Savjeti prije<br/>nego prihvatite ponudu." },
+  "blog.hero.sub": { en: "What to look for, what to watch out for, and how to make the right decision — before you spend money.", hr: "Što tražiti, na što paziti i kako donijeti pravu odluku — prije nego potrošite novac." },
+  "blogcard1.tag": { en: "Guide", hr: "Vodič" },
+  "blogcard1.meta": { en: "August 27, 2026 · 6 min read", hr: "27. kolovoza 2026. · 6 min čitanja" },
+  "blogcard1.title": { en: "What to know before buying a website", hr: "Što znati prije kupnje web stranice" },
+  "blogcard1.excerpt": { en: "Not sure what to look for? This guide covers everything you need to know before hiring a designer or agency.", hr: "Niste sigurni što tražiti? Ovaj vodič pokriva sve što trebate znati prije angažiranja dizajnera ili agencije." },
+  "blogcard2.tag": { en: "Pricing", hr: "Cijene" },
+  "blogcard2.meta": { en: "August 27, 2026 · 8 min read", hr: "27. kolovoza 2026. · 8 min čitanja" },
+  "blogcard2.title": { en: "How much does a website cost in 2026?", hr: "Koliko košta web stranica u 2026.?" },
+  "blogcard2.excerpt": { en: "A realistic pricing overview — from budget solutions to premium approaches. No hidden costs.", hr: "Realan pregled cijena — od budžetskih rješenja do premium pristupa. Bez skrivenih troškova." },
+  "blogcard3.tag": { en: "Maintenance", hr: "Održavanje" },
+  "blogcard3.meta": { en: "August 27, 2026 · 5 min read", hr: "27. kolovoza 2026. · 5 min čitanja" },
+  "blogcard3.title": { en: "Website maintenance — why it matters", hr: "Održavanje web stranice — zašto je bitno" },
+  "blogcard3.excerpt": { en: "A website isn't \"set it and forget it\". Why regular maintenance saves you money and headaches.", hr: "Web stranica nije \"postavi i zaboravi\". Zašto redovno održavanje štedi novac i glavobolje." },
+
   /* ── Usluge Page Details ── */
   "svc.tab.web": { en: "Web", hr: "Web" },
   "svc.tab.care": { en: "Care", hr: "Care" },
