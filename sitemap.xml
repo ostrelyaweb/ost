@@ -1,100 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Početna stranica / Homepage -->
   <url>
     <loc>https://ostrelya.com/</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/"/>
   </url>
+
+  <!-- Usluge / Services -->
   <url>
     <loc>https://ostrelya.com/usluge.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/usluge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/usluge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/usluge.html"/>
   </url>
+
+  <!-- Kontakt / Contact -->
   <url>
     <loc>https://ostrelya.com/kontakt.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/kontakt.html"/>
   </url>
+
+  <!-- Blog lista / Blog index -->
   <url>
     <loc>https://ostrelya.com/blog.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog.html"/>
   </url>
+
+  <!-- Blog članak 1 -->
   <url>
     <loc>https://ostrelya.com/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
   </url>
+
+  <!-- Blog članak 2 -->
   <url>
     <loc>https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
   </url>
+
+  <!-- Blog članak 3 -->
   <url>
     <loc>https://ostrelya.com/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
   </url>
+
+  <!-- Pravila privatnosti / Privacy Policy -->
   <url>
     <loc>https://ostrelya.com/pravila-privatnosti.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/pravila-privatnosti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/pravila-privatnosti.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/pravila-privatnosti.html"/>
   </url>
-<url>
+
+  <!-- EN: Početna stranica / Homepage -->
+  <url>
     <loc>https://ostrelya.com/en/</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/"/>
   </url>
+
+  <!-- EN: Usluge / Services -->
   <url>
     <loc>https://ostrelya.com/en/usluge.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/usluge.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/usluge.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/usluge.html"/>
   </url>
+
+  <!-- EN: Kontakt / Contact -->
   <url>
     <loc>https://ostrelya.com/en/kontakt.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/kontakt.html"/>
   </url>
+
+  <!-- EN: Blog lista / Blog index -->
   <url>
     <loc>https://ostrelya.com/en/blog.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog.html"/>
   </url>
+
+  <!-- EN: Blog članak 1 -->
   <url>
     <loc>https://ostrelya.com/en/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/%C5%A1to-znati-prije-kupnje-web-stranice.html"/>
   </url>
+
+  <!-- EN: Blog članak 2 -->
   <url>
     <loc>https://ostrelya.com/en/blog/koliko-ko%C5%A1ta-web-stranica-2026.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html"/>
   </url>
+
+  <!-- EN: Blog članak 3 -->
   <url>
     <loc>https://ostrelya.com/en/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno.html"/>
   </url>
+
+  <!-- EN: Pravila privatnosti / Privacy Policy -->
   <url>
     <loc>https://ostrelya.com/en/pravila-privatnosti.html</loc>
     <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://ostrelya.com/pravila-privatnosti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ostrelya.com/en/pravila-privatnosti.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ostrelya.com/pravila-privatnosti.html"/>
   </url>
-</urlset>
 
+</urlset>
