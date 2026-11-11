@@ -11,7 +11,7 @@ from tempfile import TemporaryDirectory
 from urllib.parse import quote, urlsplit
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from regional_site import language_suggestion, read_regions, region_routes, render_region, site_chrome
+from regional_site import read_regions, region_routes, render_region, site_chrome
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = {"/": "index.html", "/services/": "services.html", "/about/": "about.html", "/journal/": "journal.html"}
@@ -123,7 +123,7 @@ def journal_markup(root, content, article):
     return f'<div class="page-container journal-shell">{inner}</div>'
 
 
-def render_page(root, origin, path, content=None, article=None, regions=None):
+def render_page(root, origin, path, content=None, article=None):
     template = PAGES["/journal/"] if article is not None else PAGES[path]
     html = (root / template).read_text(encoding="utf-8")
     title, description, social = {
@@ -176,9 +176,6 @@ def render_page(root, origin, path, content=None, article=None, regions=None):
     start = html.index("<!-- PAGE_METADATA_START -->")
     end = html.index("<!-- PAGE_METADATA_END -->", start) + len("<!-- PAGE_METADATA_END -->")
     html = html[:start] + meta + html[end:]
-    if regions is not None and path in {"/", "/services/"}:
-        suggestion = language_suggestion(regions)
-        html = html.replace("</body>", suggestion + '\n<script src="/assets/region-language.js?v=9" defer></script>\n</body>', 1)
     return html
 
 
@@ -266,7 +263,7 @@ def build_public(root, output, origin):
     regions = read_regions(root)
     pages = {
         path.lstrip("/") + "index.html": render_page(
-            root, origin, path, {"/about/": about, "/journal/": journal}.get(path), regions=regions
+            root, origin, path, {"/about/": about, "/journal/": journal}.get(path)
         )
         for path in PAGES
     }

@@ -23,9 +23,6 @@
       "process": "Kako radimo",
       "brief": "Opišite što želite postići. U prvom razgovoru prolazimo ciljeve, sadržaj, rok i opseg."
     },
-    "prompt": "Želite li stranicu na hrvatskom?",
-    "choose": "Prikaži hrvatski",
-    "stay": "Ostani na engleskom",
     "services": {
       "web": {
         "slug": "usluge/web-dizajn",
@@ -122,9 +119,6 @@
       "process": "Kako radimo",
       "brief": "Opišite čime se bavite i šta želite da posjetioci urade na stranici."
     },
-    "prompt": "Želite li stranicu na bosanskom?",
-    "choose": "Prikaži bosanski",
-    "stay": "Ostani na ovoj stranici",
     "services": {
       "web": {
         "slug": "usluge/web-dizajn",
@@ -236,9 +230,6 @@
       "process": "Kako radimo",
       "brief": "Recite nam kome je sajt namenjen, šta želite da postignete i šta već imate spremno."
     },
-    "prompt": "Želite li stranicu na srpskom?",
-    "choose": "Prikaži srpski",
-    "stay": "Ostani na ovoj stranici",
     "services": {
       "web": {
         "slug": "usluge/izrada-sajtova",
@@ -350,9 +341,6 @@
       "process": "Kako radimo",
       "brief": "Recite nam koje usluge nudite i kako želite da vam se posjetioci jave."
     },
-    "prompt": "Želite li prikaz za Crnu Goru?",
-    "choose": "Prikaži verziju za Crnu Goru",
-    "stay": "Ostani na ovoj stranici",
     "services": {
       "web": {
         "slug": "usluge/izrada-sajtova",
@@ -464,9 +452,6 @@
       "process": "Kako delamo",
       "brief": "Opišite svojo dejavnost, cilje in okvirni rok. Na uvodnem spletnem sestanku skupaj določimo obseg."
     },
-    "prompt": "Želite stran v slovenščini?",
-    "choose": "Prikaži slovenščino",
-    "stay": "Ostani na tej strani",
     "services": {
       "web": {
         "slug": "storitve/izdelava-spletnih-strani",
@@ -578,9 +563,6 @@
       "process": "Како работиме",
       "brief": "Кажете ни што сакате да постигнете, што веќе имате и кога планирате да ја објавите страницата."
     },
-    "prompt": "Сакате ли страница на македонски?",
-    "choose": "Прикажи македонски",
-    "stay": "Остани на оваа страница",
     "services": {
       "web": {
         "slug": "uslugi/izrabotka-na-veb-stranici",
@@ -692,9 +674,6 @@
       "process": "Si punojmë",
       "brief": "Na tregoni çfarë doni të arrini, çfarë keni gati dhe kur planifikoni ta publikoni faqen."
     },
-    "prompt": "Dëshironi ta shihni faqen në shqip?",
-    "choose": "Shfaq në shqip",
-    "stay": "Qëndro në këtë faqe",
     "services": {
       "web": {
         "slug": "sherbime/krijimi-i-faqeve-te-internetit",

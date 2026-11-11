@@ -25,24 +25,6 @@ def region_routes(regions):
     }
 
 
-def language_suggestion(regions):
-    options = [
-        {"key": key, "lang": region["tag"], "href": region_path(key, region),
-         "prompt": region["prompt"], "choose": region["choose"], "stay": region["stay"]}
-        for key, region in regions.items()
-    ]
-    data = escape(json.dumps(options, ensure_ascii=False))
-    return (
-        f'<dialog class="locale-dialog" aria-labelledby="locale-prompt" data-locale-options="{data}" closedby="any">'
-        '<img class="locale-dialog-mark" src="/assets/symbol-white-small.png" alt="" width="32" height="32">'
-        '<h2 id="locale-prompt" tabindex="-1" autofocus></h2>'
-        '<div class="locale-dialog-actions"><a class="locale-dialog-primary"></a>'
-        '<button type="button" data-keep-english></button></div>'
-        '<form method="dialog"><button class="locale-dialog-close" aria-label="Close" lang="en">'
-        '<span aria-hidden="true">×</span></button></form></dialog>'
-    )
-
-
 def faq_details(questions):
     return "".join(
         f'<details class="service-accordion"><summary>{escape(question)}<span class="service-accordion-icon" aria-hidden="true"></span></summary>'
@@ -241,7 +223,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional">
   <link rel="stylesheet" href="/assets/regional.css?v=4">
-  <script src="/assets/region-language.js?v=9" defer></script>
+  <script src="/assets/region-language.js?v=10" defer></script>
   <script src="/script.js?v=clean-routes" defer></script>
 </head>
 <body id="top" class="{page_class}">

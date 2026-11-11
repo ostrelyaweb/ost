@@ -5,39 +5,18 @@
   const countryStatus = document.querySelector('[data-country-status]');
   const refreshButton = document.querySelector('[data-refresh-locale]');
   const croatian = document.documentElement.lang === 'hr';
-  const popup = document.querySelector('[data-locale-options]');
-  const options = popup ? JSON.parse(popup.dataset.localeOptions) : [];
-  const root = document.documentElement;
-  let detectedLocale = 'en';
-  let dismissed = false;
   let refreshing = false;
-  try { dismissed = sessionStorage.getItem(dismissedKey) === '1'; } catch { /* Use in-memory state. */ }
-  const read = (key) => {
-    try { return localStorage.getItem(key); } catch { return null; }
-  };
-  const write = (key, value) => {
-    try { localStorage.setItem(key, value); } catch { /* Links still work with storage disabled. */ }
-  };
-  const savedLocale = () => {
-    const prefix = `${storageKey}=`;
-    const cookie = document.cookie.split(';').map((part) => part.trim()).find((part) => part.startsWith(prefix));
-    return cookie?.slice(prefix.length) ?? read(storageKey);
-  };
   const setLocaleCookie = (locale, maxAge) => {
     if (location.protocol === 'https:') {
       document.cookie = `${storageKey}=${locale}; Path=/; Max-Age=${maxAge}; Secure; SameSite=Lax`;
     }
-  };
-  const rememberLocale = (locale) => {
-    write(storageKey, locale);
-    setLocaleCookie(locale, 31536000);
   };
 
   document.addEventListener('click', (event) => {
     if (!(event.target instanceof Element)) return;
     const link = event.target.closest('a[data-locale]');
     if (link && locales.has(link.dataset.locale)) {
-      rememberLocale(link.dataset.locale);
+      setLocaleCookie(link.dataset.locale, 31536000);
     }
   });
 
@@ -55,7 +34,7 @@
     }
   });
 
-  async function detectLocation() {
+  async function detectCountry() {
     try {
       const response = await fetch('/api/locale', {
         cache: 'no-store',
@@ -63,52 +42,11 @@
         redirect: 'error'
       });
       if (response.ok) {
-        const result = await response.json();
-        return {
-          locale: locales.has(result.locale) ? result.locale : 'en',
-          country: /^[A-Z]{2}$/.test(result.country ?? '') && !['XX', 'ZZ'].includes(result.country)
-            ? result.country : null
-        };
+        const { country } = await response.json();
+        if (/^[A-Z]{2}$/.test(country ?? '') && !['XX', 'ZZ'].includes(country)) return country;
       }
     } catch { /* The English page remains available. */ }
-    return { locale: 'en', country: null };
-  }
-
-  function showLanguageSuggestion() {
-    if (typeof popup?.showModal !== 'function' || dismissed || document.hidden ||
-        root.classList.contains('studio-intro') || document.querySelector('dialog[open]')) return;
-    const selected = options.find((item) => item.key === detectedLocale);
-    if (!selected || locales.has(savedLocale()) || new URLSearchParams(location.search).get('lang') === 'en') return;
-
-    popup.lang = selected.lang;
-    popup.querySelector('#locale-prompt').textContent = selected.prompt;
-    const action = popup.querySelector('.locale-dialog-primary');
-    action.textContent = selected.choose;
-    action.href = selected.href;
-    action.hreflang = selected.lang;
-    action.dataset.locale = selected.key;
-    popup.querySelector('[data-keep-english]').textContent = selected.stay;
-    popup.showModal();
-  }
-
-  if (popup) {
-    popup.querySelector('[data-keep-english]').addEventListener('click', () => {
-      rememberLocale('en');
-      popup.close();
-    });
-    popup.addEventListener('close', () => {
-      dismissed = true;
-      try { sessionStorage.setItem(dismissedKey, '1'); } catch { /* Use in-memory state. */ }
-    });
-
-    if (root.classList.contains('studio-intro')) {
-      const observer = new MutationObserver(() => {
-        if (root.classList.contains('studio-intro')) return;
-        observer.disconnect();
-        showLanguageSuggestion();
-      });
-      observer.observe(root, { attributeFilter: ['class'] });
-    }
+    return null;
   }
 
   function showCountry(country) {
@@ -126,14 +64,11 @@
   }
 
   async function refreshLocation() {
-    if (refreshing) return;
+    if (!countryStatus || refreshing) return;
     refreshing = true;
     if (refreshButton) refreshButton.disabled = true;
     try {
-      const result = await detectLocation();
-      detectedLocale = result.locale;
-      showCountry(result.country);
-      showLanguageSuggestion();
+      showCountry(await detectCountry());
     } finally {
       refreshing = false;
       if (refreshButton) refreshButton.disabled = false;
