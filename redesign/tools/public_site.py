@@ -177,8 +177,8 @@ def render_page(root, origin, path, content=None, article=None, regions=None):
     end = html.index("<!-- PAGE_METADATA_END -->", start) + len("<!-- PAGE_METADATA_END -->")
     html = html[:start] + meta + html[end:]
     if regions is not None and path in {"/", "/services/"}:
-        html = html.replace("<!-- LOCALE_SUGGESTION -->", language_suggestion(regions), 1)
-        html = html.replace("</body>", '<script src="/assets/region-language.js?v=8" defer></script>\n</body>', 1)
+        suggestion = language_suggestion(regions)
+        html = html.replace("</body>", suggestion + '\n<script src="/assets/region-language.js?v=9" defer></script>\n</body>', 1)
     return html
 
 

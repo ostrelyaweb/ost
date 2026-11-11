@@ -33,8 +33,13 @@ def language_suggestion(regions):
     ]
     data = escape(json.dumps(options, ensure_ascii=False))
     return (
-        f'<aside class="locale-suggestion" aria-labelledby="locale-prompt" data-locale-options="{data}" hidden>'
-        '<p id="locale-prompt"></p><div><a class="locale-suggestion-action"></a><button type="button"></button></div></aside>'
+        f'<dialog class="locale-dialog" aria-labelledby="locale-prompt" data-locale-options="{data}" closedby="any">'
+        '<img class="locale-dialog-mark" src="/assets/symbol-white-small.png" alt="" width="32" height="32">'
+        '<h2 id="locale-prompt" tabindex="-1" autofocus></h2>'
+        '<div class="locale-dialog-actions"><a class="locale-dialog-primary"></a>'
+        '<button type="button" data-keep-english></button></div>'
+        '<form method="dialog"><button class="locale-dialog-close" aria-label="Close" lang="en">'
+        '<span aria-hidden="true">×</span></button></form></dialog>'
     )
 
 
@@ -236,7 +241,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional">
   <link rel="stylesheet" href="/assets/regional.css?v=4">
-  <script src="/assets/region-language.js?v=8" defer></script>
+  <script src="/assets/region-language.js?v=9" defer></script>
   <script src="/script.js?v=clean-routes" defer></script>
 </head>
 <body id="top" class="{page_class}">

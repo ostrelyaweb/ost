@@ -5,7 +5,13 @@
   const countryStatus = document.querySelector('[data-country-status]');
   const refreshButton = document.querySelector('[data-refresh-locale]');
   const croatian = document.documentElement.lang === 'hr';
+  const popup = document.querySelector('[data-locale-options]');
+  const options = popup ? JSON.parse(popup.dataset.localeOptions) : [];
+  const root = document.documentElement;
+  let detectedLocale = 'en';
+  let dismissed = false;
   let refreshing = false;
+  try { dismissed = sessionStorage.getItem(dismissedKey) === '1'; } catch { /* Use in-memory state. */ }
   const read = (key) => {
     try { return localStorage.getItem(key); } catch { return null; }
   };
@@ -68,29 +74,41 @@
     return { locale: 'en', country: null };
   }
 
-  function showLanguageSuggestion(locale) {
-    const banner = document.querySelector('[data-locale-options]');
-    if (!banner) return;
-    const selected = JSON.parse(banner.dataset.localeOptions).find((item) => item.key === locale);
-    if (!selected || locales.has(savedLocale()) || new URLSearchParams(location.search).get('lang') === 'en') {
-      banner.hidden = true;
-      return;
-    }
+  function showLanguageSuggestion() {
+    if (typeof popup?.showModal !== 'function' || dismissed || document.hidden ||
+        root.classList.contains('studio-intro') || document.querySelector('dialog[open]')) return;
+    const selected = options.find((item) => item.key === detectedLocale);
+    if (!selected || locales.has(savedLocale()) || new URLSearchParams(location.search).get('lang') === 'en') return;
 
-    banner.lang = selected.lang;
-    banner.querySelector('p').textContent = selected.prompt;
-    const action = banner.querySelector('a');
+    popup.lang = selected.lang;
+    popup.querySelector('#locale-prompt').textContent = selected.prompt;
+    const action = popup.querySelector('.locale-dialog-primary');
     action.textContent = selected.choose;
     action.href = selected.href;
     action.hreflang = selected.lang;
     action.dataset.locale = selected.key;
-    const dismiss = banner.querySelector('button');
-    dismiss.textContent = selected.stay;
-    dismiss.onclick = () => {
+    popup.querySelector('[data-keep-english]').textContent = selected.stay;
+    popup.showModal();
+  }
+
+  if (popup) {
+    popup.querySelector('[data-keep-english]').addEventListener('click', () => {
       rememberLocale('en');
-      banner.hidden = true;
-    };
-    banner.hidden = false;
+      popup.close();
+    });
+    popup.addEventListener('close', () => {
+      dismissed = true;
+      try { sessionStorage.setItem(dismissedKey, '1'); } catch { /* Use in-memory state. */ }
+    });
+
+    if (root.classList.contains('studio-intro')) {
+      const observer = new MutationObserver(() => {
+        if (root.classList.contains('studio-intro')) return;
+        observer.disconnect();
+        showLanguageSuggestion();
+      });
+      observer.observe(root, { attributeFilter: ['class'] });
+    }
   }
 
   function showCountry(country) {
@@ -113,8 +131,9 @@
     if (refreshButton) refreshButton.disabled = true;
     try {
       const result = await detectLocation();
+      detectedLocale = result.locale;
       showCountry(result.country);
-      showLanguageSuggestion(result.locale);
+      showLanguageSuggestion();
     } finally {
       refreshing = false;
       if (refreshButton) refreshButton.disabled = false;

@@ -115,7 +115,7 @@ def update_navigation(output):
             )
             body = body.replace("</footer>", status + "</footer>", 1)
             if "/assets/region-language.js" not in body:
-                body = body.replace("</body>", '<script src="/assets/region-language.js?v=8" defer></script></body>', 1)
+                body = body.replace("</body>", '<script src="/assets/region-language.js?v=9" defer></script></body>', 1)
             page.write_text(body, encoding="utf-8")
 
     room = output / "assets/concepts/room-studio/index.html"
