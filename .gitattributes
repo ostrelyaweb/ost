@@ -1,0 +1,2 @@
+# Preserve the upstream bytes covered by the legacy pages' SRI attributes.
+deployment/vendor/*.js -text -whitespace

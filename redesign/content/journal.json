@@ -1,0 +1,29 @@
+{
+  "title": "Journal.",
+  "intro": "Notes on designing and building the web at Ostrelya.",
+  "articles": [
+    {
+      "title": "How the Ostrelya loader became the navbar",
+      "slug": "from-loading-bar-to-navbar",
+      "date": "2026-11-09",
+      "category": "Motion",
+      "summary": "The loading bar becomes the arrow in our mark, and the mark moves into the navigation. A short note on how we made the handoff.",
+      "image": "assets/hero-metal-emblem.webp",
+      "alt": "Ostrelya’s metal mark with two rings and an arrow",
+      "sections": [
+        {
+          "title": "Start with the arrow",
+          "text": "The first piece you see is a horizontal bar. As it fills, its silhouette changes into the arrow from the Ostrelya mark. The rings and the wordmark appear around it."
+        },
+        {
+          "title": "Give the mark somewhere to go",
+          "text": "The assembled mark moves from the centre of the screen to the navigation. The dark backdrop then contracts into the shape of the navbar, revealing the page around it."
+        },
+        {
+          "title": "Make the navigation respond to reading",
+          "text": "The full navigation folds into the brand and contact action when you scroll down, then opens again when you scroll up. The home page also includes a reduced-motion version of the introduction."
+        }
+      ]
+    }
+  ]
+}

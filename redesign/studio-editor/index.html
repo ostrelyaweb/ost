@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Ostrelya Studio / Urednik sadržaja</title>
+  <link rel="icon" href="../assets/symbol-dark.png">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=editorial-pages">
+  <link rel="stylesheet" href="editor.css?v=editor-account">
+  <script type="module" src="editor.js?v=studio-session"></script>
+</head>
+<body class="studio-editor">
+  <div class="editor-boot" id="editor-boot" hidden>
+    <div class="editor-boot-lockup" aria-hidden="true">
+      <div class="editor-boot-mark">
+        <img src="../assets/symbol-white.png" alt="" width="56" height="56">
+        <span class="editor-boot-track"><span id="editor-boot-fill"></span></span>
+      </div>
+      <p>Ostrelya <span>Studio Editor</span></p>
+    </div>
+    <span class="editor-sr-only" role="status">Učitavam Studio Editor…</span>
+  </div>
+  <header class="editor-top">
+    <a href="../index.html?v=editorial-pages" class="editor-logo"><img src="../assets/symbol-dark.png" alt="" width="24" height="24"> Ostrelya</a>
+    <span class="editor-top-label">Studio / Urednik sadržaja</span>
+    <div class="editor-account" id="editor-account" role="group" aria-label="Prijavljeni račun" hidden>
+      <span class="editor-account-initial" id="editor-account-initial" aria-hidden="true"></span>
+      <span class="editor-account-identity">
+        <strong id="editor-account-name" dir="auto"></strong>
+        <span>Urednik</span>
+      </span>
+      <button id="logout" type="button">Odjava</button>
+    </div>
+  </header>
+  <main class="editor-auth" id="editor-auth">
+    <section class="editor-panel" aria-labelledby="auth-title">
+      <p class="editor-label">Ostrelya Studio</p>
+      <h1 id="auth-title">Prijava urednika</h1>
+      <p id="auth-note" class="editor-status" role="status">Provjeravam sesiju…</p>
+      <form id="auth-form" method="post" hidden>
+        <label class="editor-field">Korisničko ime<input name="user" autocomplete="username" required maxlength="80"></label>
+        <label class="editor-field">Lozinka<input type="password" name="password" autocomplete="current-password" required maxlength="128"></label>
+        <button type="submit" class="editor-primary" id="auth-submit">Prijavi se</button>
+      </form>
+    </section>
+  </main>
+  <main class="editor-layout" id="editor-layout" hidden>
+    <aside class="editor-sidebar">
+      <p class="editor-label">Sadržaj weba</p>
+      <nav aria-label="Stranice za uređivanje">
+        <button type="button" data-document="about" aria-current="page">About <span>01</span></button>
+        <button type="button" data-document="journal">Journal <span>02</span></button>
+      </nav>
+      <div id="article-index" hidden></div>
+    </aside>
+    <section class="editor-work" aria-labelledby="editor-title">
+      <div class="editor-heading">
+        <div><p class="editor-label">Ostrelya Studio</p><h1 id="editor-title">About</h1></div>
+        <div class="editor-toolbar">
+          <a id="open-page" href="/about/" target="_blank" rel="noopener">Otvori stranicu ↗</a>
+          <a id="draft-preview" target="_blank" rel="noopener" hidden>Pregled nacrta ↗</a><button id="save-draft" type="button" disabled>Spremi nacrt</button><button id="publish" type="submit" form="edit-form" disabled>Objavi promjene</button>
+        </div>
+      </div>
+      <p id="editor-status" class="editor-status" role="status">Učitavam sadržaj…</p>
+      <form id="edit-form" aria-label="Uredi sadržaj"></form><section id="editor-history" aria-label="Povijest objava"></section>
+    </section>
+  </main>
+</body>
+</html>

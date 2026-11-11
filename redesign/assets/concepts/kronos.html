@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kronos — Night Shift / Crossing 01</title>
+  <meta name="description" content="Hear one night crossing in two mixes, then download three edits from the field recording.">
+  <link rel="stylesheet" href="concepts.css?v=night-shift">
+  <link rel="stylesheet" href="kronos.css?v=night-shift">
+  <script src="kronos.js?v=night-shift" defer></script>
+</head>
+<body class="kronos">
+  <header class="kr-header">
+    <a class="kr-brand" href="#scene">KRONOS<span aria-hidden="true">●</span></a>
+    <nav aria-label="Project navigation"><a href="#scene">Listen</a><a href="#recordings">Recordings</a><a href="#credits">Credits</a></nav>
+    <a href="../../index.html?project=kronos#work">↖ <span>Selected work</span></a>
+  </header>
+  <main>
+    <section class="kr-hero" id="scene" aria-labelledby="kr-title">
+      <div class="kr-intro">
+        <p class="kr-kicker"><span aria-hidden="true"></span> Field recordings / Release 01</p>
+        <h1 id="kr-title">Night <br>Shift<span>.</span></h1>
+        <p class="kr-lead">A light-rail train passes through a crossing at night. Hear the same shot with the location recording and a mix that brings the wheels and rail into the foreground.</p>
+        <a class="kr-text-link" href="#recordings">Explore the three WAV cuts <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="kr-player">
+        <div class="kr-frame">
+          <video id="kr-video" playsinline preload="metadata" poster="kronos-media/crossing.webp" data-source="kronos-media/crossing.mp4" aria-label="Light rail passing a crossing in Campbell at night"></video>
+          <div class="kr-frame-label"><span>Crossing 01</span><span>Campbell, CA / 19:16</span></div>
+          <button id="kr-play" class="kr-play" type="button" disabled><span id="kr-play-icon" aria-hidden="true">▶</span><span id="kr-play-label">Play with sound</span></button>
+        </div>
+        <div class="kr-deck">
+          <div class="kr-deck-top">
+            <div class="kr-mixes" aria-label="Sound mix">
+              <button type="button" data-mix="0" aria-pressed="true" disabled><span>A</span> Location</button>
+              <button type="button" data-mix="1" aria-pressed="false" disabled><span>B</span> Kronos mix</button>
+            </div>
+            <p id="kr-time" aria-hidden="true">00.0 / 13.4</p>
+          </div>
+          <div class="kr-wave" id="kr-wave">
+            <svg id="kr-wave-svg" viewBox="0 0 396 48" preserveAspectRatio="none" aria-hidden="true"></svg>
+            <span class="kr-playhead" aria-hidden="true"></span>
+            <input id="kr-seek" type="range" min="0" max="13.422" step=".01" value="0" aria-label="Seek in scene" disabled>
+          </div>
+          <p class="kr-deck-note" id="kr-status" role="status">Switch A / B while the scene plays. The picture stays in sync.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kr-recordings" id="recordings" aria-labelledby="kr-recordings-title">
+      <div class="kr-section-head">
+        <div><p class="kr-kicker">Crossing 01 / Sample pack</p><h2 id="kr-recordings-title">Three cuts from the crossing.</h2></div>
+        <a class="kr-download" href="kronos-media/crossing-01-wav.zip" download>Download all WAVs <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="kr-recording">
+        <span class="kr-number">01</span>
+        <div><h3>Approach</h3><p>The crossing before the first carriage reaches the camera.</p></div>
+        <audio controls preload="none" src="kronos-media/approach.wav" aria-label="Listen to Approach"></audio>
+        <a class="kr-cut-link" href="kronos-media/approach.wav" download aria-label="Download Approach WAV">WAV ↓</a>
+      </div>
+      <div class="kr-recording">
+        <span class="kr-number">02</span>
+        <div><h3>Pass-by</h3><p>The carriages run past the microphone at the crossing.</p></div>
+        <audio controls preload="none" src="kronos-media/pass-by.wav" aria-label="Listen to Pass-by"></audio>
+        <a class="kr-cut-link" href="kronos-media/pass-by.wav" download aria-label="Download Pass-by WAV">WAV ↓</a>
+      </div>
+      <div class="kr-recording">
+        <span class="kr-number">03</span>
+        <div><h3>Tail</h3><p>The last carriage clears the crossing and the street returns.</p></div>
+        <audio controls preload="none" src="kronos-media/tail.wav" aria-label="Listen to Tail"></audio>
+        <a class="kr-cut-link" href="kronos-media/tail.wav" download aria-label="Download Tail WAV">WAV ↓</a>
+      </div>
+    </section>
+
+    <footer class="kr-credits" id="credits">
+      <p>Source footage and location audio by Grendelkhan. Audio level matched for A/B playback. The Kronos mix uses EQ, compression and a short reflection from the same recording. The clip, poster and edited WAVs are shared under the original license. <a href="https://commons.wikimedia.org/wiki/File:VTA_Light_Rail_crossing_Civic_Center_Drive_at_night.gk.webm">Source recording</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+      <p>Kronos / Web and sound design study by Ostrelya.</p>
+    </footer>
+  </main>
+</body>
+</html>

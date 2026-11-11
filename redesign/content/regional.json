@@ -1,0 +1,785 @@
+{
+  "hr": {
+    "tag": "hr",
+    "label": "Hrvatska",
+    "language": "Hrvatski",
+    "market": "Hrvatska",
+    "title": "Web dizajn i vizualni identitet za tvrtke",
+    "intro": "Ostrelya je studio iz Zagreba. Dizajniramo i izrađujemo web stranice, redizajniramo postojeće i oblikujemo vizualne identitete za tvrtke i timove.",
+    "nav": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "contact": "Kontakt",
+      "languages": "Jezik i tržište",
+      "breadcrumb": "Putanja stranice"
+    },
+    "labels": {
+      "deliverables": "Što dobivate",
+      "example": "Primjer iz studija",
+      "other": "Ostale usluge",
+      "contact": "Razgovarajmo o projektu",
+      "enquiry": "Pošaljite upit",
+      "concept": "Studio koncept",
+      "process": "Kako radimo",
+      "brief": "Opišite što želite postići. U prvom razgovoru prolazimo ciljeve, sadržaj, rok i opseg."
+    },
+    "prompt": "Želite li stranicu na hrvatskom?",
+    "choose": "Prikaži hrvatski",
+    "stay": "Ostani na engleskom",
+    "services": {
+      "web": {
+        "slug": "usluge/web-dizajn",
+        "label": "Web dizajn i izrada web stranica",
+        "title": "Web dizajn i izrada web stranica u Zagrebu",
+        "intro": "Izrada web stranice po mjeri kreće od toga što posjetitelj treba razumjeti i kako će doći do upita. Zajedno određujemo strukturu, dizajn i sadržaj koji će vaš tim uređivati.",
+        "process": "Prolazimo ponudu i upite koje primate. Na prototipu provjeravamo raspored stranica i put do kontakta, zatim izrađujemo web, povezujemo uređivanje sadržaja i testiramo prikaz na mobitelu.",
+        "deliverables": [
+          "Struktura stranica i interaktivni prototip",
+          "Responzivan dizajn i razvoj weba",
+          "Uređivanje sadržaja i primopredaja"
+        ],
+        "example": "Orbit pokazuje kako arhitektonski studio može predstaviti radove i olakšati slanje upita.",
+        "meta_title": "Web dizajn i izrada web stranica | Ostrelya Zagreb",
+        "meta_description": "Izrada web stranica po mjeri za Hrvatsku i regiju. Ostrelya iz Zagreba pokriva strukturu, dizajn, razvoj, CMS i pripremu za objavu."
+      },
+      "redesign": {
+        "slug": "usluge/redizajn-web-stranica",
+        "label": "Redizajn web stranica",
+        "title": "Redizajn postojeće web stranice",
+        "intro": "Ako se ponuda promijenila ili se na webu teško snalazi, zajedno odredimo što zadržati, što pojednostavniti i što treba iznova izraditi.",
+        "process": "Prije dizajna popisujemo stranice i sadržaj koji vrijedi sačuvati. Ako se URL promijeni, pripremamo preusmjerenje. Prije objave prolazimo najvažnije stranice, obrasce i mobilni prikaz.",
+        "deliverables": [
+          "Pregled sadržaja i postojećih URL-ova",
+          "Novi raspored, vizualni smjer i prototip",
+          "Plan migracije i provjera prije objave"
+        ],
+        "example": "Na Ostrelyjinu webu redizajn spaja novi vizualni sustav, pregled radova i uređivanje sadržaja.",
+        "meta_title": "Redizajn web stranica i migracija | Ostrelya Zagreb",
+        "meta_description": "Redizajn poslovnih webova uz pregled sadržaja, prototip i plan preusmjerenja. Provjeravamo ključne stranice i obrasce prije objave.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Što se događa s postojećim stranicama i Google rezultatima?",
+            "Popisujemo važne URL-ove i sadržaj. Ako se adresa mijenja, mapiramo je na odgovarajuću novu stranicu. Nakon objave provjeravamo preusmjerenja i ključne stranice."
+          ],
+          [
+            "Trebamo li pripremiti nove tekstove i fotografije?",
+            "Zajedno označimo što vrijedi zadržati, što treba urediti i koji materijali nedostaju. Tako prije izrade znate što priprema vaš tim."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "usluge/vizualni-identitet",
+        "label": "Vizualni identitet i branding",
+        "title": "Vizualni identitet za brendove i tvrtke",
+        "intro": "Oblikujemo vizualni identitet koji možete primijeniti na webu, prezentacijama i svakodnevnim materijalima. Najprije utvrđujemo što brend treba prenijeti i kome.",
+        "process": "Smjer provjeravamo na stvarnim formatima koje koristite. Na kraju predajemo datoteke i smjernice za dosljednu uporabu logotipa, tipografije i boja.",
+        "deliverables": [
+          "Pozicioniranje i vizualni smjer",
+          "Logotip, tipografija, paleta i primjeri primjene",
+          "Smjernice i datoteke za tim"
+        ],
+        "example": "Solarium prikazuje kako se isti identitet može prenijeti s logotipa na naslovnicu izvještaja i web.",
+        "meta_title": "Vizualni identitet i branding | Ostrelya Zagreb",
+        "meta_description": "Vizualni identitet za tvrtke, od pozicioniranja do logotipa, tipografije i smjernica. Pogledajte primjer primjene na webu i dokumentima.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Što je uključeno u izradu vizualnog identiteta?",
+            "Dogovaramo vizualni smjer, logotip, tipografiju, boje i primjene koje vaš tim treba. Isporuka uključuje dogovorene datoteke i upute za uporabu."
+          ],
+          [
+            "Može li se identitet izraditi uz novi web?",
+            "Da. Prvo utvrdimo osnovna pravila identiteta, a zatim ih provjerimo na ključnim stranicama, mobilnom prikazu i materijalima koje koristite."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Web dizajn i vizualni identitet za tvrtke | Ostrelya",
+    "meta_description": "Ostrelya je studio iz Zagreba za izradu i redizajn web stranica te vizualni identitet. Pogledajte usluge, primjere rada i način suradnje."
+  },
+  "bs": {
+    "tag": "bs-BA",
+    "label": "Bosna i Hercegovina",
+    "language": "Bosanski",
+    "market": "Bosna i Hercegovina",
+    "title": "Web dizajn i vizuelni identitet za firme",
+    "intro": "Za timove iz Bosne i Hercegovine radimo dizajn i izradu web stranica, redizajn i vizuelne identitete. Razgovore, pregled dizajna i primopredaju možemo voditi online.",
+    "nav": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "contact": "Kontakt",
+      "languages": "Jezik i tržište",
+      "breadcrumb": "Putanja stranice"
+    },
+    "labels": {
+      "deliverables": "Šta dobijate",
+      "example": "Primjer iz studija",
+      "other": "Ostale usluge",
+      "contact": "Razgovarajmo o projektu",
+      "enquiry": "Pošaljite upit",
+      "concept": "Studijski koncept",
+      "process": "Kako radimo",
+      "brief": "Opišite čime se bavite i šta želite da posjetioci urade na stranici."
+    },
+    "prompt": "Želite li stranicu na bosanskom?",
+    "choose": "Prikaži bosanski",
+    "stay": "Ostani na ovoj stranici",
+    "services": {
+      "web": {
+        "slug": "usluge/web-dizajn",
+        "label": "Web dizajn i izrada web stranica",
+        "title": "Izrada web stranica za firme u BiH",
+        "intro": "Ako kupci često zovu da provjere osnovne informacije, web može jasno pokazati usluge, radove i način slanja upita.",
+        "process": "Prvo razdvojimo informacije koje kupac traži od sadržaja koji tim želi predstaviti. Nakon prototipa izrađujemo stranicu i prolazimo kako ćete sami ažurirati dogovorene dijelove.",
+        "deliverables": [
+          "Mapa sadržaja i prototip",
+          "Dizajn i razvoj za mobilne uređaje i desktop",
+          "Obuka za uređivanje stranice"
+        ],
+        "example": "Orbit je primjer kako prikaz projekata može dovesti posjetioca do kontakta.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Koliko košta izrada web stranice?",
+            "Cijena zavisi od broja predložaka, pripreme sadržaja, jezika i funkcija. Pošaljite postojeću stranicu ili spisak usluga pa zajedno određujemo opseg."
+          ],
+          [
+            "Mogu li sam uređivati sadržaj?",
+            "Kada projekt uključuje CMS, dogovaramo koje tekstove, fotografije ili radove vaš tim može objaviti samostalno. Na primopredaji prolazimo cijeli postupak."
+          ],
+          [
+            "Kako sarađujemo ako je tim u BiH?",
+            "Dogovor, prezentaciju prototipa i primopredaju možemo održati online. Na početku utvrdimo ko daje povratne informacije i ko odobrava objavu."
+          ]
+        ],
+        "meta_title": "Izrada web stranica za firme u BiH | Ostrelya",
+        "meta_description": "Web dizajn i izrada web stranice za firme u BiH. Dogovorimo sadržaj, prototip i dijelove stranice koje vaš tim može sam ažurirati."
+      },
+      "redesign": {
+        "slug": "usluge/redizajn-web-stranica",
+        "label": "Redizajn web stranica",
+        "title": "Redizajn web stranica za firme u BiH",
+        "intro": "Redizajn ima smisla kada ponuda raste, a postojeća stranica teško pokazuje razliku između usluga ili vodi do pravog kontakta.",
+        "process": "Prolazimo stranice koje posjetioci koriste, pravimo novi raspored i određujemo koje postojeće adrese treba zadržati ili preusmjeriti.",
+        "deliverables": [
+          "Pregled postojeće stranice i sadržaja",
+          "Prototip i redizajn ključnih stranica",
+          "Provjera mobilnog prikaza i preusmjerenja"
+        ],
+        "example": "Na našem webu novi pregled radova i uređivanje sadržaja dio su istog redizajna.",
+        "meta_title": "Redizajn web stranica za firme u BiH | Ostrelya",
+        "meta_description": "Redizajn weba za jasniju ponudu i lakši kontakt. Pregled postojećih stranica, novi prototip, mobilna provjera i preusmjerenja.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Šta se prenosi sa postojeće stranice?",
+            "Zajedno odlučujemo koje stranice i fotografije ostaju. Za sadržaj koji mijenja adresu pravimo plan preusmjerenja prije objave."
+          ],
+          [
+            "Možemo li zadržati postojeću domenu?",
+            "Postojeća domena se može zadržati. Prije prelaska provjeravamo pristup domeni, vezu s hostingom i uticaj na postojeću e-poštu."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "usluge/vizuelni-identitet",
+        "label": "Vizuelni identitet i brending",
+        "title": "Izrada vizuelnog identiteta za firme u BiH",
+        "intro": "Razvijamo identitet koji ostaje prepoznatljiv od prvog slajda ponude do web stranice i materijala koje priprema vaš tim.",
+        "process": "Dogovorimo poruku i smjer, zatim provjeravamo logotip, boje i tipografiju na konkretnim formatima koje koristite.",
+        "deliverables": [
+          "Vizuelni smjer i ključne poruke",
+          "Logotip, paleta, tipografija i primjene",
+          "Smjernice za korištenje identiteta"
+        ],
+        "example": "Solarium povezuje logotip i tipografiju s izgledom izvještaja i weba.",
+        "meta_title": "Izrada vizuelnog identiteta u BiH | Ostrelya",
+        "meta_description": "Vizuelni identitet za firme u BiH. Razvijamo logotip, boje i tipografiju te pokazujemo njihovu primjenu na webu i u ponudama.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Dobijamo li datoteke za web i štampu?",
+            "Dogovaramo formate prema tome gdje koristite identitet. Predajemo verzije logotipa, paletu, tipografiju i upute za dogovorene namjene."
+          ],
+          [
+            "Šta vam treba na početku?",
+            "Pošaljite postojeće materijale, opišite kupce i navedite gdje ćete koristiti identitet. Na osnovu toga biramo primjere za provjeru dizajna."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Web dizajn i vizuelni identitet za firme u BiH | Ostrelya",
+    "meta_description": "Izrada i redizajn web stranica te vizuelni identitet za timove u BiH. Ostrelya iz Zagreba vodi dogovor, pregled dizajna i primopredaju online."
+  },
+  "sr-rs": {
+    "tag": "sr-Latn-RS",
+    "label": "Srbija",
+    "language": "Srpski",
+    "market": "Srbija",
+    "title": "Web dizajn i vizuelni identitet za firme",
+    "intro": "Ostrelya je studio iz Zagreba koji sa timovima iz Srbije može da radi na izradi i redizajnu sajtova i razvoju vizuelnog identiteta. Dogovor i prezentacije vodimo onlajn.",
+    "nav": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "contact": "Kontakt",
+      "languages": "Jezik i tržište",
+      "breadcrumb": "Putanja stranice"
+    },
+    "labels": {
+      "deliverables": "Šta dobijate",
+      "example": "Primer iz studija",
+      "other": "Ostale usluge",
+      "contact": "Razgovarajmo o projektu",
+      "enquiry": "Pošaljite upit",
+      "concept": "Studijski koncept",
+      "process": "Kako radimo",
+      "brief": "Recite nam kome je sajt namenjen, šta želite da postignete i šta već imate spremno."
+    },
+    "prompt": "Želite li stranicu na srpskom?",
+    "choose": "Prikaži srpski",
+    "stay": "Ostani na ovoj stranici",
+    "services": {
+      "web": {
+        "slug": "usluge/izrada-sajtova",
+        "label": "Web dizajn i izrada sajtova",
+        "title": "Izrada sajtova i web dizajn za firme u Srbiji",
+        "intro": "Izrađujemo sajtove po meri za firme kojima je važno da posetioci lako razumeju ponudu, pronađu radove i pošalju upit.",
+        "process": "Najpre dogovorimo šta treba prikazati, pa napravimo prototip ključnih stranica. Posle izrade proveravamo navigaciju, mobilni prikaz i uređivanje sadržaja.",
+        "deliverables": [
+          "Arhitektura sajta i prototip",
+          "Responzivan dizajn i izrada sajta",
+          "Uređivanje sadržaja i obuka"
+        ],
+        "example": "Orbit pokazuje kako sajt arhitektonskog studija može da poveže radove i upit.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Koliko košta izrada sajta po meri?",
+            "Cena zavisi od broja različitih stranica, jezika, pripreme sadržaja i funkcija. Pošaljite nam postojeći sajt ili opišite ponudu i cilj, pa predlažemo obim posla."
+          ],
+          [
+            "Da li mogu samostalno da menjam sadržaj?",
+            "Ako u projekat uključimo CMS, biramo koje delove uređuje vaš tim. Na obuci prolazimo izmene teksta, fotografija i objavu dogovorenih tipova sadržaja."
+          ],
+          [
+            "Možemo li raditi na daljinu?",
+            "Da. Sastanke i pregled prototipa možemo voditi onlajn. Dogovaramo ko odobrava sadržaj i šta je potrebno pre objave."
+          ]
+        ],
+        "meta_title": "Izrada sajtova po meri u Srbiji | Ostrelya Studio",
+        "meta_description": "Web dizajn i izrada sajtova za firme u Srbiji, od strukture i prototipa do razvoja, uređivanja sadržaja i objave."
+      },
+      "redesign": {
+        "slug": "usluge/redizajn-sajta",
+        "label": "Redizajn sajta",
+        "title": "Redizajn sajta za firme u Srbiji",
+        "intro": "Kada se usluge promene ili posetioci ne nalaze sledeći korak, redizajn može da pojasni ponudu i olakša slanje upita.",
+        "process": "Pregledamo ključne stranice, sadržaj i adrese koje treba sačuvati. Pre objave proveravamo nove stranice, obrasce i preusmerenja.",
+        "deliverables": [
+          "Pregled sajta i mapa sadržaja",
+          "Prototip novih stranica",
+          "Plan prelaska i provera pre objave"
+        ],
+        "example": "Na sopstvenom sajtu smo povezali novi izgled sa pregledom radova i uređivanjem sadržaja.",
+        "meta_title": "Redizajn sajta za firme u Srbiji | Ostrelya",
+        "meta_description": "Redizajn postojećeg sajta uz pregled sadržaja, novi prototip, preusmerenja i proveru ključnih stranica i obrazaca.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Da li treba menjati sve stranice sajta?",
+            "Ne nužno. Pregledamo stranice koje donose posete i upite, pa odlučujemo šta zadržati, prepraviti ili preusmeriti."
+          ],
+          [
+            "Kako proveravate da novi sajt radi pre objave?",
+            "Prolazimo ključne stranice, navigaciju, obrasce, mobilni prikaz i preusmerenja. Dogovaramo ko potvrđuje sadržaj pre prelaska."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "usluge/vizuelni-identitet",
+        "label": "Vizuelni identitet i brending",
+        "title": "Izrada vizuelnog identiteta za firme u Srbiji",
+        "intro": "Pravimo vizuelni identitet za firme kojima treba dosledan nastup na sajtu, u ponudama i u materijalima za prodaju.",
+        "process": "Biramo smer kroz konkretne primere primene. Dogovorene elemente predajemo u formatima koji su potrebni dizajnerima i timu koji pravi materijale.",
+        "deliverables": [
+          "Pozicioniranje i vizuelni pravac",
+          "Logotip, tipografija, paleta i primene",
+          "Smernice i izvorne datoteke"
+        ],
+        "example": "Solarium pokazuje kako tipografija i vizuelni elementi funkcionišu na sajtu i u izveštaju.",
+        "meta_title": "Izrada vizuelnog identiteta u Srbiji | Ostrelya",
+        "meta_description": "Vizuelni identitet za firme u Srbiji. Logotip, tipografija, paleta i smernice za doslednu upotrebu na sajtu i u prodajnim materijalima.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Šta sve obuhvata vizuelni identitet?",
+            "Obim zavisi od primene. Dogovaramo logotip, tipografiju, boje i primere za sajt, prezentaciju ili prodajne materijale."
+          ],
+          [
+            "Mogu li da zadržim postojeći logotip?",
+            "Možemo razviti pravila oko postojećeg logotipa ako odgovara poruci i dobro radi u potrebnim formatima. Najpre ga proverimo u konkretnoj primeni."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Izrada sajtova i vizuelni identitet u Srbiji | Ostrelya",
+    "meta_description": "Ostrelya iz Zagreba radi izradu i redizajn sajtova i vizuelni identitet za firme u Srbiji. Pregled dizajna i primopredaja mogu onlajn."
+  },
+  "sr-me": {
+    "tag": "sr-Latn-ME",
+    "label": "Crna Gora",
+    "language": "Srpski (Crna Gora)",
+    "market": "Crna Gora",
+    "title": "Izrada sajtova i vizuelni identitet",
+    "intro": "Ostrelya radi sa timovima iz Crne Gore na dizajnu i izradi sajtova, redizajnu i vizuelnom identitetu. Radionice, prezentacije i primopredaju možemo održati na daljinu.",
+    "nav": {
+      "services": "Usluge",
+      "projects": "Projekti",
+      "contact": "Kontakt",
+      "languages": "Jezik i tržište",
+      "breadcrumb": "Putanja stranice"
+    },
+    "labels": {
+      "deliverables": "Šta dobijate",
+      "example": "Primjer iz studija",
+      "other": "Ostale usluge",
+      "contact": "Razgovarajmo o projektu",
+      "enquiry": "Pošaljite upit",
+      "concept": "Studijski koncept",
+      "process": "Kako radimo",
+      "brief": "Recite nam koje usluge nudite i kako želite da vam se posjetioci jave."
+    },
+    "prompt": "Želite li prikaz za Crnu Goru?",
+    "choose": "Prikaži verziju za Crnu Goru",
+    "stay": "Ostani na ovoj stranici",
+    "services": {
+      "web": {
+        "slug": "usluge/izrada-sajtova",
+        "label": "Web dizajn i izrada sajtova",
+        "title": "Izrada sajtova za firme u Crnoj Gori",
+        "intro": "Dizajniramo sajtove po mjeri za firme koje žele jasno da predstave ponudu, radove i kontakt. Ako vam trebaju sadržaji na više jezika, planiramo ih u strukturi od početka.",
+        "process": "Na prototipu provjeravamo kako posjetilac dolazi od usluge do upita. Nakon izrade prolazimo sa vašim timom šta može da uređuje sam.",
+        "deliverables": [
+          "Struktura sajta i prototip",
+          "Prilagodljiv dizajn i izrada",
+          "Uređivanje i primopredaja"
+        ],
+        "example": "Orbit je primjer portfolija koji vodi od detalja projekta do kontakta sa studiom.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Koliko košta izrada sajta?",
+            "Cijena zavisi od broja stranica, jezika, pripreme materijala i funkcija koje su vam potrebne. Pošaljite postojeći sajt ako ga imate i napišite šta želite da postignete."
+          ],
+          [
+            "Može li sajt biti na više jezika?",
+            "Da. Od početka dogovaramo koji sadržaj treba prevesti, koje verzije tim uređuje i kako posjetilac bira jezik."
+          ],
+          [
+            "Kako izgleda saradnja iz Crne Gore?",
+            "Sastanke, pregled dizajna i obuku možemo održati online. Prije izrade dogovaramo rok, materijale i odgovornosti za objavu."
+          ]
+        ],
+        "meta_title": "Izrada sajtova po mjeri u Crnoj Gori | Ostrelya",
+        "meta_description": "Web dizajn i izrada sajta po mjeri. Struktura, prilagodljiv prikaz, dogovoreni jezici i uređivanje sadržaja za firme u Crnoj Gori."
+      },
+      "redesign": {
+        "slug": "usluge/redizajn-sajta",
+        "label": "Redizajn sajta",
+        "title": "Redizajn sajta za firme u Crnoj Gori",
+        "intro": "Redizajn pomaže kada se ponuda proširila, a postojeći sajt više ne prati šta radite ili se teško koristi na telefonu.",
+        "process": "Odvajamo sadržaj koji ostaje od dijelova koje treba izmijeniti. Za promijenjene adrese planiramo preusmjerenja i provjeravamo ih prije objave.",
+        "deliverables": [
+          "Pregled sajta i sadržaja",
+          "Novi raspored i vizuelni smjer",
+          "Plan prelaska i mobilna provjera"
+        ],
+        "example": "Na Ostrelyjinom sajtu redizajn obuhvata prikaz radova i novi način uređivanja sadržaja.",
+        "meta_title": "Redizajn sajta u Crnoj Gori | Ostrelya Studio",
+        "meta_description": "Pregled postojećeg sajta, novi raspored i plan prelaska. Provjeravamo mobilni prikaz i preusmjerenja prije objave.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Može li redizajn obuhvatiti više jezika?",
+            "Da. Za svaki jezik odvojeno provjeravamo koje stranice ostaju i koje adrese se mijenjaju. Dogovaramo i ko priprema prevode."
+          ],
+          [
+            "Šta prvo pregledate na postojećem sajtu?",
+            "Pregledamo kako posjetilac dolazi do usluge i kontakta, kako sajt izgleda na telefonu i koje stranice treba sačuvati pri prelasku."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "usluge/vizuelni-identitet",
+        "label": "Vizuelni identitet i brending",
+        "title": "Vizuelni identitet za firme u Crnoj Gori",
+        "intro": "Oblikujemo identitet koji tim može koristiti na sajtu, u dokumentima i na prezentacijama. Počinjemo od namjene i publike.",
+        "process": "Provjeravamo smjer na primjerima iz vašeg rada i predajemo praktične smjernice za svakodnevnu primjenu.",
+        "deliverables": [
+          "Vizuelni smjer i ključne poruke",
+          "Logotip, tipografija i boje",
+          "Primjene i smjernice"
+        ],
+        "example": "Solarium pokazuje isti sistem na naslovnici dokumenta i na sajtu.",
+        "meta_title": "Vizuelni identitet u Crnoj Gori | Ostrelya Studio",
+        "meta_description": "Logotip, tipografija, boje i smjernice za firme u Crnoj Gori. Provjeravamo primjenu na sajtu, u dokumentima i prezentacijama.",
+        "faq_heading": "Česta pitanja",
+        "faq": [
+          [
+            "Kako provjeravate da vizuelni smjer odgovara firmi?",
+            "Prikažemo ga na materijalima koje koristite, kao što su naslovna stranica sajta, ponuda ili prezentacija. Tako možete vidjeti sistem u radu."
+          ],
+          [
+            "Šta dobijamo na primopredaji?",
+            "Predajemo dogovorene datoteke logotipa, boje, tipografiju i smjernice za upotrebu na sajtu i drugim materijalima."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Izrada sajtova i vizuelni identitet u Crnoj Gori | Ostrelya",
+    "meta_description": "Studio iz Zagreba za izradu sajtova, redizajn i vizuelni identitet za timove iz Crne Gore. Sastanke i primopredaju možemo održati online."
+  },
+  "sl": {
+    "tag": "sl-SI",
+    "label": "Slovenija",
+    "language": "Slovenščina",
+    "market": "Slovenija",
+    "title": "Izdelava spletnih strani in celostna grafična podoba",
+    "intro": "Ostrelya je studio iz Zagreba. Za naročnike iz Slovenije oblikujemo in izdelujemo spletne strani, prenavljamo obstoječa spletišča in razvijamo celostne grafične podobe.",
+    "nav": {
+      "services": "Storitve",
+      "projects": "Projekti",
+      "contact": "Kontakt",
+      "languages": "Jezik in trg",
+      "breadcrumb": "Pot strani"
+    },
+    "labels": {
+      "deliverables": "Kaj prejmete",
+      "example": "Primer iz studia",
+      "other": "Druge storitve",
+      "contact": "Pogovorimo se o projektu",
+      "enquiry": "Pošljite povpraševanje",
+      "concept": "Studijski koncept",
+      "process": "Kako delamo",
+      "brief": "Opišite svojo dejavnost, cilje in okvirni rok. Na uvodnem spletnem sestanku skupaj določimo obseg."
+    },
+    "prompt": "Želite stran v slovenščini?",
+    "choose": "Prikaži slovenščino",
+    "stay": "Ostani na tej strani",
+    "services": {
+      "web": {
+        "slug": "storitve/izdelava-spletnih-strani",
+        "label": "Izdelava spletnih strani",
+        "title": "Oblikovanje in izdelava spletnih strani po meri",
+        "intro": "Spletno stran zasnujemo okoli informacij, ki jih obiskovalec potrebuje pred povpraševanjem. Vsebino, zasnovo in razvoj načrtujemo skupaj.",
+        "process": "Najprej določimo strukturo in izdelamo prototip. Po izdelavi preverimo uporabo na telefonu in pokažemo, kako lahko sami urejate dogovorjene vsebine.",
+        "deliverables": [
+          "Struktura strani in prototip",
+          "Odzivno oblikovanje in razvoj",
+          "Urejanje vsebin in predaja"
+        ],
+        "example": "Orbit prikazuje, kako lahko arhitekturni studio predstavi projekte in obiskovalca pripelje do kontakta.",
+        "faq_heading": "Pogosta vprašanja",
+        "faq": [
+          [
+            "Koliko stane izdelava spletne strani po meri?",
+            "Cena je odvisna od števila različnih predlog, jezikov, priprave vsebine in potrebnih funkcij. Pošljite nam povezavo do obstoječe strani ali kratek opis cilja, da lahko določimo obseg."
+          ],
+          [
+            "Ali lahko vsebino urejamo sami?",
+            "Če projekt vključuje CMS, se dogovorimo, katere vsebine ureja vaša ekipa. Ob predaji pokažemo postopek za urejanje in objavo dogovorjenih vsebin."
+          ],
+          [
+            "Kako sodelovanje poteka na daljavo?",
+            "Uvodni sestanek, pregled prototipa in predajo lahko izvedemo prek spleta. Vnaprej določimo, kdo pripravi gradivo in potrdi objavo."
+          ]
+        ],
+        "meta_title": "Izdelava spletnih strani po meri | Ostrelya Studio",
+        "meta_description": "Izdelava odzivnih spletnih strani za naročnike iz Slovenije. Od strukture in prototipa do razvoja, urejanja vsebin in predaje."
+      },
+      "redesign": {
+        "slug": "storitve/prenova-spletne-strani",
+        "label": "Prenova spletne strani",
+        "title": "Prenova obstoječih spletnih strani",
+        "intro": "Ko se vaša ponudba spremeni, pregledamo, ali jo obiskovalci na obstoječi strani še vedno hitro najdejo in razumejo.",
+        "process": "Pred prenovo popišemo pomembne strani, določimo vsebine za prenos in načrtujemo preusmeritve za spremenjene naslove. Pred objavo preverimo obrazce in prikaz na telefonu.",
+        "deliverables": [
+          "Pregled vsebin in naslovov URL",
+          "Nov razpored in oblikovni prototip",
+          "Načrt prehoda in preverjanje pred objavo"
+        ],
+        "example": "Prenova strani Ostrelya povezuje nov vizualni sistem, pregled projektov in urejanje vsebin.",
+        "meta_title": "Prenova spletne strani in preusmeritve | Ostrelya",
+        "meta_description": "Prenova spletne strani s pregledom vsebin, prototipom in načrtom preusmeritev. Pred objavo preverimo obrazce in mobilni prikaz.",
+        "faq_heading": "Pogosta vprašanja",
+        "faq": [
+          [
+            "Kaj se zgodi z obstoječimi naslovi strani?",
+            "Popišemo pomembne naslove. Kjer se naslov spremeni, določimo ustrezno novo stran in pred objavo preverimo preusmeritve."
+          ],
+          [
+            "Ali lahko uporabimo obstoječe vsebine?",
+            "Da. Skupaj določimo, katere vsebine ostanejo, katere je treba urediti in katero gradivo pred prenovo še potrebujemo."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "storitve/celostna-graficna-podoba",
+        "label": "Celostna grafična podoba",
+        "title": "Oblikovanje celostne grafične podobe",
+        "intro": "Oblikujemo podobo, ki jo vaša ekipa lahko uporablja na spletu, v ponudbah in predstavitvah. Pred oblikovanjem se dogovorimo o občinstvu in sporočilu.",
+        "process": "Logotip, tipografijo in barve preizkusimo na dejanskih formatih, nato pripravimo datoteke in smernice za uporabo.",
+        "deliverables": [
+          "Oblikovna smer in ključna sporočila",
+          "Logotip, tipografija in barvna paleta",
+          "Primeri uporabe in smernice"
+        ],
+        "example": "Solarium prikazuje prenos iste podobe s spletne strani na naslovnico poročila.",
+        "meta_title": "Oblikovanje celostne grafične podobe | Ostrelya",
+        "meta_description": "Celostna grafična podoba za podjetja. Dogovor o smeri, logotip, tipografija, barve, primeri uporabe in smernice za ekipo.",
+        "faq_heading": "Pogosta vprašanja",
+        "faq": [
+          [
+            "Kaj prejme ekipa ob predaji grafične podobe?",
+            "Dogovorjene datoteke logotipa, tipografijo, barvno paleto, primere uporabe in smernice za formate, ki jih potrebujete."
+          ],
+          [
+            "Ali lahko grafično podobo povežemo z izdelavo strani?",
+            "Da. Podobo preizkusimo na ključnih spletnih straneh, pri čemer upoštevamo mobilni prikaz, čitljivost in uporabo logotipa."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Izdelava spletnih strani in grafična podoba | Ostrelya",
+    "meta_description": "Studio iz Zagreba za izdelavo in prenovo spletnih strani ter celostno grafično podobo za naročnike iz Slovenije."
+  },
+  "mk": {
+    "tag": "mk-MK",
+    "label": "Северна Македонија",
+    "language": "Македонски",
+    "market": "Северна Македонија",
+    "title": "Веб-дизајн и визуелен идентитет",
+    "intro": "Ostrelya е студио од Загреб. За тимови од Северна Македонија нудиме изработка и редизајн на веб-страници и развој на визуелен идентитет. Проектот можеме да го водиме онлајн.",
+    "nav": {
+      "services": "Услуги",
+      "projects": "Проекти",
+      "contact": "Контакт",
+      "languages": "Јазик и пазар",
+      "breadcrumb": "Патека на страницата"
+    },
+    "labels": {
+      "deliverables": "Што добивате",
+      "example": "Пример од студиото",
+      "other": "Други услуги",
+      "contact": "Да разговараме за проектот",
+      "enquiry": "Испратете барање",
+      "concept": "Студиски концепт",
+      "process": "Како работиме",
+      "brief": "Кажете ни што сакате да постигнете, што веќе имате и кога планирате да ја објавите страницата."
+    },
+    "prompt": "Сакате ли страница на македонски?",
+    "choose": "Прикажи македонски",
+    "stay": "Остани на оваа страница",
+    "services": {
+      "web": {
+        "slug": "uslugi/izrabotka-na-veb-stranici",
+        "label": "Веб-дизајн и изработка",
+        "title": "Изработка на веб-страници по мерка",
+        "intro": "Изработуваме веб-страници што јасно ги претставуваат вашите услуги и му помагаат на посетителот да испрати барање.",
+        "process": "Прво ја договараме структурата и правиме прототип. По изработката ја проверуваме страницата на мобилен телефон и покажуваме како се уредува содржината.",
+        "deliverables": [
+          "Структура и интерактивен прототип",
+          "Дизајн и изработка за различни екрани",
+          "Уредување на содржината и обука"
+        ],
+        "example": "Orbit покажува како архитектонско студио може да ги претстави проектите и да го олесни контактот.",
+        "faq_heading": "Чести прашања",
+        "faq": [
+          [
+            "Колку чини изработка на веб-страница?",
+            "Цената зависи од бројот на различни страници, јазиците, подготовката на содржината и функциите. Испратете ја постојната страница или опишете што сакате да постигнете."
+          ],
+          [
+            "Дали тимот може сам да ја уредува содржината?",
+            "Ако проектот вклучува CMS, однапред договараме кои текстови, фотографии и објави ќе ги уредува вашиот тим. При предавањето го покажуваме процесот."
+          ],
+          [
+            "Како работите со тимови од Северна Македонија?",
+            "Состаноците, прегледот на прототипот и обуката можеме да ги одржиме онлајн. На почетокот ги договараме материјалите, рокот и одобрувањето."
+          ]
+        ],
+        "meta_title": "Изработка на веб-страници по мерка | Ostrelya",
+        "meta_description": "Веб-дизајн и изработка за компании во Северна Македонија. Структура, прототип, развој и уредување на содржината."
+      },
+      "redesign": {
+        "slug": "uslugi/redizajn-na-veb-stranica",
+        "label": "Редизајн на веб-страница",
+        "title": "Редизајн на постојна веб-страница",
+        "intro": "Редизајнот помага кога понудата се променила или посетителите тешко ги наоѓаат услугите и контактот.",
+        "process": "Ги прегледуваме постојните страници и одредуваме што треба да се пренесе. За адресите што се менуваат планираме пренасочувања и ги проверуваме пред објавување.",
+        "deliverables": [
+          "Преглед на содржината и адресите",
+          "Нов распоред и прототип",
+          "План за пренос и проверка пред објавување"
+        ],
+        "example": "Редизајнот на Ostrelya ги поврзува новиот изглед, прегледот на проекти и уредувањето на содржината.",
+        "meta_title": "Редизајн на постојна веб-страница | Ostrelya",
+        "meta_description": "Преглед на постојната веб-страница, нов распоред и план за пренасочување. Ги проверуваме формуларите и мобилниот приказ пред објавување.",
+        "faq_heading": "Чести прашања",
+        "faq": [
+          [
+            "Што се случува со старите адреси?",
+            "Ги попишуваме важните адреси. За оние што се менуваат планираме пренасочување кон соодветна нова страница."
+          ],
+          [
+            "Може ли да се задржи постојната содржина?",
+            "Да. Заедно одредуваме кои текстови и фотографии остануваат и што треба да се подготви пред објавување."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "uslugi/vizuelen-identitet",
+        "label": "Визуелен идентитет",
+        "title": "Дизајн на визуелен идентитет за компании",
+        "intro": "Развиваме визуелен идентитет што тимот може да го користи на веб, во понуди и на презентации.",
+        "process": "Ја договараме пораката и ги проверуваме логото, типографијата и боите на конкретни примери. Подготвуваме датотеки и упатства за примена.",
+        "deliverables": [
+          "Визуелна насока и порака",
+          "Лого, типографија и палета",
+          "Примери и упатства за примена"
+        ],
+        "example": "Solarium покажува како истиот идентитет се применува на веб и на насловна страница на извештај.",
+        "meta_title": "Дизајн на визуелен идентитет | Ostrelya Studio",
+        "meta_description": "Визуелен идентитет за компании. Подготвуваме лого, типографија, палета, примери и упатства за секојдневна примена.",
+        "faq_heading": "Чести прашања",
+        "faq": [
+          [
+            "Што се добива при предавањето?",
+            "Ги предаваме договорените датотеки за логото, типографијата и боите, заедно со примери и упатства за примена."
+          ],
+          [
+            "Може ли идентитетот да се поврзе со изработка на веб-страница?",
+            "Да. Визуелната насока ја проверуваме на клучните страници и на мобилен приказ за да видите како функционира на веб."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Веб-дизајн и визуелен идентитет | Ostrelya Studio",
+    "meta_description": "Студио од Загреб за изработка и редизајн на веб-страници и визуелен идентитет. Работиме онлајн со тимови од Северна Македонија."
+  },
+  "sq": {
+    "tag": "sq",
+    "label": "Kosovë",
+    "language": "Shqip",
+    "market": "Kosovë",
+    "title": "Dizajn webi dhe identitet vizual",
+    "intro": "Ostrelya është një studio nga Zagrebi. Për ekipe në Kosovë krijojmë faqe interneti, ridizajnojmë faqe ekzistuese dhe zhvillojmë identitete vizuale. Projektin mund ta zhvillojmë në distancë.",
+    "nav": {
+      "services": "Shërbimet",
+      "projects": "Projektet",
+      "contact": "Kontakti",
+      "languages": "Gjuha dhe tregu",
+      "breadcrumb": "Shtegu i faqes"
+    },
+    "labels": {
+      "deliverables": "Çfarë përfitoni",
+      "example": "Shembull nga studioja",
+      "other": "Shërbime të tjera",
+      "contact": "Të flasim për projektin",
+      "enquiry": "Dërgoni një kërkesë",
+      "concept": "Koncept i studios",
+      "process": "Si punojmë",
+      "brief": "Na tregoni çfarë doni të arrini, çfarë keni gati dhe kur planifikoni ta publikoni faqen."
+    },
+    "prompt": "Dëshironi ta shihni faqen në shqip?",
+    "choose": "Shfaq në shqip",
+    "stay": "Qëndro në këtë faqe",
+    "services": {
+      "web": {
+        "slug": "sherbime/krijimi-i-faqeve-te-internetit",
+        "label": "Dizajn dhe krijim faqesh interneti",
+        "title": "Krijim faqesh interneti për biznese në Kosovë",
+        "intro": "Krijojmë faqe interneti sipas nevojave të biznesit, me një prezantim të qartë të shërbimeve dhe një mënyrë të thjeshtë për të dërguar kërkesa.",
+        "process": "Fillimisht përcaktojmë strukturën dhe provojmë rrjedhën në një prototip. Pas zhvillimit testojmë faqen në telefon dhe ju tregojmë si të përditësoni përmbajtjen.",
+        "deliverables": [
+          "Strukturë dhe prototip interaktiv",
+          "Dizajn dhe zhvillim për ekrane të ndryshme",
+          "Redaktim i përmbajtjes dhe trajnim"
+        ],
+        "example": "Orbit tregon si mund t’i prezantojë projektet një studio arkitekture dhe ta bëjë më të lehtë kontaktin.",
+        "faq_heading": "Pyetje të shpeshta",
+        "faq": [
+          [
+            "Sa kushton krijimi i një faqeje interneti?",
+            "Çmimi varet nga numri i faqeve, gjuhët, përgatitja e përmbajtjes dhe funksionet. Na dërgoni faqen ekzistuese ose një përshkrim të qëllimit, që të përcaktojmë punën."
+          ],
+          [
+            "A mund ta përditësojmë vetë përmbajtjen?",
+            "Kur projekti përfshin CMS, përcaktojmë se cilat tekste, fotografi dhe artikuj mund t’i përditësojë ekipi juaj. Në fund shpjegojmë si bëhet publikimi."
+          ],
+          [
+            "Si bashkëpunojmë nga Kosova?",
+            "Takimet, rishikimin e prototipit dhe trajnimin mund t’i bëjmë në distancë. Në fillim caktojmë afatin dhe kush i përgatit e miraton materialet."
+          ]
+        ],
+        "meta_title": "Krijim faqesh interneti për biznese në Kosovë | Ostrelya",
+        "meta_description": "Dizajn dhe zhvillim faqesh interneti për biznese në Kosovë, me strukturë, prototip, testim në telefon dhe redaktim të përmbajtjes."
+      },
+      "redesign": {
+        "slug": "sherbime/ridizajnim-faqeje",
+        "label": "Ridizajnim i faqes së internetit",
+        "title": "Ridizajnim i faqeve të internetit në Kosovë",
+        "intro": "Kur oferta juaj ndryshon ose faqja është e vështirë për t’u përdorur në telefon, rishikojmë strukturën dhe përmbajtjen e saj.",
+        "process": "Identifikojmë faqet që duhet të ruhen dhe planifikojmë ridrejtimet kur ndryshojnë adresat. Para publikimit kontrollojmë lidhjet, formularët dhe pamjen në telefon.",
+        "deliverables": [
+          "Analizë e faqes dhe e adresave ekzistuese",
+          "Strukturë e re dhe prototip",
+          "Plan kalimi dhe kontroll para publikimit"
+        ],
+        "example": "Ridizajnimi i Ostrelya bashkon pamjen e re, prezantimin e projekteve dhe redaktimin e përmbajtjes.",
+        "meta_title": "Ridizajnim i faqeve të internetit në Kosovë | Ostrelya",
+        "meta_description": "Rishikim i përmbajtjes, prototip dhe plan ridrejtimesh. Kontrollojmë lidhjet, formularët dhe pamjen në telefon para publikimit.",
+        "faq_heading": "Pyetje të shpeshta",
+        "faq": [
+          [
+            "Çfarë ndodh me adresat e vjetra?",
+            "Regjistrojmë adresat e rëndësishme. Nëse një adresë ndryshon, planifikojmë ridrejtimin te faqja e re përkatëse."
+          ],
+          [
+            "A mund ta ruajmë përmbajtjen ekzistuese?",
+            "Po. Përcaktojmë bashkë cilat tekste e fotografi mbeten dhe cilat materiale duhen përgatitur para publikimit."
+          ]
+        ]
+      },
+      "brand": {
+        "slug": "sherbime/identitet-vizual",
+        "label": "Identitet vizual",
+        "title": "Dizajn i identitetit vizual për biznese në Kosovë",
+        "intro": "Zhvillojmë identitete vizuale që mund të përdoren në faqe interneti, oferta dhe prezantime. Puna fillon me përcaktimin e audiencës dhe mesazhit.",
+        "process": "Logon, tipografinë dhe ngjyrat i provojmë në formatet që përdorni. Në fund përgatisim skedarët dhe udhëzimet për ekipin.",
+        "deliverables": [
+          "Drejtim vizual dhe mesazhe kryesore",
+          "Logo, tipografi dhe paletë ngjyrash",
+          "Shembuj zbatimi dhe udhëzime"
+        ],
+        "example": "Solarium tregon si i njëjti identitet zbatohet në faqen e internetit dhe në kopertinën e një raporti.",
+        "meta_title": "Dizajn i identitetit vizual në Kosovë | Ostrelya",
+        "meta_description": "Identitet vizual për biznese në Kosovë. Përgatisim logon, tipografinë, paletën e ngjyrave dhe udhëzimet për ekipin.",
+        "faq_heading": "Pyetje të shpeshta",
+        "faq": [
+          [
+            "Çfarë i dorëzohet ekipit?",
+            "Dorëzojmë skedarët e dakorduar të logos, tipografinë, ngjyrat dhe udhëzimet për formatet ku do të përdorni identitetin."
+          ],
+          [
+            "A mund të përdoret identiteti në një faqe të re?",
+            "Po. E provojmë drejtimin vizual në faqet kryesore dhe në telefon, në mënyrë që ekipi të shohë si funksionon në web."
+          ]
+        ]
+      }
+    },
+    "meta_title": "Dizajn webi dhe identitet vizual në Kosovë | Ostrelya",
+    "meta_description": "Studio nga Zagrebi për krijim dhe ridizajnim faqesh interneti dhe identitet vizual. Punojmë në distancë me ekipe në Kosovë."
+  }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vanguard / Room Studio</title>
+  <meta name="description" content="Design a hotel lobby in an interactive 3D room editor.">
+  <link rel="stylesheet" href="../concepts.css?v=wave-01">
+  <link rel="stylesheet" href="room.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script>
+  <script type="module" src="room.js?v=local-save"></script>
+</head>
+<body class="room-studio">
+  <header class="room-header">
+    <a class="room-brand" href="../vanguard.html?v=room-studio">VANGUARD<span>///</span><small>Room Studio</small></a>
+    <a href="../../../index.html?project=vanguard#work">↖ Selected work</a>
+  </header>
+  <main class="room-main">
+    <div class="room-intro">
+      <div><p class="room-label">Vanguard / Spatial design tool</p><h1>Room Studio<span>.</span></h1></div>
+      <p>Make the lobby yours. Arrange furniture, put up a partition and see how Wave 01 works with the rest of the room.</p>
+    </div>
+    <div class="room-toolbar">
+      <div><i aria-hidden="true"></i><strong>Hotel lobby</strong><small>10 × 8 m</small></div>
+      <div aria-label="Room actions"><button id="undo" type="button" disabled>↶ Undo</button><button id="redo" type="button" disabled>↷ Redo</button><button id="reset" type="button" disabled>Reset</button><button id="save" type="button" disabled>Save in this browser</button></div>
+    </div>
+    <div class="room-workspace">
+      <section class="room-view" aria-labelledby="view-title">
+        <div class="room-view-head">
+          <div><p class="room-label">01 / Workspace</p><h2 id="view-title">Lobby preview</h2></div>
+          <div class="room-switch" aria-label="View mode">
+            <button id="mode-3d" type="button" aria-pressed="false" disabled>3D view</button>
+            <button id="mode-plan" type="button" aria-pressed="true">Floor plan</button>
+          </div>
+        </div>
+        <div class="room-stage">
+          <div id="scene-3d" hidden></div>
+          <svg id="plan" viewBox="-5.7 -4.7 11.4 9.4" role="img" aria-label="Top-down room layout. Use the object list and position fields to edit without dragging.">
+            <defs><pattern id="grid" width=".5" height=".5" patternUnits="userSpaceOnUse"><path d="M .5 0 L 0 0 0 .5" fill="none" stroke="#474436" stroke-opacity=".23" stroke-width=".015"/></pattern></defs>
+            <rect id="plan-floor" x="-5" y="-4" width="10" height="8" fill="#b49d81"/>
+            <rect x="-5" y="-4" width="10" height="8" fill="url(#grid)" pointer-events="none"/>
+            <g id="plan-items"></g>
+          </svg>
+          <span class="room-axis" aria-hidden="true">N ↑</span>
+          <button id="camera-reset" type="button" hidden>Reset camera</button>
+        </div>
+        <p id="view-help" class="room-help">Drag objects to move them. Use the properties panel for exact placement.</p>
+      </section>
+      <aside class="room-panel room-catalog" aria-labelledby="catalog-title">
+        <p class="room-label">02 / Library</p><h2 id="catalog-title">Add to room</h2>
+        <label for="category">Category</label><select id="category"></select>
+        <div id="catalog" class="room-catalog-list"></div>
+        <div class="room-scene-list">
+          <label for="objects">Objects in this room</label><select id="objects"><option value="">Select an object</option></select>
+          <p id="object-count"></p>
+        </div>
+      </aside>
+      <aside class="room-panel room-inspector" aria-labelledby="inspector-title">
+        <p class="room-label">03 / Properties</p><h2 id="inspector-title">Room settings</h2>
+        <div class="room-fields room-environment">
+          <label>Floor finish<select id="floor"></select></label>
+          <label>Room lighting<select id="light"></select></label>
+        </div>
+        <div class="room-selection">
+          <div class="room-selection-head"><h3 id="selection-title">Object properties</h3><button id="deselect" type="button" hidden>Clear selection</button></div>
+          <p id="selection-help">Select an object in the room or from the object list to change its design, finish and position.</p>
+          <div id="object-editor" hidden>
+            <div class="room-fields">
+              <label>Design<select id="variant"></select></label>
+              <label>Finish<select id="finish"></select></label>
+            </div>
+            <div class="room-fields room-position">
+              <label>X (m)<input id="x" type="number" step="0.1" min="-5" max="5"></label>
+              <label>Y (m)<input id="z" type="number" step="0.1" min="-4" max="4"></label>
+              <label>Angle (°)<input id="angle" type="number" step="15" min="0" max="359"></label>
+            </div>
+            <div id="wall-fields" class="room-fields" hidden>
+              <label>Wall width (m)<input id="width" type="number" step="0.1" min="0.6" max="10"></label>
+              <label>Wall height (m)<input id="height" type="number" step="0.1" min="1" max="4"></label>
+            </div>
+            <label id="lamp-field" class="room-lamp-field" hidden><input id="lamp" type="checkbox"> Light switched on</label>
+            <div class="room-actions"><button id="rotate" type="button">Rotate 45°</button><button id="duplicate" type="button">Duplicate</button><button id="remove" type="button">Remove</button></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="room-footer"><span id="status" role="status">Preparing room…</span><a data-preview-privacy href="/privacy/#cookies">Browser storage and privacy</a></footer>
+    <noscript><p>Enable JavaScript to edit this room.</p></noscript>
+  </main>
+</body>
+</html>

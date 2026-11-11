@@ -1,0 +1,25 @@
+# Test screenshots & previews
+preview-*.png
+redesign-*.png
+test_*.png
+responsive_*.png
+verify_*.png
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+node_modules/
+.studio-private/
+.wrangler/
+__pycache__/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/gcm-diagnose.log
+/admin/
+/public-build/

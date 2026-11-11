@@ -1,0 +1,11 @@
+KRONOS / NIGHT SHIFT
+Crossing 01 — Three WAV cuts
+
+Original video and location recording
+Grendelkhan, "VTA Light Rail crossing Civic Center Drive at night.gk.webm"
+https://commons.wikimedia.org/wiki/File:VTA_Light_Rail_crossing_Civic_Center_Drive_at_night.gk.webm
+
+Original and these edited excerpts: CC BY-SA 4.0
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Changes: excerpts, level normalization, short fades and conversion to mono PCM WAV.

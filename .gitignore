@@ -3,6 +3,9 @@ dist/
 
 # Node
 node_modules/
+.wrangler/
+__pycache__/
+.ostrelya-build-*/
 
 # Build output / previews (not deployable)
 output/

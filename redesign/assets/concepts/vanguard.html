@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vanguard — Wave 01 Modular Wall System</title>
+  <meta name="description" content="Explore Wave 01, a concept for a modular sculptural wall system, and configure its profile, finish and width.">
+  <link rel="stylesheet" href="concepts.css?v=wave-01">
+  <script src="concepts.js?v=wave-01" defer></script>
+</head>
+<body class="vanguard">
+  <header class="concept-nav">
+    <a class="concept-brand vanguard-brand" href="#top">VANGUARD<span aria-hidden="true">///</span></a>
+    <nav aria-label="Product navigation"><a href="#top">Wave 01</a><a href="#product">Configurator</a><a href="room-studio/index.html">Room Studio ↗</a></nav>
+    <a class="concept-back" href="../../index.html?project=vanguard#work">↖ <span>Selected work</span></a>
+  </header>
+  <main id="top">
+    <section class="concept-wrap vanguard-hero" aria-labelledby="vanguard-title">
+      <div class="vanguard-hero-copy">
+        <p class="concept-index">Vanguard / Interior systems / 001</p>
+        <h1 id="vanguard-title">Wave 01<span>.</span></h1>
+        <p>A modular wall system made of sculpted vertical fins. Line up the panels to turn a flat wall into one continuous relief.</p>
+        <a class="concept-button" href="room-studio/index.html">Open Room Studio <span aria-hidden="true">↗</span></a> <a class="concept-button" href="#product">Configure Wave 01 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="vanguard-hero-image">
+        <img src="../project-2.jpg" alt="Floor-to-ceiling white fins form a continuous wave along a sunlit lobby wall" width="1200" height="896" fetchpriority="high">
+        <figcaption><span>Fig. 01 / Lobby installation concept</span><span>Flow profile / Chalk</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="concept-wrap vanguard-config" id="product" aria-labelledby="config-title">
+      <div class="vanguard-config-intro">
+        <div><p class="concept-index">01 / Interactive specification</p><h2 id="config-title">Build your wall.</h2></div>
+        <p>Start with a 4.8&nbsp;m reception wall. Change the fin profile, finish or number of modules to see what you’d present to the client.</p>
+      </div>
+
+      <div class="vanguard-studio">
+        <div class="vanguard-viewport">
+          <div class="vanguard-viewport-label"><span>VG / W01</span><span>Front elevation</span></div>
+          <div class="vanguard-stage">
+            <div class="vanguard-elevation" id="vanguard-elevation">
+              <svg id="vanguard-wall" role="img" aria-labelledby="vanguard-wall-title" viewBox="0 0 480 270">
+                <title id="vanguard-wall-title">Flow profile in Chalk, 4.8 metres wide</title>
+                <defs>
+                  <linearGradient id="vanguard-rib-light">
+                    <stop offset="0" stop-color="var(--rib-shadow, #878477)"/>
+                    <stop offset=".36" stop-color="var(--rib-face, #d4cfc1)"/>
+                    <stop offset=".63" stop-color="var(--rib-edge, #fcf8ed)"/>
+                    <stop offset="1" stop-color="var(--rib-shadow, #878477)"/>
+                  </linearGradient>
+                  <linearGradient id="vanguard-wall-light" x2="0" y2="1">
+                    <stop offset="0" stop-color="#000" stop-opacity=".21"/>
+                    <stop offset=".32" stop-color="#000" stop-opacity="0"/>
+                    <stop offset=".76" stop-color="#000" stop-opacity="0"/>
+                    <stop offset="1" stop-color="#000" stop-opacity=".29"/>
+                  </linearGradient>
+                </defs>
+                <rect width="100%" height="100%" fill="var(--rib-base, #a9a598)"/>
+                <g id="vanguard-ribs" fill="url(#vanguard-rib-light)"></g>
+                <rect width="100%" height="100%" fill="url(#vanguard-wall-light)"/>
+              </svg>
+              <div class="vanguard-dimension" aria-hidden="true"><span id="vanguard-dimension">4.8 m</span></div>
+            </div>
+          </div>
+          <div class="vanguard-viewport-label vanguard-viewport-bottom"><span>Concept elevation</span><span>Module height / 2.7 m</span></div>
+        </div>
+
+        <form class="vanguard-controls" id="vanguard-controls">
+          <fieldset>
+            <legend><span>01</span> Fin profile</legend>
+            <div class="vanguard-options">
+              <label><input type="radio" name="profile" value="flow" checked><span>Flow<small>Broad wave</small></span></label>
+              <label><input type="radio" name="profile" value="ripple"><span>Ripple<small>Rhythmic folds</small></span></label>
+              <label><input type="radio" name="profile" value="line"><span>Line<small>Straight fins</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span>02</span> Finish</legend>
+            <div class="vanguard-options vanguard-finishes">
+              <label><input type="radio" name="finish" value="chalk" checked><span><i class="vanguard-chip chalk" aria-hidden="true"></i>Chalk</span></label>
+              <label><input type="radio" name="finish" value="sand"><span><i class="vanguard-chip sand" aria-hidden="true"></i>Sand</span></label>
+              <label><input type="radio" name="finish" value="graphite"><span><i class="vanguard-chip graphite" aria-hidden="true"></i>Graphite</span></label>
+            </div>
+          </fieldset>
+          <div class="vanguard-range">
+            <label for="vanguard-modules"><span>03</span> Wall width</label>
+            <output id="vanguard-width" for="vanguard-modules">4.8 m</output>
+            <input id="vanguard-modules" type="range" min="4" max="12" value="8" step="1">
+            <div><span>2.4 m</span><span>7.2 m</span></div>
+          </div>
+          <div class="vanguard-selection">
+            <p id="vanguard-selection" aria-live="polite">8 modules · 600 × 2,700 mm each</p>
+            <button type="button" id="vanguard-download" disabled>Download concept spec <span aria-hidden="true">↓</span></button>
+          </div>
+        </form>
+      </div>
+      <noscript><p>Enable JavaScript to configure the wall and download your selection.</p></noscript>
+    </section>
+
+    <section class="concept-wrap vanguard-applications" id="applications" aria-labelledby="applications-title">
+      <div>
+        <p class="concept-index">02 / Applications</p>
+        <h2 id="applications-title">Give the room a focal point.</h2>
+        <p>For architects and interior designers planning a reception backdrop, a hotel lobby or a showroom. The repeated fins cast shadows across the wall as the light changes.</p>
+      </div>
+      <dl>
+        <div><dt>01 / Measure the wall</dt><dd>Use the available width behind the reception desk to decide how many 600&nbsp;mm modules fit.</dd></div>
+        <div><dt>02 / Choose the relief and finish</dt><dd>Try a broad Flow wave for the main lobby wall or a straight Line profile for a quieter backdrop.</dd></div>
+        <div><dt>03 / Share the selection</dt><dd>Download the chosen profile, finish and dimensions for the project brief.</dd></div>
+      </dl>
+    </section>
+  </main>
+  <footer class="concept-footer"><span>Vanguard · Fictional product and web configurator by Ostrelya</span><a href="../../index.html?project=vanguard#work">Back to Selected Work ↗</a></footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "eyebrow": "Independent studio / Zagreb",
+  "title": "Design with direction.",
+  "intro": "Ostrelya is an independent web design and development studio in Zagreb. We design brand identities and build websites that make it easier for people to understand what you do.",
+  "image": "assets/hero-metal-emblem.webp",
+  "alt": "Ostrelya’s polished metal studio mark",
+  "sections": [
+    {
+      "eyebrow": "01 / Our approach",
+      "title": "Start with what matters.",
+      "text": "Before we decide what a page looks like, we ask who it is for and what they need to do there. That gives us a way to decide what belongs on the page, what comes first and where a visitor should go next."
+    },
+    {
+      "eyebrow": "02 / The work",
+      "title": "Design and development in the same room.",
+      "text": "We work from positioning and identity through to the live website. We test key screens on small and large devices and build editing tools around the pages a team actually updates."
+    }
+  ]
+}

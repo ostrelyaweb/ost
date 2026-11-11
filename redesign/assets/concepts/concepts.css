@@ -1,0 +1,308 @@
+@import url("/assets/regional-fonts.css?v=1");
+
+:root {
+  --display: "Space Grotesk", Arial, sans-serif;
+  --body: "Manrope", Arial, sans-serif;
+  --gutter: clamp(1rem, 5vw, 5rem);
+  scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+body, h1, h2, h3, p, figure, ol, ul, fieldset { margin: 0; }
+body { background: var(--paper); color: var(--ink); font: 500 1rem/1.55 var(--body); }
+img { display: block; width: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: .25em; }
+:focus-visible { outline: 2px solid var(--focus, currentColor); outline-offset: 4px; }
+section[id] { scroll-margin-top: 2rem; }
+
+.concept-wrap { width: min(100%, 100rem); margin-inline: auto; padding-inline: var(--gutter); }
+.concept-nav, .concept-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem 1.5rem;
+  padding: .95rem var(--gutter);
+  border-block-end: 1px solid var(--rule);
+}
+.concept-nav nav { display: flex; gap: clamp(.8rem, 2.5vw, 2.4rem); font-size: .85rem; }
+.concept-brand { font: 700 clamp(1.1rem, 2.5vw, 1.6rem)/1 var(--display); letter-spacing: -.05em; }
+.concept-brand span:not(.orbit-mark), .solarium-wordmark strong span { font-size: .5em; vertical-align: super; margin-inline-start: .18em; }
+.concept-back, .concept-footer { font-size: .8rem; }
+.concept-back { flex-shrink: 0; }
+.concept-footer { border-block-start: 1px solid var(--rule); border-block-end: 0; margin-top: clamp(2.5rem, 5vw, 5.5rem); }
+.concept-index, figcaption { font-size: .73rem; letter-spacing: .07em; font-weight: 800; text-transform: uppercase; }
+.concept-index { margin-bottom: 1rem; color: var(--secondary, var(--ink)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; }
+h1 { font-size: clamp(3rem, 8.3vw, 8.2rem); line-height: .91; letter-spacing: -.078em; }
+h2 { font-size: clamp(2.2rem, 4.8vw, 5.4rem); line-height: .95; letter-spacing: -.065em; }
+.concept-button {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 1.15rem;
+  margin-top: 1.5rem;
+  padding: .72rem 1rem;
+  border: 1px solid var(--ink);
+  border-radius: 4px;
+  font-size: .83rem;
+  font-weight: 800;
+}
+.concept-button span { transition: transform .24s ease; }
+.concept-button:hover span { transform: translate(.18em, -.15em); }
+.concept-section {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.4fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  margin-top: clamp(3.3rem, 8vw, 8rem);
+}
+.concept-section-intro { border-top: 1px solid var(--rule); padding-top: 1.2rem; }
+.concept-section-intro > p:last-child { max-width: 35ch; margin-top: 1.1rem; }
+
+.solarium { --paper: #f3f2e8; --ink: #1b211e; --rule: #cacac0; --secondary: #4d5a47; --solar: #e3fa58; }
+.solarium-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .95fr);
+  align-items: center;
+  gap: clamp(1.8rem, 4vw, 4rem);
+  padding-block: clamp(2.8rem, 6vw, 6.5rem) 0;
+}
+.solarium-copy > p:not(.concept-index) { margin-top: 1.4rem; max-width: 31ch; }
+.solarium .concept-button { background: var(--solar); }
+.solarium-cover { position: relative; overflow: hidden; background: #252925; }
+.solarium-cover img { height: clamp(15rem, 44vw, 42rem); }
+.solarium-mark { position: absolute; inset: 18% auto auto 11%; width: 46%; color: var(--solar); mix-blend-mode: screen; }
+.solarium-cover figcaption { position: absolute; inset: auto 1rem 1rem; color: var(--solar); }
+.solarium-wordmark { min-height: clamp(8.5rem, 21vw, 15rem); padding: 1.05rem; background: var(--solar); }
+.solarium-wordmark strong { display: block; margin-block: .65rem; font: 700 clamp(2.5rem, 7vw, 6.5rem)/1 var(--display); letter-spacing: -.09em; }
+.solarium-system ul { display: grid; grid-template-columns: repeat(3, 1fr); padding: 0; list-style: none; }
+.solarium-system li { display: grid; align-content: space-between; gap: 1rem; padding: .65rem; background: var(--solar); font-size: .78rem; }
+.solarium-system li:nth-child(2) { color: #fff; background: var(--ink); }
+.solarium-system li:nth-child(3) { border: 1px solid var(--rule); background: var(--paper); }
+.solarium-system li span { font: .72rem ui-monospace, monospace; }
+.report-scene { display: grid; justify-items: center; gap: .8rem; padding: clamp(1rem, 4vw, 3rem); background: #deded1; }
+.report-cover {
+  position: relative;
+  display: grid;
+  align-content: space-between;
+  aspect-ratio: 3 / 4;
+  width: min(54%, 17rem);
+  min-width: min(100%, 12rem);
+  padding: 1rem;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--solar);
+  box-shadow: 14px 16px 25px #1b211e40;
+}
+.report-cover strong { z-index: 1; font: 700 clamp(1.8rem, 5vw, 3.6rem)/.9 var(--display); letter-spacing: -.075em; }
+.report-cover span { z-index: 1; font-size: .72rem; }
+.report-cover svg { position: absolute; width: 80%; inset: auto -17% -15% auto; opacity: .55; }
+.solarium-applications { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(.6rem, 1.5vw, 1.4rem); }
+.solarium-applications .report-scene { container-type: inline-size; align-content: center; padding: clamp(.6rem, 2vw, 1.6rem); }
+.solarium-applications .report-cover { width: 100%; max-width: 15rem; min-width: 0; padding: clamp(.55rem, 6cqi, 1rem); }
+.solarium-applications .report-cover strong { font-size: clamp(1.02rem, 15cqi, 2.8rem); }
+.solarium-applications .report-cover span { font-size: clamp(.5rem, 6cqi, .72rem); }
+.solarium-applications figcaption { text-align: center; }
+.poster-scene { background: #d9ddc3; }
+.solarium-poster { background: var(--solar); color: var(--ink); }
+.solarium-poster svg { inset: 17% auto auto 47%; width: 72%; opacity: .6; }
+
+.vanguard {
+  --paper: #eae8e0;
+  --ink: #171a17;
+  --rule: #babbb0;
+  --secondary: #4e554a;
+  --focus: #607327;
+  --vanguard-accent: #dcf481;
+  --technical: "SFMono-Regular", Consolas, monospace;
+}
+.vanguard .concept-nav { background: var(--paper); }
+.vanguard-brand { display: inline-flex; align-items: start; gap: .24em; letter-spacing: -.08em; }
+.vanguard-brand span { color: #4d5d20; letter-spacing: -.15em; }
+.vanguard-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.35rem, 4vw, 4.2rem);
+  padding-block: clamp(2rem, 6vw, 5.6rem) clamp(2.6rem, 6vw, 5rem);
+}
+.vanguard-hero h1 { font-size: clamp(3.75rem, 10.5vw, 10.2rem); white-space: nowrap; }
+.vanguard-hero h1 span { color: #586528; }
+.vanguard-hero-copy > p:not(.concept-index) { max-width: 29ch; margin-top: 1.25rem; font-size: clamp(1rem, 1.7vw, 1.38rem); line-height: 1.4; }
+.vanguard .concept-button { border-color: var(--ink); background: var(--ink); color: var(--vanguard-accent); border-radius: 0; }
+.vanguard .concept-button:hover { text-decoration: none; background: #333b2d; }
+.vanguard-hero-image { min-width: 0; }
+.vanguard-hero-image img { width: 100%; height: auto; aspect-ratio: 1.28; object-position: 46% 53%; }
+.vanguard-hero-image figcaption,
+.vanguard-viewport-label {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  font: 500 .68rem/1.35 var(--technical);
+  text-transform: uppercase;
+  letter-spacing: .025em;
+}
+.vanguard-hero-image figcaption { padding-block: .6rem; border-bottom: 1px solid var(--rule); }
+.vanguard-config-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem 2rem;
+  padding-block: 1.15rem;
+  border-top: 1px solid var(--rule);
+}
+.vanguard-config-intro > p, .vanguard-applications p:not(.concept-index) { max-width: 38ch; color: var(--secondary); }
+.vanguard-studio {
+  display: grid;
+  grid-template-columns: minmax(0, 1.85fr) minmax(18rem, 1fr);
+  border: 1px solid #292f28;
+  background: #20251f;
+  color: #f0f2e8;
+}
+.vanguard-studio :focus-visible { outline-color: var(--vanguard-accent); }
+.vanguard-viewport {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 0;
+  padding: clamp(.8rem, 2.5vw, 1.8rem);
+  background-color: #323a32;
+  background-image: linear-gradient(#d7dfce12 1px, transparent 1px), linear-gradient(90deg, #d7dfce12 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.vanguard-viewport-label { color: #e2e7da; }
+.vanguard-viewport-label span { padding: .24rem .45rem; background: #232a22; }
+.vanguard-viewport-label span:first-child { color: var(--vanguard-accent); }
+.vanguard-stage {
+  display: grid;
+  place-items: center;
+  min-height: 21rem;
+  padding: 1.4rem .25rem 2rem;
+}
+.vanguard-elevation { width: min(100%, calc(var(--wall-ratio, 1.7778) * 18rem)); }
+#vanguard-wall { display: block; width: 100%; height: auto; outline: 1px solid #c5d2bd67; box-shadow: 0 .7rem 2rem #11161091; }
+.vanguard-dimension {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  margin-top: .75rem;
+  border-top: 1px solid #b5c1ad;
+  font: 500 .72rem/1 var(--technical);
+}
+.vanguard-dimension::before, .vanguard-dimension::after { position: absolute; top: -.23rem; height: .42rem; border-left: 1px solid #b5c1ad; content: ""; }
+.vanguard-dimension::before { left: 0; }
+.vanguard-dimension::after { right: 0; }
+.vanguard-dimension span { padding: .29rem .55rem; background: #323a32; }
+.vanguard-controls {
+  display: grid;
+  align-content: center;
+  gap: 1.1rem;
+  min-width: 0;
+  padding: clamp(.85rem, 2.5vw, 1.8rem);
+  border-left: 1px solid #515b4e;
+}
+.vanguard-controls fieldset { min-width: 0; padding: 0; border: 0; }
+.vanguard-controls legend, .vanguard-range > label { padding: 0; font: 700 1rem/1.2 var(--display); }
+.vanguard-controls legend > span, .vanguard-range label > span { margin-right: .4rem; color: var(--vanguard-accent); font: 500 .7rem var(--technical); }
+.vanguard-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .4rem; margin-top: .5rem; }
+.vanguard-options label { position: relative; display: grid; cursor: pointer; }
+.vanguard-options input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.vanguard-options label > span {
+  display: grid;
+  align-content: start;
+  gap: .25rem;
+  min-width: 0;
+  padding: .55rem .4rem;
+  border: 1px solid #697266;
+  font-size: .78rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.vanguard-options small { color: #c0c7ba; font-size: .65rem; font-weight: 500; }
+.vanguard-options input:checked + span { border-color: var(--vanguard-accent); background: #39432d; }
+.vanguard-options input:focus-visible + span { outline: 2px solid var(--vanguard-accent); outline-offset: 3px; }
+.vanguard-options label:hover > span { border-color: var(--vanguard-accent); }
+.vanguard-chip { display: block; width: 100%; height: .9rem; background: var(--finish); border: 1px solid #efeee74f; }
+.vanguard-chip.chalk { --finish: #e6dfd0; }
+.vanguard-chip.sand { --finish: #b99471; }
+.vanguard-chip.graphite { --finish: #505554; }
+.vanguard-range { display: grid; grid-template-columns: 1fr auto; gap: .5rem; align-items: center; }
+.vanguard-range input { grid-column: 1 / -1; width: 100%; margin: 0; accent-color: var(--vanguard-accent); cursor: pointer; }
+.vanguard-range > div { grid-column: 1 / -1; display: flex; justify-content: space-between; color: #c0c7ba; font: 500 .67rem/1 var(--technical); }
+.vanguard-range output { color: var(--vanguard-accent); font: 500 .78rem/1 var(--technical); }
+.vanguard-selection { display: grid; gap: .5rem; padding-top: .8rem; border-top: 1px solid #616b5e; }
+.vanguard-selection p { color: #e2e7da; font: 500 .72rem/1.4 var(--technical); }
+.vanguard-selection button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 2.65rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--vanguard-accent);
+  background: var(--vanguard-accent);
+  color: #1a2313;
+  font: 800 .82rem/1.2 var(--body);
+  cursor: pointer;
+}
+.vanguard-selection button:hover:not(:disabled) { background: #e8f8b0; }
+.vanguard-selection button:disabled { opacity: .55; cursor: default; }
+.vanguard-config noscript p { margin-top: .5rem; }
+.vanguard-applications {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, .9fr);
+  gap: 1.4rem clamp(1.4rem, 6vw, 6rem);
+  margin-top: clamp(3rem, 8vw, 7rem);
+}
+.vanguard-applications h2 { max-width: 11ch; }
+.vanguard-applications p:not(.concept-index) { margin-top: .85rem; }
+.vanguard-applications dl { margin: 0; }
+.vanguard-applications dl > div { padding-block: .8rem; border-top: 1px solid var(--rule); }
+.vanguard-applications dt { font: 700 1.1rem/1.2 var(--display); }
+.vanguard-applications dd { margin: .35rem 0 0; color: var(--secondary); font-size: .9rem; }
+@media (max-width: 760px) {
+  .vanguard-hero, .vanguard-studio, .vanguard-applications { grid-template-columns: minmax(0, 1fr); }
+  .vanguard-config-intro { flex-direction: column; align-items: start; }
+  .vanguard-hero-image img { aspect-ratio: 1.4; }
+  .vanguard-controls { border-top: 1px solid #515b4e; border-left: 0; }
+  .vanguard-stage { min-height: 15rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .vanguard-options label > span, .vanguard-selection button { transition: background-color .2s ease, border-color .2s ease; }
+}
+
+.orbit { --paper: #f4f0e9; --ink: #28231e; --rule: #c8c0b3; --secondary: #655649; }
+.orbit .concept-brand { display: flex; align-items: center; gap: .5rem; font-size: clamp(1rem, 2.3vw, 1.5rem); }
+.orbit-mark { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; border: 1px solid; border-radius: 50%; box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 4px var(--ink); }
+.orbit-hero { padding-top: clamp(2.4rem, 6vw, 6.3rem); }
+.orbit-hero-heading { display: flex; align-items: end; justify-content: space-between; gap: 1.3rem; margin-bottom: clamp(1.25rem, 4vw, 3.25rem); }
+.orbit-hero-heading > p { max-width: 21ch; font-size: clamp(1rem, 2vw, 1.55rem); line-height: 1.24; }
+.orbit-hero figure > img { height: clamp(14rem, 44vw, 38rem); object-position: 50% 55%; }
+.orbit figure figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .6rem; padding: .8rem 0; border-bottom: 1px solid var(--rule); }
+.orbit-plan { display: block; width: 100%; background: #ebe4d8; border: 1px solid var(--rule); }
+.orbit-materials {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr);
+  align-items: start;
+  gap: clamp(1.4rem, 4.2vw, 4.1rem);
+  margin-top: clamp(3rem, 8vw, 7rem);
+}
+.orbit-materials img { height: auto; aspect-ratio: 4 / 3; object-position: 56% center; }
+.orbit-materials dl { margin: 1.3rem 0 0; }
+.orbit-materials dl > div { padding-block: .75rem; border-top: 1px solid var(--rule); }
+.orbit-materials dt { font: 700 1.04rem var(--display); }
+.orbit-materials dd { margin: .26rem 0 0; color: #655649; font-size: .86rem; }
+.orbit-studio { margin-top: clamp(3rem, 8vw, 7rem); padding-block: clamp(1.5rem, 4vw, 3.8rem); background: #e8e2d6; }
+.orbit-studio > p:last-child { max-width: 38ch; margin-top: 1.1rem; }
+
+@media (max-width: 660px) {
+  .concept-nav { flex-wrap: wrap; }
+  .concept-nav nav { order: 1; flex-basis: 100%; }
+  .concept-footer { align-items: start; flex-direction: column; }
+  .concept-section, .solarium-hero, .vanguard-hero, .orbit-materials { grid-template-columns: 1fr; }
+  .orbit-hero-heading { align-items: start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { scroll-behavior: auto; }
+  .concept-button span { transition: none; }
+}

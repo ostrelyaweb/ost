@@ -1,0 +1,130 @@
+.kronos {
+  --paper: #171615;
+  --ink: #f0e9de;
+  --line: #4a443e;
+  --soft: #c0b5a8;
+  --signal: #ff6d50;
+  --focus: #ff9b83;
+  --technical: Consolas, "Liberation Mono", monospace;
+}
+.kronos [id] { scroll-margin-top: 1.5rem; }
+.kr-header, .kronos main { padding-inline: var(--gutter); }
+.kr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem 1rem;
+  min-height: 3.6rem;
+  border-bottom: 1px solid var(--line);
+  font: 600 .76rem/1.2 var(--body);
+}
+.kr-header nav { display: flex; gap: clamp(.7rem, 2vw, 1.85rem); }
+.kr-header > a:last-child { white-space: nowrap; }
+.kr-brand { font: 700 1.25rem/1 var(--display); letter-spacing: -.07em; }
+.kr-brand span { margin-inline-start: .36em; color: var(--signal); font: 500 .45em var(--technical); vertical-align: super; }
+.kronos main { width: min(100%, 105rem); margin-inline: auto; }
+.kr-hero {
+  display: grid;
+  grid-template-columns: minmax(14rem, .68fr) minmax(0, 1.85fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 5rem);
+  padding-block: clamp(1.9rem, 5vw, 5rem);
+  border-bottom: 1px solid var(--line);
+}
+.kr-kicker, .kr-number {
+  color: var(--soft);
+  font: 600 .72rem/1.4 var(--technical);
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+.kr-intro .kr-kicker { display: flex; align-items: center; gap: .55rem; margin-bottom: 1.05rem; }
+.kr-intro .kr-kicker span { width: .45rem; height: .45rem; background: var(--signal); }
+.kr-intro h1 { font-size: clamp(4rem, 9.8vw, 10rem); line-height: .8; }
+.kr-intro h1 span { color: var(--signal); }
+.kr-lead { max-width: 30ch; margin-top: 1.35rem; color: var(--soft); font-size: .94rem; line-height: 1.52; }
+.kr-text-link { display: inline-block; margin-top: .8rem; font-size: .79rem; font-weight: 800; }
+.kr-text-link span { color: var(--signal); margin-left: .18rem; }
+.kr-player { min-width: 0; border: 1px solid var(--line); background: #201e1c; }
+.kr-frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #0b0a09; }
+.kr-frame video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.kr-frame-label {
+  position: absolute;
+  inset: .55rem .55rem auto;
+  display: flex;
+  justify-content: space-between;
+  gap: .3rem;
+  pointer-events: none;
+  font: 600 clamp(.58rem, 1vw, .68rem)/1.2 var(--technical);
+  text-transform: uppercase;
+}
+.kr-frame-label span { padding: .3rem .42rem; background: #151312e6; }
+.kr-play, .kr-download {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .56rem .74rem;
+  border: 1px solid var(--signal);
+  background: var(--signal);
+  color: #211612;
+  font: 800 .79rem/1.25 var(--body);
+}
+.kr-play { position: absolute; bottom: .68rem; left: .68rem; cursor: pointer; }
+.kr-play span:first-child { min-width: .7rem; text-align: center; }
+.kr-play:hover:not(:disabled), .kr-download:hover { background: #ff9a84; text-decoration: none; }
+.kr-deck { padding: .65rem clamp(.6rem, 1.4vw, 1.15rem) .55rem; }
+.kr-deck-top { display: flex; align-items: center; justify-content: space-between; gap: .4rem .8rem; flex-wrap: wrap; }
+.kr-mixes { display: flex; flex-wrap: wrap; gap: .35rem; }
+.kr-mixes button {
+  padding: .35rem .52rem;
+  border: 1px solid #72645c;
+  background: transparent;
+  color: var(--ink);
+  font: 700 .75rem/1.3 var(--body);
+  cursor: pointer;
+}
+.kr-mixes button span { margin-right: .18rem; color: var(--soft); font: 600 .74rem var(--technical); }
+.kr-mixes button[aria-pressed="true"] { border-color: var(--signal); background: #47302b; }
+.kr-mixes button[aria-pressed="true"] span { color: #ffae9b; }
+.kr-player button:disabled { opacity: .6; cursor: default; }
+#kr-time, .kr-deck-note { color: var(--soft); font: 500 .7rem/1.45 var(--technical); }
+.kr-wave { position: relative; height: 2.6rem; margin-block: .45rem .25rem; background: #151412; }
+.kr-wave svg { display: block; width: 100%; height: 100%; fill: #bdb0a0; }
+.kr-wave[data-mix="1"] svg { fill: var(--signal); }
+.kr-wave input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.kr-wave-fallback input { opacity: 1; accent-color: var(--signal); }
+.kr-wave:focus-within { outline: 2px solid var(--focus); outline-offset: 3px; }
+.kr-playhead { position: absolute; inset: 0 auto 0 var(--progress, 0%); width: 2px; background: var(--signal); pointer-events: none; }
+.kr-recordings { padding-top: clamp(1.8rem, 4.4vw, 4.3rem); }
+.kr-section-head { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: .85rem 1.5rem; margin-bottom: .9rem; }
+.kr-section-head h2 { margin-top: .32rem; font-size: clamp(2rem, 4.5vw, 4.6rem); }
+.kr-download { white-space: nowrap; }
+.kr-recording {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1.4fr) minmax(13rem, .95fr) auto;
+  align-items: center;
+  gap: .5rem 1rem;
+  padding: .85rem 0;
+  border-top: 1px solid var(--line);
+}
+.kr-recording:last-child { border-bottom: 1px solid var(--line); }
+.kr-recording h3 { font-size: clamp(1.17rem, 2vw, 1.7rem); letter-spacing: -.035em; }
+.kr-recording p { color: var(--soft); font-size: .8rem; }
+.kr-recording audio { width: 100%; height: 2.5rem; color-scheme: dark; }
+.kr-cut-link { color: var(--signal); font: 700 .76rem var(--technical); white-space: nowrap; }
+.kr-credits { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem 1.5rem; padding-block: 1.3rem 2.2rem; color: var(--soft); font-size: .75rem; }
+.kr-credits p:first-child { max-width: 75ch; }
+.kr-credits a { text-decoration: underline; text-underline-offset: .2em; }
+@media (max-width: 760px) {
+  .kr-hero { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 1.15rem; }
+  .kr-intro h1 { font-size: clamp(3.3rem, 13vw, 6rem); line-height: .86; }
+  .kr-intro h1 br { display: none; }
+  .kr-intro h1 br::after { content: " "; }
+  .kr-lead { max-width: 42ch; margin-top: .75rem; }
+  .kr-recording { grid-template-columns: 1.55rem 1fr auto; }
+  .kr-recording audio { grid-row: 2; grid-column: 2 / 4; }
+  .kr-cut-link { grid-row: 1; grid-column: 3; }
+}
+@media (max-width: 420px) {
+  .kr-header nav { order: 1; flex-basis: 100%; padding-bottom: .55rem; }
+  .kr-header { flex-wrap: wrap; padding-top: .65rem; }
+}

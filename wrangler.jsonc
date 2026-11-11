@@ -1,0 +1,18 @@
+{
+  "name": "ostrelya-main",
+  "main": "redesign/tools/locale_worker.js",
+  "compatibility_date": "2026-11-10",
+  "workers_dev": true,
+  "preview_urls": true,
+  "keep_vars": true,
+  "build": {
+    "command": "python -B deployment/build.py"
+  },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/", "/api/locale"]
+  }
+}
