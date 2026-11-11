@@ -4642,6 +4642,25 @@ body:has(.editorial-dialog[open]) {
 .locale-suggestion button { text-align: start; text-decoration: underline; text-underline-offset: .2em; }
 .locale-suggestion :is(a, button):focus-visible { outline: 2px solid #6743bd; outline-offset: 4px; }
 
+.locale-connection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  font-size: .75rem;
+  opacity: .75;
+}
+.locale-connection[hidden] { display: none; }
+.locale-connection button {
+  color: inherit;
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  cursor: pointer;
+}
+.locale-connection button:disabled { opacity: .5; cursor: wait; }
+
 .enquiry-dialog p a, .regional-privacy-link a {
   text-decoration: underline;
   text-underline-offset: .2em;

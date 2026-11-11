@@ -2,6 +2,10 @@
   const storageKey = 'ostrelya-locale';
   const dismissedKey = 'ostrelya-locale-dismissed';
   const locales = new Set(['en', 'hr', 'bs', 'sr-rs', 'sr-me', 'sl', 'mk', 'sq']);
+  const countryStatus = document.querySelector('[data-country-status]');
+  const refreshButton = document.querySelector('[data-refresh-locale]');
+  const croatian = document.documentElement.lang === 'hr';
+  let refreshing = false;
   const read = (key, session = false) => {
     try { return (session ? sessionStorage : localStorage).getItem(key); } catch { return null; }
   };
@@ -45,27 +49,35 @@
     }
   });
 
-  async function detectLocale() {
+  async function detectLocation() {
     try {
       const response = await fetch('/api/locale', {
         cache: 'no-store',
         credentials: 'omit',
         redirect: 'error'
       });
-      if (response.ok) return (await response.json()).locale;
+      if (response.ok) {
+        const result = await response.json();
+        return {
+          locale: locales.has(result.locale) ? result.locale : 'en',
+          country: /^[A-Z]{2}$/.test(result.country ?? '') && !['XX', 'ZZ'].includes(result.country)
+            ? result.country : null
+        };
+      }
     } catch { /* The English page remains available. */ }
-    return 'en';
+    return { locale: 'en', country: null };
   }
 
-  async function showLanguageSuggestion() {
+  function showLanguageSuggestion(locale) {
     const banner = document.querySelector('[data-locale-options]');
-    if (!banner || read(dismissedKey, true) === '1') return;
+    if (!banner) return;
+    banner.hidden = true;
+    if (read(dismissedKey, true) === '1') return;
     if (new URLSearchParams(location.search).get('lang') === 'en') return;
     const options = JSON.parse(banner.dataset.localeOptions);
     const preferred = savedLocale();
     if (preferred === 'en') return;
 
-    const locale = await detectLocale();
     if (locale === preferred) return;
     const selected = options.find((item) => item.key === locale);
     if (!selected) return;
@@ -79,16 +91,52 @@
     action.dataset.locale = selected.key;
     const dismiss = banner.querySelector('button');
     dismiss.textContent = selected.stay;
-    dismiss.addEventListener('click', () => {
+    dismiss.onclick = () => {
       if (banner.hasAttribute('data-remember-english')) {
         rememberLocale('en');
       } else {
         write(dismissedKey, '1', true);
       }
       banner.hidden = true;
-    });
+    };
     banner.hidden = false;
   }
 
-  showLanguageSuggestion();
+  function showCountry(country) {
+    if (!countryStatus) return;
+    let name = country;
+    if (country) {
+      try { name = new Intl.DisplayNames([croatian ? 'hr' : 'en'], { type: 'region' }).of(country); }
+      catch { /* The country code remains readable in older browsers. */ }
+    }
+    const locationLabel = croatian
+      ? (name ? 'Lokacija veze: ' + name : 'Lokacija veze nije dostupna')
+      : (name ? 'Connection location: ' + name : 'Connection location unavailable');
+    countryStatus.textContent = locationLabel;
+    countryStatus.closest('[data-locale-connection]').hidden = false;
+  }
+
+  async function refreshLocation() {
+    if (refreshing) return;
+    refreshing = true;
+    if (refreshButton) refreshButton.disabled = true;
+    try {
+      const result = await detectLocation();
+      showCountry(result.country);
+      showLanguageSuggestion(result.locale);
+    } finally {
+      refreshing = false;
+      if (refreshButton) refreshButton.disabled = false;
+    }
+  }
+
+  if (refreshButton) {
+    refreshButton.textContent = croatian ? 'Provjeri lokaciju' : 'Check location';
+    refreshButton.addEventListener('click', refreshLocation);
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) refreshLocation();
+  });
+  window.addEventListener('online', refreshLocation);
+  refreshLocation();
 })();

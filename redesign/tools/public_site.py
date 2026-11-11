@@ -180,7 +180,7 @@ def render_page(root, origin, path, content=None, article=None, regions=None):
         is_home = path == "/"
         options = {"hr": regions["hr"]} if is_home else regions
         suggestion = language_suggestion(options, remember_english=is_home)
-        html = html.replace("</body>", suggestion + '\n<script src="/assets/region-language.js?v=6" defer></script>\n</body>')
+        html = html.replace("</body>", suggestion + '\n<script src="/assets/region-language.js?v=7" defer></script>\n</body>')
     return html
 
 

@@ -237,7 +237,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional">
   <link rel="stylesheet" href="/assets/regional.css?v=4">
-  <script src="/assets/region-language.js?v=6" defer></script>
+  <script src="/assets/region-language.js?v=7" defer></script>
   <script src="/script.js?v=clean-routes" defer></script>
 </head>
 <body id="top" class="{page_class}">

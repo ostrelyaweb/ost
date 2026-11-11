@@ -59,7 +59,11 @@ export default {
       if (request.method !== 'GET') {
         return new Response(null, { status: 405, headers: { ...headers, Allow: 'GET' } });
       }
-      return Response.json({ locale }, { headers });
+      const detectedCountry = request.cf?.country;
+      const country = /^[A-Z]{2}$/.test(detectedCountry ?? '') && !['XX', 'ZZ'].includes(detectedCountry)
+        ? detectedCountry
+        : null;
+      return Response.json({ locale, country }, { headers });
     }
 
     if (url.pathname === '/' && (request.method === 'GET' || request.method === 'HEAD')) {

@@ -15,6 +15,7 @@ SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
 sys.path.insert(0, str(REDESIGN / "tools"))
 from public_site import build_public
+from privacy_pages import render_privacy
 
 
 REDIRECTS = {
@@ -29,11 +30,17 @@ REDIRECTS = {
     "/en/usluge.html": "/services/",
     "/en/kontakt": "/?lang=en#contact",
     "/en/kontakt.html": "/?lang=en#contact",
-    "/privacy/": "/en/pravila-privatnosti",
-    "/hr/privatnost/": "/pravila-privatnosti",
+    "/privacy/": "/privacy-policy/",
+    "/privacy": "/privacy-policy/",
+    "/hr/privatnost/": "/hr/politika-privatnosti/",
+    "/hr/privatnost": "/hr/politika-privatnosti/",
+    "/pravila-privatnosti": "/hr/politika-privatnosti/",
+    "/pravila-privatnosti.html": "/hr/politika-privatnosti/",
+    "/en/pravila-privatnosti": "/privacy-policy/",
+    "/en/pravila-privatnosti.html": "/privacy-policy/",
 }
 ARCHIVE_PAGES = (
-    "blog.html", "en/blog.html", "pravila-privatnosti.html", "en/pravila-privatnosti.html",
+    "blog.html", "en/blog.html",
     *(
         path.relative_to(ROOT).as_posix()
         for folder in ("blog", "en/blog")
@@ -46,16 +53,7 @@ ARCHIVE_ASSETS = (
 )
 FONT_LINK = re.compile(r'<link\b[^>]*href="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>\s*', re.I)
 FOOTER_NAV = re.compile(r'(<nav aria-label="Footer navigation">.*?)(</nav>)', re.S)
-PRIVACY_HR = (
-    "<section><h2>Odabir jezika</h2><p>Za odabir regionalne verzije stranice koristimo Cloudflareovu "
-    "procjenu države prema IP adresi. Odabir jezika možemo zapamtiti u pregledniku i u kolačiću "
-    "<code>ostrelya-locale</code> koji vrijedi do godinu dana.</p></section>"
-)
-PRIVACY_EN = (
-    "<section><h2>Language preference</h2><p>We use Cloudflare’s country estimate from your IP address "
-    "to offer a regional version of the site. We may remember your language in browser storage and "
-    "in the <code>ostrelya-locale</code> cookie for up to one year.</p></section>"
-)
+PRIVACY_ROUTES = {"/privacy/": "/privacy-policy/", "/hr/privatnost/": "/hr/politika-privatnosti/"}
 
 
 def copy_asset(source, target):
@@ -87,26 +85,42 @@ def preserve_archive(output):
             body = body.replace(canonical, canonical.removesuffix(".html"))
             unencoded = ORIGIN + "/" + archive
             body = body.replace(unencoded, unencoded.removesuffix(".html"))
-        if name.endswith("pravila-privatnosti.html"):
-            privacy = PRIVACY_EN if name.startswith("en/") else PRIVACY_HR
-            body = body.replace("</main>", privacy + "\n</main>", 1)
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(body, encoding="utf-8")
 
 
+def build_privacy(output):
+    for source, canonical in PRIVACY_ROUTES.items():
+        body = render_privacy(REDESIGN, ORIGIN, source)
+        for old, new in PRIVACY_ROUTES.items():
+            body = body.replace(ORIGIN + old, ORIGIN + new).replace(f'href="{old}', f'href="{new}')
+        path = output / canonical.lstrip("/") / "index.html"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(body, encoding="utf-8")
+
+
 def update_navigation(output):
     for page in output.rglob("index.html"):
         body = page.read_text(encoding="utf-8")
-        privacy = ('<a href="/pravila-privatnosti">Privatnost</a>' if '<html lang="hr">' in body
-                   else '<a href="/en/pravila-privatnosti">Privacy</a>')
+        privacy = ('<a href="/hr/politika-privatnosti/">Privatnost i kolačići</a>' if '<html lang="hr">' in body
+                   else '<a href="/privacy-policy/">Privacy and cookies</a>')
+        body = re.sub(r'<a\b[^>]*\bdata-preview-privacy\b[^>]*>.*?</a>', "", body, flags=re.S)
         body, count = FOOTER_NAV.subn(lambda match: match[1] + privacy + "\n      " + match[2], body, count=1)
         if count:
+            status = (
+                '<div class="locale-connection" id="connection-location" data-locale-connection hidden>'
+                '<span data-country-status role="status"></span>'
+                '<button type="button" data-refresh-locale></button></div>'
+            )
+            body = body.replace("</footer>", status + "</footer>", 1)
+            if "/assets/region-language.js" not in body:
+                body = body.replace("</body>", '<script src="/assets/region-language.js?v=7" defer></script></body>', 1)
             page.write_text(body, encoding="utf-8")
 
     room = output / "assets/concepts/room-studio/index.html"
     body = room.read_text(encoding="utf-8")
-    body = body.replace("</footer>", '<a href="/en/pravila-privatnosti">Browser storage and privacy</a></footer>', 1)
+    body = body.replace("</footer>", '<a href="/privacy-policy/#cookies">Browser storage and privacy</a></footer>', 1)
     room.write_text(body, encoding="utf-8")
 
 
@@ -138,6 +152,7 @@ def main():
         staging = Path(temporary) / "public"
         build_public(REDESIGN, staging, ORIGIN)
         preserve_archive(staging)
+        build_privacy(staging)
         update_navigation(staging)
         update_routing(staging)
         previous = Path(temporary) / "previous"
