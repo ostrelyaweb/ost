@@ -34,7 +34,7 @@ def render_privacy(root, origin, path):
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional">
   <link rel="stylesheet" href="/assets/privacy.css">
-  <script src="/assets/region-language.js?v=7" defer></script>
+  <script src="/assets/region-language.js?v=8" defer></script>
   <script src="/script.js?v=clean-routes" defer></script>
 </head>
 <body class="page-editorial" id="top">

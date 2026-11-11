@@ -24,13 +24,12 @@ function isCrawler(request) {
     /(?:bot\b|crawler|spider|Google-InspectionTool)/i.test(request.headers.get('User-Agent') ?? '');
 }
 
-async function home(request, env, url, detectedLocale) {
+async function home(request, env, url) {
   const chooseEnglish = url.searchParams.get('lang') === 'en';
   const isInternalNavigation = request.headers.get('Sec-Fetch-Site') === 'same-origin';
-  const automaticLocale = detectedLocale === 'hr' ? 'en' : detectedLocale;
   const locale = chooseEnglish || isInternalNavigation || isCrawler(request)
     ? 'en'
-    : savedLocale(request) ?? automaticLocale;
+    : savedLocale(request) ?? 'en';
 
   if (locale !== 'en') {
     url.pathname = `/${locale}/`;
@@ -52,7 +51,6 @@ async function home(request, env, url, detectedLocale) {
 export default {
   fetch(request, env) {
     const url = new URL(request.url);
-    const locale = countryLocales.get(request.cf?.country) ?? 'en';
 
     if (url.pathname === '/api/locale') {
       const headers = { ...privateHeaders, 'X-Content-Type-Options': 'nosniff' };
@@ -60,6 +58,7 @@ export default {
         return new Response(null, { status: 405, headers: { ...headers, Allow: 'GET' } });
       }
       const detectedCountry = request.cf?.country;
+      const locale = countryLocales.get(detectedCountry) ?? 'en';
       const country = /^[A-Z]{2}$/.test(detectedCountry ?? '') && !['XX', 'ZZ'].includes(detectedCountry)
         ? detectedCountry
         : null;
@@ -67,7 +66,7 @@ export default {
     }
 
     if (url.pathname === '/' && (request.method === 'GET' || request.method === 'HEAD')) {
-      return home(request, env, url, locale);
+      return home(request, env, url);
     }
     return env.ASSETS.fetch(request);
   }

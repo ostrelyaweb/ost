@@ -4626,21 +4626,45 @@ body:has(.editorial-dialog[open]) {
 }
 
 .locale-suggestion {
-  position: fixed;
-  z-index: 30;
-  inset: auto 1rem max(1rem, env(safe-area-inset-bottom)) auto;
-  width: min(calc(100% - 2rem), 25rem);
-  padding: .9rem 1rem;
-  border: 1px solid #d8cde9;
-  background: #fcf9ff;
-  color: #21183b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4rem 1rem;
+  width: min(calc(100% - 44px), 714px);
+  margin-inline: auto;
+  padding: .45rem 1rem;
+  border: 1px solid #dcd3e6;
+  border-radius: 12px;
+  background: #f5effa;
+  color: #262033;
+  font-size: .875rem;
+}
+.hero-section:has(> .locale-suggestion:not([hidden])) {
+  grid-template-rows: auto 1fr;
+  gap: 1.5rem;
+  padding-block-start: calc(var(--header-height) - .5rem);
+}
+.hero-section > .locale-suggestion {
+  border-color: #ffffff30;
+  background: #20212c;
+  color: #f5f2fa;
+}
+.page-services .locale-suggestion:not([hidden]) + .services-editorial-hero {
+  padding-block-start: clamp(2rem, 5vw, 5rem);
 }
 .locale-suggestion[hidden] { display: none; }
-.locale-suggestion p { margin-bottom: .6rem; font-weight: 750; }
-.locale-suggestion > div { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem .8rem; font-size: .84rem; }
-.locale-suggestion-action { padding: .35rem .65rem; border-radius: .25rem; background: #4f2ca5; color: #fff; font-weight: 750; }
-.locale-suggestion button { text-align: start; text-decoration: underline; text-underline-offset: .2em; }
-.locale-suggestion :is(a, button):focus-visible { outline: 2px solid #6743bd; outline-offset: 4px; }
+.locale-suggestion p { margin: 0; font-weight: 700; }
+.locale-suggestion > div { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem .8rem; font-size: .8125rem; }
+.locale-suggestion :is(a, button) { display: inline-flex; min-height: 36px; align-items: center; text-align: start; }
+.locale-suggestion-action { padding-inline: .7rem; border-radius: 7px; background: #ddd0ff; color: #21183b; font-weight: 750; }
+.locale-suggestion-action:hover { background: #e8ddff; }
+.locale-suggestion button { color: inherit; text-decoration: underline; text-underline-offset: .2em; }
+.locale-suggestion :is(a, button):focus-visible { outline: 2px solid #9560f0; outline-offset: 3px; }
+
+@media (max-width: 540px) {
+  .locale-suggestion { padding: .65rem .75rem; }
+}
 
 .locale-connection {
   display: flex;

@@ -6,11 +6,11 @@
   const refreshButton = document.querySelector('[data-refresh-locale]');
   const croatian = document.documentElement.lang === 'hr';
   let refreshing = false;
-  const read = (key, session = false) => {
-    try { return (session ? sessionStorage : localStorage).getItem(key); } catch { return null; }
+  const read = (key) => {
+    try { return localStorage.getItem(key); } catch { return null; }
   };
-  const write = (key, value, session = false) => {
-    try { (session ? sessionStorage : localStorage).setItem(key, value); } catch { /* Links still work with storage disabled. */ }
+  const write = (key, value) => {
+    try { localStorage.setItem(key, value); } catch { /* Links still work with storage disabled. */ }
   };
   const savedLocale = () => {
     const prefix = `${storageKey}=`;
@@ -71,16 +71,11 @@
   function showLanguageSuggestion(locale) {
     const banner = document.querySelector('[data-locale-options]');
     if (!banner) return;
-    banner.hidden = true;
-    if (read(dismissedKey, true) === '1') return;
-    if (new URLSearchParams(location.search).get('lang') === 'en') return;
-    const options = JSON.parse(banner.dataset.localeOptions);
-    const preferred = savedLocale();
-    if (preferred === 'en') return;
-
-    if (locale === preferred) return;
-    const selected = options.find((item) => item.key === locale);
-    if (!selected) return;
+    const selected = JSON.parse(banner.dataset.localeOptions).find((item) => item.key === locale);
+    if (!selected || locales.has(savedLocale()) || new URLSearchParams(location.search).get('lang') === 'en') {
+      banner.hidden = true;
+      return;
+    }
 
     banner.lang = selected.lang;
     banner.querySelector('p').textContent = selected.prompt;
@@ -92,11 +87,7 @@
     const dismiss = banner.querySelector('button');
     dismiss.textContent = selected.stay;
     dismiss.onclick = () => {
-      if (banner.hasAttribute('data-remember-english')) {
-        rememberLocale('en');
-      } else {
-        write(dismissedKey, '1', true);
-      }
+      rememberLocale('en');
       banner.hidden = true;
     };
     banner.hidden = false;

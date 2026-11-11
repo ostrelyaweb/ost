@@ -25,17 +25,16 @@ def region_routes(regions):
     }
 
 
-def language_suggestion(regions, *, remember_english=False):
+def language_suggestion(regions):
     options = [
         {"key": key, "lang": region["tag"], "href": region_path(key, region),
          "prompt": region["prompt"], "choose": region["choose"], "stay": region["stay"]}
         for key, region in regions.items()
     ]
     data = escape(json.dumps(options, ensure_ascii=False))
-    preference = " data-remember-english" if remember_english else ""
     return (
-        f'<aside class="locale-suggestion" data-locale-options="{data}"{preference} hidden>'
-        '<p></p><div><a class="locale-suggestion-action"></a><button type="button"></button></div></aside>'
+        f'<aside class="locale-suggestion" aria-labelledby="locale-prompt" data-locale-options="{data}" hidden>'
+        '<p id="locale-prompt"></p><div><a class="locale-suggestion-action"></a><button type="button"></button></div></aside>'
     )
 
 
@@ -237,7 +236,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional">
   <link rel="stylesheet" href="/assets/regional.css?v=4">
-  <script src="/assets/region-language.js?v=7" defer></script>
+  <script src="/assets/region-language.js?v=8" defer></script>
   <script src="/script.js?v=clean-routes" defer></script>
 </head>
 <body id="top" class="{page_class}">
