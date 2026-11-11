@@ -109,7 +109,7 @@ def update_navigation(output):
         body, count = FOOTER_NAV.subn(lambda match: match[1] + privacy + "\n      " + match[2], body, count=1)
         if count:
             status = (
-                '<div class="locale-connection" id="connection-location" data-locale-connection hidden>'
+                '<div class="page-container locale-connection" id="connection-location" data-locale-connection hidden>'
                 '<span data-country-status role="status"></span>'
                 '<button type="button" data-refresh-locale></button></div>'
             )
