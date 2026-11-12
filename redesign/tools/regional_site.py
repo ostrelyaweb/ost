@@ -258,7 +258,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional-services">
-  <link rel="stylesheet" href="/assets/regional.css?v=4">
+  <link rel="stylesheet" href="/assets/regional.css?v=5">
   <script src="/assets/region-language.js?v=10" defer></script>
   <script src="/script.js?v=regional-services" defer></script>
 </head>
@@ -319,7 +319,12 @@ def default_main(active, headline, description, market, labels, nav, service, se
         <h1 class="editorial-heading">{headline}</h1>
         <p class="content-intro">{description}</p>
         <a class="btn-primary content-cta" href="#contact">{escape(labels["enquiry"])} <span aria-hidden="true">↗</span></a></div>
-        <div class="region-emblem"><img src="/assets/hero-metal-emblem-640.webp" srcset="/assets/hero-metal-emblem-480.webp 480w, /assets/hero-metal-emblem-640.webp 640w" sizes="(max-width: 690px) 240px, 30vw" width="640" height="640" alt="" fetchpriority="high"></div>
+        <div class="region-emblem">
+          <img src="/assets/hero-metal-emblem-640.webp"
+               srcset="/assets/hero-metal-emblem-640.webp 640w, /assets/hero-metal-emblem.webp 1254w"
+               sizes="(max-width: 690px) min(55vw, 212px), min(29vw, 351px)"
+               width="640" height="640" alt="" fetchpriority="high">
+        </div>
       </section>
       {detail}
       <section class="region-services" id="{ 'ostale-usluge' if service else 'usluge' }">

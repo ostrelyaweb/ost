@@ -2,8 +2,14 @@
 .region-page a:focus-visible, .region-page summary:focus-visible { outline: 2px solid #9560f0; outline-offset: 5px; }
 .region-hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .65fr); align-items: center; gap: clamp(1rem, 4vw, 4rem); padding-block: clamp(3.2rem, 9vw, 9rem); }
 .region-hero h1 { font-size: clamp(2.75rem, 6.9vw, 7.1rem); overflow-wrap: anywhere; }
-.region-emblem { display: grid; place-items: center; aspect-ratio: 1; background: #eeebf2; }
-.region-emblem img { width: 100%; height: auto; }
+.region-emblem {
+  display: grid;
+  place-items: center;
+  justify-self: center;
+  width: min(100%, 390px);
+  aspect-ratio: 1;
+}
+.region-emblem img { display: block; width: 90%; height: auto; }
 .region-split, .region-services { border-top: 1px solid var(--editorial-rule); padding-block: clamp(2rem, 6vw, 5rem); }
 .region-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .85fr); align-items: start; gap: clamp(1rem, 5vw, 5rem); }
 .region-split h3 { font: 700 1.25rem/1.2 var(--font-display); }
@@ -19,7 +25,7 @@
 .region-service-grid span { justify-self: end; color: #4f2ca5; }
 @media (max-width: 690px) {
   .region-hero, .region-split { grid-template-columns: minmax(0, 1fr); }
-  .region-emblem { width: min(100%, 15rem); }
+  .region-emblem { width: min(61vw, 235px); }
 }
 
 .region-market { padding-block: clamp(2.4rem, 6vw, 5rem); border-top: 1px solid var(--editorial-rule); }
