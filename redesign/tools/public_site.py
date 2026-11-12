@@ -127,7 +127,7 @@ def journal_markup(root, content, article):
             '<header class="content-hero journal-hero"><p class="services-kicker">Ostrelya Studio / Notes</p>'
             f'<h1 class="editorial-heading">{escape(content["title"])}</h1><p class="content-intro">{escape(content["intro"])}</p>'
             f'</header><div class="journal-list" aria-label="Articles">{listing}</div>'
-            '<p class="journal-block"><a class="journal-back" href="/en/blog">Website planning and maintenance guides ↗</a>'
+            '<p class="journal-block"><a class="journal-back" href="/en/blog">Web design, development and SEO guides ↗</a>'
             ' · <a class="journal-back" href="/blog" lang="hr" hreflang="hr">Vodiči na hrvatskom ↗</a></p>'
         )
     return f'<div class="page-container journal-shell">{inner}</div>'

@@ -5,6 +5,18 @@ from urllib.parse import quote
 
 PRICE_GUIDE = "/blog/" + quote("koliko-košta-web-stranica-2026")
 MAINTENANCE_GUIDE = "/blog/" + quote("održavanje-web-stranice-zašto-je-bitno")
+SERVICE_GUIDES_HR = {
+    "redesign": (("Pripremite URL-ove prije redizajna", "/blog/redizajn-web-stranice-bez-gubitka-seo"),),
+    "development": (
+        ("Odlučite što vaš tim treba uređivati u CMS-u", "/blog/treba-li-web-stranici-cms"),
+        ("Planirajte višejezični web", "/blog/plan-visejezicne-web-stranice"),
+    ),
+    "seo": (
+        ("Provjerite zašto stranica izostaje iz Googleovih rezultata", "/blog/zasto-web-stranica-nije-na-googleu"),
+        ("Pripremite sadržaj za AI pretraživanje", "/blog/kako-da-se-web-pojavi-u-ai-pretrazivanju"),
+    ),
+    "maintenance": (("Mjesečna provjera web stranice", MAINTENANCE_GUIDE),),
+}
 
 
 EXAMPLES = {
@@ -217,14 +229,14 @@ def render_region(root, origin, regions, key, service):
     else:
         main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links)) + markets
         if service:
-            guide_link = (
-                f'<p class="region-guide-link"><a class="web-service-text-link" href="{MAINTENANCE_GUIDE}">Mjesečna provjera web stranice <span aria-hidden="true">↗</span></a></p>'
-                if key == "hr" and service == "maintenance" else ""
-            )
+            guide_links = "".join(
+                f'<p class="region-guide-link"><a class="web-service-text-link" href="{href}">{escape(label)} <span aria-hidden="true">↗</span></a></p>'
+                for label, href in SERVICE_GUIDES_HR.get(service, ())
+            ) if key == "hr" else ""
             main += (
                 '<section class="page-container services-disciplines web-service-faq" id="pitanja">'
                 f'<h2 class="editorial-heading">{escape(active["faq_heading"])}.</h2>'
-                f'<div class="service-accordions">{faq_details(active["faq"])}</div>{guide_link}</section>'
+                f'<div class="service-accordions">{faq_details(active["faq"])}</div>{guide_links}</section>'
             )
 
     trail = [("Ostrelya Studio", "/"), (region["label"], hub)]

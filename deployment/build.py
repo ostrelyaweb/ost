@@ -5,7 +5,7 @@ from pathlib import Path
 from shutil import copyfile
 import sys
 from tempfile import TemporaryDirectory
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,7 +15,7 @@ SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
 sys.path.insert(0, str(REDESIGN / "tools"))
 from public_site import build_public, read_content
-from guide_pages import render_guide, render_guide_index
+from guide_pages import guide_path, render_guide, render_guide_index
 from privacy_pages import render_privacy
 from check_indexable import check_indexable
 
@@ -75,16 +75,30 @@ def preserve_archive(output):
         copy_asset(ROOT / "deployment/vendor" / script, output / "js/vendor" / script)
 
     guides = read_content(REDESIGN, "archive-guides")
-    for name in ARCHIVE_PAGES:
+    new_guides = read_content(REDESIGN, "guides")
+    if guides.keys() & new_guides.keys():
+        raise ValueError("Guide slugs must be unique across the blog.")
+    guides.update(new_guides)
+    guide_files = {}
+    for slug, guide in guides.items():
+        for lang in ("hr", "en"):
+            local_slug = guide[lang].get("slug", slug)
+            if not local_slug or not all(char.isalnum() or char == "-" for char in local_slug):
+                raise ValueError(f"Invalid guide slug: {local_slug!r}")
+            name = unquote(guide_path(slug, lang, guide)).lstrip("/") + ".html"
+            if name in guide_files:
+                raise ValueError(f"Duplicate guide path: {name}")
+            guide_files[name] = slug
+    archive_pages = tuple(dict.fromkeys((*ARCHIVE_PAGES, *guide_files)))
+    for name in archive_pages:
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
-        slug = target.stem
         lang = "en" if name.startswith("en/") else "hr"
         if name in {"blog.html", "en/blog.html"}:
             target.write_text(render_guide_index(REDESIGN, ORIGIN, lang, guides), encoding="utf-8")
             continue
-        if slug in guides:
-            target.write_text(render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug][lang]), encoding="utf-8")
+        if slug := guide_files.get(name):
+            target.write_text(render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug]), encoding="utf-8")
             continue
         body = (ROOT / name).read_text(encoding="utf-8")
         body = FONT_LINK.sub("", body)
@@ -99,6 +113,7 @@ def preserve_archive(output):
             unencoded = ORIGIN + "/" + archive
             body = body.replace(unencoded, canonical.removesuffix(".html"))
         target.write_text(body, encoding="utf-8")
+    return archive_pages
 
 
 def build_privacy(output):
@@ -135,7 +150,7 @@ def update_navigation(output):
     room.write_text(body, encoding="utf-8")
 
 
-def update_routing(output):
+def update_routing(output, archive_pages):
     with (output / "_redirects").open("a", encoding="utf-8") as handle:
         for source, target in REDIRECTS.items():
             handle.write(f"{source} {target} 301\n")
@@ -143,7 +158,7 @@ def update_routing(output):
     ElementTree.register_namespace("", SITEMAP_NS)
     path = output / "sitemap.xml"
     sitemap = ElementTree.parse(path)
-    for page in ARCHIVE_PAGES:
+    for page in archive_pages:
         entry = ElementTree.SubElement(sitemap.getroot(), f"{{{SITEMAP_NS}}}url")
         ElementTree.SubElement(entry, f"{{{SITEMAP_NS}}}loc").text = ORIGIN + "/" + quote(
             page.removesuffix(".html"), safe="/"
@@ -162,10 +177,10 @@ def main():
     with TemporaryDirectory(prefix=".ostrelya-build-", dir=ROOT) as temporary:
         staging = Path(temporary) / "public"
         build_public(REDESIGN, staging, ORIGIN)
-        preserve_archive(staging)
+        archive_pages = preserve_archive(staging)
         build_privacy(staging)
         update_navigation(staging)
-        update_routing(staging)
+        update_routing(staging, archive_pages)
         indexable_count = check_indexable(staging, ORIGIN)
         previous = Path(temporary) / "previous"
         if destination.exists():

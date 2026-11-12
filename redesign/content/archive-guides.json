@@ -74,6 +74,7 @@
     }
   },
   "održavanje-web-stranice-zašto-je-bitno": {
+    "topic": "operations",
     "hr": {
       "title": "Održavanje web stranice: što provjeriti svaki mjesec",
       "summary": "Mjesečni pregled weba za male timove. Provjerite dostavu upita, ažuriranja, sigurnosne kopije, važne URL-ove i zaduženja.",
