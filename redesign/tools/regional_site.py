@@ -3,14 +3,50 @@ import json
 
 
 EXAMPLES = {
-    "web": ("Orbit Architecture", "/assets/concepts/orbit.html", "/assets/project-4-640.webp", 640, 480),
+    "web": ("Orbit Architecture", "/work/orbit-architecture/", "/assets/project-4-640.webp", 640, 480),
     "redesign": ("Ostrelya Studio", "/#work", "/assets/hero-metal-emblem-640.webp", 640, 640),
     "brand": ("Solarium", "/assets/concepts/solarium.html", "/assets/project-1-640.webp", 640, 480),
+    "development": ("Orbit Architecture", "/work/orbit-architecture/", "/assets/project-4-640.webp", 640, 480),
+    "seo": ("Ostrelya Studio", "/journal/website-launch-and-maintenance/", None, 0, 0),
+    "maintenance": ("Ostrelya Studio", "/journal/website-launch-and-maintenance/#maintenance-checklist", None, 0, 0),
+}
+
+ENQUIRY_COPY = {
+    "hr": ("Ime", "Adresa e-pošte", "Što vam treba?", "Pošalji upit", "Šaljemo upit…", "Upit je poslan. Odgovorit ćemo na adresu koju ste unijeli.", "Upit nije poslan. Pokušajte ponovno ili pišite na hello@ostrelya.com.", "Pričekajte minutu prije ponovnog pokušaja."),
+    "bs": ("Ime", "E-mail adresa", "Šta vam treba?", "Pošalji upit", "Šaljemo upit…", "Upit je poslan. Odgovorit ćemo na adresu koju ste unijeli.", "Upit nije poslan. Pokušajte ponovo ili pišite na hello@ostrelya.com.", "Sačekajte minutu prije ponovnog pokušaja."),
+    "sr-rs": ("Ime", "Imejl adresa", "Šta vam je potrebno?", "Pošalji upit", "Šaljemo upit…", "Upit je poslat. Odgovorićemo na adresu koju ste uneli.", "Upit nije poslat. Pokušajte ponovo ili pišite na hello@ostrelya.com.", "Sačekajte minut pre ponovnog pokušaja."),
+    "sr-me": ("Ime", "Adresa e-pošte", "Šta vam je potrebno?", "Pošalji upit", "Šaljemo upit…", "Upit je poslat. Odgovorićemo na adresu koju ste unijeli.", "Upit nije poslat. Pokušajte ponovo ili pišite na hello@ostrelya.com.", "Sačekajte minut prije ponovnog pokušaja."),
+    "sl": ("Ime", "E-poštni naslov", "Kaj potrebujete?", "Pošlji povpraševanje", "Pošiljamo povpraševanje…", "Povpraševanje je poslano. Odgovorili bomo na vneseni e-poštni naslov.", "Povpraševanje ni bilo poslano. Poskusite znova ali pišite na hello@ostrelya.com.", "Pred ponovnim poskusom počakajte minuto."),
+    "mk": ("Име", "Е-пошта", "Што ви треба?", "Испрати барање", "Го испраќаме барањето…", "Барањето е испратено. Ќе одговориме на внесената адреса.", "Барањето не е испратено. Обидете се повторно или пишете на hello@ostrelya.com.", "Почекајте една минута пред повторно да се обидете."),
+    "sq": ("Emri", "Adresa e emailit", "Çfarë ju nevojitet?", "Dërgo kërkesën", "Po dërgojmë kërkesën…", "Kërkesa u dërgua. Do t’ju përgjigjemi në adresën që vendosët.", "Kërkesa nuk u dërgua. Provoni përsëri ose shkruani në hello@ostrelya.com.", "Prisni një minutë para se të provoni përsëri."),
 }
 
 
+def regional_enquiry(key):
+    name, email, message, submit, pending, success, failure, rate = map(escape, ENQUIRY_COPY[key])
+    return f"""
+    <form method="post" action="/api/enquiry" data-enquiry-form data-locale="{key}" hidden
+          data-pending="{pending}" data-success="{success}" data-failure="{failure}" data-rate="{rate}">
+      <input type="text" name="companyWebsite" hidden tabindex="-1" autocomplete="off">
+      <label>{name}<input name="name" autocomplete="name" required maxlength="100"></label>
+      <label>{email}<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
+      <label>{message}<textarea name="message" rows="4" required maxlength="1500"></textarea></label>
+      <p role="status"></p>
+      <button type="submit" class="btn-primary">{submit} <span aria-hidden="true">↗</span></button>
+    </form>
+    """
+
+
 def read_regions(root):
-    return json.loads((root / "content/regional.json").read_bytes())
+    regions = json.loads((root / "content/regional.json").read_bytes())
+    additional = json.loads((root / "content/regional-web-services.json").read_bytes())
+    if additional.keys() != regions.keys():
+        raise ValueError("Regional web services must cover every market.")
+    for key, services in additional.items():
+        if set(services) != {"development", "seo", "maintenance"}:
+            raise ValueError(f"Incomplete web services for {key}")
+        regions[key]["services"].update(services)
+    return regions
 
 
 def region_path(key, region, service=None):
@@ -79,14 +115,14 @@ def croatian_web_main(service_links, markets):
         <ol aria-label="Što dobivate">{rows}</ol>
       </section>
       <section id="projekti" class="page-container web-service-project">
-        <a class="web-service-project-image" href="/assets/concepts/orbit.html" hreflang="en" aria-label="Otvori Orbit Architecture, studijski koncept na engleskom">
+        <a class="web-service-project-image" href="/work/orbit-architecture/" hreflang="en" aria-label="Otvori Orbit Architecture, studijski koncept na engleskom">
           <img src="/assets/project-4-640.webp" srcset="/assets/project-4-640.webp 640w, /assets/project-4-800.webp 800w, /assets/project-4-1200.webp 1200w" sizes="(max-width: 760px) 90vw, 46vw" width="640" height="480" alt="Kuća uz planinsko jezero iz koncepta Orbit Architecture" loading="lazy" decoding="async">
         </a>
         <div>
           <p class="services-kicker">02 / Studijski koncept</p>
           <h2 class="editorial-heading" data-editorial-reveal>Orbit<br>Architecture.</h2>
           <p>Za koncept arhitektonskog portfolija osmislili smo put od naslovne fotografije do detalja projekta. Posjetitelj može pregledati tlocrt, materijale i fotografije prostora prije nego što kontaktira studio.</p>
-          <a class="web-service-text-link" href="/assets/concepts/orbit.html" hreflang="en">Otvori Orbit (EN) <span aria-hidden="true">↗</span></a>
+          <a class="web-service-text-link" href="/work/orbit-architecture/" hreflang="en">Pogledajte studiju Orbit (EN) <span aria-hidden="true">↗</span></a>
         </div>
       </section>
       {markets}
@@ -137,7 +173,7 @@ def render_region(root, origin, regions, key, service):
     market = escape(region["market"])
     title = escape(active["meta_title"])
     web_service_layout = key == "hr" and service == "web"
-    social_image = EXAMPLES[service][2] if service else "/assets/hero-metal-emblem.webp"
+    social_image = (EXAMPLES[service][2] if service else None) or "/assets/hero-metal-emblem.webp"
     alternates = []
     switches = []
     for code, alternative in regions.items():
@@ -158,8 +194,8 @@ def render_region(root, origin, regions, key, service):
             )
     page_class = "page-services region-page region-web" if web_service_layout else "page-editorial region-page"
     header, footer = site_chrome(root, croatian=key == "hr")
-    privacy_link = ('<a href="/hr/privatnost/#contact">Kako obrađujemo upite</a>' if key == "hr"
-                    else '<a href="/privacy/#contact" lang="en">How we handle enquiries</a>')
+    privacy_link = ('<a href="/hr/politika-privatnosti/#privacy-contact">Kako obrađujemo upite</a>' if key == "hr"
+                    else '<a href="/privacy-policy/#privacy-contact" lang="en">How we handle enquiries</a>')
     market_links = "".join(switches)
     markets = (
         '<section class="page-container region-market" id="trzista">'
@@ -221,10 +257,10 @@ def render_region(root, origin, regions, key, service):
   <script type="application/ld+json">{structured_data}</script>
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
-  <link rel="stylesheet" href="/styles.css?v=regional">
+  <link rel="stylesheet" href="/styles.css?v=regional-services">
   <link rel="stylesheet" href="/assets/regional.css?v=4">
   <script src="/assets/region-language.js?v=10" defer></script>
-  <script src="/script.js?v=clean-routes" defer></script>
+  <script src="/script.js?v=regional-services" defer></script>
 </head>
 <body id="top" class="{page_class}">
   {header}
@@ -236,11 +272,11 @@ def render_region(root, origin, regions, key, service):
         <p class="services-kicker">{escape(nav["contact"])}</p>
         <h2 class="editorial-heading" id="regional-contact-title" data-editorial-reveal>{escape(labels["contact"])}</h2>
         <p>{escape(labels["brief"])}</p>
+        {regional_enquiry(key)}
         <div class="editorial-contact-links">
-          <a href="mailto:hello@ostrelya.com?subject=Ostrelya%20Studio">{escape(labels["enquiry"])} <span aria-hidden="true">→</span></a>
           <a href="mailto:hello@ostrelya.com">hello@ostrelya.com <span aria-hidden="true">→</span></a>
         </div>
-        <p data-preview-privacy class="regional-privacy-link">{privacy_link}</p>
+        <p class="regional-privacy-link">{privacy_link}</p>
       </div>
     </section>
   </main>
@@ -254,7 +290,14 @@ def default_main(active, headline, description, market, labels, nav, service, se
     if service:
         project, demo, cover, width, height = EXAMPLES[service]
         items = "".join(f"<li>{escape(item)}</li>" for item in active["deliverables"])
-        project_type = f'<p class="services-kicker">{escape(labels["concept"])}</p>' if service != "redesign" else ""
+        project_type = f'<p class="services-kicker">{escape(labels["concept"])}</p>' if service in {"web", "brand", "development"} else ""
+        example_link = ""
+        if link_text := active.get("example_link"):
+            example_link = f'<a class="web-service-text-link" href="{demo}" hreflang="en">{escape(link_text)} (EN) <span aria-hidden="true">↗</span></a>'
+        image = (
+            f'<a class="region-cover" href="{demo}" hreflang="en" aria-label="{escape(project)} (English)">'
+            f'<img src="{cover}" alt="" width="{width}" height="{height}" loading="lazy"><span aria-hidden="true">↗</span></a>'
+        ) if cover else ""
         detail = f"""
         <section id="usluge" class="region-split">
           <div><p class="services-kicker">01 / {escape(labels["process"])}</p>
@@ -263,10 +306,8 @@ def default_main(active, headline, description, market, labels, nav, service, se
         </section>
         <section class="region-split" id="projekti">
           <div><p class="services-kicker">02 / {escape(labels["example"])}</p>
-          <h2 class="editorial-heading">{escape(project)}</h2>{project_type}<p>{escape(active["example"])}</p></div>
-          <a class="region-cover" href="{demo}" lang="en" hreflang="en" aria-label="{escape(project)} (English)">
-            <img src="{cover}" alt="" width="{width}" height="{height}" loading="lazy"><span aria-hidden="true">↗</span>
-          </a>
+          <h2 class="editorial-heading">{escape(project)}</h2>{project_type}<p>{escape(active["example"])}</p>{example_link}</div>
+          {image}
         </section>"""
     else:
         detail = ""

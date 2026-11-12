@@ -19,6 +19,8 @@ from privacy_pages import render_privacy
 
 
 REDIRECTS = {
+    "/work": "/#work",
+    "/work/": "/#work",
     "/usluge": "/hr/",
     "/usluge.html": "/hr/",
     "/kontakt": "/hr/#contact",
@@ -52,6 +54,7 @@ ARCHIVE_ASSETS = (
     "images/favicon.png", "images/footer-logo.png", "images/logo.png", "og.png",
 )
 FONT_LINK = re.compile(r'<link\b[^>]*href="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>\s*', re.I)
+ARCHIVE_NEWSLETTER = re.compile(r'<section class="lead-magnet"[^>]*>.*?</section>', re.S)
 FOOTER_NAV = re.compile(r'(<nav aria-label="Footer navigation">.*?)(</nav>)', re.S)
 PRIVACY_ROUTES = {"/privacy/": "/privacy-policy/", "/hr/privatnost/": "/hr/politika-privatnosti/"}
 
@@ -74,6 +77,17 @@ def preserve_archive(output):
 
     for name in ARCHIVE_PAGES:
         body = (ROOT / name).read_text(encoding="utf-8")
+        if name.startswith(("blog/", "en/blog/")):
+            if name.startswith("en/"):
+                label, href = "Read the website launch and maintenance checklist", "/journal/website-launch-and-maintenance/"
+            elif "održavanje" in name:
+                label, href = "Pogledajte uslugu održavanja web stranica", "/hr/usluge/odrzavanje-web-stranica/"
+            else:
+                label, href = "Pogledajte opseg usluge izrade web stranica", "/hr/usluge/web-dizajn/"
+            body = ARCHIVE_NEWSLETTER.sub(
+                f'<section class="article-cta"><a class="btn" href="{href}">{label} →</a></section>',
+                body,
+            )
         body = FONT_LINK.sub("", body)
         body = body.replace("</head>", '<link rel="stylesheet" href="/assets/regional-fonts.css">\n</head>', 1)
         for script in scripts:

@@ -132,16 +132,21 @@
   <dialog class="editorial-dialog enquiry-dialog" id="project-enquiry-dialog" aria-labelledby="enquiry-title">
     <form method="dialog"><button class="editorial-dialog-close" autofocus>Close <span aria-hidden="true">×</span></button></form>
     <h2 class="editorial-heading" id="enquiry-title">Start a project</h2>
-    <form id="project-enquiry-form">
+    <form id="project-enquiry-form" method="post" action="/api/enquiry" data-enquiry-form data-locale="en"
+      data-pending="Sending your enquiry…" data-success="Your enquiry was sent. We’ll reply to the address you entered."
+      data-failure="We couldn’t send your enquiry. Please retry or email hello@ostrelya.com."
+      data-rate="Please wait a minute before trying again.">
+      <input type="text" name="companyWebsite" hidden tabindex="-1" autocomplete="off" />
       <label>Your name <input name="name" autocomplete="name" required maxlength="100" /></label>
       <label>Email address <input name="email" type="email" autocomplete="email" required maxlength="160" /></label>
       <label>Tell us about your project <textarea name="message" required rows="4" maxlength="1500"></textarea></label>
-      <button type="submit" class="btn-primary">Continue via email <span aria-hidden="true">↗</span></button>
-      <p>Opens your email app with a draft.<span data-preview-privacy> <a href="/privacy/#contact">How we handle enquiries</a>.</span></p>
+      <p role="status"></p>
+      <button type="submit" class="btn-primary">Send enquiry <span aria-hidden="true">↗</span></button>
+      <p>You can also email <a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a>.<span data-preview-privacy> <a href="/privacy/#contact">How we handle enquiries</a>.</span></p>
     </form>
   </dialog>
 
-  <script src="/script.js?v=clean-routes" defer></script>
+  <script src="/script.js?v=regional-services" defer></script>
   <script type="module" src="/editorial-content.js?v=studio-session"></script>
 </body>
 </html>

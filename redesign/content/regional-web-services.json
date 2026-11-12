@@ -1,0 +1,583 @@
+{
+  "hr": {
+    "development": {
+      "slug": "usluge/web-development",
+      "label": "Web development i razvoj web stranica",
+      "title": "Web development i razvoj web stranica",
+      "meta_title": "Web development i razvoj web stranica za tvrtke u Hrvatskoj | Ostrelya",
+      "meta_description": "Iz postojećeg dizajna razvijamo prilagodljive stranice, CMS i integracije. Prije objave testiramo unos sadržaja, obrasce i navigaciju na mobitelu.",
+      "intro": "Iz postojećeg dizajna razvijamo prilagodljive stranice, CMS i integracije. Prije objave testiramo unos sadržaja, obrasce i navigaciju na mobitelu.",
+      "process": "Krećemo od predložaka stranica i sadržaja koji se mijenja. Za portal s projektima dogovaramo polja, poput lokacije, tipa i galerije, pa na probnoj objavi provjeravamo može li urednik sam dodati projekt.",
+      "deliverables": [
+        "Prilagodljiv frontend iz odobrenog dizajna",
+        "CMS i integracije dogovorene u opsegu",
+        "Testiranje na više uređaja, objava i predaja"
+      ],
+      "example": "U Orbitovu studijskom konceptu jedna stranica projekta povezuje fotografije, tlocrt i interijer. Studija pokazuje koje podatke treba predvidjeti u predlošku.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Možete li razviti dizajn koji već imamo?",
+          "Da. Pošaljite datoteku dizajna i popis funkcija. Prije ponude provjerimo stanja na mobitelu, sadržaj koji nedostaje i način predaje."
+        ],
+        [
+          "Radite li i na postojećem CMS-u?",
+          "Prvo provjerimo platformu, pristup i način objave. Na temelju toga predložimo nadogradnju ili novu implementaciju."
+        ]
+      ],
+      "example_link": "Pogledajte studiju Orbit"
+    },
+    "seo": {
+      "slug": "usluge/seo-optimizacija",
+      "label": "SEO optimizacija i tehnički SEO",
+      "title": "SEO optimizacija i tehnički SEO",
+      "meta_title": "SEO optimizacija i tehnički SEO za tvrtke u Hrvatskoj | Ostrelya",
+      "meta_description": "Provjeravamo može li Google pronaći važne stranice i odgovaraju li njihov sadržaj i struktura na upite kupaca. Nalaze pretvaramo u popis izmjena s redoslijedom provedbe.",
+      "intro": "Provjeravamo može li Google pronaći važne stranice i odgovaraju li njihov sadržaj i struktura na upite kupaca. Nalaze pretvaramo u popis izmjena s redoslijedom provedbe.",
+      "process": "U Search Consoleu provjerimo indeksiranje i upite, a na webu statuse, interne poveznice i kanonske adrese. Za redizajn prvo izdvojimo postojeće stranice koje već imaju impresije ili dolazne poveznice.",
+      "deliverables": [
+        "Pregled indeksiranja, preusmjerenja i sitemapa",
+        "Mapa upita i odredišnih stranica",
+        "Prioriteti provedbe i ponovna provjera"
+      ],
+      "example": "Na vlastitom webu provjeravamo zasebne adrese jezičnih verzija i povezujemo ih s ekvivalentnim uslugama. U vodiču je prikazan konkretan redoslijed provjera.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Što dobivamo nakon SEO audita?",
+          "Popis nalaza s primjerima URL-ova, prioritetima i načinom provjere. Možemo dogovoriti i provedbu izmjena."
+        ],
+        [
+          "Uključujete li lokalni i višejezični SEO?",
+          "Da, kada postoji zasebna ponuda za tržište. Tada provjeravamo lokalne izraze, sadržaj i veze među jezičnim stranicama."
+        ]
+      ],
+      "example_link": "Pogledajte kako provjeravamo objavu"
+    },
+    "maintenance": {
+      "slug": "usluge/odrzavanje-web-stranica",
+      "label": "Održavanje web stranica",
+      "title": "Održavanje web stranica",
+      "meta_title": "Održavanje web stranica za tvrtke u Hrvatskoj | Ostrelya",
+      "meta_description": "Provjeravamo rade li ključne stranice, upiti i objave. Dogovaramo tko rješava kvarove, ažurira sustav i provjerava može li se web vratiti nakon greške.",
+      "intro": "Provjeravamo rade li ključne stranice, upiti i objave. Dogovaramo tko rješava kvarove, ažurira sustav i provjerava može li se web vratiti nakon greške.",
+      "process": "Prije preuzimanja popišemo domenu, hosting, CMS, integracije i pristupe. Za web koji ovisi o upitima dogovorimo kako testirati cijeli put od obrasca do dolazne pošte i kako prijaviti problem.",
+      "deliverables": [
+        "Plan provjera, sigurnosnih kopija i povrata",
+        "Ažuriranja i ispravci prema ugovorenom opsegu",
+        "Zapis promjena, otvorenih problema i preporuka"
+      ],
+      "example": "Vodič pokazuje kako odvojiti mjesečne provjere od zadataka koji se rade nakon svake objave, s primjerom provjere važnog kontaktnog puta.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Možete li preuzeti web koji niste izradili?",
+          "Da, nakon pregleda platforme i pristupa. Ako sustav ne možemo sigurno održavati, objasnimo što prvo treba riješiti."
+        ],
+        [
+          "Spadaju li nove stranice u održavanje?",
+          "Rutinske izmjene i novi predlošci nisu isti opseg. U dogovoru jasno navedemo što je uključeno, a što procjenjujemo zasebno."
+        ]
+      ],
+      "example_link": "Otvorite vodič za provjere nakon objave"
+    }
+  },
+  "bs": {
+    "development": {
+      "slug": "usluge/web-development",
+      "label": "Web development i razvoj web stranica",
+      "title": "Web development i razvoj web stranica",
+      "meta_title": "Web development i razvoj web stranica za firme u BiH | Ostrelya",
+      "meta_description": "Razvijamo web prema postojećem dizajnu ili zajedno definišemo predloške, CMS i povezivanje s drugim alatima. Tim može pregledati stranicu prije objave.",
+      "intro": "Razvijamo web prema postojećem dizajnu ili zajedno definišemo predloške, CMS i povezivanje s drugim alatima. Tim može pregledati stranicu prije objave.",
+      "process": "Ako ponudu uređuje više ljudi, prvo odlučimo koja polja mogu samostalno mijenjati i ko odobrava objavu. Tok provjerimo na stvarnoj usluzi ili projektu, s fotografijama koje ćete koristiti.",
+      "deliverables": [
+        "Frontend prilagođen mobitelu i računaru",
+        "Predlošci i uređivačka polja za sadržaj",
+        "Probna verzija, objava i upute za tim"
+      ],
+      "example": "Orbit pokazuje kako različiti materijali jednog arhitektonskog projekta mogu stati u pregledan predložak.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Radite li prema gotovom Figma dizajnu?",
+          "Da, nakon što provjerimo predloške, prikaz na mobitelu i stanja obrazaca."
+        ],
+        [
+          "Kako pregledamo web ako radimo na daljinu?",
+          "Koristimo probnu verziju za komentare i dogovorimo ko daje završnu potvrdu prije objave."
+        ]
+      ],
+      "example_link": "Pogledajte studiju Orbit"
+    },
+    "seo": {
+      "slug": "usluge/seo-optimizacija",
+      "label": "SEO optimizacija za web stranice",
+      "title": "SEO optimizacija za web stranice",
+      "meta_title": "SEO optimizacija za web stranice za firme u BiH | Ostrelya",
+      "meta_description": "Provjeravamo indeksiranje, interne linkove i odgovara li svaka važna stranica na pitanje koje kupci traže. Prioriteti dolaze iz stvarnih URL-ova i podataka.",
+      "intro": "Provjeravamo indeksiranje, interne linkove i odgovara li svaka važna stranica na pitanje koje kupci traže. Prioriteti dolaze iz stvarnih URL-ova i podataka.",
+      "process": "Ako ista firma nudi više usluga, provjerimo ima li svaka usluga jasnu adresu i naziv koji kupac prepoznaje. Za sajt koji pokriva BiH i druga tržišta pregledamo postoji li sadržaj koji opravdava različite verzije.",
+      "deliverables": [
+        "Tehnički audit i provjera Search Consolea",
+        "Plan sadržaja i internih linkova po usluzi",
+        "Provjera izmjena i praćenje važnih stranica"
+      ],
+      "example": "Na primjeru vlastitog sajta pokazujemo koje stare adrese zadržati, koje preusmjeriti i koje provjeriti nakon objave.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Možete li raditi SEO na postojećoj stranici?",
+          "Možemo. Prvo pogledamo pristup, postojeće stranice i podatke o pretrazi, pa predložimo gdje izmjena ima smisla."
+        ],
+        [
+          "Je li moguće dobiti samo audit?",
+          "Da. Audit uključuje konkretne URL-ove, prioritet i način da vaš tim provjeri ispravku."
+        ]
+      ],
+      "example_link": "Pogledajte provjere pri objavi"
+    },
+    "maintenance": {
+      "slug": "usluge/odrzavanje-web-stranica",
+      "label": "Održavanje web stranica",
+      "title": "Održavanje web stranica",
+      "meta_title": "Održavanje web stranica za firme u BiH | Ostrelya",
+      "meta_description": "Preuzimamo dogovorene provjere, ažuriranja i ispravke. Vaš tim ima jasan kontakt za kvar i zna koje se izmjene mogu objaviti bez razvoja.",
+      "intro": "Preuzimamo dogovorene provjere, ažuriranja i ispravke. Vaš tim ima jasan kontakt za kvar i zna koje se izmjene mogu objaviti bez razvoja.",
+      "process": "Ako ponudu često mijenjate, odvojimo uređivanje teksta od zadataka koji traže developera. Dogovorimo kako prijaviti kvar, provjeriti kopiju i potvrditi da kontakt i dalje radi nakon ažuriranja.",
+      "deliverables": [
+        "Inventar platforme, hostinga i pristupa",
+        "Dogovorene provjere i ažuriranja",
+        "Evidencija promjena i otvorenih zadataka"
+      ],
+      "example": "U vodiču su odvojene provjere poslije objave od mjesečnih provjera koje tim može ponoviti.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Radite li s webom koji je izradio drugi tim?",
+          "Da, nakon početne provjere pristupa, sigurnosnih kopija i verzija koje se trenutno koriste."
+        ],
+        [
+          "Mogu li zatražiti samo jednu popravku?",
+          "Možete. Opišite kvar i pošaljite adresu stranice. Na osnovu pregleda predlažemo popravku i opseg."
+        ]
+      ],
+      "example_link": "Pogledajte vodič za održavanje"
+    }
+  },
+  "sr-rs": {
+    "development": {
+      "slug": "usluge/web-development",
+      "label": "Web development i razvoj sajtova",
+      "title": "Web development i razvoj sajtova",
+      "meta_title": "Web development i razvoj sajtova za firme u Srbiji | Ostrelya",
+      "meta_description": "Razvijamo sajtove po dizajnu, sa CMS-om, obrascima i integracijama koje su potrebne vašem timu. Pre objave zajedno prolazimo kroz probnu verziju.",
+      "intro": "Razvijamo sajtove po dizajnu, sa CMS-om, obrascima i integracijama koje su potrebne vašem timu. Pre objave zajedno prolazimo kroz probnu verziju.",
+      "process": "Kada dobijemo dizajn, mapiramo različite tipove stranica i stanja, uključujući praznu listu, grešku pri slanju i uređivanje sadržaja. Ako obrazac treba da otvori prodajni zahtev, proveravamo kako podaci stižu do tima.",
+      "deliverables": [
+        "Frontend za mobilne i desktop uređaje",
+        "CMS i dogovorene integracije",
+        "Provera, objava i dokumentacija za tim"
+      ],
+      "example": "Orbitov studijski koncept pokazuje kako detalj projekta može da spoji fotografije, tlocrt i podatke u jedan predložak.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Možete li da preuzmete samo razvoj?",
+          "Da. Pošaljite dizajn i očekivano ponašanje. Pre početka dogovaramo šta treba dopuniti i ko priprema sadržaj."
+        ],
+        [
+          "Da li dobijamo pristup za izmene?",
+          "Ako je CMS u opsegu, dogovaramo uloge i prolazimo kroz uređivanje konkretne stranice."
+        ]
+      ],
+      "example_link": "Pogledajte studiju Orbit"
+    },
+    "seo": {
+      "slug": "usluge/seo-optimizacija",
+      "label": "SEO optimizacija sajtova",
+      "title": "SEO optimizacija sajtova",
+      "meta_title": "SEO optimizacija sajtova za firme u Srbiji | Ostrelya",
+      "meta_description": "Pregledamo tehničko stanje sajta, upite i stranice koje bi trebalo da odgovore na njih. Predlažemo popravke koje tim može da proveri posle objave.",
+      "intro": "Pregledamo tehničko stanje sajta, upite i stranice koje bi trebalo da odgovore na njih. Predlažemo popravke koje tim može da proveri posle objave.",
+      "process": "Za postojeći sajt upoređujemo Google izveštaje sa adresama koje su danas dostupne. Ako dve stranice ciljaju isti upit, proverimo da li se namera zaista razlikuje pre nego što menjamo naslove ili spajamo sadržaj.",
+      "deliverables": [
+        "Pregled indeksiranja i duplih adresa",
+        "Raspodela upita po stranicama i prioritetima",
+        "Plan izmena i potvrda posle objave"
+      ],
+      "example": "Vodič na našem sajtu prikazuje kako biramo kanonske adrese i proveravamo preusmerenja nakon redizajna.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Da li analizirate upite na latinici i ćirilici?",
+          "Proveravamo oblike koje ljudi koriste i povezujemo ih s odgovarajućom stranicom. Varijante pisma same po sebi nisu razlog za duplu stranicu."
+        ],
+        [
+          "Radite li i implementaciju audita?",
+          "Možemo da sprovedemo dogovorene popravke ili da pripremimo zadatke za vašeg developera."
+        ]
+      ],
+      "example_link": "Pogledajte provere pri objavi"
+    },
+    "maintenance": {
+      "slug": "usluge/odrzavanje-sajtova",
+      "label": "Održavanje sajtova",
+      "title": "Održavanje sajtova",
+      "meta_title": "Održavanje sajtova za firme u Srbiji | Ostrelya",
+      "meta_description": "Održavanje obuhvata dogovorene tehničke provere, ažuriranja i ispravke. Važne funkcije kao što su upiti i objave proveravamo posle promena.",
+      "intro": "Održavanje obuhvata dogovorene tehničke provere, ažuriranja i ispravke. Važne funkcije kao što su upiti i objave proveravamo posle promena.",
+      "process": "Kod preuzimanja sajta proveravamo ko upravlja domenom, CMS-om i hostingom. Za postojeće integracije beležimo šta zavisi od njih i kako tim može da potvrdi da i dalje rade.",
+      "deliverables": [
+        "Pregled rizika i pristupa",
+        "Ažuriranja, provere kopija i ispravke",
+        "Evidencija rada i dogovor o prioritetima"
+      ],
+      "example": "Naš vodič pokazuje kako zapisati proveru, zaduženu osobu i naredni korak, umesto da se ažuriranje tretira kao gotov posao bez testa.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Da li radite jednokratne intervencije?",
+          "Možemo da procenimo konkretan kvar. Pošaljite URL, opis greške i kada se pojavila."
+        ],
+        [
+          "Da li održavanje uključuje SEO?",
+          "Dogovorene tehničke provere mogu da obuhvate i neispravne linkove. Analiza upita i rad na sadržaju imaju poseban opseg."
+        ]
+      ],
+      "example_link": "Otvorite vodič za održavanje"
+    }
+  },
+  "sr-me": {
+    "development": {
+      "slug": "usluge/web-development",
+      "label": "Web development i razvoj web sajtova",
+      "title": "Web development i razvoj web sajtova",
+      "meta_title": "Web development i razvoj web sajtova za firme u Crnoj Gori | Ostrelya",
+      "meta_description": "Razvijamo web sajtove iz dizajna, sa CMS-om i funkcijama koje tim može redovno koristiti. Višejezični sadržaj planiramo prije izrade predložaka.",
+      "intro": "Razvijamo web sajtove iz dizajna, sa CMS-om i funkcijama koje tim može redovno koristiti. Višejezični sadržaj planiramo prije izrade predložaka.",
+      "process": "Za sajt s lokalnom i engleskom ponudom dogovaramo koje su stranice stvarni ekvivalenti i šta urednik radi kad prevod još nije spreman. Na probnoj verziji prolazimo isti put do upita na oba jezika.",
+      "deliverables": [
+        "Prilagodljivi predlošci i CMS",
+        "Podešavanje višejezičnog sadržaja po opsegu",
+        "Provjera pristupa, obrazaca i objave"
+      ],
+      "example": "U Orbitovu konceptu predložak projekta objedinjuje nacrte, fotografije i podatke koje urednik može organizovati po istom redosljedu.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Može li sajt imati lokalnu i englesku verziju?",
+          "Da. Na početku dogovaramo šta se prevodi, kako se verzije povezuju i ko održava sadržaj."
+        ],
+        [
+          "Možete li povezati postojeći servis za rezervacije?",
+          "Prvo pogledamo dokumentaciju, način pristupa i pravila servisa, pa potvrdimo opseg integracije."
+        ]
+      ],
+      "example_link": "Pogledajte studiju Orbit"
+    },
+    "seo": {
+      "slug": "usluge/seo-optimizacija",
+      "label": "SEO optimizacija web sajtova",
+      "title": "SEO optimizacija web sajtova",
+      "meta_title": "SEO optimizacija web sajtova za firme u Crnoj Gori | Ostrelya",
+      "meta_description": "Provjeravamo koje stranice pretraga može da pronađe, kako su povezane i da li jasno predstavljaju uslugu. Nalaze pretvaramo u redosljed konkretnih izmjena.",
+      "intro": "Provjeravamo koje stranice pretraga može da pronađe, kako su povezane i da li jasno predstavljaju uslugu. Nalaze pretvaramo u redosljed konkretnih izmjena.",
+      "process": "Ako posjetioci pretražuju uslugu i na engleskom, gledamo koje adrese dobijaju upite na kom jeziku. Potom provjeravamo povratne jezične veze, preusmjerenja i sadržaj koji nedostaje lokalnoj ponudi.",
+      "deliverables": [
+        "Provjera sitemapa, statusa i canonical oznaka",
+        "Mapa lokalnih i višejezičnih stranica",
+        "Prioriteti i ponovna provjera nakon izmjena"
+      ],
+      "example": "Na našem sajtu regionalne usluge imaju zasebne adrese, a provjeru radimo po temama i jezičnim verzijama.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Radite li SEO za više jezika?",
+          "Da, za dogovorene verzije koje imaju stvaran sadržaj. Provjerimo i da li se korisnik može ručno prebaciti na odgovarajuću verziju."
+        ],
+        [
+          "Možemo li prvo pregledati samo najvažnije stranice?",
+          "Da. Biramo stranice od kojih zavisi upit ili rezervacija, pa širimo pregled ako nalaz to opravda."
+        ]
+      ],
+      "example_link": "Pogledajte provjere pri objavi"
+    },
+    "maintenance": {
+      "slug": "usluge/odrzavanje-web-sajtova",
+      "label": "Održavanje web sajtova",
+      "title": "Održavanje web sajtova",
+      "meta_title": "Održavanje web sajtova za firme u Crnoj Gori | Ostrelya",
+      "meta_description": "Plan održavanja pokriva dogovorene provjere, ažuriranja i popravke. Prvo utvrdimo koje funkcije moraju raditi i ko ih može provjeriti.",
+      "intro": "Plan održavanja pokriva dogovorene provjere, ažuriranja i popravke. Prvo utvrdimo koje funkcije moraju raditi i ko ih može provjeriti.",
+      "process": "Ako web ima dio ponude koji se mijenja tokom sezone, unaprijed popišemo šta treba osvježiti i provjerimo kontakt, radno vrijeme i veze na oba jezika prije objave.",
+      "deliverables": [
+        "Početni pregled sistema i sigurnosnih kopija",
+        "Redovne tehničke provjere i popravke",
+        "Plan objava i pregled dogovorenih zadataka"
+      ],
+      "example": "Vodič prikazuje kako u pregled uključiti važnu odredišnu stranicu i testirati cijeli put do kontakta nakon izmjene.",
+      "faq_heading": "Česta pitanja",
+      "faq": [
+        [
+          "Kako se dogovara rok odgovora?",
+          "Odredimo kanal prijave, prioritet i vrijeme odgovora prije početka saradnje."
+        ],
+        [
+          "Da li je svaka izmjena uključena?",
+          "U ponudi navodimo obim redovnih izmjena. Nove funkcije i veće promjene procjenjujemo posebno."
+        ]
+      ],
+      "example_link": "Pogledajte vodič za održavanje"
+    }
+  },
+  "sl": {
+    "development": {
+      "slug": "storitve/razvoj-spletnih-strani",
+      "label": "Razvoj spletnih strani",
+      "title": "Razvoj spletnih strani",
+      "meta_title": "Razvoj spletnih strani za podjetja v Sloveniji | Ostrelya",
+      "meta_description": "Iz potrjenega dizajna izdelamo odzivne strani, uredniški sistem in dogovorjene integracije. Pred objavo skupaj preizkusimo urejanje vsebine in oddajo povpraševanja.",
+      "intro": "Iz potrjenega dizajna izdelamo odzivne strani, uredniški sistem in dogovorjene integracije. Pred objavo skupaj preizkusimo urejanje vsebine in oddajo povpraševanja.",
+      "process": "Za predstavitveno stran s projekti najprej določimo polja, kot so lokacija, tip projekta in galerija. Urednik nato v testni različici sam doda projekt in preveri, kaj vidi obiskovalec na telefonu.",
+      "deliverables": [
+        "Odzivna izvedba potrjenih predlog",
+        "CMS in dogovorjene integracije",
+        "Testna različica, objava in predaja"
+      ],
+      "example": "Orbit je študijski koncept arhitekturnega portfolia. Prikazuje, kako se fotografije, tloris in notranjost povežejo v predstavitev istega projekta.",
+      "faq_heading": "Pogosta vprašanja",
+      "faq": [
+        [
+          "Ali lahko razvijete stran po obstoječem dizajnu?",
+          "Da. Pregledamo predloge, mobilne prikaze in stanja obrazcev ter pred ponudbo določimo, kaj manjka."
+        ],
+        [
+          "Kdo bo lahko urejal vsebino?",
+          "Vloge in polja določimo v obsegu projekta. Ob predaji uredimo primer vsebine skupaj z vašim urednikom."
+        ]
+      ],
+      "example_link": "Oglejte si študijo Orbit"
+    },
+    "seo": {
+      "slug": "storitve/seo-optimizacija",
+      "label": "SEO optimizacija spletnih strani",
+      "title": "SEO optimizacija spletnih strani",
+      "meta_title": "SEO optimizacija spletnih strani za podjetja v Sloveniji | Ostrelya",
+      "meta_description": "Preverimo dostopnost strani za iskalnike, indeksiranje in povezavo med vsebino in iskalnimi poizvedbami. Pripravimo prednostni seznam popravkov.",
+      "intro": "Preverimo dostopnost strani za iskalnike, indeksiranje in povezavo med vsebino in iskalnimi poizvedbami. Pripravimo prednostni seznam popravkov.",
+      "process": "Pri prenovi primerjamo stare in nove naslove strani, pregledamo notranje povezave in določimo, kam preusmeriti ukinjene strani. Če je na voljo Search Console, z njim preverimo, katere strani že dobivajo prikaze.",
+      "deliverables": [
+        "Tehnični pregled in pregled indeksiranja",
+        "Zemljevid poizvedb in ciljnih strani",
+        "Predlog popravkov in ponovni pregled"
+      ],
+      "example": "V lastnem vodniku pokažemo primer preverjanja preusmeritev, kanoničnih naslovov in povezav med jezikovnimi različicami.",
+      "faq_heading": "Pogosta vprašanja",
+      "faq": [
+        [
+          "Ali lahko naročimo samo SEO pregled?",
+          "Da. Prejmete ugotovitve po naslovih strani, prednostne naloge in način preverjanja popravkov."
+        ],
+        [
+          "Ali SEO vključuje tudi spremembe besedila?",
+          "Po dogovoru. Tehnični pregled ločimo od pisanja in uredniškega dela, da je obseg jasen."
+        ]
+      ],
+      "example_link": "Oglejte si preverjanja ob objavi"
+    },
+    "maintenance": {
+      "slug": "storitve/vzdrzevanje-spletnih-strani",
+      "label": "Vzdrževanje spletnih strani",
+      "title": "Vzdrževanje spletnih strani",
+      "meta_title": "Vzdrževanje spletnih strani za podjetja v Sloveniji | Ostrelya",
+      "meta_description": "Skrbimo za dogovorjene posodobitve in preverjamo, ali delujejo pomembne strani, obrazci in objave. Na začetku določimo način prijave težav.",
+      "intro": "Skrbimo za dogovorjene posodobitve in preverjamo, ali delujejo pomembne strani, obrazci in objave. Na začetku določimo način prijave težav.",
+      "process": "Pred prevzemom pregledamo gostovanje, CMS, dostope in varnostne kopije. Po pomembni spremembi preverimo pot od obiska strani do prejema povpraševanja.",
+      "deliverables": [
+        "Pregled okolja in načrta varnostnih kopij",
+        "Dogovorjene posodobitve in popravki",
+        "Evidenca sprememb in odprtih vprašanj"
+      ],
+      "example": "Vodnik loči redne preglede od preverjanj po objavi ali spremembi vsebine.",
+      "faq_heading": "Pogosta vprašanja",
+      "faq": [
+        [
+          "Ali lahko prevzamete obstoječo spletno stran?",
+          "Da, po pregledu dostopov, platforme in možnosti varnega povratka na prejšnjo različico."
+        ],
+        [
+          "Ali so nove funkcije del vzdrževanja?",
+          "V ponudbi navedemo obseg rednega vzdrževanja. Nove predloge in funkcije ocenimo ločeno."
+        ]
+      ],
+      "example_link": "Odprite vodnik za vzdrževanje"
+    }
+  },
+  "mk": {
+    "development": {
+      "slug": "uslugi/razvoj-na-veb-stranici",
+      "label": "Развој на веб-страници",
+      "title": "Развој на веб-страници",
+      "meta_title": "Развој на веб-страници за компании во Северна Македонија | Ostrelya",
+      "meta_description": "Од одобрен дизајн развиваме веб-страници што работат на телефон и компјутер. Додаваме CMS, формулари и интеграции според договорениот опсег.",
+      "intro": "Од одобрен дизајн развиваме веб-страници што работат на телефон и компјутер. Додаваме CMS, формулари и интеграции според договорениот опсег.",
+      "process": "На пробна верзија проверуваме како уредникот додава проект и дали кириличниот текст, сликите и формуларите правилно се прикажуваат на различни екрани.",
+      "deliverables": [
+        "Приспособливи предлошки за страници",
+        "CMS и договорени интеграции",
+        "Тестирање, објавување и упатства"
+      ],
+      "example": "Orbit е студиски концепт за архитектонско портфолио. Примерот покажува како фотографиите, планот и ентериерот се прикажуваат на една проектна страница.",
+      "faq_heading": "Чести прашања",
+      "faq": [
+        [
+          "Може ли да работите со готов дизајн?",
+          "Да. Ги разгледуваме предлошките, мобилниот приказ и функциите што треба да се изградат."
+        ],
+        [
+          "Може ли тимот сам да менува содржина?",
+          "Ако проектот вклучува CMS, ги договараме полињата и на предавањето покажуваме како се објавува промена."
+        ]
+      ],
+      "example_link": "Погледнете ја студијата Orbit"
+    },
+    "seo": {
+      "slug": "uslugi/seo-optimizacija",
+      "label": "SEO оптимизација на веб-страници",
+      "title": "SEO оптимизација на веб-страници",
+      "meta_title": "SEO оптимизација на веб-страници за компании во Северна Македонија | Ostrelya",
+      "meta_description": "Проверуваме кои страници пребарувачите можат да ги најдат и дали содржината одговара на прашањата на купувачите. Добивате јасен редослед на поправки.",
+      "intro": "Проверуваме кои страници пребарувачите можат да ги најдат и дали содржината одговара на прашањата на купувачите. Добивате јасен редослед на поправки.",
+      "process": "Ги споредуваме податоците од Search Console со адресите и внатрешните врски на веб-страницата. За повеќе јазици проверуваме дали секоја верзија води до соодветната страница.",
+      "deliverables": [
+        "Проверка на индексирање и пренасочувања",
+        "План за страници, поими и внатрешни врски",
+        "Приоритети и проверка по измените"
+      ],
+      "example": "Во водичот за нашиот веб покажуваме како проверуваме адреси, пренасочувања и јазични верзии при објавување.",
+      "faq_heading": "Чести прашања",
+      "faq": [
+        [
+          "Може ли да нарачаме само SEO проверка?",
+          "Да. Добивате наоди со конкретни адреси, приоритет и начин за проверка на поправките."
+        ],
+        [
+          "Работите ли со кирилични поими?",
+          "Да. Ги проверуваме поимите што посетителите навистина ги користат и ги поврзуваме со соодветната страница."
+        ]
+      ],
+      "example_link": "Погледнете ги проверките при објавување"
+    },
+    "maintenance": {
+      "slug": "uslugi/odrzuvanje-na-veb-stranici",
+      "label": "Одржување на веб-страници",
+      "title": "Одржување на веб-страници",
+      "meta_title": "Одржување на веб-страници за компании во Северна Македонија | Ostrelya",
+      "meta_description": "Ги проверуваме важните страници, формуларите и објавите. Однапред договараме кои ажурирања и поправки се вклучени.",
+      "intro": "Ги проверуваме важните страници, формуларите и објавите. Однапред договараме кои ажурирања и поправки се вклучени.",
+      "process": "При преземање на веб-страницата ги прегледуваме пристапите, хостингот и резервните копии. По ажурирање проверуваме дали посетителот може да испрати барање и дали тимот го добива.",
+      "deliverables": [
+        "Преглед на системот и резервните копии",
+        "Договорени ажурирања и поправки",
+        "Запис на промени и отворени задачи"
+      ],
+      "example": "Водичот објаснува кои проверки се прават редовно и кои веднаш по важна промена.",
+      "faq_heading": "Чести прашања",
+      "faq": [
+        [
+          "Може ли да преземете постојна веб-страница?",
+          "Да, откако ќе ги провериме системот, пристапот и можноста за враќање на претходната верзија."
+        ],
+        [
+          "Дали нови функции се вклучени?",
+          "Редовното одржување има договорен опсег. Нови предлошки и функции ги проценуваме посебно."
+        ]
+      ],
+      "example_link": "Отворете го водичот за одржување"
+    }
+  },
+  "sq": {
+    "development": {
+      "slug": "sherbime/zhvillimi-i-faqeve-te-internetit",
+      "label": "Zhvillimi i faqeve të internetit",
+      "title": "Zhvillimi i faqeve të internetit",
+      "meta_title": "Zhvillimi i faqeve të internetit për biznese në Kosovë | Ostrelya",
+      "meta_description": "Nga dizajni i miratuar ndërtojmë faqe që funksionojnë në telefon dhe kompjuter, me CMS, formularë dhe integrime sipas projektit.",
+      "intro": "Nga dizajni i miratuar ndërtojmë faqe që funksionojnë në telefon dhe kompjuter, me CMS, formularë dhe integrime sipas projektit.",
+      "process": "Kur një biznes punon me klientë në Kosovë dhe në diasporë, përcaktojmë cilat faqe kanë versione në gjuhë të tjera dhe si mund t’i përditësojë ekipi pa prekur kodin.",
+      "deliverables": [
+        "Zhvillim i faqeve sipas dizajnit",
+        "CMS dhe integrimet e dakorduara",
+        "Testim, publikim dhe udhëzime për ekipin"
+      ],
+      "example": "Orbit është koncept i studios për një portofol arkitekture. Studimi tregon si bashkohen fotografitë, plani dhe pamjet e brendshme në të njëjtën faqe projekti.",
+      "faq_heading": "Pyetje të shpeshta",
+      "faq": [
+        [
+          "A mund të punoni me një dizajn ekzistues?",
+          "Po. Shqyrtojmë modelet, pamjen në telefon dhe funksionet para se të përcaktojmë punën."
+        ],
+        [
+          "A mund t’i ndryshojmë vetë tekstet dhe fotot?",
+          "Po, nëse projekti përfshin CMS. Përcaktojmë fushat që ekipi mund të ndryshojë dhe i provojmë bashkë para dorëzimit."
+        ]
+      ],
+      "example_link": "Shihni studimin Orbit"
+    },
+    "seo": {
+      "slug": "sherbime/optimizim-seo",
+      "label": "Optimizim SEO për faqe interneti",
+      "title": "Optimizim SEO për faqe interneti",
+      "meta_title": "Optimizim SEO për faqe interneti për biznese në Kosovë | Ostrelya",
+      "meta_description": "Kontrollojmë indeksimin, lidhjet dhe përmbajtjen e faqeve kryesore. Pas kontrollit merrni një listë përmirësimesh me përparësi të qarta.",
+      "intro": "Kontrollojmë indeksimin, lidhjet dhe përmbajtjen e faqeve kryesore. Pas kontrollit merrni një listë përmirësimesh me përparësi të qarta.",
+      "process": "Nëse klientët kërkojnë të njëjtin shërbim me fjalë si webfaqe dhe faqe interneti, shqyrtojmë qëllimin e kërkimit dhe zgjedhim faqen që i përgjigjet më mirë.",
+      "deliverables": [
+        "Kontroll teknik dhe i indeksimit",
+        "Plan i fjalëve të kërkimit dhe faqeve përkatëse",
+        "Përparësi dhe verifikim pas ndryshimeve"
+      ],
+      "example": "Udhëzuesi për faqen tonë tregon si kontrollojmë adresat e vjetra, ridrejtimet dhe versionet në gjuhë të ndryshme.",
+      "faq_heading": "Pyetje të shpeshta",
+      "faq": [
+        [
+          "A ofroni vetëm audit SEO?",
+          "Po. Merrni gjetjet, adresat që preken dhe mënyrën për të kontrolluar nëse korrigjimet funksionojnë."
+        ],
+        [
+          "A mund të përmirësoni faqen ekzistuese?",
+          "Po. Fillojmë me faqet e shërbimeve dhe problemet që mund të verifikohen në faqen aktuale."
+        ]
+      ],
+      "example_link": "Shihni kontrollet para publikimit"
+    },
+    "maintenance": {
+      "slug": "sherbime/mirembajtja-e-faqeve-te-internetit",
+      "label": "Mirëmbajtja e faqeve të internetit",
+      "title": "Mirëmbajtja e faqeve të internetit",
+      "meta_title": "Mirëmbajtja e faqeve të internetit për biznese në Kosovë | Ostrelya",
+      "meta_description": "Kontrollojmë faqet e rëndësishme, formularët dhe publikimet. Para fillimit përcaktojmë përditësimet, korrigjimet dhe mënyrën e raportimit të problemeve.",
+      "intro": "Kontrollojmë faqet e rëndësishme, formularët dhe publikimet. Para fillimit përcaktojmë përditësimet, korrigjimet dhe mënyrën e raportimit të problemeve.",
+      "process": "Para se të marrim përsipër një faqe, kontrollojmë hostimin, CMS-in dhe kopjet rezervë. Pas një përditësimi provojmë rrugën nga formulari deri te marrja e mesazhit.",
+      "deliverables": [
+        "Shqyrtim i sistemit dhe kopjeve rezervë",
+        "Përditësime dhe korrigjime sipas marrëveshjes",
+        "Regjistër i ndryshimeve dhe detyrave të hapura"
+      ],
+      "example": "Në udhëzues dallojmë kontrollet periodike nga ato që bëhen pas një publikimi ose ndryshimi të rëndësishëm.",
+      "faq_heading": "Pyetje të shpeshta",
+      "faq": [
+        [
+          "A mirëmbani faqe që i ka ndërtuar një ekip tjetër?",
+          "Po, pasi të kontrollojmë qasjen, platformën dhe mundësinë e rikthimit të faqes."
+        ],
+        [
+          "A përfshihen funksionet e reja?",
+          "Mirëmbajtja ka një fushë të përcaktuar. Modelet dhe funksionet e reja vlerësohen veçmas."
+        ]
+      ],
+      "example_link": "Hapni udhëzuesin e mirëmbajtjes"
+    }
+  }
+}

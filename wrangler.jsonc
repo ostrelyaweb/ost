@@ -5,6 +5,11 @@
   "workers_dev": true,
   "preview_urls": true,
   "keep_vars": true,
+  "send_email": [{ "name": "CONTACT_MAIL", "allowed_sender_addresses": ["hello@ostrelya.com"] }],
+  "ratelimits": [
+    { "name": "CONTACT_LIMIT", "namespace_id": "764230", "simple": { "limit": 3, "period": 60 } },
+    { "name": "CONTACT_BUDGET", "namespace_id": "764231", "simple": { "limit": 20, "period": 60 } }
+  ],
   "build": {
     "command": "python -B deployment/build.py"
   },
@@ -13,6 +18,6 @@
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/", "/api/locale"]
+    "run_worker_first": ["/", "/api/locale", "/api/enquiry"]
   }
 }

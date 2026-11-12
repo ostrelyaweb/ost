@@ -15,6 +15,7 @@ from regional_site import read_regions, region_routes, render_region, site_chrom
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = {"/": "index.html", "/services/": "services.html", "/about/": "about.html", "/journal/": "journal.html"}
+ORBIT_CASE = "/work/orbit-architecture/"
 PAGE_ALIASES = {"/index.html": "/"}
 for route, template in PAGES.items():
     if route != "/":
@@ -93,18 +94,28 @@ def journal_meta(article):
     )
 
 
-def journal_markup(root, content, article):
+def journal_markup(root, content, article, *, project=False):
     if article is not None:
         sections = []
         for section in article["sections"]:
             title = escape(section.get("title", ""))
             heading = f"<h2>{title}</h2>" if title else ""
-            sections.append(f'<section class="journal-block">{heading}{paragraphs(section["text"])}{image(root, section)}</section>')
+            section_id = section.get("id", "")
+            anchor = f' id="{section_id}"' if SLUG.fullmatch(section_id) else ""
+            sections.append(f'<section class="journal-block"{anchor}>{heading}{paragraphs(section["text"])}{image(root, section)}</section>')
+        back = '<a class="journal-back" href="/#work">← Selected work</a>' if project else '<a class="journal-back" href="/journal/">← All articles</a>'
+        links = ""
+        if project:
+            links = ('<p class="journal-block"><a class="journal-back" href="/assets/concepts/orbit.html">Explore the Orbit prototype ↗</a>'
+                     ' · <a class="journal-back" href="/services/#development">Web development ↗</a></p>')
+        elif article["slug"] == "website-launch-and-maintenance":
+            links = ('<p class="journal-block"><a class="journal-back" href="/services/#seo">Technical SEO ↗</a>'
+                     ' · <a class="journal-back" href="/services/#support">Website maintenance ↗</a></p>')
         inner = (
-            '<article class="journal-article"><a class="journal-back" href="/journal/">← All articles</a>'
+            f'<article class="journal-article">{back}'
             f'{journal_meta(article)}<h1 class="editorial-heading">{escape(article["title"])}</h1>'
             f'<p class="content-intro">{escape(article["summary"])}</p>'
-            f'{image(root, article)}{"".join(sections)}</article>'
+            f'{image(root, article)}{"".join(sections)}{links}</article>'
         )
     else:
         cards = []
@@ -124,13 +135,16 @@ def journal_markup(root, content, article):
 
 
 def render_page(root, origin, path, content=None, article=None):
+    project = path == ORBIT_CASE
+    if project:
+        article = read_content(root, "orbit-case")
     template = PAGES["/journal/"] if article is not None else PAGES[path]
     html = (root / template).read_text(encoding="utf-8")
     title, description, social = {
         "index.html": ("Ostrelya Studio — Web Design & Brand Identity in Zagreb",
                        "Independent Zagreb studio for web design, development and brand identity. Explore our work and start a project.", "/assets/reference-hero.jpg"),
-        "services.html": ("Web Design, Development & Branding — Ostrelya Studio",
-                          "Explore Ostrelya’s web design, development, brand identity, motion and content systems for teams building or redesigning a website.", HERO),
+        "services.html": ("Web Development, SEO & Web Design | Ostrelya Studio",
+                          "Web development, technical SEO and website maintenance for teams in Southeast Europe. Explore website design, visual identity and CMS support.", HERO),
         "about.html": ("About Ostrelya — Independent Design Studio in Zagreb",
                        "Meet Ostrelya, an independent Zagreb studio designing brand identities and building websites.", HERO),
         "journal.html": ("Journal — Design and Web Development Notes | Ostrelya",
@@ -140,19 +154,20 @@ def render_page(root, origin, path, content=None, article=None):
         html = replace_editorial(html, about_markup(root, content))
         social = asset_url(root, content.get("image")) or social
     elif template == "journal.html":
-        html = replace_editorial(html, journal_markup(root, content, article))
-        description = content["intro"]
+        html = replace_editorial(html, journal_markup(root, content, article, project=project))
         if article is not None:
-            title = article["title"] + " — Ostrelya Journal"
+            title = "Orbit Architecture — Studio Concept | Ostrelya" if project else article["title"] + " — Ostrelya Journal"
             description = article["summary"]
             social = asset_url(root, article.get("image")) or social
+        else:
+            description = content["intro"]
 
     url = origin + path
     meta = (
         f'<title>{escape(title)}</title>\n'
         f'  <meta name="description" content="{escape(description)}" />\n'
         f'  <link rel="canonical" href="{escape(url)}" />\n'
-        f'  <meta property="og:type" content="{"article" if article is not None else "website"}" />\n'
+        f'  <meta property="og:type" content="{"article" if article is not None and not project else "website"}" />\n'
         '  <meta property="og:site_name" content="Ostrelya Studio" />\n'
         f'  <meta property="og:title" content="{escape(title)}" />\n'
         f'  <meta property="og:description" content="{escape(description)}" />\n'
@@ -163,6 +178,9 @@ def render_page(root, origin, path, content=None, article=None):
     schema = None
     if path == "/":
         schema = {**organization, "logo": origin + "/assets/symbol-dark.png"}
+    elif project:
+        schema = {"@type": "CreativeWork", "name": article["title"], "url": url,
+                  "description": description, "creator": organization}
     elif article is not None:
         schema = {
             "@type": "BlogPosting", "headline": article["title"], "description": description,
@@ -192,7 +210,7 @@ def article_url(slug):
 
 def sitemap(origin, articles, regions):
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for path in (*PAGES, *(article_url(slug) for slug in articles), *region_routes(regions)):
+    for path in (*PAGES, ORBIT_CASE, *(article_url(slug) for slug in articles), *region_routes(regions)):
         SubElement(SubElement(urlset, "url"), "loc").text = origin + path
     return tostring(urlset, encoding="unicode", xml_declaration=True) + "\n"
 
@@ -269,6 +287,7 @@ def build_public(root, output, origin):
     }
     for slug, article in articles.items():
         pages[f"journal/{slug}/index.html"] = render_page(root, origin, article_url(slug), journal, article)
+    pages[ORBIT_CASE.lstrip("/") + "index.html"] = render_page(root, origin, ORBIT_CASE)
     for path, (key, service) in region_routes(regions).items():
         pages[path.lstrip("/") + "index.html"] = render_region(root, origin, regions, key, service)
     pages["404.html"] = render_not_found(root)
@@ -277,7 +296,7 @@ def build_public(root, output, origin):
     pages["_headers"] = public_headers(root)
     pages["sitemap.xml"] = sitemap(origin, articles, regions)
     pages["robots.txt"] = robots(origin)
-    pages["_routes.json"] = json.dumps({"version": 1, "include": ["/", "/api/locale"], "exclude": []}) + "\n"
+    pages["_routes.json"] = json.dumps({"version": 1, "include": ["/", "/api/locale", "/api/enquiry"], "exclude": []}) + "\n"
     pages["_worker.js"] = (root / "tools" / "locale_worker.js").read_text(encoding="utf-8")
 
     output.mkdir()

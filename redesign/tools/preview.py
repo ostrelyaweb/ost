@@ -7,7 +7,7 @@ from urllib.parse import parse_qs, parse_qsl, urlencode, urlsplit
 
 from privacy_pages import PRIVACY_PAGES, render_privacy
 from public_site import (
-    ARTICLE_PATH, PAGE_ALIASES, PAGES as PUBLIC_PAGES, article_url, journal_articles,
+    ARTICLE_PATH, ORBIT_CASE, PAGE_ALIASES, PAGES as PUBLIC_PAGES, article_url, journal_articles,
     read_content, render_not_found, render_page, robots, sitemap,
 )
 from regional_site import read_regions, region_routes, render_region
@@ -78,7 +78,7 @@ class StudioPreview(SimpleHTTPRequestHandler):
             self.redirect(path + ("?" + params if params else ""))
             return None
         content = read_content(ROOT, "about") if path == "/about/" else journal
-        return self.public_response(render_page(ROOT, origin, path, content, regions=REGIONS), "text/html")
+        return self.public_response(render_page(ROOT, origin, path, content), "text/html")
 
     def send_head(self):
         if not local_origin(self):
@@ -106,7 +106,7 @@ class StudioPreview(SimpleHTTPRequestHandler):
             template = (ROOT / PUBLIC_PAGES[path]).read_text(encoding="utf-8")
             return self.public_response(template, "text/html", cache="no-store")
         article_match = ARTICLE_PATH.fullmatch(path)
-        if article_match or path in {*PUBLIC_PAGES, "/sitemap.xml", "/robots.txt"}:
+        if article_match or path in {*PUBLIC_PAGES, ORBIT_CASE, "/sitemap.xml", "/robots.txt"}:
             return self.serve_public(route, path, article_match)
         path = Path(self.translate_path(self.path)).resolve()
         if path == ROOT:

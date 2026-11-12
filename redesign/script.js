@@ -209,24 +209,46 @@ function initEditorialHome() {
 function initProjectEnquiry() {
   const enquiryLinks = document.querySelectorAll('#project-enquiry, [data-project-enquiry]');
   const enquiryDialog = document.getElementById('project-enquiry-dialog');
-  const enquiryForm = document.getElementById('project-enquiry-form');
-  if (!enquiryLinks.length || !enquiryDialog || !enquiryForm) return;
-
-  for (const link of enquiryLinks) {
-    link.addEventListener('click', (event) => {
-      if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
-      event.preventDefault();
-      enquiryDialog.showModal();
-    });
+  if (enquiryDialog) {
+    for (const link of enquiryLinks) {
+      link.addEventListener('click', (event) => {
+        if (event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+        event.preventDefault();
+        enquiryDialog.showModal();
+      });
+    }
   }
 
-  enquiryForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const fields = new FormData(enquiryForm);
-    const subject = encodeURIComponent('New project enquiry');
-    const body = encodeURIComponent(`Name: ${fields.get('name')}\r\nEmail: ${fields.get('email')}\r\n\r\n${fields.get('message')}`);
-    window.location.href = `mailto:hello@ostrelya.com?subject=${subject}&body=${body}`;
-  });
+  for (const form of document.querySelectorAll('[data-enquiry-form]')) {
+    form.hidden = false;
+    const button = form.querySelector('button[type="submit"]');
+    const status = form.querySelector('[role="status"]');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const fields = Object.fromEntries(new FormData(form));
+      button.disabled = true;
+      status.textContent = form.dataset.pending;
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...fields, page: location.pathname, locale: form.dataset.locale }),
+          signal: AbortSignal.timeout(12000),
+        });
+        if (response.status === 202 && (await response.json()).accepted) {
+          status.textContent = form.dataset.success;
+          form.reset();
+        } else {
+          status.textContent = response.status === 429 ? form.dataset.rate : form.dataset.failure;
+        }
+      } catch {
+        status.textContent = form.dataset.failure;
+      } finally {
+        button.disabled = false;
+      }
+    });
+  }
 }
 
 function initEditorialSections() {

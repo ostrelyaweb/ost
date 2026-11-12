@@ -3,6 +3,32 @@
   "intro": "Notes on designing and building the web at Ostrelya.",
   "articles": [
     {
+      "title": "A website launch checklist you can keep using",
+      "slug": "website-launch-and-maintenance",
+      "date": "2026-11-12",
+      "category": "Development · Technical SEO",
+      "summary": "A practical checklist for a website redesign: map the old URLs, verify the new pages and test the contact journey. Then decide who repeats each check after launch.",
+      "sections": [
+        {
+          "title": "List the routes you already have",
+          "text": "Export the sitemap and any pages with impressions or links. For each old URL, decide whether it stays, moves to a specific new page, or has no relevant replacement. On Ostrelya, /en/usluge.html redirects to /services/ and older article addresses point to their corresponding articles. Test the old URL as well as the destination."
+        },
+        {
+          "title": "Verify the version you want search engines to find",
+          "text": "Open the final URL and check its status, title, canonical and crawl rules. Keep the sitemap focused on final, indexable URLs. On a multilingual site, follow the alternate link in both directions and verify that it points to the equivalent service, such as web development to web development."
+        },
+        {
+          "title": "Test the contact journey on a phone",
+          "text": "Find a service, open its contact option and check that the next step is clear. If the site submits a form, send a test and verify that it reaches the inbox or project system. If the page opens an email app, check the address and give visitors a visible email address they can copy. A button click by itself does not prove an enquiry arrived."
+        },
+        {
+          "id": "maintenance-checklist",
+          "title": "Checks to repeat after launch",
+          "text": "After a release: open a priority page, test contact, check any new redirects and verify that the sitemap changed as expected.\n\nOn a recurring schedule: check platform updates, domain renewal, backups and the recovery procedure, indexing of key pages, and any forms or integrations that the team relies on. Record the date, what was tested, who owns the next action and how to verify it."
+        }
+      ]
+    },
+    {
       "title": "How the Ostrelya loader became the navbar",
       "slug": "from-loading-bar-to-navbar",
       "date": "2026-11-09",

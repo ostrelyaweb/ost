@@ -22,7 +22,7 @@
   <!-- Google Fonts: Manrope & Space Grotesk -->
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1" />
 
-  <link rel="stylesheet" href="/styles.css?v=graphite-horizon" />
+  <link rel="stylesheet" href="/styles.css?v=regional-services" />
   <script>
     if (!matchMedia('(prefers-reduced-motion: reduce)').matches &&
         !new URLSearchParams(location.search).has('skipLoader') &&
@@ -102,7 +102,7 @@
       <div class="hero-container">
         <div class="hero-content">
           <h1 class="hero-title" id="hero-title">Design with<br />direction.</h1>
-          <p class="hero-tagline">Brand identities and websites designed and built in Zagreb.</p>
+          <p class="hero-tagline">We design, build and maintain websites for teams across Southeast Europe. Independent studio based in Zagreb.</p>
           <div class="hero-cta-group">
             <a href="#work" class="btn-primary">
               <span>View selected work</span>
@@ -199,7 +199,7 @@
                   <p>Audio release &amp; interactive playback</p>
                 </figcaption>
               </figure>
-              <figure class="selected-project" id="project-orbit" data-prototype="assets/concepts/orbit.html" data-description="Orbit Architecture is a portfolio concept for an architecture studio. Explore the Lakeside Residence from the exterior, in plan and from inside the living room." hidden>
+              <figure class="selected-project" id="project-orbit" data-prototype="/work/orbit-architecture/" data-description="Orbit Architecture is a portfolio concept for an architecture studio. Explore how one project page brings together the exterior, floor plan and interiors." hidden>
                 <div class="project-cover cover-orbit">
                   <img src="/assets/project-4-1200.webp" srcset="/assets/project-4-640.webp 640w, /assets/project-4-1200.webp 1200w" sizes="(max-width: 760px) 90vw, 55vw" alt="Lakeside residence at dusk paired with its Orbit Architecture project page" width="1200" height="900" loading="lazy" />
                   <div class="cover-orbit-page" aria-hidden="true">
@@ -399,22 +399,27 @@
     <p class="editorial-dialog-kicker" id="work-detail-category"></p>
     <h2 class="editorial-heading" id="work-detail-title"></h2>
     <p id="work-detail-description"></p>
-    <a class="btn-primary work-detail-prototype" id="work-detail-prototype" hidden>Explore prototype <span aria-hidden="true">↗</span></a>
+    <a class="btn-primary work-detail-prototype" id="work-detail-prototype" hidden>View project <span aria-hidden="true">↗</span></a>
     <div id="work-detail-preview"></div>
   </dialog>
 
   <dialog class="editorial-dialog enquiry-dialog" id="project-enquiry-dialog" aria-labelledby="enquiry-title">
     <form method="dialog"><button class="editorial-dialog-close" autofocus>Close <span aria-hidden="true">×</span></button></form>
     <h2 class="editorial-heading" id="enquiry-title">Start a project</h2>
-    <form id="project-enquiry-form">
+    <form id="project-enquiry-form" method="post" action="/api/enquiry" data-enquiry-form data-locale="en"
+      data-pending="Sending your enquiry…" data-success="Your enquiry was sent. We’ll reply to the address you entered."
+      data-failure="We couldn’t send your enquiry. Please retry or email hello@ostrelya.com."
+      data-rate="Please wait a minute before trying again.">
+      <input type="text" name="companyWebsite" hidden tabindex="-1" autocomplete="off" />
       <label>Your name <input name="name" autocomplete="name" required maxlength="100" /></label>
       <label>Email address <input name="email" type="email" autocomplete="email" required maxlength="160" /></label>
       <label>Tell us about your project <textarea name="message" required rows="4" maxlength="1500"></textarea></label>
-      <button type="submit" class="btn-primary">Continue via email <span aria-hidden="true">↗</span></button>
-      <p>Opens your email app with a draft.<span data-preview-privacy> <a href="/privacy/#contact">How we handle enquiries</a>.</span></p>
+      <p role="status"></p>
+      <button type="submit" class="btn-primary">Send enquiry <span aria-hidden="true">↗</span></button>
+      <p>You can also email <a href="mailto:hello@ostrelya.com">hello@ostrelya.com</a>.<span data-preview-privacy> <a href="/privacy/#contact">How we handle enquiries</a>.</span></p>
     </form>
   </dialog>
 
-  <script src="/script.js?v=clean-routes"></script>
+  <script src="/script.js?v=regional-services"></script>
 </body>
 </html>
