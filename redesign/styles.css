@@ -4665,6 +4665,8 @@ body:has(.editorial-dialog[open]) {
   border: 1px solid var(--editorial-rule);
 }
 .guide-topics a:hover { background: #eee8fb; }
+.guide-languages a { min-height: 40px; padding-inline: .65rem; font-size: .87rem; }
+.guide-languages a[aria-current="page"] { background: #eee8fb; color: var(--editorial-ink); font-weight: 800; }
 .guide-group {
   margin-bottom: clamp(1.8rem, 5vw, 4rem);
   scroll-margin-top: calc(var(--header-height) + 1rem);

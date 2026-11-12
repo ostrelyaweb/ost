@@ -5,6 +5,19 @@ from urllib.parse import quote
 
 PRICE_GUIDE = "/blog/" + quote("koliko-košta-web-stranica-2026")
 MAINTENANCE_GUIDE = "/blog/" + quote("održavanje-web-stranice-zašto-je-bitno")
+GUIDE_INDEX_LABELS = {
+    "hr": "Vodiči za web dizajn, razvoj i SEO",
+    "bs": "Vodiči za izradu web stranica i SEO",
+    "sr-rs": "Vodiči za izradu sajtova i SEO",
+    "sr-me": "Vodiči za izradu sajtova i SEO",
+    "sl": "Vodniki za izdelavo spletnih strani in SEO",
+    "mk": "Водичи за изработка на веб-страници и SEO",
+    "sq": "Udhëzues për krijimin e faqeve dhe SEO",
+}
+SERVICE_GUIDE_TOPICS = {
+    "web": "#planning", "redesign": "#planning", "brand": "#planning",
+    "development": "#operations", "seo": "#search", "maintenance": "#operations",
+}
 SERVICE_GUIDES_HR = {
     "redesign": (("Pripremite URL-ove prije redizajna", "/blog/redizajn-web-stranice-bez-gubitka-seo"),),
     "development": (
@@ -217,12 +230,15 @@ def render_region(root, origin, regions, key, service):
     privacy_link = ('<a href="/hr/politika-privatnosti/#privacy-contact">Kako obrađujemo upite</a>' if key == "hr"
                     else '<a href="/privacy-policy/#privacy-contact" lang="en">How we handle enquiries</a>')
     market_links = "".join(switches)
+    guide_index = "/blog" if key == "hr" else f"/{key}/blog"
+    guide_index += SERVICE_GUIDE_TOPICS.get(service, "")
     markets = (
         '<section class="page-container region-market" id="trzista">'
         f'<p class="services-kicker">{"03 / Rad u regiji" if web_service_layout else escape(nav["languages"])}</p>'
         f'<h2 class="editorial-heading">{escape(nav["languages"])}.</h2>'
         + ('<p>Studio je u Zagrebu. S timovima iz regije radimo na daljinu, od prvog razgovora do primopredaje. Odaberite verziju ove usluge za svoje tržište.</p>' if web_service_layout else "")
-        + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul></section>'
+        + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul>'
+        f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[key])} <span aria-hidden="true">↗</span></a></p></section>'
     )
     if web_service_layout:
         main = croatian_web_main("".join(service_links), markets)

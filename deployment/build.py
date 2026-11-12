@@ -16,6 +16,7 @@ SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 sys.path.insert(0, str(REDESIGN / "tools"))
 from public_site import build_public, read_content
 from guide_pages import guide_path, render_guide, render_guide_index
+from regional_site import read_regions
 from privacy_pages import render_privacy
 from check_indexable import check_indexable
 
@@ -79,26 +80,38 @@ def preserve_archive(output):
     if guides.keys() & new_guides.keys():
         raise ValueError("Guide slugs must be unique across the blog.")
     guides.update(new_guides)
-    guide_files = {}
+    regions = read_regions(REDESIGN)
+    locales = {"en": {"tag": "en", "language": "English"}, **regions}
+    translations = read_content(REDESIGN, "regional-guides")
+    if translations.keys() != guides.keys():
+        raise ValueError("Regional translations must cover all blog guides.")
+    guide_files = {
+        guide_path(None, lang).lstrip("/") + ".html": (None, lang) for lang in locales
+    }
     for slug, guide in guides.items():
-        for lang in ("hr", "en"):
+        localized = translations[slug]
+        if set(localized) != set(regions) - {"hr"}:
+            raise ValueError(f"Incomplete regional guide: {slug}")
+        guide.update(localized)
+        for lang in locales:
             local_slug = guide[lang].get("slug", slug)
             if not local_slug or not all(char.isalnum() or char == "-" for char in local_slug):
                 raise ValueError(f"Invalid guide slug: {local_slug!r}")
             name = unquote(guide_path(slug, lang, guide)).lstrip("/") + ".html"
             if name in guide_files:
                 raise ValueError(f"Duplicate guide path: {name}")
-            guide_files[name] = slug
+            guide_files[name] = slug, lang
     archive_pages = tuple(dict.fromkeys((*ARCHIVE_PAGES, *guide_files)))
     for name in archive_pages:
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
-        lang = "en" if name.startswith("en/") else "hr"
-        if name in {"blog.html", "en/blog.html"}:
-            target.write_text(render_guide_index(REDESIGN, ORIGIN, lang, guides), encoding="utf-8")
-            continue
-        if slug := guide_files.get(name):
-            target.write_text(render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug]), encoding="utf-8")
+        if name in guide_files:
+            slug, lang = guide_files[name]
+            if slug:
+                body = render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug], locales)
+            else:
+                body = render_guide_index(REDESIGN, ORIGIN, lang, guides, locales)
+            target.write_text(body, encoding="utf-8")
             continue
         body = (ROOT / name).read_text(encoding="utf-8")
         body = FONT_LINK.sub("", body)
