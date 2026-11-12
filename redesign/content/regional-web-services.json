@@ -30,10 +30,10 @@
     "seo": {
       "slug": "usluge/seo-optimizacija",
       "label": "SEO optimizacija i tehnički SEO",
-      "title": "SEO optimizacija i tehnički SEO",
+      "title": "SEO pregled i optimizacija weba",
       "meta_title": "SEO optimizacija i tehnički SEO za tvrtke u Hrvatskoj | Ostrelya",
-      "meta_description": "Provjeravamo može li Google pronaći važne stranice i odgovaraju li njihov sadržaj i struktura na upite kupaca. Nalaze pretvaramo u popis izmjena s redoslijedom provedbe.",
-      "intro": "Provjeravamo može li Google pronaći važne stranice i odgovaraju li njihov sadržaj i struktura na upite kupaca. Nalaze pretvaramo u popis izmjena s redoslijedom provedbe.",
+      "meta_description": "SEO pregled web stranice za tvrtke u Hrvatskoj. Dobivate nalaze o indeksiranju, sadržaju i poveznicama te popis izmjena prema prioritetu.",
+      "intro": "Saznajte zašto kupci teško pronalaze vaše usluge u pretraživanju. Pregledamo web i predložimo što popraviti prvo, na kojim stranicama i kako provjeriti rezultat.",
       "process": "U Search Consoleu provjerimo indeksiranje i upite, a na webu statuse, interne poveznice i kanonske adrese. Za redizajn prvo izdvojimo postojeće stranice koje već imaju impresije ili dolazne poveznice.",
       "deliverables": [
         "Pregled indeksiranja, preusmjerenja i sitemapa",
@@ -44,12 +44,20 @@
       "faq_heading": "Česta pitanja",
       "faq": [
         [
-          "Što dobivamo nakon SEO audita?",
-          "Popis nalaza s primjerima URL-ova, prioritetima i načinom provjere. Možemo dogovoriti i provedbu izmjena."
+          "Koliko košta SEO pregled i što utječe na rok?",
+          "Cijena i rok ovise o broju i vrsti stranica, jezicima te o tome treba li pregledati migraciju ili integracije. Kad pošaljete URL i cilj pregleda, predložit ćemo što obuhvaća ponuda."
+        ],
+        [
+          "Možemo li krenuti bez pristupa Search Consoleu?",
+          "Da. S javne adrese možemo provjeriti dostupnost stranica, sitemap, poveznice i sadržaj. Za podatke o upitima, klikovima i indeksiranju možemo naknadno dogovoriti pristup izvještajima."
         ],
         [
           "Uključujete li lokalni i višejezični SEO?",
           "Da, kada postoji zasebna ponuda za tržište. Tada provjeravamo lokalne izraze, sadržaj i veze među jezičnim stranicama."
+        ],
+        [
+          "Tko provodi predložene izmjene?",
+          "Izvještaj može preuzeti vaš tim ili postojeći izvođač. Ako dogovorimo provedbu s Ostrelyom, odredimo koje izmjene ulaze u posao i kako ćemo provjeriti objavljenu verziju."
         ]
       ],
       "example_link": "Pogledajte kako provjeravamo objavu"

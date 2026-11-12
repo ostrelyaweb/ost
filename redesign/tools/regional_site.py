@@ -52,15 +52,30 @@ ENQUIRY_COPY = {
 }
 
 
-def regional_enquiry(key):
+def regional_enquiry(key, *, seo_review=False):
     name, email, message, submit, pending, success, failure, rate = map(escape, ENQUIRY_COPY[key])
+    website = ""
+    fields = f'<label>{message}<textarea name="message" rows="4" required maxlength="1500"></textarea></label>'
+    if seo_review:
+        website = """
+        <label>Javni URL web stranice
+          <input name="website" type="url" pattern="https?://.+" placeholder="https://vaša-domena.hr" required maxlength="500">
+        </label>
+        """
+        fields = """
+        <label>Što želite provjeriti? (neobavezno)
+          <textarea name="message" rows="4" maxlength="950"></textarea>
+        </label>
+        """
+        submit = "Pošaljite URL za SEO pregled"
     return f"""
     <form method="post" action="/api/enquiry" data-enquiry-form data-locale="{key}" hidden
           data-pending="{pending}" data-success="{success}" data-failure="{failure}" data-rate="{rate}">
       <input type="text" name="companyWebsite" hidden tabindex="-1" autocomplete="off">
+      {website}
       <label>{name}<input name="name" autocomplete="name" required maxlength="100"></label>
       <label>{email}<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
-      <label>{message}<textarea name="message" rows="4" required maxlength="1500"></textarea></label>
+      {fields}
       <p role="status"></p>
       <button type="submit" class="btn-primary">{submit} <span aria-hidden="true">↗</span></button>
     </form>
@@ -189,6 +204,76 @@ def site_chrome(root, *, regional=True, croatian=False):
     return header, footer
 
 
+def croatian_seo_main(headline, intro, active, service_links, markets):
+    checks = (
+        ("Dostupnost i indeksiranje", "Provjeravamo važne URL-ove, sitemap, preusmjerenja i kanonske adrese. Uz pristup Search Consoleu pregledamo kako Google vidi odabrane stranice."),
+        ("Upiti i odredišne stranice", "Uspoređujemo što kupci traže s naslovima, sadržajem i internim poveznicama. Izdvajamo stranice koje treba doraditi i teme koje traže zasebnu stranicu."),
+        ("Plan popravaka", "Uz svaki nalaz dobivate pogođene URL-ove, prioritet, prijedlog izmjene i način provjere. Ako dogovorimo provedbu, ponavljamo provjere nakon objave."),
+    )
+    check_items = "".join(
+        f'<li><h3>{escape(heading)}</h3><p>{escape(copy)}</p></li>' for heading, copy in checks
+    )
+    guides = "".join(
+        f'<li><a class="web-service-text-link" href="{href}">{escape(label)} <span aria-hidden="true">↗</span></a></li>'
+        for label, href in SERVICE_GUIDES_HR["seo"]
+    )
+    return f"""
+    <section class="services-editorial-hero web-service-hero" aria-labelledby="seo-offer-title">
+      <div class="page-container services-hero-layout">
+        <div>
+          <p class="services-kicker">Ostrelya Studio / Hrvatska</p>
+          <h1 class="editorial-heading" id="seo-offer-title">{headline}<span>.</span></h1>
+        </div>
+        <div class="services-hero-aside">
+          <p>{intro}</p>
+          <a class="btn-primary" href="#contact">Pošaljite URL za SEO pregled <span aria-hidden="true">↗</span></a>
+        </div>
+        <nav class="guide-topics seo-offer-nav" aria-label="Sadržaj SEO ponude">
+          <a href="#usluge">Što pregled obuhvaća</a>
+          <a href="#projekti">Primjer nalaza</a>
+          <a href="#pitanja">Česta pitanja</a>
+        </nav>
+      </div>
+    </section>
+    <div class="page-container">
+      <section class="region-split seo-offer-section" id="usluge" aria-labelledby="seo-scope-title">
+        <div>
+          <h2 class="editorial-heading" id="seo-scope-title">Što pregled obuhvaća</h2>
+          <p>Počinjemo sa stranicama koje bi trebale dovoditi kupce. Ako pripremate redizajn, popisujemo postojeće adrese koje vrijedi zadržati ili preusmjeriti.</p>
+        </div>
+        <ol class="seo-offer-checks">{check_items}</ol>
+      </section>
+      <section class="region-split seo-offer-section" id="projekti" aria-labelledby="seo-example-title">
+        <div>
+          <h2 class="editorial-heading" id="seo-example-title">Kako izgleda nalaz</h2>
+          <p>Ovo je ilustrativan primjer stavke iz SEO pregleda. Izvještaj za vaš web sadrži stvarne URL-ove i korake za provjeru.</p>
+        </div>
+        <article class="seo-offer-sample">
+          <h3>Stranica usluge označava naslovnicu kao glavnu adresu</h3>
+          <dl>
+            <dt>URL</dt><dd><code>/usluge/</code></dd>
+            <dt>Prioritet</dt><dd>Visok, jer je stranica namijenjena kupcima koji traže uslugu.</dd>
+            <dt>Izmjena</dt><dd>Postaviti <code>/usluge/</code> kao kanonsku adresu i uskladiti interne poveznice i sitemap.</dd>
+            <dt>Provjera</dt><dd>Potvrditi da stranica vraća HTTP 200 i da canonical pokazuje na nju. Nakon ponovnog obilaska u Search Consoleu provjeriti koju adresu Google smatra glavnom.</dd>
+          </dl>
+        </article>
+      </section>
+      <section class="region-split seo-offer-section" id="pitanja" aria-labelledby="seo-faq-title">
+        <div>
+          <h2 class="editorial-heading" id="seo-faq-title">{escape(active["faq_heading"])}</h2>
+          <ul class="seo-offer-guides">{guides}</ul>
+        </div>
+        <div class="service-accordions web-service-faq">{faq_details(active["faq"])}</div>
+      </section>
+    </div>
+    {markets}
+    <section class="page-container region-services" id="ostale-usluge">
+      <h2 class="editorial-heading">Ostale usluge</h2>
+      <div class="region-service-grid">{service_links}</div>
+    </section>
+    """
+
+
 def render_region(root, origin, regions, key, service):
     region = regions[key]
     active = region["services"][service] if service else region
@@ -204,6 +289,7 @@ def render_region(root, origin, regions, key, service):
     market = escape(region["market"])
     title = escape(active["meta_title"])
     web_service_layout = key == "hr" and service == "web"
+    seo_offer_layout = key == "hr" and service == "seo"
     social_image = (EXAMPLES[service][2] if service else None) or "/assets/hero-metal-emblem.webp"
     alternates = []
     switches = []
@@ -223,7 +309,7 @@ def render_region(root, origin, regions, key, service):
                 f'<a href="{region_path(key, region, name)}"><strong>{escape(item["label"])}</strong>'
                 f'<p>{escape(item["intro"])}</p><span aria-hidden="true">↗</span></a>'
             )
-    page_class = "page-services region-page region-web" if web_service_layout else "page-editorial region-page"
+    page_class = "page-services region-page region-web" if web_service_layout or seo_offer_layout else "page-editorial region-page"
     header, footer = site_chrome(root, croatian=key == "hr")
     header = header.replace('>Region</a>', f' lang="{lang}">{escape(nav["languages"])}</a>')
     header = header.replace("<span>Let's talk</span>", f'<span lang="{lang}">{escape(labels["enquiry"])}</span>')
@@ -242,6 +328,8 @@ def render_region(root, origin, regions, key, service):
     )
     if web_service_layout:
         main = croatian_web_main("".join(service_links), markets)
+    elif seo_offer_layout:
+        main = croatian_seo_main(headline, intro, active, "".join(service_links), markets)
     else:
         main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links)) + markets
         if service:
@@ -279,6 +367,11 @@ def render_region(root, origin, regions, key, service):
         })
     structured_data = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False).replace("<", "\\u003c")
 
+    contact_title = "Pošaljite URL za SEO pregled" if seo_offer_layout else escape(labels["contact"])
+    contact_brief = (
+        "Unesite javnu adresu weba. Ako već imate konkretan problem, navedite stranicu, uslugu ili tržište koje želite provjeriti. Odgovorit ćemo s prijedlogom opsega pregleda."
+        if seo_offer_layout else escape(labels["brief"])
+    )
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -298,9 +391,9 @@ def render_region(root, origin, regions, key, service):
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional-services">
-  <link rel="stylesheet" href="/assets/regional.css?v=6">
+  <link rel="stylesheet" href="/assets/regional.css?v=7">
   <script src="/assets/region-language.js?v=10" defer></script>
-  <script src="/script.js?v=regional-services" defer></script>
+  <script src="/script.js?v={"seo-review" if seo_offer_layout else "regional-services"}" defer></script>
 </head>
 <body id="top" class="{page_class}">
   {header}
@@ -310,9 +403,9 @@ def render_region(root, origin, regions, key, service):
     <section class="editorial-contact" id="contact" aria-labelledby="regional-contact-title">
       <div class="page-container">
         <p class="services-kicker">{escape(nav["contact"])}</p>
-        <h2 class="editorial-heading" id="regional-contact-title" data-editorial-reveal>{escape(labels["contact"])}</h2>
-        <p>{escape(labels["brief"])}</p>
-        {regional_enquiry(key)}
+        <h2 class="editorial-heading" id="regional-contact-title" data-editorial-reveal>{contact_title}</h2>
+        <p>{contact_brief}</p>
+        {regional_enquiry(key, seo_review=seo_offer_layout)}
         <div class="editorial-contact-links">
           <a href="mailto:hello@ostrelya.com">hello@ostrelya.com <span aria-hidden="true">→</span></a>
         </div>

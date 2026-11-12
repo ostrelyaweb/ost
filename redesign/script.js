@@ -226,7 +226,10 @@ function initProjectEnquiry() {
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (button.disabled) return;
-      const fields = Object.fromEntries(new FormData(form));
+      const { website, ...fields } = Object.fromEntries(new FormData(form));
+      if (website) {
+        fields.message = [`URL weba: ${website.trim()}`, fields.message.trim()].filter(Boolean).join('\n\n');
+      }
       button.disabled = true;
       status.textContent = form.dataset.pending;
       try {

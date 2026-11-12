@@ -71,6 +71,28 @@
 .web-service-faq .services-detail { padding-inline-start: 0; }
 .web-service-faq .services-detail p { max-width: 66ch; }
 .region-page .editorial-contact p:not(.services-kicker) { max-width: 45ch; margin-block: 1rem; }
+#seo-offer-title { font-size: clamp(2.8rem, 7vw, 7.25rem); overflow-wrap: anywhere; }
+.seo-offer-nav { grid-column: 1 / -1; margin-top: 0; }
+.seo-offer-section h2 { font-size: clamp(2rem, 5vw, 4.7rem); overflow-wrap: anywhere; }
+.seo-offer-section > div > p { max-width: 53ch; margin-top: .8rem; color: #474650; }
+.seo-offer-checks { margin: 0; padding: 0; list-style: none; }
+.seo-offer-checks li { padding-block: .8rem; border-top: 1px solid var(--editorial-rule); }
+.seo-offer-checks p { margin-top: .3rem; color: #474650; }
+.seo-offer-sample {
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--editorial-rule);
+  background: #eeedf2;
+}
+.seo-offer-sample dl {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .65rem 1rem;
+  margin: 1rem 0 0;
+}
+.seo-offer-sample dt { font-weight: 800; }
+.seo-offer-sample dd { margin: 0; color: #474650; overflow-wrap: anywhere; }
+.seo-offer-section .seo-offer-guides { padding: 0; list-style: none; }
+.seo-offer-guides .web-service-text-link { margin: 0; }
 @media (max-width: 760px) {
   .web-service-process, .web-service-project { grid-template-columns: minmax(0, 1fr); }
 }
