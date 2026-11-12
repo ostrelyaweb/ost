@@ -19,8 +19,6 @@ from privacy_pages import render_privacy
 
 
 REDIRECTS = {
-    "/work": "/#work",
-    "/work/": "/#work",
     "/usluge": "/hr/",
     "/usluge.html": "/hr/",
     "/kontakt": "/hr/#contact",

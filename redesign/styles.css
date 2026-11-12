@@ -4641,6 +4641,16 @@ body:has(.editorial-dialog[open]) {
 .services-market-links a { color: var(--editorial-violet); text-decoration: underline; text-underline-offset: .2em; }
 .page-editorial .journal-block[id] { scroll-margin-top: calc(var(--header-height) + 1rem); }
 
+.home-all-work {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  margin-block-start: 1.5rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: .22em;
+}
+
 .locale-connection {
   display: flex;
   flex-wrap: wrap;

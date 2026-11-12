@@ -7,15 +7,18 @@ from urllib.parse import parse_qs, parse_qsl, urlencode, urlsplit
 
 from privacy_pages import PRIVACY_PAGES, render_privacy
 from public_site import (
-    ARTICLE_PATH, ORBIT_CASE, PAGE_ALIASES, PAGES as PUBLIC_PAGES, article_url, journal_articles,
+    ARTICLE_PATH, PAGE_ALIASES, PAGES as PUBLIC_PAGES, article_url, journal_articles,
     read_content, render_not_found, render_page, robots, sitemap,
 )
 from regional_site import read_regions, region_routes, render_region
 from studio_cms import local_origin, serve_cms
+from work_site import read_projects, render_work, work_routes
 
 ROOT = Path(__file__).resolve().parent.parent
 REGIONS = read_regions(ROOT)
 REGION_ROUTES = region_routes(REGIONS)
+PROJECTS = read_projects(ROOT)
+WORK_ROUTES = work_routes(PROJECTS)
 PAGES = {
     "index.html", "services.html", "about.html", "journal.html",
     "loader-preview.html", "styles.css", "script.js", "editorial-content.js",
@@ -62,7 +65,7 @@ class StudioPreview(SimpleHTTPRequestHandler):
         if path == "/robots.txt":
             return self.public_response(robots(origin), "text/plain")
         if path == "/sitemap.xml":
-            return self.public_response(sitemap(origin, journal_articles(journal), REGIONS), "application/xml")
+            return self.public_response(sitemap(origin, journal_articles(journal), REGIONS, PROJECTS), "application/xml")
         if article_match or (path == "/journal/" and "article" in query):
             slug = article_match[1] if article_match else query["article"][0]
             article = journal_articles(journal).get(slug)
@@ -98,6 +101,12 @@ class StudioPreview(SimpleHTTPRequestHandler):
             key, service = REGION_ROUTES[regional_path]
             origin = "http://" + self.headers["Host"]
             return self.public_response(render_region(ROOT, origin, REGIONS, key, service), "text/html")
+        if regional_path in WORK_ROUTES:
+            if regional_path != route.path:
+                self.redirect(regional_path + ("?" + route.query if route.query else ""))
+                return None
+            origin = "http://" + self.headers["Host"]
+            return self.public_response(render_work(ROOT, origin, regional_path, WORK_ROUTES[regional_path], PROJECTS), "text/html")
         path = PAGE_ALIASES.get(route.path, route.path)
         if path in {"/about/", "/journal/"} and "studio-preview" in parse_qs(route.query, keep_blank_values=True):
             if path != route.path:
@@ -106,7 +115,7 @@ class StudioPreview(SimpleHTTPRequestHandler):
             template = (ROOT / PUBLIC_PAGES[path]).read_text(encoding="utf-8")
             return self.public_response(template, "text/html", cache="no-store")
         article_match = ARTICLE_PATH.fullmatch(path)
-        if article_match or path in {*PUBLIC_PAGES, ORBIT_CASE, "/sitemap.xml", "/robots.txt"}:
+        if article_match or path in {*PUBLIC_PAGES, "/sitemap.xml", "/robots.txt"}:
             return self.serve_public(route, path, article_match)
         path = Path(self.translate_path(self.path)).resolve()
         if path == ROOT:

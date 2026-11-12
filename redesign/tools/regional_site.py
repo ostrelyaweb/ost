@@ -5,7 +5,7 @@ import json
 EXAMPLES = {
     "web": ("Orbit Architecture", "/work/orbit-architecture/", "/assets/project-4-640.webp", 640, 480),
     "redesign": ("Ostrelya Studio", "/#work", "/assets/hero-metal-emblem-640.webp", 640, 640),
-    "brand": ("Solarium", "/assets/concepts/solarium.html", "/assets/project-1-640.webp", 640, 480),
+    "brand": ("Solarium", "/work/solarium/", "/assets/project-1-640.webp", 640, 480),
     "development": ("Orbit Architecture", "/work/orbit-architecture/", "/assets/project-4-640.webp", 640, 480),
     "seo": ("Ostrelya Studio", "/journal/website-launch-and-maintenance/", None, 0, 0),
     "maintenance": ("Ostrelya Studio", "/journal/website-launch-and-maintenance/#maintenance-checklist", None, 0, 0),

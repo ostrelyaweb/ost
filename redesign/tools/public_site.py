@@ -12,11 +12,11 @@ from urllib.parse import quote, urlsplit
 from xml.etree.ElementTree import Element, SubElement, tostring
 
 from regional_site import read_regions, region_routes, render_region, site_chrome
+from work_site import WORK_INDEX, read_projects, render_work, work_routes
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = {"/": "index.html", "/services/": "services.html", "/about/": "about.html", "/journal/": "journal.html"}
-ORBIT_CASE = "/work/orbit-architecture/"
-PAGE_ALIASES = {"/index.html": "/"}
+PAGE_ALIASES = {"/index.html": "/", "/work": WORK_INDEX}
 for route, template in PAGES.items():
     if route != "/":
         PAGE_ALIASES.update({route.rstrip("/"): route, "/" + template: route, route + "index.html": route})
@@ -94,7 +94,7 @@ def journal_meta(article):
     )
 
 
-def journal_markup(root, content, article, *, project=False):
+def journal_markup(root, content, article):
     if article is not None:
         sections = []
         for section in article["sections"]:
@@ -103,12 +103,9 @@ def journal_markup(root, content, article, *, project=False):
             section_id = section.get("id", "")
             anchor = f' id="{section_id}"' if SLUG.fullmatch(section_id) else ""
             sections.append(f'<section class="journal-block"{anchor}>{heading}{paragraphs(section["text"])}{image(root, section)}</section>')
-        back = '<a class="journal-back" href="/#work">← Selected work</a>' if project else '<a class="journal-back" href="/journal/">← All articles</a>'
+        back = '<a class="journal-back" href="/journal/">← All articles</a>'
         links = ""
-        if project:
-            links = ('<p class="journal-block"><a class="journal-back" href="/assets/concepts/orbit.html">Explore the Orbit prototype ↗</a>'
-                     ' · <a class="journal-back" href="/services/#development">Web development ↗</a></p>')
-        elif article["slug"] == "website-launch-and-maintenance":
+        if article["slug"] == "website-launch-and-maintenance":
             links = ('<p class="journal-block"><a class="journal-back" href="/services/#seo">Technical SEO ↗</a>'
                      ' · <a class="journal-back" href="/services/#support">Website maintenance ↗</a></p>')
         inner = (
@@ -135,9 +132,6 @@ def journal_markup(root, content, article, *, project=False):
 
 
 def render_page(root, origin, path, content=None, article=None):
-    project = path == ORBIT_CASE
-    if project:
-        article = read_content(root, "orbit-case")
     template = PAGES["/journal/"] if article is not None else PAGES[path]
     html = (root / template).read_text(encoding="utf-8")
     title, description, social = {
@@ -154,9 +148,9 @@ def render_page(root, origin, path, content=None, article=None):
         html = replace_editorial(html, about_markup(root, content))
         social = asset_url(root, content.get("image")) or social
     elif template == "journal.html":
-        html = replace_editorial(html, journal_markup(root, content, article, project=project))
+        html = replace_editorial(html, journal_markup(root, content, article))
         if article is not None:
-            title = "Orbit Architecture — Studio Concept | Ostrelya" if project else article["title"] + " — Ostrelya Journal"
+            title = article["title"] + " — Ostrelya Journal"
             description = article["summary"]
             social = asset_url(root, article.get("image")) or social
         else:
@@ -167,7 +161,7 @@ def render_page(root, origin, path, content=None, article=None):
         f'<title>{escape(title)}</title>\n'
         f'  <meta name="description" content="{escape(description)}" />\n'
         f'  <link rel="canonical" href="{escape(url)}" />\n'
-        f'  <meta property="og:type" content="{"article" if article is not None and not project else "website"}" />\n'
+        f'  <meta property="og:type" content="{"article" if article is not None else "website"}" />\n'
         '  <meta property="og:site_name" content="Ostrelya Studio" />\n'
         f'  <meta property="og:title" content="{escape(title)}" />\n'
         f'  <meta property="og:description" content="{escape(description)}" />\n'
@@ -178,9 +172,6 @@ def render_page(root, origin, path, content=None, article=None):
     schema = None
     if path == "/":
         schema = {**organization, "logo": origin + "/assets/symbol-dark.png"}
-    elif project:
-        schema = {"@type": "CreativeWork", "name": article["title"], "url": url,
-                  "description": description, "creator": organization}
     elif article is not None:
         schema = {
             "@type": "BlogPosting", "headline": article["title"], "description": description,
@@ -208,9 +199,9 @@ def article_url(slug):
     return f"/journal/{slug}/"
 
 
-def sitemap(origin, articles, regions):
+def sitemap(origin, articles, regions, projects):
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for path in (*PAGES, ORBIT_CASE, *(article_url(slug) for slug in articles), *region_routes(regions)):
+    for path in (*PAGES, *work_routes(projects), *(article_url(slug) for slug in articles), *region_routes(regions)):
         SubElement(SubElement(urlset, "url"), "loc").text = origin + path
     return tostring(urlset, encoding="unicode", xml_declaration=True) + "\n"
 
@@ -279,6 +270,7 @@ def build_public(root, output, origin):
     journal = read_content(root, "journal")
     articles = journal_articles(journal)
     regions = read_regions(root)
+    projects = read_projects(root)
     pages = {
         path.lstrip("/") + "index.html": render_page(
             root, origin, path, {"/about/": about, "/journal/": journal}.get(path)
@@ -287,14 +279,15 @@ def build_public(root, output, origin):
     }
     for slug, article in articles.items():
         pages[f"journal/{slug}/index.html"] = render_page(root, origin, article_url(slug), journal, article)
-    pages[ORBIT_CASE.lstrip("/") + "index.html"] = render_page(root, origin, ORBIT_CASE)
+    for path, project in work_routes(projects).items():
+        pages[path.lstrip("/") + "index.html"] = render_work(root, origin, path, project, projects)
     for path, (key, service) in region_routes(regions).items():
         pages[path.lstrip("/") + "index.html"] = render_region(root, origin, regions, key, service)
     pages["404.html"] = render_not_found(root)
     pages = {name: PREVIEW_PRIVACY.sub("", body) for name, body in pages.items()}
     pages["_redirects"] = "".join(f"{alias} {path} 301\n" for alias, path in PAGE_ALIASES.items())
     pages["_headers"] = public_headers(root)
-    pages["sitemap.xml"] = sitemap(origin, articles, regions)
+    pages["sitemap.xml"] = sitemap(origin, articles, regions, projects)
     pages["robots.txt"] = robots(origin)
     pages["_routes.json"] = json.dumps({"version": 1, "include": ["/", "/api/locale", "/api/enquiry"], "exclude": []}) + "\n"
     pages["_worker.js"] = (root / "tools" / "locale_worker.js").read_text(encoding="utf-8")

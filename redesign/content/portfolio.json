@@ -1,0 +1,185 @@
+[
+  {
+    "slug": "orbit-architecture",
+    "name": "Orbit Architecture",
+    "category": "Architecture portfolio",
+    "scope": "Art direction, responsive web design, frontend",
+    "summary": "A portfolio that lets you understand one house through its setting, plan and interiors.",
+    "brief": "A prospective client should be able to understand an architect’s work before a call. The brief was to explain one building well, with enough context to read the photographs and the plan together.",
+    "cover": [
+      "project-4-1200.webp",
+      "A modern lakeside residence at dusk",
+      1200,
+      900,
+      "project-4-640.webp"
+    ],
+    "cover_caption": "Lakeside Residence · Exterior study",
+    "demo": "/assets/concepts/orbit.html",
+    "demo_label": "Explore the Orbit prototype",
+    "service": [
+      "Web design",
+      "/services/#web-design"
+    ],
+    "decisions": [
+      [
+        "Start with the site",
+        "The exterior establishes where the house sits. The opening photograph leaves room for the landscape and places the building at the edge of the frame."
+      ],
+      [
+        "Give the plan a job",
+        "The plan explains how the private rooms, living space and lake-facing terrace connect. It belongs to the project page so visitors keep their place while reading."
+      ],
+      [
+        "Bring the visitor inside",
+        "An interior study shifts the scale from the building to its materials, light and view. Captions name the details that a prospective client can ask about."
+      ]
+    ],
+    "evidence": [
+      "concepts/orbit-living-room.webp",
+      "Interior of the Lakeside Residence with a concrete ceiling and glazing facing the lake",
+      1448,
+      1086
+    ],
+    "evidence_caption": "Interior study · Light, concrete and the view to the lake",
+    "note": "Open the prototype and follow the same residence from the exterior to its plan and material study."
+  },
+  {
+    "slug": "vanguard-room-studio",
+    "name": "Vanguard Room Studio",
+    "category": "Product configurator",
+    "scope": "Product website, interaction design, 3D frontend",
+    "summary": "An interactive room for comparing a modular wall system, finishes and lighting.",
+    "brief": "A finish swatch tells you little about what a wall will look like across a lobby. The concept gives an interior designer enough context to compare options while planning a room.",
+    "cover": [
+      "concepts/room-studio-preview.webp",
+      "Isometric room with furniture and a wall of curved fins in Vanguard Room Studio",
+      680,
+      440
+    ],
+    "cover_caption": "Room Studio · Lobby scene",
+    "demo": "/assets/concepts/room-studio/",
+    "demo_label": "Try Room Studio",
+    "service": [
+      "Web development",
+      "/services/#development"
+    ],
+    "decisions": [
+      [
+        "Start with a room",
+        "A furnished scene provides scale and context. Designers can compare finishes against the same floor and furnishings."
+      ],
+      [
+        "Keep controls close to the result",
+        "Changes to the room update the scene. Moving the camera helps you see how the vertical fins read from different angles."
+      ],
+      [
+        "Offer a simpler entry point",
+        "The product page gives the Wave 01 wall its own configurator before inviting visitors into the broader Room Studio."
+      ]
+    ],
+    "evidence": [
+      "project-2-1200.webp",
+      "A curved sequence of vertical wall fins in a lobby",
+      1200,
+      896,
+      "project-2-640.webp"
+    ],
+    "evidence_caption": "Wave 01 · Wall system study",
+    "note": "Try a different finish, adjust lighting and move around the lobby in the live prototype.",
+    "related": [
+      "View the Wave 01 product page",
+      "/assets/concepts/vanguard.html"
+    ]
+  },
+  {
+    "slug": "solarium",
+    "name": "Solarium",
+    "category": "Visual identity",
+    "scope": "Identity, art direction, campaign applications",
+    "summary": "A clean-energy identity built around one repeating frame, applied to a report and campaign poster.",
+    "brief": "Build a visual identity that can carry both a technical report and a short campaign message. It needs a recognizable shape that holds up at different sizes and against different images.",
+    "cover": [
+      "project-1-1200.webp",
+      "Receding architectural frames leading toward a bright opening",
+      1200,
+      900,
+      "project-1-640.webp"
+    ],
+    "cover_caption": "Solarium · Architectural reference for the frame",
+    "demo": "/assets/concepts/solarium.html",
+    "demo_label": "Explore the Solarium identity",
+    "service": [
+      "Brand strategy & identity",
+      "/services/#strategy"
+    ],
+    "decisions": [
+      [
+        "Build a mark from one form",
+        "The nested frame suggests movement through a space and gives the mark a recognizable outline."
+      ],
+      [
+        "Give each colour a role",
+        "Solar yellow draws attention to key material. Graphite holds the primary type, and the paper tone carries longer editorial pieces."
+      ],
+      [
+        "Test it on two applications",
+        "The report uses the frame to draw the reader into the cover. The poster uses the same shape to lead toward a single message."
+      ]
+    ],
+    "palette": [
+      [
+        "Solar",
+        "#E3FA58"
+      ],
+      [
+        "Graphite",
+        "#1B211E"
+      ],
+      [
+        "Paper",
+        "#F3F2E8"
+      ]
+    ],
+    "note": "See the wordmark, colour palette, sample report and campaign poster in the identity prototype."
+  },
+  {
+    "slug": "kronos-night-shift",
+    "name": "Kronos / Night Shift",
+    "category": "Audio release & interaction",
+    "scope": "Release website, interaction design, audio player",
+    "summary": "An interactive release built around one night crossing, with two mixes and three downloadable cuts.",
+    "brief": "A listener should be able to hear what changes in a mix without hunting for the same moment in two tracks. The page also needs to make each downloadable cut easy to preview.",
+    "cover": [
+      "concepts/kronos-media/crossing.webp",
+      "Light-rail train passing a street crossing at night",
+      1280,
+      720
+    ],
+    "cover_caption": "Crossing 01 · Cropped frame from the source recording",
+    "cover_credits": [
+      ["Source recording by Grendelkhan", "https://commons.wikimedia.org/wiki/File:VTA_Light_Rail_crossing_Civic_Center_Drive_at_night.gk.webm"],
+      ["CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/"]
+    ],
+    "demo": "/assets/concepts/kronos.html",
+    "demo_label": "Listen to Night Shift",
+    "service": [
+      "Motion & interaction",
+      "/services/#motion"
+    ],
+    "decisions": [
+      [
+        "Keep playback in place",
+        "The location recording and the designed mix share the same shot. Switching between them lets the listener compare the same moment."
+      ],
+      [
+        "Make the recording useful",
+        "Approach, pass-by and tail are available separately. Each cut has a preview and a WAV link."
+      ],
+      [
+        "Credit the source",
+        "The prototype links to the original footage and recording by Grendelkhan and displays its CC BY-SA 4.0 licence."
+      ]
+    ],
+    "note": "Start playback, switch between the location recording and the Kronos mix, then preview the three individual cuts."
+  }
+]
