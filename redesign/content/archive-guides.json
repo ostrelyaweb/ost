@@ -1,0 +1,200 @@
+{
+  "koliko-košta-web-stranica-2026": {
+    "hr": {
+      "title": "Koliko košta izrada web stranice?",
+      "summary": "Usporedite ponude za izradu weba prema predlošcima, sadržaju, CMS-u, jezicima i troškovima nakon objave.",
+      "sections": [
+        [
+          "Usporedite predloške, a zatim broj stranica",
+          "Naslovnica, prikaz usluge i prikaz projekta obično traže različite predloške. Pet stranica usluga može dijeliti isti predložak, ali svaka i dalje treba tekst, fotografije i unos sadržaja. U ponudi tražite obje stavke odvojeno."
+        ],
+        [
+          "Dogovorite tko priprema sadržaj",
+          "Ponuda s gotovim tekstovima i fotografijama ima drukčiji opseg od ponude koja uključuje intervjue, pisanje i obradu slika. Za više jezika dogovorite prijevod, lokalni pregled i tko ažurira svaku verziju nakon objave."
+        ],
+        [
+          "Popišite radnje koje web mora podržati",
+          "Obrazac koji šalje upit, CMS u kojem tim objavljuje radove i integracija s vanjskim sustavom različiti su poslovi. Za svaku funkciju zatražite opis rada i način provjere na primopredaji. Kod redizajna uključite popis starih adresa i potrebna preusmjerenja."
+        ],
+        [
+          "Razdvojite izradu od troškova nakon objave",
+          "Zatražite odvojene stavke za izradu, domenu i hosting, licence te održavanje. Provjerite kome pripadaju računi i pristupi, tko testira kontaktni obrazac te kako se naplaćuju izmjene izvan dogovorenog opsega."
+        ],
+        [
+          "Pošaljite isti brief svim izvođačima",
+          "Navedite cilj weba, postojeću adresu ako je imate, potrebne jezike, sadržaj koji je spreman i funkcije bez kojih ne možete. Zatražite opseg, faze i jasno navedene stavke koje se naplaćuju naknadno. Tako možete usporediti što dobivate za iznos iz ponude."
+        ]
+      ],
+      "links": [
+        [
+          "Što uključuje izrada weba",
+          "/hr/usluge/web-dizajn/"
+        ],
+        [
+          "Pošaljite opis projekta",
+          "/hr/usluge/web-dizajn/#contact"
+        ]
+      ]
+    },
+    "en": {
+      "title": "How much does a website cost?",
+      "summary": "Compare website quotes by templates, content, editing tools, languages and ongoing costs after launch.",
+      "sections": [
+        [
+          "Count templates and pages separately",
+          "A homepage, a service page and a project page normally need different layouts. Five service pages may share one template, but each still needs writing, images and content entry. Ask for both counts in the quote."
+        ],
+        [
+          "Agree who prepares the content",
+          "A quote based on supplied text and images covers a different job from one that includes interviews, writing and image preparation. For each language, confirm who translates, checks and updates the content."
+        ],
+        [
+          "List what the website needs to do",
+          "An enquiry form, an editor for publishing projects and a connection to a third-party system take different amounts of work. Ask how each feature will be tested at handover. On a redesign, include old page addresses and any redirects."
+        ],
+        [
+          "Separate build and running costs",
+          "Ask for separate lines for the build, domain and hosting, licences and ongoing support. Confirm who owns the accounts, who tests the contact form and how work outside the agreed scope is billed."
+        ],
+        [
+          "Give everyone the same brief",
+          "Include the goal, any existing site, languages, content you already have and essential functions. Ask each supplier to explain the scope, milestones and costs that can arise after launch. Compare those details alongside the total."
+        ]
+      ],
+      "links": [
+        [
+          "See website design and development services",
+          "/services/"
+        ],
+        [
+          "Discuss your project",
+          "/services/#contact"
+        ]
+      ]
+    }
+  },
+  "održavanje-web-stranice-zašto-je-bitno": {
+    "hr": {
+      "title": "Održavanje web stranice: što provjeriti svaki mjesec",
+      "summary": "Mjesečni pregled weba za male timove. Provjerite dostavu upita, ažuriranja, sigurnosne kopije, važne URL-ove i zaduženja.",
+      "sections": [
+        [
+          "Prođite put kupca od usluge do upita",
+          "Na mobitelu otvorite važnu stranicu usluge, ispunite testni upit i provjerite je li stigao u pravi sandučić. Provjerite kamo ide odgovor kupcu. Zapišite datum i ishod testa uz svaki obrazac."
+        ],
+        [
+          "Provjerite ažuriranja i mogućnost povrata",
+          "Popišite platformu, dodatke i račune o kojima web ovisi. Prije veće izmjene potvrdite da postoji uporabiva sigurnosna kopija. Povremeno probajte povrat u testnom okruženju i zapišite tko ga može pokrenuti."
+        ],
+        [
+          "Otvorite URL-ove važne za posao",
+          "Prođite glavne usluge, kontakt i nedavno izmijenjene stranice. Nakon redizajna otvorite stare adrese i provjerite vode li na odgovarajući sadržaj. U Search Consoleu provjerite jesu li se nakon objave pojavile nove greške na ključnim URL-ovima."
+        ],
+        [
+          "Dodijelite vlasnika i rok za svaki nalaz",
+          "Mjesečna evidencija može imati četiri stupca: provjera, ishod, odgovorna osoba i rok. Ako testni upit iz obrasca ne stiže, evidentirajte koja stranica je pogođena i ponovite isti test nakon popravka."
+        ]
+      ],
+      "links": [
+        [
+          "Pogledajte što obuhvaća održavanje web stranica",
+          "/hr/usluge/odrzavanje-web-stranica/"
+        ],
+        [
+          "Razgovarajmo o održavanju",
+          "/hr/usluge/odrzavanje-web-stranica/#contact"
+        ]
+      ]
+    },
+    "en": {
+      "title": "Website maintenance: what to check each month",
+      "summary": "A practical monthly website check for small teams, covering enquiry delivery, updates, backups and priority pages.",
+      "sections": [
+        [
+          "Follow a customer’s route to an enquiry",
+          "On a phone, open a key service page and submit a test enquiry. Verify that it reaches the right inbox and that replies go to the sender. Record the date and result for each form."
+        ],
+        [
+          "Check updates and recovery",
+          "List the platform, extensions and accounts the site depends on. Before a major change, confirm you have a usable backup. Occasionally rehearse a restore on a test site and record who can do it."
+        ],
+        [
+          "Check the pages that matter to the business",
+          "Review key services, contact and recently changed pages. After a redesign, open old URLs and verify that they lead to the right replacement. Use Search Console to review new issues on priority pages."
+        ],
+        [
+          "Assign each issue an owner and date",
+          "A monthly record can be as simple as check, result, owner and deadline. If a form fails, record the affected page and repeat the same delivery test after the fix."
+        ]
+      ],
+      "links": [
+        [
+          "See our website maintenance service",
+          "/services/#support"
+        ],
+        [
+          "Read the launch checklist",
+          "/journal/website-launch-and-maintenance/"
+        ]
+      ]
+    }
+  },
+  "što-znati-prije-kupnje-web-stranice": {
+    "hr": {
+      "title": "Što provjeriti prije nego naručite web stranicu",
+      "summary": "Prije prihvaćanja ponude dogovorite što web treba raditi, tko uređuje sadržaj i što ćete provjeriti na primopredaji.",
+      "sections": [
+        [
+          "Dogovorite jedan glavni cilj",
+          "Napišite radnju koja kupcu treba biti najlakša: poslati upit, pronaći termin ili pogledati odgovarajuću uslugu. Dodajte informacije koje mora pročitati prije te radnje i provjerite jesu li u planu stranica."
+        ],
+        [
+          "Pogledajte prototip na telefonu",
+          "Prije izrade prođite dvije stvarne situacije. Primjerice, kupac želi pronaći održavanje i poslati upit, a vaš tim želi dodati novu uslugu. Zapišite gdje zapinje i dogovorite rješenje prije razvoja."
+        ],
+        [
+          "Uključite primopredaju u ponudu",
+          "Tražite popis pristupa, dogovor o uređivanju i obuku na stvarnom sadržaju. Pri preuzimanju provjerite šalje li obrazac upit, možete li sami izmijeniti dogovorena polja i znate li kome se javiti nakon objave."
+        ]
+      ],
+      "links": [
+        [
+          "Pročitajte vodič o cijeni izrade weba",
+          "/blog/koliko-ko%C5%A1ta-web-stranica-2026"
+        ],
+        [
+          "Pogledajte naš proces izrade",
+          "/hr/usluge/web-dizajn/"
+        ]
+      ]
+    },
+    "en": {
+      "title": "What to check before commissioning a website",
+      "summary": "Before accepting a quote, agree what the website must do, who will edit it and what you will check at handover.",
+      "sections": [
+        [
+          "Agree on one primary customer task",
+          "Write down the action that should be easiest, such as sending an enquiry, finding an appointment or choosing a service. Note what a customer needs to know first and check that the page plan covers it."
+        ],
+        [
+          "Review the prototype on a phone",
+          "Before development, run through two real situations. A customer might need to find a maintenance service and send an enquiry. Your team might need to add a service. Record any obstacles while the layout is still easy to change."
+        ],
+        [
+          "Put handover in the quote",
+          "Ask for a list of accounts, editing permissions and training using real content. At handover, check that enquiries arrive, your team can edit the agreed fields and you know who handles post-launch issues."
+        ]
+      ],
+      "links": [
+        [
+          "Read the guide to website costs",
+          "/en/blog/koliko-ko%C5%A1ta-web-stranica-2026"
+        ],
+        [
+          "See our design and development process",
+          "/services/#process"
+        ]
+      ]
+    }
+  }
+}

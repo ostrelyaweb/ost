@@ -1,5 +1,10 @@
 from html import escape
 import json
+from urllib.parse import quote
+
+
+PRICE_GUIDE = "/blog/" + quote("koliko-košta-web-stranica-2026")
+MAINTENANCE_GUIDE = "/blog/" + quote("održavanje-web-stranice-zašto-je-bitno")
 
 
 EXAMPLES = {
@@ -131,6 +136,7 @@ def croatian_web_main(service_links, markets):
           <div class="services-section-head"><div><p class="services-kicker">04 / Prije upita</p><h2 class="editorial-heading" data-editorial-reveal>Česta pitanja.</h2></div>
           <p>Trošak, rok, uređivanje sadržaja i rad na više jezika.</p></div>
           <div class="service-accordions">{faq}</div>
+          <p class="region-guide-link"><a class="web-service-text-link" href="{PRICE_GUIDE}">Pročitajte vodič o cijeni izrade web stranice <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
       <section class="page-container region-services web-service-related">
@@ -194,6 +200,8 @@ def render_region(root, origin, regions, key, service):
             )
     page_class = "page-services region-page region-web" if web_service_layout else "page-editorial region-page"
     header, footer = site_chrome(root, croatian=key == "hr")
+    header = header.replace('>Region</a>', f' lang="{lang}">{escape(nav["languages"])}</a>')
+    header = header.replace("<span>Let's talk</span>", f'<span lang="{lang}">{escape(labels["enquiry"])}</span>')
     privacy_link = ('<a href="/hr/politika-privatnosti/#privacy-contact">Kako obrađujemo upite</a>' if key == "hr"
                     else '<a href="/privacy-policy/#privacy-contact" lang="en">How we handle enquiries</a>')
     market_links = "".join(switches)
@@ -202,17 +210,21 @@ def render_region(root, origin, regions, key, service):
         f'<p class="services-kicker">{"03 / Rad u regiji" if web_service_layout else escape(nav["languages"])}</p>'
         f'<h2 class="editorial-heading">{escape(nav["languages"])}.</h2>'
         + ('<p>Studio je u Zagrebu. S timovima iz regije radimo na daljinu, od prvog razgovora do primopredaje. Odaberite verziju ove usluge za svoje tržište.</p>' if web_service_layout else "")
-        + f'<ul>{market_links}<li><a href="/?lang=en" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>International</span></a></li></ul></section>'
+        + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul></section>'
     )
     if web_service_layout:
         main = croatian_web_main("".join(service_links), markets)
     else:
         main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links)) + markets
         if service:
+            guide_link = (
+                f'<p class="region-guide-link"><a class="web-service-text-link" href="{MAINTENANCE_GUIDE}">Mjesečna provjera web stranice <span aria-hidden="true">↗</span></a></p>'
+                if key == "hr" and service == "maintenance" else ""
+            )
             main += (
                 '<section class="page-container services-disciplines web-service-faq" id="pitanja">'
                 f'<h2 class="editorial-heading">{escape(active["faq_heading"])}.</h2>'
-                f'<div class="service-accordions">{faq_details(active["faq"])}</div></section>'
+                f'<div class="service-accordions">{faq_details(active["faq"])}</div>{guide_link}</section>'
             )
 
     trail = [("Ostrelya Studio", "/"), (region["label"], hub)]
@@ -258,7 +270,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional-services">
-  <link rel="stylesheet" href="/assets/regional.css?v=5">
+  <link rel="stylesheet" href="/assets/regional.css?v=6">
   <script src="/assets/region-language.js?v=10" defer></script>
   <script src="/script.js?v=regional-services" defer></script>
 </head>

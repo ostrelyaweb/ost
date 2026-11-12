@@ -301,7 +301,7 @@ function initEditorialSections() {
 }
 
 function initServicesPage() {
-  const index = document.querySelector('.services-hero-index');
+  const index = document.querySelector('.services-project-paths');
   if (!index) return;
 
   function openService(hash) {

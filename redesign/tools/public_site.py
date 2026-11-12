@@ -127,6 +127,8 @@ def journal_markup(root, content, article):
             '<header class="content-hero journal-hero"><p class="services-kicker">Ostrelya Studio / Notes</p>'
             f'<h1 class="editorial-heading">{escape(content["title"])}</h1><p class="content-intro">{escape(content["intro"])}</p>'
             f'</header><div class="journal-list" aria-label="Articles">{listing}</div>'
+            '<p class="journal-block"><a class="journal-back" href="/en/blog">Website planning and maintenance guides ↗</a>'
+            ' · <a class="journal-back" href="/blog" lang="hr" hreflang="hr">Vodiči na hrvatskom ↗</a></p>'
         )
     return f'<div class="page-container journal-shell">{inner}</div>'
 
@@ -136,7 +138,7 @@ def render_page(root, origin, path, content=None, article=None):
     html = (root / template).read_text(encoding="utf-8")
     title, description, social = {
         "index.html": ("Ostrelya Studio — Web Design & Brand Identity in Zagreb",
-                       "Independent Zagreb studio for web design, development and brand identity. Explore our work and start a project.", "/assets/reference-hero.jpg"),
+                       "Ostrelya is a Zagreb studio for web design, development and visual identity. We build, redesign and maintain websites for teams across Southeast Europe.", HERO),
         "services.html": ("Web Development, SEO & Web Design | Ostrelya Studio",
                           "Web development, technical SEO and website maintenance for teams in Southeast Europe. Explore website design, visual identity and CMS support.", HERO),
         "about.html": ("About Ostrelya — Independent Design Studio in Zagreb",

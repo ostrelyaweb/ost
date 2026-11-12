@@ -21,7 +21,7 @@
       "enquiry": "Pošaljite upit",
       "concept": "Studio koncept",
       "process": "Kako radimo",
-      "brief": "Opišite što želite postići. U prvom razgovoru prolazimo ciljeve, sadržaj, rok i opseg."
+      "brief": "Pošaljite adresu postojećeg weba ako ga imate, kome se obraćate i što posjetitelj treba napraviti. Navedite i jezike te rok ako je već dogovoren."
     },
     "services": {
       "web": {
@@ -117,7 +117,7 @@
       "enquiry": "Pošaljite upit",
       "concept": "Studijski koncept",
       "process": "Kako radimo",
-      "brief": "Opišite čime se bavite i šta želite da posjetioci urade na stranici."
+      "brief": "Pošaljite adresu postojeće stranice ako je imate, opišite kome je namijenjena i navedite šta posjetilac treba uraditi. Dodajte jezike i rok ako ih već znate."
     },
     "services": {
       "web": {
@@ -228,7 +228,7 @@
       "enquiry": "Pošaljite upit",
       "concept": "Studijski koncept",
       "process": "Kako radimo",
-      "brief": "Recite nam kome je sajt namenjen, šta želite da postignete i šta već imate spremno."
+      "brief": "Pošaljite adresu postojećeg sajta ako ga imate i recite kome je namenjen i šta posetilac treba da uradi. Navedite jezike i rok ako su već poznati."
     },
     "services": {
       "web": {
@@ -339,7 +339,7 @@
       "enquiry": "Pošaljite upit",
       "concept": "Studijski koncept",
       "process": "Kako radimo",
-      "brief": "Recite nam koje usluge nudite i kako želite da vam se posjetioci jave."
+      "brief": "Pošaljite adresu postojećeg sajta ako ga imate, opišite kome je namijenjen i šta posjetilac treba da uradi. Navedite jezike i rok ako ih već znate."
     },
     "services": {
       "web": {
@@ -450,7 +450,7 @@
       "enquiry": "Pošljite povpraševanje",
       "concept": "Studijski koncept",
       "process": "Kako delamo",
-      "brief": "Opišite svojo dejavnost, cilje in okvirni rok. Na uvodnem spletnem sestanku skupaj določimo obseg."
+      "brief": "Pošljite naslov obstoječe strani, če jo imate, in opišite, komu je namenjena ter kaj naj obiskovalec naredi. Dodajte jezike in rok, če ju že poznate."
     },
     "services": {
       "web": {
@@ -561,7 +561,7 @@
       "enquiry": "Испратете барање",
       "concept": "Студиски концепт",
       "process": "Како работиме",
-      "brief": "Кажете ни што сакате да постигнете, што веќе имате и кога планирате да ја објавите страницата."
+      "brief": "Испратете ја адресата на постојната веб-страница, ако ја имате, и кажете за кого е наменета и што треба да направи посетителот. Наведете ги јазиците и рокот ако веќе ги знаете."
     },
     "services": {
       "web": {
@@ -672,7 +672,7 @@
       "enquiry": "Dërgoni një kërkesë",
       "concept": "Koncept i studios",
       "process": "Si punojmë",
-      "brief": "Na tregoni çfarë doni të arrini, çfarë keni gati dhe kur planifikoni ta publikoni faqen."
+      "brief": "Dërgoni adresën e faqes ekzistuese, nëse e keni, dhe tregoni kujt i shërben faqja e çfarë duhet të bëjë vizitori. Shtoni gjuhët dhe afatin nëse i dini."
     },
     "services": {
       "web": {

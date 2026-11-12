@@ -14,8 +14,10 @@ ORIGIN = "https://ostrelya.com"
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
 
 sys.path.insert(0, str(REDESIGN / "tools"))
-from public_site import build_public
+from public_site import build_public, read_content
+from guide_pages import render_guide, render_guide_index
 from privacy_pages import render_privacy
+from check_indexable import check_indexable
 
 
 REDIRECTS = {
@@ -52,7 +54,6 @@ ARCHIVE_ASSETS = (
     "images/favicon.png", "images/footer-logo.png", "images/logo.png", "og.png",
 )
 FONT_LINK = re.compile(r'<link\b[^>]*href="https://fonts\.(?:googleapis|gstatic)\.com[^"]*"[^>]*>\s*', re.I)
-ARCHIVE_NEWSLETTER = re.compile(r'<section class="lead-magnet"[^>]*>.*?</section>', re.S)
 FOOTER_NAV = re.compile(r'(<nav aria-label="Footer navigation">.*?)(</nav>)', re.S)
 PRIVACY_ROUTES = {"/privacy/": "/privacy-policy/", "/hr/privatnost/": "/hr/politika-privatnosti/"}
 
@@ -73,19 +74,19 @@ def preserve_archive(output):
     for script in scripts:
         copy_asset(ROOT / "deployment/vendor" / script, output / "js/vendor" / script)
 
+    guides = read_content(REDESIGN, "archive-guides")
     for name in ARCHIVE_PAGES:
+        target = output / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        slug = target.stem
+        lang = "en" if name.startswith("en/") else "hr"
+        if name in {"blog.html", "en/blog.html"}:
+            target.write_text(render_guide_index(REDESIGN, ORIGIN, lang, guides), encoding="utf-8")
+            continue
+        if slug in guides:
+            target.write_text(render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug][lang]), encoding="utf-8")
+            continue
         body = (ROOT / name).read_text(encoding="utf-8")
-        if name.startswith(("blog/", "en/blog/")):
-            if name.startswith("en/"):
-                label, href = "Read the website launch and maintenance checklist", "/journal/website-launch-and-maintenance/"
-            elif "održavanje" in name:
-                label, href = "Pogledajte uslugu održavanja web stranica", "/hr/usluge/odrzavanje-web-stranica/"
-            else:
-                label, href = "Pogledajte opseg usluge izrade web stranica", "/hr/usluge/web-dizajn/"
-            body = ARCHIVE_NEWSLETTER.sub(
-                f'<section class="article-cta"><a class="btn" href="{href}">{label} →</a></section>',
-                body,
-            )
         body = FONT_LINK.sub("", body)
         body = body.replace("</head>", '<link rel="stylesheet" href="/assets/regional-fonts.css">\n</head>', 1)
         for script in scripts:
@@ -96,9 +97,7 @@ def preserve_archive(output):
             canonical = ORIGIN + "/" + quote(archive, safe="/")
             body = body.replace(canonical, canonical.removesuffix(".html"))
             unencoded = ORIGIN + "/" + archive
-            body = body.replace(unencoded, unencoded.removesuffix(".html"))
-        target = output / name
-        target.parent.mkdir(parents=True, exist_ok=True)
+            body = body.replace(unencoded, canonical.removesuffix(".html"))
         target.write_text(body, encoding="utf-8")
 
 
@@ -167,6 +166,7 @@ def main():
         build_privacy(staging)
         update_navigation(staging)
         update_routing(staging)
+        indexable_count = check_indexable(staging, ORIGIN)
         previous = Path(temporary) / "previous"
         if destination.exists():
             if not destination.is_dir():
@@ -178,7 +178,7 @@ def main():
             if previous.exists():
                 previous.rename(destination)
             raise
-    print("Built Ostrelya production assets in dist.")
+    print(f"Built Ostrelya production assets in dist. Verified {indexable_count} sitemap URLs.")
 
 
 if __name__ == "__main__":
