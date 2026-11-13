@@ -5,7 +5,7 @@
     "language": "Hrvatski",
     "market": "Hrvatska",
     "title": "Web dizajn i vizualni identitet za tvrtke",
-    "intro": "Ostrelya je studio iz Zagreba. Dizajniramo i izrađujemo web stranice, redizajniramo postojeće i oblikujemo vizualne identitete za tvrtke i timove.",
+    "intro": "Ostrelya je neovisni studio za web dizajn, razvoj i vizualni identitet. Surađujemo na daljinu s tvrtkama i timovima iz Hrvatske i regije.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -27,7 +27,7 @@
       "web": {
         "slug": "usluge/web-dizajn",
         "label": "Web dizajn i izrada web stranica",
-        "title": "Web dizajn i izrada web stranica u Zagrebu",
+        "title": "Web dizajn i izrada web stranica u Hrvatskoj",
         "intro": "Izrada web stranice po mjeri kreće od toga što posjetitelj treba razumjeti i kako će doći do upita. Zajedno određujemo strukturu, dizajn i sadržaj koji će vaš tim uređivati.",
         "process": "Prolazimo ponudu i upite koje primate. Na prototipu provjeravamo raspored stranica i put do kontakta, zatim izrađujemo web, povezujemo uređivanje sadržaja i testiramo prikaz na mobitelu.",
         "deliverables": [
@@ -36,8 +36,8 @@
           "Uređivanje sadržaja i primopredaja"
         ],
         "example": "Orbit pokazuje kako arhitektonski studio može predstaviti radove i olakšati slanje upita.",
-        "meta_title": "Web dizajn i izrada web stranica | Ostrelya Zagreb",
-        "meta_description": "Izrada web stranica po mjeri za Hrvatsku i regiju. Ostrelya iz Zagreba pokriva strukturu, dizajn, razvoj, CMS i pripremu za objavu."
+        "meta_title": "Web dizajn i izrada web stranica | Ostrelya Studio",
+        "meta_description": "Izrada web stranica po mjeri za tvrtke u Hrvatskoj i regiji. Planiramo strukturu, dizajniramo stranice, razvijamo CMS i pripremamo web za objavu."
       },
       "redesign": {
         "slug": "usluge/redizajn-web-stranica",
@@ -51,7 +51,7 @@
           "Plan migracije i provjera prije objave"
         ],
         "example": "Na Ostrelyjinu webu redizajn spaja novi vizualni sustav, pregled radova i uređivanje sadržaja.",
-        "meta_title": "Redizajn web stranica i migracija | Ostrelya Zagreb",
+        "meta_title": "Redizajn web stranica i migracija | Ostrelya Studio",
         "meta_description": "Redizajn poslovnih webova uz pregled sadržaja, prototip i plan preusmjerenja. Provjeravamo ključne stranice i obrasce prije objave.",
         "faq_heading": "Česta pitanja",
         "faq": [
@@ -77,7 +77,7 @@
           "Smjernice i datoteke za tim"
         ],
         "example": "Solarium prikazuje kako se isti identitet može prenijeti s logotipa na naslovnicu izvještaja i web.",
-        "meta_title": "Vizualni identitet i branding | Ostrelya Zagreb",
+        "meta_title": "Vizualni identitet i branding | Ostrelya Studio",
         "meta_description": "Vizualni identitet za tvrtke, od pozicioniranja do logotipa, tipografije i smjernica. Pogledajte primjer primjene na webu i dokumentima.",
         "faq_heading": "Česta pitanja",
         "faq": [
@@ -93,7 +93,7 @@
       }
     },
     "meta_title": "Web dizajn i vizualni identitet za tvrtke | Ostrelya",
-    "meta_description": "Ostrelya je studio iz Zagreba za izradu i redizajn web stranica te vizualni identitet. Pogledajte usluge, primjere rada i način suradnje."
+    "meta_description": "Ostrelya je neovisni studio za izradu i redizajn web stranica te vizualni identitet. Pogledajte usluge i način suradnje za tvrtke u Hrvatskoj."
   },
   "bs": {
     "tag": "bs-BA",
@@ -204,7 +204,7 @@
       }
     },
     "meta_title": "Web dizajn i vizuelni identitet za firme u BiH | Ostrelya",
-    "meta_description": "Izrada i redizajn web stranica te vizuelni identitet za timove u BiH. Ostrelya iz Zagreba vodi dogovor, pregled dizajna i primopredaju online."
+    "meta_description": "Izrada i redizajn web stranica te vizuelni identitet za timove u BiH. Dogovor, pregled dizajna i primopredaju vodimo online."
   },
   "sr-rs": {
     "tag": "sr-Latn-RS",
@@ -212,7 +212,7 @@
     "language": "Srpski",
     "market": "Srbija",
     "title": "Web dizajn i vizuelni identitet za firme",
-    "intro": "Ostrelya je studio iz Zagreba koji sa timovima iz Srbije može da radi na izradi i redizajnu sajtova i razvoju vizuelnog identiteta. Dogovor i prezentacije vodimo onlajn.",
+    "intro": "Ostrelya je nezavisni studio za izradu i redizajn sajtova i razvoj vizuelnog identiteta za timove iz Srbije. Dogovor i prezentacije vodimo onlajn.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -315,7 +315,7 @@
       }
     },
     "meta_title": "Izrada sajtova i vizuelni identitet u Srbiji | Ostrelya",
-    "meta_description": "Ostrelya iz Zagreba radi izradu i redizajn sajtova i vizuelni identitet za firme u Srbiji. Pregled dizajna i primopredaja mogu onlajn."
+    "meta_description": "Izrada i redizajn sajtova i vizuelni identitet za firme u Srbiji. Pregled dizajna i primopredaju možemo da vodimo onlajn."
   },
   "sr-me": {
     "tag": "sr-Latn-ME",
@@ -426,7 +426,7 @@
       }
     },
     "meta_title": "Izrada sajtova i vizuelni identitet u Crnoj Gori | Ostrelya",
-    "meta_description": "Studio iz Zagreba za izradu sajtova, redizajn i vizuelni identitet za timove iz Crne Gore. Sastanke i primopredaju možemo održati online."
+    "meta_description": "Izrada sajtova, redizajn i vizuelni identitet za timove iz Crne Gore. Sastanke i primopredaju možemo održati online."
   },
   "sl": {
     "tag": "sl-SI",
@@ -434,7 +434,7 @@
     "language": "Slovenščina",
     "market": "Slovenija",
     "title": "Izdelava spletnih strani in celostna grafična podoba",
-    "intro": "Ostrelya je studio iz Zagreba. Za naročnike iz Slovenije oblikujemo in izdelujemo spletne strani, prenavljamo obstoječa spletišča in razvijamo celostne grafične podobe.",
+    "intro": "Ostrelya je neodvisen studio. Za naročnike iz Slovenije oblikujemo in izdelujemo spletne strani, prenavljamo obstoječa spletišča in razvijamo celostne grafične podobe.",
     "nav": {
       "services": "Storitve",
       "projects": "Projekti",
@@ -537,7 +537,7 @@
       }
     },
     "meta_title": "Izdelava spletnih strani in grafična podoba | Ostrelya",
-    "meta_description": "Studio iz Zagreba za izdelavo in prenovo spletnih strani ter celostno grafično podobo za naročnike iz Slovenije."
+    "meta_description": "Izdelava in prenova spletnih strani ter celostna grafična podoba za naročnike iz Slovenije. Sodelovanje lahko poteka na daljavo."
   },
   "mk": {
     "tag": "mk-MK",
@@ -545,7 +545,7 @@
     "language": "Македонски",
     "market": "Северна Македонија",
     "title": "Веб-дизајн и визуелен идентитет",
-    "intro": "Ostrelya е студио од Загреб. За тимови од Северна Македонија нудиме изработка и редизајн на веб-страници и развој на визуелен идентитет. Проектот можеме да го водиме онлајн.",
+    "intro": "Ostrelya е независно студио. За тимови од Северна Македонија нудиме изработка и редизајн на веб-страници и развој на визуелен идентитет. Проектот можеме да го водиме онлајн.",
     "nav": {
       "services": "Услуги",
       "projects": "Проекти",
@@ -648,7 +648,7 @@
       }
     },
     "meta_title": "Веб-дизајн и визуелен идентитет | Ostrelya Studio",
-    "meta_description": "Студио од Загреб за изработка и редизајн на веб-страници и визуелен идентитет. Работиме онлајн со тимови од Северна Македонија."
+    "meta_description": "Изработка и редизајн на веб-страници и визуелен идентитет. Работиме онлајн со тимови од Северна Македонија."
   },
   "sq": {
     "tag": "sq",
@@ -656,7 +656,7 @@
     "language": "Shqip",
     "market": "Kosovë",
     "title": "Dizajn webi dhe identitet vizual",
-    "intro": "Ostrelya është një studio nga Zagrebi. Për ekipe në Kosovë krijojmë faqe interneti, ridizajnojmë faqe ekzistuese dhe zhvillojmë identitete vizuale. Projektin mund ta zhvillojmë në distancë.",
+    "intro": "Ostrelya është një studio e pavarur. Për ekipe në Kosovë krijojmë faqe interneti, ridizajnojmë faqe ekzistuese dhe zhvillojmë identitete vizuale. Projektin mund ta zhvillojmë në distancë.",
     "nav": {
       "services": "Shërbimet",
       "projects": "Projektet",
@@ -759,6 +759,6 @@
       }
     },
     "meta_title": "Dizajn webi dhe identitet vizual në Kosovë | Ostrelya",
-    "meta_description": "Studio nga Zagrebi për krijim dhe ridizajnim faqesh interneti dhe identitet vizual. Punojmë në distancë me ekipe në Kosovë."
+    "meta_description": "Krijim dhe ridizajnim i faqeve të internetit dhe zhvillim i identitetit vizual. Punojmë në distancë me ekipe në Kosovë."
   }
 }

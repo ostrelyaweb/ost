@@ -137,12 +137,12 @@ def render_page(root, origin, path, content=None, article=None):
     template = PAGES["/journal/"] if article is not None else PAGES[path]
     html = (root / template).read_text(encoding="utf-8")
     title, description, social = {
-        "index.html": ("Ostrelya Studio — Web Design & Brand Identity in Zagreb",
-                       "Ostrelya is a Zagreb studio for web design, development and visual identity. We build, redesign and maintain websites for teams across Southeast Europe.", HERO),
+        "index.html": ("Ostrelya Studio — Web Design, Development & Brand Identity",
+                       "Ostrelya is an independent studio for web design, development and visual identity. We build, redesign and maintain websites for teams across Southeast Europe.", HERO),
         "services.html": ("Web Development, SEO & Web Design | Ostrelya Studio",
                           "Web development, technical SEO and website maintenance for teams in Southeast Europe. Explore website design, visual identity and CMS support.", HERO),
-        "about.html": ("About Ostrelya — Independent Design Studio in Zagreb",
-                       "Meet Ostrelya, an independent Zagreb studio designing brand identities and building websites.", HERO),
+        "about.html": ("About Ostrelya — Independent Web Design Studio",
+                       "Meet Ostrelya, an independent studio designing brand identities and building websites for teams across Southeast Europe.", HERO),
         "journal.html": ("Journal — Design and Web Development Notes | Ostrelya",
                          "Notes on designing and building the web at Ostrelya.", HERO),
     }[template]

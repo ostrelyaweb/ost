@@ -139,7 +139,7 @@ def croatian_web_main(service_links, markets):
       <section class="services-editorial-hero web-service-hero" aria-labelledby="web-service-title">
         <div class="page-container services-hero-layout">
           <div>
-            <p class="services-kicker">Ostrelya Studio / Zagreb i regija</p>
+            <p class="services-kicker">Ostrelya Studio / Hrvatska i regija</p>
             <h1 class="editorial-heading" id="web-service-title">Web dizajn i<br> izrada web<br> stranica<span>.</span></h1>
           </div>
           <div class="services-hero-aside">
@@ -325,7 +325,7 @@ def render_region(root, origin, regions, key, service):
         '<section class="page-container region-market" id="trzista">'
         f'<p class="services-kicker">{"03 / Rad u regiji" if web_service_layout else escape(nav["languages"])}</p>'
         f'<h2 class="editorial-heading">{escape(nav["languages"])}.</h2>'
-        + ('<p>Studio je u Zagrebu. S timovima iz regije radimo na daljinu, od prvog razgovora do primopredaje. Odaberite verziju ove usluge za svoje tržište.</p>' if web_service_layout else "")
+        + ('<p>S timovima iz Hrvatske i regije radimo na daljinu, od prvog razgovora do primopredaje. Odaberite verziju ove usluge za svoje tržište.</p>' if web_service_layout else "")
         + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul>'
         f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[key])} <span aria-hidden="true">↗</span></a></p></section>'
     )
