@@ -19,6 +19,7 @@ from guide_pages import guide_path, render_guide, render_guide_index
 from regional_site import read_regions
 from privacy_pages import render_privacy
 from check_indexable import check_indexable
+from site_analytics import configure_analytics
 
 
 REDIRECTS = {
@@ -198,6 +199,7 @@ def main():
         build_privacy(staging)
         update_navigation(staging)
         update_routing(staging, archive_pages)
+        configure_analytics(REDESIGN, staging, PRIVACY_ROUTES.values())
         indexable_count = check_indexable(staging, ORIGIN)
         previous = Path(temporary) / "previous"
         if destination.exists():

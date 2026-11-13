@@ -244,7 +244,7 @@ def render_not_found(root):
 """
 
 
-def public_headers(root):
+def public_headers(root, *, analytics=False):
     # Keep the homepage bootstrap and the local Three.js import map usable without unsafe-inline scripts.
     inline_scripts = (
         (root / "index.html", r"<script>(.*?)</script>"),
@@ -254,11 +254,15 @@ def public_headers(root):
     for path, pattern in inline_scripts:
         script = re.search(pattern, path.read_text(encoding="utf-8"), re.S).group(1)
         hashes.append("'sha256-" + b64encode(sha256(script.encode("utf-8")).digest()).decode("ascii") + "'")
+    tag_host = " https://www.googletagmanager.com" if analytics else ""
+    analytics_hosts = " https://*.google-analytics.com" if analytics else ""
+    analytics_connections = " https://*.analytics.google.com" if analytics else ""
     return (
         "/*\n"
-        f"  Content-Security-Policy: default-src 'self'; script-src 'self' {' '.join(hashes)}; "
-        "style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; "
-        "media-src 'self' blob:; connect-src 'self'; frame-src 'self'; frame-ancestors 'none'; "
+        f"  Content-Security-Policy: default-src 'self'; script-src 'self' {' '.join(hashes)}{tag_host}; "
+        f"style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:{tag_host}{analytics_hosts}; "
+        f"media-src 'self' blob:; connect-src 'self'{tag_host}{analytics_hosts}{analytics_connections}; "
+        "frame-src 'self'; frame-ancestors 'none'; "
         "object-src 'none'; base-uri 'none'; form-action 'self'\n"
         "  X-Content-Type-Options: nosniff\n"
         "  X-Frame-Options: DENY\n"

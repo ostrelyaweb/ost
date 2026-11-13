@@ -1,0 +1,69 @@
+{
+  "measurement_id": "G-72S87VVTTK",
+  "locales": {
+    "en": {
+      "title": "Analytics cookies",
+      "description": "With your permission, we use Google Analytics to see which pages visitors use and how they find us.",
+      "allow": "Allow analytics",
+      "deny": "Decline analytics",
+      "settings": "Cookie settings",
+      "privacy": "Privacy and cookies"
+    },
+    "hr": {
+      "title": "Analitički kolačići",
+      "description": "Uz vašu privolu koristimo Google Analytics da saznamo koje stranice posjećujete i kako ste nas pronašli.",
+      "allow": "Dopusti analitiku",
+      "deny": "Odbij analitiku",
+      "settings": "Postavke kolačića",
+      "privacy": "Privatnost i kolačići"
+    },
+    "bs": {
+      "title": "Analitički kolačići",
+      "description": "Uz vaš pristanak koristimo Google Analytics da saznamo koje stranice posjećujete i kako ste nas pronašli.",
+      "allow": "Dozvoli analitiku",
+      "deny": "Odbij analitiku",
+      "settings": "Postavke kolačića",
+      "privacy": "Privatnost i kolačići"
+    },
+    "sr-rs": {
+      "title": "Аналитички колачићи",
+      "description": "Уз вашу сагласност користимо Google Analytics да бисмо сазнали које странице посећујете и како сте нас пронашли.",
+      "allow": "Дозволи аналитику",
+      "deny": "Одбиј аналитику",
+      "settings": "Подешавања колачића",
+      "privacy": "Политика приватности (EN)"
+    },
+    "sr-me": {
+      "title": "Analitički kolačići",
+      "description": "Uz vašu saglasnost koristimo Google Analytics da saznamo koje stranice posjećujete i kako ste nas pronašli.",
+      "allow": "Dozvoli analitiku",
+      "deny": "Odbij analitiku",
+      "settings": "Podešavanja kolačića",
+      "privacy": "Politika privatnosti (EN)"
+    },
+    "sl": {
+      "title": "Analitični piškotki",
+      "description": "Z vašo privolitvijo uporabljamo Google Analytics, da izvemo, katere strani obiščete in kako ste nas našli.",
+      "allow": "Dovoli analitiko",
+      "deny": "Zavrni analitiko",
+      "settings": "Nastavitve piškotkov",
+      "privacy": "Pravilnik o zasebnosti (EN)"
+    },
+    "mk": {
+      "title": "Аналитички колачиња",
+      "description": "Со ваша согласност користиме Google Analytics за да дознаеме кои страници ги посетувате и како нè најдовте.",
+      "allow": "Дозволи аналитика",
+      "deny": "Одбиј аналитика",
+      "settings": "Поставки за колачиња",
+      "privacy": "Политика за приватност (EN)"
+    },
+    "sq": {
+      "title": "Cookies për analizë",
+      "description": "Me pëlqimin tuaj, përdorim Google Analytics për të kuptuar cilat faqe vizitoni dhe si na gjetët.",
+      "allow": "Lejo analizën",
+      "deny": "Refuzo analizën",
+      "settings": "Cilësimet e cookies",
+      "privacy": "Politika e privatësisë (EN)"
+    }
+  }
+}

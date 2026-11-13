@@ -256,10 +256,11 @@ function initProjectEnquiry() {
           body: JSON.stringify({ ...fields, page: location.pathname, locale: form.dataset.locale }),
           signal: AbortSignal.timeout(12000),
         });
-        if (response.status === 202 && (await response.json()).accepted) {
+        if (response.status === 202 && (await response.json()).accepted === true) {
           form.dataset.state = 'success';
           status.textContent = form.dataset.success;
           form.reset();
+          form.dispatchEvent(new Event('ostrelya:enquiry-accepted', { bubbles: true }));
         } else {
           form.dataset.state = 'error';
           status.textContent = response.status === 429 ? form.dataset.rate : form.dataset.failure;
