@@ -59,8 +59,10 @@ def regional_enquiry(key, *, seo_review=False):
     if seo_review:
         website = """
         <label>Javni URL web stranice
-          <input name="website" type="url" pattern="https?://.+" placeholder="https://vaša-domena.hr" required maxlength="500">
+          <input name="website" type="text" inputmode="url" autocomplete="url" autocapitalize="none" spellcheck="false"
+                 placeholder="vasa-domena.hr" required maxlength="500" aria-describedby="seo-url-hint">
         </label>
+        <small id="seo-url-hint">Možete unijeti adresu sa ili bez https://.</small>
         """
         fields = """
         <label>Što želite provjeriti? (neobavezno)
@@ -76,7 +78,7 @@ def regional_enquiry(key, *, seo_review=False):
       <label>{name}<input name="name" autocomplete="name" required maxlength="100"></label>
       <label>{email}<input name="email" type="email" autocomplete="email" required maxlength="160"></label>
       {fields}
-      <p role="status"></p>
+          <p role="status"></p>
       <button type="submit" class="btn-primary">{submit} <span aria-hidden="true">↗</span></button>
     </form>
     """
@@ -246,15 +248,16 @@ def croatian_seo_main(headline, intro, active, service_links, markets):
       <section class="region-split seo-offer-section" id="projekti" aria-labelledby="seo-example-title">
         <div>
           <h2 class="editorial-heading" id="seo-example-title">Kako izgleda nalaz</h2>
-          <p>Ovo je ilustrativan primjer stavke iz SEO pregleda. Izvještaj za vaš web sadrži stvarne URL-ove i korake za provjeru.</p>
+          <p>Iz pregleda Ostrelyina weba od <time datetime="2026-11-13">13. studenoga 2026.</time> Provjerili smo 132 adrese iz sitemapa i uobičajene varijante starih URL-ova.</p>
+          <a class="web-service-text-link" href="/blog/redizajn-web-stranice-bez-gubitka-seo">Pročitajte vodič o preusmjerenjima <span aria-hidden="true">↗</span></a>
         </div>
         <article class="seo-offer-sample">
-          <h3>Stranica usluge označava naslovnicu kao glavnu adresu</h3>
+          <h3>Stara adresa vodiča vraćala je privremeni 307</h3>
           <dl>
-            <dt>URL</dt><dd><code>/usluge/</code></dd>
-            <dt>Prioritet</dt><dd>Visok, jer je stranica namijenjena kupcima koji traže uslugu.</dd>
-            <dt>Izmjena</dt><dd>Postaviti <code>/usluge/</code> kao kanonsku adresu i uskladiti interne poveznice i sitemap.</dd>
-            <dt>Provjera</dt><dd>Potvrditi da stranica vraća HTTP 200 i da canonical pokazuje na nju. Nakon ponovnog obilaska u Search Consoleu provjeriti koju adresu Google smatra glavnom.</dd>
+            <dt>URL</dt><dd><a href="/blog/koliko-ko%C5%A1ta-web-stranica-2026.html">/blog/koliko-košta-web-stranica-2026.html</a></dd>
+            <dt>Prioritet</dt><dd>Srednji. Stara adresa već je vodila čitatelja na vodič, ali je odgovor označavao preseljenje kao privremeno.</dd>
+            <dt>Izmjena</dt><dd>Stare .html adrese i varijante sa završnom kosom crtom sada trajno preusmjeravamo na kanonski URL. Tako preusmjerenje i sitemap upućuju na istu adresu.</dd>
+            <dt>Provjera</dt><dd>Stara adresa vraća 301 u jednom koraku. <a href="/blog/koliko-ko%C5%A1ta-web-stranica-2026">Odredišni vodič</a> vraća 200 i navodi vlastiti URL kao kanonski.</dd>
           </dl>
         </article>
       </section>
@@ -391,9 +394,9 @@ def render_region(root, origin, regions, key, service):
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional-services">
-  <link rel="stylesheet" href="/assets/regional.css?v=7">
+  <link rel="stylesheet" href="/assets/regional.css?v=8">
   <script src="/assets/region-language.js?v=10" defer></script>
-  <script src="/script.js?v={"seo-review" if seo_offer_layout else "regional-services"}" defer></script>
+  <script src="/script.js?v={"seo-audit" if seo_offer_layout else "regional-services"}" defer></script>
 </head>
 <body id="top" class="{page_class}">
   {header}

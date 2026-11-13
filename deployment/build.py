@@ -167,6 +167,10 @@ def update_routing(output, archive_pages):
     with (output / "_redirects").open("a", encoding="utf-8") as handle:
         for source, target in REDIRECTS.items():
             handle.write(f"{source} {target} 301\n")
+        for page in archive_pages:
+            source = "/" + quote(page, safe="/")
+            target = source.removesuffix(".html")
+            handle.write(f"{source} {target} 301\n{target}/ {target} 301\n")
 
     ElementTree.register_namespace("", SITEMAP_NS)
     path = output / "sitemap.xml"

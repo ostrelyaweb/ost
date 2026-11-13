@@ -223,14 +223,31 @@ function initProjectEnquiry() {
     form.hidden = false;
     const button = form.querySelector('button[type="submit"]');
     const status = form.querySelector('[role="status"]');
+    const website = form.elements.namedItem('website');
+    website?.addEventListener('input', () => website.setCustomValidity(''));
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (button.disabled) return;
-      const { website, ...fields } = Object.fromEntries(new FormData(form));
+      const fields = Object.fromEntries(new FormData(form));
       if (website) {
-        fields.message = [`URL weba: ${website.trim()}`, fields.message.trim()].filter(Boolean).join('\n\n');
+        const entered = website.value.trim();
+        let address;
+        try {
+          address = new URL(/^[a-z][a-z\d+.-]*:\/\//i.test(entered) ? entered : `https://${entered}`);
+        } catch {
+          address = null;
+        }
+        if (!address || !['http:', 'https:'].includes(address.protocol) || !address.hostname.includes('.') ||
+            address.username || address.password || address.href.length > 500 || /\s/.test(entered)) {
+          website.setCustomValidity('Unesite javnu adresu weba, npr. vasa-domena.hr.');
+          website.reportValidity();
+          return;
+        }
+        delete fields.website;
+        fields.message = [`URL weba: ${address.href}`, fields.message.trim()].filter(Boolean).join('\n\n');
       }
       button.disabled = true;
+      form.dataset.state = 'pending';
       status.textContent = form.dataset.pending;
       try {
         const response = await fetch(form.action, {
@@ -240,12 +257,15 @@ function initProjectEnquiry() {
           signal: AbortSignal.timeout(12000),
         });
         if (response.status === 202 && (await response.json()).accepted) {
+          form.dataset.state = 'success';
           status.textContent = form.dataset.success;
           form.reset();
         } else {
+          form.dataset.state = 'error';
           status.textContent = response.status === 429 ? form.dataset.rate : form.dataset.failure;
         }
       } catch {
+        form.dataset.state = 'error';
         status.textContent = form.dataset.failure;
       } finally {
         button.disabled = false;

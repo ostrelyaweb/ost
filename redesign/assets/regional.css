@@ -91,8 +91,22 @@
 }
 .seo-offer-sample dt { font-weight: 800; }
 .seo-offer-sample dd { margin: 0; color: #474650; overflow-wrap: anywhere; }
+.seo-offer-sample a { color: #5028a0; text-decoration: underline; text-underline-offset: .18em; }
 .seo-offer-section .seo-offer-guides { padding: 0; list-style: none; }
 .seo-offer-guides .web-service-text-link { margin: 0; }
+.seo-offer-nav a { min-height: 44px; }
+.region-page form:has([name="website"]) button { min-height: 44px; }
+.region-page form:has([name="website"]) small { color: #e0dbea; margin-top: -.3rem; }
+.region-page form:has([name="website"]) [role="status"] {
+  padding: .65rem .8rem;
+  border-inline-start: 3px solid #ddd0ff;
+}
+.region-page form:has([name="website"])[data-state="success"] [role="status"] { border-color: #a9e7c1; }
+.region-page form:has([name="website"])[data-state="error"] [role="status"] { border-color: #ffc1bd; }
+@media (prefers-reduced-motion: no-preference) {
+  .seo-offer-nav a, .region-page form:has([name="website"]) button { transition: background-color 150ms ease, transform 150ms ease; }
+  .seo-offer-nav a:active, .region-page form:has([name="website"]) button:active { transform: scale(.98); }
+}
 @media (max-width: 760px) {
   .web-service-process, .web-service-project { grid-template-columns: minmax(0, 1fr); }
 }
