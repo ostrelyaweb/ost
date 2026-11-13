@@ -53,7 +53,11 @@
     window[disableKey] = choice !== 'granted';
     if (choice !== 'granted') {
       for (const name of ['_ga', `_ga_${id.slice(2)}`]) {
-        document.cookie = `${name}=; Max-Age=0; Path=/; SameSite=Lax`;
+        const expired = `${name}=; Max-Age=0; Path=/; SameSite=Lax`;
+        document.cookie = expired;
+        if (location.hostname === 'ostrelya.com' || location.hostname.endsWith('.ostrelya.com')) {
+          document.cookie = `${expired}; Domain=ostrelya.com`;
+        }
       }
       startedForms = new WeakSet();
       return;
