@@ -5,6 +5,7 @@
     "category": "Architecture portfolio",
     "scope": "Art direction, responsive web design, frontend",
     "summary": "A portfolio that lets you understand one house through its setting, plan and interiors.",
+    "meta_description": "Explore a website concept for an architecture studio. Follow one house through its setting, floor plan and interiors in the interactive portfolio.",
     "brief": "A prospective client should be able to understand an architect’s work before a call. The brief was to explain one building well, with enough context to read the photographs and the plan together.",
     "cover": [
       "project-4-1200.webp",
@@ -14,7 +15,7 @@
       "project-4-640.webp"
     ],
     "cover_caption": "Lakeside Residence · Exterior study",
-    "demo": "/assets/concepts/orbit.html",
+    "demo": "/assets/concepts/orbit",
     "demo_label": "Explore the Orbit prototype",
     "service": [
       "Web design",
@@ -49,6 +50,7 @@
     "category": "Product configurator",
     "scope": "Product website, interaction design, 3D frontend",
     "summary": "An interactive room for comparing a modular wall system, finishes and lighting.",
+    "meta_description": "Try a 3D room configurator built to compare modular walls, surface finishes and lighting. See how material choices affect the same interior.",
     "brief": "A finish swatch tells you little about what a wall will look like across a lobby. The concept gives an interior designer enough context to compare options while planning a room.",
     "cover": [
       "concepts/room-studio-preview.webp",
@@ -88,7 +90,7 @@
     "note": "Try a different finish, adjust lighting and move around the lobby in the live prototype.",
     "related": [
       "View the Wave 01 product page",
-      "/assets/concepts/vanguard.html"
+      "/assets/concepts/vanguard"
     ]
   },
   {
@@ -97,6 +99,7 @@
     "category": "Visual identity",
     "scope": "Identity, art direction, campaign applications",
     "summary": "A clean-energy identity built around one repeating frame, applied to a report and campaign poster.",
+    "meta_description": "See how a single graphic frame shapes Solarium’s clean-energy brand identity across a report and campaign poster in this Ostrelya studio concept.",
     "brief": "Build a visual identity that can carry both a technical report and a short campaign message. It needs a recognizable shape that holds up at different sizes and against different images.",
     "cover": [
       "project-1-1200.webp",
@@ -106,7 +109,7 @@
       "project-1-640.webp"
     ],
     "cover_caption": "Solarium · Architectural reference for the frame",
-    "demo": "/assets/concepts/solarium.html",
+    "demo": "/assets/concepts/solarium",
     "demo_label": "Explore the Solarium identity",
     "service": [
       "Brand strategy & identity",
@@ -148,6 +151,7 @@
     "category": "Audio release & interaction",
     "scope": "Release website, interaction design, audio player",
     "summary": "An interactive release built around one night crossing, with two mixes and three downloadable cuts.",
+    "meta_description": "Explore Ostrelya’s interactive release concept for Kronos. Follow a night crossing through two mixes and discover three downloadable cuts.",
     "brief": "A listener should be able to hear what changes in a mix without hunting for the same moment in two tracks. The page also needs to make each downloadable cut easy to preview.",
     "cover": [
       "concepts/kronos-media/crossing.webp",
@@ -160,7 +164,7 @@
       ["Source recording by Grendelkhan", "https://commons.wikimedia.org/wiki/File:VTA_Light_Rail_crossing_Civic_Center_Drive_at_night.gk.webm"],
       ["CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/"]
     ],
-    "demo": "/assets/concepts/kronos.html",
+    "demo": "/assets/concepts/kronos",
     "demo_label": "Listen to Night Shift",
     "service": [
       "Motion & interaction",

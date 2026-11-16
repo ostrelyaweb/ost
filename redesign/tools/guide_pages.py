@@ -17,7 +17,7 @@ LABELS = {
     ),
     "en": (
         "Web design, development and SEO guides",
-        "Plan a new website or redesign, choose a CMS and check how customers can find your pages.",
+        "Practical guides for planning a website or redesign, choosing a CMS, checking Google visibility and maintaining the site after launch.",
         ("Build and redesign", "SEO and AI search", "Content and maintenance"),
         "Topics", "Language and market", "All guides", "Related services and guides", "Sources",
     ),
@@ -29,13 +29,13 @@ LABELS = {
     ),
     "sr-rs": (
         "Vodiči za izradu sajtova i SEO u Srbiji",
-        "Isplanirajte izradu ili redizajn sajta, odaberite CMS i proverite kako vas kupci pronalaze.",
+        "Vodiči za izradu i redizajn sajta u Srbiji. Uporedite ponude, odaberite CMS i proverite kako kupci pronalaze vaše stranice na Google-u.",
         ("Izrada i redizajn", "SEO i AI pretraga", "Sadržaj i održavanje"),
         "Teme", "Jezik i tržište", "Svi vodiči", "Povezane usluge i vodiči", "Izvori",
     ),
     "sr-me": (
         "Vodiči za izradu sajtova i SEO u Crnoj Gori",
-        "Isplanirajte novi sajt, pripremite redizajn i provjerite kako vas kupci pronalaze.",
+        "Vodiči za izradu i redizajn sajta u Crnoj Gori. Uporedite ponude, odaberite CMS i provjerite kako kupci pronalaze vaše stranice na Googleu.",
         ("Izrada i redizajn", "SEO i AI pretraga", "Sadržaj i održavanje"),
         "Teme", "Jezik i tržište", "Svi vodiči", "Povezane usluge i vodiči", "Izvori",
     ),
@@ -103,7 +103,7 @@ def render_guide(root, origin, slug, lang, entry, locales):
     guide = entry[lang]
     url = origin + guide_path(slug, lang, entry)
     title = escape(guide["title"])
-    description = escape(guide["summary"])
+    description = escape(guide.get("meta_description", guide["summary"]))
     links = guide.get("links")
     if links:
         contact = next((href for _, href in reversed(links) if href.endswith("#contact")),
@@ -209,21 +209,22 @@ def render_layout(root, origin, slug, lang, title, description, contact, body, l
     if schema:
         data = json.dumps({"@context": "https://schema.org", **schema}, ensure_ascii=False).replace("<", "\\u003c")
         structured_data = f'<script type="application/ld+json">{data}</script>'
-    market = f' · {escape(locale["market"])}' if lang not in {"hr", "en"} else ""
+    search_title = escape(entry[lang]["meta_title"]) if entry and "meta_title" in entry[lang] else title
     return f"""<!doctype html>
 <html lang="{tag}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{title} | Ostrelya Studio{market}</title>
+  <title>{search_title} | Ostrelya</title>
   <meta name="description" content="{description}">
   <link rel="canonical" href="{url}">
-  {alternates}<link rel="alternate" hreflang="x-default" href="{origin + guide_path(slug, 'hr', entry)}">
+  {alternates}<link rel="alternate" hreflang="x-default" href="{origin + guide_path(slug, 'en', entry)}">
   <meta property="og:type" content="{"article" if schema else "website"}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="{url}">
   <meta property="og:image" content="{origin}/assets/hero-metal-emblem.webp">
+  <meta name="twitter:card" content="summary_large_image">
   {structured_data}
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">

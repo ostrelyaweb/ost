@@ -11,7 +11,7 @@ from tempfile import TemporaryDirectory
 from urllib.parse import quote, urlsplit
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from regional_site import read_regions, region_routes, render_region, site_chrome
+from regional_site import read_regions, region_alternates, region_routes, render_region, site_chrome
 from work_site import WORK_INDEX, read_projects, render_work, work_routes
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -144,7 +144,7 @@ def render_page(root, origin, path, content=None, article=None):
         "about.html": ("About Ostrelya — Independent Web Design Studio",
                        "Meet Ostrelya, an independent studio designing brand identities and building websites for teams across Southeast Europe.", HERO),
         "journal.html": ("Journal — Design and Web Development Notes | Ostrelya",
-                         "Notes on designing and building the web at Ostrelya.", HERO),
+                         "Read Ostrelya Studio’s notes on designing and building websites, from launch and maintenance checks to the motion details behind our navigation.", HERO),
     }[template]
     if template == "about.html":
         html = replace_editorial(html, about_markup(root, content))
@@ -153,10 +153,10 @@ def render_page(root, origin, path, content=None, article=None):
         html = replace_editorial(html, journal_markup(root, content, article))
         if article is not None:
             title = article["title"] + " — Ostrelya Journal"
-            description = article["summary"]
+            description = article.get("meta_description", article["summary"])
             social = asset_url(root, article.get("image")) or social
         else:
-            description = content["intro"]
+            description = content.get("meta_description", description)
 
     url = origin + path
     meta = (
@@ -168,11 +168,13 @@ def render_page(root, origin, path, content=None, article=None):
         f'  <meta property="og:title" content="{escape(title)}" />\n'
         f'  <meta property="og:description" content="{escape(description)}" />\n'
         f'  <meta property="og:url" content="{escape(url)}" />\n'
-        f'  <meta property="og:image" content="{escape(origin + social)}" />'
+        f'  <meta property="og:image" content="{escape(origin + social)}" />\n'
+        '  <meta name="twitter:card" content="summary_large_image" />'
     )
     organization = {"@type": "Organization", "name": "Ostrelya Studio", "url": origin + "/"}
     schema = None
     if path == "/":
+        meta += "\n  " + region_alternates(origin, read_regions(root))
         schema = {**organization, "logo": origin + "/assets/symbol-dark.png"}
     elif article is not None:
         schema = {

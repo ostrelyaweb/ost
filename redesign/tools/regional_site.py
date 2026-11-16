@@ -100,6 +100,17 @@ def region_path(key, region, service=None):
     return f"/{key}/{region['services'][service]['slug']}/" if service else f"/{key}/"
 
 
+def region_alternates(origin, regions, service=None):
+    alternatives = {region["tag"]: region_path(key, region, service) for key, region in regions.items()}
+    if service is None:
+        alternatives["en"] = "/"
+    alternatives["x-default"] = "/" if service is None else region_path("hr", regions["hr"], service)
+    return "\n  ".join(
+        f'<link rel="alternate" hreflang="{tag}" href="{escape(origin + path)}">'
+        for tag, path in alternatives.items()
+    )
+
+
 def region_routes(regions):
     return {
         region_path(key, region, service): (key, service)
@@ -254,7 +265,7 @@ def croatian_seo_main(headline, intro, active, service_links, markets):
         <article class="seo-offer-sample">
           <h3>Stara adresa vodiča vraćala je privremeni 307</h3>
           <dl>
-            <dt>URL</dt><dd><a href="/blog/koliko-ko%C5%A1ta-web-stranica-2026.html">/blog/koliko-košta-web-stranica-2026.html</a></dd>
+            <dt>URL</dt><dd><code>/blog/koliko-košta-web-stranica-2026.html</code></dd>
             <dt>Prioritet</dt><dd>Srednji. Stara adresa već je vodila čitatelja na vodič, ali je odgovor označavao preseljenje kao privremeno.</dd>
             <dt>Izmjena</dt><dd>Stare .html adrese i varijante sa završnom kosom crtom sada trajno preusmjeravamo na kanonski URL. Tako preusmjerenje i sitemap upućuju na istu adresu.</dd>
             <dt>Provjera</dt><dd>Stara adresa vraća 301 u jednom koraku. <a href="/blog/koliko-ko%C5%A1ta-web-stranica-2026">Odredišni vodič</a> vraća 200 i navodi vlastiti URL kao kanonski.</dd>
@@ -294,12 +305,11 @@ def render_region(root, origin, regions, key, service):
     web_service_layout = key == "hr" and service == "web"
     seo_offer_layout = key == "hr" and service == "seo"
     social_image = (EXAMPLES[service][2] if service else None) or "/assets/hero-metal-emblem.webp"
-    alternates = []
+    alternates = region_alternates(origin, regions, service)
     switches = []
     for code, alternative in regions.items():
         alternate_url = region_path(code, alternative, service)
         tag = alternative["tag"]
-        alternates.append(f'<link rel="alternate" hreflang="{tag}" href="{escape(origin + alternate_url)}">')
         current = ' aria-current="page"' if code == key else ""
         switches.append(
             f'<li><a href="{alternate_url}" lang="{tag}" hreflang="{tag}" data-locale="{code}"{current}>'
@@ -383,13 +393,14 @@ def render_region(root, origin, regions, key, service):
   <title>{title}</title>
   <meta name="description" content="{description}">
   <link rel="canonical" href="{canonical}">
-  {"".join(alternates)}
+  {alternates}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ostrelya Studio">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="{canonical}">
   <meta property="og:image" content="{escape(origin + social_image)}">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{structured_data}</script>
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">

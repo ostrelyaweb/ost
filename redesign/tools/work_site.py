@@ -157,6 +157,7 @@ def render_work(root, origin, path, project, projects):
         header = header.replace('href="/work/" class="mobile-link"', 'href="/work/" class="mobile-link" aria-current="page"')
     title = f'{project["name"]} — Studio Concept | Ostrelya' if project else "Selected Work & Studio Concepts | Ostrelya"
     summary = project["summary"] if project else "Explore Ostrelya’s web design, visual identity and interactive prototypes, from architecture portfolios to 3D product configurators."
+    description = project.get("meta_description", summary) if project else summary
     image = "/assets/" + quote((project or projects[0])["cover"][0])
     canonical = origin + path
     organization = {"@type": "Organization", "name": "Ostrelya Studio", "url": origin + "/"}
@@ -178,14 +179,15 @@ def render_work(root, origin, path, project, projects):
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{escape(title)}</title>
-  <meta name="description" content="{escape(summary)}">
+  <meta name="description" content="{escape(description)}">
   <link rel="canonical" href="{escape(canonical)}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ostrelya Studio">
   <meta property="og:title" content="{escape(title)}">
-  <meta property="og:description" content="{escape(summary)}">
+  <meta property="og:description" content="{escape(description)}">
   <meta property="og:url" content="{escape(canonical)}">
   <meta property="og:image" content="{escape(origin + image)}">
+  <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">{data}</script>
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">

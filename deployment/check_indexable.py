@@ -15,6 +15,7 @@ class SearchPage(HTMLParser):
         self.titles = []
         self.heading_count = 0
         self.noindex = False
+        self.social_card = False
         self.in_title = False
         self.feed(html)
 
@@ -32,6 +33,8 @@ class SearchPage(HTMLParser):
             content = values.get("content", "")
             if name == "description":
                 self.descriptions.append(content)
+            elif name == "twitter:card":
+                self.social_card = content == "summary_large_image"
             elif name in {"robots", "googlebot", "bingbot"}:
                 self.noindex |= "noindex" in content.lower()
         elif tag == "h1":
@@ -77,6 +80,8 @@ def check_indexable(output, origin):
             errors.append(f"{url}: canonical must point to itself")
         if page.noindex or page.heading_count != 1:
             errors.append(f"{url}: expected indexable HTML with one H1")
+        if not page.social_card:
+            errors.append(f"{url}: missing a large social card")
         for label, values in (("title", page.titles), ("description", page.descriptions)):
             if len(values) != 1 or not values[0].strip():
                 errors.append(f"{url}: missing or repeated {label}")
@@ -90,6 +95,8 @@ def check_indexable(output, origin):
         alternates = {language: page_url(link) for language, link in page.alternates.items()}
         if not alternates:
             continue
+        if "x-default" not in alternates:
+            errors.append(f"{url}: missing x-default in the hreflang cluster")
         if page.duplicate_alternates or url not in alternates.values():
             errors.append(f"{url}: expected unique hreflang entries including this page")
         for alternate in set(alternates.values()):

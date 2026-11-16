@@ -5,6 +5,7 @@
     "hr": {
       "title": "Kako pripremiti redizajn weba bez nepotrebnog gubitka SEO-a?",
       "summary": "Prije redizajna popišite stranice koje ljudi već pronalaze, sačuvajte korisne adrese i testirajte preusmjerenja prije objave.",
+      "meta_title": "Kako sačuvati SEO pri redizajnu weba?",
       "sections": [
         [
           "Počnite popisom starih URL-ova",
@@ -51,6 +52,7 @@
     "en": {
       "title": "How to plan a website redesign that protects your search visibility",
       "summary": "Inventory the pages people already find, keep useful addresses and test redirects before launching a redesigned website.",
+      "meta_title": "How to protect SEO during a website redesign",
       "sections": [
         [
           "Inventory the current URLs",
