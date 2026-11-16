@@ -374,6 +374,14 @@
       "summary": "Popišite stare adrese, zadržite korisne i pripremite preusmjerenja prije objave.",
       "meta_title": "Kako sačuvati SEO pri redizajnu web stranice?",
       "meta_description": "Prije redizajna popišite važne URL-ove i odlučite koje zadržavate. Pripremite preusmjerenja na odgovarajuće nove stranice i provjerite ih prije objave.",
+      "migration_case": {
+        "title": "Šta smo pronašli na 132 URL-a Ostrelye",
+        "paragraphs": [
+          "Svih 132 URL-a iz našeg sitemapa vraćalo je status 200 na glavnoj HTTPS adresi, ali HTTP i www varijante također su posluživale isti sadržaj. Postavili smo trajno preusmjerenje 308. U ponovljenom testu svaka je alternativna adresa u jednom koraku vodila na https://ostrelya.com.",
+          "Na staroj .html adresi vodiča također smo promijenili privremeni 307 u trajni 301 i potvrdili da odredište vraća 200. Uvezite CSV u Excel ili Google Sheets, zamijenite primjere svojim adresama i uporedite očekivani status sa stvarnim odredištem i brojem preusmjerenja."
+        ],
+        "download_label": "Preuzmite predložak za provjeru preusmjerenja (CSV)"
+      },
       "sections": [
         [
           "Prikupite adrese",
@@ -394,6 +402,14 @@
       "title": "Kako pripremiti redizajn sajta i sačuvati vidljivost?",
       "summary": "Napravite popis URL-ova, sačuvajte adrese koje i dalje koriste kupci i proverite preusmerenja.",
       "meta_description": "Pripremite SEO migraciju pri redizajnu sajta. Popišite stare URL-ove, sačuvajte korisne adrese i proverite da preusmerenja vode na prave stranice.",
+      "migration_case": {
+        "title": "Šta smo otkrili proverom 132 URL-a Ostrelye",
+        "paragraphs": [
+          "Svih 132 URL-a iz sitemapa vraćalo je 200 na glavnoj HTTPS adresi. Isti sadržaj otvarao se i preko HTTP i www adresa. Uveli smo trajno preusmerenje 308 i ponovili test. Sve tri alternativne varijante svakog URL-a stigle su do https://ostrelya.com u jednom koraku.",
+          "Na staroj .html adresi vodiča o ceni sajta preusmerenje 307 zamenili smo trajnim 301 i proverili da odredište vraća 200. Uvezite CSV u Excel ili Google Sheets, zamenite primere svojim adresama i uporedite očekivani status, stvarno odredište i broj preusmerenja."
+        ],
+        "download_label": "Preuzmite šablon za proveru preusmerenja (CSV)"
+      },
       "sections": [
         [
           "Izvezite stare adrese",
@@ -414,6 +430,14 @@
       "title": "Kako sačuvati vidljivost sajta pri redizajnu?",
       "summary": "Zadržite adrese koje rade, pripremite preusmjerenja i provjerite odredišta prije objave.",
       "meta_description": "Sačuvajte važne adrese pri redizajnu sajta. Za one koje se mijenjaju pripremite preusmjerenja i provjerite do kojih stranica vode prije objave.",
+      "migration_case": {
+        "title": "Šta smo otkrili provjerom 132 URL-a Ostrelye",
+        "paragraphs": [
+          "Svih 132 URL-a iz sitemapa vraćalo je 200 na glavnoj HTTPS adresi. Isti sadržaj otvarao se i preko HTTP i www adresa. Uveli smo trajno preusmjerenje 308 i ponovili test. Sve tri alternativne varijante svakog URL-a vodile su na https://ostrelya.com u jednom koraku.",
+          "Na staroj .html adresi vodiča o cijeni sajta privremeni 307 zamijenili smo trajnim 301 i provjerili da odredište vraća 200. Uvezite CSV u Excel ili Google Sheets, zamijenite primjere svojim adresama i uporedite očekivani status, stvarno odredište i broj preusmjerenja."
+        ],
+        "download_label": "Preuzmite obrazac za provjeru preusmjerenja (CSV)"
+      },
       "sections": [
         [
           "Prikupite važne URL-ove",
@@ -434,6 +458,14 @@
       "title": "Kako pri prenovi ohraniti vidnost spletne strani?",
       "summary": "Popišite obstoječe naslove, ohranite uporabne in pred objavo preizkusite preusmeritve.",
       "meta_description": "Pred prenovo popišite obstoječe URL-je, ohranite uporabne naslove in pripravite preusmeritve. Preverite, ali vodijo na prave nove strani.",
+      "migration_case": {
+        "title": "Kaj je pokazal pregled 132 URL-jev na spletnem mestu Ostrelya",
+        "paragraphs": [
+          "Vseh 132 URL-jev iz zemljevida spletnega mesta je na glavnem naslovu HTTPS vrnilo kodo 200. Enaka vsebina je bila dostopna tudi prek naslovov HTTP in www. Po nastavitvi trajne preusmeritve 308 so vse tri različice vsakega naslova v enem koraku vodile na https://ostrelya.com.",
+          "Stari naslov vodnika s končnico .html je začasno preusmeritev 307 zamenjal s trajno 301. Ciljna stran je vrnila 200. Datoteko CSV uvozite v Excel ali Google Sheets, nadomestite primere s svojimi naslovi in primerjajte pričakovano kodo, dejanski cilj in število preusmeritev."
+        ],
+        "download_label": "Prenesite predlogo za preverjanje preusmeritev (CSV)"
+      },
       "sections": [
         [
           "Pripravite seznam naslovov",
@@ -454,6 +486,14 @@
       "title": "Како да ја зачувате видливоста при редизајн на веб-страница?",
       "summary": "Попис на старите адреси и тестирани пренасочувања помагаат корисниците да стигнат до вистинската страница.",
       "meta_title": "Како да го зачувате SEO при редизајн?",
+      "migration_case": {
+        "title": "Што откривме при проверката на 132 URL-адреси на Ostrelya",
+        "paragraphs": [
+          "Сите 132 URL-адреси од мапата на сајтот враќаа статус 200 на главната HTTPS адреса. Истата содржина беше достапна и преку HTTP и www. Поставивме трајно пренасочување 308 и повторно тестиравме. Сите три алтернативни верзии на секоја адреса водеа до https://ostrelya.com во еден чекор.",
+          "На старата .html адреса на водичот за цени го заменивме привременото пренасочување 307 со трајно 301. Целната страница врати 200. Увезете ја CSV-датотеката во Excel или Google Sheets, внесете ги вашите адреси и споредете ги очекуваниот статус, вистинската цел и бројот на пренасочувања."
+        ],
+        "download_label": "Преземете го шаблонот за проверка на пренасочувања (CSV)"
+      },
       "sections": [
         [
           "Соберете ги старите адреси",
@@ -474,6 +514,14 @@
       "title": "Si ta ruani dukshmërinë gjatë ridizajnimit të faqes?",
       "summary": "Renditni adresat e vjetra, ruani ato që përdoren dhe provoni ridrejtimet para publikimit.",
       "meta_description": "Para ridizajnimit, renditni adresat e vjetra dhe ruani ato që përdoren. Hartoni ridrejtimet drejt faqeve përkatëse dhe provojini para publikimit.",
+      "migration_case": {
+        "title": "Çfarë zbuluam kur kontrolluam 132 URL të Ostrelya",
+        "paragraphs": [
+          "Të 132 URL-të e hartës së faqes kthenin statusin 200 në adresën kryesore HTTPS. E njëjta përmbajtje hapej edhe nëpërmjet adresave HTTP dhe www. Vendosëm ridrejtimin e përhershëm 308 dhe përsëritëm testin. Të tria variantet e çdo URL-je çuan te https://ostrelya.com me një ridrejtim të vetëm.",
+          "Në adresën e vjetër .html të udhëzuesit për çmimet, e zëvendësuam ridrejtimin e përkohshëm 307 me ridrejtimin e përhershëm 301. Faqja përfundimtare ktheu statusin 200. Importojeni CSV-në në Excel ose Google Sheets, vendosni adresat tuaja dhe krahasoni statusin e pritur, adresën përfundimtare dhe numrin e ridrejtimeve."
+        ],
+        "download_label": "Shkarkoni modelin për kontrollin e ridrejtimeve (CSV)"
+      },
       "sections": [
         [
           "Mblidhni adresat",

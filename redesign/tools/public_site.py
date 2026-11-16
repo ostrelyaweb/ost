@@ -25,7 +25,7 @@ SLUG = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*")
 ARTICLE_PATH = re.compile(r"/journal/([a-z0-9]+(?:-[a-z0-9]+)*)/?")
 HERO = "/assets/hero-metal-emblem.webp"
 PUBLIC_ASSET_TYPES = {
-    ".avif", ".css", ".gif", ".html", ".ico", ".jpeg", ".jpg", ".js", ".json",
+    ".avif", ".css", ".csv", ".gif", ".html", ".ico", ".jpeg", ".jpg", ".js", ".json",
     ".mp4", ".png", ".svg", ".txt", ".wav", ".webm", ".webp", ".woff", ".woff2", ".zip",
 }
 

@@ -1,0 +1,6 @@
+old_url,expected_destination,expected_first_status,observed_first_status,observed_final_url,observed_final_status,redirect_hops,checked_on,notes
+https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026.html,https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026,301,301,https://ostrelya.com/blog/koliko-ko%C5%A1ta-web-stranica-2026,200,1,2026-11-16,Old article URL
+http://ostrelya.com/sitemap.xml,https://ostrelya.com/sitemap.xml,308,308,https://ostrelya.com/sitemap.xml,200,1,2026-11-16,HTTP to HTTPS
+https://www.ostrelya.com/sitemap.xml,https://ostrelya.com/sitemap.xml,308,308,https://ostrelya.com/sitemap.xml,200,1,2026-11-16,WWW to canonical host
+https://ostrelya.com/hr/,https://ostrelya.com/hr/,200,200,https://ostrelya.com/hr/,200,0,2026-11-16,URL stays in place
+,,,,,,,,

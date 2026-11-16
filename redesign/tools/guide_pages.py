@@ -120,8 +120,22 @@ def render_guide(root, origin, slug, lang, entry, locales):
         + "</section>"
         for heading, body in guide["sections"]
     )
+    case_markup = ""
+    if case := guide.get("migration_case"):
+        download = root / "assets" / "resources" / "redirect-map.csv"
+        if not download.is_file():
+            raise ValueError(f"Missing migration template: {download}")
+        download_path = "/" + download.relative_to(root).as_posix()
+        paragraphs = "".join(f"<p>{escape(paragraph)}</p>" for paragraph in case["paragraphs"])
+        case_markup = (
+            '<section class="journal-block guide-links" id="ostrelya-migration">'
+            f'<h2>{escape(case["title"])}</h2>{paragraphs}'
+            f'<p><a href="{escape(download_path)}" download>{escape(case["download_label"])}</a></p>'
+            '</section>'
+        )
     modified = entry.get("modified", "2026-11-12")
-    published = entry.get("published", "2026-08-27") if lang in {"hr", "en"} else modified
+    published = (entry.get("published", "2026-08-27") if lang in {"hr", "en"}
+                 else entry.get("regional_published", modified))
     sources = guide.get("sources", entry["en"].get("sources", ()))
     source_markup = (
         f'<section class="journal-block guide-links"><h2>{sources_heading}</h2>'
@@ -146,6 +160,7 @@ def render_guide(root, origin, slug, lang, entry, locales):
       <h1 class="editorial-heading">{title}</h1>
       <p class="content-intro">{description}</p>
       {language_links(slug, lang, entry, locales)}
+      {case_markup}
       {article}
       <nav class="journal-block guide-links" aria-label="{related}">
         <h2>{related}</h2><ul>{guide_links(links)}</ul>

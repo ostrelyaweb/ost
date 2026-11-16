@@ -2,10 +2,21 @@
   "redizajn-web-stranice-bez-gubitka-seo": {
     "topic": "planning",
     "published": "2026-11-12",
+    "modified": "2026-11-16",
+    "regional_published": "2026-11-12",
     "hr": {
       "title": "Kako pripremiti redizajn weba bez nepotrebnog gubitka SEO-a?",
       "summary": "Prije redizajna popišite stranice koje ljudi već pronalaze, sačuvajte korisne adrese i testirajte preusmjerenja prije objave.",
       "meta_title": "Kako sačuvati SEO pri redizajnu weba?",
+      "meta_description": "Kako provjeriti SEO nakon redizajna: primjer 132 URL-a s Ostrelye, trajna preusmjerenja i besplatan CSV predložak za testiranje migracije.",
+      "migration_case": {
+        "title": "Što smo pronašli na 132 URL-a Ostrelye",
+        "paragraphs": [
+          "Nakon redizajna svaki od 132 URL-a iz našeg sitemapa vraćao je 200 na kanonskoj HTTPS adresi. Provjera samo tih adresa propustila bi problem: HTTP i www varijante također su posluživale isti sadržaj. Postavili smo trajno preusmjerenje 308. Pri ponovnoj provjeri sve tri alternativne varijante svakog od 132 URL-a u jednom su koraku vodile na https://ostrelya.com.",
+          "Provjerili smo i staru .html adresu vodiča o cijeni weba. Promijenili smo privremeni 307 u trajni 301 i provjerili da odredište vraća 200. U CSV-u su izmjereni primjeri. Uvezite ga u Excel ili Google Sheets, zamijenite primjere svojim adresama i usporedite očekivani status, stvarno odredište i broj preusmjerenja."
+        ],
+        "download_label": "Preuzmite predložak za provjeru preusmjerenja (CSV)"
+      },
       "sections": [
         [
           "Počnite popisom starih URL-ova",
@@ -53,6 +64,15 @@
       "title": "How to plan a website redesign that protects your search visibility",
       "summary": "Inventory the pages people already find, keep useful addresses and test redirects before launching a redesigned website.",
       "meta_title": "How to protect SEO during a website redesign",
+      "meta_description": "Use Ostrelya’s 132-URL redesign example and free CSV template to check old URLs, permanent redirects and their destinations before a website migration.",
+      "migration_case": {
+        "title": "What we found when we checked 132 Ostrelya URLs",
+        "paragraphs": [
+          "After our redesign, every one of the 132 URLs in our sitemap returned 200 on its canonical HTTPS address. Checking those URLs alone would have missed that the HTTP and www variants served the same content. We added a permanent 308 redirect. On retest, all three alternate variants of each sitemap URL reached https://ostrelya.com in one hop.",
+          "We also checked the old .html address of our website pricing guide. Its temporary 307 became a permanent 301, and the destination returned 200. The CSV contains measured examples. Import it into Excel or Google Sheets, replace the examples with your URLs, and compare the expected status, actual destination and number of hops."
+        ],
+        "download_label": "Download the redirect test template (CSV)"
+      },
       "sections": [
         [
           "Inventory the current URLs",
