@@ -175,7 +175,13 @@ def render_page(root, origin, path, content=None, article=None):
     schema = None
     if path == "/":
         meta += "\n  " + region_alternates(origin, read_regions(root))
-        schema = {**organization, "logo": origin + "/assets/symbol-dark.png"}
+        schema = {
+            **organization,
+            "logo": origin + "/assets/symbol-dark.png",
+            "description": description,
+            "email": "hello@ostrelya.com",
+            "sameAs": ["https://clutch.co/profile/ostrelya-studio"],
+        }
     elif article is not None:
         schema = {
             "@type": "BlogPosting", "headline": article["title"], "description": description,
