@@ -11,7 +11,7 @@ from tempfile import TemporaryDirectory
 from urllib.parse import quote, urlsplit
 from xml.etree.ElementTree import Element, SubElement, tostring
 
-from regional_site import read_regions, region_alternates, region_routes, render_region, site_chrome
+from regional_site import read_regions, region_alternates, region_content, region_routes, render_region, site_chrome
 from work_site import WORK_INDEX, read_projects, render_work, work_routes
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -217,7 +217,7 @@ def sitemap(origin, articles, regions, projects):
         SubElement(node, "loc").text = origin + path
         if path in regional_routes:
             key, service = regional_routes[path]
-            content = regions[key]["services"][service] if service else regions[key]
+            content = region_content(regions[key], service)
             if modified := content.get("modified"):
                 SubElement(node, "lastmod").text = date.fromisoformat(modified).isoformat()
     return tostring(urlset, encoding="unicode", xml_declaration=True) + "\n"

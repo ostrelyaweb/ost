@@ -95,11 +95,26 @@ def read_regions(root):
         if set(services) != {"development", "seo", "maintenance"}:
             raise ValueError(f"Incomplete web services for {key}")
         regions[key]["services"].update(services)
+    city_services = json.loads((root / "content/regional-city-services.json").read_bytes())
+    for key, offers in city_services.items():
+        region = regions[key]
+        for name, offer in offers.items():
+            if name in region["services"] or offer["parent"] not in region["services"]:
+                raise ValueError(f"Invalid city service: {key}/{name}")
+        region["city_services"] = offers
     return regions
 
 
+def region_content(region, service):
+    if service is None:
+        return region
+    if service in region["services"]:
+        return region["services"][service]
+    return region["city_services"][service]
+
+
 def region_path(key, region, service=None):
-    return f"/{key}/{region['services'][service]['slug']}/" if service else f"/{key}/"
+    return f"/{key}/{region_content(region, service)['slug']}/" if service else f"/{key}/"
 
 
 def region_alternates(origin, regions, service=None):
@@ -114,11 +129,14 @@ def region_alternates(origin, regions, service=None):
 
 
 def region_routes(regions):
-    return {
-        region_path(key, region, service): (key, service)
-        for key, region in regions.items()
-        for service in (None, *region["services"])
-    }
+    routes = {}
+    for key, region in regions.items():
+        for service in (None, *region["services"], *region.get("city_services", {})):
+            path = region_path(key, region, service)
+            if path in routes:
+                raise ValueError(f"Duplicate regional path: {path}")
+            routes[path] = (key, service)
+    return routes
 
 
 def faq_details(questions):
@@ -129,7 +147,7 @@ def faq_details(questions):
     )
 
 
-def croatian_web_main(service_links, markets):
+def croatian_web_main(service_links, markets, city_links):
     steps = (
         ("Struktura i sadržaj", "Popisujemo ključne stranice, raspoređujemo sadržaj i dogovaramo što posjetitelj treba napraviti na svakoj stranici."),
         ("Web dizajn i prototip", "Na klikabilnom prototipu pregledavamo izgled i put do upita na mobitelu i desktopu."),
@@ -186,6 +204,7 @@ def croatian_web_main(service_links, markets):
         </div>
       </section>
       {markets}
+      {city_links}
       <section class="services-disciplines web-service-faq" id="pitanja">
         <div class="page-container">
           <div class="services-section-head"><div><p class="services-kicker">04 / Prije upita</p><h2 class="editorial-heading" data-editorial-reveal>Česta pitanja.</h2></div>
@@ -199,6 +218,67 @@ def croatian_web_main(service_links, markets):
         <h2 class="editorial-heading" data-editorial-reveal>Imate web ili trebate<br>vizualni identitet?</h2>
         <div class="region-service-grid">{service_links}</div>
       </section>
+    """
+
+
+def croatian_city_web_main(offer, headline, intro, service_links, markets):
+    source_label, source_url = map(escape, offer["source"])
+    scopes = "".join(
+        f'<div><h3>{escape(heading)}</h3><p>{escape(body)}</p></div>'
+        for heading, body in offer["scope"]
+    )
+    steps = "".join(
+        f'<li><span aria-hidden="true">{number:02}</span><div><h3>{escape(heading)}</h3><p>{escape(body)}</p></div></li>'
+        for number, (heading, body) in enumerate(offer["journey"], start=1)
+    )
+    price = "".join(
+        f'<div><h3>{escape(heading)}</h3><p>{escape(body)}</p></div>'
+        for heading, body in offer["price"]
+    )
+    return f"""
+      <section class="services-editorial-hero web-service-hero" aria-labelledby="city-web-title">
+        <div class="page-container services-hero-layout">
+          <h1 class="editorial-heading" id="city-web-title">{headline}<span>.</span></h1>
+          <div class="services-hero-aside">
+            <p>{intro}</p>
+            <a class="btn-primary" href="#contact">Zatražite ponudu <span aria-hidden="true">↗</span></a>
+          </div>
+          <nav class="guide-topics seo-offer-nav" aria-label="Sadržaj stranice">
+            <a href="#opseg">Što dobivate</a>
+            <a href="#primjer">Primjer upita gosta</a>
+            <a href="#cijena">Što određuje cijenu</a>
+          </nav>
+        </div>
+      </section>
+      <section class="page-container region-split region-decision city-web-detail" id="opseg">
+        <h2 class="editorial-heading">Što treba sadržavati vaš web?</h2>
+        <div>{scopes}</div>
+      </section>
+      <section class="page-container web-service-process city-web-detail" id="primjer">
+        <div>
+          <h2 class="editorial-heading">Od pregleda smještaja do upita.</h2>
+          <p>{escape(offer["journey_context"])}</p>
+          <p>Ovako bi izgledao put gosta na primjeru weba za smještaj.</p>
+          <a class="web-service-text-link" href="{source_url}">{source_label} <span aria-hidden="true">↗</span></a>
+        </div>
+        <ol aria-label="Primjer upita za smještaj">{steps}</ol>
+      </section>
+      <section class="page-container region-split region-decision city-web-detail" id="cijena">
+        <div>
+          <h2 class="editorial-heading">Što određuje cijenu izrade?</h2>
+          <a class="web-service-text-link" href="{PRICE_GUIDE}">Kako usporediti ponude za izradu weba <span aria-hidden="true">↗</span></a>
+        </div>
+        <div>{price}</div>
+      </section>
+      <section class="page-container services-disciplines web-service-faq" id="pitanja">
+        <h2 class="editorial-heading">Česta pitanja.</h2>
+        <div class="service-accordions">{faq_details(offer["faq"])}</div>
+      </section>
+      <section class="page-container region-services">
+        <h2 class="editorial-heading">Usluge za vaš web.</h2>
+        <div class="region-service-grid">{service_links}</div>
+      </section>
+      {markets}
     """
 
 
@@ -292,7 +372,9 @@ def croatian_seo_main(headline, intro, active, service_links, markets):
 
 def render_region(root, origin, regions, key, service):
     region = regions[key]
-    active = region["services"][service] if service else region
+    active = region_content(region, service)
+    city_page = "city" in active
+    parent_service = active["parent"] if city_page else service
     lang = region["tag"]
     nav = region["nav"]
     labels = region["labels"]
@@ -306,13 +388,13 @@ def render_region(root, origin, regions, key, service):
     title = escape(active["meta_title"])
     web_service_layout = key == "hr" and service == "web"
     seo_offer_layout = key == "hr" and service == "seo"
-    social_image = (EXAMPLES[service][2] if service else None) or "/assets/hero-metal-emblem.webp"
-    alternates = region_alternates(origin, regions, service)
+    social_image = (EXAMPLES[service][2] if service and not city_page else None) or "/assets/hero-metal-emblem.webp"
+    alternates = "" if city_page else region_alternates(origin, regions, service)
     switches = []
     for code, alternative in regions.items():
-        alternate_url = region_path(code, alternative, service)
+        alternate_url = region_path(code, alternative, parent_service)
         tag = alternative["tag"]
-        current = ' aria-current="page"' if code == key else ""
+        current = ' aria-current="page"' if code == key and not city_page else ""
         switches.append(
             f'<li><a href="{alternate_url}" lang="{tag}" hreflang="{tag}" data-locale="{code}"{current}>'
             f'<strong>{escape(alternative["label"])}</strong><span>{escape(alternative["language"])}</span></a></li>'
@@ -324,7 +406,7 @@ def render_region(root, origin, regions, key, service):
                 f'<a href="{region_path(key, region, name)}"><strong>{escape(item["label"])}</strong>'
                 f'<p>{escape(item["intro"])}</p><span aria-hidden="true">↗</span></a>'
             )
-    page_class = "page-services region-page region-web" if web_service_layout or seo_offer_layout else "page-editorial region-page"
+    page_class = "page-services region-page region-web" if web_service_layout or seo_offer_layout or city_page else "page-editorial region-page"
     header, footer = site_chrome(root, croatian=key == "hr")
     header = header.replace('>Region</a>', f' lang="{lang}">{escape(nav["languages"])}</a>')
     header = header.replace("<span>Let's talk</span>", f'<span lang="{lang}">{escape(labels["enquiry"])}</span>')
@@ -332,7 +414,7 @@ def render_region(root, origin, regions, key, service):
                     else '<a href="/privacy-policy/#privacy-contact" lang="en">How we handle enquiries</a>')
     market_links = "".join(switches)
     guide_index = "/blog" if key == "hr" else f"/{key}/blog"
-    guide_index += SERVICE_GUIDE_TOPICS.get(service, "")
+    guide_index += SERVICE_GUIDE_TOPICS.get(parent_service, "")
     markets = (
         '<section class="page-container region-market" id="trzista">'
         f'<p class="services-kicker">{"03 / Rad u regiji" if web_service_layout else escape(nav["languages"])}</p>'
@@ -341,8 +423,19 @@ def render_region(root, origin, regions, key, service):
         + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul>'
         f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[key])} <span aria-hidden="true">↗</span></a></p></section>'
     )
-    if web_service_layout:
-        main = croatian_web_main("".join(service_links), markets)
+    if city_page:
+        main = croatian_city_web_main(active, headline, intro, "".join(service_links), markets)
+    elif web_service_layout:
+        city_cards = "".join(
+            f'<a href="{escape(region_path(key, region, name))}"><strong>{escape(offer["label"])}</strong>'
+            f'<p>{escape(offer["link_description"])}</p><span aria-hidden="true">↗</span></a>'
+            for name, offer in region.get("city_services", {}).items() if offer["parent"] == service
+        )
+        city_links = (
+            '<section class="page-container region-services"><h2 class="editorial-heading">Ponuda po gradovima.</h2>'
+            f'<div class="region-service-grid">{city_cards}</div></section>' if city_cards else ""
+        )
+        main = croatian_web_main("".join(service_links), markets, city_links)
     elif seo_offer_layout:
         main = croatian_seo_main(headline, intro, active, "".join(service_links), markets)
     else:
@@ -360,7 +453,7 @@ def render_region(root, origin, regions, key, service):
             '<section class="page-container region-split region-decision">'
             f'<h2 class="editorial-heading">{escape(heading)}</h2><div>{body}</div></section>'
         )
-    if service:
+    if service and not city_page:
         related = service_guides(root, key, service)
         if related:
             links = "".join(
@@ -374,9 +467,11 @@ def render_region(root, origin, regions, key, service):
             )
 
     trail = [("Ostrelya Studio", "/"), (region["label"], hub)]
+    if city_page:
+        trail.append((region["services"][parent_service]["label"], region_path(key, region, parent_service)))
     if service:
         trail.append((active["label"], path))
-    crumbs = "".join(f'<li><a href="{url}">{escape(name)}</a></li>' for name, url in trail[:-1])
+    crumbs = "".join(f'<li><a href="{escape(url)}">{escape(name)}</a></li>' for name, url in trail[:-1])
     breadcrumbs = (
         f'<nav class="page-container region-breadcrumb" aria-label="{escape(nav["breadcrumb"])}">'
         f'<ol>{crumbs}<li aria-current="page">{escape(trail[-1][0])}</li></ol></nav>'
@@ -390,8 +485,10 @@ def render_region(root, origin, regions, key, service):
     }]
     if service:
         areas = [entry["market"] for entry in regions.values()] if web_service_layout else [region["market"]]
+        if city_page:
+            areas = [{"@type": "City", "name": active["city"]}]
         graph.append({
-            "@type": "Service", "name": active["title"], "serviceType": active["label"],
+            "@type": "Service", "name": active["title"], "serviceType": region["services"][parent_service]["label"],
             "url": origin + path, "description": active["meta_description"], "areaServed": areas,
             "provider": {"@type": "Organization", "name": "Ostrelya Studio", "url": origin + "/"},
         })
@@ -400,7 +497,7 @@ def render_region(root, origin, regions, key, service):
     contact_title = "Pošaljite URL za SEO pregled" if seo_offer_layout else escape(labels["contact"])
     contact_brief = (
         "Unesite javnu adresu weba. Ako već imate konkretan problem, navedite stranicu, uslugu ili tržište koje želite provjeriti. Odgovorit ćemo s prijedlogom opsega pregleda."
-        if seo_offer_layout else escape(labels["brief"])
+        if seo_offer_layout else escape(active.get("contact_brief", labels["brief"]))
     )
     return f"""<!doctype html>
 <html lang="{lang}">
@@ -422,7 +519,7 @@ def render_region(root, origin, regions, key, service):
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
   <link rel="stylesheet" href="/styles.css?v=regional-services">
-  <link rel="stylesheet" href="/assets/regional.css?v=8">
+  <link rel="stylesheet" href="/assets/regional.css?v=9">
   <script src="/assets/region-language.js?v=10" defer></script>
   <script src="/script.js?v={"seo-audit" if seo_offer_layout else "regional-services"}" defer></script>
 </head>

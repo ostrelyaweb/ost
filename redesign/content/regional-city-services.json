@@ -1,0 +1,40 @@
+{
+  "hr": {
+    "split": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-split",
+      "city": "Split",
+      "label": "Izrada web stranica za Split",
+      "title": "Izrada web stranica za Split",
+      "meta_title": "Izrada web stranica za Split | Ostrelya Studio",
+      "meta_description": "Izrada web stranica za smještaj, izlete i poslovne usluge u Splitu. Višejezični sadržaj, obrasci za upite i uređivanje weba uz suradnju na daljinu.",
+      "intro": "Izrađujemo web stranice po mjeri za smještaj, organizatore izleta i tvrtke iz Splita. Dogovaramo kako će posjetitelj pronaći ponudu, provjeriti detalje i poslati upit. S vašim timom radimo na daljinu.",
+      "link_description": "Višejezični webovi za smještaj, izlete i poslovne usluge. Pogledajte što ulazi u ponudu i kako izgleda upit s mobitela.",
+      "modified": "2026-11-19",
+      "scope": [
+        ["Za smještaj", "Zasebna stranica za svaku vrstu jedinice s fotografijama, kapacitetom, pravilima i lokacijom. Gost može poslati upit za određeni termin ili nastaviti u postojeći rezervacijski sustav."],
+        ["Za izlete i ture", "Stranica ture s polazištem, trajanjem, uključenim stavkama i uvjetima otkazivanja. U upitu se prenosi odabrana tura, a gost dodaje datum i broj osoba."],
+        ["Za poslovne usluge", "Svaka usluga dobiva prostor za opseg posla, uvjete i primjere koje možete javno pokazati. Obrazac prikuplja informacije potrebne za prvu procjenu."]
+      ],
+      "journey": [
+        ["Gost otvara englesku stranicu jedinice", "Na mobitelu vidi kapacitet, fotografije, uvjete dolaska i gdje se smještaj nalazi. Jezik može promijeniti bez gubitka stranice koju gleda."],
+        ["Šalje datume i broj gostiju", "Obrazac prenosi naziv jedinice, dolazak, odlazak i broj gostiju. Gost dobiva potvrdu da je upit zaprimljen. Raspoloživost provjerava i potvrđuje domaćin."],
+        ["Domaćin dobiva podatke za odgovor", "U poruci dolaze odabrana jedinica, datumi i kontakt gosta, tako da domaćin može odgovoriti s raspoloživošću i ponudom. Ako već koristi vanjski rezervacijski sustav, možemo povezati odgovarajuću stranicu tog sustava."]
+      ],
+      "journey_context": "U Splitu su 2025. strani gosti ostvarili oko 93 % noćenja. Kad gost otvori web na svom jeziku, važne informacije i upit trebaju ostati na istom jeziku.",
+      "source": ["Izvješće Turističke zajednice Splita za 2025.", "https://visitsplit.com/en/7076/2025"],
+      "price": [
+        ["Jedna ili nekoliko jedinica", "Ako sve jedinice dijele isti predložak, u ponudi odvojeno navodimo njegovu izradu i unos sadržaja po jedinici. Za jednostavan poslovni web primjenjujemo isti princip na stranice usluga."],
+        ["Dodatni jezici i integracije", "Dogovaramo tko priprema prijevod i tko kasnije ažurira svaku verziju. Poveznicu na vanjske rezervacije, integraciju dostupnosti i obrasce procjenjujemo prema tome što vaš postojeći sustav podržava."],
+        ["Objava i održavanje", "U ponudi razdvajamo trošak izrade od hostinga, licenci i održavanja. Prije objave provjeravamo jezične poveznice, prikaz na telefonu i stižu li testni upiti u dogovoreni sandučić."]
+      ],
+      "faq": [
+        ["Koliko košta izrada web stranice?", "Ponudu šaljemo nakon što dogovorimo broj različitih predložaka, jezike, pripremu sadržaja i integracije. Za prvu procjenu pošaljite postojeći web ili profil, primjer usluge ili jedinice i što posjetitelj treba napraviti."],
+        ["Moram li mijenjati postojeći rezervacijski sustav?", "Možete zadržati sustav koji koristite. Pri planiranju provjeravamo može li web otvoriti točno odabranu jedinicu ili turu i ima li smisla povezati dostupnost. Ovisno o sustavu, predložit ćemo običnu poveznicu ili integraciju."],
+        ["Mogu li uređivati fotografije i sezonske informacije?", "Ako je CMS dio ponude, dogovorimo polja koja uređujete, recimo fotografije, opis jedinice, vrijeme polaska i sezonsku obavijest. Na primopredaji zajedno napravimo jednu stvarnu izmjenu."],
+        ["Kako dogovaramo projekt ako ste izvan Splita?", "Prvi razgovor, pregled prototipa i primopredaju vodimo online. Prije izrade zabilježimo tko priprema materijale i tko odobrava sadržaj po jezicima. Ako imate fiksni datum objave, navedite ga u upitu."]
+      ],
+      "contact_brief": "Pošaljite adresu postojećeg weba ili javnog profila, broj usluga ili jedinica, željene jezike i datum objave ako ga imate. Ako već koristite rezervacijski sustav, navedite koji."
+    }
+  }
+}

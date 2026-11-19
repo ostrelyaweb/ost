@@ -20,6 +20,9 @@
 .region-decision p + p { margin-top: .85rem; }
 .region-decision ul { margin: 0; padding: 0; list-style: none; }
 .region-decision .web-service-text-link { margin-top: .25rem; }
+.city-web-detail h3 + p { margin-top: .35rem; }
+.city-web-detail > div > div + div { margin-top: 1.25rem; }
+.city-web-detail.web-service-process h2 { font-size: clamp(2rem, 4.8vw, 4.6rem); }
 .region-cover { position: relative; display: block; background: #eeebf2; }
 .region-cover img { display: block; width: 100%; height: auto; }
 .region-cover span { position: absolute; inset: auto .65rem .65rem auto; padding: .25rem .55rem; color: #fff; background: #24173d; }
