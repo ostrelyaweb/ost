@@ -1,0 +1,371 @@
+{
+  "hr": {
+    "navigation": "Sadržaj stranice",
+    "services_heading": "Izrada, SEO i održavanje",
+    "audience_heading": "Za koga radimo",
+    "price_heading": "Kako dogovaramo cijenu",
+    "faq_heading": "Česta pitanja",
+    "other_heading": "Još usluga za vaš web",
+    "cities_heading": "Ponuda po gradovima",
+    "services": {
+      "web": [
+        "Izrada i redizajn weba",
+        "Dizajn, razvoj i CMS za novu stranicu ili obnovu postojeće. Prije objave provjeravamo kontakt, mobilni prikaz i put do upita."
+      ],
+      "seo": [
+        "SEO optimizacija",
+        "Pregledamo indeksiranje, sadržaj i upite kupaca. Dogovaramo koje stranice doraditi i kako u Search Consoleu pratiti prikaze i klikove."
+      ],
+      "maintenance": [
+        "Održavanje weba",
+        "Dogovaramo ažuriranja, kopije, provjeru kontakta i manje izmjene. Možemo pregledati i web koji je izradio drugi tim."
+      ]
+    },
+    "coast": [
+      [
+        "Turizam i ugostiteljstvo",
+        "Za smještaj, izlete, restorane i druge turističke usluge planiramo stranice ponude, više jezika i put do upita ili vanjskih rezervacija. Prije sezone možete osvježiti termine i upute."
+      ],
+      [
+        "Mala i srednja poduzeća",
+        "Za obrte i tvrtke slažemo stranice usluga, radove i kontakt za kupce. Možete naručiti novi web, doraditi postojeći ili dogovoriti samo SEO i održavanje."
+      ]
+    ],
+    "inland": [
+      [
+        "Tvrtke, obrti i poslovni timovi",
+        "Pomažemo jasno predstaviti što radite, kome je namijenjena ponuda i što kupac treba poslati za procjenu. Web može uključiti katalog s upitom, reference ili CMS."
+      ],
+      [
+        "Osobni portfoliji",
+        "Za samostalne stručnjake i kreativce možemo izraditi portfolio s odabranim projektima, opisom vaše uloge i jasnim kontaktom. Po potrebi dodajemo CMS za nove radove."
+      ]
+    ],
+    "cost": [
+      "Ponuda ovisi o broju različitih predložaka, postojećem sadržaju, jezicima i funkcijama. Izradu, SEO i podršku nakon objave iskazujemo odvojeno. Svaku uslugu možete ugovoriti zasebno.",
+      "Pošaljite postojeći web ili primjere koji vam odgovaraju. Ako želite doraditi postojeći web, napišite što želite riješiti i tko danas ima pristup."
+    ],
+    "faq": [
+      [
+        "Možemo li naručiti samo SEO ili održavanje?",
+        "Da. Najprije pregledamo postojeći web, dostupne podatke i pristupe pa predložimo opseg za tu uslugu."
+      ],
+      [
+        "Hoće li naš tim moći sam uređivati web?",
+        "Ako je CMS dio ponude, dogovaramo koja polja uređujete i na primopredaji prolazimo jednu stvarnu izmjenu."
+      ]
+    ]
+  },
+  "bs": {
+    "navigation": "Sadržaj stranice",
+    "services_heading": "Izrada, SEO i održavanje",
+    "audience_heading": "Za koga radimo",
+    "price_heading": "Kako dogovaramo cijenu",
+    "faq_heading": "Česta pitanja",
+    "other_heading": "Druge usluge za vaš web",
+    "cities_heading": "Ponuda po gradovima",
+    "services": {
+      "web": [
+        "Izrada i redizajn web stranica",
+        "Od strukture i dizajna do razvoja i objave. Dogovaramo šta vaš tim uređuje u CMS-u i kako provjeravamo put do upita."
+      ],
+      "seo": [
+        "SEO optimizacija",
+        "Provjeravamo indeksiranje i sadržaj prema upitima kupaca. Dogovorimo prioritet izmjena i pratimo prikaze i klikove u Search Consoleu."
+      ],
+      "maintenance": [
+        "Održavanje web stranica",
+        "Prilagodimo podršku platformi i dogovorimo ažuriranja, kopije, kontakt i izmjene. Možemo pregledati stranicu koju je radio drugi tim."
+      ]
+    },
+    "inland": [
+      [
+        "Firme, obrti i poslovni timovi",
+        "Za kupca odvojimo usluge, primjere rada i informacije koje su mu potrebne prije upita. Ako treba, možete dodavati reference ili uređivati ponudu kroz CMS."
+      ],
+      [
+        "Lični portfoliji",
+        "Za samostalne stručnjake i kreativce planiramo izbor radova, prikaz vašeg doprinosa i način da vas ljudi kontaktiraju. Nove radove možete objavljivati ako dogovorimo CMS."
+      ]
+    ],
+    "cost": [
+      "U ponudi odvojeno navedemo dizajn i razvoj, pripremu sadržaja, SEO i održavanje. Na obim utječu jezici, različiti predlošci i funkcije koje već koristite.",
+      "Za procjenu pošaljite postojeću adresu ili nekoliko primjera i recite koje izmjene želite. Cijenu dogovaramo poslije pregleda."
+    ],
+    "faq": [
+      [
+        "Možemo li ugovoriti samo SEO ili održavanje?",
+        "Možete. Pregledamo postojeću stranicu i predložimo obim jedne usluge prema pristupima i stanju weba."
+      ],
+      [
+        "Šta možemo sami uređivati?",
+        "Uz dogovoreni CMS određujemo polja za usluge, slike, radove ili članke. Na primopredaji zajedno isprobamo izmjenu."
+      ]
+    ]
+  },
+  "sr-rs": {
+    "navigation": "Sadržaj stranice",
+    "services_heading": "Izrada sajtova, SEO i održavanje",
+    "audience_heading": "Za koga radimo",
+    "price_heading": "Kako formiramo ponudu",
+    "faq_heading": "Česta pitanja",
+    "other_heading": "Druge usluge za vaš sajt",
+    "cities_heading": "Ponuda po gradovima",
+    "services": {
+      "web": [
+        "Izrada i redizajn sajta",
+        "Dogovaramo strukturu, dizajn, razvoj i CMS. Pre objave proverimo prikaz na telefonu i slanje upita."
+      ],
+      "seo": [
+        "SEO optimizacija",
+        "Pregledamo indeksiranje, sadržaj i upite na Google-u. Predlažemo izmene po prioritetu i dogovaramo kako se meri rezultat."
+      ],
+      "maintenance": [
+        "Održavanje sajta",
+        "Ažuriranja, kopije, provera obrazaca i manje izmene prema dogovoru. Možemo da pregledamo postojeći sajt i predložimo podršku."
+      ]
+    },
+    "inland": [
+      [
+        "Firme i preduzetnici",
+        "Poslovni sajt može da ima stranice usluga, reference, kontakte po odeljenju ili katalog za upite. Strukturu biramo prema tome kako kupci dolaze do ponude."
+      ],
+      [
+        "Lični portfoliji",
+        "Za samostalne stručnjake i kreativce uređujemo izbor radova, opis vašeg doprinosa i kontakt za saradnju. Uključujemo uređivanje novih projekata ako vam je potrebno."
+      ]
+    ],
+    "cost": [
+      "Odvojeno navodimo dizajn i razvoj, pripremu teksta i fotografija, SEO i podršku. Obim zavisi od broja šablona, jezika i integracija.",
+      "Pošaljite postojeći sajt ili primer koji vam odgovara i opišite šta treba da postignete. Cenu dajemo po ponudi nakon pregleda."
+    ],
+    "faq": [
+      [
+        "Može li da se ugovori samo SEO ili održavanje?",
+        "Može. Proverimo stanje i pristupe postojećeg sajta pa predložimo obim posla."
+      ],
+      [
+        "Mogu li samostalno da dodajem sadržaj?",
+        "Ako je CMS uključen, dogovaramo šta uređujete i na predaji proveravamo objavu jedne izmene."
+      ]
+    ]
+  },
+  "sr-me": {
+    "navigation": "Sadržaj stranice",
+    "services_heading": "Izrada sajtova, SEO i održavanje",
+    "audience_heading": "Za koga radimo",
+    "price_heading": "Kako formiramo ponudu",
+    "faq_heading": "Česta pitanja",
+    "other_heading": "Druge usluge za vaš sajt",
+    "cities_heading": "Ponuda po gradovima",
+    "services": {
+      "web": [
+        "Izrada i redizajn sajta",
+        "Od strukture, dizajna i razvoja do uređivanja sadržaja i objave. Provjeravamo sajt na telefonu i testiramo put do upita."
+      ],
+      "seo": [
+        "SEO optimizacija",
+        "Provjeravamo indeksiranje, sadržaj i upite kupaca. Dogovaramo koje stranice doraditi i koje podatke pratiti."
+      ],
+      "maintenance": [
+        "Održavanje sajta",
+        "Podrška za postojeći ili novi sajt. Dogovaramo kopije, ažuriranja, izmjene sadržaja i provjeru kontakta."
+      ]
+    },
+    "coast": [
+      [
+        "Turizam i ugostiteljstvo",
+        "Za smještaj, izlete, restorane i prevoz planiramo jezike, uslove i put do upita. Povezujemo postojeći rezervacijski kanal ako ga koristite."
+      ],
+      [
+        "Mala i srednja preduzeća",
+        "Za lokalne firme slažemo stranice usluga, reference i kontakt. Možete naručiti novi sajt ili dogovoriti SEO i održavanje postojećeg."
+      ]
+    ],
+    "inland": [
+      [
+        "Firme, preduzetnici i timovi",
+        "Poslovni sajt pokazuje šta radite, kome je namijenjena usluga i koje podatke kupac treba da pošalje. Može sadržati reference, katalog za upite ili CMS."
+      ],
+      [
+        "Lični portfoliji",
+        "Za samostalne stručnjake i kreativce planiramo izbor projekata, opis vaše uloge i podatke za kontakt. Po dogovoru omogućimo uređivanje novih radova."
+      ]
+    ],
+    "cost": [
+      "Cijenu procjenjujemo po predlošcima, jezicima, sadržaju i funkcijama. Odvojeno navodimo izradu, SEO i redovnu podršku.",
+      "Pošaljite adresu postojećeg sajta ili primjere koji odgovaraju projektu. Dogovorimo obim i potom šaljemo ponudu."
+    ],
+    "faq": [
+      [
+        "Možemo li ugovoriti samo SEO ili održavanje?",
+        "Možete. Prvo pregledamo tehnologiju, osnovne podatke i pristupe pa predložimo obim tražene usluge."
+      ],
+      [
+        "Može li tim sam uređivati sajt?",
+        "Može uz dogovoreni CMS. Zajedno definišemo polja i na predaji napravimo probnu izmjenu."
+      ]
+    ]
+  },
+  "sl": {
+    "navigation": "Vsebina strani",
+    "services_heading": "Izdelava, SEO in vzdrževanje",
+    "audience_heading": "Za koga delamo",
+    "price_heading": "Kako pripravimo ponudbo",
+    "faq_heading": "Pogosta vprašanja",
+    "other_heading": "Druge storitve za vaše spletno mesto",
+    "cities_heading": "Storitve po mestih",
+    "services": {
+      "web": [
+        "Izdelava in prenova spletnih strani",
+        "Načrt, oblikovanje, razvoj in CMS za novo stran ali prenovo. Pred objavo preverimo mobilni prikaz in oddajo povpraševanja."
+      ],
+      "seo": [
+        "SEO optimizacija",
+        "Pregledamo indeksiranje, vsebino in iskalne poizvedbe. Predlagamo popravke po pomembnosti in dogovorimo način spremljanja rezultatov."
+      ],
+      "maintenance": [
+        "Vzdrževanje spletnih strani",
+        "Dogovorimo se o posodobitvah, varnostnih kopijah, obrazcih in manjših spremembah vsebine. Prevzamemo lahko tudi pregled obstoječe strani."
+      ]
+    },
+    "coast": [
+      [
+        "Turizem in gostinstvo",
+        "Za nastanitve, doživetja in gostinske ponudnike pripravimo večjezične strani, jasne pogoje in pot do povpraševanja ali zunanje rezervacije."
+      ],
+      [
+        "Mala in srednja podjetja",
+        "Predstavimo storitve, izvedene projekte in kontakt. Dogovorimo se lahko za nov splet, SEO pregled ali vzdrževanje obstoječe strani."
+      ]
+    ],
+    "inland": [
+      [
+        "Podjetja, obrtniki in ekipe",
+        "Storitve opišemo po potrebah kupcev. Po potrebi dodamo reference, katalog za povpraševanja in CMS za urejanje ponudbe."
+      ],
+      [
+        "Osebni portfelji",
+        "Samostojnim strokovnjakom in ustvarjalcem pomagamo izbrati projekte, prikazati svoj prispevek in urediti jasen način za stik."
+      ]
+    ],
+    "cost": [
+      "Obseg je odvisen od števila različnih predlog, jezikov, vsebine in povezav z obstoječimi orodji. Izdelavo, SEO in podporo navedemo ločeno.",
+      "Pred oceno pošljite povezavo do trenutne strani ali primere in opišite, kaj želite urediti. Ponudbo pripravimo po pregledu."
+    ],
+    "faq": [
+      [
+        "Ali lahko naročimo samo SEO ali vzdrževanje?",
+        "Da. Pregledamo obstoječo stran in dostope, nato predlagamo, kaj vključiti v izbrano storitev."
+      ],
+      [
+        "Ali lahko vsebino urejamo sami?",
+        "Če je vključen CMS, se dogovorimo, katere vsebine ureja vaša ekipa, in ob predaji preizkusimo eno spremembo."
+      ]
+    ]
+  },
+  "mk": {
+    "navigation": "Содржина на страницата",
+    "services_heading": "Изработка, SEO и одржување",
+    "audience_heading": "За кого работиме",
+    "price_heading": "Како ја подготвуваме понудата",
+    "faq_heading": "Чести прашања",
+    "other_heading": "Други услуги за вашата веб-страница",
+    "cities_heading": "Услуги по градови",
+    "services": {
+      "web": [
+        "Изработка и редизајн на веб-страници",
+        "Планирање, дизајн, развој и CMS за нова или постојна веб-страница. Пред објавата ги проверуваме мобилниот приказ и контактот."
+      ],
+      "seo": [
+        "SEO оптимизација",
+        "Ги проверуваме индексирањето, содржината и пребарувањата. Договараме приоритетни измени и како да ги следиме резултатите."
+      ],
+      "maintenance": [
+        "Одржување на веб-страници",
+        "Договараме ажурирања, резервни копии, проверка на формулари и помали измени. Можеме да прегледаме и постојна страница."
+      ]
+    },
+    "inland": [
+      [
+        "Фирми, занаетчии и деловни тимови",
+        "На деловната страница јасно ги претставуваме услугите, референците и чекорите до барање за понуда. По потреба додаваме каталог за барања или CMS."
+      ],
+      [
+        "Лични портфолија",
+        "За самостојни професионалци и креативци ги избираме проектите, го прикажуваме нивниот придонес и додаваме јасен контакт за соработка."
+      ]
+    ],
+    "cost": [
+      "Обемот зависи од бројот на различни шаблони, јазиците, содржината и поврзувањето со постојни системи. Изработката, SEO и поддршката ги наведуваме одделно.",
+      "Испратете адреса на постојната страница или примери и кажете што сакате да постигнете. Понудата ја подготвуваме по преглед."
+    ],
+    "faq": [
+      [
+        "Може ли да нарачаме само SEO или одржување?",
+        "Да. Ја прегледуваме постојната веб-страница и пристапите и предлагаме опфат за избраната услуга."
+      ],
+      [
+        "Можеме ли сами да ја уредуваме содржината?",
+        "Ако CMS е дел од договорот, утврдуваме кои полиња ги уредувате и при предавањето правиме една пробна измена."
+      ]
+    ]
+  },
+  "sq": {
+    "navigation": "Përmbajtja e faqes",
+    "services_heading": "Krijim, SEO dhe mirëmbajtje",
+    "audience_heading": "Për kë punojmë",
+    "price_heading": "Si e përgatisim ofertën",
+    "faq_heading": "Pyetje të shpeshta",
+    "other_heading": "Shërbime të tjera për faqen tuaj",
+    "cities_heading": "Shërbime sipas qytetit",
+    "services": {
+      "web": [
+        "Krijim dhe ridizajnim faqesh",
+        "Plan, dizajn, zhvillim dhe CMS për faqe të reja ose ekzistuese. Para publikimit provojmë pamjen në telefon dhe dërgimin e kërkesës."
+      ],
+      "seo": [
+        "Optimizim SEO",
+        "Kontrollojmë indeksimin, përmbajtjen dhe kërkimet e klientëve. Përcaktojmë cilat faqe duhen përmirësuar dhe si do t’i ndjekim rezultatet."
+      ],
+      "maintenance": [
+        "Mirëmbajtje e faqes",
+        "Përcaktojmë përditësimet, kopjet rezervë, kontrollin e formularëve dhe ndryshimet e vogla. Mund të shqyrtojmë edhe një faqe ekzistuese."
+      ]
+    },
+    "coast": [
+      [
+        "Turizëm dhe mikpritje",
+        "Për akomodim, ture, restorante dhe shërbime të tjera turistike planifikojmë gjuhët, kushtet dhe rrugën deri te kërkesa ose rezervimi në sistemin tuaj."
+      ],
+      [
+        "Biznese të vogla dhe të mesme",
+        "Paraqesim shërbimet, projektet dhe kontaktin. Mund të porosisni një faqe të re ose të zgjidhni SEO dhe mirëmbajtje për faqen që keni."
+      ]
+    ],
+    "inland": [
+      [
+        "Biznese dhe ekipe profesionale",
+        "Paraqesim shërbimet, projektet e realizuara dhe të dhënat që duhet të dërgojë klienti për një ofertë. Sipas nevojës përfshijmë katalog kërkesash dhe CMS."
+      ],
+      [
+        "Portofola personalë",
+        "Për profesionistë të pavarur dhe krijues përzgjedhim punimet, shpjegojmë rolin tuaj dhe krijojmë një mënyrë të qartë për t’ju kontaktuar."
+      ]
+    ],
+    "cost": [
+      "Në ofertë ndajmë dizajnin dhe zhvillimin, përmbajtjen, SEO-n dhe mirëmbajtjen. Vëllimi varet nga modelet, gjuhët dhe funksionet e dakorduara.",
+      "Dërgoni lidhjen e faqes që keni ose shembuj që ju pëlqejnë dhe shpjegoni çfarë doni të arrini. Ofertën e përgatisim pas shqyrtimit."
+    ],
+    "faq": [
+      [
+        "A mund të porosisim vetëm SEO ose mirëmbajtje?",
+        "Po. Kontrollojmë faqen, teknologjinë dhe qasjet, pastaj propozojmë punën që i duhet shërbimit të zgjedhur."
+      ],
+      [
+        "A mund ta ndryshojmë vetë përmbajtjen?",
+        "Kur përfshihet CMS, vendosim çfarë mund të ndryshojë ekipi dhe provojmë së bashku një përditësim gjatë dorëzimit."
+      ]
+    ]
+  }
+}
