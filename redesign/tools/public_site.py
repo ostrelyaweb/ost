@@ -211,8 +211,15 @@ def article_url(slug):
 
 def sitemap(origin, articles, regions, projects):
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    for path in (*PAGES, *work_routes(projects), *(article_url(slug) for slug in articles), *region_routes(regions)):
-        SubElement(SubElement(urlset, "url"), "loc").text = origin + path
+    regional_routes = region_routes(regions)
+    for path in (*PAGES, *work_routes(projects), *(article_url(slug) for slug in articles), *regional_routes):
+        node = SubElement(urlset, "url")
+        SubElement(node, "loc").text = origin + path
+        if path in regional_routes:
+            key, service = regional_routes[path]
+            content = regions[key]["services"][service] if service else regions[key]
+            if modified := content.get("modified"):
+                SubElement(node, "lastmod").text = date.fromisoformat(modified).isoformat()
     return tostring(urlset, encoding="unicode", xml_declaration=True) + "\n"
 
 

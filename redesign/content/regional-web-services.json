@@ -4,7 +4,7 @@
       "slug": "usluge/web-development",
       "label": "Web development i razvoj web stranica",
       "title": "Web development i razvoj web stranica",
-      "meta_title": "Web development i razvoj web stranica za tvrtke u Hrvatskoj | Ostrelya",
+      "meta_title": "Web development i CMS u Hrvatskoj | Ostrelya",
       "meta_description": "Iz postojećeg dizajna razvijamo prilagodljive stranice, CMS i integracije. Prije objave testiramo unos sadržaja, obrasce i navigaciju na mobitelu.",
       "intro": "Iz postojećeg dizajna razvijamo prilagodljive stranice, CMS i integracije. Prije objave testiramo unos sadržaja, obrasce i navigaciju na mobitelu.",
       "process": "Krećemo od predložaka stranica i sadržaja koji se mijenja. Za portal s projektima dogovaramo polja, poput lokacije, tipa i galerije, pa na probnoj objavi provjeravamo može li urednik sam dodati projekt.",
@@ -25,15 +25,16 @@
           "Prvo provjerimo platformu, pristup i način objave. Na temelju toga predložimo nadogradnju ili novu implementaciju."
         ]
       ],
-      "example_link": "Pogledajte studiju Orbit"
+      "example_link": "Pogledajte studiju Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "usluge/seo-optimizacija",
       "label": "SEO optimizacija i tehnički SEO",
-      "title": "SEO pregled i optimizacija weba",
-      "meta_title": "SEO optimizacija i tehnički SEO za tvrtke u Hrvatskoj | Ostrelya",
-      "meta_description": "SEO pregled web stranice za tvrtke u Hrvatskoj. Dobivate nalaze o indeksiranju, sadržaju i poveznicama te popis izmjena prema prioritetu.",
-      "intro": "Saznajte zašto kupci teško pronalaze vaše usluge u pretraživanju. Pregledamo web i predložimo što popraviti prvo, na kojim stranicama i kako provjeriti rezultat.",
+      "title": "SEO optimizacija web stranica",
+      "meta_title": "SEO optimizacija web stranica u Hrvatskoj | Ostrelya",
+      "meta_description": "SEO optimizacija web stranica za tvrtke u Hrvatskoj. Provjeravamo indeksiranje i sadržaj, dogovaramo provedbu izmjena i pratimo relevantne upite.",
+      "intro": "Provjeravamo zašto kupci teško pronalaze vaše usluge u pretraživanju. Nalaze povezujemo s konkretnim stranicama, dogovaramo provedbu izmjena i pratimo prikaze, klikove i relevantne upite.",
       "process": "U Search Consoleu provjerimo indeksiranje i upite, a na webu statuse, interne poveznice i kanonske adrese. Za redizajn prvo izdvojimo postojeće stranice koje već imaju impresije ili dolazne poveznice.",
       "deliverables": [
         "Pregled indeksiranja, preusmjerenja i sitemapa",
@@ -60,7 +61,24 @@
           "Izvještaj može preuzeti vaš tim ili postojeći izvođač. Ako dogovorimo provedbu s Ostrelyom, odredimo koje izmjene ulaze u posao i kako ćemo provjeriti objavljenu verziju."
         ]
       ],
-      "example_link": "Pogledajte kako provjeravamo objavu"
+      "example_link": "Pogledajte kako provjeravamo objavu",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Što slijedi nakon SEO pregleda?",
+          [
+            "Svaki prioritet vežemo uz konkretan URL, problem i način provjere. Ako stranica važne usluge postoji, ali nije povezana s ostatkom weba, dodajemo poveznicu iz odgovarajuće kategorije i provjeravamo može li je tražilica dohvatiti.",
+            "Pregled i provedbu odvajamo u ponudi. Ako dogovorimo provedbu, uređujemo tehničke postavke i sadržaj iz odobrenog opsega te ponovno provjeravamo pogođene stranice. Sam popis preporuka nije završena optimizacija."
+          ]
+        ],
+        [
+          "Kako mjerimo donosi li SEO korisne upite?",
+          [
+            "U Search Consoleu pratimo dogovorene upite i odredišne stranice: izrada weba, SEO ili održavanje mogu imati različite kupce i različite ciljne stranice. Impresije i pozicije služe za dijagnostiku, a ne kao zamjena za poslovni rezultat.",
+            "Uz pravilno postavljenu analitiku i privolu pratimo put od posjeta do uspješno poslanog upita. S vašim timom provjeravamo koliko je tih upita relevantno. Ne obećavamo prvu poziciju ni datum kada će Google indeksirati stranicu."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "usluge/odrzavanje-web-stranica",
@@ -87,7 +105,24 @@
           "Rutinske izmjene i novi predlošci nisu isti opseg. U dogovoru jasno navedemo što je uključeno, a što procjenjujemo zasebno."
         ]
       ],
-      "example_link": "Otvorite vodič za provjere nakon objave"
+      "example_link": "Otvorite vodič za provjere nakon objave",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Što obuhvaća održavanje, a što novi projekt?",
+          [
+            "Prije ugovaranja popisujemo CMS, hosting, integracije, sigurnosne kopije i osobe s pristupom. Održavanje statičkog weba razlikuje se od održavanja CMS-a s dodacima; zadatke prilagođavamo stvarnoj tehnologiji.",
+            "U ponudi odvojimo redovne provjere, ažuriranja i dogovorene izmjene sadržaja od novih predložaka ili funkcija. Dogovaramo učestalost kopiranja, način provjere povrata i vrijeme za odgovor na prijavu."
+          ]
+        ],
+        [
+          "Što provjeravamo ako prestane stizati kontakt?",
+          [
+            "Provjera ne završava porukom „uspješno poslano” na ekranu. Treba provjeriti prihvaća li poslužitelj zahtjev, stiže li obavijest u pravi sandučić i radi li obrazac na mobitelu.",
+            "Za podršku pošaljite URL, vrijeme problema i opis koraka koji ga uzrokuju. Prije rizičnije izmjene dogovaramo kopiju i povrat na prethodno stanje; hitne intervencije i dostupnost definiramo zasebno."
+          ]
+        ]
+      ]
     }
   },
   "bs": {
@@ -95,7 +130,7 @@
       "slug": "usluge/web-development",
       "label": "Web development i razvoj web stranica",
       "title": "Web development i razvoj web stranica",
-      "meta_title": "Web development i razvoj web stranica za firme u BiH | Ostrelya",
+      "meta_title": "Web development i CMS u BiH | Ostrelya",
       "meta_description": "Razvijamo web prema postojećem dizajnu ili zajedno definišemo predloške, CMS i povezivanje s drugim alatima. Tim može pregledati stranicu prije objave.",
       "intro": "Razvijamo web prema postojećem dizajnu ili zajedno definišemo predloške, CMS i povezivanje s drugim alatima. Tim može pregledati stranicu prije objave.",
       "process": "Ako ponudu uređuje više ljudi, prvo odlučimo koja polja mogu samostalno mijenjati i ko odobrava objavu. Tok provjerimo na stvarnoj usluzi ili projektu, s fotografijama koje ćete koristiti.",
@@ -116,7 +151,8 @@
           "Koristimo probnu verziju za komentare i dogovorimo ko daje završnu potvrdu prije objave."
         ]
       ],
-      "example_link": "Pogledajte studiju Orbit"
+      "example_link": "Pogledajte studiju Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "usluge/seo-optimizacija",
@@ -143,7 +179,24 @@
           "Da. Audit uključuje konkretne URL-ove, prioritet i način da vaš tim provjeri ispravku."
         ]
       ],
-      "example_link": "Pogledajte provjere pri objavi"
+      "example_link": "Pogledajte provjere pri objavi",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Od nalaza do objavljene izmjene",
+          [
+            "Prioritet mora imati URL, opis problema i provjeru uspjeha. Ako uslugu kupci traže pod drugim nazivom, pregledamo podatke i sadržaj prije izmjene naslova. Ne pravimo novu stranicu za svaki sinonim.",
+            "U ponudi razdvajamo pregled i provedbu. Dogovorene tehničke izmjene i doradu sadržaja provjeravamo nakon objave, umjesto da posao završimo slanjem izvještaja."
+          ]
+        ],
+        [
+          "Šta pratimo osim pozicije?",
+          [
+            "Search Console koristimo za upite i stranice koje dobijaju prikaze i klikove. Za firmu koja cilja BiH i druga tržišta podatke posmatramo po zemlji i odredišnoj stranici, kada ima dovoljno podataka.",
+            "Uz odgovarajuću analitiku i privolu pratimo uspješno poslane upite. S vama provjeravamo jesu li korisni za posao. Rangiranje, indeksiranje i preporuke AI servisa ne možemo garantovati."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "usluge/odrzavanje-web-stranica",
@@ -170,7 +223,24 @@
           "Možete. Opišite kvar i pošaljite adresu stranice. Na osnovu pregleda predlažemo popravku i opseg."
         ]
       ],
-      "example_link": "Pogledajte vodič za održavanje"
+      "example_link": "Pogledajte vodič za održavanje",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Dogovorite obim prije mjesečne podrške",
+          [
+            "Popisujemo hosting, CMS, integracije, kopije i pristupe. Dogovaramo šta se ažurira, koliko često provjeravamo kontakt i ko odobrava promjene. Statička stranica nema iste zadatke kao CMS s dodacima.",
+            "Nove funkcije i novi dizajn odvajamo od održavanja. U ponudi navedemo uključene izmjene sadržaja, način prijave problema i vrijeme odgovora."
+          ]
+        ],
+        [
+          "Kako provjeriti da kontakt i kopije rade?",
+          [
+            "Testiramo put od slanja obrasca do dolaska poruke u sandučić, ne samo obavijest na ekranu. Provjeru ponavljamo nakon promjene koja može utjecati na kontakt.",
+            "Dogovaramo šta kopija sadrži, gdje se čuva i kako se provjerava povrat. Za prijavu kvara tražimo adresu stranice, vrijeme i korake koji dovode do problema."
+          ]
+        ]
+      ]
     }
   },
   "sr-rs": {
@@ -178,7 +248,7 @@
       "slug": "usluge/web-development",
       "label": "Web development i razvoj sajtova",
       "title": "Web development i razvoj sajtova",
-      "meta_title": "Web development i razvoj sajtova za firme u Srbiji | Ostrelya",
+      "meta_title": "Web development i CMS u Srbiji | Ostrelya",
       "meta_description": "Razvijamo sajtove po dizajnu, sa CMS-om, obrascima i integracijama koje su potrebne vašem timu. Pre objave zajedno prolazimo kroz probnu verziju.",
       "intro": "Razvijamo sajtove po dizajnu, sa CMS-om, obrascima i integracijama koje su potrebne vašem timu. Pre objave zajedno prolazimo kroz probnu verziju.",
       "process": "Kada dobijemo dizajn, mapiramo različite tipove stranica i stanja, uključujući praznu listu, grešku pri slanju i uređivanje sadržaja. Ako obrazac treba da otvori prodajni zahtev, proveravamo kako podaci stižu do tima.",
@@ -199,7 +269,8 @@
           "Ako je CMS u opsegu, dogovaramo uloge i prolazimo kroz uređivanje konkretne stranice."
         ]
       ],
-      "example_link": "Pogledajte studiju Orbit"
+      "example_link": "Pogledajte studiju Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "usluge/seo-optimizacija",
@@ -226,7 +297,24 @@
           "Možemo da sprovedemo dogovorene popravke ili da pripremimo zadatke za vašeg developera."
         ]
       ],
-      "example_link": "Pogledajte provere pri objavi"
+      "example_link": "Pogledajte provere pri objavi",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "SEO pregled treba da vodi do konkretne izmene",
+          [
+            "Za svaki prioritet navodimo stranicu, razlog i proveru. Ako dva URL-a odgovaraju na isto pitanje, prvo proveravamo upite i sadržaj, a zatim odlučujemo da li ih razlikovati ili spojiti uz preusmerenje.",
+            "Pregled i sprovođenje odvajamo u ponudi. Kada je sprovođenje uključeno, radimo odobrene tehničke izmene i doradu sadržaja i proveravamo rezultat nakon objave."
+          ]
+        ],
+        [
+          "Kako razlikovati vidljivost od poslovnog rezultata?",
+          [
+            "U Search Console-u pratimo upite i odredišne stranice po dogovorenim uslugama. Rast prikaza bez relevantnih klikova može da znači da sadržaj odgovara na pogrešno pitanje.",
+            "Uz pravilno podešenu analitiku i saglasnost pratimo uspešno poslate upite. Vaš tim potvrđuje da li su ti upiti prodajno relevantni. Ne garantujemo prvu poziciju, indeksiranje do određenog datuma ili AI preporuku."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "usluge/odrzavanje-sajtova",
@@ -253,7 +341,24 @@
           "Dogovorene tehničke provere mogu da obuhvate i neispravne linkove. Analiza upita i rad na sadržaju imaju poseban opseg."
         ]
       ],
-      "example_link": "Otvorite vodič za održavanje"
+      "example_link": "Otvorite vodič za održavanje",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Šta je redovno održavanje sajta?",
+          [
+            "Počinjemo popisom CMS-a, hostinga, integracija, rezervnih kopija i pristupa. Dogovaramo ažuriranja, provere i izmene sadržaja prema tehnologiji koju sajt koristi.",
+            "Novu funkciju ili redizajn ne podrazumevamo pod redovnim održavanjem. U ponudi navodimo uključene zadatke, način prijave kvara i vreme odgovora."
+          ]
+        ],
+        [
+          "Kako se proverava oporavak posle problema?",
+          [
+            "Pre rizične izmene planiramo kopiju i postupak vraćanja. Postojanje datoteke nije dovoljno: treba znati da li kopija obuhvata sadržaj, podešavanja i podatke potrebne za oporavak.",
+            "Posle izmene proveravamo ključne stranice i kontakt do prijema poruke. Za kvar pošaljite URL, vreme i korake koji izazivaju problem; hitne intervencije dogovaramo zasebno."
+          ]
+        ]
+      ]
     }
   },
   "sr-me": {
@@ -261,7 +366,7 @@
       "slug": "usluge/web-development",
       "label": "Web development i razvoj web sajtova",
       "title": "Web development i razvoj web sajtova",
-      "meta_title": "Web development i razvoj web sajtova za firme u Crnoj Gori | Ostrelya",
+      "meta_title": "Web development i CMS u Crnoj Gori | Ostrelya",
       "meta_description": "Razvijamo web sajtove iz dizajna, sa CMS-om i funkcijama koje tim može redovno koristiti. Višejezični sadržaj planiramo prije izrade predložaka.",
       "intro": "Razvijamo web sajtove iz dizajna, sa CMS-om i funkcijama koje tim može redovno koristiti. Višejezični sadržaj planiramo prije izrade predložaka.",
       "process": "Za sajt s lokalnom i engleskom ponudom dogovaramo koje su stranice stvarni ekvivalenti i šta urednik radi kad prevod još nije spreman. Na probnoj verziji prolazimo isti put do upita na oba jezika.",
@@ -282,13 +387,14 @@
           "Prvo pogledamo dokumentaciju, način pristupa i pravila servisa, pa potvrdimo opseg integracije."
         ]
       ],
-      "example_link": "Pogledajte studiju Orbit"
+      "example_link": "Pogledajte studiju Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "usluge/seo-optimizacija",
       "label": "SEO optimizacija web sajtova",
       "title": "SEO optimizacija web sajtova",
-      "meta_title": "SEO optimizacija web sajtova za firme u Crnoj Gori | Ostrelya",
+      "meta_title": "SEO optimizacija u Crnoj Gori | Ostrelya Studio",
       "meta_description": "Provjeravamo koje stranice pretraga može da pronađe, kako su povezane i da li jasno predstavljaju uslugu. Nalaze pretvaramo u redosljed konkretnih izmjena.",
       "intro": "Provjeravamo koje stranice pretraga može da pronađe, kako su povezane i da li jasno predstavljaju uslugu. Nalaze pretvaramo u redosljed konkretnih izmjena.",
       "process": "Ako posjetioci pretražuju uslugu i na engleskom, gledamo koje adrese dobijaju upite na kom jeziku. Potom provjeravamo povratne jezične veze, preusmjerenja i sadržaj koji nedostaje lokalnoj ponudi.",
@@ -309,7 +415,24 @@
           "Da. Biramo stranice od kojih zavisi upit ili rezervacija, pa širimo pregled ako nalaz to opravda."
         ]
       ],
-      "example_link": "Pogledajte provjere pri objavi"
+      "example_link": "Pogledajte provjere pri objavi",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Šta se dešava poslije SEO pregleda?",
+          [
+            "Nalaz pretvaramo u zadatak s URL-om i provjerom. Za višejezični sajt to može biti pogrešna jezička veza, nedostajuća stranica usluge ili stara adresa bez odgovarajućeg preusmjerenja.",
+            "Pregled i sprovođenje navodimo odvojeno. Ako dogovorimo sprovođenje, objavljujemo odobrene tehničke izmjene i doradu sadržaja te ponovo provjeravamo pogođene stranice."
+          ]
+        ],
+        [
+          "Kako pratimo relevantne posjete i upite?",
+          [
+            "U Search Consoleu gledamo upite, jezike i stranice koje dobijaju prikaze i klikove, kada ima dovoljno podataka. Stranica za domaće tržište i engleska verzija mogu privlačiti različite kupce.",
+            "Uz odgovarajuću analitiku i saglasnost pratimo uspješno poslane upite, a s vašim timom njihov kvalitet. Ne obećavamo prvo mjesto, brzinu indeksiranja ili preporuku AI servisa."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "usluge/odrzavanje-web-sajtova",
@@ -336,7 +459,24 @@
           "U ponudi navodimo obim redovnih izmjena. Nove funkcije i veće promjene procjenjujemo posebno."
         ]
       ],
-      "example_link": "Pogledajte vodič za održavanje"
+      "example_link": "Pogledajte vodič za održavanje",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Šta uključiti u dogovor o održavanju?",
+          [
+            "Popisujemo CMS, hosting, integracije, pristupe i rezervne kopije. Ako se ponuda mijenja sezonski, dogovaramo koje podatke i jezičke verzije treba ažurirati prije početka sezone.",
+            "Redovne provjere i manje izmjene sadržaja odvajamo od novih funkcija ili dizajna. U ponudi preciziramo uključene zadatke, prijavu problema i vrijeme odgovora."
+          ]
+        ],
+        [
+          "Kako provjeravamo kontakt poslije izmjene?",
+          [
+            "Provjeravamo da obrazac prihvata podatke i da poruka stiže na dogovorenu adresu. Obavještenje na ekranu samo po sebi ne potvrđuje da je tim dobio upit.",
+            "Za rizičnije izmjene dogovaramo kopiju i povrat na prethodno stanje. Kod prijave kvara pošaljite URL, jezik stranice, vrijeme i opis problema."
+          ]
+        ]
+      ]
     }
   },
   "sl": {
@@ -365,13 +505,14 @@
           "Vloge in polja določimo v obsegu projekta. Ob predaji uredimo primer vsebine skupaj z vašim urednikom."
         ]
       ],
-      "example_link": "Oglejte si študijo Orbit"
+      "example_link": "Oglejte si študijo Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "storitve/seo-optimizacija",
       "label": "SEO optimizacija spletnih strani",
       "title": "SEO optimizacija spletnih strani",
-      "meta_title": "SEO optimizacija spletnih strani za podjetja v Sloveniji | Ostrelya",
+      "meta_title": "SEO optimizacija v Sloveniji | Ostrelya Studio",
       "meta_description": "Preverimo dostopnost strani za iskalnike, indeksiranje in povezavo med vsebino in iskalnimi poizvedbami. Pripravimo prednostni seznam popravkov.",
       "intro": "Preverimo dostopnost strani za iskalnike, indeksiranje in povezavo med vsebino in iskalnimi poizvedbami. Pripravimo prednostni seznam popravkov.",
       "process": "Pri prenovi primerjamo stare in nove naslove strani, pregledamo notranje povezave in določimo, kam preusmeriti ukinjene strani. Če je na voljo Search Console, z njim preverimo, katere strani že dobivajo prikaze.",
@@ -392,13 +533,30 @@
           "Po dogovoru. Tehnični pregled ločimo od pisanja in uredniškega dela, da je obseg jasen."
         ]
       ],
-      "example_link": "Oglejte si preverjanja ob objavi"
+      "example_link": "Oglejte si preverjanja ob objavi",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Kaj sledi SEO pregledu?",
+          [
+            "Vsako prednostno nalogo povežemo z naslovom strani, ugotovljeno težavo in preverjanjem. Pri prenovi na primer določimo cilj starega URL-ja, objavimo preusmeritev in preverimo končni odziv.",
+            "Pregled in izvedbo v ponudbi ločimo. Če se dogovorimo za izvedbo, objavimo odobrene tehnične in vsebinske spremembe ter ponovno preverimo prizadete strani."
+          ]
+        ],
+        [
+          "Kako merimo korist za vaše podjetje?",
+          [
+            "V Search Console spremljamo dogovorjene poizvedbe, prikaze, klike in ciljne strani. Podatek o položaju sam ne pokaže, ali obiskovalec potrebuje vašo storitev.",
+            "Ob ustrezno nastavljeni analitiki in privolitvi spremljamo uspešno oddana povpraševanja. Z vašo ekipo preverimo njihovo ustreznost. Ne zagotavljamo prvega mesta, roka indeksiranja ali priporočil v odgovorih umetne inteligence."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "storitve/vzdrzevanje-spletnih-strani",
       "label": "Vzdrževanje spletnih strani",
       "title": "Vzdrževanje spletnih strani",
-      "meta_title": "Vzdrževanje spletnih strani za podjetja v Sloveniji | Ostrelya",
+      "meta_title": "Vzdrževanje spletnih strani | Ostrelya Studio",
       "meta_description": "Skrbimo za dogovorjene posodobitve in preverjamo, ali delujejo pomembne strani, obrazci in objave. Na začetku določimo način prijave težav.",
       "intro": "Skrbimo za dogovorjene posodobitve in preverjamo, ali delujejo pomembne strani, obrazci in objave. Na začetku določimo način prijave težav.",
       "process": "Pred prevzemom pregledamo gostovanje, CMS, dostope in varnostne kopije. Po pomembni spremembi preverimo pot od obiska strani do prejema povpraševanja.",
@@ -419,7 +577,24 @@
           "V ponudbi navedemo obseg rednega vzdrževanja. Nove predloge in funkcije ocenimo ločeno."
         ]
       ],
-      "example_link": "Odprite vodnik za vzdrževanje"
+      "example_link": "Odprite vodnik za vzdrževanje",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Kaj vključuje redno vzdrževanje?",
+          [
+            "Najprej popišemo gostovanje, CMS, integracije, dostope in varnostne kopije. Naloge prilagodimo tehnologiji: statična stran nima enakih posodobitev kot CMS z vtičniki.",
+            "V ponudbi ločimo redne preglede, posodobitve in dogovorjene vsebinske spremembe od novih funkcij. Določimo način prijave težave, odzivni čas in obseg podpore."
+          ]
+        ],
+        [
+          "Kako preverimo kopije in kontaktni obrazec?",
+          [
+            "Dogovorimo se, kaj kopija zajema, kje se hrani in kako preverimo obnovitev. Pred zahtevnejšo spremembo določimo možnost vrnitve v prejšnje stanje.",
+            "Po spremembi preverimo ključne strani in pot od obrazca do prejema sporočila. Pri prijavi napake nam pošljite URL, čas in korake za ponovitev težave."
+          ]
+        ]
+      ]
     }
   },
   "mk": {
@@ -427,7 +602,7 @@
       "slug": "uslugi/razvoj-na-veb-stranici",
       "label": "Развој на веб-страници",
       "title": "Развој на веб-страници",
-      "meta_title": "Развој на веб-страници за компании во Северна Македонија | Ostrelya",
+      "meta_title": "Веб-развој и CMS | Ostrelya Studio",
       "meta_description": "Од одобрен дизајн развиваме веб-страници што работат на телефон и компјутер. Додаваме CMS, формулари и интеграции според договорениот опсег.",
       "intro": "Од одобрен дизајн развиваме веб-страници што работат на телефон и компјутер. Додаваме CMS, формулари и интеграции според договорениот опсег.",
       "process": "На пробна верзија проверуваме како уредникот додава проект и дали кириличниот текст, сликите и формуларите правилно се прикажуваат на различни екрани.",
@@ -448,7 +623,8 @@
           "Ако проектот вклучува CMS, ги договараме полињата и на предавањето покажуваме како се објавува промена."
         ]
       ],
-      "example_link": "Погледнете ја студијата Orbit"
+      "example_link": "Погледнете ја студијата Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "uslugi/seo-optimizacija",
@@ -475,14 +651,31 @@
           "Да. Ги проверуваме поимите што посетителите навистина ги користат и ги поврзуваме со соодветната страница."
         ]
       ],
-      "example_link": "Погледнете ги проверките при објавување"
+      "example_link": "Погледнете ги проверките при објавување",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Што следува по SEO прегледот?",
+          [
+            "Секој приоритет го поврзуваме со URL, проблем и начин на проверка. Ако важна услуга нема јасна страница, прво ги разгледуваме прашањата на клиентите и постојната содржина пред да предложиме нова адреса.",
+            "Прегледот и спроведувањето се посебни ставки во понудата. Ако е договорено спроведување, ги објавуваме одобрените технички и содржински измени и повторно ги проверуваме страниците."
+          ]
+        ],
+        [
+          "Како го мериме резултатот за бизнисот?",
+          [
+            "Во Search Console ги следиме договорените пребарувања, приказите, кликовите и одредишните страници. Подобрата позиција сама не покажува дали посетителите ја бараат вашата услуга.",
+            "Со соодветна аналитика и согласност следиме успешно испратени барања. Со вашиот тим проверуваме дали тие се релевантни. Не гарантираме прво место, рок за индексирање или препорака од сервис со ВИ."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "uslugi/odrzuvanje-na-veb-stranici",
       "label": "Одржување на веб-страници",
       "title": "Одржување на веб-страници",
-      "meta_title": "Одржување на веб-страници за компании во Северна Македонија | Ostrelya",
-      "meta_description": "Ги проверуваме важните страници, формуларите и објавите. Однапред договараме кои ажурирања и поправки се вклучени.",
+      "meta_title": "Одржување на веб-страници | Ostrelya Studio",
+      "meta_description": "Одржување на веб-страници со договорени проверки, ажурирања и резервни копии. Ги утврдуваме обемот на поддршката и постапката за пријавување проблем.",
       "intro": "Ги проверуваме важните страници, формуларите и објавите. Однапред договараме кои ажурирања и поправки се вклучени.",
       "process": "При преземање на веб-страницата ги прегледуваме пристапите, хостингот и резервните копии. По ажурирање проверуваме дали посетителот може да испрати барање и дали тимот го добива.",
       "deliverables": [
@@ -502,7 +695,24 @@
           "Редовното одржување има договорен опсег. Нови предлошки и функции ги проценуваме посебно."
         ]
       ],
-      "example_link": "Отворете го водичот за одржување"
+      "example_link": "Отворете го водичот за одржување",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Што опфаќа редовното одржување?",
+          [
+            "Прво ги попишуваме CMS, хостингот, интеграциите, пристапите и резервните копии. Задачите ги приспособуваме на технологијата: статичка страница и CMS со додатоци немаат исти потреби.",
+            "Редовните проверки, ажурирањата и договорените измени на содржината ги одвојуваме од нови функции или дизајн. Ги утврдуваме начинот на пријава и времето за одговор."
+          ]
+        ],
+        [
+          "Како проверуваме дали контактот и копиите работат?",
+          [
+            "Проверуваме дали барањето од формуларот навистина пристигнува на договорената адреса. Пораката за успешно испраќање на екранот не е доволна потврда.",
+            "Договараме што содржи резервната копија и како се проверува враќањето. Пред поризична измена планираме враќање на претходната состојба. За дефект испратете URL, време и чекори за повторување."
+          ]
+        ]
+      ]
     }
   },
   "sq": {
@@ -510,7 +720,7 @@
       "slug": "sherbime/zhvillimi-i-faqeve-te-internetit",
       "label": "Zhvillimi i faqeve të internetit",
       "title": "Zhvillimi i faqeve të internetit",
-      "meta_title": "Zhvillimi i faqeve të internetit për biznese në Kosovë | Ostrelya",
+      "meta_title": "Zhvillim webi dhe CMS në Kosovë | Ostrelya",
       "meta_description": "Nga dizajni i miratuar ndërtojmë faqe që funksionojnë në telefon dhe kompjuter, me CMS, formularë dhe integrime sipas projektit.",
       "intro": "Nga dizajni i miratuar ndërtojmë faqe që funksionojnë në telefon dhe kompjuter, me CMS, formularë dhe integrime sipas projektit.",
       "process": "Kur një biznes punon me klientë në Kosovë dhe në diasporë, përcaktojmë cilat faqe kanë versione në gjuhë të tjera dhe si mund t’i përditësojë ekipi pa prekur kodin.",
@@ -531,13 +741,14 @@
           "Po, nëse projekti përfshin CMS. Përcaktojmë fushat që ekipi mund të ndryshojë dhe i provojmë bashkë para dorëzimit."
         ]
       ],
-      "example_link": "Shihni studimin Orbit"
+      "example_link": "Shihni studimin Orbit",
+      "modified": "2026-11-19"
     },
     "seo": {
       "slug": "sherbime/optimizim-seo",
       "label": "Optimizim SEO për faqe interneti",
       "title": "Optimizim SEO për faqe interneti",
-      "meta_title": "Optimizim SEO për faqe interneti për biznese në Kosovë | Ostrelya",
+      "meta_title": "Optimizim SEO në Kosovë | Ostrelya Studio",
       "meta_description": "Kontrollojmë indeksimin, lidhjet dhe përmbajtjen e faqeve kryesore. Pas kontrollit merrni një listë përmirësimesh me përparësi të qarta.",
       "intro": "Kontrollojmë indeksimin, lidhjet dhe përmbajtjen e faqeve kryesore. Pas kontrollit merrni një listë përmirësimesh me përparësi të qarta.",
       "process": "Nëse klientët kërkojnë të njëjtin shërbim me fjalë si webfaqe dhe faqe interneti, shqyrtojmë qëllimin e kërkimit dhe zgjedhim faqen që i përgjigjet më mirë.",
@@ -558,13 +769,30 @@
           "Po. Fillojmë me faqet e shërbimeve dhe problemet që mund të verifikohen në faqen aktuale."
         ]
       ],
-      "example_link": "Shihni kontrollet para publikimit"
+      "example_link": "Shihni kontrollet para publikimit",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Çfarë ndodh pas kontrollit SEO?",
+          [
+            "Çdo përparësi lidhet me një URL, problemin dhe mënyrën e verifikimit. Nëse klientët përdorin disa emërtime për të njëjtin shërbim, kontrollojmë qëllimin para se të propozojmë faqe të reja.",
+            "Kontrollin dhe zbatimin i ndajmë në ofertë. Kur përfshihet zbatimi, publikojmë ndryshimet teknike dhe të përmbajtjes që janë miratuar dhe kontrollojmë sërish faqet përkatëse."
+          ]
+        ],
+        [
+          "Si matet dobia për biznesin?",
+          [
+            "Në Search Console ndjekim kërkimet e dakorduara, shfaqjet, klikimet dhe faqet hyrëse. Pozicioni më i lartë nuk tregon vetvetiu nëse vizitori ka nevojë për shërbimin tuaj.",
+            "Me analitikë të konfiguruar siç duhet dhe me pëlqim ndjekim kërkesat e dërguara me sukses. Me ekipin tuaj vlerësojmë sa prej tyre janë të përshtatshme. Nuk garantojmë vendin e parë, afatin e indeksimit ose rekomandime nga AI."
+          ]
+        ]
+      ]
     },
     "maintenance": {
       "slug": "sherbime/mirembajtja-e-faqeve-te-internetit",
       "label": "Mirëmbajtja e faqeve të internetit",
       "title": "Mirëmbajtja e faqeve të internetit",
-      "meta_title": "Mirëmbajtja e faqeve të internetit për biznese në Kosovë | Ostrelya",
+      "meta_title": "Mirëmbajtje faqesh interneti | Ostrelya Studio",
       "meta_description": "Kontrollojmë faqet e rëndësishme, formularët dhe publikimet. Para fillimit përcaktojmë përditësimet, korrigjimet dhe mënyrën e raportimit të problemeve.",
       "intro": "Kontrollojmë faqet e rëndësishme, formularët dhe publikimet. Para fillimit përcaktojmë përditësimet, korrigjimet dhe mënyrën e raportimit të problemeve.",
       "process": "Para se të marrim përsipër një faqe, kontrollojmë hostimin, CMS-in dhe kopjet rezervë. Pas një përditësimi provojmë rrugën nga formulari deri te marrja e mesazhit.",
@@ -585,7 +813,24 @@
           "Mirëmbajtja ka një fushë të përcaktuar. Modelet dhe funksionet e reja vlerësohen veçmas."
         ]
       ],
-      "example_link": "Hapni udhëzuesin e mirëmbajtjes"
+      "example_link": "Hapni udhëzuesin e mirëmbajtjes",
+      "modified": "2026-11-19",
+      "decision_sections": [
+        [
+          "Çfarë përfshihet në mirëmbajtjen e rregullt?",
+          [
+            "Fillimisht dokumentojmë CMS-in, hostimin, integrimet, qasjet dhe kopjet rezervë. Detyrat varen nga teknologjia: një faqe statike nuk kërkon të njëjtat përditësime si një CMS me shtojca.",
+            "Kontrollet, përditësimet dhe ndryshimet e dakorduara të përmbajtjes i ndajmë nga funksionet ose dizajni i ri. Në ofertë përcaktojmë raportimin e problemeve dhe kohën e përgjigjes."
+          ]
+        ],
+        [
+          "Si verifikohen formulari dhe kopjet rezervë?",
+          [
+            "Kontrollojmë rrugën nga formulari deri te marrja e mesazhit në adresën e duhur. Njoftimi në ekran nuk mjafton për të konfirmuar që ekipi e ka marrë kërkesën.",
+            "Përcaktojmë çfarë përmban kopja, ku ruhet dhe si provohet rikthimi. Para ndryshimeve me rrezik planifikojmë kthimin në gjendjen e mëparshme. Për një gabim dërgoni URL-në, kohën dhe hapat që e shkaktojnë."
+          ]
+        ]
+      ]
     }
   }
 }

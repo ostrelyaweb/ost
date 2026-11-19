@@ -2,6 +2,8 @@ from html import escape
 import json
 from urllib.parse import quote
 
+from guide_routes import service_guides
+
 
 PRICE_GUIDE = "/blog/" + quote("koliko-košta-web-stranica-2026")
 MAINTENANCE_GUIDE = "/blog/" + quote("održavanje-web-stranice-zašto-je-bitno")
@@ -346,14 +348,29 @@ def render_region(root, origin, regions, key, service):
     else:
         main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links)) + markets
         if service:
-            guide_links = "".join(
-                f'<p class="region-guide-link"><a class="web-service-text-link" href="{href}">{escape(label)} <span aria-hidden="true">↗</span></a></p>'
-                for label, href in SERVICE_GUIDES_HR.get(service, ())
-            ) if key == "hr" else ""
             main += (
                 '<section class="page-container services-disciplines web-service-faq" id="pitanja">'
                 f'<h2 class="editorial-heading">{escape(active["faq_heading"])}.</h2>'
-                f'<div class="service-accordions">{faq_details(active["faq"])}</div>{guide_links}</section>'
+                f'<div class="service-accordions">{faq_details(active["faq"])}</div></section>'
+            )
+
+    for heading, paragraphs in active.get("decision_sections", ()):
+        body = "".join(f'<p>{escape(paragraph)}</p>' for paragraph in paragraphs)
+        main += (
+            '<section class="page-container region-split region-decision">'
+            f'<h2 class="editorial-heading">{escape(heading)}</h2><div>{body}</div></section>'
+        )
+    if service:
+        related = service_guides(root, key, service)
+        if related:
+            links = "".join(
+                f'<li><a class="web-service-text-link" href="{escape(href)}">{escape(label)} <span aria-hidden="true">↗</span></a></li>'
+                for label, href in related
+            )
+            main += (
+                '<section class="page-container region-split region-decision">'
+                f'<h2 class="editorial-heading">{escape(GUIDE_INDEX_LABELS[key])}</h2>'
+                f'<ul>{links}</ul></section>'
             )
 
     trail = [("Ostrelya Studio", "/"), (region["label"], hub)]

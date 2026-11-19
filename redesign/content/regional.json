@@ -4,8 +4,8 @@
     "label": "Hrvatska",
     "language": "Hrvatski",
     "market": "Hrvatska",
-    "title": "Web dizajn i vizualni identitet za tvrtke",
-    "intro": "Ostrelya je neovisni studio za web dizajn, razvoj i vizualni identitet. Surađujemo na daljinu s tvrtkama i timovima iz Hrvatske i regije.",
+    "title": "Izrada web stranica, SEO i održavanje",
+    "intro": "Izrađujemo poslovne web stranice, provodimo SEO optimizaciju i održavamo web nakon objave. S tvrtkama iz Hrvatske i regije surađujemo na daljinu. Opseg, sadržaj i način provjere dogovaramo prije početka rada.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -37,7 +37,24 @@
         ],
         "example": "Orbit pokazuje kako arhitektonski studio može predstaviti radove i olakšati slanje upita.",
         "meta_title": "Web dizajn i izrada web stranica | Ostrelya Studio",
-        "meta_description": "Izrada web stranica po mjeri za tvrtke u Hrvatskoj i regiji. Planiramo strukturu, dizajniramo stranice, razvijamo CMS i pripremamo web za objavu."
+        "meta_description": "Izrada web stranica po mjeri za tvrtke u Hrvatskoj i regiji. Planiramo strukturu, dizajniramo stranice, razvijamo CMS i pripremamo web za objavu.",
+        "decision_sections": [
+          [
+            "Što ulazi u ponudu za izradu weba?",
+            [
+              "Odvojeno navodimo dizajn i razvoj, pripremu i unos sadržaja, CMS te dodatne jezike ili integracije. Pet stranica koje dijele isti izgled nije isti opseg kao pet različitih predložaka.",
+              "Za usporedivu ponudu pošaljite popis usluga, postojeći web i primjer upita koji želite primati. Posebno dogovaramo troškove domene, hostinga, licenci i održavanja nakon objave."
+            ]
+          ],
+          [
+            "Kako izgleda provjera prije primopredaje?",
+            [
+              "Prolazimo dogovorene stranice na mobitelu i računalu, izbornik, obrasce i primitak poruke. Ako uključujemo CMS, vaš tim na stvarnom primjeru provjerava kako promijeniti tekst ili objaviti članak.",
+              "Bilježimo pristupe, usluge trećih strana i obveze nakon objave. Domena treba ostati pod vašom kontrolom; pristupe i ovlasti uređujemo prema tome tko je za što odgovoran."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "usluge/redizajn-web-stranica",
@@ -63,7 +80,8 @@
             "Trebamo li pripremiti nove tekstove i fotografije?",
             "Zajedno označimo što vrijedi zadržati, što treba urediti i koji materijali nedostaju. Tako prije izrade znate što priprema vaš tim."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "usluge/vizualni-identitet",
@@ -92,16 +110,17 @@
         ]
       }
     },
-    "meta_title": "Web dizajn i vizualni identitet za tvrtke | Ostrelya",
-    "meta_description": "Ostrelya je neovisni studio za izradu i redizajn web stranica te vizualni identitet. Pogledajte usluge i način suradnje za tvrtke u Hrvatskoj."
+    "meta_title": "Web stranice, SEO i održavanje | Ostrelya Studio",
+    "meta_description": "Izrada web stranica, SEO optimizacija i održavanje za tvrtke u Hrvatskoj. Radimo na daljinu, od strukture i dizajna do razvoja, objave i podrške.",
+    "modified": "2026-11-19"
   },
   "bs": {
     "tag": "bs-BA",
     "label": "Bosna i Hercegovina",
     "language": "Bosanski",
     "market": "Bosna i Hercegovina",
-    "title": "Web dizajn i vizuelni identitet za firme",
-    "intro": "Za timove iz Bosne i Hercegovine radimo dizajn i izradu web stranica, redizajn i vizuelne identitete. Razgovore, pregled dizajna i primopredaju možemo voditi online.",
+    "title": "Izrada web stranica, SEO i održavanje za firme u BiH",
+    "intro": "Pomažemo firmama iz Bosne i Hercegovine da izrade ili urede web stranicu, poboljšaju vidljivost u pretrazi i nastave je održavati. Sastanke, pregled dizajna i primopredaju vodimo online. Prije rada odvojimo jednokratni projekt od podrške nakon objave.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -148,7 +167,24 @@
           ]
         ],
         "meta_title": "Izrada web stranica za firme u BiH | Ostrelya",
-        "meta_description": "Web dizajn i izrada web stranice za firme u BiH. Dogovorimo sadržaj, prototip i dijelove stranice koje vaš tim može sam ažurirati."
+        "meta_description": "Web dizajn i izrada web stranice za firme u BiH. Dogovorimo sadržaj, prototip i dijelove stranice koje vaš tim može sam ažurirati.",
+        "decision_sections": [
+          [
+            "Šta treba biti navedeno u ponudi?",
+            [
+              "Razdvajamo broj različitih predložaka, pisanje i unos sadržaja, razvoj, CMS i jezičke verzije. Za firmu koja ima pet usluga nije dovoljno navesti samo „pet stranica”: treba znati dijele li izgled i ko priprema tekstove.",
+              "Pošaljite popis usluga, postojeći web i tržišta na kojima radite. Troškove domene, hostinga, licenci i održavanja navodimo odvojeno od izrade."
+            ]
+          ],
+          [
+            "Kako provjeravamo da je web spreman?",
+            [
+              "Prolazimo prikaz na telefonu i računaru, navigaciju i put od obrasca do primljene poruke. Za dogovoreni CMS vaš tim provjerava kako urediti uslugu ili objaviti novi projekt.",
+              "Na primopredaji evidentiramo pristupe i obaveze nakon objave. Ako sadržaj postoji na više jezika, dogovaramo ko ažurira svaku verziju kada se ponuda promijeni."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "usluge/redizajn-web-stranica",
@@ -174,7 +210,8 @@
             "Možemo li zadržati postojeću domenu?",
             "Postojeća domena se može zadržati. Prije prelaska provjeravamo pristup domeni, vezu s hostingom i uticaj na postojeću e-poštu."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "usluge/vizuelni-identitet",
@@ -203,16 +240,17 @@
         ]
       }
     },
-    "meta_title": "Web dizajn i vizuelni identitet za firme u BiH | Ostrelya",
-    "meta_description": "Izrada i redizajn web stranica te vizuelni identitet za timove u BiH. Dogovor, pregled dizajna i primopredaju vodimo online."
+    "meta_title": "Web stranice, SEO i održavanje u BiH | Ostrelya",
+    "meta_description": "Izrada web stranica, SEO optimizacija i održavanje za firme u BiH. Ugovorite strukturu, dizajn, razvoj i podršku uz saradnju na daljinu s našim timom.",
+    "modified": "2026-11-19"
   },
   "sr-rs": {
     "tag": "sr-Latn-RS",
     "label": "Srbija",
     "language": "Srpski",
     "market": "Srbija",
-    "title": "Web dizajn i vizuelni identitet za firme",
-    "intro": "Ostrelya je nezavisni studio za izradu i redizajn sajtova i razvoj vizuelnog identiteta za timove iz Srbije. Dogovor i prezentacije vodimo onlajn.",
+    "title": "Izrada sajtova, SEO optimizacija i održavanje",
+    "intro": "Izrađujemo poslovne sajtove za firme u Srbiji, sređujemo tehnički SEO i sadržaj i održavamo sajt nakon objave. Radimo onlajn. Dogovaramo koje stranice i funkcije pravimo, šta priprema vaš tim i kako proveravamo završeni posao.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -259,7 +297,24 @@
           ]
         ],
         "meta_title": "Izrada sajtova po meri u Srbiji | Ostrelya Studio",
-        "meta_description": "Web dizajn i izrada sajtova za firme u Srbiji, od strukture i prototipa do razvoja, uređivanja sadržaja i objave."
+        "meta_description": "Izrada poslovnih sajtova za firme u Srbiji. Planiramo strukturu, dizajn, razvoj i CMS, proveravamo kontakt i dogovaramo podršku nakon objave.",
+        "decision_sections": [
+          [
+            "Šta ulazi u cenu izrade sajta?",
+            [
+              "Odvajamo dizajn i razvoj, pripremu i unos sadržaja, CMS, jezike i integracije. Broj različitih šablona obično bolje opisuje posao od samog broja stranica.",
+              "Za ponudu pošaljite usluge koje predstavljate, postojeći sajt i funkcije koje su vam potrebne. Domena, hosting, licence i održavanje posle objave treba da budu jasno odvojene stavke."
+            ]
+          ],
+          [
+            "Šta proveravate pre preuzimanja sajta?",
+            [
+              "Zajedno prolazimo mobilni i desktop prikaz, meni, obrasce i prijem poruke. Ako smo dogovorili CMS, vaš tim na stvarnom primeru proverava kako menja sadržaj i objavljuje članak.",
+              "Predajemo dogovorene pristupe i beležimo ko upravlja domenom, hostingom i sadržajem. Podršku nakon objave definišemo posebno, da znate kome prijavljujete problem."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "usluge/redizajn-sajta",
@@ -274,7 +329,7 @@
         ],
         "example": "Na sopstvenom sajtu smo povezali novi izgled sa pregledom radova i uređivanjem sadržaja.",
         "meta_title": "Redizajn sajta za firme u Srbiji | Ostrelya",
-        "meta_description": "Redizajn postojećeg sajta uz pregled sadržaja, novi prototip, preusmerenja i proveru ključnih stranica i obrazaca.",
+        "meta_description": "Redizajn postojećeg sajta uz pregled sadržaja i starih URL-ova. Dogovaramo novi izgled, preusmerenja, testiranje obrazaca i pripremu za objavu.",
         "faq_heading": "Česta pitanja",
         "faq": [
           [
@@ -285,7 +340,8 @@
             "Kako proveravate da novi sajt radi pre objave?",
             "Prolazimo ključne stranice, navigaciju, obrasce, mobilni prikaz i preusmerenja. Dogovaramo ko potvrđuje sadržaj pre prelaska."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "usluge/vizuelni-identitet",
@@ -314,16 +370,17 @@
         ]
       }
     },
-    "meta_title": "Izrada sajtova i vizuelni identitet u Srbiji | Ostrelya",
-    "meta_description": "Izrada i redizajn sajtova i vizuelni identitet za firme u Srbiji. Pregled dizajna i primopredaju možemo da vodimo onlajn."
+    "meta_title": "Izrada sajtova, SEO i održavanje u Srbiji | Ostrelya",
+    "meta_description": "Izrada sajtova, SEO optimizacija i održavanje za firme u Srbiji. Dogovaramo sadržaj, razvoj, proveru pre objave i podršku uz saradnju na daljinu.",
+    "modified": "2026-11-19"
   },
   "sr-me": {
     "tag": "sr-Latn-ME",
     "label": "Crna Gora",
     "language": "Srpski (Crna Gora)",
     "market": "Crna Gora",
-    "title": "Izrada sajtova i vizuelni identitet",
-    "intro": "Ostrelya radi sa timovima iz Crne Gore na dizajnu i izradi sajtova, redizajnu i vizuelnom identitetu. Radionice, prezentacije i primopredaju možemo održati na daljinu.",
+    "title": "Izrada sajtova, SEO optimizacija i održavanje",
+    "intro": "Za firme iz Crne Gore izrađujemo i redizajniramo sajtove, radimo SEO optimizaciju i održavanje. Ako ponudu predstavljate i domaćim i stranim gostima, zajedno planiramo jezike i sadržaj koji treba ažurirati. Saradnja se može odvijati na daljinu.",
     "nav": {
       "services": "Usluge",
       "projects": "Projekti",
@@ -370,7 +427,24 @@
           ]
         ],
         "meta_title": "Izrada sajtova po mjeri u Crnoj Gori | Ostrelya",
-        "meta_description": "Web dizajn i izrada sajta po mjeri. Struktura, prilagodljiv prikaz, dogovoreni jezici i uređivanje sadržaja za firme u Crnoj Gori."
+        "meta_description": "Web dizajn i izrada sajta po mjeri. Struktura, prilagodljiv prikaz, dogovoreni jezici i uređivanje sadržaja za firme u Crnoj Gori.",
+        "decision_sections": [
+          [
+            "Šta određuje cijenu izrade sajta?",
+            [
+              "Dizajn, razvoj i sadržaj navodimo odvojeno. Ako ponudu predstavljate na više jezika, dogovaramo prevod, unos i pregled svake verzije, kao i ko je ažurira kada se ponuda promijeni.",
+              "Pošaljite postojeći sajt, popis usluga i potrebne funkcije. Troškove domene, hostinga, licenci i podrške poslije objave odvajamo od cijene izrade."
+            ]
+          ],
+          [
+            "Kako se provjerava sajt prije objave?",
+            [
+              "Prolazimo prikaz na telefonu i računaru, navigaciju i kontakt do prijema poruke. Ako sajt ima više jezika, provjeravamo da izbor jezika vodi na odgovarajuću stranicu.",
+              "Za dogovoreni CMS vaš tim provjerava izmjenu sadržaja. Pristupe i odgovornosti bilježimo pri primopredaji, uključujući način prijave problema nakon objave."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "usluge/redizajn-sajta",
@@ -385,7 +459,7 @@
         ],
         "example": "Na Ostrelyjinom sajtu redizajn obuhvata prikaz radova i novi način uređivanja sadržaja.",
         "meta_title": "Redizajn sajta u Crnoj Gori | Ostrelya Studio",
-        "meta_description": "Pregled postojećeg sajta, novi raspored i plan prelaska. Provjeravamo mobilni prikaz i preusmjerenja prije objave.",
+        "meta_description": "Redizajn sajta za firme u Crnoj Gori uz pregled sadržaja, jezičkih verzija i URL-ova. Planiramo preusmjerenja i provjeravamo web prije objave.",
         "faq_heading": "Česta pitanja",
         "faq": [
           [
@@ -396,7 +470,8 @@
             "Šta prvo pregledate na postojećem sajtu?",
             "Pregledamo kako posjetilac dolazi do usluge i kontakta, kako sajt izgleda na telefonu i koje stranice treba sačuvati pri prelasku."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "usluge/vizuelni-identitet",
@@ -425,16 +500,17 @@
         ]
       }
     },
-    "meta_title": "Izrada sajtova i vizuelni identitet u Crnoj Gori | Ostrelya",
-    "meta_description": "Izrada sajtova, redizajn i vizuelni identitet za timove iz Crne Gore. Sastanke i primopredaju možemo održati online."
+    "meta_title": "Izrada sajtova, SEO i održavanje u Crnoj Gori | Ostrelya",
+    "meta_description": "Izrada sajtova, SEO i održavanje za firme u Crnoj Gori. Planiramo jezike, sadržaj, razvoj i podršku nakon objave, uz saradnju na daljinu s vašim timom.",
+    "modified": "2026-11-19"
   },
   "sl": {
     "tag": "sl-SI",
     "label": "Slovenija",
     "language": "Slovenščina",
     "market": "Slovenija",
-    "title": "Izdelava spletnih strani in celostna grafična podoba",
-    "intro": "Ostrelya je neodvisen studio. Za naročnike iz Slovenije oblikujemo in izdelujemo spletne strani, prenavljamo obstoječa spletišča in razvijamo celostne grafične podobe.",
+    "title": "Izdelava spletnih strani, SEO in vzdrževanje",
+    "intro": "Za podjetja iz Slovenije izdelujemo in prenavljamo spletne strani, izvajamo SEO optimizacijo ter vzdrževanje po objavi. Sodelujemo na daljavo. Pred začetkom določimo obseg, odgovornost za vsebino in način preverjanja opravljenega dela.",
     "nav": {
       "services": "Storitve",
       "projects": "Projekti",
@@ -481,7 +557,24 @@
           ]
         ],
         "meta_title": "Izdelava spletnih strani po meri | Ostrelya Studio",
-        "meta_description": "Izdelava odzivnih spletnih strani za naročnike iz Slovenije. Od strukture in prototipa do razvoja, urejanja vsebin in predaje."
+        "meta_description": "Izdelava odzivnih spletnih strani za naročnike iz Slovenije. Od strukture in prototipa do razvoja, urejanja vsebin in predaje.",
+        "decision_sections": [
+          [
+            "Kaj mora vsebovati ponudba za spletno stran?",
+            [
+              "Ločimo oblikovanje, razvoj, pripravo in vnos vsebine, CMS, jezike in integracije. Pet podstrani z isto predlogo ne pomeni enakega obsega kot pet različnih predlog.",
+              "Pošljite seznam storitev, obstoječo stran in potrebne funkcije. Stroške domene, gostovanja, licenc in vzdrževanja po objavi navedemo ločeno od izdelave."
+            ]
+          ],
+          [
+            "Kako preverimo stran pred predajo?",
+            [
+              "Pregledamo mobilni in namizni prikaz, navigacijo ter pot od obrazca do prejema sporočila. Če vključimo CMS, vaša ekipa na konkretnem primeru preveri urejanje vsebine in objavo članka.",
+              "Ob predaji zabeležimo dostope in odgovornosti za domeno, gostovanje in vsebino. Podporo po objavi določimo posebej, da veste, komu sporočiti težavo."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "storitve/prenova-spletne-strani",
@@ -507,7 +600,8 @@
             "Ali lahko uporabimo obstoječe vsebine?",
             "Da. Skupaj določimo, katere vsebine ostanejo, katere je treba urediti in katero gradivo pred prenovo še potrebujemo."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "storitve/celostna-graficna-podoba",
@@ -536,16 +630,17 @@
         ]
       }
     },
-    "meta_title": "Izdelava spletnih strani in grafična podoba | Ostrelya",
-    "meta_description": "Izdelava in prenova spletnih strani ter celostna grafična podoba za naročnike iz Slovenije. Sodelovanje lahko poteka na daljavo."
+    "meta_title": "Spletne strani, SEO in vzdrževanje | Ostrelya Studio",
+    "meta_description": "Izdelava spletnih strani, SEO optimizacija in vzdrževanje za podjetja v Sloveniji. Dogovorite obseg, vsebino, razvoj in podporo s sodelovanjem na daljavo.",
+    "modified": "2026-11-19"
   },
   "mk": {
     "tag": "mk-MK",
     "label": "Северна Македонија",
     "language": "Македонски",
     "market": "Северна Македонија",
-    "title": "Веб-дизајн и визуелен идентитет",
-    "intro": "Ostrelya е независно студио. За тимови од Северна Македонија нудиме изработка и редизајн на веб-страници и развој на визуелен идентитет. Проектот можеме да го водиме онлајн.",
+    "title": "Изработка на веб-страници, SEO и одржување",
+    "intro": "За компании од Северна Македонија изработуваме и редизајнираме веб-страници, работиме на SEO оптимизација и одржување. Соработката е онлајн. Пред почетокот договараме што опфаќа проектот, кој ја подготвува содржината и како ќе ја провериме страницата пред објава.",
     "nav": {
       "services": "Услуги",
       "projects": "Проекти",
@@ -592,7 +687,24 @@
           ]
         ],
         "meta_title": "Изработка на веб-страници по мерка | Ostrelya",
-        "meta_description": "Веб-дизајн и изработка за компании во Северна Македонија. Структура, прототип, развој и уредување на содржината."
+        "meta_description": "Изработка на деловни веб-страници за компании од Северна Македонија. Договараме структура, дизајн, развој, CMS и проверка на контактот пред објава.",
+        "decision_sections": [
+          [
+            "Што треба да содржи понудата?",
+            [
+              "Одделно ги наведуваме дизајнот, развојот, подготовката и внесот на содржината, CMS, јазиците и интеграциите. Пет страници со ист шаблон не значат ист обем како пет различни шаблони.",
+              "Испратете список на услуги, постојната страница и потребните функции. Доменот, хостингот, лиценците и одржувањето по објавата ги одвојуваме од цената за изработка."
+            ]
+          ],
+          [
+            "Како ја проверуваме страницата пред предавање?",
+            [
+              "Ги проверуваме приказот на телефон и компјутер, менито и патот од формуларот до приемот на пораката. Ако е договорен CMS, вашиот тим на конкретен пример проверува како се менува текст или се објавува статија.",
+              "При предавањето ги бележиме пристапите и одговорностите за доменот, хостингот и содржината. Одделно договараме кому и како се пријавува проблем по објавата."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "uslugi/redizajn-na-veb-stranica",
@@ -618,7 +730,8 @@
             "Може ли да се задржи постојната содржина?",
             "Да. Заедно одредуваме кои текстови и фотографии остануваат и што треба да се подготви пред објавување."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "uslugi/vizuelen-identitet",
@@ -633,7 +746,7 @@
         ],
         "example": "Solarium покажува како истиот идентитет се применува на веб и на насловна страница на извештај.",
         "meta_title": "Дизајн на визуелен идентитет | Ostrelya Studio",
-        "meta_description": "Визуелен идентитет за компании. Подготвуваме лого, типографија, палета, примери и упатства за секојдневна примена.",
+        "meta_description": "Визуелен идентитет за компании од Северна Македонија: лого, типографија, бои и договорени примени. Добивате датотеки и насоки за вашиот тим.",
         "faq_heading": "Чести прашања",
         "faq": [
           [
@@ -644,19 +757,21 @@
             "Може ли идентитетот да се поврзе со изработка на веб-страница?",
             "Да. Визуелната насока ја проверуваме на клучните страници и на мобилен приказ за да видите како функционира на веб."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       }
     },
-    "meta_title": "Веб-дизајн и визуелен идентитет | Ostrelya Studio",
-    "meta_description": "Изработка и редизајн на веб-страници и визуелен идентитет. Работиме онлајн со тимови од Северна Македонија."
+    "meta_title": "Веб-страници, SEO и одржување | Ostrelya Studio",
+    "meta_description": "Изработка на веб-страници, SEO оптимизација и одржување за компании од Северна Македонија. Договорете содржина, развој и поддршка со онлајн соработка.",
+    "modified": "2026-11-19"
   },
   "sq": {
     "tag": "sq",
     "label": "Kosovë",
     "language": "Shqip",
     "market": "Kosovë",
-    "title": "Dizajn webi dhe identitet vizual",
-    "intro": "Ostrelya është një studio e pavarur. Për ekipe në Kosovë krijojmë faqe interneti, ridizajnojmë faqe ekzistuese dhe zhvillojmë identitete vizuale. Projektin mund ta zhvillojmë në distancë.",
+    "title": "Krijim faqesh interneti, SEO dhe mirëmbajtje",
+    "intro": "Krijojmë dhe ridizajnojmë faqe interneti për biznese në Kosovë, punojmë me optimizimin SEO dhe mirëmbajtjen pas publikimit. Bashkëpunojmë në distancë. Para fillimit përcaktojmë faqet, funksionet, përgjegjësinë për përmbajtjen dhe kontrollin para publikimit.",
     "nav": {
       "services": "Shërbimet",
       "projects": "Projektet",
@@ -703,7 +818,24 @@
           ]
         ],
         "meta_title": "Krijim faqesh interneti për biznese në Kosovë | Ostrelya",
-        "meta_description": "Dizajn dhe zhvillim faqesh interneti për biznese në Kosovë, me strukturë, prototip, testim në telefon dhe redaktim të përmbajtjes."
+        "meta_description": "Dizajn dhe zhvillim faqesh interneti për biznese në Kosovë, me strukturë, prototip, testim në telefon dhe redaktim të përmbajtjes.",
+        "decision_sections": [
+          [
+            "Çfarë duhet të përmbajë oferta?",
+            [
+              "Ndajmë dizajnin, zhvillimin, përgatitjen dhe vendosjen e përmbajtjes, CMS-in, gjuhët dhe integrimet. Pesë faqe me të njëjtin shabllon nuk kanë të njëjtin vëllim pune si pesë shabllone të ndryshme.",
+              "Dërgoni listën e shërbimeve, faqen ekzistuese dhe funksionet e nevojshme. Domenin, hostimin, licencat dhe mirëmbajtjen pas publikimit i paraqesim veçmas nga krijimi i faqes."
+            ]
+          ],
+          [
+            "Si kontrollohet faqja para dorëzimit?",
+            [
+              "Kontrollojmë pamjen në telefon dhe kompjuter, menunë dhe rrugën nga formulari deri te marrja e mesazhit. Nëse përfshihet CMS, ekipi juaj provon ndryshimin e tekstit ose publikimin e një artikulli.",
+              "Gjatë dorëzimit dokumentojmë qasjet dhe përgjegjësitë për domenin, hostimin dhe përmbajtjen. Përcaktojmë veçmas mbështetjen dhe mënyrën e raportimit të problemeve pas publikimit."
+            ]
+          ]
+        ],
+        "modified": "2026-11-19"
       },
       "redesign": {
         "slug": "sherbime/ridizajnim-faqeje",
@@ -729,7 +861,8 @@
             "A mund ta ruajmë përmbajtjen ekzistuese?",
             "Po. Përcaktojmë bashkë cilat tekste e fotografi mbeten dhe cilat materiale duhen përgatitur para publikimit."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       },
       "brand": {
         "slug": "sherbime/identitet-vizual",
@@ -744,7 +877,7 @@
         ],
         "example": "Solarium tregon si i njëjti identitet zbatohet në faqen e internetit dhe në kopertinën e një raporti.",
         "meta_title": "Dizajn i identitetit vizual në Kosovë | Ostrelya",
-        "meta_description": "Identitet vizual për biznese në Kosovë. Përgatisim logon, tipografinë, paletën e ngjyrave dhe udhëzimet për ekipin.",
+        "meta_description": "Identitet vizual për biznese në Kosovë: logo, tipografi, ngjyra dhe përdorime të dakorduara. Merrni skedarët dhe udhëzimet për ekipin tuaj.",
         "faq_heading": "Pyetje të shpeshta",
         "faq": [
           [
@@ -755,10 +888,12 @@
             "A mund të përdoret identiteti në një faqe të re?",
             "Po. E provojmë drejtimin vizual në faqet kryesore dhe në telefon, në mënyrë që ekipi të shohë si funksionon në web."
           ]
-        ]
+        ],
+        "modified": "2026-11-19"
       }
     },
-    "meta_title": "Dizajn webi dhe identitet vizual në Kosovë | Ostrelya",
-    "meta_description": "Krijim dhe ridizajnim i faqeve të internetit dhe zhvillim i identitetit vizual. Punojmë në distancë me ekipe në Kosovë."
+    "meta_title": "Faqe interneti, SEO dhe mirëmbajtje në Kosovë | Ostrelya",
+    "meta_description": "Krijim faqesh interneti, optimizim SEO dhe mirëmbajtje për biznese në Kosovë. Përcaktoni përmbajtjen, zhvillimin dhe mbështetjen me bashkëpunim në distancë.",
+    "modified": "2026-11-19"
   }
 }

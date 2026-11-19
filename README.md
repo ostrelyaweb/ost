@@ -1,6 +1,6 @@
 # OSTRELYA WEB STUDIO
 
-Marketing site for OSTRELYA — a web studio building modern, mobile-first, monthly-payment websites for small businesses across Croatia, Bosnia, Serbia and beyond.
+Marketing site for Ostrelya Studio, an independent remote team providing web design, development, SEO and website maintenance for businesses across the former Yugoslav markets and internationally.
 
 **Live:** https://ostrelya.com/
 

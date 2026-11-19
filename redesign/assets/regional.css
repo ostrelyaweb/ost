@@ -15,6 +15,11 @@
 .region-split h3 { font: 700 1.25rem/1.2 var(--font-display); }
 .region-split ul { margin-top: .65rem; padding-inline-start: 1.2rem; }
 .region-split li + li { margin-top: .5rem; }
+.region-decision h2 { font-size: clamp(1.8rem, 3.8vw, 3.6rem); overflow-wrap: anywhere; }
+.region-decision p { max-width: 58ch; color: #474650; }
+.region-decision p + p { margin-top: .85rem; }
+.region-decision ul { margin: 0; padding: 0; list-style: none; }
+.region-decision .web-service-text-link { margin-top: .25rem; }
 .region-cover { position: relative; display: block; background: #eeebf2; }
 .region-cover img { display: block; width: 100%; height: auto; }
 .region-cover span { position: absolute; inset: auto .65rem .65rem auto; padding: .25rem .55rem; color: #fff; background: #24173d; }

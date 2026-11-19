@@ -2,9 +2,9 @@
 
 from html import escape
 import json
-from urllib.parse import quote
 
 from regional_site import region_path, site_chrome
+from guide_routes import GUIDE_SERVICES, guide_path
 
 
 # Title, introduction, topic labels and navigation strings for each edition.
@@ -59,24 +59,6 @@ LABELS = {
     ),
 }
 TOPICS = ("planning", "search", "operations")
-GUIDE_SERVICES = {
-    "koliko-košta-web-stranica-2026": "web",
-    "što-znati-prije-kupnje-web-stranice": "web",
-    "održavanje-web-stranice-zašto-je-bitno": "maintenance",
-    "redizajn-web-stranice-bez-gubitka-seo": "redesign",
-    "zasto-web-stranica-nije-na-googleu": "seo",
-    "kako-da-se-web-pojavi-u-ai-pretrazivanju": "seo",
-    "treba-li-web-stranici-cms": "development",
-    "plan-visejezicne-web-stranice": "development",
-}
-
-
-def guide_path(slug, lang, entry=None):
-    prefix = "/blog" if lang == "hr" else f"/{lang}/blog"
-    if entry:
-        slug = entry[lang].get("slug", slug)
-    return prefix + "/" + quote(slug) if slug else prefix
-
 
 def guide_links(links):
     return "".join(
