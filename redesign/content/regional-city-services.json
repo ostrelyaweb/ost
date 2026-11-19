@@ -9,6 +9,7 @@
       "meta_title": "Izrada web stranica za Split | Ostrelya Studio",
       "meta_description": "Izrada web stranica za smještaj, izlete i poslovne usluge u Splitu. Višejezični sadržaj, obrasci za upite i uređivanje weba uz suradnju na daljinu.",
       "intro": "Izrađujemo web stranice po mjeri za smještaj, organizatore izleta i tvrtke iz Splita. Dogovaramo kako će posjetitelj pronaći ponudu, provjeriti detalje i poslati upit. S vašim timom radimo na daljinu.",
+      "cta": "Zatražite ponudu",
       "link_description": "Višejezični webovi za smještaj, izlete i poslovne usluge. Pogledajte što ulazi u ponudu i kako izgleda upit s mobitela.",
       "modified": "2026-11-19",
       "scope": [
@@ -21,8 +22,11 @@
         ["Šalje datume i broj gostiju", "Obrazac prenosi naziv jedinice, dolazak, odlazak i broj gostiju. Gost dobiva potvrdu da je upit zaprimljen. Raspoloživost provjerava i potvrđuje domaćin."],
         ["Domaćin dobiva podatke za odgovor", "U poruci dolaze odabrana jedinica, datumi i kontakt gosta, tako da domaćin može odgovoriti s raspoloživošću i ponudom. Ako već koristi vanjski rezervacijski sustav, možemo povezati odgovarajuću stranicu tog sustava."]
       ],
-      "journey_context": "U Splitu su 2025. strani gosti ostvarili oko 93 % noćenja. Kad gost otvori web na svom jeziku, važne informacije i upit trebaju ostati na istom jeziku.",
+      "journey_link": "Primjer upita gosta",
+      "journey_title": "Od pregleda smještaja do upita",
+      "journey_context": "U Splitu su 2025. strani gosti ostvarili oko 93 % noćenja. Kad gost otvori web na svom jeziku, važne informacije i upit trebaju ostati na istom jeziku. Evo kako bi izgledao put gosta na primjeru weba za smještaj.",
       "source": ["Izvješće Turističke zajednice Splita za 2025.", "https://visitsplit.com/en/7076/2025"],
+      "price_guide": ["Kako usporediti ponude za izradu weba", "/blog/koliko-ko%C5%A1ta-web-stranica-2026"],
       "price": [
         ["Jedna ili nekoliko jedinica", "Ako sve jedinice dijele isti predložak, u ponudi odvojeno navodimo njegovu izradu i unos sadržaja po jedinici. Za jednostavan poslovni web primjenjujemo isti princip na stranice usluga."],
         ["Dodatni jezici i integracije", "Dogovaramo tko priprema prijevod i tko kasnije ažurira svaku verziju. Poveznicu na vanjske rezervacije, integraciju dostupnosti i obrasce procjenjujemo prema tome što vaš postojeći sustav podržava."],
@@ -32,9 +36,128 @@
         ["Koliko košta izrada web stranice?", "Ponudu šaljemo nakon što dogovorimo broj različitih predložaka, jezike, pripremu sadržaja i integracije. Za prvu procjenu pošaljite postojeći web ili profil, primjer usluge ili jedinice i što posjetitelj treba napraviti."],
         ["Moram li mijenjati postojeći rezervacijski sustav?", "Možete zadržati sustav koji koristite. Pri planiranju provjeravamo može li web otvoriti točno odabranu jedinicu ili turu i ima li smisla povezati dostupnost. Ovisno o sustavu, predložit ćemo običnu poveznicu ili integraciju."],
         ["Mogu li uređivati fotografije i sezonske informacije?", "Ako je CMS dio ponude, dogovorimo polja koja uređujete, recimo fotografije, opis jedinice, vrijeme polaska i sezonsku obavijest. Na primopredaji zajedno napravimo jednu stvarnu izmjenu."],
-        ["Kako dogovaramo projekt ako ste izvan Splita?", "Prvi razgovor, pregled prototipa i primopredaju vodimo online. Prije izrade zabilježimo tko priprema materijale i tko odobrava sadržaj po jezicima. Ako imate fiksni datum objave, navedite ga u upitu."]
+        ["Kako surađujemo na daljinu?", "Prvi razgovor, pregled prototipa i primopredaju vodimo online. Prije izrade zabilježimo tko priprema materijale i tko odobrava sadržaj po jezicima. Ako imate fiksni datum objave, navedite ga u upitu."]
       ],
       "contact_brief": "Pošaljite adresu postojećeg weba ili javnog profila, broj usluga ili jedinica, željene jezike i datum objave ako ga imate. Ako već koristite rezervacijski sustav, navedite koji."
+    },
+    "rijeka": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-rijeka",
+      "city": "Rijeka",
+      "label": "Izrada web stranica za Rijeku",
+      "title": "Izrada web stranica za tvrtke iz Rijeke",
+      "meta_title": "Izrada web stranica za Rijeku | Ostrelya Studio",
+      "meta_description": "Izrada poslovnih web stranica za tvrtke iz Rijeke. Predstavite tehničke usluge, katalog za upite i dokumentaciju uz suradnju na daljinu.",
+      "intro": "Za tvrtke iz Rijeke izrađujemo webove na kojima kupac može pronaći tehničke podatke, provjeriti odgovara li mu usluga i zatražiti ponudu. Dizajn, razvoj i primopredaju vodimo na daljinu.",
+      "cta": "Zatražite ponudu",
+      "link_description": "Poslovni webovi za tehničke usluge i katalog proizvoda s dokumentacijom i zahtjevom za ponudu.",
+      "modified": "2026-11-19",
+      "scope": [
+        ["Stranice tehničkih usluga", "Na stranici pojedine usluge kupac vidi s kojim materijalima radite, koje količine prihvaćate i što treba pripremiti za upit. Za svaku uslugu dogovaramo koji se podaci mogu javno prikazati."],
+        ["Katalog za upite", "Kupac može pregledati kategorije, otvoriti tehnički list i poslati upit uz oznaku proizvoda. Vaš tim naknadno dogovara cijenu, isporuku i uvjete."],
+        ["Verzija za međunarodne kupce", "Ako prodajete i izvan Hrvatske, izdvojimo sadržaj koji inozemni kupac treba prije prvog razgovora, primjerice kapacitete, uvjete isporuke i certifikate koje imate."]
+      ],
+      "journey_link": "Primjer tehničkog upita",
+      "journey_title": "Upit s podacima koje prodaja treba",
+      "journey_context": "Zamislimo riječku radionicu koja izrađuje dijelove po narudžbi. Kupac želi saznati možete li prihvatiti njegov materijal i seriju. Evo kako bi izgledao upit na takvoj stranici.",
+      "journey": [
+        ["Kupac provjerava opseg", "Na stranici usluge otvara popis materijala, radne dimenzije i opis pripreme. Iz tehničkog lista može provjeriti podatke koji mu trebaju za odluku."],
+        ["Navodi zahtjev", "Obrazac prenosi odabranu uslugu. Kupac dodaje materijal, dimenzije, okvirnu količinu i rok. Ako treba poslati nacrt, prodaja s njim dogovara kanal za razmjenu dokumentacije."],
+        ["Prodaja procjenjuje izvedivost", "Poruka stiže odgovornoj osobi s navedenim podacima. Na primopredaji prolazimo jedan testni upit i provjeravamo kako se u CMS-u ažurira tehnički list."]
+      ],
+      "price_guide": ["Kako usporediti ponude za izradu weba", "/blog/koliko-ko%C5%A1ta-web-stranica-2026"],
+      "price": [
+        ["Broj predložaka i stavki", "Jedna stranica za uslugu, predložak kataloške stavke i stranica reference imaju različita polja. U ponudi odvajamo izradu predložaka od pripreme i unosa pojedinih stavki."],
+        ["Postojeća dokumentacija i jezici", "Na uzorku kataloga provjerimo koji se podaci mogu prenijeti iz tablice ili starog weba, što treba uskladiti i tko potvrđuje prijevod tehničkih naziva."],
+        ["Obrazac, objava i podrška", "Dogovaramo potrebna polja, pravila slanja i primatelje poruka. Hosting, licence i podrška nakon objave iskazuju se odvojeno od izrade."]
+      ],
+      "faq": [
+        ["Možemo li početi s nekoliko proizvoda?", "Možemo. Za početak nam pošaljite uzorak stavki koje dijele svojstva. Dogovorimo strukturu kataloga i pokažemo vašem timu kako dodati sljedeću stavku."],
+        ["Možemo li zadržati postojeću domenu?", "Možete. Prije objave dogovorimo pristupe i provjerimo koje adrese treba sačuvati. Ako se važna adresa mijenja, mapiramo je na odgovarajuću novu stranicu."],
+        ["Kako započinjemo suradnju na daljinu?", "Pregledamo postojeći web ili katalog i zajedno prođemo primjer upita koji želite primati. Na temelju toga definiramo opseg i pripremamo ponudu."]
+      ],
+      "contact_brief": "Pošaljite postojeći web ili katalog, primjer proizvoda ili tehničke usluge te podatke koje kupac treba navesti kad traži ponudu."
+    }
+  },
+  "sl": {
+    "ljubljana": {
+      "parent": "web",
+      "slug": "storitve/izdelava-spletnih-strani-ljubljana",
+      "city": "Ljubljana",
+      "label": "Izdelava spletnih strani za Ljubljano",
+      "title": "Izdelava spletnih strani za podjetja v Ljubljani",
+      "meta_title": "Izdelava spletnih strani Ljubljana | Ostrelya Studio",
+      "meta_description": "Izdelava in prenova spletnih strani za podjetja v Ljubljani. Načrt prenosa vsebine, preusmeritve, CMS in preverjanje obrazcev pred objavo.",
+      "intro": "Podjetjem iz Ljubljane pomagamo prenoviti spletno stran, ko se ponudba razširi ali urejanje vsebine postane zamudno. Z vašo ekipo na daljavo načrtujemo nove strani, prenos vsebine in preverjanje pred objavo.",
+      "cta": "Zaprosite za ponudbo",
+      "link_description": "Prenova poslovne strani z načrtom za prenos vsebine, stare naslove URL in samostojno urejanje v CMS-u.",
+      "modified": "2026-11-19",
+      "scope": [
+        ["Pregled obstoječe strani", "Zabeležimo, katere strani še služijo kupcem in katere že dobivajo obiske iz iskanja. Razvrstimo jih glede na to, kaj ohraniti, posodobiti ali združiti."],
+        ["Urejanje ponudbe v CMS-u", "S svojo ekipo določite, kdo ureja storitve, reference in objave. Na prototipu preizkusimo eno spremembo od vnosa do predogleda in objave."],
+        ["Preverjanje pred prenosom", "Pred objavo preverimo povezave, obrazce, jezikovne različice in odzive starih naslovov. Po objavi preverimo, ali obiskovalec pride na pravo stran in ali povpraševanje prispe."]
+      ],
+      "journey_link": "Primer prenove",
+      "journey_title": "Kaj se zgodi s stranjo, ki jo kupci že najdejo",
+      "journey_context": "Predstavljajmo si podjetje iz Ljubljane, ki je razširilo ponudbo, stara stran ene storitve pa še vedno prejema obiske. Pri prenovi morata delovati tako obstoječa povezava kot nova pot do povpraševanja.",
+      "source": ["Kako smo pri prenovi Ostrelye preverili 132 naslovov URL", "/sl/blog/prenova-spletne-strani-in-seo#ostrelya-migration"],
+      "journey": [
+        ["Popišemo obstoječe naslove", "Preverimo, katera vsebina je povezana iz menija, iskalnika in dokumentov. Zapišemo, kateri naslovi se ohranijo in kam naj vodijo tisti, ki se spremenijo."],
+        ["Pripravimo novo stran storitve", "Na poskusni strani pregledate opis, povezane reference in obrazec. Urednik preizkusi, kako objaviti spremembo, preden jo lahko vidijo obiskovalci."],
+        ["Preverimo objavo", "Če se naslov spremeni, s starega naslova preverimo trajno preusmeritev na ustrezno stran. S poskusnim povpraševanjem preverimo tudi, da sporočilo prispe do prave osebe."]
+      ],
+      "price_guide": ["Kako primerjati ponudbe za izdelavo spletne strani", "/sl/blog/cena-izdelave-spletne-strani"],
+      "price": [
+        ["Predloge in prenos", "Obseg je odvisen od števila različnih predlog in količine vsebine za prenos. Ločeno ovrednotimo oblikovanje, razvoj ter ureditev besedil in medijev."],
+        ["Stari naslovi in jeziki", "Če ima stran več jezikov ali veliko objav, določimo obseg preusmeritev, prevodov in preverjanja. Seznam pomembnih strani pripravimo pred začetkom razvoja."],
+        ["Podpora po objavi", "V ponudbi navedemo, kaj vključujeta predaja in začetni pregled po objavi. Gostovanje, licence in redno vzdrževanje obravnavamo posebej."]
+      ],
+      "faq": [
+        ["Ali lahko obdržimo obstoječo domeno?", "Da. Določimo čas objave in preverimo, kateri dostopi so potrebni. Med prenosom upoštevamo obstoječo e-pošto in storitve na domeni."],
+        ["Kaj če je ponudba napisana v več jezikih?", "Za vsako jezikovno različico uskladimo vsebino, povezavo do ustrezne strani in osebo, ki odobri prevod. Na telefonu preizkusimo preklop jezika in oddajo povpraševanja."],
+        ["Kaj pošljemo za prvo oceno?", "Pošljite naslov obstoječe strani, seznam storitev, ki se spreminjajo, in primer strani, ki jo želite ohraniti. Dodajte želene jezike in okvirni rok."]
+      ],
+      "contact_brief": "Pošljite naslov trenutne spletne strani, katere storitve želite bolje predstaviti in ali želite ohraniti obstoječe naslove, jezike ali CMS."
+    }
+  },
+  "sr-rs": {
+    "novi-sad": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-novi-sad",
+      "city": "Novi Sad",
+      "label": "Izrada sajtova za Novi Sad",
+      "title": "Izrada sajtova za firme iz Novog Sada",
+      "meta_title": "Izrada sajtova Novi Sad | Ostrelya Studio",
+      "meta_description": "Izrada poslovnih sajtova za firme iz Novog Sada. Predstavljanje usluga, obrasci za upite, CMS i jasna ponuda uz saradnju na daljinu.",
+      "intro": "Firmama iz Novog Sada izrađujemo poslovne sajtove na kojima kupac može da razume uslugu i pošalje upit. Prvi sajt možemo da planiramo oko nekoliko konkretnih usluga, materijala koje već imate i načina na koji danas dobijate upite.",
+      "cta": "Zatražite ponudu",
+      "link_description": "Prvi poslovni sajt sa stranicama usluga, primerima rada i obrascem koji kupcu olakšava da pošalje upit.",
+      "modified": "2026-11-19",
+      "scope": [
+        ["Dogovor o stranicama", "Počinjemo od pitanja koja dobijate telefonom ili porukama. Od njih pravimo jasan spisak usluga, informacija koje kupac treba i sledećih koraka."],
+        ["Korišćenje postojećih materijala", "Iz fotografija, opisa usluga i primera rada biramo šta je spremno za objavu. Dogovaramo koji sadržaj pripremate vi, a za koji vam treba pomoć."],
+        ["Uređivanje posle objave", "Ako je CMS deo ponude, vaš tim može da izmeni tekst, fotografije i primere rada. Domen i pristupe uređujemo tako da možete samostalno da upravljate njima."]
+      ],
+      "journey_link": "Primer poslovnog upita",
+      "journey_title": "Od opisa usluge do zahteva za ponudu",
+      "journey_context": "Zamislimo firmu iz Novog Sada koja oprema poslovne prostore. Kupci često pitaju šta je uključeno u radove i koje podatke treba da pošalju. Sajt bi mogao da ih provede kroz ova tri koraka.",
+      "journey": [
+        ["Kupac pronalazi pravu uslugu", "Na stranici vidi šta obuhvata izrada, koje vrste prostora dolaze u obzir i koji primeri najbolje pokazuju rezultat."],
+        ["Priprema podatke za prvi razgovor", "Obrazac traži vrstu prostora, okvirnu površinu, mesto izvođenja i željeni rok. Kupac može da pošalje upit i kada još nema sve mere."],
+        ["Tim dobija upit uz naziv usluge", "U poruci se vidi koja je usluga odabrana i šta je kupac naveo. Pre objave proveravamo da upit stiže na dogovorenu adresu i da obrazac radi na telefonu."]
+      ],
+      "price_guide": ["Kako da uporedite ponude za izradu sajta", "/sr-rs/blog/cena-izrade-sajta"],
+      "price": [
+        ["Prezentacija ili više stranica usluga", "Jedna prezentaciona stranica i sajt sa odvojenim stranicama za usluge imaju različit obim. Ponuda navodi broj predložaka i ko unosi sadržaj."],
+        ["Pisanje, fotografije i dodatni jezici", "Obim zavisi od toga koliko materijala već imate i ko ih priprema. Ako je potrebna verzija na engleskom, unapred dogovaramo prevod i kasnije izmene."],
+        ["Troškovi posle objave", "Domen, hosting, licence i redovno održavanje iskazujemo odvojeno. Dogovaramo i šta radimo na primopredaji, od provere kontakta do prve izmene u CMS-u."]
+      ],
+      "faq": [
+        ["Možemo li krenuti s jednom stranicom?", "Možemo ako se ponuda može jasno objasniti na jednoj stranici. Ako različite usluge imaju različite kupce, dogovaramo koje vredi odvojiti u sopstvene stranice."],
+        ["Kako radimo ako već imamo profile na društvenim mrežama?", "Možemo iskoristiti vaše fotografije i postojeće opise uz dogovor o pravima korišćenja. Sajt kupcu daje trajnu adresu za detalje usluge i kontakt."],
+        ["Kako izgleda saradnja na daljinu?", "Prvi razgovor, pregled dizajna i primopredaju vodimo onlajn. Pošaljite primer upita koji želite da dobijate i spisak usluga koje želite da predstavite."]
+      ],
+      "contact_brief": "Pošaljite link do sajta ili javnog profila, spisak najvažnijih usluga i primer podataka koje kupac treba da navede kada vam pošalje upit."
     }
   }
 }

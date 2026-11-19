@@ -221,8 +221,39 @@ def croatian_web_main(service_links, markets, city_links):
     """
 
 
-def croatian_city_web_main(offer, headline, intro, service_links, markets):
-    source_label, source_url = map(escape, offer["source"])
+CITY_WEB_COPY = {
+    "hr": ("Sadržaj stranice", "Što dobivate", "Što određuje cijenu", "Što treba sadržavati vaš web?",
+           "Što određuje cijenu izrade?", "Česta pitanja", "Usluge za vaš web", "Ponuda po gradovima"),
+    "sl": ("Vsebina strani", "Kaj dobite", "Kaj vpliva na ceno", "Kaj uredimo pri prenovi?",
+           "Kako nastane ponudba?", "Pogosta vprašanja", "Storitve za vaše spletno mesto", "Storitve po mestih"),
+    "sr-rs": ("Sadržaj stranice", "Šta dobijate", "Šta utiče na cenu", "Šta treba da uradi prvi poslovni sajt?",
+              "Kako formiramo ponudu?", "Česta pitanja", "Usluge za vaš sajt", "Ponuda po gradovima"),
+}
+
+
+def city_service_links(key, region, service):
+    cards = "".join(
+        f'<a href="{escape(region_path(key, region, name))}"><strong>{escape(offer["label"])}</strong>'
+        f'<p>{escape(offer["link_description"])}</p><span aria-hidden="true">↗</span></a>'
+        for name, offer in region.get("city_services", {}).items() if offer["parent"] == service
+    )
+    if not cards:
+        return ""
+    heading = escape(CITY_WEB_COPY[key][-1])
+    return (
+        f'<section class="page-container region-services"><h2 class="editorial-heading">{heading}.</h2>'
+        f'<div class="region-service-grid">{cards}</div></section>'
+    )
+
+
+def city_web_main(offer, key, labels, headline, intro, service_links, markets):
+    contents, scope_link, price_link, scope_title, price_title, faq_title, related_title, _ = map(escape, CITY_WEB_COPY[key])
+    guide_label, guide_url = map(escape, offer["price_guide"])
+    journey_link = escape(offer["journey_link"])
+    source_link = ""
+    if "source" in offer:
+        source_label, source_url = map(escape, offer["source"])
+        source_link = f'<a class="web-service-text-link" href="{source_url}">{source_label} <span aria-hidden="true">↗</span></a>'
     scopes = "".join(
         f'<div><h3>{escape(heading)}</h3><p>{escape(body)}</p></div>'
         for heading, body in offer["scope"]
@@ -241,41 +272,40 @@ def croatian_city_web_main(offer, headline, intro, service_links, markets):
           <h1 class="editorial-heading" id="city-web-title">{headline}<span>.</span></h1>
           <div class="services-hero-aside">
             <p>{intro}</p>
-            <a class="btn-primary" href="#contact">Zatražite ponudu <span aria-hidden="true">↗</span></a>
+            <a class="btn-primary" href="#contact">{escape(offer.get("cta", labels["enquiry"]))} <span aria-hidden="true">↗</span></a>
           </div>
-          <nav class="guide-topics seo-offer-nav" aria-label="Sadržaj stranice">
-            <a href="#opseg">Što dobivate</a>
-            <a href="#primjer">Primjer upita gosta</a>
-            <a href="#cijena">Što određuje cijenu</a>
+          <nav class="guide-topics seo-offer-nav" aria-label="{contents}">
+            <a href="#opseg">{scope_link}</a>
+            <a href="#primjer">{journey_link}</a>
+            <a href="#cijena">{price_link}</a>
           </nav>
         </div>
       </section>
       <section class="page-container region-split region-decision city-web-detail" id="opseg">
-        <h2 class="editorial-heading">Što treba sadržavati vaš web?</h2>
+        <h2 class="editorial-heading">{scope_title}</h2>
         <div>{scopes}</div>
       </section>
       <section class="page-container web-service-process city-web-detail" id="primjer">
         <div>
-          <h2 class="editorial-heading">Od pregleda smještaja do upita.</h2>
+          <h2 class="editorial-heading">{escape(offer["journey_title"])}.</h2>
           <p>{escape(offer["journey_context"])}</p>
-          <p>Ovako bi izgledao put gosta na primjeru weba za smještaj.</p>
-          <a class="web-service-text-link" href="{source_url}">{source_label} <span aria-hidden="true">↗</span></a>
+          {source_link}
         </div>
-        <ol aria-label="Primjer upita za smještaj">{steps}</ol>
+        <ol aria-label="{journey_link}">{steps}</ol>
       </section>
       <section class="page-container region-split region-decision city-web-detail" id="cijena">
         <div>
-          <h2 class="editorial-heading">Što određuje cijenu izrade?</h2>
-          <a class="web-service-text-link" href="{PRICE_GUIDE}">Kako usporediti ponude za izradu weba <span aria-hidden="true">↗</span></a>
+          <h2 class="editorial-heading">{price_title}</h2>
+          <a class="web-service-text-link" href="{guide_url}">{guide_label} <span aria-hidden="true">↗</span></a>
         </div>
         <div>{price}</div>
       </section>
       <section class="page-container services-disciplines web-service-faq" id="pitanja">
-        <h2 class="editorial-heading">Česta pitanja.</h2>
+        <h2 class="editorial-heading">{faq_title}.</h2>
         <div class="service-accordions">{faq_details(offer["faq"])}</div>
       </section>
       <section class="page-container region-services">
-        <h2 class="editorial-heading">Usluge za vaš web.</h2>
+        <h2 class="editorial-heading">{related_title}.</h2>
         <div class="region-service-grid">{service_links}</div>
       </section>
       {markets}
@@ -424,22 +454,14 @@ def render_region(root, origin, regions, key, service):
         f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[key])} <span aria-hidden="true">↗</span></a></p></section>'
     )
     if city_page:
-        main = croatian_city_web_main(active, headline, intro, "".join(service_links), markets)
+        main = city_web_main(active, key, labels, headline, intro, "".join(service_links), markets)
     elif web_service_layout:
-        city_cards = "".join(
-            f'<a href="{escape(region_path(key, region, name))}"><strong>{escape(offer["label"])}</strong>'
-            f'<p>{escape(offer["link_description"])}</p><span aria-hidden="true">↗</span></a>'
-            for name, offer in region.get("city_services", {}).items() if offer["parent"] == service
-        )
-        city_links = (
-            '<section class="page-container region-services"><h2 class="editorial-heading">Ponuda po gradovima.</h2>'
-            f'<div class="region-service-grid">{city_cards}</div></section>' if city_cards else ""
-        )
-        main = croatian_web_main("".join(service_links), markets, city_links)
+        main = croatian_web_main("".join(service_links), markets, city_service_links(key, region, service))
     elif seo_offer_layout:
         main = croatian_seo_main(headline, intro, active, "".join(service_links), markets)
     else:
-        main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links)) + markets
+        main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links))
+        main += city_service_links(key, region, service) + markets
         if service:
             main += (
                 '<section class="page-container services-disciplines web-service-faq" id="pitanja">'
