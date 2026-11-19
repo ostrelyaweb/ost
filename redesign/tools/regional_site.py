@@ -95,11 +95,14 @@ def read_regions(root):
         if set(services) != {"development", "seo", "maintenance"}:
             raise ValueError(f"Incomplete web services for {key}")
         regions[key]["services"].update(services)
+    albania = json.loads((root / "content/regional-albania.json").read_bytes())
+    regions["sq-al"] = {**regions["sq"], **albania}
     city_services = json.loads((root / "content/regional-city-services.json").read_bytes())
     for key, offers in city_services.items():
         region = regions[key]
         for name, offer in offers.items():
-            if name in region["services"] or offer["parent"] not in region["services"]:
+            parent = offer["parent"]
+            if name in region["services"] or (parent is not None and parent not in region["services"]):
                 raise ValueError(f"Invalid city service: {key}/{name}")
         region["city_services"] = offers
     return regions
@@ -118,7 +121,10 @@ def region_path(key, region, service=None):
 
 
 def region_alternates(origin, regions, service=None):
-    alternatives = {region["tag"]: region_path(key, region, service) for key, region in regions.items()}
+    alternatives = {
+        region["tag"]: region_path(key, region, service)
+        for key, region in regions.items() if service is None or service in region["services"]
+    }
     if service is None:
         alternatives["en"] = "/"
     alternatives["x-default"] = "/" if service is None else region_path("hr", regions["hr"], service)
@@ -228,27 +234,44 @@ CITY_WEB_COPY = {
            "Kako nastane ponudba?", "Pogosta vprašanja", "Storitve za vaše spletno mesto", "Storitve po mestih"),
     "sr-rs": ("Sadržaj stranice", "Šta dobijate", "Šta utiče na cenu", "Šta treba da uradi prvi poslovni sajt?",
               "Kako formiramo ponudu?", "Česta pitanja", "Usluge za vaš sajt", "Ponuda po gradovima"),
+    "bs": ("Sadržaj stranice", "Šta dobijate", "Šta utiče na cijenu", "Šta treba sadržavati web stranica?",
+           "Kako određujemo obim ponude?", "Česta pitanja", "Usluge za vašu web stranicu", "Ponuda po gradovima"),
+    "sr-me": ("Sadržaj stranice", "Šta dobijate", "Šta utiče na cijenu", "Šta treba da radi vaš sajt?",
+              "Kako formiramo ponudu?", "Česta pitanja", "Usluge za vaš sajt", "Ponuda po gradovima"),
+    "mk": ("Содржина на страницата", "Што добивате", "Што влијае на цената", "Што треба да содржи вашата веб-страница?",
+           "Како ја подготвуваме понудата?", "Чести прашања", "Услуги за вашата веб-страница", "Услуги по градови"),
+    "sq": ("Përmbajtja e faqes", "Çfarë përfitoni", "Çfarë ndikon në çmim", "Çfarë duhet të bëjë faqja juaj?",
+           "Si e përgatisim ofertën?", "Pyetje të shpeshta", "Shërbime për faqen tuaj", "Shërbime sipas qytetit"),
 }
 
 
-def city_service_links(key, region, service):
-    cards = "".join(
+def city_service_cards(key, region, service):
+    return "".join(
         f'<a href="{escape(region_path(key, region, name))}"><strong>{escape(offer["label"])}</strong>'
         f'<p>{escape(offer["link_description"])}</p><span aria-hidden="true">↗</span></a>'
         for name, offer in region.get("city_services", {}).items() if offer["parent"] == service
     )
+
+
+def city_service_links(key, region, service):
+    cards = city_service_cards(key, region, service)
     if not cards:
         return ""
-    heading = escape(CITY_WEB_COPY[key][-1])
+    heading = escape(CITY_WEB_COPY[region.get("content_locale", key)][-1])
     return (
         f'<section class="page-container region-services"><h2 class="editorial-heading">{heading}.</h2>'
         f'<div class="region-service-grid">{cards}</div></section>'
     )
 
 
-def city_web_main(offer, key, labels, headline, intro, service_links, markets):
+def city_web_main(root, offer, key, labels, headline, intro, service_links, markets):
     contents, scope_link, price_link, scope_title, price_title, faq_title, related_title, _ = map(escape, CITY_WEB_COPY[key])
-    guide_label, guide_url = map(escape, offer["price_guide"])
+    if "scope_title" in offer:
+        scope_title = escape(offer["scope_title"])
+    guide = offer.get("price_guide")
+    if not guide:
+        guide = service_guides(root, key, "web")[0]
+    guide_label, guide_url = map(escape, guide)
     journey_link = escape(offer["journey_link"])
     source_link = ""
     if "source" in offer:
@@ -266,6 +289,12 @@ def city_web_main(offer, key, labels, headline, intro, service_links, markets):
         f'<div><h3>{escape(heading)}</h3><p>{escape(body)}</p></div>'
         for heading, body in offer["price"]
     )
+    related = ""
+    if service_links:
+        related = (
+            f'<section class="page-container region-services"><h2 class="editorial-heading">{related_title}.</h2>'
+            f'<div class="region-service-grid">{service_links}</div></section>'
+        )
     return f"""
       <section class="services-editorial-hero web-service-hero" aria-labelledby="city-web-title">
         <div class="page-container services-hero-layout">
@@ -304,10 +333,7 @@ def city_web_main(offer, key, labels, headline, intro, service_links, markets):
         <h2 class="editorial-heading">{faq_title}.</h2>
         <div class="service-accordions">{faq_details(offer["faq"])}</div>
       </section>
-      <section class="page-container region-services">
-        <h2 class="editorial-heading">{related_title}.</h2>
-        <div class="region-service-grid">{service_links}</div>
-      </section>
+      {related}
       {markets}
     """
 
@@ -405,6 +431,7 @@ def render_region(root, origin, regions, key, service):
     active = region_content(region, service)
     city_page = "city" in active
     parent_service = active["parent"] if city_page else service
+    content_locale = region.get("content_locale", key)
     lang = region["tag"]
     nav = region["nav"]
     labels = region["labels"]
@@ -422,7 +449,8 @@ def render_region(root, origin, regions, key, service):
     alternates = "" if city_page else region_alternates(origin, regions, service)
     switches = []
     for code, alternative in regions.items():
-        alternate_url = region_path(code, alternative, parent_service)
+        equivalent = parent_service if parent_service in alternative["services"] else None
+        alternate_url = region_path(code, alternative, equivalent)
         tag = alternative["tag"]
         current = ' aria-current="page"' if code == key and not city_page else ""
         switches.append(
@@ -443,7 +471,7 @@ def render_region(root, origin, regions, key, service):
     privacy_link = ('<a href="/hr/politika-privatnosti/#privacy-contact">Kako obrađujemo upite</a>' if key == "hr"
                     else '<a href="/privacy-policy/#privacy-contact" lang="en">How we handle enquiries</a>')
     market_links = "".join(switches)
-    guide_index = "/blog" if key == "hr" else f"/{key}/blog"
+    guide_index = "/blog" if key == "hr" else f"/{content_locale}/blog"
     guide_index += SERVICE_GUIDE_TOPICS.get(parent_service, "")
     markets = (
         '<section class="page-container region-market" id="trzista">'
@@ -451,14 +479,16 @@ def render_region(root, origin, regions, key, service):
         f'<h2 class="editorial-heading">{escape(nav["languages"])}.</h2>'
         + ('<p>S timovima iz Hrvatske i regije radimo na daljinu, od prvog razgovora do primopredaje. Odaberite verziju ove usluge za svoje tržište.</p>' if web_service_layout else "")
         + f'<ul>{market_links}<li><a href="{"/services/" if service else "/?lang=en"}" lang="en" hreflang="en" data-locale="en"><strong>English</strong><span>{"Services overview" if service else "International"}</span></a></li></ul>'
-        f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[key])} <span aria-hidden="true">↗</span></a></p></section>'
+        f'<p class="region-guide-link"><a class="web-service-text-link" href="{guide_index}">{escape(GUIDE_INDEX_LABELS[content_locale])} <span aria-hidden="true">↗</span></a></p></section>'
     )
     if city_page:
-        main = city_web_main(active, key, labels, headline, intro, "".join(service_links), markets)
+        main = city_web_main(root, active, content_locale, labels, headline, intro, "".join(service_links), markets)
     elif web_service_layout:
         main = croatian_web_main("".join(service_links), markets, city_service_links(key, region, service))
     elif seo_offer_layout:
         main = croatian_seo_main(headline, intro, active, "".join(service_links), markets)
+    elif not region["services"]:
+        main = default_main(active, headline, intro, market, labels, nav, service, city_service_cards(key, region, None)) + markets
     else:
         main = default_main(active, headline, intro, market, labels, nav, service, "".join(service_links))
         main += city_service_links(key, region, service) + markets
@@ -489,7 +519,7 @@ def render_region(root, origin, regions, key, service):
             )
 
     trail = [("Ostrelya Studio", "/"), (region["label"], hub)]
-    if city_page:
+    if city_page and parent_service:
         trail.append((region["services"][parent_service]["label"], region_path(key, region, parent_service)))
     if service:
         trail.append((active["label"], path))
@@ -508,9 +538,11 @@ def render_region(root, origin, regions, key, service):
     if service:
         areas = [entry["market"] for entry in regions.values()] if web_service_layout else [region["market"]]
         if city_page:
-            areas = [{"@type": "City", "name": active["city"]}]
+            areas = [{"@type": "City", "name": active["city"],
+                      "containedInPlace": {"@type": "Country", "name": region["market"]}}]
         graph.append({
-            "@type": "Service", "name": active["title"], "serviceType": region["services"][parent_service]["label"],
+            "@type": "Service", "name": active["title"],
+            "serviceType": region["services"][parent_service]["label"] if parent_service else active["label"],
             "url": origin + path, "description": active["meta_description"], "areaServed": areas,
             "provider": {"@type": "Organization", "name": "Ostrelya Studio", "url": origin + "/"},
         })
@@ -555,7 +587,7 @@ def render_region(root, origin, regions, key, service):
         <p class="services-kicker">{escape(nav["contact"])}</p>
         <h2 class="editorial-heading" id="regional-contact-title" data-editorial-reveal>{contact_title}</h2>
         <p>{contact_brief}</p>
-        {regional_enquiry(key, seo_review=seo_offer_layout)}
+        {regional_enquiry(content_locale, seo_review=seo_offer_layout)}
         <div class="editorial-contact-links">
           <a href="mailto:hello@ostrelya.com">hello@ostrelya.com <span aria-hidden="true">→</span></a>
         </div>

@@ -81,7 +81,7 @@ def preserve_archive(output):
     if guides.keys() & new_guides.keys():
         raise ValueError("Guide slugs must be unique across the blog.")
     guides.update(new_guides)
-    regions = read_regions(REDESIGN)
+    regions = {key: region for key, region in read_regions(REDESIGN).items() if not region.get("content_locale")}
     locales = {"en": {"tag": "en", "language": "English"}, **regions}
     translations = read_content(REDESIGN, "regional-guides")
     if translations.keys() != guides.keys():

@@ -77,6 +77,183 @@
         ["Kako započinjemo suradnju na daljinu?", "Pregledamo postojeći web ili katalog i zajedno prođemo primjer upita koji želite primati. Na temelju toga definiramo opseg i pripremamo ponudu."]
       ],
       "contact_brief": "Pošaljite postojeći web ili katalog, primjer proizvoda ili tehničke usluge te podatke koje kupac treba navesti kad traži ponudu."
+    },
+    "pula": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-pula",
+      "city": "Pula",
+      "label": "Izrada web stranica za Pulu",
+      "title": "Izrada web stranica za kampove i tvrtke iz Pule",
+      "meta_description": "Webovi za kampove i tvrtke iz Pule. Predstavite parcele, sadržaje i uvjete dolaska na više jezika te povežite postojeće rezervacije.",
+      "intro": "Za kampove i tvrtke iz Pule izrađujemo webove na kojima gosti mogu usporediti smještaj, provjeriti uvjete dolaska i nastaviti na rezervaciju ili poslati točan upit. S vašim timom radimo na daljinu.",
+      "link_description": "Predstavite parcele, pravila boravka i sezonske obavijesti na više jezika.",
+      "scope": [
+        ["Parcele i tipovi smještaja", "Za svaku vrstu smještaja planiramo fotografije, kapacitet, udaljenost od sadržaja i uvjete boravka. Gost može razlikovati parcelu od mobilne kućice prije upita."],
+        ["Uvjeti koji utječu na izbor", "Za kamp možete istaknuti dimenzije vozila, priključke, pravila za kućne ljubimce i što je uključeno u pojedinu ponudu."],
+        ["Jezici i objava", "Odaberemo jezike prema upitima koje već dobivate. Vaš tim u CMS-u može objaviti sezonsku obavijest ako je uređivanje dio ponude."]
+      ],
+      "journey_link": "Primjer upita za parcelu",
+      "journey_title": "Od dimenzija vozila do prave parcele",
+      "journey_context": "Turistička zajednica Pule među vrstama smještaja navodi i kampove. U ovom primjeru gost putuje kamperom i želi provjeriti odgovara li mu parcela prije dolaska.",
+      "source": ["Smještaj u Puli", "https://pulainfo.hr/pula-accommodation/"],
+      "journey": [
+        ["Gost uspoređuje ponudu", "Na telefonu uspoređuje veličinu parcela i dostupne priključke, uz poveznicu na pravila dolaska."],
+        ["Provjerava svoj termin", "Pri upitu šalje termin, duljinu vozila i tip parcele. Ako već imate vanjske rezervacije, s iste stranice može nastaviti na odgovarajući unos."],
+        ["Recepcija odgovara s kontekstom", "Upit uključuje naziv parcele i tehničke podatke potrebne da recepcija predloži prikladnu opciju."]
+      ],
+      "price": [
+        ["Smještajne jedinice i sadržaj", "U ponudi razdvajamo strukturu jedne vrste parcele od unosa više tipova smještaja, pravila, prijevoda i fotografija."],
+        ["Povezivanje termina", "Vanjska poveznica i prikaz raspoloživosti na webu traže različit opseg. Provjeravamo mogućnosti postojećeg sustava prije procjene."]
+      ],
+      "faq": [
+        ["Možemo li sami objaviti izmjene pravila dolaska?", "Da, ako u opseg uključimo CMS. Dogovaramo koja polja možete uređivati i tko odobrava promjene na svakom jeziku."],
+        ["Radite li i za tvrtke koje nisu u turizmu?", "Da. Pošaljite ponudu usluga i primjer upita koji želite primati. Na tome gradimo strukturu poslovnog weba."]
+      ],
+      "contact_brief": "Navedite broj vrsta smještaja ili usluga, željene jezike i postojeći link za rezervacije ako ga imate.",
+      "meta_title": "Izrada web stranica Pula | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Što gost treba saznati o kampu?"
+    },
+    "osijek": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-osijek",
+      "city": "Osijek",
+      "label": "Izrada web stranica za Osijek",
+      "title": "Izrada poslovnih web stranica za Osijek",
+      "meta_description": "Poslovni webovi za tvrtke iz Osijeka. Predstavite rad, slobodna radna mjesta i mogućnosti suradnje kroz CMS koji vaš tim zna koristiti.",
+      "intro": "Tvrtkama iz Osijeka izrađujemo poslovne webove koji kupcima objašnjavaju ponudu, a kandidatima daju jasne informacije o otvorenim radnim mjestima. Projekt i primopredaju vodimo online.",
+      "link_description": "Poslovni web sa stranicama usluga i natječajima koje tim može održavati.",
+      "scope": [
+        ["Stranice koje služe prodaji", "Svaku uslugu predstavljamo s jasnim opsegom, procesom i odabranim primjerima. Kupac će iz te stranice moći poslati poslovni upit."],
+        ["Odvojena stranica za karijere", "Oglasi mogu imati naziv uloge, lokaciju, način rada i rok prijave. Povezujemo vaš postojeći kanal za prijave ili dogovaramo obrazac s minimalnim poljima."],
+        ["Urednički postupak", "Jednom predavate sadržaj usluga, a nova radna mjesta mogu se objavljivati kad nastanu. Dogovaramo tko može objaviti sadržaj i kako se zatvoreni natječaji prikazuju."]
+      ],
+      "journey_link": "Primjer objave natječaja",
+      "journey_title": "Otvorena radna mjesta koja se mogu održavati",
+      "journey_context": "Zamislimo osječku tvrtku koja redovito traži tehničare. Kandidat treba brzo provjeriti o kojoj se ulozi radi i kako se prijaviti.",
+      "journey": [
+        ["Tim priprema oglas", "Urednik dodaje naslov, lokaciju, uvjete i zadnji dan prijave u dogovorena polja."],
+        ["Kandidat ide na prijavu", "Na telefonu vidi otvoreno mjesto, rok i poveznicu na službeni kanal za prijave odvojeno od obrasca za kupce."],
+        ["Oglas se zatvara", "Tim može najprije zatvoriti prijave, a zatim ukloniti oglas s popisa otvorenih mjesta. Na primopredaji to prolazimo s vašim urednikom."]
+      ],
+      "price": [
+        ["Opseg poslovnog weba", "Broj predložaka, raspon sadržaja i postupak odobravanja čine većinu opsega. Pripremu sadržaja i fotografija iskazujemo zasebno."],
+        ["Kanali za prijave", "Poveznica prema postojećem sustavu razlikuje se od vlastitog obrasca. Dogovaramo nužna polja i kome se zahtjev prosljeđuje."]
+      ],
+      "faq": [
+        ["Može li se web objaviti i bez oglasa?", "Da. Odjeljak za otvaranje natječaja možemo pripremiti uz početnu ponudu ili ga dodati naknadno kada vaš tim ima prvi natječaj."],
+        ["Kako razlikujemo poruke kupaca od prijava?", "Vodimo ih na odvojene kanale, označimo poruke i provjerimo dostavu svakog tipa na dogovorenu adresu."]
+      ],
+      "contact_brief": "Pošaljite popis usluga i primjer natječaja ili kanala za prijave. Navedite tko u timu uređuje sadržaj.",
+      "meta_title": "Izrada web stranica Osijek | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "zadar": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-zadar",
+      "city": "Zadar",
+      "label": "Izrada web stranica za Zadar",
+      "title": "Izrada web stranica za tvrtke iz Zadra",
+      "meta_description": "Izrada web stranica za zadarske prijevoznike, transfere i uslužne tvrtke. Prikažite rute, uvjete i primjer upita na više jezika.",
+      "intro": "Za tvrtke iz Zadra izrađujemo web stranice koje posjetitelju daju točne podatke za upit. Za transfere to znači odredište, mjesto preuzimanja, broj putnika i termin. S vašim timom surađujemo na daljinu.",
+      "link_description": "Stranice ruta i višejezični upiti za transfere i usluge.",
+      "scope": [
+        ["Rute koje nudite", "Na stranici rute navodimo mjesta polaska i dolaska, koliko putnika primate i što je potrebno za izračun ponude. Rute mogu dijeliti predložak i imati vlastiti sadržaj."],
+        ["Dolazak različitim prijevozom", "Odvojeno prikažemo upute za aerodrom, luku ili smještaj ako ih nudite. Putnik iz upute može odmah prijeći na relevantan upit."],
+        ["Ponuda na više jezika", "Dogovaramo koje podatke putnik upisuje na svakom jeziku i kako ih vaš dispečer vidi. Polja za vrijeme, prtljagu i dodatne potrebe jasna su prije slanja."]
+      ],
+      "journey_link": "Primjer upita za transfer",
+      "journey_title": "Što nam treba za transfer s aerodroma",
+      "journey_context": "Zadarska turistička zajednica navodi zračnu luku kao jednu od opcija dolaska. Na primjeru privatnog transfera putnik može dati potrebne podatke prije nego što zatraži cijenu.",
+      "source": ["Informacije o Zračnoj luci Zadar", "https://zadar.travel/useful-information/getting-around/zra%C4%8Dna-luka-zadar"],
+      "journey": [
+        ["Putnik otvara stranicu rute", "Najprije vidi područje koje vozilo pokriva, kontakt i kakvu prtljagu može ponijeti."],
+        ["Navodi vrijeme i mjesto", "U zahtjevu odabire datum, procijenjeno vrijeme dolaska, odredište, broj putnika i prtljagu. Broj leta može dodati ako ga već zna."],
+        ["Prijevoznik potvrđuje ponudu", "Tim dobije naziv rute i podatke za računanje cijene. S weba može napisati treba li još nešto provjeriti prije potvrde."]
+      ],
+      "price": [
+        ["Rute, prijevodi i karte", "Cijena ovisi o različitim predlošcima, broju ruta i jezicima. Ako već imate rezervacijski sustav, opseg povezivanja procjenjujemo zasebno."],
+        ["Provjera prije sezone", "Prije objave prolazimo jedan upit na telefonu po jeziku. Dogovaramo tko može zamijeniti upute kad se mjesto preuzimanja promijeni."]
+      ],
+      "faq": [
+        ["Možemo li ostaviti postojeći broj za upite?", "Da. Možemo povezati telefon ili postojeći kanal i, po dogovoru, dodati obrazac za putnike koji žele poslati sve podatke odjednom."],
+        ["Mora li svaka ruta imati svoju stranicu?", "Ovisi o razlikama među rutama. Slične destinacije možemo grupirati, a zasebnu stranicu koristimo kad ima vlastite uvjete i razlike važne putniku."]
+      ],
+      "contact_brief": "Pošaljite primjere ruta ili usluga, željene jezike i podatke koje trebate prije odgovora na upit.",
+      "meta_title": "Izrada web stranica Zadar | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Što putnik treba znati prije transfera?"
+    },
+    "sibenik": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-sibenik",
+      "city": "Šibenik",
+      "label": "Izrada web stranica za Šibenik",
+      "title": "Izrada web stranica za izlete i tvrtke iz Šibenika",
+      "meta_description": "Webovi za izlete i usluge u Šibeniku. Predstavite rutu, trajanje, polazište i uvjete te primajte upite za grupe na više jezika.",
+      "intro": "Izrađujemo webove za šibenske organizatore izleta i poslovne usluge. Za ture pomažemo posjetitelju razlikovati opcije po trajanju, polazištu i uvjetima, pa poslati upit za odgovarajuću grupu.",
+      "link_description": "Pregled izleta s jasnim uvjetima, polazištima i upitima za grupe.",
+      "scope": [
+        ["Usporedba tura", "Odvojimo podatke koji gostu mijenjaju odluku, kao što su trajanje, mjesto susreta, uključena oprema i jezik vodiča."],
+        ["Informacije prije polaska", "U dogovoru s operatorom prikažemo kako doći na mjesto susreta, što ponijeti i što se događa ako se uvjeti promijene."],
+        ["Odabrana tura u zahtjevu", "Obrazac može preuzeti odabranu turu, a gost navodi datume i veličinu grupe. Operator potvrđuje termin i konkretne uvjete."]
+      ],
+      "journey_link": "Primjer obilaska za grupu",
+      "journey_title": "Od odabira rute do upita za grupu",
+      "journey_context": "Visit Šibenik odvojeno predstavlja izlete i iskustva poput šetnice u kanalu sv. Ante. Na primjeru organizatora ture gost bi mogao prije upita provjeriti polazište i tempo obilaska.",
+      "source": ["Šetnica u kanalu sv. Ante", "https://www.visitsibenik.hr/iskustva/setnica-u-kanalu-sv-ante-obalna-promenada-do-mora"],
+      "journey": [
+        ["Organizator opisuje opcije", "Na naslovnici odvaja kratke i dulje ture. Svaka stranica nudi jasne upute ako dio rute nije prikladan za sve sudionike."],
+        ["Voditelj grupe odabire turu", "Navodi željeni dan, broj ljudi i jezik grupe. Može pitati za prilagodbu rute bez upisivanja nepotrebnih osobnih podataka."],
+        ["Tim šalje dogovor", "U upitu stiže naziv ture. Tim potvrđuje cijenu, termin i mjesto susreta te šalje ažurirane uvjete kad je to potrebno."]
+      ],
+      "price": [
+        ["Broj formata tura", "Ako ture dijele isti raspored, u ponudi odvojimo izradu predloška od popunjavanja opisa, fotografija i dodatnih jezika."],
+        ["Promjena termina i uvjeta", "Dogovaramo tko ažurira kontakt na dan izleta, polazište i uvjete. Vanjski widget za termine razmatramo prema stvarnom sustavu."]
+      ],
+      "faq": [
+        ["Možemo li prikazati privatne i grupne ture zajedno?", "Možemo. Označimo razlike u polasku, kapacitetu ili jeziku, a u obrascu se pamti odabrana opcija."],
+        ["Trebamo li gotove prijevode?", "Možemo krenuti od jednog jezika. Prije izrade se dogovaramo koji jezici ulaze u ponudu i tko potvrđuje točnost uputa i uvjeta."]
+      ],
+      "contact_brief": "Pošaljite popis tura ili usluga, mjesto polaska i primjer pitanja koje vam gosti često postave.",
+      "meta_title": "Izrada web stranica Šibenik | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Koje informacije trebaju gostima prije izleta?"
+    },
+    "dubrovnik": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-dubrovnik",
+      "city": "Dubrovnik",
+      "label": "Izrada web stranica za Dubrovnik",
+      "title": "Izrada web stranica za tvrtke iz Dubrovnika",
+      "meta_description": "Poslovni webovi za dubrovačke prostore i organizatore događanja. Prikažite kapacitet, postave prostora i zatražite korisne upite na više jezika.",
+      "intro": "Za dubrovačke prostore, organizatore događanja i druge tvrtke izrađujemo webove po mjeri. Kupac prije upita može provjeriti kapacitet, dostupne postave i što vaš tim može organizirati. Radimo na daljinu.",
+      "link_description": "Web za prostore i događanja s kapacitetima, postavama i upitima.",
+      "scope": [
+        ["Stranice prostora", "Za svaki prostor prikazujemo kapacitet po postavi, mogućnosti ulaska i opremu koju možete ponuditi, uz fotografije ili tlocrt."],
+        ["Odvojene informacije za organizatora", "Kupac može razlikovati najam prostora, dodatne usluge i vanjske dobavljače. Ovisno o jeziku vidi isti opseg ponude i kontakt."],
+        ["Upiti s datumom i veličinom grupe", "Uz naziv prostora mogu se tražiti željeni datum, broj sudionika, postava i dodatna oprema. Vaš tim naknadno potvrđuje raspoloživost."]
+      ],
+      "journey_link": "Primjer upita za događanje",
+      "journey_title": "Kad organizator mora potvrditi kapacitet",
+      "journey_context": "Na primjeru dubrovačkog prostora organizator traži mjesto za manji stručni skup. Treba brzo usporediti postave i prikupiti dovoljno podataka za ponudu.",
+      "journey": [
+        ["Pregledava dvije postave", "Na telefonu vidi kapacitet za sjedenje i za prijem, galeriju i jesu li projekcija ili razglas dostupni."],
+        ["Navodi svoje uvjete", "U obrascu navodi preferirani datum, očekivani broj gostiju i osnovnu opremu. Ako razmatra i drugi dan, može to dopisati."],
+        ["Tim pregledava zahtjev", "Poruka stiže s nazivom prostora i traženom postavom. Tim može odgovoriti s terminom obilaska ili procjenom ponude."]
+      ],
+      "price": [
+        ["Broj prostora i oprema", "Dogovaramo predloške, pripremu tablica kapaciteta, unos fotografija i eventualne PDF tlocrte. Četiri prostora mogu dijeliti istu strukturu uz različite podatke."],
+        ["Jezici i kalendar", "Svaki dodatni jezik traži pregled tehničkih detalja i upita. Poveznicu na vanjski kalendar i integraciju dostupnosti iskazujemo odvojeno."]
+      ],
+      "faq": [
+        ["Možemo li mijenjati kapacitete i galerije?", "Možemo ih uključiti u CMS. Pri predaji vaš tim testira promjenu kapaciteta jedne postave i zamjenu fotografije."],
+        ["Radi li obrazac i za individualni upit bez datuma?", "To možemo dogovoriti. Ako je datum posjetitelju nepoznat, u obrascu može ostaviti raspon ili opis planiranog događanja."]
+      ],
+      "contact_brief": "Pošaljite popis prostora ili usluga, osnovne kapacitete i primjer podataka koje organizator treba navesti za ponudu.",
+      "meta_title": "Izrada web stranica Dubrovnik | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Što organizator treba znati o prostoru?"
     }
   },
   "sl": {
@@ -118,6 +295,77 @@
         ["Kaj pošljemo za prvo oceno?", "Pošljite naslov obstoječe strani, seznam storitev, ki se spreminjajo, in primer strani, ki jo želite ohraniti. Dodajte želene jezike in okvirni rok."]
       ],
       "contact_brief": "Pošljite naslov trenutne spletne strani, katere storitve želite bolje predstaviti in ali želite ohraniti obstoječe naslove, jezike ali CMS."
+    },
+    "maribor": {
+      "parent": "web",
+      "slug": "storitve/izdelava-spletnih-strani-maribor",
+      "city": "Maribor",
+      "label": "Izdelava spletnih strani za Maribor",
+      "title": "Izdelava spletnih strani za podjetja v Mariboru",
+      "meta_description": "Poslovne spletne strani za podjetja iz Maribora. Predstavite izvedene projekte, obseg dela in pogoje za povpraševanje.",
+      "intro": "Podjetjem iz Maribora izdelamo spletne strani, na katerih kupci vidijo, katere projekte prevzemate in kako delate. Zasnovo, razvoj in predajo uskladimo na daljavo.",
+      "link_description": "Predstavitev storitev in izvedenih projektov z obrazcem za konkretno povpraševanje.",
+      "scope_title": "Kako kupcu pokažete obseg in način dela?",
+      "scope": [
+        ["Storitve z jasnim obsegom", "Za vsako storitev opišemo, komu je namenjena, kaj vključuje in kaj kupec pripravi pred prvim pogovorom."],
+        ["Reference, ki pojasnijo odločitev", "Pri vsakem projektu pokažemo začetno stanje, obseg posega, omejitve in rezultat, ki ga lahko dokumentirate. Primer povežemo s storitvijo."],
+        ["Dodajanje projektov", "V CMS-u lahko določen urednik doda nove fotografije, spremeni opis in izbere storitev, na kateri se primer prikaže."]
+      ],
+      "journey_link": "Primer povpraševanja po ogledu reference",
+      "journey_title": "Od ogleda projekta do uporabnega povpraševanja",
+      "journey_context": "Predstavljajmo si mariborsko podjetje za obnovo poslovnih prostorov. Naročnik želi preveriti, ali ekipa prevzema projekte njegovega obsega.",
+      "journey": [
+        ["Poišče soroden projekt", "Na strani reference vidi vrsto prostora, vlogo izvajalca in katere faze je ekipa opravila."],
+        ["Preveri storitev", "Povezava ga vodi na opis ustrezne storitve. Tu lahko preveri potrebne podatke in pošlje okviren obseg, lokacijo in rok."],
+        ["Ekipa prejme kontekst", "V sporočilu vidi izbrano storitev in podatke za pogovor. Ob predaji preverimo še dodajanje nove reference in povezavo s storitvijo."]
+      ],
+      "price": [
+        ["Predloga reference in gradivo", "Ločimo izdelavo predloge, pripravo opisov in vnos posameznih projektov. Obseg je odvisen tudi od tega, katere fotografije in podatke lahko objavite."],
+        ["Urejanje po objavi", "V ponudbi navedemo, katere vsebine urejate sami ter katere spremembe sodijo v nadaljnjo podporo."]
+      ],
+      "faq": [
+        ["Lahko objavimo reference brez imen naročnikov?", "Da, če imate pravico objaviti gradivo. Primer lahko opišemo z vrsto projekta, obsegom in potrjenimi fotografijami."],
+        ["Kaj če imamo gradivo samo v dokumentih?", "Pošljite primer. Skupaj določimo, kateri podatki sodijo na spletno stran ter kdaj ima spremljevalni dokument še vedno smisel."]
+      ],
+      "contact_brief": "Pošljite seznam storitev, primer izvedenega projekta in podatke, ki jih potrebujete za prvo povpraševanje.",
+      "meta_title": "Izdelava spletnih strani za Maribor | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "koper": {
+      "parent": "web",
+      "slug": "storitve/izdelava-spletnih-strani-koper",
+      "city": "Koper",
+      "label": "Izdelava spletnih strani za Koper",
+      "title": "Izdelava spletnih strani za ponudnike doživetij v Kopru",
+      "meta_description": "Spletne strani za doživetja in storitve v Kopru. Predstavite kolesarske poti, jezike vodenja, opremo in prijavo ali povpraševanje.",
+      "intro": "Za ponudnike doživetij in druga podjetja iz Kopra izdelamo strani, ki gostu pomagajo izbrati primerno aktivnost, razumeti pogoje in poslati povpraševanje. Sodelujemo na daljavo.",
+      "link_description": "Splet za ponudnike izletov in aktivnosti z jasnimi podatki o trasi, opremi in jeziku.",
+      "scope_title": "Kaj mora gost vedeti pred odhodom?",
+      "scope": [
+        ["Opis trase in zahtevnosti", "Poudarimo dolžino, trajanje, zahtevnost in izhodišče po podatkih, ki jih potrdi organizator. Na telefonu so podrobnosti dostopne brez iskanja po dokumentu."],
+        ["Jeziki in vrsta opreme", "Pri vodenih ogledih navedemo jezike, možnosti najema ter podatke, ki jih potrebujete za pripravo opreme."],
+        ["Sezonske spremembe", "Urednik lahko označi, kdaj doživetje poteka, kje se skupina sreča ter kakšni so pogoji spremembe termina."]
+      ],
+      "journey_link": "Primer rezervacijskega povpraševanja",
+      "journey_title": "Gost primerja kolesarski turi in izbere izhodišče",
+      "journey_context": "Visit Koper predstavlja vodena kolesarska doživetja v Istri. Na primeru ponudnika kolesar najprej preveri zahtevnost, nato pošlje podatke za izbiro opreme.",
+      "source": ["Kolesarska doživetja v Istri", "https://visitkoper.si/en/experiences/cycling-around-istria/"],
+      "journey": [
+        ["Razume razliko med trasama", "Na telefonu primerja predvideno trajanje, težavnost, mesto srečanja in ali potrebuje lastno kolo."],
+        ["Izbere datum in opremo", "V obrazcu navede število udeležencev, datum, jezik vodenja in željo po najemu. Izbrana tura se samodejno prenese v sporočilo."],
+        ["Ponudnik odgovori s pogoji", "Ekipa potrdi termin ali predlaga drugo možnost. Za spletni prikaz se uporabljajo podatki, ki jih ponudnik dejansko vzdržuje."]
+      ],
+      "price": [
+        ["Trajanje, različice in jeziki", "Ločimo izdelavo predloge od vnosa tur ter prevodov podatkov o opremi, izhodiščih in pogojih."],
+        ["Povpraševanje ali zunanja rezervacija", "V ponudbi določimo, ali urejamo obrazec ali povezavo na obstoječi rezervacijski sistem. Integracijo razpoložljivosti preverimo posebej."]
+      ],
+      "faq": [
+        ["Kaj če gost ne ve, katera tura je zanj?", "Ponudimo voden izbor po zahtevnosti in času. V splošnem povpraševanju lahko gost opiše izkušnje in želje brez izbire konkretne ture."],
+        ["Lahko posodobimo izhodišče in pogoje?", "Če vključimo CMS, uredimo polja za te podatke. Ob predaji skupaj preizkusimo spremembo v jezikovnih različicah."]
+      ],
+      "contact_brief": "Pošljite podatke o aktivnostih, jezike vodenja, mesto srečanja in sistem, v katerem danes potrjujete rezervacije.",
+      "meta_title": "Izdelava spletnih strani za Koper | Ostrelya",
+      "modified": "2026-11-19"
     }
   },
   "sr-rs": {
@@ -158,6 +406,497 @@
         ["Kako izgleda saradnja na daljinu?", "Prvi razgovor, pregled dizajna i primopredaju vodimo onlajn. Pošaljite primer upita koji želite da dobijate i spisak usluga koje želite da predstavite."]
       ],
       "contact_brief": "Pošaljite link do sajta ili javnog profila, spisak najvažnijih usluga i primer podataka koje kupac treba da navede kada vam pošalje upit."
+    },
+    "beograd": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-beograd",
+      "city": "Beograd",
+      "label": "Izrada sajtova za Beograd",
+      "title": "Izrada sajtova za firme iz Beograda",
+      "meta_description": "Izrada poslovnih sajtova za firme iz Beograda. Jasne stranice savetodavnih usluga, profili tima i upiti po oblastima rada.",
+      "intro": "Za firme iz Beograda izrađujemo sajtove na kojima klijent može da izabere oblast usluge, upozna tim i zakaže prvi razgovor. Obim, dizajn i primopredaju dogovaramo onlajn.",
+      "link_description": "Poslovni sajt koji odvaja oblasti savetovanja i dovodi upit do pravog tima.",
+      "scope": [
+        ["Oblasti savetovanja", "Za svaku oblast navodimo kome služi, u kojim situacijama pomažete i šta obuhvata prvi razgovor. Zajedno biramo primere koje možete javno da pokažete."],
+        ["Profili koji objašnjavaju uloge", "Posebno predstavimo stručnjake, relevantno iskustvo i teme kojima se bave. Posetilac može da razume ko je uključen pre upita."],
+        ["Forma za prvi kontakt", "Upit može da prenese odabranu oblast i kratak opis cilja. Osetljive dokumente klijent razmenjuje tek kada tim dogovori način."]
+      ],
+      "journey_link": "Primer upita za konsultacije",
+      "journey_title": "Od oblasti usluge do odgovarajućeg savetnika",
+      "journey_context": "Primer poslovnog sajta za beogradski konsultantski tim. Vlasnik firme treba da razume ko može da pomogne oko procesa nabavke pre nego što zatraži sastanak.",
+      "journey": [
+        ["Posetilac čita opis oblasti", "Vidi tipove problema, faze rada i šta tim očekuje pre prvog poziva."],
+        ["Označava temu i cilj", "Navodi oblast, kratak opis i kontakt. Za zakazivanje može da koristi termin iz postojećeg kalendara ako je tako dogovoreno."],
+        ["Upit se dodeljuje timu", "Poruka stiže odgovornima za temu. Oni potvrđuju razgovor i javljaju šta bi bilo korisno pripremiti."]
+      ],
+      "price": [
+        ["Usluge, tim i sadržaj", "Ponuda odvojeno navodi šablone za oblast, profil i referencu. Za svaki sadržaj utvrđujemo ko piše, uređuje i odobrava objavu."],
+        ["Provera kontakta i zakazivanja", "Običan upit, spoljni kalendar i integracija sa CRM-om imaju različit obim. Pre odluke proveravamo postojeće alate."]
+      ],
+      "faq": [
+        ["Može li svaka oblast imati različit kontakt?", "Može. U opsegu dogovaramo primaoca po oblasti i rezervni kontakt ako poruka ne pripada nijednom timu."],
+        ["Možemo li dodavati nove stručnjake?", "Da, ako u ponudu uključimo profil tima u CMS-u. Na primopredaji prolazimo dodavanje jednog profila i njegove oblasti rada."]
+      ],
+      "contact_brief": "Pošaljite listu oblasti, kako su danas podeljene odgovornosti i primer prvog upita koji želite da dobijate.",
+      "meta_title": "Izrada sajtova za Beograd | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Kako predstaviti različite oblasti savetovanja?"
+    },
+    "nis": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-nis",
+      "city": "Niš",
+      "label": "Izrada sajtova za Niš",
+      "title": "Izrada sajtova za firme iz Niša",
+      "meta_description": "Izrada sajtova za niške firme. Prikažite područje usluge, uslove izlaska na teren i podatke koje kupac treba da pošalje.",
+      "intro": "Za firme iz Niša izrađujemo sajtove koji kupcu objašnjavaju gde pružate uslugu, šta je potrebno za procenu i kako da se javi. Dizajn, razvoj i testiranje vodimo na daljinu.",
+      "link_description": "Jasne stranice terenskih usluga s područjem rada i obrascem za procenu.",
+      "scope": [
+        ["Opis odlaska na teren", "Na stranici usluge navodimo koje vrste intervencija radite i da li je potreban prethodni dogovor. Kupac vidi ako za određeni posao prvo tražite fotografiju ili opis."],
+        ["Stvarno područje rada", "Lista pokrivenih područja i uslovi izlaska pripremaju se prema vašem poslovanju. Povezujemo ih s uslugama koje tamo zaista pružate."],
+        ["Kontakt prilagođen telefonu", "Vidljivo radno vreme, telefonski poziv ili upit za procenu vode do odgovarajućeg kontakta. Različite vrste upita mogu da imaju različita polja."]
+      ],
+      "journey_link": "Primer upita za teren",
+      "journey_title": "Kako proveriti može li ekipa da dođe",
+      "journey_context": "Zamislimo nišku firmu koja radi montažu i servis opreme na terenu. Kupac treba da proveri da li pokrivate adresu i kakav je sledeći korak.",
+      "journey": [
+        ["Bira vrstu usluge", "Na telefonu vidi razliku između pregleda, ugradnje i redovnog servisa i koja područja firma pokriva."],
+        ["Opisuje mesto i opremu", "U upitu navodi naselje, tip opreme, opis i termin. Za prvi kontakt može da navede okvirnu lokaciju."],
+        ["Tim potvrđuje posetu", "Vidi odabranu uslugu i podatke za procenu. Tim zatim dogovara preciznu adresu, vreme i eventualne troškove dolaska."]
+      ],
+      "price": [
+        ["Broj usluga i pravila po području", "U ponudi razdvajamo osnovnu strukturu, unos podataka i specifična pravila koja posetilac treba da vidi pre upita."],
+        ["Podrška i promene radnog vremena", "Dogovaramo kako se menja područje koje pokrivate, odsustvo i radno vreme. Održavanje, licence i hosting navodimo zasebno."]
+      ],
+      "faq": [
+        ["Možemo li razlikovati hitan poziv i redovan upit?", "Možemo prikazati kanal i dostupnost koju zaista pružate. Posetilac će jasno videti koja vrsta upita ide kojim putem."],
+        ["Da li usluge mogu pojedinačno da se uređuju?", "Da, uz dogovoreni CMS. Na predaji proveravamo kako da promenite uslove i polja koja koristite."]
+      ],
+      "contact_brief": "Pošaljite usluge, područja na koja izlazite i podatke koje kupac treba da navede za prvu procenu.",
+      "meta_title": "Izrada sajtova za Niš | Ostrelya",
+      "modified": "2026-11-19",
+      "scope_title": "Koje podatke kupac treba pre izlaska na teren?"
+    }
+  },
+  "bs": {
+    "sarajevo": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-sarajevo",
+      "city": "Sarajevo",
+      "label": "Izrada web stranica za Sarajevo",
+      "title": "Izrada web stranica za firme iz Sarajeva",
+      "meta_description": "Web stranice za sarajevske firme s više poslovnica. Prikažite gdje je usluga dostupna, radno vrijeme i kontakt prave lokacije.",
+      "intro": "Sarajevskim firmama izrađujemo web stranice na kojima kupac može izabrati uslugu i odmah vidjeti na kojoj je lokaciji dostupna. Dizajn, razvoj i primopredaju dogovaramo online.",
+      "link_description": "Jedan poslovni web s jasnim stranicama poslovnica i upitima za pravu lokaciju.",
+      "scope": [
+        ["Usluge i poslovnice", "Usluga može imati jednu stranicu, a svaka poslovnica vlastite podatke o dostupnosti, radnom vremenu i kontaktu. Kupac ne mora zvati da bi saznao gdje treba otići."],
+        ["Izmjene po lokaciji", "U dogovorenom CMS-u odgovorna osoba može izmijeniti radno vrijeme ili privremenu obavijest za svoju poslovnicu."],
+        ["Poruke za pravi tim", "Obrazac može evidentirati odabranu poslovnicu i vrstu usluge. Dogovorimo šta se dešava s porukom ako kupac ne zna koju lokaciju treba izabrati."]
+      ],
+      "journey_link": "Primjer upita po poslovnici",
+      "journey_title": "Kad ista firma nudi različite usluge na različitim lokacijama",
+      "journey_context": "Zamislimo sarajevsku firmu s dva ureda. Kupac s telefona traži uslugu koja je dostupna samo na jednoj lokaciji.",
+      "journey": [
+        ["Najprije otvara uslugu", "Na istoj stranici vidi koje je poslovnice nude, kada primaju stranke i treba li najava."],
+        ["Bira poslovnicu", "Obrazac prenese odabranu poslovnicu. Kupac dodaje kontakt i okvirno vrijeme kada mu odgovara dolazak."],
+        ["Poruka stiže odgovornoj osobi", "Poslovnica odgovara s mogućim vremenom ili uputama. Prije objave testiramo poruku za obje lokacije i opći kontakt."]
+      ],
+      "price": [
+        ["Predložak poslovnice i unos sadržaja", "Zasebno računamo pripremu predloška i unos podataka za svaku lokaciju. Ako poslije otvorite novu poslovnicu, provjerimo može li koristiti isti obrazac."],
+        ["Radno vrijeme i integracije", "Dogovaramo ko mijenja podatke i povezuje li se web s postojećim rasporedom. Poveznica na vanjski raspored i integracija imaju različit obim."]
+      ],
+      "faq": [
+        ["Možemo li početi s jednom poslovnicom?", "Možemo. Strukturu postavimo tako da poslije možete dodati lokaciju s vlastitim kontaktom i dostupnim uslugama."],
+        ["Možemo li zadržati postojeću domenu i brojeve?", "Da. Pregledamo postojeći web i dogovaramo šta ostaje, koje adrese se mijenjaju i kome trebaju pristupi."]
+      ],
+      "contact_brief": "Pošaljite popis poslovnica, dostupne usluge po lokaciji i primjer upita koji često završi kod pogrešne osobe.",
+      "meta_title": "Izrada web stranica za Sarajevo | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "banja-luka": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-banja-luka",
+      "city": "Banja Luka",
+      "label": "Izrada web stranica za Banju Luku",
+      "title": "Izrada web stranica za firme iz Banje Luke",
+      "meta_description": "Poslovne web stranice za firme iz Banje Luke. Prikažite servisne usluge, tipove uređaja i podatke potrebne za prvi upit.",
+      "intro": "Firmama iz Banje Luke izrađujemo poslovne web stranice. Za servise i tehničku podršku posebno planiramo kako kupac prepoznaje odgovarajuću uslugu i šalje podatke za prvu procjenu. Saradnju vodimo na daljinu.",
+      "link_description": "Web za servisne firme s upitom prema uređaju i vrsti problema.",
+      "scope": [
+        ["Jasan raspon servisa", "Odvojimo tipove opreme, podržane proizvođače koje možete javno navesti i usluge koje pružate. Kupac vidi kome je namijenjena svaka usluga."],
+        ["Predaja opreme ili dolazak", "Na stranici označimo ide li oprema u servis, treba li najava ili postoji izlazak na teren. Istaknemo gdje kupac može provjeriti radno vrijeme."],
+        ["Obrazac s potrebnim podacima", "Dogovaramo koja polja pomažu prvoj procjeni, naprimjer tip uređaja, model i opis problema. Za dodatnu dokumentaciju tim naknadno dogovara način slanja."]
+      ],
+      "journey_link": "Primjer prijave servisa",
+      "journey_title": "Od modela uređaja do prve procjene",
+      "journey_context": "Zamislimo kupca koji treba servis poslovne opreme. Prije dolaska želi saznati prima li servis taj tip uređaja i šta da pripremi.",
+      "journey": [
+        ["Pronalazi tip opreme", "Na stranici usluge provjerava podržani tip, šta može dostaviti i gdje se uređaj prima."],
+        ["Opisuje problem", "U obrazac unosi model, kada se problem pojavio i kako ga tim može kontaktirati. Po potrebi označava ima li ugovor o podršci."],
+        ["Servis dogovara sljedeći korak", "Poruka je označena prema vrsti opreme. Tim može zatražiti dodatne podatke ili dogovoriti prijem uređaja."]
+      ],
+      "price": [
+        ["Kategorije opreme i sadržaj", "Obim zavisi od toga razlikuju li se vrste servisa po postupku i imaju li zasebne uvjete. U ponudi navodimo šta pripremate vi i šta unosimo mi."],
+        ["Prijem upita i postojeći sistem", "Ako koristite sistem za prijave, prvo provjerimo može li se povezati bez novog obrasca. Trošak povezivanja navodimo zasebno."]
+      ],
+      "faq": [
+        ["Možemo li navesti cijenu samo za dijagnostiku?", "Možemo istaknuti cijenu koju ste odobrili i objasniti šta uključuje. Ostatak se može procijeniti nakon pregleda."],
+        ["Može li naš tim mijenjati podržane modele?", "Može ako je ta lista dio dogovorenog CMS-a. Na primopredaji zajedno dodamo ili uredimo jednu stavku."]
+      ],
+      "contact_brief": "Pošaljite vrste opreme ili usluga, šta kupac treba prijaviti i kako vaš tim sada prima zahtjeve.",
+      "meta_title": "Izrada web stranica za Banju Luku | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "tuzla": {
+      "parent": "web",
+      "slug": "usluge/izrada-web-stranica-tuzla",
+      "city": "Tuzla",
+      "label": "Izrada web stranica za Tuzlu",
+      "title": "Izrada web stranica za firme i edukacije iz Tuzle",
+      "meta_description": "Web stranice za firme i centre za edukaciju u Tuzli. Prikažite programe, termine i uslove prijave uz uređivanje sadržaja i podršku.",
+      "intro": "Za firme i centre za edukaciju iz Tuzle izrađujemo web stranice koje posjetiocu objašnjavaju šta program uključuje, kada počinje i kako poslati prijavu ili pitanje. S vašim timom radimo na daljinu.",
+      "link_description": "Stranice programa i termini grupa koje vaš tim može sam uređivati.",
+      "scope": [
+        ["Stranice programa", "Svaki program može imati predznanje, nastavni plan, trajanje, lokaciju i način rada. U sadržaju odvajamo opći opis od vremena narednog ciklusa."],
+        ["Termin grupe bez prepravljanja cijele stranice", "Ako je CMS dio projekta, urednik može dodati datum početka i zatvoriti prijave kad ih više ne prima."],
+        ["Prijava ili lista interesa", "Posjetilac bira program i grupu. Ako termina još nema, možemo pripremiti obrazac za iskaz interesa uz jasno objašnjenje šta slijedi."]
+      ],
+      "journey_link": "Primjer prijave na program",
+      "journey_title": "Polaznik treba naći pravi termin",
+      "journey_context": "Na primjeru centra u Tuzli odrasli polaznik može birati između dva ciklusa istog kursa. Treba razumjeti raspored prije nego što se javi.",
+      "journey": [
+        ["Pregleda uslove i raspored", "Vidi kome je kurs namijenjen, predznanje i razliku između večernje i vikend grupe."],
+        ["Bira grupu", "U obrascu potvrđuje program i termin te ostavlja podatke potrebne za odgovor."],
+        ["Centar šalje potvrdu", "Poruka sadrži izabrani ciklus. Urednik zatvara popunjenu grupu i može objaviti sljedeći termin bez promjene stranice kursa."]
+      ],
+      "price": [
+        ["Broj programa i predložaka", "Ako svi programi imaju isti raspored, dijele predložak. U ponudi odvojimo razvoj, unos programa i podešavanje načina uređivanja termina."],
+        ["Vrsta prijave", "Jednostavan obrazac za interes razlikuje se od povezivanja sa sistemom za prijave. Dogovaramo šta potreban proces već podržava."]
+      ],
+      "faq": [
+        ["Može li se program vidjeti kad su prijave zatvorene?", "Da. Opis može ostati dostupan, uz oznaku da je prijava zatvorena i uputu gdje će biti sljedeći datum."],
+        ["Možemo li objaviti samo datum sljedeće grupe?", "Možemo dogovoriti takav unos. Vaš tim će na predaji isprobati dodavanje i zatvaranje jedne grupe."]
+      ],
+      "contact_brief": "Navedite vrste programa ili usluga, gdje sada objavljujete raspored i kojim putem primate prijave.",
+      "meta_title": "Izrada web stranica za Tuzlu | Ostrelya",
+      "modified": "2026-11-19"
+    }
+  },
+  "sr-me": {
+    "podgorica": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-podgorica",
+      "city": "Podgorica",
+      "label": "Izrada sajtova za Podgoricu",
+      "title": "Izrada sajtova za firme iz Podgorice",
+      "meta_description": "Izrada poslovnih sajtova za Podgoricu. Stranice za najam prostora, provjeru uslova i slanje upita sa odabranim terminom.",
+      "intro": "Firmama iz Podgorice izrađujemo sajtove koji kupcu pomažu da uporedi ponudu i javi se za odgovarajući termin. Za prostore za najam odvojimo uslove, kapacitete i podatke potrebne za prvi obilazak. Radimo na daljinu.",
+      "link_description": "Sajt sa pregledom prostora, uslovima najma i zahtjevom za obilazak.",
+      "scope": [
+        ["Prostori i uslovi najma", "Za svaki prostor prikazujemo namjenu, površinu, dostupnu opremu, trajanje najma i osnovne uslove koje potvrdite. Svaka jedinica ima link koji se može poslati kupcu."],
+        ["Različite vrste upita", "Ako nudite kraći ili duži najam, posjetilac vidi koji zahtjev treba da pošalje. U obrascu se prenosi prostor koji gleda."],
+        ["Uređivanje dostupnosti", "Dogovaramo prikazuje li sajt status po prostoru ili upućuje na sistem koji vodite. Tim može označiti da prostor trenutno nije dostupan."]
+      ],
+      "journey_link": "Primjer zahtjeva za obilazak",
+      "journey_title": "Kupac bira prostor i predlaže termin obilaska",
+      "journey_context": "Zamislimo ponuđača poslovnog prostora u Podgorici. Kupac traži manju kancelariju i mora znati uslove prije nego zakaže obilazak.",
+      "journey": [
+        ["Upoređuje dvije ponude", "Na stranicama nalazi površinu, očekivano trajanje najma i šta je uključeno. Može otvoriti galeriju ili tlocrt koji ste odlučili objaviti."],
+        ["Šalje zahtjev", "Obrazac prenosi naziv prostora i traži okvirni datum useljenja ili termin obilaska po dogovoru."],
+        ["Tim potvrđuje sljedeći korak", "Upit stiže s odabranim prostorom. Osoba zadužena za najam potvrđuje termin ili predlaže drugu opciju."]
+      ],
+      "price": [
+        ["Predlošci i unos", "U ponudi izdvajamo sajt, predložak za prostor, početni unos opisa i fotografija. Dogovaramo kako ćete objaviti sljedeću jedinicu."],
+        ["Izvor podataka o dostupnosti", "Ručna izmjena, spoljašnja poveznica i integracija različito se procjenjuju. Prvo pregledamo sistem koji već koristite."]
+      ],
+      "faq": [
+        ["Možemo li sakriti trenutno zauzete prostore?", "Da. Dogovorimo da li ih uklanjate s liste ili zadržite stranicu s obavještenjem. Osnovne podatke možete ažurirati u CMS-u ako je uključen."],
+        ["Može li upit raditi bez naloga posjetioca?", "Može. Za prvi upit obično su dovoljni kontakt, odabrani prostor i termin. Dodatnu dokumentaciju dogovarate kasnije."]
+      ],
+      "contact_brief": "Pošaljite primjer prostora ili usluge, potrebne podatke za prvi upit i način na koji danas potvrđujete obilaske.",
+      "meta_title": "Izrada sajtova za Podgoricu | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "niksic": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-niksic",
+      "city": "Nikšić",
+      "label": "Izrada sajtova za Nikšić",
+      "title": "Izrada sajtova za firme i ugostitelje iz Nikšića",
+      "meta_description": "Izrada sajtova za Nikšić. Čitljivi meniji, informacije za grupe i upiti za rezervaciju stola ili događaj, uz samostalno uređivanje.",
+      "intro": "Za ugostitelje i firme iz Nikšića izrađujemo sajtove koji na telefonu jasno prikazuju ponudu, uputstva za dolazak i način da se posjetilac javi. Rad na dizajnu i predaju vodimo na daljinu.",
+      "link_description": "Sajt za ugostiteljstvo s menijem, informacijama za grupe i upitima.",
+      "scope": [
+        ["Meni dostupan na telefonu", "Najvažnije kategorije i informacije pripremamo kao tekst. Ako je potreban i dokument za štampu, dogovaramo kako da se oba prikaza usklađuju."],
+        ["Odvojene informacije za grupe", "Za proslave ili veće grupe prikazujemo kapacitet, vrstu usluge i koje podatke treba navesti u prvom upitu."],
+        ["Promjene u svakodnevnom radu", "Dogovaramo ko ažurira radno vrijeme, dnevnu ponudu i obavještenja. Ako je CMS uključen, tim može uređivati dogovorena polja."]
+      ],
+      "journey_link": "Primjer upita za grupu",
+      "journey_title": "Gost provjerava ponudu prije nego se javi",
+      "journey_context": "Na primjeru restorana u Nikšiću posjetilac organizuje večeru za više osoba. Potrebno je razjasniti okvirni termin, broj gostiju i način dogovora oko menija.",
+      "journey": [
+        ["Provjerava opcije", "Na telefonu otvara stranicu za grupe i vidi kapacitet i vrste menija koje restoran želi javno prikazati."],
+        ["Navodi detalje", "Obrazac traži željeni datum, vrijeme, broj gostiju i kontakt. Ostale zahtjeve gost može opisati porukom."],
+        ["Restoran potvrđuje dogovor", "Tim prima upit i javlja raspoloživost i uslove. Prije objave provjeravamo da poruka stiže do osobe koja prima rezervacije."]
+      ],
+      "price": [
+        ["Uređivanje menija", "Obim zavisi od broja kategorija, jezika i toga želi li tim sam mijenjati stavke. Odvojeno navodimo unos prvog menija i pripremu prikaza."],
+        ["Kanal za rezervacije", "Možemo povezati telefon, spoljašnji sistem ili pripremiti obrazac za upite. U ponudi se vidi šta se testira prije objave."]
+      ],
+      "faq": [
+        ["Možemo li početi sa stranicom i jednostavnim menijem?", "Da. Dogovorimo osnovne kategorije, način kontakta i šta možete uređivati. Posebnu stranicu za grupe možemo dodati kada imate spremne podatke."],
+        ["Treba li nam novi sistem za rezervacije?", "Pogledamo postojeći postupak. Web može zadržati kanal kojim već radite uz jasne upute gostu."]
+      ],
+      "contact_brief": "Pošaljite postojeći meni ili opis usluga i navedite koje promjene vaš tim želi praviti bez pomoći developera.",
+      "meta_title": "Izrada sajtova za Nikšić | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "bar": {
+      "parent": "web",
+      "slug": "usluge/izrada-sajtova-bar",
+      "city": "Bar",
+      "label": "Izrada sajtova za Bar",
+      "title": "Izrada sajtova za turističke usluge i firme iz Bara",
+      "meta_description": "Višejezični sajtovi za Bar. Prikažite usluge uz obalu i prema Skadarskom jezeru, mjesto susreta i mogućnost upita prije dolaska.",
+      "intro": "Za firme i turističke usluge iz Bara izrađujemo sajtove koji gostu objašnjavaju gdje usluga počinje, kako da stigne i ko potvrđuje termin. Planiranje, dizajn i objavu vodimo online.",
+      "link_description": "Sajt s jasnim lokacijama susreta, višejezičnim uputstvima i upitima.",
+      "scope": [
+        ["Različite tačke polaska", "Svaka usluga ima vlastite upute s mjestom susreta, okvirnim trajanjem i onim što putnik treba da provjeri prije dolaska."],
+        ["Karta i uputstva koja rade na telefonu", "Kartu prate tekstualne upute i kontakt. Dogovaramo kako se prikazuju sezonske promjene mjesta susreta."],
+        ["Upit sa odabranom lokacijom", "Možemo unaprijed popuniti turu ili lokaciju. Gost dodaje datum i broj osoba, a vaš tim potvrđuje dogovor."]
+      ],
+      "journey_link": "Primjer dogovora oko polaska",
+      "journey_title": "Gost razlikuje polazak uz obalu od polaska prema jezeru",
+      "journey_context": "Turistička organizacija Bara predstavlja obalu i izlete prema Skadarskom jezeru. Ponuda jednog operatora može imati različite tačke susreta i putnik ih treba jasno razlikovati.",
+      "source": ["Turistička organizacija Bar", "https://bar.travel/about-bar/"],
+      "journey": [
+        ["Otvara odgovarajuću uslugu", "Na telefonu vidi je li susret kod obale ili na drugoj dogovorenoj lokaciji i koliko je ranije potrebno stići."],
+        ["Provjerava željeni datum", "Obrazac čuva naziv usluge i mjesto polaska. Gost navodi datum i pita za alternativnu opciju ako mu vrijeme ne odgovara."],
+        ["Operator potvrđuje detalje", "Tim šalje tačne upute za dogovoreni polazak. Pri predaji provjeravamo da li urednik može sam ažurirati lokaciju i poruku za goste."]
+      ],
+      "price": [
+        ["Broj lokacija i jezika", "Razdvajamo predložak usluge, pripremu uputstava i unos svake lokacije i jezične verzije."],
+        ["Dostupnost i kontakt", "Ako već pokazujete termine drugim sistemom, procijenimo da li treba samo poveznica ili integracija. U ponudi je jasno šta održava koji tim."]
+      ],
+      "faq": [
+        ["Može li gost otvoriti upute bez karte?", "Da. Važne upute pišemo i kao tekst, uz dogovoreni kontakt i poveznicu za navigaciju."],
+        ["Možemo li promijeniti mjesto polaska istog dana?", "Uz dogovoreni CMS možete ažurirati podatak. Dogovaramo i kanal kojim ćete direktno javiti promjenu ljudima koji su već prijavljeni."]
+      ],
+      "contact_brief": "Pošaljite primjere usluga, tačke susreta i koje informacije turisti pitaju prije polaska.",
+      "meta_title": "Izrada sajtova za Bar | Ostrelya",
+      "modified": "2026-11-19"
+    }
+  },
+  "mk": {
+    "skopje": {
+      "parent": "web",
+      "slug": "uslugi/izrabotka-na-veb-stranici-skopje",
+      "city": "Скопје",
+      "label": "Изработка на веб-страници за Скопје",
+      "title": "Изработка на веб-страници за фирми од Скопје",
+      "meta_description": "Веб-страници за фирми од Скопје. Повеќејазични услуги, управување со содржина и формулари што водат до соодветниот тим.",
+      "intro": "За фирми од Скопје изработуваме веб-страници на кои посетителот може да најде услуга на својот јазик и да испрати барање. Планирањето, дизајнот и предавањето ги водиме онлајн.",
+      "link_description": "Повеќејазична деловна веб-страница со услуги и барања што стигнуваат до соодветниот тим.",
+      "scope": [
+        ["Услуги на јазиците што ви се потребни", "Со вашиот тим утврдуваме кои услуги се достапни на секој јазик, кој ги проверува преводите и кои податоци треба да останат исти."],
+        ["Промена на јазик на истата услуга", "Ако има соодветна верзија, јазичната врска води до истата услуга. Кога преводот сè уште не е готов, посетителот може да продолжи со достапните информации."],
+        ["Распределба на барањата", "Во пораката може да се означат услугата, јазикот и темата. Договараме кој одговара кога има повеќе тимови."]
+      ],
+      "journey_link": "Пример за повеќејазично барање",
+      "journey_title": "Посетителот продолжува на јазикот што го избрал",
+      "journey_context": "Да замислиме деловна фирма од Скопје што ја претставува понудата на македонски и албански. Клиентот треба да ја најде соодветната верзија на услугата и да испрати барање со потребните податоци.",
+      "journey": [
+        ["Ја отвора страницата на услугата", "Ги чита условите и ја менува јазичната верзија ако му е потребна. Ги гледа истиот предмет на услугата и соодветниот контакт."],
+        ["Испраќа барање", "Во формуларот го наведува предметот и остава контакт. Пораката ја вклучува избраната услуга и јазикот."],
+        ["Тимот ја проверува доставата", "Ги проверуваме формуларите на телефон за сите договорени јазици. При предавањето уредникот пробува да ажурира една верзија."]
+      ],
+      "price": [
+        ["Предлошки, услуги и преводи", "Во понудата одделно ги наведуваме развојот на предлошките, внесот на содржина и подготовката или проверката на преводите."],
+        ["Формулари, објава и поддршка", "Ги утврдуваме потребните јазични верзии, примателите и проверката пред објава. Хостингот и редовното одржување се посебни ставки."]
+      ],
+      "faq": [
+        ["Може ли да објавиме прво на еден јазик?", "Да. Ги планираме адресите и структурата така што подоцна ќе можете да додадете превод за избраните услуги."],
+        ["Може ли нашиот тим да го уредува преводот?", "Да, доколку договориме CMS. На предавањето проверуваме како се уредува текст и како се поврзува со другата верзија."]
+      ],
+      "contact_brief": "Испратете список на услуги и јазици, постојна адреса ако ја имате и пример на барање што сакате да го добивате.",
+      "meta_title": "Изработка на веб-страници во Скопје | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "bitola": {
+      "parent": "web",
+      "slug": "uslugi/izrabotka-na-veb-stranici-bitola",
+      "city": "Битола",
+      "label": "Изработка на веб-страници за Битола",
+      "title": "Изработка на веб-страници за фирми и настани во Битола",
+      "meta_description": "Веб-страници за бизниси и организатори во Битола. Прегледна програма, места на одржување, ажурирања и барања за групи.",
+      "intro": "За фирми и организатори од Битола изработуваме веб-страници со прегледна програма, адреси и јасен начин за пријавување или контакт. Со вашиот тим соработуваме онлајн.",
+      "link_description": "Програма на настани со датуми, места и уредување на промените.",
+      "scope": [
+        ["Програма по ден и место", "На секој настан му додаваме почеток, локација, јазик и услови за учество. Посетителот може да отвори една страница и да ја сподели."],
+        ["Измена на програмата", "Во договорениот CMS уредникот може да смени термин или сала. Јасна ознака покажува кога настанот е преместен или откажан."],
+        ["Страница по завршувањето", "По настанот, описот може да остане во архива, а пријавувањето се затвора. Го планираме преминот меѓу активни и завршени настани."]
+      ],
+      "journey_link": "Пример за промена на термин",
+      "journey_title": "Посетителот наоѓа актуелен термин и локација",
+      "journey_context": "Замислете организатор од Битола со повеќе настани во еден викенд. Една работилница го менува времето, а посетителите веќе ја имаат старата врска.",
+      "journey": [
+        ["Уредникот го менува терминот", "Ги ажурира времето и салата на страницата на настанот. Врската останува достапна."],
+        ["Посетителот ја гледа промената", "На телефон гледа нов термин, адреса и дали треба повторна потврда. Истите информации се прикажуваат и во програмата."],
+        ["Тимот ги информира пријавените", "За веќе пријавените се користи договорениот канал за известување. Пред објава проверуваме како изгледа промената на веб-страницата."]
+      ],
+      "price": [
+        ["Предлошки и внес на програма", "Цената зависи од бројот на формати, јазици и количината на почетни настани. Го издвојуваме внесот од развојот."],
+        ["Пријавување и одржување", "Во опфатот наведуваме дали се користи надворешен систем или формулар. Со вашиот тим утврдуваме кој ја одржува програмата."]
+      ],
+      "faq": [
+        ["Може ли да користиме постојни врски за билети?", "Да. Врската за купување може да води до вашиот постоен систем. Проверуваме дали отвора соодветен настан."],
+        ["Може ли програмата да се уредува од телефон?", "Тоа го договараме според CMS и типовите измени. При предавањето тестираме една промена на датум или локација."]
+      ],
+      "contact_brief": "Испратете пример на програма, број на локации и начин на кој денес примате пријави или известувате за промени.",
+      "meta_title": "Изработка на веб-страници во Битола | Ostrelya",
+      "modified": "2026-11-19"
+    }
+  },
+  "sq": {
+    "prishtine": {
+      "parent": "web",
+      "slug": "sherbime/krijim-faqesh-interneti-prishtine",
+      "city": "Prishtinë",
+      "label": "Krijim faqesh interneti për Prishtinën",
+      "title": "Krijim faqesh interneti për biznese në Prishtinë",
+      "meta_description": "Faqe interneti për biznese në Prishtinë. Paraqitni shërbimet në disa gjuhë dhe merrni kërkesa nga klientët në vend dhe jashtë.",
+      "intro": "Për bizneset nga Prishtina krijojmë faqe ku klienti mund të kuptojë shërbimin, të zgjedhë gjuhën dhe të kërkojë një bisedë. Me ekipin tuaj bashkëpunojmë në distancë.",
+      "link_description": "Faqe shërbimesh që marrin kërkesa të qarta edhe nga klientët jashtë Kosovës.",
+      "scope": [
+        ["Shërbime për klientë në tregje të ndryshme", "Për secilin shërbim sqarojmë vendet ku punoni, mënyrën e bashkëpunimit dhe çfarë nevojitet për të filluar."],
+        ["Gjuhët dhe oraret", "Kur klientët janë në vende të ndryshme, faqja duhet të tregojë gjuhët e komunikimit dhe zonën kohore të takimeve."],
+        ["Kërkesë me të dhëna të mjaftueshme", "Formulari mund të përfshijë vendin e klientit, temën, afatin dhe mënyrën e preferuar të kontaktit. Ju përcaktoni fushat që i duhen ekipit."]
+      ],
+      "journey_link": "Shembull kërkese nga jashtë",
+      "journey_title": "Klienti planifikon një bisedë nga një vend tjetër",
+      "journey_context": "Marrim shembullin e një firme shërbimesh në Prishtinë që merr kërkesa nga klientë në Kosovë dhe nga diaspora. Klienti duhet të kuptojë nëse projekti mund të zhvillohet në distancë.",
+      "journey": [
+        ["Lexon si zhvillohet shërbimi", "Kontrollon gjuhën, hapat e parë dhe kur ekipi mund të flasë me të."],
+        ["Tregon çfarë i duhet", "Në formular zgjedh shërbimin, vendin ku ndodhet dhe një orar të përshtatshëm. Kur lidhet një kalendar i jashtëm, kontrollojmë si paraqitet zona kohore."],
+        ["Ekipi përgjigjet me kontekst", "Mesazhi tregon shërbimin dhe mënyrën e kontaktit. Ekipi konfirmon orarin dhe materialet që duhen për bisedën."]
+      ],
+      "price": [
+        ["Faqet dhe gjuhët", "Oferta ndan krijimin e modeleve, përgatitjen e tekstit dhe vendosjen e materialeve për çdo gjuhë."],
+        ["Formulari dhe kalendari", "Një kërkesë e thjeshtë dhe integrimi me sistem takimesh kanë vëllim të ndryshëm. Kontrollojmë çfarë përdorni para se të japim ofertë."]
+      ],
+      "faq": [
+        ["A mund të shtojmë një gjuhë pas publikimit?", "Po. Planifikojmë adresat dhe lidhjet mes faqeve. Për çdo gjuhë përcaktojmë kush miraton përmbajtjen."],
+        ["A mund ta mbajmë mënyrën ekzistuese të takimeve?", "Po, nëse sistemi ofron lidhjen e duhur. Gjatë provës kontrollojmë oraret nga telefoni dhe nga zona të ndryshme kohore."]
+      ],
+      "contact_brief": "Dërgoni listën e shërbimeve, tregjet ku punoni, gjuhët dhe mënyrën si caktoni sot takimet.",
+      "meta_title": "Krijim faqesh interneti në Prishtinë | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "prizren": {
+      "parent": "web",
+      "slug": "sherbime/krijim-faqesh-interneti-prizren",
+      "city": "Prizren",
+      "label": "Krijim faqesh interneti për Prizrenin",
+      "title": "Krijim faqesh interneti për biznese dhe punishte në Prizren",
+      "meta_description": "Faqe interneti për biznese në Prizren. Paraqitni koleksione, materiale dhe punime me porosi me një formular të qartë kërkese.",
+      "intro": "Për bizneset dhe punishtet nga Prizreni krijojmë faqe ku klienti mund të shohë punimet, të krahasojë variantet dhe të kërkojë ofertë. Dizajnin dhe dorëzimin i organizojmë në distancë.",
+      "link_description": "Katalog punimesh me materiale, variante dhe kërkesa për porosi të personalizuara.",
+      "scope": [
+        ["Koleksione me përshkrime", "Çdo punim mund të ketë përmasat, materialet, kujdesin dhe variantet që ofroni. Fotot shoqërohen me informacion që e ndihmon klientin të zgjedhë."],
+        ["Punime me porosi", "Sqarojmë çfarë mund të personalizohet e çfarë duhet të dërgojë klienti. Kërkesa mund të lidhet me modelin që po shikon."],
+        ["Ndryshime nga ekipi juaj", "Nëse përfshijmë CMS, ekipi mund të shtojë një punim, të përditësojë variantet dhe të shënojë kur një material nuk ofrohet."]
+      ],
+      "journey_link": "Shembull kërkese për porosi",
+      "journey_title": "Nga zgjedhja e modelit te kërkesa për përmasa të tjera",
+      "journey_context": "Marrim shembullin e një punishteje në Prizren që ofron modele të gatshme dhe punime sipas përmasave. Klienti dëshiron një variant të një modeli që ka parë në faqe.",
+      "journey": [
+        ["Hap modelin", "Sheh materialet, përmasat dhe shembuj fotografish. Kontrollon cilat pjesë mund të përshtaten."],
+        ["Tregon variantin e dëshiruar", "Formulari përfshin modelin dhe lejon të shtohen përmasat, materiali dhe afati i kërkuar."],
+        ["Punishtja kthen ofertën", "Ekipi merr të dhënat dhe konfirmon çmimin e afatin pas vlerësimit. Kontrollojmë që kërkesa të ruajë emrin e modelit."]
+      ],
+      "price": [
+        ["Modelet dhe përmbajtja", "Një model faqeje mund të përdoret për disa punime. Në ofertë ndajmë zhvillimin nga vendosja e të dhënave dhe përgatitja e fotografive."],
+        ["Variantet dhe formulari", "Fushat e nevojshme varen nga sa personalizim ofroni. Përcaktojmë çfarë mund të menaxhojë vetë ekipi pas publikimit."]
+      ],
+      "faq": [
+        ["Mund të publikojmë një katalog dhe të japim çmim me ofertë?", "Po. Faqja shpjegon çfarë mund të kërkohet dhe ia dërgon ekipit të dhënat për të përgatitur ofertën."],
+        ["A mund t’i heqim modelet që s’ofrohen më?", "Po, sipas CMS-it të dakorduar. Vendosim kur të shfaqet një shënim dhe kur faqja duhet të hiqet nga katalogu."]
+      ],
+      "contact_brief": "Dërgoni fotografi ose një shembull të katalogut tuaj, variantet që ofroni dhe të dhënat që kërkoni para një oferte.",
+      "meta_title": "Krijim faqesh interneti në Prizren | Ostrelya",
+      "modified": "2026-11-19"
+    }
+  },
+  "sq-al": {
+    "durres": {
+      "parent": null,
+      "slug": "sherbime/krijim-faqesh-interneti-durres",
+      "city": "Durrës",
+      "label": "Krijim faqesh interneti për Durrësin",
+      "title": "Krijim faqesh interneti për akomodime dhe biznese në Durrës",
+      "meta_description": "Faqe për akomodime dhe biznese në Durrës. Tregoni vendndodhjen, oraret e mbërritjes dhe si të dërgohet një kërkesë në disa gjuhë.",
+      "intro": "Për akomodime dhe biznese nga Durrësi krijojmë faqe që ndihmojnë vizitorin të gjejë adresën, të kuptojë kushtet e mbërritjes dhe të kontaktojë ekipin tuaj. Punojmë në distancë, nga struktura e faqes deri te dorëzimi.",
+      "link_description": "Faqe për hotele e bujtina me udhëzime mbërritjeje, gjuhë të ndryshme dhe kërkesa për dhomë.",
+      "scope": [
+        ["Dhoma dhe kushtet e qëndrimit", "Për secilin tip dhome dokumentojmë kapacitetin, fotografitë, kushtet e mbërritjes dhe nëse parkimi duhet kërkuar paraprakisht."],
+        ["Udhëzime sipas mënyrës së mbërritjes", "Veçojmë udhëzimet për mysafirët që vijnë nga porti ose nga rruga. Adresën dhe kontaktin i paraqesim edhe si tekst që mund të kopjohet."],
+        ["Kërkesë ose lidhje rezervimi", "Vizitori mund të dërgojë datat dhe llojin e dhomës, ose të kalojë në sistemin që përdorni tashmë. Ekipi juaj përcakton si konfirmohet disponueshmëria."]
+      ],
+      "journey_link": "Shembull mbërritjeje nga porti",
+      "journey_title": "Mysafiri pyet për mbërritje pas orarit",
+      "journey_context": "Durrësi ka një port pasagjerësh. Në këtë shembull, një mysafir do të mbërrijë me traget dhe dëshiron të dijë si të shkojë nga porti te akomodimi dhe a mund të hyjë vonë.",
+      "source": ["Autoriteti Portual Durrës", "https://durresport.al/en/"],
+      "journey": [
+        ["Gjen dhomën dhe adresën", "Në telefon lexon kushtet e mbërritjes, sheh adresën dhe hap udhëzimet e miratuara nga akomodimi."],
+        ["Dërgon datat dhe orën e përafërt", "Kërkesa ruan tipin e dhomës. Mysafiri shënon nëse vjen nga porti, orën e pritshme dhe nëse i duhet parkim."],
+        ["Recepsioni përgjigjet me udhëzimet e sakta", "Me informacionin në mesazh, ekipi mund t’i japë mysafirit udhëzime për hyrje dhe të konfirmojë nëse dhoma është e lirë."]
+      ],
+      "price": [
+        ["Dhomat, gjuhët dhe materialet", "Në ofertë ndajmë modelin e faqes së dhomës, përgatitjen e fotografive dhe përkthimin e udhëzimeve. Çdo dhomë duhet të ketë të dhënat e veta."],
+        ["Sistemi ekzistues dhe përditësimet", "Sqarojmë nëse nevojitet lidhje, formular ose integrim. Gjithashtu përcaktojmë kush i përditëson oraret dhe kushtet pas publikimit."]
+      ],
+      "faq": [
+        ["A mund të mbajmë partnerin me të cilin marrim rezervime?", "Po. Kontrollojmë nëse lidhja hap dhomën ose ofertën e duhur. Integrimi i disponueshmërisë varet nga sistemi."],
+        ["A mund ta përditësojmë vetë orarin e mbërritjes?", "Po, nëse përfshihet CMS. Në provë përditësojmë një udhëzim dhe kontrollojmë çfarë shfaqet në gjuhët e tjera."]
+      ],
+      "contact_brief": "Dërgoni numrin e tipeve të dhomave, gjuhët, udhëzimet e mbërritjes dhe lidhjen e sistemit të rezervimeve nëse e keni.",
+      "meta_title": "Krijim faqesh interneti në Durrës | Ostrelya",
+      "modified": "2026-11-19"
+    },
+    "vlore": {
+      "parent": null,
+      "slug": "sherbime/krijim-faqesh-interneti-vlore",
+      "city": "Vlorë",
+      "label": "Krijim faqesh interneti për Vlorën",
+      "title": "Krijim faqesh interneti për ture dhe biznese në Vlorë",
+      "meta_description": "Faqe interneti për operatorë turistikë dhe biznese në Vlorë. Paraqitni itinerarin, kushtet dhe kërkesat për ture në disa gjuhë.",
+      "intro": "Për operatorë turistikë dhe biznese nga Vlora ndërtojmë faqe që shpjegojnë itinerarin, çfarë përfshin shërbimi dhe si kërkohet një vend. Me ekipin tuaj punojmë në distancë.",
+      "link_description": "Faqe për udhëtime në grup me itinerar, udhëzime për takimin dhe kërkesë për një datë.",
+      "scope": [
+        ["Itinerari dhe ndalesat", "Në faqe paraqesim kohëzgjatjen e planifikuar, ndalesat, pikën e takimit dhe çfarë përfshihet. Përdorim të dhënat që ju konfirmoni."],
+        ["Kushtet kur ndryshon plani", "Për ture me varkë sqarojmë si njoftoni mysafirët kur ndryshon ora, destinacioni ose dita. Kushtet shkruhen sipas politikës së operatorit."],
+        ["Kërkesa me turin e zgjedhur", "Formulari mund të përfshijë turin, datën, numrin e personave dhe nëse kërkohet udhëtim privat. Ekipi juaj konfirmon vendet dhe kushtet."]
+      ],
+      "journey_link": "Shembull kërkese për tur",
+      "journey_title": "Udhëtari zgjedh mes një turi në grup dhe një turi privat",
+      "journey_context": "Agjencia Kombëtare e Turizmit paraqet Parkun Kombëtar Detar Karaburun–Sazan. Në shembullin e një operatori nga Vlora, udhëtari krahason dy lloje turi dhe dërgon një kërkesë me të dhënat për grupin.",
+      "source": ["Parku Kombëtar Detar Karaburun–Sazan", "https://akt.gov.al/en/nature/Karaburun-Sazan-National-Marine-Park/"],
+      "journey": [
+        ["Krahason dy opsionet", "Lexon pikën e takimit, kohëzgjatjen, çfarë duhet të marrë me vete dhe në cilën gjuhë ofrohet udhëzimi."],
+        ["Dërgon datën dhe numrin e personave", "Formulari mban turin e zgjedhur. Udhëtari mund të shtojë një datë tjetër nëse zgjedhja e tij e parë nuk është e mundur."],
+        ["Operatori kthen konfirmimin", "Ekipi përgjigjet me orarin, pikën e takimit dhe kushtet. Para publikimit provojmë që rezervimi ose kërkesa e dërguar i referohet turit të duhur."]
+      ],
+      "price": [
+        ["Numri i llojeve të turit", "Ndajmë zhvillimin e modelit nga shkrimi dhe vendosja e itinerareve, përkthimeve dhe fotografive të secilës ofertë."],
+        ["Orari dhe menaxhimi", "Përcaktojmë kush ndryshon kushtet dhe oraret. Një lidhje me një sistem ekzistues ka punë të ndryshme nga një integrim i drejtpërdrejtë."]
+      ],
+      "faq": [
+        ["A mund të ndahen turet private nga turet e përbashkëta?", "Po. Mund të kenë përshkrime dhe fusha të ndryshme në formular, që ekipi të kuptojë menjëherë llojin e kërkesës."],
+        ["A mund të njoftojmë për një ndryshim të orarit?", "Me CMS mund të ndryshoni njoftimin në faqe. Për udhëtarët që kanë rezervuar, biem dakord edhe për kanalin e njoftimit të drejtpërdrejtë."]
+      ],
+      "contact_brief": "Dërgoni llojet e tureve, gjuhët, pikën e nisjes dhe mënyrën që përdorni sot për të konfirmuar oraret dhe vendet.",
+      "meta_title": "Krijim faqesh interneti në Vlorë | Ostrelya",
+      "modified": "2026-11-19"
     }
   }
 }
