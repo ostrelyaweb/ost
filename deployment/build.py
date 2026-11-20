@@ -19,6 +19,7 @@ from guide_pages import guide_path, render_guide, render_guide_index
 from regional_site import read_regions
 from privacy_pages import render_privacy
 from check_indexable import check_indexable
+from indexnow import read_key
 from site_analytics import configure_analytics
 
 
@@ -200,6 +201,8 @@ def main():
         update_navigation(staging)
         update_routing(staging, archive_pages)
         configure_analytics(REDESIGN, staging, PRIVACY_ROUTES.values())
+        indexnow_key = read_key()
+        (staging / f"{indexnow_key}.txt").write_text(indexnow_key, encoding="utf-8")
         indexable_count = check_indexable(staging, ORIGIN)
         previous = Path(temporary) / "previous"
         if destination.exists():

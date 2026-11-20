@@ -86,6 +86,9 @@ each page's `<head>`). Pings go back to the same origin, so `connect-src 'self'`
   blog archive and privacy pages and maps old service and contact URLs to their new destinations.
 - Run `npx wrangler dev` for a local production preview. Use `npx wrangler deploy --dry-run`
   to validate the build before pushing.
+- After Cloudflare publishes a release, run `python -B deployment/indexnow.py /path/`
+  with the canonical paths added or updated in that release. The command checks the
+  live verification file and sitemap before submitting the URLs to IndexNow.
 - `cloudflare-redirect-to-com.ps1` creates 301 redirects from `ostrelya.info` and `ostrelya.org`
   (path-for-path) to `.com`. See the script header for token requirements and usage.
 

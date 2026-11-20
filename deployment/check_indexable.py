@@ -61,7 +61,7 @@ def check_indexable(output, origin):
     urls = [page_url(item.text) for item in ElementTree.parse(output / "sitemap.xml").findall(".//{*}loc")]
     pages = {}
     errors = []
-    titles = {}
+    metadata = {"title": {}, "description": {}}
     for url in urls:
         if url in pages:
             errors.append(f"{url}: duplicate sitemap entry")
@@ -85,11 +85,11 @@ def check_indexable(output, origin):
         for label, values in (("title", page.titles), ("description", page.descriptions)):
             if len(values) != 1 or not values[0].strip():
                 errors.append(f"{url}: missing or repeated {label}")
-        if page.titles and page.titles[0].strip():
-            title = page.titles[0].strip()
-            if title in titles:
-                errors.append(f"{url}: title also used by {titles[title]}")
-            titles[title] = url
+                continue
+            value = " ".join(values[0].split()).casefold()
+            previous = metadata[label].setdefault(value, url)
+            if previous != url:
+                errors.append(f"{url}: {label} also used by {previous}")
 
     for url, page in pages.items():
         alternates = {language: page_url(link) for language, link in page.alternates.items()}
