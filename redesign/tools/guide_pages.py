@@ -72,7 +72,8 @@ RELATED_GUIDES = {
     "zasto-web-stranica-nije-na-googleu": ("redizajn-web-stranice-bez-gubitka-seo", "kako-da-se-web-pojavi-u-ai-pretrazivanju"),
     "kako-da-se-web-pojavi-u-ai-pretrazivanju": ("zasto-web-stranica-nije-na-googleu",),
     "treba-li-web-stranici-cms": ("što-znati-prije-kupnje-web-stranice", "održavanje-web-stranice-zašto-je-bitno"),
-    "plan-visejezicne-web-stranice": ("treba-li-web-stranici-cms", "redizajn-web-stranice-bez-gubitka-seo"),
+    "plan-visejezicne-web-stranice": ("treba-li-web-stranici-cms", "web-za-apartmane-upit-ili-rezervacija"),
+    "web-za-apartmane-upit-ili-rezervacija": ("plan-visejezicne-web-stranice", "koliko-košta-web-stranica-2026"),
 }
 
 
@@ -127,6 +128,27 @@ def render_guide(root, origin, slug, lang, entry, locales, guides):
         contact = path + "#contact"
         links = ((locale["services"][service]["label"], path), (locale["labels"]["enquiry"], contact))
 
+    closing_markup = ""
+    closing = guide.get("closing")
+    if closing or lang == "sq":
+        heading, detail, action = closing or (
+            "Ku ndodhet biznesi juaj?", "Zgjidhni tregun për të na dërguar një kërkesë.", ""
+        )
+        if lang == "sq":
+            buttons = (
+                f'<a href="{escape(contact)}" data-guide-action="contact" data-guide-market="XK">Për biznese në Kosovë</a>'
+                '<a href="/sq-al/#contact" data-guide-action="contact" data-guide-market="AL">Për biznese në Shqipëri</a>'
+            )
+            contact = "#guide-contact"
+            links = ()
+        else:
+            buttons = f'<a href="{escape(contact)}" data-guide-action="contact">{escape(action)}</a>'
+            links = [(label, href) for label, href in links if href != contact]
+        closing_markup = (
+            f'<section class="journal-block guide-contact" id="guide-contact"><h2>{escape(heading)}</h2>'
+            f'<p>{escape(detail)}</p><div class="guide-actions">{buttons}</div></section>'
+        )
+
     guide_links_in_locale = tuple(
         (guides[key][lang]["title"], guide_path(key, lang, guides[key])) for key in RELATED_GUIDES[slug]
     )
@@ -141,6 +163,21 @@ def render_guide(root, origin, slug, lang, entry, locales, guides):
     if table := guide.get("table"):
         sections.append(example_table(table))
         contents.append((table["caption"], "#guide-example"))
+    if brief := guide.get("brief"):
+        contents.append((brief["title"], "#project-brief"))
+        sections.append(
+            f'<section class="journal-block guide-sheet" id="project-brief"><h2>{escape(brief["title"])}</h2>'
+            f'<pre>{escape(brief["text"])}</pre>'
+            f'<a download href="/assets/resources/project-brief-{lang}.txt" data-guide-action="brief">'
+            f'{escape(brief["download"])}</a></section>'
+        )
+    if note := guide.get("check_note"):
+        contents.append((note[0], "#maintenance-log"))
+        sections.append(
+            f'<section class="journal-block guide-sheet" id="maintenance-log"><h2>{escape(note[0])}</h2>'
+            f'<time datetime="2026-11-22">2026-11-22</time><p>{escape(note[1])}</p>'
+            '<a href="/hr/usluge/odrzavanje-web-stranica/#contact" lang="hr">Ostrelya · Održavanje web stranica</a></section>'
+        )
     case_markup = ""
     if case := guide.get("migration_case"):
         download = root / "assets" / "resources" / "redirect-map.csv"
@@ -151,7 +188,7 @@ def render_guide(root, origin, slug, lang, entry, locales, guides):
         case_markup = (
             '<section class="journal-block guide-links" id="ostrelya-migration">'
             f'<h2>{escape(case["title"])}</h2>{paragraphs}'
-            f'<p><a href="{escape(download_path)}" download>{escape(case["download_label"])}</a></p>'
+            f'<p><a href="{escape(download_path)}" download data-guide-action="redirect-map">{escape(case["download_label"])}</a></p>'
             '</section>'
         )
     modified = entry.get("modified", "2026-11-12")
@@ -190,6 +227,7 @@ def render_guide(root, origin, slug, lang, entry, locales, guides):
         <h2>{related}</h2><ul>{guide_links((*links, *guide_links_in_locale))}</ul>
       </nav>
       {source_markup}
+      {closing_markup}
     </article>
     """
     return render_layout(root, origin, slug, lang, title, description, contact, body, locales, schema, entry)
@@ -219,6 +257,13 @@ def render_guide_index(root, origin, lang, guides, locales):
     {"".join(groups)}
     """
     contact = "/services/#contact" if lang == "en" else f"/{lang}/#contact"
+    if lang == "en":
+        body += (
+            '<section class="journal-block guide-contact"><h2>Planning a website for a Balkan business?</h2>'
+            '<p>We work remotely across the region. For projects in Bulgaria, Romania, Greece or European Turkey, '
+            'you can send your brief in English. Tell us where your customers are and which languages your website needs.</p>'
+            '<div class="guide-actions"><a href="/services/#contact" data-guide-action="contact">Discuss your project in English</a></div></section>'
+        )
     return render_layout(root, origin, None, lang, title, description, contact, body, locales)
 
 
@@ -267,7 +312,7 @@ def render_layout(root, origin, slug, lang, title, description, contact, body, l
   {structured_data}
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
-  <link rel="stylesheet" href="/styles.css?v=reading-guides">
+  <link rel="stylesheet" href="/styles.css?v=guide-fieldnotes">
   <script src="/script.js?v=service-paths" defer></script>
 </head>
 <body id="top" class="page-editorial">

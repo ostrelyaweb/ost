@@ -118,6 +118,9 @@ def preserve_archive(output):
             if slug:
                 guide = guides[slug]
                 body = render_guide(REDESIGN, ORIGIN, slug, lang, guide, locales, guides)
+                if brief := guide[lang].get("brief"):
+                    resource = output / "assets" / "resources" / f"project-brief-{lang}.txt"
+                    resource.write_text(brief["title"] + "\n\n" + brief["text"] + "\n", encoding="utf-8")
                 if guide.get("modified"):
                     modified[name] = date.fromisoformat(guide["modified"])
             else:

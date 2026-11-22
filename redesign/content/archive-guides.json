@@ -84,6 +84,16 @@
             "2.928 €"
           ]
         ]
+      },
+      "closing": [
+        "Želite ponude koje možete usporediti?",
+        "Isti opis pošaljite svakom izvođaču. Od nas možete zatražiti da odvojeno iskažemo izradu, unos sadržaja i troškove nakon objave.",
+        "Pošaljite opis projekta"
+      ],
+      "brief": {
+        "title": "Predložak zahtjeva za ponudu",
+        "text": "Što želim da posjetitelj napravi:\nStranice koje trebam:\nJezici i tko prevodi:\nTko priprema tekstove i fotografije:\nŠto želim samostalno uređivati nakon objave:",
+        "download": "Preuzmite predložak (.txt)"
       }
     },
     "en": {
@@ -169,6 +179,16 @@
             "£3,570"
           ]
         ]
+      },
+      "closing": [
+        "Want quotes you can compare line by line?",
+        "Send each studio the same brief. Ask us to separate the build, content entry and ongoing costs so you can compare like for like.",
+        "Send your project brief"
+      ],
+      "brief": {
+        "title": "A brief you can send to three studios",
+        "text": "What a visitor should do:\nPages we need:\nLanguages and who will translate:\nWho supplies the copy and photos:\nWhat we need to edit after launch:",
+        "download": "Download the brief (.txt)"
       }
     },
     "modified": "2026-11-22"
@@ -253,7 +273,16 @@
             "Testni web radi i popis pristupa je ažuran"
           ]
         ]
-      }
+      },
+      "closing": [
+        "Tko provjerava stižu li vam upiti s weba?",
+        "Pošaljite adresu weba i napišite što danas ažurirate sami, a što radi pružatelj hostinga. Na temelju toga možemo predložiti što preuzeti u održavanje.",
+        "Zatražite ponudu za održavanje"
+      ],
+      "check_note": [
+        "Iz mjesečne provjere Ostrelye",
+        "Na hrvatskoj stranici održavanja provjerili smo otvara li poveznica kontaktni dio i postoji li obrazac s adresom za slanje. Taj pregled ne potvrđuje isporuku e-pošte. Za provjeru isporuke vlasnik šalje označenu probnu poruku i bilježi vrijeme primitka u sandučiću."
+      ]
     },
     "en": {
       "title": "Website maintenance: what to check each month",
@@ -333,7 +362,16 @@
             "Working test restore and updated access list"
           ]
         ]
-      }
+      },
+      "closing": [
+        "Who checks that your website enquiries arrive?",
+        "Send your URL and tell us what your host handles and what you update yourself. We can scope the work needed to take over maintenance.",
+        "Request a maintenance quote"
+      ],
+      "check_note": [
+        "From Ostrelya’s maintenance log",
+        "On our Croatian maintenance page we checked the contact anchor and the presence of a form with a submission endpoint. This inspection covers the page only. To verify delivery, the owner sends a labelled test and records when it reaches the inbox."
+      ]
     },
     "modified": "2026-11-22"
   },

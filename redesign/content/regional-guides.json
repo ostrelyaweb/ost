@@ -37,7 +37,17 @@
           "Ishop — javno objavljena početna cijena",
           "https://ishop.ba/cijene/izrada-web-stranice/"
         ]
-      ]
+      ],
+      "closing": [
+        "Želite uporedive ponude?",
+        "Isti opis pošaljite svim izvođačima. U našoj ponudi možete tražiti odvojene stavke za izradu, unos sadržaja i održavanje.",
+        "Pošaljite opis projekta"
+      ],
+      "brief": {
+        "title": "Predložak zahtjeva za ponudu",
+        "text": "Šta posjetilac treba uraditi:\nPotrebne stranice:\nJezici i ko prevodi:\nKo priprema tekstove i fotografije:\nŠta želimo sami uređivati:",
+        "download": "Preuzmite predložak (.txt)"
+      }
     },
     "sr-rs": {
       "slug": "cena-izrade-sajta",
@@ -79,7 +89,17 @@
           "Digitalna Radionica — ponuda održavanja",
           "https://www.digitalnaradionica.rs/cena-izrade-sajta-i-paketi/"
         ]
-      ]
+      ],
+      "closing": [
+        "Želite ponude koje možete da uporedite?",
+        "Pošaljite isti opis svakom izvođaču. Tražite odvojene stavke za izradu, unos sadržaja i održavanje.",
+        "Pošaljite opis projekta"
+      ],
+      "brief": {
+        "title": "Obrazac za traženje ponude",
+        "text": "Šta posetilac treba da uradi:\nPotrebne stranice:\nJezici i ko prevodi:\nKo priprema tekstove i fotografije:\nŠta želimo sami da uređujemo:",
+        "download": "Preuzmite obrazac (.txt)"
+      }
     },
     "sr-me": {
       "slug": "cijena-izrade-sajta",
@@ -121,7 +141,17 @@
           "Nanostar — javne cijene izrade i održavanja",
           "https://nanostar.me/cesta-pitanja"
         ]
-      ]
+      ],
+      "closing": [
+        "Želite ponude koje možete uporediti?",
+        "Pošaljite isti opis svakom izvođaču. Tražite odvojene stavke za izradu, unos sadržaja i održavanje.",
+        "Pošaljite opis projekta"
+      ],
+      "brief": {
+        "title": "Obrazac za traženje ponude",
+        "text": "Šta posjetilac treba da uradi:\nPotrebne stranice:\nJezici i ko prevodi:\nKo priprema tekstove i fotografije:\nŠta želimo sami da uređujemo:",
+        "download": "Preuzmite obrazac (.txt)"
+      }
     },
     "sl": {
       "slug": "cena-izdelave-spletne-strani",
@@ -163,7 +193,17 @@
           "WEBCRAFT — cenik in vzdrževanje",
           "https://webcraft.si/cenik"
         ]
-      ]
+      ],
+      "closing": [
+        "Želite ponudbe, ki jih lahko primerjate?",
+        "Vsakemu izvajalcu pošljite enak opis. Prosite za ločene postavke za izdelavo, vnos vsebine in vzdrževanje.",
+        "Pošljite opis projekta"
+      ],
+      "brief": {
+        "title": "Predloga za povpraševanje",
+        "text": "Kaj naj obiskovalec naredi:\nKatere strani potrebujemo:\nJeziki in kdo prevaja:\nKdo pripravi besedila in fotografije:\nKaj želimo po objavi urejati sami:",
+        "download": "Prenesite predlogo (.txt)"
+      }
     },
     "mk": {
       "slug": "cena-na-izrabotka-na-veb-stranica",
@@ -201,7 +241,17 @@
           "NULA — објавена цена за изработка",
           "https://agencynula.com/veb-stranici/"
         ]
-      ]
+      ],
+      "closing": [
+        "Сакате понуди што можете да ги споредите?",
+        "Испратете им ист опис на сите изведувачи. Побарајте одделни ставки за изработка, внес на содржина и одржување.",
+        "Испратете опис на проектот"
+      ],
+      "brief": {
+        "title": "Образец за барање понуда",
+        "text": "Што треба да направи посетителот:\nПотребни страници:\nЈазици и кој преведува:\nКој ги подготвува текстовите и фотографиите:\nШто сакаме сами да менуваме:",
+        "download": "Преземете го образецот (.txt)"
+      }
     },
     "sq": {
       "slug": "kostoja-e-krijimit-te-faqes",
@@ -243,7 +293,17 @@
           "Hostinkos — paketat dhe mbështetja në Kosovë",
           "https://hostinkos.com/"
         ]
-      ]
+      ],
+      "closing": [
+        "Dëshironi oferta që mund t’i krahasoni?",
+        "Dërgojuni studiove të njëjtin përshkrim. Kërkoni zëra të veçantë për ndërtimin, hedhjen e përmbajtjes dhe mirëmbajtjen.",
+        "Dërgoni përshkrimin e projektit"
+      ],
+      "brief": {
+        "title": "Model për kërkesën e ofertës",
+        "text": "Çfarë duhet të bëjë vizitori:\nFaqet që na duhen:\nGjuhët dhe kush përkthen:\nKush përgatit tekstet dhe fotografitë:\nÇfarë duam të ndryshojmë vetë:",
+        "download": "Shkarkoni modelin (.txt)"
+      }
     }
   },
   "što-znati-prije-kupnje-web-stranice": {
@@ -472,6 +532,15 @@
           "Dogovorite kad se provjera ponavlja",
           "Poslije objave prođite najvažniju uslugu i testirajte upit. Jednom mjesečno provjerite istek domena, pristupe i prijem poruka. Za povrat kopije dogovorite period prema količini izmjena koje možete izgubiti. U izvještaju tražite datum, rezultat i zadatak s odgovornom osobom. Kad su problemi ponovljeni, uporedite zapise, a ne samo datum posljednje nadogradnje."
         ]
+      ],
+      "closing": [
+        "Ko provjerava stižu li upiti s vaše stranice?",
+        "Pošaljite adresu i navedite šta sami ažurirate, a šta pokriva hosting. Tako možemo predložiti obim održavanja.",
+        "Zatražite ponudu za održavanje"
+      ],
+      "check_note": [
+        "Iz provjere Ostrelyine stranice",
+        "Na našoj hrvatskoj stranici održavanja provjerili smo vezu na kontakt i obrazac s adresom za slanje. Za potvrdu isporuke vlasnik treba poslati označenu probnu poruku i upisati kada je stigla u sandučić."
       ]
     },
     "sr-rs": {
@@ -504,6 +573,15 @@
           "Dogovorite raspored koji prati rizik",
           "Posle objave proverite glavni obrazac i promenjene adrese. Mesečno proverite rokove obnove, pristup i prijem upita. Periodično vratite kopiju na probni sajt i pogledajte najnoviji unos. Za svaku proveru zapišite datum, rezultat i vlasnika zadatka. Ako se tokom sezone sadržaj menja svakog dana, dogovorite koliko novog rada možete da izgubite pri oporavku."
         ]
+      ],
+      "closing": [
+        "Ko proverava da li upiti stižu sa sajta?",
+        "Pošaljite adresu sajta i napišite šta sami ažurirate, a šta pokriva hosting. Tako možemo proceniti obim održavanja.",
+        "Zatražite ponudu za održavanje"
+      ],
+      "check_note": [
+        "Iz provere Ostrelyinog sajta",
+        "Na našoj hrvatskoj stranici održavanja proverili smo vezu do kontakta i obrazac sa adresom za slanje. Za potvrdu isporuke vlasnik šalje označenu probnu poruku i beleži kada je stigla u sanduče."
       ]
     },
     "sr-me": {
@@ -536,6 +614,15 @@
           "Zapišite šta se radi pred sezonu",
           "Otvorite smještaj, upute za dolazak i kontakt na telefonu. Pored svakog testa zapišite datum i ko ga ponavlja. Dogovorite ko u proljeće obnavlja domen i ko ima pristup rezervi podataka. Ako sezonski link ka dobavljaču prestane raditi, odgovorna osoba treba da može istaknuti direktan upit dok sklop ponovo ne proradi."
         ]
+      ],
+      "closing": [
+        "Ko provjerava stižu li upiti sa sajta?",
+        "Pošaljite adresu i napišite šta sami ažurirate, a šta pokriva hosting. Tako možemo procijeniti obim održavanja.",
+        "Zatražite ponudu za održavanje"
+      ],
+      "check_note": [
+        "Iz provjere Ostrelyinog sajta",
+        "Na našoj hrvatskoj stranici održavanja provjerili smo vezu do kontakta i obrazac sa adresom za slanje. Za potvrdu isporuke vlasnik šalje označenu probnu poruku i bilježi kad je stigla u sanduče."
       ]
     },
     "sl": {
@@ -568,6 +655,15 @@
           "V dnevnik dodajte rezultate in odgovorne osebe",
           "Po objavi preizkusite glavno storitev, spremenjene povezave in prejem obrazca. Mesečno preglejte roke obnove domene, dostope in pomembna povpraševanja. Občasno obnovite kopijo v testnem okolju in preverite zadnjo referenco. Zapišite datum, napako, rešitev in kdo jo je preveril. Če spletna stran prinaša večino povpraševanj, določite kontakt za nujne težave."
         ]
+      ],
+      "closing": [
+        "Kdo preverja, ali povpraševanja prispejo?",
+        "Pošljite naslov spletišča in opišite, kaj urejate sami ter kaj prevzame ponudnik gostovanja. Tako lahko ocenimo obseg vzdrževanja.",
+        "Zaprosite za ponudbo za vzdrževanje"
+      ],
+      "check_note": [
+        "Iz pregleda Ostrelyinega spletišča",
+        "Na hrvaški strani za vzdrževanje smo preverili povezavo do stika in obrazec z naslovom za oddajo. Za preverjanje dostave lastnik pošlje označeno testno sporočilo in zapiše, kdaj ga prejme v nabiralnik."
       ]
     },
     "mk": {
@@ -600,6 +696,15 @@
           "Направете распоред и запис за секоја проверка",
           "По објава проверете ги главната услуга, изменетите адреси и контактот. Месечно прегледувајте ги роковите за обновување и пристапите. Периодично вратете резервна копија во тестна околина. Запишете датум, адреса, резултат и одговорно лице. Ако страницата е главен извор на барања, договорете кој реагира при прекин и како се проверува дека приемот е вратен."
         ]
+      ],
+      "closing": [
+        "Кој проверува дали стигнуваат барањата?",
+        "Испратете ја адресата и наведете што ажурирате сами, а што опфаќа хостингот. Врз таа основа можеме да го процениме одржувањето.",
+        "Побарајте понуда за одржување"
+      ],
+      "check_note": [
+        "Од проверката на страницата на Ostrelya",
+        "На нашата хрватска страница за одржување ги проверивме врската до контактот и образецот со адреса за испраќање. За проверка на испораката сопственикот испраќа означена пробна порака и бележи кога пристигнала во поштенското сандаче."
       ]
     },
     "sq": {
@@ -632,6 +737,15 @@
           "Mbani një regjistër që mund ta përdorë ekipi",
           "Pas publikimit kontrolloni shërbimin kryesor dhe adresat e ndryshuara. Çdo muaj rishikoni hyrjet, afatet e rinovimit dhe marrjen e mesazheve. Herë pas here riktheni kopjen në mjedisin e provës dhe hapni një faqe të sapondryshuar. Shënoni datën, rezultatin dhe përgjegjësin. Nëse kontakti prishet, caktoni kush njoftohet dhe kush vërteton riparimin."
         ]
+      ],
+      "closing": [
+        "Kush kontrollon nëse mbërrijnë kërkesat nga faqja?",
+        "Dërgoni adresën dhe tregoni çfarë përditësoni vetë e çfarë mbulon ofruesi i hostimit. Kështu mund të vlerësojmë mirëmbajtjen.",
+        "Kërkoni ofertë për mirëmbajtje"
+      ],
+      "check_note": [
+        "Nga kontrolli i faqes së Ostrelya-s",
+        "Në faqen tonë kroate për mirëmbajtjen kontrolluam lidhjen e kontaktit dhe formularin me adresën ku dërgohen të dhënat. Për të verifikuar dorëzimin, pronari dërgon një mesazh prove të shënuar dhe regjistron kohën e mbërritjes në postën elektronike."
       ]
     }
   },
@@ -675,6 +789,11 @@
           "Kada je bolje vratiti staru verziju",
           "Dogovorite ko ima pristup prethodnoj objavi i ko odlučuje o povratu. Ako cijela kategorija vraća pogrešnu stranicu ili upiti više ne stižu, popravka može biti hitna. Za jednu grešku u tekstu lakša je ispravka na postojećoj verziji. Nakon povrata ponovite test odredišta, navigacije i upita."
         ]
+      ],
+      "closing": [
+        "Koje stranice danas donose upite?",
+        "Pošaljite adresu weba, termin objave i tri stranice koje kupci koriste. Tako možemo pripremiti plan redizajna.",
+        "Razgovarajmo o redizajnu"
       ]
     },
     "sr-rs": {
@@ -715,6 +834,11 @@
           "Dogovor za kvar posle objave",
           "Zabeležite ko može da vrati prethodno izdanje i koji kvar opravdava tu odluku. Ako glavna forma prestane da radi ili važna grupa adresa vraća pogrešne stranice, proverite koliko brzo može da se uvede popravka. Posle vraćanja ponovite iste testove, posebno prijem upita i preusmerenja."
         ]
+      ],
+      "closing": [
+        "Koje stranice danas donose upite?",
+        "Pošaljite adresu sajta, planirani datum objave i tri stranice koje kupci koriste.",
+        "Razgovarajmo o redizajnu"
       ]
     },
     "sr-me": {
@@ -755,6 +879,11 @@
           "Osigurajte plan prije važnog datuma",
           "Zakazivanje migracije dan pred kampanju ostavlja malo prostora za provjeru. Uzmite termin kada je osoba koja može vratiti prethodnu verziju dostupna. Sačuvajte evidenciju preusmjerenja i uputstvo za obrazac. Ako se kvar ne može brzo ispraviti, vratite odgovarajuću verziju i poslije provjerite najvažnije adrese i prijem upita."
         ]
+      ],
+      "closing": [
+        "Koje stranice danas donose upite?",
+        "Pošaljite adresu sajta, planirani datum objave i tri stranice koje kupci koriste.",
+        "Razgovarajmo o redizajnu"
       ]
     },
     "sl": {
@@ -795,6 +924,11 @@
           "Pripravite postopek za vrnitev različice",
           "Zapišite, kdo lahko obnovi prejšnjo izdajo in kdaj se za to odloči. Če po prenovi izgine pomembna skupina naslovov ali odpove glavni obrazec, primerjajte čas popravka s časom obnove. Po vrnitvi znova preverite naslove, preusmeritve in dejanski prejem povpraševanj."
         ]
+      ],
+      "closing": [
+        "Katere strani vam danes prinašajo povpraševanja?",
+        "Pošljite naslov spletišča, načrtovani datum objave in tri strani, ki jih uporabljajo vaše stranke.",
+        "Pogovorimo se o prenovi"
       ]
     },
     "mk": {
@@ -835,6 +969,11 @@
           "Подгответе план за враќање",
           "Пред објавата договорете кој може да ја врати претходната верзија. Ако важни услуги се отворат на погрешни адреси или барањата престанат да стигнуваат, проценете дали е побрза поправка или враќање. По секоја постапка повторете ги тестовите за адреси, пренасочувања и контакт."
         ]
+      ],
+      "closing": [
+        "Кои страници денес ви носат барања?",
+        "Испратете ја адресата, планираниот датум на објавување и три страници што ги користат вашите клиенти.",
+        "Разговарајте за редизајн"
       ]
     },
     "sq": {
@@ -875,6 +1014,11 @@
           "Përgatitni një mënyrë rikthimi",
           "Para publikimit caktoni kush mund ta rikthejë versionin e mëparshëm dhe kur duhet marrë ai vendim. Nëse formulari kryesor nuk dorëzon kërkesa ose një grup faqesh hap destinacionin e gabuar, vlerësoni sa zgjat riparimi. Pas rikthimit përsëritni provat e adresave dhe të formularit."
         ]
+      ],
+      "closing": [
+        "Cilat faqe ju sjellin kërkesa sot?",
+        "Dërgoni adresën aktuale, datën e planifikuar dhe tri faqet që përdorin klientët tuaj.",
+        "Flasim për ridizajnimin"
       ]
     }
   },
@@ -907,7 +1051,16 @@
         [
           "Pročitajte status bez nagađanja",
           "Ako piše Discovered, provjerite unutrašnje poveznice i dostupnost. Ako piše Crawled, pogledajte da li alat vidi glavni tekst i postoji li vrlo slična adresa. Ako se status odnosi na zabranu, odlučite treba li stranica uopće biti javna prije uklanjanja noindexa. Nakon popravke provjerite primjer URL-a i zapišite kada ste ga ponovo poslali."
+        ],
+        [
+          "Primjer nalaza na našoj domeni",
+          "Dana 22. novembra 2026. HTTP adresa naše mape stranice vratila je 308, a HTTPS odredište 200. Stara adresa vodi na odgovarajući sadržaj u jednom koraku. Za važnu stranicu koja vraća 404 treba pronaći odgovarajuću zamjenu ili vratiti sadržaj, a zatim ponoviti provjeru."
         ]
+      ],
+      "closing": [
+        "Koju stranicu kupac treba pronaći?",
+        "Pošaljite URL, izraz koji kupac koristi i šta ste već provjerili.",
+        "Opišite problem u pretrazi"
       ]
     },
     "sr-rs": {
@@ -939,7 +1092,16 @@
         [
           "Jedan status, sledeći korak",
           "Discovered znači da je URL poznat, pa proverite linkove, sitemap i dostupnost. Ako je Crawled, pogledajte šta Google može da pročita i da li postoji druga strana sa istom namenom. Kod isključenja zbog noindex prvo proverite da li je u pitanju javna ili probna verzija. Posle popravke pokrenite test uživo pre slanja zahteva."
+        ],
+        [
+          "Primer nalaza na našem domenu",
+          "Dana 22. novembra 2026. HTTP adresa naše mape sajta vratila je 308, a HTTPS odredište 200. Stara adresa vodi do pravog sadržaja u jednom koraku. Za važnu stranicu koja vraća 404 pronađite odgovarajuću zamenu ili vratite sadržaj i ponovite proveru."
         ]
+      ],
+      "closing": [
+        "Koju stranicu kupac treba da pronađe?",
+        "Pošaljite URL, izraz koji kupac koristi i šta ste već proverili.",
+        "Opišite problem u pretrazi"
       ]
     },
     "sr-me": {
@@ -971,7 +1133,16 @@
         [
           "Primjer greške kod dvije verzije",
           "Ako crnogorska stranica apartmana ima canonical na englesku naslovnicu, pregledajte da li podešavanje odgovara ponudi. Kada obje stranice treba da se prikazuju, obično imaju vlastite URL-ove i glavnu adresu na sebe, uz odgovarajuću jezičku vezu. Provjerite interne linkove, sitemap i stanje Googleovog kanonskog izbora poslije novog pregleda."
+        ],
+        [
+          "Primjer nalaza na našem domenu",
+          "Dana 22. novembra 2026. HTTP adresa naše mape sajta vratila je 308, a HTTPS odredište 200. Stara adresa vodi do odgovarajućeg sadržaja u jednom koraku. Za važnu stranicu koja vraća 404 pronađite zamjenu ili vratite sadržaj, pa ponovite provjeru."
         ]
+      ],
+      "closing": [
+        "Koju stranicu kupac treba da pronađe?",
+        "Pošaljite URL, izraz koji kupac koristi i šta ste već provjerili.",
+        "Opišite problem u pretrazi"
       ]
     },
     "sl": {
@@ -1002,7 +1173,16 @@
         [
           "Kaj storiti glede na razlog v poročilu",
           "Pri odkriti, še ne indeksirani strani preverite povezave, kazalo in dostop. Pri pregledani, še ne indeksirani strani preverite vidno vsebino ter morebitne podvojene naslove. Če je razlog noindex, ugotovite, ali je to namerno pri testni različici. Po popravku zaženite preizkus v živo in nato zahtevajte pregled pomembnega naslova."
+        ],
+        [
+          "Primer ugotovitve na naši domeni",
+          "Dne 22. novembra 2026 je naslov HTTP našega zemljevida strani vrnil 308, ciljni naslov HTTPS pa 200. Stari naslov vodi do ustrezne vsebine v enem koraku. Pri pomembni strani, ki vrne 404, poiščite primerljiv cilj ali obnovite vsebino in ponovno preverite stari naslov."
         ]
+      ],
+      "closing": [
+        "Katero stran naj bi našla stranka?",
+        "Pošljite naslov strani, iskalni izraz in opis tega, kar ste že preverili.",
+        "Opišite težavo pri iskanju"
       ]
     },
     "mk": {
@@ -1033,7 +1213,16 @@
         [
           "Постапете според прикажаниот статус",
           "Ако адресата е откриена, проверете ги sitemap, внатрешните врски и достапноста. Ако е прегледана без индексирање, споредете ја со слични страници и проверете дали главниот текст е видлив. Ако има noindex, прво утврдете дали е намерен. По исправката направете тест во живо и побарајте проверка на важниот URL."
+        ],
+        [
+          "Пример за наод на нашиот домен",
+          "На 22 ноември 2026 HTTP-адресата на нашата мапа на страницата врати 308, а целната HTTPS-адреса врати 200. Старата адреса води до соодветната содржина во еден чекор. За важна страница што враќа 404 најдете соодветна замена или вратете ја содржината и повторете ја проверката."
         ]
+      ],
+      "closing": [
+        "Која страница треба да ја најде купувачот?",
+        "Испратете ја адресата, изразот за пребарување и што веќе проверивте.",
+        "Опишете го проблемот"
       ]
     },
     "sq": {
@@ -1064,7 +1253,16 @@
         [
           "Veproni sipas arsyes që jep raporti",
           "Kur adresa është zbuluar, kontrolloni lidhjet e brendshme, sitemap dhe qasjen. Kur është vizituar pa u indeksuar, shihni nëse përmbajtja kryesore ngarkohet dhe nëse ka faqe shumë të ngjashme. Kur ka noindex, sqaroni nëse është vendosur qëllimisht. Pas rregullimit bëni provë të drejtpërdrejtë dhe kërkoni kontroll për URL-në me rëndësi."
+        ],
+        [
+          "Shembull nga kontrolli i domenit tonë",
+          "Më 22 nëntor 2026 adresa HTTP e hartës së faqes sonë ktheu 308 dhe adresa përfundimtare HTTPS ktheu 200. Lidhja e vjetër shkon te përmbajtja e duhur në një hap. Për një faqe të rëndësishme që kthen 404, gjeni një zëvendësim të përshtatshëm ose riktheni përmbajtjen dhe kontrollojeni sërish."
         ]
+      ],
+      "closing": [
+        "Cilën faqe duhet të gjejë klienti?",
+        "Dërgoni adresën, shprehjen e kërkimit dhe çfarë keni kontrolluar deri tani.",
+        "Përshkruani problemin e dukshmërisë"
       ]
     }
   },
@@ -1642,6 +1840,200 @@
           "Përcaktoni si do të përditësohen gjuhët",
           "Kur ndryshon çmimi, afati ose zona e shërbimit, caktoni një redaktues për çdo version që e përmend. Mbani një fjalor të shkurtër për termat e biznesit. Në Search Console shikoni shfaqjet sipas adresës dhe vendit, ndërsa kërkesat e mbërritura mbajini veçmas. Kjo ndihmon për zgjedhjen e shërbimit që ia vlen të lokalizohet më pas."
         ]
+      ]
+    }
+  },
+  "web-za-apartmane-upit-ili-rezervacija": {
+    "bs": {
+      "slug": "web-za-smjestaj-upit-ili-rezervacija",
+      "title": "Web za smještaj – kada je dovoljan obrazac za upit?",
+      "summary": "Gost želi četiri noćenja u augustu. Pogledajte šta treba vidjeti na stranici, šta dolazi vlasniku i kada se traženi termin smatra potvrđenim.",
+      "sections": [
+        [
+          "Prikažite tačnu smještajnu jedinicu",
+          "Navedite broj gostiju, datume i šta cijena uključuje. Ako samo jedan apartman ima terasu, stavite fotografiju terase na njegovu stranicu. Ako cijenu šaljete naknadno, navedite kada gost može očekivati odgovor."
+        ],
+        [
+          "Kako izgleda upit",
+          "Primjer poruke: „Dolazimo 12. augusta, odlazimo 16., dvoje odraslih i dijete. Imate li apartman s dvije sobe?” Gost dobija potvrdu prijema, a vi u istoj poruci naziv apartmana i datume. Tek nakon provjere kalendara potvrđujete termin."
+        ],
+        [
+          "Primjer odgovora nakon provjere",
+          "„Apartman Maslina je slobodan od 12. do 16. augusta za dvoje odraslih i dijete. Šaljem ponudu za četiri noćenja. Odgovorite ako vam odgovara pa šaljemo potvrdu rezervacije.” Ako termin čuvate ograničeno vrijeme, navedite datum i sat do kojeg vrijedi ponuda."
+        ],
+        [
+          "Povezivanje sa sistemom koji već koristite",
+          "Na telefonu odaberite datume pa otvorite sistem za rezervacije. Provjerite jezik, broj osoba i odabrani apartman. Ako nestanu, dodajte poveznicu prije unosa podataka ili pitajte pružaoca usluge kako prenijeti odabir."
+        ],
+        [
+          "Prije objave",
+          "Na dan smjene izmjerite koliko treba da odgovorite gostu. Ako je jedinica dostupna na više kanala, odredite koji kalendar vodi raspoloživost i ko zatvara termin. Probnu rezervaciju obavite u testnom okruženju."
+        ]
+      ],
+      "closing": [
+        "Kako potvrđujete slobodan termin?",
+        "Pošaljite broj jedinica, jezike gostiju i naziv kalendara koji koristite. Tako možemo predložiti kako primati upite.",
+        "Opišite svoj smještaj"
+      ]
+    },
+    "sr-rs": {
+      "slug": "sajt-za-smestaj-upit-ili-rezervacija",
+      "title": "Sajt za smeštaj – upit ili direktna rezervacija?",
+      "summary": "Gost traži četiri noćenja u avgustu. Ispratite njegov zahtev od stranice apartmana do potvrde termina i odredite koji deo posla treba da preuzme sajt.",
+      "sections": [
+        [
+          "Prikažite jedinicu za koju gost pita",
+          "Navedite broj osoba, datume i šta cena obuhvata. Fotografiju balkona prikažite uz odgovarajući apartman. Ako cenu šaljete naknadno, recite kada gost može da očekuje odgovor."
+        ],
+        [
+          "Kada je dovoljan obrazac",
+          "Primer upita: „Dvoje odraslih i dete, dolazak 12. avgusta, odlazak 16. Da li je slobodan apartman sa dve sobe?” Vlasniku odmah stižu datumi i naziv jedinice. Potvrda prijema gostu treba jasno da kaže da zahtev čeka proveru."
+        ],
+        [
+          "Primer odgovora posle provere",
+          "„Apartman Maslina je slobodan od 12. do 16. avgusta za dvoje odraslih i dete. Šaljem ponudu za četiri noćenja. Javite ako vam odgovara pa ćemo poslati potvrdu rezervacije.” Ako privremeno čuvate termin, napišite do kog dana i sata."
+        ],
+        [
+          "Ako već imate sistem za rezervacije",
+          "Prođite postupak na telefonu. Da li drugi ekran prikazuje iste datume, jezik, apartman i broj gostiju? Ako ne, pomerite vezu ranije ili proverite sa dobavljačem koje podatke možete preneti."
+        ],
+        [
+          "Pre otvaranja sezone",
+          "Izmerite vreme do odgovora tokom smene gostiju. Ako prodajete preko više kanala, dogovorite koji kalendar vodi raspoloživost i ko zatvara termin odmah po potvrdi. Proverite tok rezervacije u testnom režimu."
+        ]
+      ],
+      "closing": [
+        "Kako danas potvrđujete raspoloživost?",
+        "Pošaljite broj jedinica, jezike gostiju i naziv sistema koji koristite. Tako možemo proceniti šta sajt treba da preuzme.",
+        "Opišite svoj smeštaj"
+      ]
+    },
+    "sr-me": {
+      "slug": "sajt-za-smjestaj-upit-ili-rezervacija",
+      "title": "Sajt za smještaj – upit ili direktna rezervacija?",
+      "summary": "Gost traži četiri noćenja u avgustu. Pogledajte kako zahtjev stiže do vas i šta gost treba da dobije prije nego što smatra da je rezervisao smještaj.",
+      "sections": [
+        [
+          "Šta prikazati na stranici apartmana",
+          "Navedite broj osoba, datume i šta ulazi u cijenu. Fotografiju pogleda na more povežite sa jedinicom iz koje je snimljena. Ako računate cijenu ručno, napišite kada se javljate."
+        ],
+        [
+          "Kada je dovoljan obrazac",
+          "Primjer upita: „Dolazak 12. avgusta, odlazak 16., dvoje odraslih i dijete. Je li slobodan apartman sa dvije sobe?” Pošaljite vlasniku datume i naziv jedinice. Gostu potvrdite prijem i objasnite da termin čeka provjeru."
+        ],
+        [
+          "Primjer odgovora poslije provjere",
+          "„Apartman Maslina je slobodan od 12. do 16. avgusta za dvoje odraslih i dijete. Šaljem ponudu za četiri noćenja. Javite ako vam odgovara pa šaljemo potvrdu rezervacije.” Ako privremeno čuvate termin, napišite do kog dana i sata."
+        ],
+        [
+          "Povezivanje sa postojećim sistemom",
+          "Provjerite na telefonu preuzima li sistem za rezervacije datume, jezik, jedinicu i broj gostiju. Ako se odabir izgubi, otvorite sistem prije unosa ili s pružaocem provjerite podržane postavke."
+        ],
+        [
+          "Provjera prije sezone",
+          "Na dan smjene provjerite kad neko stigne odgovoriti gostu. Ako apartman nudite na više mjesta, zapišite koji kalendar je mjerodavan i ko zatvara termin nakon potvrde. Probnu rezervaciju uradite u testnom režimu."
+        ]
+      ],
+      "closing": [
+        "Kako potvrđujete slobodan termin?",
+        "Pošaljite broj jedinica, jezike gostiju i naziv kalendara. Na osnovu toga možemo procijeniti kakav vam prijem upita treba.",
+        "Opišite svoj smještaj"
+      ]
+    },
+    "sl": {
+      "slug": "spletna-stran-za-nastanitve-povprasevanje-ali-rezervacija",
+      "title": "Spletna stran za nastanitve – povpraševanje ali rezervacija?",
+      "summary": "Gost želi štiri nočitve v avgustu. Spremljajte njegovo pot od izbire apartmaja do potrditve termina in presodite, katere korake lahko prevzame spletna stran.",
+      "sections": [
+        [
+          "Pokažite apartma, o katerem gost sprašuje",
+          "Navedite število oseb, datum prihoda in odhoda ter kaj vključuje cena. Fotografijo terase objavite pri apartmaju, ki jo ima. Če ceno izračunate ročno, povejte, kdaj boste odgovorili."
+        ],
+        [
+          "Kdaj zadostuje obrazec",
+          "Primer: »Dve odrasli osebi in otrok, prihod 12. avgusta, odhod 16. avgusta. Je dvosobni apartma prost?« Lastnik prejme datume in ime apartmaja v istem sporočilu. Gost prejme obvestilo o prejemu in pojasnilo, da termin še čaka na potrditev."
+        ],
+        [
+          "Primer odgovora po preverjanju",
+          "»Apartma Oljka je od 12. do 16. avgusta prost za dve odrasli osebi in otroka. V priponki je ponudba za štiri nočitve. Če vam ustreza, odgovorite in poslali vam bomo potrditev rezervacije.« Če termin zadržite le začasno, dodajte datum in uro izteka ponudbe."
+        ],
+        [
+          "Povezava z obstoječim rezervacijskim sistemom",
+          "Na telefonu izberite termin in odprite rezervacijski sistem. Ali ostanejo datumi, jezik, število oseb in izbrani apartma enaki? Če mora gost vse izbrati znova, prestavite povezavo na začetek postopka ali preverite možnosti prenosa pri ponudniku."
+        ],
+        [
+          "Preizkus pred sezono",
+          "Na dan menjave gostov izmerite čas do odgovora. Če oddajate prek več kanalov, določite glavni koledar in osebo, ki po potrditvi zapre termin. Pred objavo opravite preizkus v testnem načinu ponudnika."
+        ]
+      ],
+      "closing": [
+        "Kako danes potrdite prost termin?",
+        "Pošljite število enot, jezike gostov in ime koledarja. Na tej osnovi lahko ocenimo, ali potrebujete obrazec ali povezavo z obstoječim sistemom.",
+        "Opišite svojo nastanitev"
+      ]
+    },
+    "mk": {
+      "slug": "stranica-za-smestuvanje-prasanje-ili-rezervacija",
+      "title": "Страница за сместување – прашање или директна резервација?",
+      "summary": "Гостин бара четири ноќевања во август. Проследете го барањето од изборот на апартман до потврдата за да одлучите кои чекори треба да ги преземе страницата.",
+      "sections": [
+        [
+          "Прикажете го апартманот за кој прашува гостинот",
+          "Наведете го бројот на лица, датумите и што е вклучено во цената. Сликата од терасата ставете ја кај апартманот што ја има. Ако цената ја одредувате рачно, кажете кога ќе одговорите."
+        ],
+        [
+          "Кога е доволен образец",
+          "Пример: „Двајца возрасни и едно дете, пристигнуваме на 12 август, заминуваме на 16 август. Дали е слободен двособниот апартман?“ Сопственикот ги добива датумите и името на апартманот во истата порака. Гостинот добива известување дека барањето е примено и дека се чека потврда."
+        ],
+        [
+          "Пример за одговор по проверката",
+          "„Апартманот Маслинка е слободен од 12 до 16 август за двајца возрасни и едно дете. Ви испраќам понуда за четири ноќевања. Ако ви одговара, пишете ни и ќе ви испратиме потврда за резервацијата.“ Ако го чувате терминот привремено, наведете до кој датум и час."
+        ],
+        [
+          "Поврзување со постоечки систем",
+          "Одберете термин на телефон и отворете го системот за резервации. Проверете дали се пренеле јазикот, датумите, апартманот и бројот на лица. Ако се изгубиле, поместете ја врската порано или прашајте го добавувачот што поддржува."
+        ],
+        [
+          "Проверка пред сезона",
+          "Измерете колку трае одговорот на ден кога се менуваат гостите. Ако продавате преку повеќе канали, одредете кој календар е главен и кој го затвора терминот. Направете пробна резервација во тестниот режим на системот."
+        ]
+      ],
+      "closing": [
+        "Како ја потврдувате достапноста?",
+        "Испратете го бројот на единици, јазиците на гостите и името на календарот. Врз таа основа можеме да предложиме образец или поврзување.",
+        "Опишете го сместувањето"
+      ]
+    },
+    "sq": {
+      "slug": "faqe-per-bujtina-kerkese-apo-rezervim",
+      "title": "Faqe për bujtina dhe apartamente – kërkesë apo rezervim?",
+      "summary": "Një familje kërkon katër net në gusht. Ndiqni kërkesën nga zgjedhja e apartamentit deri te konfirmimi dhe vendosni cilat hapa duhet të kryejë faqja.",
+      "sections": [
+        [
+          "Tregoni njësinë për të cilën pyet vizitori",
+          "Shënoni numrin e personave, datat dhe çfarë përfshin çmimi. Fotografinë e tarracës vendoseni te njësia që e ka. Nëse çmimin e llogaritni vetë, tregoni kur do të përgjigjeni."
+        ],
+        [
+          "Kur mjafton një formular",
+          "Shembull: “Dy të rritur dhe një fëmijë, mbërrijmë më 12 gusht dhe largohemi më 16 gusht. A është i lirë apartamenti me dy dhoma?” Pronari duhet të marrë datat dhe emrin e njësisë në të njëjtin mesazh. Vizitori merr njoftim për pranimin e kërkesës dhe pret konfirmimin e datave."
+        ],
+        [
+          "Shembull përgjigjeje pas kontrollit",
+          "“Apartamenti Ulliri është i lirë nga 12 deri më 16 gusht për dy të rritur dhe një fëmijë. Bashkëngjitur keni ofertën për katër net. Nëse ju përshtatet, na shkruani dhe do t’ju dërgojmë konfirmimin e rezervimit.” Nëse datat i mbani përkohësisht, vendosni ditën dhe orën e skadimit."
+        ],
+        [
+          "Lidhja me sistemin ekzistues",
+          "Zgjidhni datat në telefon dhe hapni sistemin e rezervimeve. Kontrolloni nëse ruhen datat, gjuha, njësia dhe numri i personave. Nëse duhen futur sërish, vendoseni lidhjen më herët ose pyesni ofruesin cilat të dhëna mund të kalohen."
+        ],
+        [
+          "Prova para sezonit",
+          "Matni kohën e përgjigjes kur një grup largohet dhe tjetri mbërrin. Nëse shisni në disa kanale, caktoni kalendarin kryesor dhe personin që mbyll datat pas konfirmimit. Kryeni një rezervim prove në mjedisin e testimit."
+        ]
+      ],
+      "closing": [
+        "Si e konfirmoni sot disponueshmërinë?",
+        "Na dërgoni numrin e njësive, gjuhët e vizitorëve dhe emrin e kalendarit. Kështu mund të vlerësojmë formularin ose lidhjen me sistemin tuaj.",
+        "Na tregoni për pronën tuaj"
       ]
     }
   }

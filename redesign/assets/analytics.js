@@ -147,8 +147,12 @@
     track('generate_lead');
   });
   document.addEventListener('click', (event) => {
-    const link = event.target.closest('main [data-analytics-service-link]');
-    if (link) track('guide_to_service');
+    const link = event.target.closest('main a[data-guide-action], main a[data-analytics-service-link]');
+    if (!link) return;
+    const action = link.dataset.guideAction;
+    const fields = { guide_action: action || 'service', guide_language: document.documentElement.lang };
+    if (link.dataset.guideMarket) fields.target_market = link.dataset.guideMarket;
+    track(action && action !== 'contact' ? 'guide_resource' : 'guide_to_service', fields);
   });
 
   applyChoice();

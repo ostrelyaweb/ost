@@ -70,6 +70,11 @@
           "Google Search Console — URL Inspection",
           "https://support.google.com/webmasters/answer/9012289"
         ]
+      ],
+      "closing": [
+        "Koje stranice danas donose upite?",
+        "Pošaljite nam adresu weba, planirani termin objave i tri stranice koje vaši kupci koriste. S tim popisom možemo pripremiti opseg redizajna.",
+        "Razgovarajmo o redizajnu"
       ]
     },
     "en": {
@@ -135,7 +140,12 @@
           "https://support.google.com/webmasters/answer/9012289"
         ]
       ],
-      "slug": "website-redesign-seo-migration"
+      "slug": "website-redesign-seo-migration",
+      "closing": [
+        "Which pages bring in enquiries today?",
+        "Send your current site, target launch date and three pages your customers rely on. We can use them to scope the redesign.",
+        "Discuss your redesign"
+      ]
     }
   },
   "zasto-web-stranica-nije-na-googleu": {
@@ -172,6 +182,10 @@
         [
           "Kako smo provjerili upozorenje na Ostrelyi",
           "U Bing Webmaster Toolsu vidjeli smo upozorenje na identične naslove i opise. Obje prijavljene adrese bile su naslovnica, jedna na HTTP-u i druga na HTTPS-u. Umjesto mijenjanja naslova provjerili smo prvi odgovor starih adresa. HTTP je vratio trajno preusmjerenje 308 na HTTPS, a odredište je vratilo 200 i navelo vlastiti canonical. Zatim smo pregledali svih 158 adresa iz tadašnjeg sitemapa i potvrdili da su naslovi i opisi jedinstveni.\n\nAko vidite sličnu prijavu, najprije zapišite koje je URL-ove alat stvarno naveo. Stare adrese mogu ostati u izvještaju i nakon što preusmjerenje radi. Provjerite live odgovor i sačuvajte datum kada ste ga provjerili. Tražilica treba ponovo pregledati adrese da bi se njezin izvještaj promijenio."
+        ],
+        [
+          "Primjer SEO nalaza na vlastitoj domeni",
+          "Dana 22. studenoga 2026. HTTP adresa našeg sitemapa vratila je 308, a njezino HTTPS odredište 200. Čitatelj koji krene sa stare adrese stiže do iste karte weba u jednom koraku. Ovakav nalaz možemo zatvoriti nakon provjere odredišta; za važnu stranicu koja vraća 404 posao tek počinje. Dogovorimo zamjenu koja odgovara istoj potrebi i zatim ponovno testiramo staru adresu."
         ]
       ],
       "links": [
@@ -198,7 +212,12 @@
           "https://support.google.com/webmasters/answer/7440203"
         ]
       ],
-      "meta_description": "Provjerite zašto web stranica nije na Googleu. Koristite URL Inspection, protumačite razloge iz izvještaja i utvrdite je li problem indeksiranje ili vidljivost."
+      "meta_description": "Provjerite zašto web stranica nije na Googleu. Koristite URL Inspection, protumačite razloge iz izvještaja i utvrdite je li problem indeksiranje ili vidljivost.",
+      "closing": [
+        "Koja bi se stranica trebala pojaviti kupcu?",
+        "Pošaljite njen URL, izraz koji kupac traži i što ste već provjerili. To nam daje polazište za procjenu SEO pregleda.",
+        "Opišite problem s vidljivošću"
+      ]
     },
     "en": {
       "title": "Why isn't my website showing up on Google?",
@@ -231,6 +250,10 @@
         [
           "A reporting discrepancy we checked on Ostrelya",
           "Bing Webmaster Tools listed duplicate titles and descriptions for our homepage. Its two examples were the HTTP and HTTPS addresses. The first request to HTTP returned a permanent 308 redirect and the HTTPS destination returned 200 with a self-referencing canonical. We also checked the 158 URLs in the sitemap at the time and found that their titles and descriptions were unique.\n\nIf a tool reports this on your site, open the specific URLs it lists. Test the first response as well as the final page. Older addresses can remain visible in a report after their live behaviour has changed. Record when you checked each one. Compare the next report after a recrawl with the same list of URLs."
+        ],
+        [
+          "An audit finding from our own domain",
+          "On 22 November 2026 our HTTP sitemap returned 308 and its HTTPS destination returned 200. Someone following the old address reached the intended resource in one hop. That item can be signed off once the destination has been checked. A valuable old page returning 404 needs a different decision: find an equivalent destination or restore its content, then retest the original URL."
         ]
       ],
       "links": [
@@ -258,7 +281,12 @@
         ]
       ],
       "slug": "why-website-not-showing-on-google",
-      "meta_description": "Diagnose why a website is not showing on Google with URL Inspection. Check redirects, indexability, canonicals and search impressions before changing the page."
+      "meta_description": "Diagnose why a website is not showing on Google with URL Inspection. Check redirects, indexability, canonicals and search impressions before changing the page.",
+      "closing": [
+        "Which page should a buyer be finding?",
+        "Share the URL, the phrase your customer would search for and what you have already checked. That gives us a starting point for scoping an SEO review.",
+        "Describe the search issue"
+      ]
     },
     "modified": "2026-11-22"
   },
@@ -655,5 +683,85 @@
       "meta_description": "Plan a multilingual business website. Decide what to localise first, map URLs and hreflang, and test language switching and enquiry delivery."
     },
     "modified": "2026-11-22"
+  },
+  "web-za-apartmane-upit-ili-rezervacija": {
+    "topic": "planning",
+    "modified": "2026-11-22",
+    "published": "2026-11-22",
+    "regional_published": "2026-11-22",
+    "hr": {
+      "slug": "web-za-apartmane-upit-ili-rezervacija",
+      "title": "Web za apartmane – obrazac za upit ili izravna rezervacija?",
+      "summary": "Gost traži četiri noći u kolovozu. Prođite njegov put od odabira apartmana do potvrde i odlučite što vaš web treba raditi dok ste vi na dočeku drugih gostiju.",
+      "sections": [
+        [
+          "Što gost treba vidjeti prije slanja upita",
+          "Prikažite odabranu jedinicu, broj osoba, datume dolaska i odlaska te što ulazi u cijenu. Fotografija terase treba pripadati baš tom apartmanu. Ako cijenu računate ručno, recite kada će gost dobiti ponudu."
+        ],
+        [
+          "Kad je dovoljan običan obrazac",
+          "Ogledni upit glasi „Dolazimo 12. kolovoza, odlazimo 16., dvije odrasle osobe i dijete. Je li apartman s dvije sobe slobodan?” Nakon slanja gost treba vidjeti da je upit zaprimljen i da termin još čeka vašu potvrdu. Vlasniku trebaju stići datumi i naziv jedinice u istoj poruci."
+        ],
+        [
+          "Primjer odgovora gostu nakon provjere",
+          "„Apartman Maslina slobodan je od 12. do 16. kolovoza za dvije odrasle osobe i dijete. U privitku je ponuda za četiri noćenja. Ako vam odgovara, odgovorite na ovu poruku; zatim ćemo vam poslati potvrdu rezervacije.” Ovo je ogledna poruka. Ako termin držite samo do određenog sata, navedite taj datum i sat te uvjete koji vrijede za vaš objekt."
+        ],
+        [
+          "Ako već koristite rezervacijski sustav",
+          "Otvorite poveznicu s mobitela kao gost. Provjerite jesu li se prenijeli datumi, jedinica, broj gostiju i jezik. Ako gost mora ponoviti sve podatke, poveznicu stavite ranije u postupku ili provjerite podržava li dobavljač prijenos odabira."
+        ],
+        [
+          "Kako odlučiti prije sezone",
+          "Ako sami potvrđujete svaki termin, izmjerite koliko dugo upit čeka odgovor tijekom smjene gostiju. Ako prodajete istu jedinicu na više kanala, zapišite koji je kalendar mjerodavan i tko zatvara termin nakon potvrde. Prije objave provedite probnu rezervaciju u testnom načinu dobavljača."
+        ]
+      ],
+      "closing": [
+        "Kako danas potvrđujete slobodan termin?",
+        "Pošaljite broj jedinica, jezike gostiju i naziv kalendara koji koristite. Tako možemo procijeniti treba li vam obrazac ili povezivanje s postojećim sustavom.",
+        "Opišite svoj smještaj"
+      ]
+    },
+    "en": {
+      "slug": "accommodation-website-enquiry-or-booking",
+      "title": "Does your accommodation website need a booking engine?",
+      "summary": "A guest wants four nights in August. Follow that enquiry from the room page to a confirmed stay and decide which steps your website should handle.",
+      "sections": [
+        [
+          "Show the room the guest is asking about",
+          "Identify the unit, occupancy, arrival and departure dates, and what the price includes. A terrace photo belongs on the page for the unit that actually has it. If you quote by hand, tell guests when to expect a reply."
+        ],
+        [
+          "When an enquiry form is enough",
+          "Sample enquiry: “Two adults and a child, arriving 12 August and leaving on the 16th. Is the two-bedroom apartment available?” The receipt should say that the dates still need confirmation. The owner should receive the unit and dates together, without having to ask the guest again."
+        ],
+        [
+          "A reply the owner can actually send",
+          "Sample reply: “The Olive apartment is available for two adults and one child, arriving 12 August and leaving 16 August. I’ve attached the quote for four nights. Reply if you’d like to go ahead and I’ll send your booking confirmation.” If you hold the dates temporarily, specify the expiry date and local time. The form receipt, quote and final confirmation are three separate messages."
+        ],
+        [
+          "If you already use a booking engine",
+          "Follow the link on a phone. Check whether the dates, room, party size and language survive the handoff. If the guest has to make every choice twice, link earlier in the journey or ask your provider which selections it can carry across."
+        ],
+        [
+          "Before opening the calendar for summer",
+          "If you confirm every stay yourself, time a reply on a busy changeover day. If you sell the same room through several channels, agree which calendar controls inventory and who closes dates after a confirmation. Run a test booking in the provider’s test mode before launch."
+        ]
+      ],
+      "closing": [
+        "How do you confirm availability today?",
+        "Send the number of units, your guests’ languages and the calendar you use. We can use that to scope an enquiry form or a connection to your existing booking system.",
+        "Tell us about your property"
+      ],
+      "links": [
+        [
+          "Website design",
+          "/services/#web-design"
+        ],
+        [
+          "Discuss an accommodation website",
+          "/services/#contact"
+        ]
+      ]
+    }
   }
 }

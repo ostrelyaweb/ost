@@ -13,6 +13,7 @@ GUIDE_SERVICES = {
     "kako-da-se-web-pojavi-u-ai-pretrazivanju": "seo",
     "treba-li-web-stranici-cms": "development",
     "plan-visejezicne-web-stranice": "development",
+    "web-za-apartmane-upit-ili-rezervacija": "web",
 }
 
 
