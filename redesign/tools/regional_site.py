@@ -621,7 +621,13 @@ def default_main(active, headline, description, market, labels, nav, service, se
         project_type = f'<p class="services-kicker">{escape(labels["concept"])}</p>' if service in {"web", "brand", "development"} else ""
         example_link = ""
         if link_text := active.get("example_link"):
-            example_link = f'<a class="web-service-text-link" href="{demo}" hreflang="en">{escape(link_text)} (EN) <span aria-hidden="true">↗</span></a>'
+            local_example = active.get("example_url")
+            language_attr = '' if local_example else ' hreflang="en"'
+            language_label = '' if local_example else ' (EN)'
+            example_link = (
+                f'<a class="web-service-text-link" href="{escape(local_example or demo)}"{language_attr}>'
+                f'{escape(link_text)}{language_label} <span aria-hidden="true">↗</span></a>'
+            )
         image = (
             f'<a class="region-cover" href="{demo}" hreflang="en" aria-label="{escape(project)} (English)">'
             f'<img src="{cover}" alt="" width="{width}" height="{height}" loading="lazy"><span aria-hidden="true">↗</span></a>'

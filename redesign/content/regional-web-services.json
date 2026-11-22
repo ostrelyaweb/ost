@@ -93,7 +93,7 @@
         "Ažuriranja i ispravci prema ugovorenom opsegu",
         "Zapis promjena, otvorenih problema i preporuka"
       ],
-      "example": "Vodič pokazuje kako odvojiti mjesečne provjere od zadataka koji se rade nakon svake objave, s primjerom provjere važnog kontaktnog puta.",
+      "example": "Na hrvatskoj stranici održavanja provjerili smo otvara li poveznica kontaktni dio i postoji li obrazac s adresom za slanje. Taj pregled ne potvrđuje isporuku e-pošte. Za provjeru isporuke vlasnik šalje označenu probnu poruku i bilježi vrijeme primitka u sandučiću.",
       "faq_heading": "Česta pitanja",
       "faq": [
         [
@@ -105,8 +105,8 @@
           "Rutinske izmjene i novi predlošci nisu isti opseg. U dogovoru jasno navedemo što je uključeno, a što procjenjujemo zasebno."
         ]
       ],
-      "example_link": "Otvorite vodič za provjere nakon objave",
-      "modified": "2026-11-19",
+      "example_link": "Iz mjesečne provjere Ostrelye",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Što obuhvaća održavanje, a što novi projekt?",
@@ -121,8 +121,17 @@
             "Provjera ne završava porukom „uspješno poslano” na ekranu. Treba provjeriti prihvaća li poslužitelj zahtjev, stiže li obavijest u pravi sandučić i radi li obrazac na mobitelu.",
             "Za podršku pošaljite URL, vrijeme problema i opis koraka koji ga uzrokuju. Prije rizičnije izmjene dogovaramo kopiju i povrat na prethodno stanje; hitne intervencije i dostupnost definiramo zasebno."
           ]
+        ],
+        [
+          "Što pripremiti pri promjeni izvođača",
+          [
+            "Za prvu procjenu dovoljan je javni URL. Napišite gdje plaćate domenu i hosting, što više ne funkcionira i do kada je sadašnji izvođač dostupan. U obrascu ostavite samo opis. Prijenos pristupa dogovaramo zasebno.",
+            "U ponudi zatražite tri odvojene stavke – jednokratno preuzimanje, redovan mjesečni rad i intervencije po zahtjevu. Ako dio još vodi prethodni izvođač, uz njega upišite odgovornu osobu i datum primopredaje."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/blog/odr%C5%BEavanje-web-stranice-za%C5%A1to-je-bitno#maintenance-log",
+      "contact_brief": "Pošaljite adresu weba i napišite što danas ažurirate sami, a što radi pružatelj hostinga. Na temelju toga možemo predložiti što preuzeti u održavanje."
     }
   },
   "bs": {
@@ -211,7 +220,7 @@
         "Dogovorene provjere i ažuriranja",
         "Evidencija promjena i otvorenih zadataka"
       ],
-      "example": "U vodiču su odvojene provjere poslije objave od mjesečnih provjera koje tim može ponoviti.",
+      "example": "Na našoj hrvatskoj stranici održavanja provjerili smo vezu na kontakt i obrazac s adresom za slanje. Za potvrdu isporuke vlasnik treba poslati označenu probnu poruku i upisati kada je stigla u sandučić.",
       "faq_heading": "Česta pitanja",
       "faq": [
         [
@@ -223,8 +232,8 @@
           "Možete. Opišite kvar i pošaljite adresu stranice. Na osnovu pregleda predlažemo popravku i opseg."
         ]
       ],
-      "example_link": "Pogledajte vodič za održavanje",
-      "modified": "2026-11-19",
+      "example_link": "Iz provjere Ostrelyine stranice",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Dogovorite obim prije mjesečne podrške",
@@ -239,8 +248,17 @@
             "Testiramo put od slanja obrasca do dolaska poruke u sandučić, ne samo obavijest na ekranu. Provjeru ponavljamo nakon promjene koja može utjecati na kontakt.",
             "Dogovaramo šta kopija sadrži, gdje se čuva i kako se provjerava povrat. Za prijavu kvara tražimo adresu stranice, vrijeme i korake koji dovode do problema."
           ]
+        ],
+        [
+          "Šta pripremiti pri promjeni izvođača",
+          [
+            "Pošaljite javnu adresu i napišite ko vodi domenu i hosting, gdje je problem i do kada možete kontaktirati dosadašnjeg izvođača. Pristupe dogovaramo zasebno.",
+            "Tražite da ponuda odvoji preuzimanje, redovno mjesečno održavanje i dodatne intervencije. Uz dio koji još održava prethodni izvođač zapišite odgovornu osobu i datum predaje."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/bs/blog/odrzavanje-web-stranice#maintenance-log",
+      "contact_brief": "Pošaljite adresu i navedite šta sami ažurirate, a šta pokriva hosting. Tako možemo predložiti obim održavanja."
     }
   },
   "sr-rs": {
@@ -329,7 +347,7 @@
         "Ažuriranja, provere kopija i ispravke",
         "Evidencija rada i dogovor o prioritetima"
       ],
-      "example": "Naš vodič pokazuje kako zapisati proveru, zaduženu osobu i naredni korak, umesto da se ažuriranje tretira kao gotov posao bez testa.",
+      "example": "Na našoj hrvatskoj stranici održavanja proverili smo vezu do kontakta i obrazac sa adresom za slanje. Za potvrdu isporuke vlasnik šalje označenu probnu poruku i beleži kada je stigla u sanduče.",
       "faq_heading": "Česta pitanja",
       "faq": [
         [
@@ -341,8 +359,8 @@
           "Dogovorene tehničke provere mogu da obuhvate i neispravne linkove. Analiza upita i rad na sadržaju imaju poseban opseg."
         ]
       ],
-      "example_link": "Otvorite vodič za održavanje",
-      "modified": "2026-11-19",
+      "example_link": "Iz provere Ostrelyinog sajta",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Šta je redovno održavanje sajta?",
@@ -357,8 +375,17 @@
             "Pre rizične izmene planiramo kopiju i postupak vraćanja. Postojanje datoteke nije dovoljno: treba znati da li kopija obuhvata sadržaj, podešavanja i podatke potrebne za oporavak.",
             "Posle izmene proveravamo ključne stranice i kontakt do prijema poruke. Za kvar pošaljite URL, vreme i korake koji izazivaju problem; hitne intervencije dogovaramo zasebno."
           ]
+        ],
+        [
+          "Šta pripremiti kada menjate izvođača",
+          [
+            "Pošaljite javnu adresu sajta i napišite ko vodi domen i hosting, šta trenutno ne radi i do kada je dostupan prethodni izvođač. Pristupe dogovaramo zasebno.",
+            "U ponudi odvojite jednokratno preuzimanje, redovno mesečno održavanje i dodatne intervencije. Za preostale obaveze prethodnog izvođača zapišite ko je odgovoran i do kada."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/sr-rs/blog/odrzavanje-sajta#maintenance-log",
+      "contact_brief": "Pošaljite adresu sajta i napišite šta sami ažurirate, a šta pokriva hosting. Tako možemo proceniti obim održavanja."
     }
   },
   "sr-me": {
@@ -447,7 +474,7 @@
         "Redovne tehničke provjere i popravke",
         "Plan objava i pregled dogovorenih zadataka"
       ],
-      "example": "Vodič prikazuje kako u pregled uključiti važnu odredišnu stranicu i testirati cijeli put do kontakta nakon izmjene.",
+      "example": "Na našoj hrvatskoj stranici održavanja provjerili smo vezu do kontakta i obrazac sa adresom za slanje. Za potvrdu isporuke vlasnik šalje označenu probnu poruku i bilježi kad je stigla u sanduče.",
       "faq_heading": "Česta pitanja",
       "faq": [
         [
@@ -459,8 +486,8 @@
           "U ponudi navodimo obim redovnih izmjena. Nove funkcije i veće promjene procjenjujemo posebno."
         ]
       ],
-      "example_link": "Pogledajte vodič za održavanje",
-      "modified": "2026-11-19",
+      "example_link": "Iz provjere Ostrelyinog sajta",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Šta uključiti u dogovor o održavanju?",
@@ -475,8 +502,17 @@
             "Provjeravamo da obrazac prihvata podatke i da poruka stiže na dogovorenu adresu. Obavještenje na ekranu samo po sebi ne potvrđuje da je tim dobio upit.",
             "Za rizičnije izmjene dogovaramo kopiju i povrat na prethodno stanje. Kod prijave kvara pošaljite URL, jezik stranice, vrijeme i opis problema."
           ]
+        ],
+        [
+          "Šta pripremiti kada mijenjate izvođača",
+          [
+            "Pošaljite javnu adresu sajta i napišite ko vodi domen i hosting, šta trenutno ne radi i do kada je dostupan prethodni izvođač. Pristupe dogovaramo posebno.",
+            "U ponudi odvojite jednokratno preuzimanje, redovno mjesečno održavanje i dodatne intervencije. Za preostale obaveze prethodnog izvođača navedite ko ih preuzima i kada."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/sr-me/blog/odrzavanje-sajta#maintenance-log",
+      "contact_brief": "Pošaljite adresu i napišite šta sami ažurirate, a šta pokriva hosting. Tako možemo procijeniti obim održavanja."
     }
   },
   "sl": {
@@ -565,7 +601,7 @@
         "Dogovorjene posodobitve in popravki",
         "Evidenca sprememb in odprtih vprašanj"
       ],
-      "example": "Vodnik loči redne preglede od preverjanj po objavi ali spremembi vsebine.",
+      "example": "Na hrvaški strani za vzdrževanje smo preverili povezavo do stika in obrazec z naslovom za oddajo. Za preverjanje dostave lastnik pošlje označeno testno sporočilo in zapiše, kdaj ga prejme v nabiralnik.",
       "faq_heading": "Pogosta vprašanja",
       "faq": [
         [
@@ -577,8 +613,8 @@
           "V ponudbi navedemo obseg rednega vzdrževanja. Nove predloge in funkcije ocenimo ločeno."
         ]
       ],
-      "example_link": "Odprite vodnik za vzdrževanje",
-      "modified": "2026-11-19",
+      "example_link": "Iz pregleda Ostrelyinega spletišča",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Kaj vključuje redno vzdrževanje?",
@@ -593,8 +629,17 @@
             "Dogovorimo se, kaj kopija zajema, kje se hrani in kako preverimo obnovitev. Pred zahtevnejšo spremembo določimo možnost vrnitve v prejšnje stanje.",
             "Po spremembi preverimo ključne strani in pot od obrazca do prejema sporočila. Pri prijavi napake nam pošljite URL, čas in korake za ponovitev težave."
           ]
+        ],
+        [
+          "Kaj pripraviti ob menjavi izvajalca",
+          [
+            "Pošljite javni naslov spletišča in navedite, kdo upravlja domeno in gostovanje, kaj trenutno ne deluje in do kdaj je dosegljiv prejšnji izvajalec. Za prenos dostopov se dogovorimo posebej.",
+            "V ponudbi ločite enkratni prevzem, redno mesečno vzdrževanje in dodatne posege. Za naloge prejšnjega izvajalca določite odgovorno osebo in datum predaje."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/sl/blog/vzdrzevanje-spletne-strani#maintenance-log",
+      "contact_brief": "Pošljite naslov spletišča in opišite, kaj urejate sami ter kaj prevzame ponudnik gostovanja. Tako lahko ocenimo obseg vzdrževanja."
     }
   },
   "mk": {
@@ -683,7 +728,7 @@
         "Договорени ажурирања и поправки",
         "Запис на промени и отворени задачи"
       ],
-      "example": "Водичот објаснува кои проверки се прават редовно и кои веднаш по важна промена.",
+      "example": "На нашата хрватска страница за одржување ги проверивме врската до контактот и образецот со адреса за испраќање. За проверка на испораката сопственикот испраќа означена пробна порака и бележи кога пристигнала во поштенското сандаче.",
       "faq_heading": "Чести прашања",
       "faq": [
         [
@@ -695,8 +740,8 @@
           "Редовното одржување има договорен опсег. Нови предлошки и функции ги проценуваме посебно."
         ]
       ],
-      "example_link": "Отворете го водичот за одржување",
-      "modified": "2026-11-19",
+      "example_link": "Од проверката на страницата на Ostrelya",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Што опфаќа редовното одржување?",
@@ -711,8 +756,17 @@
             "Проверуваме дали барањето од формуларот навистина пристигнува на договорената адреса. Пораката за успешно испраќање на екранот не е доволна потврда.",
             "Договараме што содржи резервната копија и како се проверува враќањето. Пред поризична измена планираме враќање на претходната состојба. За дефект испратете URL, време и чекори за повторување."
           ]
+        ],
+        [
+          "Што да подготвите кога го менувате изведувачот",
+          [
+            "Испратете ја јавната адреса и наведете кој ги води доменот и хостингот, што не функционира и до кога е достапен претходниот изведувач. Преносот на пристапите го договараме посебно.",
+            "Во понудата одвојте ги еднократното преземање, редовното месечно одржување и дополнителните интервенции. За обврските на претходниот изведувач наведете одговорно лице и датум на предавање."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/mk/blog/odrzuvanje-na-veb-stranica#maintenance-log",
+      "contact_brief": "Испратете ја адресата и наведете што ажурирате сами, а што опфаќа хостингот. Врз таа основа можеме да го процениме одржувањето."
     }
   },
   "sq": {
@@ -801,7 +855,7 @@
         "Përditësime dhe korrigjime sipas marrëveshjes",
         "Regjistër i ndryshimeve dhe detyrave të hapura"
       ],
-      "example": "Në udhëzues dallojmë kontrollet periodike nga ato që bëhen pas një publikimi ose ndryshimi të rëndësishëm.",
+      "example": "Në faqen tonë kroate për mirëmbajtjen kontrolluam lidhjen e kontaktit dhe formularin me adresën ku dërgohen të dhënat. Për të verifikuar dorëzimin, pronari dërgon një mesazh prove të shënuar dhe regjistron kohën e mbërritjes në postën elektronike.",
       "faq_heading": "Pyetje të shpeshta",
       "faq": [
         [
@@ -813,8 +867,8 @@
           "Mirëmbajtja ka një fushë të përcaktuar. Modelet dhe funksionet e reja vlerësohen veçmas."
         ]
       ],
-      "example_link": "Hapni udhëzuesin e mirëmbajtjes",
-      "modified": "2026-11-19",
+      "example_link": "Nga kontrolli i faqes së Ostrelya-s",
+      "modified": "2026-11-22",
       "decision_sections": [
         [
           "Çfarë përfshihet në mirëmbajtjen e rregullt?",
@@ -829,8 +883,17 @@
             "Kontrollojmë rrugën nga formulari deri te marrja e mesazhit në adresën e duhur. Njoftimi në ekran nuk mjafton për të konfirmuar që ekipi e ka marrë kërkesën.",
             "Përcaktojmë çfarë përmban kopja, ku ruhet dhe si provohet rikthimi. Para ndryshimeve me rrezik planifikojmë kthimin në gjendjen e mëparshme. Për një gabim dërgoni URL-në, kohën dhe hapat që e shkaktojnë."
           ]
+        ],
+        [
+          "Çfarë të përgatitni kur ndërroni ofruesin",
+          [
+            "Dërgoni adresën publike dhe tregoni kush menaxhon domenin dhe hostimin, çfarë nuk funksionon dhe deri kur mund të kontaktohet ofruesi aktual. Kalimin e qasjeve e organizojmë veçmas.",
+            "Në ofertë ndani koston e marrjes në dorëzim, mirëmbajtjen mujore dhe ndërhyrjet shtesë. Për punët që i mbeten ofruesit të mëparshëm, caktoni personin përgjegjës dhe datën e dorëzimit."
+          ]
         ]
-      ]
+      ],
+      "example_url": "/sq/blog/mirembajtja-e-faqes#maintenance-log",
+      "contact_brief": "Dërgoni adresën dhe tregoni çfarë përditësoni vetë e çfarë mbulon ofruesi i hostimit. Kështu mund të vlerësojmë mirëmbajtjen."
     }
   }
 }
