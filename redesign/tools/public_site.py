@@ -86,7 +86,7 @@ def about_markup(root, content):
 
 def journal_meta(article):
     category = escape(article.get("category", ""))
-    stamp = date.fromisoformat(article["date"])
+    stamp = date.fromisoformat(article.get("modified", article["date"]))
     label = f"<span>{category}</span>" if category else ""
     return (
         f'<div class="journal-meta">{label}'
@@ -105,9 +105,13 @@ def journal_markup(root, content, article):
             sections.append(f'<section class="journal-block"{anchor}>{heading}{paragraphs(section["text"])}{image(root, section)}</section>')
         back = '<a class="journal-back" href="/journal/">← All articles</a>'
         links = ""
-        if article["slug"] == "website-launch-and-maintenance":
-            links = ('<p class="journal-block"><a class="journal-back" href="/services/#seo">Technical SEO ↗</a>'
-                     ' · <a class="journal-back" href="/services/#support">Website maintenance ↗</a></p>')
+        if related := article.get("links"):
+            items = "".join(
+                f'<li><a href="{escape(href)}">{escape(label)}</a></li>'
+                for label, href in related
+                if href.startswith("https://") or (href.startswith("/") and not href.startswith("//"))
+            )
+            links = f'<nav class="journal-block guide-links" aria-label="Related reading"><h2>Related reading</h2><ul>{items}</ul></nav>'
         inner = (
             f'<article class="journal-article">{back}'
             f'{journal_meta(article)}<h1 class="editorial-heading">{escape(article["title"])}</h1>'
@@ -126,9 +130,10 @@ def journal_markup(root, content, article):
         inner = (
             '<header class="content-hero journal-hero"><p class="services-kicker">Ostrelya Studio / Notes</p>'
             f'<h1 class="editorial-heading">{escape(content["title"])}</h1><p class="content-intro">{escape(content["intro"])}</p>'
+            '<nav class="guide-topics" aria-label="Website guides">'
+            '<a href="/en/blog">Website and SEO guides ↗</a>'
+            '<a href="/blog" lang="hr" hreflang="hr">Vodiči na hrvatskom ↗</a></nav>'
             f'</header><div class="journal-list" aria-label="Articles">{listing}</div>'
-            '<p class="journal-block"><a class="journal-back" href="/en/blog">Web design, development and SEO guides ↗</a>'
-            ' · <a class="journal-back" href="/blog" lang="hr" hreflang="hr">Vodiči na hrvatskom ↗</a></p>'
         )
     return f'<div class="page-container journal-shell">{inner}</div>'
 
@@ -187,6 +192,8 @@ def render_page(root, origin, path, content=None, article=None):
             "@type": "BlogPosting", "headline": article["title"], "description": description,
             "datePublished": article["date"], "mainEntityOfPage": url, "publisher": organization,
         }
+        if modified := article.get("modified"):
+            schema["dateModified"] = modified
         if article_image := asset_url(root, article.get("image")):
             schema["image"] = origin + article_image
     if schema:
@@ -212,14 +219,20 @@ def article_url(slug):
 def sitemap(origin, articles, regions, projects):
     urlset = Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
     regional_routes = region_routes(regions)
-    for path in (*PAGES, *work_routes(projects), *(article_url(slug) for slug in articles), *regional_routes):
+    journal_routes = {article_url(slug): article for slug, article in articles.items()}
+    journal_dates = [article["modified"] for article in articles.values() if article.get("modified")]
+    for path in (*PAGES, *work_routes(projects), *journal_routes, *regional_routes):
         node = SubElement(urlset, "url")
         SubElement(node, "loc").text = origin + path
         if path in regional_routes:
             key, service = regional_routes[path]
-            content = region_content(regions[key], service)
-            if modified := content.get("modified"):
-                SubElement(node, "lastmod").text = date.fromisoformat(modified).isoformat()
+            modified = region_content(regions[key], service).get("modified")
+        elif path == "/journal/" and journal_dates:
+            modified = max(journal_dates)
+        else:
+            modified = journal_routes.get(path, {}).get("modified")
+        if modified:
+            SubElement(node, "lastmod").text = date.fromisoformat(modified).isoformat()
     return tostring(urlset, encoding="unicode", xml_declaration=True) + "\n"
 
 

@@ -2,28 +2,32 @@
   "koliko-košta-web-stranica-2026": {
     "hr": {
       "title": "Koliko košta izrada web stranice?",
-      "meta_description": "Što utječe na cijenu izrade web stranice? Usporedite ponude za dizajn, sadržaj, CMS i više jezika te provjerite troškove hostinga i održavanja nakon objave.",
-      "summary": "Usporedite ponude za izradu weba prema predlošcima, sadržaju, CMS-u, jezicima i troškovima nakon objave.",
+      "meta_description": "Usporedite javne cijene izrade web stranica u Hrvatskoj, izračunajte trošak za dvije godine i provjerite što ponuda uključuje za sadržaj, SEO i održavanje.",
+      "summary": "U jednom javnom hrvatskom cjeniku poslovni web stoji 800–2.500 €. Taj raspon vrijedi za opseg tog ponuđača. Ako imate dvije ponude, zbrojite izradu, sadržaj i troškove nakon objave pa usporedite što će vaš tim moći raditi sam.",
       "sections": [
         [
-          "Usporedite predloške, a zatim broj stranica",
-          "Naslovnica, prikaz usluge i prikaz projekta obično traže različite predloške. Pet stranica usluga može dijeliti isti predložak, ali svaka i dalje treba tekst, fotografije i unos sadržaja. U ponudi tražite obje stavke odvojeno."
+          "Što dobivate za objavljenu cijenu",
+          "Wosh u javnom cjeniku navodi 300–800 € za jednostrani web i 800–2.500 € za poslovni web s više stranica, uređivanjem sadržaja i osnovnom analitikom. AIS Tech navodi 990–1.900 € za svoju poslovnu stranicu. To su dvije ponude pregledane u studenome 2026. Koriste za orijentaciju prije prvog razgovora. Za usporedbu provjerite tko priprema i unosi sadržaj te što plaćate nakon objave. Ostrelya cijenu daje po ponudi."
         ],
         [
-          "Dogovorite tko priprema sadržaj",
-          "Ponuda s gotovim tekstovima i fotografijama ima drukčiji opseg od ponude koja uključuje intervjue, pisanje i obradu slika. Za više jezika dogovorite prijevod, lokalni pregled i tko ažurira svaku verziju nakon objave."
+          "Prebrojite predloške i sadržaj odvojeno",
+          "Tvrtka za renovacije treba naslovnicu, tri usluge, tri projekta i kontakt. To je osam URL-ova, a recimo četiri različita predloška. Predložak usluge koristi se više puta, ali svakoj od tri usluge trebaju tekst, fotografije i opis područja rada. Za englesku verziju odvojite prijevod, unos na druge URL-ove i jezični pregled. Isti dizajn možete iskoristiti dvaput, dok sadržaj i obrazac treba provjeriti na oba jezika."
         ],
         [
-          "Popišite radnje koje web mora podržati",
-          "Obrazac koji šalje upit, CMS u kojem tim objavljuje radove i integracija s vanjskim sustavom različiti su poslovi. Za svaku funkciju zatražite opis rada i način provjere na primopredaji. Kod redizajna uključite popis starih adresa i potrebna preusmjerenja."
+          "Izračunajte dvije godine po istim pravilima",
+          "U ilustrativnom primjeru ponuda A traži 1.200 € za izradu, 300 € za sadržaj, 120 € godišnje za domenu, hosting i licence te 60 € mjesečno za održavanje. To je 3.180 € za 24 mjeseca. Ponuda B traži 1.800 € s uključenim sadržajem, 144 € godišnje za domenu, hosting i licence te 35 € mjesečno za održavanje. To je 2.928 €. Razlika od 252 € ima smisla tek kad provjerite uključuju li oba paketa isti posao. Zapišite jesu li iznosi s PDV-om, tko obnavlja licence i što košta izlazak iz ugovora."
         ],
         [
-          "Razdvojite izradu od troškova nakon objave",
-          "Zatražite odvojene stavke za izradu, domenu i hosting, licence te održavanje. Provjerite kome pripadaju računi i pristupi, tko testira kontaktni obrazac te kako se naplaćuju izmjene izvan dogovorenog opsega."
+          "Tri pitanja koja otkrivaju skriveni posao",
+          "Prvo pitajte što izvođač naziva osnovnim SEO-om. Tražite popis isporuka poput naslova, kanonskih adresa, sitemapa i preusmjerenja kod redizajna. Zatim pitajte može li vaš kolega u CMS-u dodati projekt i fotografije bez dizajnera. Na kraju dogovorite kako se testira upit. Prihvatni kriterij može glasiti: pošaljemo upit s mobitela, prikaže se potvrda i poruka stigne u poslovni sandučić."
         ],
         [
-          "Pošaljite isti brief svim izvođačima",
-          "Navedite cilj weba, postojeću adresu ako je imate, potrebne jezike, sadržaj koji je spreman i funkcije bez kojih ne možete. Zatražite opseg, faze i jasno navedene stavke koje se naplaćuju naknadno. Tako možete usporediti što dobivate za iznos iz ponude."
+          "Što poslati da dobijete usporedivu ponudu",
+          "Pošaljite popis usluga, postojeći URL, potrebne jezike, spremne materijale, rok vezan uz stvarni događaj i radnju koju želite od posjetitelja. Primjer: „Imamo hrvatsku stranicu i fotografije. Trebamo tri stranice usluga i predložak projekata koji uređujemo sami. Upiti trebaju stići u zajednički sandučić. Navedite što plaćamo jednom, godišnje i mjesečno.” Zatražite da svaki ponuđač odgovori istim redoslijedom."
+        ],
+        [
+          "Kada je dovoljno krenuti s manjim webom",
+          "Za jednu uslugu i jasan put do upita jedna dobro uređena stranica može biti dovoljna. Ako tvrtka radi više različitih poslova, zasebne stranice omogućuju da precizno objasnite kome svaka usluga odgovara i što šaljete u ponudi. Prioritet dajte sadržaju koji kupcu pomaže odlučiti i obrascu koji pouzdano radi. Katalog ili drugi jezik imaju smisla kad imate materijale i osobu koja će ih ažurirati."
         ]
       ],
       "links": [
@@ -35,31 +39,80 @@
           "Pošaljite opis projekta",
           "/hr/usluge/web-dizajn/#contact"
         ]
-      ]
+      ],
+      "sources": [
+        [
+          "Wosh Productions — javni cjenik za 2026.",
+          "https://wosh.productions/blog/cijena-izrade-web-stranice/"
+        ],
+        [
+          "AIS Tech — javna ponuda izrade poslovnog weba",
+          "https://aistech.hr/izrada-web-stranice"
+        ]
+      ],
+      "table": {
+        "caption": "Usporedba dviju ponuda kroz 24 mjeseca (ilustrativni iznosi)",
+        "columns": [
+          "Stavka",
+          "Ponuda A",
+          "Ponuda B"
+        ],
+        "rows": [
+          [
+            "Izrada",
+            "1.200 €",
+            "1.800 €"
+          ],
+          [
+            "Sadržaj",
+            "300 €",
+            "Uključeno"
+          ],
+          [
+            "Domena, hosting i licence",
+            "120 € godišnje",
+            "144 € godišnje"
+          ],
+          [
+            "Održavanje",
+            "60 € mjesečno",
+            "35 € mjesečno"
+          ],
+          [
+            "Ukupno za 24 mjeseca",
+            "3.180 €",
+            "2.928 €"
+          ]
+        ]
+      }
     },
     "en": {
       "title": "How much does a website cost?",
-      "summary": "Compare website quotes by templates, content, editing tools, languages and ongoing costs after launch.",
+      "summary": "A five-page business site can be sold as a monthly plan or a one-off build. Compare both over the same period, with the same pages, copy, ownership and support. The 24-month example below shows how the smaller deposit can lead to a higher total.",
       "sections": [
         [
-          "Count templates and pages separately",
-          "A homepage, a service page and a project page normally need different layouts. Five service pages may share one template, but each still needs writing, images and content entry. Ask for both counts in the quote."
+          "Start with an advertised offer and read the terms",
+          "One UK supplier, Affordable Website Design, advertised a £45 monthly option and a one-off build from £1,495 for a five-page site when we checked in November 2026. Those are one supplier’s advertised prices. Ask whether the figures include tax, how long the subscription runs, how much of the copy is supplied and what you take with you when you cancel. Similar-looking sites can come with very different ownership and exit terms."
         ],
         [
-          "Agree who prepares the content",
-          "A quote based on supplied text and images covers a different job from one that includes interviews, writing and image preparation. For each language, confirm who translates, checks and updates the content."
+          "Count pages, layouts and workflows separately",
+          "A surveying practice might need a homepage, three service pages, two case studies and a contact page. Those are seven URLs. The services can share one layout and the case studies another. Cost still changes if each service needs research and copy, if a case study needs photography or if the contact form must file enquiries in a CRM. Specify how many entries the supplier will create, who supplies each asset and which changes staff should be able to make themselves."
         ],
         [
-          "List what the website needs to do",
-          "An enquiry form, an editor for publishing projects and a connection to a third-party system take different amounts of work. Ask how each feature will be tested at handover. On a redesign, include old page addresses and any redirects."
+          "Compare 24 months and the cost of leaving",
+          "Suppose Quote A is £1,400 for setup and £95 a month for hosting and support. Quote B is £2,250 for a build with copy, £120 per year for hosting and licences and £45 a month for support. A totals £3,680 and B totals £3,570 over two years, before tax and optional work. If A includes two hours of monthly edits and B covers technical checks only, price those edits separately. Ask for control of the domain and an export of content, files and data where applicable."
         ],
         [
-          "Separate build and running costs",
-          "Ask for separate lines for the build, domain and hosting, licences and ongoing support. Confirm who owns the accounts, who tests the contact form and how work outside the agreed scope is billed."
+          "Turn broad promises into tests",
+          "For responsive design, check a service page and submit the form on a real phone. For editable content, ask a colleague to draft a case study and upload an image on a test site. For technical SEO, ask for indexable pages, titles, canonicals and a sitemap. A redesign also needs a plan for old URLs. A form test ends when you can find the message in the intended inbox or CRM and the visitor gets a useful confirmation."
         ],
         [
-          "Give everyone the same brief",
-          "Include the goal, any existing site, languages, content you already have and essential functions. Ask each supplier to explain the scope, milestones and costs that can arise after launch. Compare those details alongside the total."
+          "Give every supplier the same request",
+          "Describe the buyer, the problem they need solved and the action you want them to take. Supply the current URL, pages, languages, ready text and photos, and any fixed deadline. Ask for one-off, annual and monthly charges and a list of exclusions. For a redesign ask who maps redirects and checks Search Console afterwards. For a new site establish who opens the accounts and what happens when support ends."
+        ],
+        [
+          "When a smaller launch makes sense",
+          "A solo architect with strong photos and a single enquiry route may get more from one well-edited portfolio page than from five nearly empty service pages. An engineering supplier with three buyer groups may need a page for each service and a form that accepts a project reference. Ask what the supplier would build first and which extras can wait until you know how buyers use the site."
         ]
       ],
       "links": [
@@ -71,30 +124,84 @@
           "Discuss your project",
           "/services/#contact"
         ]
-      ]
-    }
+      ],
+      "meta_description": "Compare small business website quotes by scope, ownership and recurring costs. See a 24-month example and the questions to ask before commissioning a site.",
+      "sources": [
+        [
+          "Affordable Website Design — published one-off and subscription pricing",
+          "https://affordable-website-design.co.uk/pricing/"
+        ],
+        [
+          "W3C — accessible forms and feedback",
+          "https://www.w3.org/WAI/tutorials/forms/"
+        ],
+        [
+          "Google Search Central — URL migration",
+          "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ]
+      ],
+      "table": {
+        "caption": "Two hypothetical quotes over 24 months",
+        "columns": [
+          "Cost",
+          "Quote A",
+          "Quote B"
+        ],
+        "rows": [
+          [
+            "Build",
+            "£1,400",
+            "£2,250"
+          ],
+          [
+            "Annual hosting and licences",
+            "Included below",
+            "£120 per year"
+          ],
+          [
+            "Monthly hosting or support",
+            "£95 per month",
+            "£45 per month"
+          ],
+          [
+            "24-month total before tax",
+            "£3,680",
+            "£3,570"
+          ]
+        ]
+      }
+    },
+    "modified": "2026-11-22"
   },
   "održavanje-web-stranice-zašto-je-bitno": {
     "topic": "operations",
     "hr": {
       "title": "Održavanje web stranice: što provjeriti svaki mjesec",
-      "summary": "Mjesečni pregled weba za male timove. Provjerite dostavu upita, ažuriranja, sigurnosne kopije, važne URL-ove i zaduženja.",
+      "summary": "Web može izgledati ispravno dok upiti nestaju. Održavanje počinje provjerom da poruke stižu, povrat iz kopije radi i odgovorna osoba zna reagirati kad nešto prestane raditi. U nastavku je raspored i način da usporedite ponude za podršku.",
       "sections": [
         [
-          "Prođite put kupca od usluge do upita",
-          "Na mobitelu otvorite važnu stranicu usluge, ispunite testni upit i provjerite je li stigao u pravi sandučić. Provjerite kamo ide odgovor kupcu. Zapišite datum i ishod testa uz svaki obrazac."
+          "Odredite što tvrtka može izgubiti ako web stane",
+          "Za statični web popišite domenu, hosting, repozitorij i obrazac. CMS dodaje bazu, medije, uredničke račune i softver koji se nadograđuje. Smještaj prije sezone dodatno provjerava dostupnost i podatke u rezervacijskom sustavu. Uz svaku stavku zapišite tko ima pristup, kamo stižu upozorenja i koji je način rada ako se vlasnik računa ne javi."
         ],
         [
-          "Provjerite ažuriranja i mogućnost povrata",
-          "Popišite platformu, dodatke i račune o kojima web ovisi. Prije veće izmjene potvrdite da postoji uporabiva sigurnosna kopija. Povremeno probajte povrat u testnom okruženju i zapišite tko ga može pokrenuti."
+          "Pošaljite testni upit i provjerite primitak",
+          "Otvorite ključnu uslugu iz pretrage na telefonu i pošaljite označenu poruku, primjerice TEST — studeni. Provjerite potvrdu na stranici i primitak u sandučiću ili CRM-u. Ponovite na svakom jeziku koji koristi drugi obrazac ili primatelja. U zapis stavite vrijeme i ishod. Ako se potvrda prikazuje, a poruka ne stiže, ispitajte zapis isporuke i privremeno istaknite funkcionalan alternativni kontakt."
         ],
         [
-          "Otvorite URL-ove važne za posao",
-          "Prođite glavne usluge, kontakt i nedavno izmijenjene stranice. Nakon redizajna otvorite stare adrese i provjerite vode li na odgovarajući sadržaj. U Search Consoleu provjerite jesu li se nakon objave pojavile nove greške na ključnim URL-ovima."
+          "Isprobajte obnovu prije nego zatreba",
+          "Na WordPressu su potrebne i baza i datoteke. Na statičnom webu Git može obnoviti kod, dok se slike, postavke domene i obrasci mogu nalaziti na drugim računima. Napravite povrat u nejavnom testnom okruženju. Otvorite posljednju objavu s fotografijom i provjerite da se sadržaj može uređivati. Odredite koliko izmjena smijete izgubiti i koliko dugo web može biti nedostupan, pa prema tome dogovorite kopije i probne povrate."
         ],
         [
-          "Dodijelite vlasnika i rok za svaki nalaz",
-          "Mjesečna evidencija može imati četiri stupca: provjera, ishod, odgovorna osoba i rok. Ako testni upit iz obrasca ne stiže, evidentirajte koja stranica je pogođena i ponovite isti test nakon popravka."
+          "Razdvojite prvi odgovor i rok popravka",
+          "Kod paketa pitajte uključuje li nadogradnje, nadzor, male izmjene sadržaja, obnovu nakon kvara i popravke. „Odgovor u četiri radna sata” označava vrijeme do javljanja. Za kritičnu funkciju dogovorite kako se problem privremeno ublažava i tko potvrđuje da ponovno radi. Zatražite i pravila za posao izvan mjesečnog opsega, obnovu licenci i intervencije van radnog vremena."
+        ],
+        [
+          "Kako izgleda koristan zapis održavanja",
+          "Ilustrativan zapis: „19.11., usluga HR i EN. Obje verzije prikazuju potvrdu. HR upit stigao, EN nije. Provjeren primatelj i ispravljeno usmjeravanje. Nakon popravka oba upita stigla.” Evidentirajte osobu koja je provjerila kvar i datum sljedećeg testa. Takav zapis pokazuje jesu li provjereni koraci o kojima posao ovisi."
+        ],
+        [
+          "Domena, pristupi i primopredaja",
+          "Postavite kalendarske podsjetnike za domenu, hosting i licence s imenom osobe zadužene za obnovu. Urednicima dajte samo pristupe koji im trebaju i uklonite račune bivših suradnika. Dokumentirajte kako tvrtka dolazi do kopije i prethodnog izdanja ako mijenja izvođača. U mjesečnom izvještaju tražite obavljene provjere, otvorene probleme i iduće zadatke."
         ]
       ],
       "links": [
@@ -106,27 +213,75 @@
           "Razgovarajmo o održavanju",
           "/hr/usluge/odrzavanje-web-stranica/#contact"
         ]
-      ]
+      ],
+      "meta_description": "Provjerite što uključuje održavanje web stranice, kako testirati upite i povrat iz kopije te što usporediti u mjesečnoj ponudi za podršku.",
+      "sources": [
+        [
+          "WordPress Developer Resources — backup files and database",
+          "https://developer.wordpress.org/advanced-administration/security/backup/"
+        ],
+        [
+          "W3C — forms, validation and confirmation",
+          "https://www.w3.org/WAI/tutorials/forms/"
+        ],
+        [
+          "Google Search Console — URL Inspection",
+          "https://support.google.com/webmasters/answer/9012289"
+        ]
+      ],
+      "table": {
+        "caption": "Primjer rasporeda održavanja",
+        "columns": [
+          "Kada",
+          "Provjera",
+          "Uvjet prolaza"
+        ],
+        "rows": [
+          [
+            "Nakon objave",
+            "Ključna usluga, promijenjeni URL i obrazac",
+            "Stranica se otvara, upit je stigao"
+          ],
+          [
+            "Mjesečno",
+            "Dostupnost, obnove, pristupi i upiti",
+            "Zapis s datumom i zaduženjem"
+          ],
+          [
+            "Periodično",
+            "Povrat iz kopije i pregled pristupa",
+            "Testni web radi i popis pristupa je ažuran"
+          ]
+        ]
+      }
     },
     "en": {
       "title": "Website maintenance: what to check each month",
-      "summary": "A practical monthly website check for small teams, covering enquiry delivery, updates, backups and priority pages.",
+      "summary": "A site can look fine while enquiries fail to arrive. A maintenance plan should name what gets checked, who does it and what happens if the check fails. Use the sample schedule to compare support plans for a small business site.",
       "sections": [
         [
-          "Follow a customer’s route to an enquiry",
-          "On a phone, open a key service page and submit a test enquiry. Verify that it reaches the right inbox and that replies go to the sender. Record the date and result for each form."
+          "Map the services your site depends on",
+          "A small static site may rely on a domain, a hosting account, a form and a source repository. A CMS adds an editing interface, permissions, files and software that need separate attention. A venue may also depend on a booking calendar and accurate opening hours. For every dependency record the account owner, the alert recipient and what your business can do if the provider is unavailable."
         ],
         [
-          "Check updates and recovery",
-          "List the platform, extensions and accounts the site depends on. Before a major change, confirm you have a usable backup. Occasionally rehearse a restore on a test site and record who can do it."
+          "Test an enquiry from the service page to the inbox",
+          "Start on a phone with a page buyers find in search, send a labelled test enquiry and note the time. Check validation and the visitor-facing confirmation, then verify receipt in the inbox or CRM. Repeat for each language or template with a different form or recipient. Check the fallback phone or email route. A confirmation page only verifies the browser reached that step."
         ],
         [
-          "Check the pages that matter to the business",
-          "Review key services, contact and recently changed pages. After a redesign, open old URLs and verify that they lead to the right replacement. Use Search Console to review new issues on priority pages."
+          "Restore a backup before you need one",
+          "WordPress needs database content and files. A static site can often be restored from Git, but the form provider, media store and DNS may need separate exports or configuration records. Restore into a private test environment and open a recent article, check its images and test editing. Agree how much recent work you could afford to lose and how long recovery can take. Those tolerances tell you whether the backup frequency and recovery process fit your business."
         ],
         [
-          "Assign each issue an owner and date",
-          "A monthly record can be as simple as check, result, owner and deadline. If a form fails, record the affected page and repeat the same delivery test after the fix."
+          "Compare responsibilities in a maintenance quote",
+          "Ask whether the price covers software updates, monitoring, content edits, incident triage and the repair itself. An acknowledgement within four business hours tells you when someone will respond. Restoration may take longer. Agree who owns the temporary fix, how to approve work beyond the allowance and who verifies that a critical workflow is working again."
+        ],
+        [
+          "Keep evidence another person can act on",
+          "A useful log records the URL, test, result and next action. Example: the English form confirmed submission but nothing reached the sales inbox. The maintainer corrected routing and saved the timestamps for a second test that arrived. Record the outcome and owner so another person can pick up the issue next time. A report full of version numbers cannot tell you whether an enquiry reached sales."
+        ],
+        [
+          "Make renewal and handover routine",
+          "Put domain, hosting and licence renewals in a shared calendar with current billing contacts. Use separate editor and administrator accounts where appropriate and review former collaborators’ access. Ensure the team can retrieve its content and rebuild the site if the relationship ends. After any significant release, check the paths people use to reach you and scan changed routes in Search Console."
         ]
       ],
       "links": [
@@ -138,25 +293,74 @@
           "Read the launch checklist",
           "/journal/website-launch-and-maintenance/"
         ]
-      ]
-    }
+      ],
+      "meta_description": "Build a website maintenance checklist, test enquiry delivery and backup recovery, and compare support plans by their checks, response times and ownership.",
+      "sources": [
+        [
+          "WordPress Developer Resources — backup files and database",
+          "https://developer.wordpress.org/advanced-administration/security/backup/"
+        ],
+        [
+          "W3C — forms, validation and confirmation",
+          "https://www.w3.org/WAI/tutorials/forms/"
+        ],
+        [
+          "Google Search Console — URL Inspection",
+          "https://support.google.com/webmasters/answer/9012289"
+        ]
+      ],
+      "table": {
+        "caption": "Sample website maintenance schedule",
+        "columns": [
+          "When",
+          "Check",
+          "Passing evidence"
+        ],
+        "rows": [
+          [
+            "After release",
+            "Priority service, changed redirects and enquiry",
+            "Page responds and a test message arrives"
+          ],
+          [
+            "Monthly",
+            "Delivery, access and renewal dates",
+            "Dated log with an owner for each item"
+          ],
+          [
+            "Periodically",
+            "Restore and review permissions",
+            "Working test restore and updated access list"
+          ]
+        ]
+      }
+    },
+    "modified": "2026-11-22"
   },
   "što-znati-prije-kupnje-web-stranice": {
     "hr": {
       "title": "Što provjeriti prije nego naručite web stranicu",
-      "summary": "Prije prihvaćanja ponude dogovorite što web treba raditi, tko uređuje sadržaj i što ćete provjeriti na primopredaji.",
+      "summary": "Prije narudžbe web stranice dogovorite tko je kupac, kojim putem dolazi do upita, tko daje sadržaj i kako se provjerava isporuka. Na primjeru male tvrtke možete sastaviti brief i provjeriti što primate na dan objave.",
       "sections": [
         [
-          "Dogovorite jedan glavni cilj",
-          "Napišite radnju koja kupcu treba biti najlakša: poslati upit, pronaći termin ili pogledati odgovarajuću uslugu. Dodajte informacije koje mora pročitati prije te radnje i provjerite jesu li u planu stranica."
+          "Zapišite što kupac treba odlučiti prije kontakta",
+          "Za tvrtku koja ugrađuje stolariju to može biti područje rada, vrsta posla, primjeri izvedbe i informacija što treba pripremiti za ponudu. Osoba koja traži zamjenu prozora treba put od usluge do upita s lokacijom i okvirnim brojem prozora. Osoba koja nudi arhitektonske usluge možda želi da upit sadrži tip projekta, fazu i rok. Izaberite podatke koje ćete odmah koristiti, ostalo pitajte u razgovoru."
         ],
         [
-          "Pogledajte prototip na telefonu",
-          "Prije izrade prođite dvije stvarne situacije. Primjerice, kupac želi pronaći održavanje i poslati upit, a vaš tim želi dodati novu uslugu. Zapišite gdje zapinje i dogovorite rješenje prije razvoja."
+          "Sastavite popis materijala s imenima i rokovima",
+          "Napišite stranice koje trebate i za svaku stavite osobu za tekst, fotografije i odobrenje. Ako fotografiranje dolazi tek za mjesec dana, dogovorite hoće li projekt ići s postojećim slikama ili kasnije. Tražite koliko krugova izmjena ulazi u ponudu i tko objedinjuje povratne informacije. To je korisnije od samog datuma objave bez preduvjeta."
         ],
         [
-          "Uključite primopredaju u ponudu",
-          "Tražite popis pristupa, dogovor o uređivanju i obuku na stvarnom sadržaju. Pri preuzimanju provjerite šalje li obrazac upit, možete li sami izmijeniti dogovorena polja i znate li kome se javiti nakon objave."
+          "Tražite provjeru na stvarnom zadatku",
+          "Prije prihvata zamolite kolegu koji nije radio na projektu da na mobitelu pronađe uslugu i pošalje upit. Provjerite stiže li na adresu koju pratite. U CMS-u neka doda projekt, zamijeni fotografiju i napravi skicu. Ako rezervacija ili drugi jezik koriste drukčiji put, prođite i njega. Za svaku provjeru unaprijed dogovorite što znači da je ispunjena."
+        ],
+        [
+          "Preuzmite račune i dokumentaciju",
+          "Na primopredaji tražite pristup domeni, hostingu, repozitoriju ili izvozu weba, CMS-u, Search Consoleu i analitici ako su u opsegu. Provjerite tko može upravljati naplatom, obnavljati licence i vratiti raniju verziju. Za redizajn tražite popis starih adresa i njihova nova odredišta. Dogovorite kome se javljate kad kvar nastupi nakon završetka projekta."
+        ],
+        [
+          "Brief koji možete poslati izvođaču",
+          "„Radimo adaptacije stanova i poslovnih prostora. Kupac treba odabrati uslugu, vidjeti dva slična projekta i poslati lokaciju i rok. Tekstove i slike odobravamo do 15. u mjesecu. Voditelj prodaje provjerava dolazak upita, a administrator unosi još jedan projekt kroz CMS. U ponudi navedite preduvjete za objavu, isporuke koje nisu uključene i troškove nakon prve godine.” Prilagodite primjer svom poslu i tražite odgovor na iste stavke od svakog ponuđača."
         ]
       ],
       "links": [
@@ -168,23 +372,42 @@
           "Pogledajte naš proces izrade",
           "/hr/usluge/web-dizajn/"
         ]
+      ],
+      "meta_description": "Pripremite brief za izradu web stranice. Dogovorite sadržaj i rokove, provjerite upite na mobitelu i preuzmite račune, datoteke i pristupe pri primopredaji.",
+      "sources": [
+        [
+          "W3C — web obrasci i razumljive poruke",
+          "https://www.w3.org/WAI/tutorials/forms/"
+        ],
+        [
+          "Google Search Central — promjene adresa pri redizajnu",
+          "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ]
       ]
     },
     "en": {
       "title": "What to check before commissioning a website",
-      "summary": "Before accepting a quote, agree what the website must do, who will edit it and what you will check at handover.",
+      "summary": "A useful website brief tells a supplier what buyers need to know, what staff must be able to edit and how you will accept the work. The example below turns those decisions into a request you can send.",
       "sections": [
         [
-          "Agree on one primary customer task",
-          "Write down the action that should be easiest, such as sending an enquiry, finding an appointment or choosing a service. Note what a customer needs to know first and check that the page plan covers it."
+          "Start with the buyer’s decision",
+          "A commercial cleaning company wants office managers to find its coverage area, check whether it works outside office hours and request a quote for a particular building. The form might need a postcode, floor area and preferred start date. A consultant might instead need a project description and rough budget. Collect the details you need to answer the first message and save secondary questions for the conversation."
         ],
         [
-          "Review the prototype on a phone",
-          "Before development, run through two real situations. A customer might need to find a maintenance service and send an enquiry. Your team might need to add a service. Record any obstacles while the layout is still easy to change."
+          "Name the pages, the assets and their owners",
+          "List landing pages, services, case studies and contact, then assign an owner to each piece of text or photography. Agree which content is ready, who checks claims and how feedback is consolidated. Ask whether the supplier is writing the copy, editing drafts or only placing supplied text. If a photo shoot slips, agree what can go live with existing material and what moves to a later release."
         ],
         [
-          "Put handover in the quote",
-          "Ask for a list of accounts, editing permissions and training using real content. At handover, check that enquiries arrive, your team can edit the agreed fields and you know who handles post-launch issues."
+          "Define acceptance with tasks people can perform",
+          "Ask someone who did not build the site to find a relevant service on a phone and submit an enquiry. Verify that it reached the right inbox and received confirmation. Have a staff editor draft a sample case study, replace a photo and see a preview before publication. For an existing site, open a high-value old URL and check its final destination. Capture the checklist before sign-off so everyone tests the same work."
+        ],
+        [
+          "Make handover part of the quote",
+          "Ask who controls the domain and billing for hosting. List the CMS, source files or export, Search Console, analytics and third-party licences in the handover. Confirm what your team can restore, where to find support, what is included after launch and how much notice is required to leave. Use company-owned accounts with appropriate permissions and ensure the person responsible for them can actually sign in."
+        ],
+        [
+          "A brief for an example business",
+          "“We clean commercial premises in two counties. Office managers should be able to check coverage, see two examples and send an enquiry with their postcode and floor area. We supply the photos and approve the copy. A member of our team needs to add a new case study. Price content, build and recurring support separately, and specify who verifies enquiry delivery on launch day.” Use this level of detail and put critical acceptance tests in writing."
         ]
       ],
       "links": [
@@ -196,7 +419,19 @@
           "See our design and development process",
           "/services/#process"
         ]
+      ],
+      "meta_description": "Prepare a website brief with buyer tasks, content owners, launch tests and handover requirements. Includes an example scope for a small service business.",
+      "sources": [
+        [
+          "W3C — accessible web forms",
+          "https://www.w3.org/WAI/tutorials/forms/"
+        ],
+        [
+          "Google Search Central — preserving routes in a site move",
+          "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ]
       ]
-    }
+    },
+    "modified": "2026-11-22"
   }
 }

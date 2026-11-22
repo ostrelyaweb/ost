@@ -7,50 +7,115 @@
       "slug": "website-launch-and-maintenance",
       "date": "2026-11-12",
       "category": "Development · Technical SEO",
-      "summary": "A practical checklist for a website redesign: map the old URLs, verify the new pages and test the contact journey. Then decide who repeats each check after launch.",
-      "meta_description": "Use this website launch checklist to map old URLs, test redirects and enquiries, and decide who checks key pages after every update.",
+      "summary": "Use this runbook on launch day to check old URLs, indexing and enquiry delivery. It shows how to record a passing result and how to decide whether to roll back a release.",
+      "meta_description": "Use a website launch runbook to test redirects, canonical URLs, mobile enquiries and rollback. Includes verified examples from the Ostrelya site.",
       "sections": [
         {
-          "title": "List the routes you already have",
-          "text": "Export the sitemap and any pages with impressions or links. For each old URL, decide whether it stays, moves to a specific new page, or has no relevant replacement. On Ostrelya, /en/usluge.html redirects to /services/ and older article addresses point to their corresponding articles. Test the old URL as well as the destination."
+          "id": "before-launch",
+          "title": "Before launch, record what has to survive",
+          "text": "Pick a small set of URLs and tasks your business depends on. Include the main service people find in search, the main contact route, one existing article with external links and a translated service if it uses a separate template. Export URL and search performance data before changing the site. Assign one person to verify the new deployment and another contact who can approve a rollback when sales or support cannot receive requests."
         },
         {
-          "title": "Verify the version you want search engines to find",
-          "text": "Open the final URL and check its status, title, canonical and crawl rules. Keep the sitemap focused on final, indexable URLs. On a multilingual site, follow the alternate link in both directions and verify that it points to the equivalent service, such as web development to web development."
+          "id": "redirect-check",
+          "title": "Check the old URL and its replacement",
+          "text": "Our old English service URL, /en/usluge.html, permanently redirects to /services/. An older Croatian pricing article redirects from its .html address to the extensionless version on the same topic. The checks are separate. Read the first status and Location header on the legacy address, then check that the destination returns 200, shows the expected page and identifies itself as canonical. Update internal links and the sitemap to use the final addresses.\n\nWrite a passing result as an observable statement. For example: /en/usluge.html returns 301 to /services/, which returns 200 and contains the expected service list. This verifies the route. Changes in search visibility require their own measurement."
         },
         {
-          "title": "Test the contact journey on a phone",
-          "text": "Find a service, open its contact option and check that the next step is clear. If the site submits a form, send a test and verify that it reaches the inbox or project system. If the page opens an email app, check the address and give visitors a visible email address they can copy. A button click by itself does not prove an enquiry arrived."
+          "id": "search-check",
+          "title": "Test the public, indexable version",
+          "text": "Check the final URL outside your signed-in preview. Open the title, main content and canonical and look for a noindex directive that may have been copied from staging. Verify that a priority page can be reached from ordinary navigation and exists in the sitemap. If the site is multilingual, switch both ways between equivalent pages. In Search Console, use the live URL test to verify the page Google can fetch now. Revisit the indexed view after Google has recrawled it."
+        },
+        {
+          "id": "enquiry-test",
+          "title": "Follow a mobile enquiry all the way to the business",
+          "text": "Open a service on a phone, complete its contact flow and send a clearly labelled test. Check the browser confirmation, the actual business inbox and the CRM assignment if that is part of the process. Record test time, receipt time and the inbox or queue. If submission fails, the user should know whether their details were sent and have a working fallback. Repeat a test for each distinct recipient or form implementation.\n\nTreat a broken primary contact route as a launch problem even if every page loads. A click on a button or a triggered analytics event shows a step in the browser. The inbox gives you evidence that the enquiry arrived."
+        },
+        {
+          "id": "release-decision",
+          "title": "Agree what warrants a rollback",
+          "text": "A typo on one page can usually be fixed forward. A contact outage, a release that blocks indexing across a section or a broken navigation path may warrant restoring the previous deployment. Before launch, decide who makes that call and where to find the previous version. If data, DNS or form configuration changed, verify which rollback steps need to happen separately. Run the priority checks again after a rollback."
         },
         {
           "id": "maintenance-checklist",
-          "title": "Checks to repeat after launch",
-          "text": "After a release: open a priority page, test contact, check any new redirects and verify that the sitemap changed as expected.\n\nOn a recurring schedule: check platform updates, domain renewal, backups and the recovery procedure, indexing of key pages, and any forms or integrations that the team relies on. Record the date, what was tested, who owns the next action and how to verify it."
+          "title": "Keep a log at launch, the next day and the next release",
+          "text": "For each check record the URL, task, expected result, observed result, owner and next review. The next day, check availability, actual enquiry receipt and serious crawl errors on priority pages. After search engines have had time to revisit the site, compare clicks and impressions for the same URLs or mapped replacements. Measure received enquiries separately. At the next release, repeat the same small set and add one test for anything that failed last time."
         }
-      ]
+      ],
+      "links": [
+        [
+          "Website redesign and redirect mapping",
+          "/en/blog/website-redesign-seo-migration"
+        ],
+        [
+          "Website maintenance and recovery",
+          "/services/#support"
+        ],
+        [
+          "Google Search Central — site moves",
+          "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ],
+        [
+          "Google Search Console — URL Inspection",
+          "https://support.google.com/webmasters/answer/9012289"
+        ]
+      ],
+      "modified": "2026-11-22"
     },
     {
       "title": "How the Ostrelya loader became the navbar",
       "slug": "from-loading-bar-to-navbar",
       "date": "2026-11-09",
       "category": "Motion",
-      "summary": "The loading bar becomes the arrow in our mark, and the mark moves into the navigation. A short note on how we made the handoff.",
+      "summary": "Our homepage intro starts as a progress bar and ends with the same Ostrelya mark in the navigation. Here is how we built the handoff, why the progress is decorative and how to test the motion on a real page.",
       "image": "assets/hero-metal-emblem.webp",
       "alt": "Ostrelya’s metal mark with two rings and an arrow",
       "sections": [
         {
-          "title": "Start with the arrow",
-          "text": "The first piece you see is a horizontal bar. As it fills, its silhouette changes into the arrow from the Ostrelya mark. The rings and the wordmark appear around it."
+          "id": "one-mark",
+          "title": "Keep the visual anchor in one element",
+          "text": "The SVG that appears in the intro lives inside the home link in our main header. It contains a progress shape, the arrow and two rings. During the intro, CSS changes which shapes are visible and moves their shared container into the header. When it settles, the mark is part of the same link you can use to return to the top. If the centre mark and final mark were drawn as unrelated elements, differences in proportions or alignment would be much easier to see at the handoff."
         },
         {
-          "title": "Give the mark somewhere to go",
-          "text": "The assembled mark moves from the centre of the screen to the navigation. The dark backdrop then contracts into the shape of the navbar, revealing the page around it."
+          "id": "timing",
+          "title": "Sequence the bar, arrow and wordmark",
+          "text": "The bar gives the eye something to follow. Its fill passes attention to the arrow, then the rings and wordmark supply the context. Only after the mark reads as Ostrelya does it move into the navigation. The dark field contracts around the header as the page is revealed. The fill is a timed visual cue. If you wanted to show meaningful upload or processing progress, you would need progress tied to real work and an accessible status."
         },
         {
-          "title": "Make the navigation respond to reading",
-          "text": "The full navigation folds into the brand and contact action when you scroll down, then opens again when you scroll up. The home page also includes a reduced-motion version of the introduction."
+          "id": "escape",
+          "title": "Design the skip conditions at the same time",
+          "text": "The homepage checks the visitor’s reduced-motion preference before adding the introductory state. A direct link to a section such as #contact bypasses it, and the site supports a skipLoader parameter for checking the page without the intro. The class is removed by a bounded timer. The normal state already contains the header and the content, so the animation is an enhancement of that page. It should never be the only way to reach navigation."
+        },
+        {
+          "id": "quality-check",
+          "title": "Test the handoff on keyboard, mobile and reduced motion",
+          "text": "Load the homepage at a narrow size and then with reduced motion enabled. Compare where the same home link ends up, confirm that the page becomes usable and check a direct section link. Tab through the navigation to see whether focus is visible and unobscured. Scroll down and then back up to check that the compact and expanded states remain useful. On a slow device, check the timing separately from whether the page’s links and content respond."
+        },
+        {
+          "id": "when-to-use",
+          "title": "Decide whether the motion earns its place",
+          "text": "We used the sequence to introduce a brand mark and hand it over to a functional component. On a repeat-use dashboard or a page for visitors trying to find contact details in a hurry, starting with the destination can be the better choice. For animation work, review the costs of moving large areas and run a trace on representative hardware. A polished preview on a fast desktop gives limited evidence about how an animated page feels on a phone."
         }
-      ]
+      ],
+      "meta_description": "See how Ostrelya’s homepage intro transitions from a bar to the navbar. Read the SVG and CSS setup, reduced-motion fallback and checks for production.",
+      "links": [
+        [
+          "Watch the Ostrelya homepage intro",
+          "/"
+        ],
+        [
+          "web.dev — high-performance CSS animations",
+          "https://web.dev/articles/animations-guide"
+        ],
+        [
+          "W3C — animation from interactions",
+          "https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html"
+        ],
+        [
+          "W3C — keeping keyboard focus visible",
+          "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html"
+        ]
+      ],
+      "modified": "2026-11-22"
     }
   ]
 }

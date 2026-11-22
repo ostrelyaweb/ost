@@ -1,6 +1,7 @@
 """Build the production Worker assets from the audited redesign and published archive."""
 
 import re
+from datetime import date
 from pathlib import Path
 from shutil import copyfile
 import sys
@@ -104,15 +105,25 @@ def preserve_archive(output):
                 raise ValueError(f"Duplicate guide path: {name}")
             guide_files[name] = slug, lang
     archive_pages = tuple(dict.fromkeys((*ARCHIVE_PAGES, *guide_files)))
+    latest_update = max(
+        (date.fromisoformat(guide["modified"]) for guide in guides.values() if guide.get("modified")),
+        default=None,
+    )
+    modified = {}
     for name in archive_pages:
         target = output / name
         target.parent.mkdir(parents=True, exist_ok=True)
         if name in guide_files:
             slug, lang = guide_files[name]
             if slug:
-                body = render_guide(REDESIGN, ORIGIN, slug, lang, guides[slug], locales)
+                guide = guides[slug]
+                body = render_guide(REDESIGN, ORIGIN, slug, lang, guide, locales, guides)
+                if guide.get("modified"):
+                    modified[name] = date.fromisoformat(guide["modified"])
             else:
                 body = render_guide_index(REDESIGN, ORIGIN, lang, guides, locales)
+                if latest_update:
+                    modified[name] = latest_update
             target.write_text(body, encoding="utf-8")
             continue
         body = (ROOT / name).read_text(encoding="utf-8")
@@ -128,7 +139,7 @@ def preserve_archive(output):
             unencoded = ORIGIN + "/" + archive
             body = body.replace(unencoded, canonical.removesuffix(".html"))
         target.write_text(body, encoding="utf-8")
-    return archive_pages
+    return archive_pages, modified
 
 
 def build_privacy(output):
@@ -165,7 +176,7 @@ def update_navigation(output):
     room.write_text(body, encoding="utf-8")
 
 
-def update_routing(output, archive_pages):
+def update_routing(output, archive_pages, guide_updates):
     with (output / "_redirects").open("a", encoding="utf-8") as handle:
         for source, target in REDIRECTS.items():
             handle.write(f"{source} {target} 301\n")
@@ -182,6 +193,8 @@ def update_routing(output, archive_pages):
         ElementTree.SubElement(entry, f"{{{SITEMAP_NS}}}loc").text = ORIGIN + "/" + quote(
             page.removesuffix(".html"), safe="/"
         )
+        if page in guide_updates:
+            ElementTree.SubElement(entry, f"{{{SITEMAP_NS}}}lastmod").text = guide_updates[page].isoformat()
     sitemap.write(path, encoding="utf-8", xml_declaration=True)
 
     # Wrangler uses the source module and explicit Worker routes instead of Pages metadata.
@@ -196,10 +209,10 @@ def main():
     with TemporaryDirectory(prefix=".ostrelya-build-", dir=ROOT) as temporary:
         staging = Path(temporary) / "public"
         build_public(REDESIGN, staging, ORIGIN)
-        archive_pages = preserve_archive(staging)
+        archive_pages, guide_updates = preserve_archive(staging)
         build_privacy(staging)
         update_navigation(staging)
-        update_routing(staging, archive_pages)
+        update_routing(staging, archive_pages, guide_updates)
         configure_analytics(REDESIGN, staging, PRIVACY_ROUTES.values())
         indexnow_key = read_key()
         (staging / f"{indexnow_key}.txt").write_text(indexnow_key, encoding="utf-8")

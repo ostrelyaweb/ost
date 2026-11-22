@@ -3,7 +3,7 @@
     "bs": {
       "slug": "cijena-izrade-web-stranice",
       "title": "Koliko košta izrada web stranice?",
-      "summary": "Uporedite broj predložaka, pripremu sadržaja i troškove koje ćete imati poslije objave.",
+      "summary": "Za poslovnu web stranicu prvo odredite broj usluga, ko priprema sadržaj i šta treba platiti poslije objave. Javna cijena jednog pružaoca u BiH služi kao polazna tačka. Izračun za dvije godine pokazuje kako uporediti dvije ponude u KM.",
       "meta_title": "Cijena izrade web stranice u BiH",
       "meta_description": "Uporedite ponude za izradu web stranice prema broju predložaka, pripremi sadržaja i troškovima CMS-a, hostinga i održavanja nakon objave.",
       "sections": [
@@ -18,13 +18,31 @@
         [
           "Troškovi nakon objave",
           "Odvojite izradu od domene, hostinga, licenci i održavanja. Isti opis projekta pošaljite svakom ponuđaču i provjerite ko će imati pristup računima."
+        ],
+        [
+          "Šta nam govori javna cijena u BiH",
+          "Ishop objavljuje izradu od 1.000 KM. To je početna cijena tog ponuđača, pregledana u novembru 2026. Firma koja prodaje ugradnju stolarije može tražiti tri posebne stranice usluga i galeriju radova. Svaka stranica treba tekst i fotografije. Provjerite uključuje li iznos unos, upit s lokacijom i test isporuke poruke."
+        ],
+        [
+          "Usporedite trošak za 24 mjeseca na istom obimu",
+          "U ilustrativnom primjeru A košta 1.500 KM za izradu i 70 KM mjesečno za podršku i hosting, ukupno 3.180 KM. B košta 2.100 KM za izradu i 40 KM mjesečno, ukupno 3.060 KM. Provjerite uključuju li obje ponude iste izmjene, domenu, kopije i povrat iz kopije. Tražite iznos s jasno iskazanim PDV-om i vlasništvo nad domenom. Ako jedna ponuda izostavlja tekstove i slike, uključite cijenu pripreme prije poređenja."
+        ],
+        [
+          "Pošaljite isti obim svim ponuđačima",
+          "Pošaljite: „Trebamo naslovnicu, tri usluge, šest objavljenih radova i obrazac koji vodi u zajedničko sanduče. Tekst možemo dostaviti mi, fotografije treba obraditi. Želimo naknadno dodavati radove. Navedite rok, šta uključuje obuka i trošak po godinama.” Kad jedna ponuda uključuje obuku, a druga samo pristup, tražite demonstraciju istog zadatka prije odluke."
+        ]
+      ],
+      "sources": [
+        [
+          "Ishop — javno objavljena početna cijena",
+          "https://ishop.ba/cijene/izrada-web-stranice/"
         ]
       ]
     },
     "sr-rs": {
       "slug": "cena-izrade-sajta",
       "title": "Koliko košta izrada sajta?",
-      "summary": "Uporedite šta ponuda uključuje za dizajn, sadržaj, razvoj i održavanje sajta.",
+      "summary": "Cena sajta za firmu zavisi od toga da li dobijate jednu promotivnu stranu, nekoliko stranica usluga ili sajt koji tim uređuje. Pogledajte javni cenovnik i poređenje dve izmišljene ponude u dinarima.",
       "meta_description": "Uporedite šta ponuda za izradu sajta uključuje za dizajn, sadržaj i razvoj. Proverite ko uređuje sajt i koliko košta održavanje posle objave.",
       "sections": [
         [
@@ -38,13 +56,35 @@
         [
           "Uporedite troškove posle objave",
           "Zatražite odvojene stavke za izradu, domen, hosting, licence i održavanje. Svakom ponuđaču pošaljite isti opis projekta."
+        ],
+        [
+          "Proverite opseg iza cene u Srbiji",
+          "BZ Development u javnom cenovniku navodi početnu cenu od 560 € za sajt za firmu. Digitalna Radionica odvojeno navodi osnovno održavanje od 2.000 RSD mesečno. To su usluge različitih ponuđača, proverene u novembru 2026. Ako porediš sajt za servis klima, traži cenu tri uslužne stranice, obrasca koji prima lokaciju i uvoza starih recenzija samo ako imaš dozvolu da ih objaviš."
+        ],
+        [
+          "Uporedite ponude u istoj valuti i periodu",
+          "Ilustracija: A traži 95.000 RSD za izradu i 4.500 RSD mesečno za prateće usluge. To je 203.000 RSD za dve godine. B traži 130.000 RSD za izradu i 2.900 RSD mesečno, ukupno 199.600 RSD. Uporedite šta te naknade pokrivaju. Dodajte trošak teksta, obnove domena i PDV ako nedostaju. Kad je ponuda u drugoj valuti, pitajte u kojoj se fakturiše i po kom datumu se računa protivvrednost."
+        ],
+        [
+          "Pitajte da li je ista usluga u obe ponude",
+          "U prodajnom razgovoru zatražite konkretno: „Potrebne su tri strane usluga, pet primera i obrazac za lokaciju i opis posla. Ko piše tekst, ko unosi radove i da li mogu sam da dodam šesti?” Dodatno pitajte da li je SEO jednokratno tehničko podešavanje ili obuhvata dalji rad. U ponudu unesite proveru prijema upita i uslove za izlazak."
+        ]
+      ],
+      "sources": [
+        [
+          "BZ Development — cena sajta za firmu",
+          "https://bzdev.io/cenovnik/"
+        ],
+        [
+          "Digitalna Radionica — ponuda održavanja",
+          "https://www.digitalnaradionica.rs/cena-izrade-sajta-i-paketi/"
         ]
       ]
     },
     "sr-me": {
       "slug": "cijena-izrade-sajta",
       "title": "Koliko košta izrada sajta za firmu?",
-      "summary": "Uporedite obim dizajna i razvoja, pripremu sadržaja i redovne troškove sajta.",
+      "summary": "Cijenu sajta uporedite prema vrsti upita koju želite, jezicima i poslu nakon objave. Za smještaj na primorju posebno odvojite običan upit od integracije sa sistemom za rezervacije.",
       "meta_description": "Uporedite ponude za izradu sajta prema obimu dizajna i razvoja, pripremi sadržaja i redovnim troškovima za hosting i održavanje.",
       "sections": [
         [
@@ -58,13 +98,35 @@
         [
           "Provjerite troškove poslije objave",
           "Odvojite izradu od domena, hostinga, licenci i održavanja. Pošaljite isti opis projekta svakom ponuđaču i provjerite kome ostaju pristupi."
+        ],
+        [
+          "Razjasnite šta se nudi u Crnoj Gori",
+          "VebIT oglašava paket od 19 € mjesečno sa minimalnim periodom od 12 mjeseci. Nanostar prikazuje početnu izradu od 390 € i mjesečno održavanje od 39 €. To su primjeri iz javnih ponuda pregledanih u novembru 2026. Provjerite šta se dobija po isteku paketa i na čijem nalogu je domen."
+        ],
+        [
+          "Primjer apartmana sa dva jezika",
+          "Vlasnik smještaja u Baru treba prikaz tri apartmana, galeriju i formu sa datumima. Osnovna verzija šalje upit u sanduče, pa vlasnik provjerava termin. Integracija koja prikazuje stanje iz drugog sistema zahtijeva dozvolu, provjeru grešaka i test na telefonu. U ponudi tražite odvojene stavke za prevod, održavanje i integraciju. Ilustracija: 850 € za izradu plus 30 € mjesečno iznosi 1.570 € za dvije godine, prije eventualnog troška domena i obrade sadržaja."
+        ],
+        [
+          "Gdje se vidi razlika u cijeni",
+          "Tražite da ponuđač pokaže šta se dešava kad gost unese neispravan datum i ko dobija upit na drugom jeziku. Na listu troškova dodajte pisanje, fotografije i održavanje raspoloživosti. Ako sajt naručuje uslužna firma, ista provjera može pratiti poziv ili zahtjev za ponudu. Tek kad dva paketa dijele iste zadatke, uporedite njihove cijene."
+        ]
+      ],
+      "sources": [
+        [
+          "VebIT — javna pretplatna ponuda",
+          "https://vebit.me/"
+        ],
+        [
+          "Nanostar — javne cijene izrade i održavanja",
+          "https://nanostar.me/cesta-pitanja"
         ]
       ]
     },
     "sl": {
       "slug": "cena-izdelave-spletne-strani",
       "title": "Koliko stane izdelava spletne strani?",
-      "summary": "Primerjajte predloge, pripravo vsebine, funkcije in stroške po objavi.",
+      "summary": "Cena izdelave spletne strani je primerljiva, ko ponudbi zajemata enake strani, besedila in podporo. Javni ceniki pomagajo pri orientaciji, izračun za dve leti pa pokaže vpliv mesečnih stroškov.",
       "meta_description": "Primerjajte ponudbe za izdelavo spletne strani po številu predlog, pripravi vsebine in funkcijah. Preverite tudi stroške gostovanja in vzdrževanja.",
       "sections": [
         [
@@ -78,13 +140,35 @@
         [
           "Preverite tekoče stroške",
           "Izdelavo ločite od domene, gostovanja, licenc in vzdrževanja. Ponudnikom pošljite enak opis projekta in preverite, kdo prevzame račune."
+        ],
+        [
+          "Kaj vsebuje cena v Sloveniji",
+          "STRUO objavlja osnovno izdelavo za 249 € ter gostovanje in vzdrževanje od 19,90 € mesečno. WEBCRAFT objavlja vzdrževanje za 12 € mesečno oziroma 120 € letno. Gre za oglasa dveh izvajalcev, pregledana novembra 2026. Če podjetje iz Celja naroča strani za tri storitve, v ponudbi posebej preverite pripravo besedil, obrazec za povpraševanje in urejanje referenc."
+        ],
+        [
+          "Primer dveh ponudb za isti obseg",
+          "V ponazoritvi A zahteva 1.000 € za izdelavo in 55 € na mesec, skupaj 2.320 € v 24 mesecih. B zahteva 1.500 € in 30 € na mesec, skupaj 2.220 €. Dodajte stroške domene, prevoda in licenc, če jih mesečni znesek ne vključuje. Preverite, ali je DDV vključen, kdo ostane lastnik domene in koliko uredniških sprememb pokrije dogovor."
+        ],
+        [
+          "Vsem izvajalcem pošljite enako povpraševanje",
+          "Navedite domačo stran, tri storitve, pet referenc in obrazec, ki pošlje povpraševanje v skupni nabiralnik. Napišite, katera besedila in fotografije so pripravljeni ter kateri sodelavec bo urejal reference. Pri prevzemu zahtevajte, da zaposleni uspešno vnese novo referenco. Vprašajte, kaj se zgodi z domeno, če mesečni paket po enem letu prekinete."
+        ]
+      ],
+      "sources": [
+        [
+          "STRUO — objavljena cena za osnovni paket",
+          "https://struo.si/storitve/izdelava-spletnih-strani"
+        ],
+        [
+          "WEBCRAFT — cenik in vzdrževanje",
+          "https://webcraft.si/cenik"
         ]
       ]
     },
     "mk": {
       "slug": "cena-na-izrabotka-na-veb-stranica",
       "title": "Колку чини изработката на веб-страница?",
-      "summary": "Споредете го обемот на дизајнот, подготовката на содржината и трошоците по објавувањето.",
+      "summary": "Цената за изработка зависи од бројот на различни страници, подготовката на содржината и поддршката по објавување. Споредете го истиот обем и пресметајте ја вкупната цена за две години.",
       "meta_description": "Споредете понуди за изработка на веб-страница според дизајнот, содржината и функциите. Проверете ги и трошоците за хостинг и одржување.",
       "sections": [
         [
@@ -98,13 +182,31 @@
         [
           "Пресметајте ги тековните трошоци",
           "Побарајте посебни ставки за изработка, домен, хостинг, лиценци и одржување. Испратете ист опис на проектот до сите изведувачи."
+        ],
+        [
+          "Што покажува јавен ценовник",
+          "Скопската агенција NULA објавува почетна цена од 190 € и наведува дека хостингот и доменот се плаќаат посебно. Ова е понуда од еден добавувач, проверена во ноември 2026 година. За фирма со три услуги проверете кој ги пишува описите, кој ги внесува фотографиите и дали формуларот испраќа барања на точната деловна адреса."
+        ],
+        [
+          "Пример што можете да го пресметате",
+          "Во илустративна понуда А, изработката чини 900 €, а поддршката 50 € месечно, вкупно 2.100 € за две години. Во понуда Б, изработката чини 1.300 €, а поддршката 30 € месечно, вкупно 2.020 €. Побарајте во понудата да стојат валутата на фактурата, ДДВ, обновувањето на доменот, лиценците и тоа што можете да го преземете ако го смените добавувачот."
+        ],
+        [
+          "Испратете исто барање до секој добавувач",
+          "Наведете почетна страница, три услуги, пет примери и формулар за барање понуда. Напишете кои текстови и фотографии се веќе подготвени, а што треба да изработи добавувачот. Побарајте да се наведе кој го поседува доменот и што се случува ако престане месечната поддршка. При прием, еден колега нека објави нов проект и нека провери дали барањето пристигнува."
+        ]
+      ],
+      "sources": [
+        [
+          "NULA — објавена цена за изработка",
+          "https://agencynula.com/veb-stranici/"
         ]
       ]
     },
     "sq": {
       "slug": "kostoja-e-krijimit-te-faqes",
       "title": "Sa kushton krijimi i një faqeje interneti?",
-      "summary": "Krahasoni modelet e faqeve, përgatitjen e përmbajtjes dhe shpenzimet pas publikimit.",
+      "summary": "Çmimi i një faqeje varet nga përmbajtja, gjuhët dhe mirëmbajtja. Shihni çfarë thonë ofertat publike në Shqipëri dhe Kosovë, pastaj krahasoni shpenzimet me të njëjtin afat.",
       "meta_description": "Krahasoni ofertat për krijimin e faqes sipas modeleve, përmbajtjes dhe funksioneve. Llogaritni edhe koston e domenit, hostimit dhe mirëmbajtjes.",
       "sections": [
         [
@@ -118,6 +220,28 @@
         [
           "Llogaritni shpenzimet e vazhdueshme",
           "Ndani koston e krijimit nga domeni, hostimi, licencat dhe mirëmbajtja. Dërgojuni ofruesve të njëjtin përshkrim dhe sqaroni kujt i mbeten llogaritë."
+        ],
+        [
+          "Lexoni kushtet, veçanërisht për vitin e dytë",
+          "Azoth në Tiranë publikon një çmim fillestar prej 290 € për faqen. Hostinkos në Kosovë përshkruan mirëmbajtje gjatë vitit të parë në paketat e dizajnit dhe trajtim tjetër nga viti i dytë. Këto janë oferta të operatorëve të ndryshëm, të kontrolluara në nëntor 2026. Pyesni për monedhën e faturës, TVSH-në, regjistrimin e domenit dhe shërbimet që tarifohen pas vitit të parë."
+        ],
+        [
+          "Shembull për një faqe me kërkesa në dy gjuhë",
+          "Një bujtinë në Vlorë mund të kërkojë galeri, informacione për dhomat dhe formular me datat e mbërritjes e të nisjes. Shfaqja e disponueshmërisë nga një sistem rezervimesh kërkon integrim më vete. Në një krahasim ilustrues, 900 € për krijim plus 45 € në muaj bëjnë 1.980 € për dy vjet. Shënoni veçmas përkthimin, kontrollin e formularit në çdo gjuhë dhe mirëmbajtjen e integrimit."
+        ],
+        [
+          "Dërgojuni furnizuesve të njëjtin përshkrim",
+          "Përfshini faqen kryesore, tre shërbime, pesë projekte dhe formularin që dërgon kërkesën te kutia e biznesit. Shënoni nëse tekstet dhe fotografitë i jepni ju. Pyesni nëse një punonjës mund ta shtojë vetë projektin e gjashtë. Me të njëjtin përshkrim krahasoni pagesën për ndërtim, koston vjetore, mbështetjen dhe kushtet e largimit."
+        ]
+      ],
+      "sources": [
+        [
+          "Azoth — çmimi fillestar në Shqipëri",
+          "https://azoth.al/sq/"
+        ],
+        [
+          "Hostinkos — paketat dhe mbështetja në Kosovë",
+          "https://hostinkos.com/"
         ]
       ]
     }
@@ -140,6 +264,18 @@
         [
           "Dogovorite primopredaju",
           "U ponudu uključite predaju pristupa, upute za uređivanje i provjeru da upiti stižu na tačnu adresu."
+        ],
+        [
+          "Primjer briefa za malu firmu",
+          "Za servis grijanja kupac treba provjeriti područje rada, vrste uređaja i može li dobiti termin. Tražite stranicu po važnoj usluzi, dva primjera rada i obrazac s općinom, tipom uređaja i opisom kvara. U briefu navedite ko daje fotografije, ko odobrava tekst i kada. Tako dobijate procjenu za isti posao od svakog ponuđača."
+        ],
+        [
+          "Kako prihvatiti gotovu stranicu",
+          "Zamolite osobu koja nije radila na projektu da na telefonu nađe uslugu i pošalje označen upit. Provjerite potvrdu i poruku u sandučetu. Kolega koji će uređivati sadržaj treba dodati probni rad i pregledati ga prije objave. Pri predaji provjerite pristup domeni, hostingu, dokumentaciji i analitici ako je bila ugovorena."
+        ],
+        [
+          "Šta obavezno tražiti u pisanoj ponudi",
+          "Odvojite pripremu sadržaja, dizajn, izradu, objavu i podršku. Uz svaku isporuku zapišite šta ulazi i ko potvrđuje rezultat. Na primjer, ako fotografije trebate dostaviti za dvije sedmice, pitajte šta se dešava s rokom ako kasne. Za tehnički SEO tražite popis provjera, a za redizajn popis starih URL-ova i novih odredišta."
         ]
       ]
     },
@@ -160,6 +296,18 @@
         [
           "Proverite primopredaju",
           "Dogovorite predaju pristupa, uputstvo za izmene i proveru da upiti stižu u pravi sandučić."
+        ],
+        [
+          "Primer zahteva za ponudu",
+          "Računovodstvena kancelarija želi upite od novih preduzetnika. Prva verzija može imati usluge, opis procesa, primer vrste dokumentacije i kontakt. U obrascu su dovoljni delatnost, faza poslovanja i način da odgovorite. Navedite ko priprema tekst, ko odobrava nacrt i koliko korekcija je uključeno."
+        ],
+        [
+          "Uslovi za primopredaju",
+          "Na telefonu pronađite uslugu i pošaljite označen upit. Proverite da ga prima zajedničko poslovno sanduče. U uredniku neka kolega doda primer usluge i vrati prethodnu verziju. Potvrdite da firma ima pristup domenu, hostingu i izvozu, kao i kontakt za probleme posle objave."
+        ],
+        [
+          "U ponudi razdvojite rad od mesečnih naknada",
+          "Tražite stavke za tekstove, fotografije, dizajn, izradu i obuku. Ako sadržaj kasni, precizirajte da li se menja datum objave ili obim prvog izdanja. Pitajte šta se posle lansiranja smatra greškom u isporuci, a šta dodatnom izmenom. Navode o osnovnom SEO-u proverite kroz dogovor o naslovima, indeksiranju i starim adresama."
         ]
       ]
     },
@@ -180,6 +328,18 @@
         [
           "Provjerite primopredaju",
           "Dogovorite predaju pristupa i obuku na stvarnom sadržaju. Testni upit treba da stigne u sandučić koji vaš tim zaista koristi."
+        ],
+        [
+          "Primjer zahtjeva za ponudu",
+          "Za mali smještaj u Herceg Novom napišite koje jedinice treba prikazati, ko šalje fotografije, koje jezike možete podržati i šta gost popunjava. Ako forma šalje samo zahtjev za termin, navedite da vlasnik naknadno potvrđuje dostupnost. Ako tražite spajanje s kalendarom, tražite poseban obim i provjeru greške u slučaju nedostupnosti."
+        ],
+        [
+          "Kako izgleda prihvatanje sajta",
+          "Na telefonu provjerite informacije za dolazak, otvorite jednu jedinicu i pošaljite označen upit sa datumima. Provjerite da oba jezika vode na pravo sanduče. Dogovorite vlasništvo nad domenom, predaju pristupa i ko ažurira podatke pred sezonu. Ako je sajt zamijenio postojeći, prođite ključne stare adrese."
+        ],
+        [
+          "Podijelite posao na objavu i kasniju podršku",
+          "Tražite u ponudi datume za fotografije, nacrt, pregled na telefonu i provjeru prije sezone. Ako vlasnik ne može završiti prevod, dogovorite manji prvi obim s potpunim putem do kontakta. Posebno navedite šta je dio popravke nakon predaje, a šta sezonska izmjena sadržaja. Kod poslovnog sajta ista podjela važi za reference i nove usluge."
         ]
       ]
     },
@@ -200,6 +360,18 @@
         [
           "Dogovorite se o predaji",
           "Dogovorite se o dostopih, navodilih za urejanje in preizkusu, ali povpraševanje prispe v pravi nabiralnik."
+        ],
+        [
+          "Primer naročila za storitveno podjetje",
+          "Podjetje za montažo toplotnih črpalk potrebuje strani za tri storitve, območje dela in primere projektov. Na obrazcu zahteva kraj in vrsto objekta, da lahko pripravi prvi odgovor. V naročilu navedite, kdo napiše opise, kdo pregleda fotografije in koliko krogov popravkov je vključenih."
+        ],
+        [
+          "Prevzem preverite s konkretnimi nalogami",
+          "Na telefonu poiščite storitev in pošljite označeno povpraševanje. V poslovnem nabiralniku preverite prejem. Naj urednik v testnem okolju vnese referenco, doda sliko in pregleda osnutek. Prevzem naj vključuje dostop do domene in gostovanja, dogovorjeni izvoz, navodila za objavo in kontakt za napake."
+        ],
+        [
+          "V ponudbi preverite meje posamezne naloge",
+          "Ločite pripravo vsebine, oblikovanje, izdelavo, objavo in podporo. Določite, kdo potrdi predloge, ter kaj se zgodi z rokom, če fotografije zamujajo. Ob prenovi zahtevajte seznam starih povezav in novih odredišč. Za uredniško delo dogovorite kratko uvajanje z vašim primerom in zapišite, koliko časa dobavitelj zagotavlja popravke."
         ]
       ]
     },
@@ -220,6 +392,18 @@
         [
           "Договорете примопредавање",
           "Побарајте пристапи, упатства за уредување и проба со која ќе потврдите дека барањето стигнува во вистинското сандаче."
+        ],
+        [
+          "Пример на барање за понуда",
+          "Фирма за сервис на клима-уреди сака повеќе барања со наведени општина, уред и проблем. Побарајте посебни страници за главните услуги и образец што може да се пополни на телефон. Наведете кој ги подготвува фотографиите, кој го одобрува текстот и што е подготвено пред да почне изработката."
+        ],
+        [
+          "Проверка при примопредавање",
+          "Колега што не работел на проектот треба да ја најде услугата и да испрати пробно барање. Проверете ја потврдата и приемот. Ако е договорен CMS, вашиот уредник нека подготви нацрт и нека замени фотографија. Потврдете пристап до доменот, хостингот, извозот на податоци и контактот за поддршка."
+        ],
+        [
+          "Поделете ја понудата според испораките",
+          "Побарајте одделни ставки за текст, фотографии, дизајн, изработка, обука и поддршка. Договорете што се случува со рокот ако материјалите доцнат и кој го одобрува секој чекор. При редизајн побарајте список на стари и нови адреси. Во договорот разграничете поправка на испорачан дефект од подоцнежна промена на содржина."
         ]
       ]
     },
@@ -241,6 +425,18 @@
         [
           "Bini dakord për dorëzimin",
           "Kërkoni qasje në llogari, udhëzime për redaktim dhe një provë që kërkesat mbërrijnë në adresën e duhur."
+        ],
+        [
+          "Një shembull kërkese për ofertë",
+          "Një studio arkitekture që punon në Tiranë dhe Prishtinë ka nevojë për shërbimet, dy projekte të shpjeguara dhe kontaktin. Për kërkesën mjaftojnë lloji i projektit, vendndodhja dhe afati. Shënoni kush siguron fotografitë, kush miraton tekstin dhe çfarë duhet të dorëzohet para nisjes."
+        ],
+        [
+          "Provojeni faqen para dorëzimit",
+          "Një koleg duhet të gjejë një shërbim në telefon dhe të dërgojë një kërkesë prove. Shihni nëse merr konfirmim dhe mesazhi mbërrin. Redaktuesi juaj të provojë shtimin e një projekti në mjedisin e provës. Siguroni hyrjen te domeni, hostimi, eksporti i përmbajtjes dhe udhëzimet e punës."
+        ],
+        [
+          "Kërkoni që oferta të përcaktojë çfarë dorëzohet",
+          "Ndani tekstet, fotografitë, dizajnin, zhvillimin, trajnimin dhe mbështetjen. Shënoni kush miraton punën dhe çfarë ndodh me afatin kur vonohen materialet. Për ridizajnim kërkoni tabelën e adresave të vjetra dhe destinacioneve të reja. Sqaroni si ndryshon një rregullim i dorëzimit nga një kërkesë e re pas publikimit."
         ]
       ]
     }
@@ -263,6 +459,18 @@
         [
           "Zabilježite nalaze",
           "Otvorite važne stranice i stare adrese nakon izmjena. Za svaki problem zapišite šta nije prošlo, ko ga rješava i kada ponavljate provjeru."
+        ],
+        [
+          "Provjerite kvar koji se ne vidi na naslovnici",
+          "Servis može imati otvorenu i brzu stranicu, a da upiti idu na adresu osobe koja više ne radi. S telefona pošaljite poruku TEST, zapišite vrijeme i potvrdite dolazak u zajedničko sanduče. Ako druga jezička verzija ima poseban obrazac, ponovite test. Zabilježite i kontakt koji kupac može koristiti dok se kvar otklanja."
+        ],
+        [
+          "Uporedite održavanje po isporukama",
+          "Za web s CMS-om pitajte koje se datoteke i baza kopiraju te ko je zadnji isprobao povrat na testnoj kopiji. Za statički web provjerite repozitorij, hosting i konfiguraciju obrasca. U ponudi odvojite nadogradnje, izmjene, pozive nakon radnog vremena i popravke. Dogovorite osobu koja prima upozorenje i način da provjeri da usluga opet radi."
+        ],
+        [
+          "Dogovorite kad se provjera ponavlja",
+          "Poslije objave prođite najvažniju uslugu i testirajte upit. Jednom mjesečno provjerite istek domena, pristupe i prijem poruka. Za povrat kopije dogovorite period prema količini izmjena koje možete izgubiti. U izvještaju tražite datum, rezultat i zadatak s odgovornom osobom. Kad su problemi ponovljeni, uporedite zapise, a ne samo datum posljednje nadogradnje."
         ]
       ]
     },
@@ -283,6 +491,18 @@
         [
           "Dodelite zadatke",
           "Otvorite bitne i nedavno izmenjene stranice. Za svaki problem zabeležite ishod, odgovornu osobu i datum ponovne provere."
+        ],
+        [
+          "Kad forma potvrdi slanje, a upit ne stigne",
+          "Pošaljite označen test s telefona i sačekajte da ga pronađete u poslovnom sandučetu ili CRM-u. Zapišite vreme, stranicu, jezik i primaoca. Ako ne stigne, proverite zapis isporuke, adresu i privremeni rezervni kanal. Ponovite proveru posle svake promene šablona, adrese ili servisa za slanje."
+        ],
+        [
+          "Šta mesečni paket treba da navede",
+          "Odvojite nadzor, ažuriranja, izmene teksta, oporavak i intervenciju van radnog vremena. Za WordPress pitajte kada su poslednji put na testnoj kopiji vraćene baza i datoteke. Za statički sajt proverite ko ima naloge za domen, hosting i objavu. U pojašnjenju ponude razdvojite vreme do odgovora od očekivanog trajanja popravke."
+        ],
+        [
+          "Dogovorite raspored koji prati rizik",
+          "Posle objave proverite glavni obrazac i promenjene adrese. Mesečno proverite rokove obnove, pristup i prijem upita. Periodično vratite kopiju na probni sajt i pogledajte najnoviji unos. Za svaku proveru zapišite datum, rezultat i vlasnika zadatka. Ako se tokom sezone sadržaj menja svakog dana, dogovorite koliko novog rada možete da izgubite pri oporavku."
         ]
       ]
     },
@@ -303,6 +523,18 @@
         [
           "Pratite izmjene",
           "Otvorite važne stranice, nedavno promijenjene adrese i kontakt. Uz nalaz zabilježite odgovornu osobu i kada će provjera biti ponovljena."
+        ],
+        [
+          "Test za sajt smještaja pred sezonu",
+          "Provjerite sa telefona da li su informacije o dolasku i raspoloživosti aktuelne. Pošaljite test za odabrane datume na oba jezika. Uporedite vrijeme i mjesto prijema. Ako se upit ručno prepisuje u drugi sistem, provjerite i taj korak. Dogovorite ko mijenja sezonski sadržaj i ko prati upite vikendom."
+        ],
+        [
+          "Dogovorite povrat i granicu mjesečnog paketa",
+          "Rezervna kopija treba pokriti dijelove potrebne da se sajt ponovo pokrene. Kod CMS-a provjerite sadržaj, slike, bazu i pristupe u testnom okruženju. Kod statičkog sajta posebno popišite postavke domena i forme. Pitajte uključuje li cijena vraćanje poslije kvara, manje izmjene i reakciju van radnog vremena."
+        ],
+        [
+          "Zapišite šta se radi pred sezonu",
+          "Otvorite smještaj, upute za dolazak i kontakt na telefonu. Pored svakog testa zapišite datum i ko ga ponavlja. Dogovorite ko u proljeće obnavlja domen i ko ima pristup rezervi podataka. Ako sezonski link ka dobavljaču prestane raditi, odgovorna osoba treba da može istaknuti direktan upit dok sklop ponovo ne proradi."
         ]
       ]
     },
@@ -323,6 +555,18 @@
         [
           "Zapišite ugotovitve",
           "Odprite ključne in nedavno spremenjene strani. Zapišite izid, odgovorno osebo in datum ponovnega preizkusa."
+        ],
+        [
+          "Preverite povpraševanje po telefonu",
+          "Odprite priljubljeno storitev, pošljite označeno testno povpraševanje in preverite, ali je res prispelo v nabiralnik. Pri več jezikih preizkusite vsak obrazec z drugim prejemnikom. Zapišite datum, naslov strani in rezultat. Če potrditveno sporočilo deluje, dostava pa ne, preverite zapis pošiljanja in omogočite drug kontakt."
+        ],
+        [
+          "Primerjajte pakete po nalogah in odzivu",
+          "Ponudba naj loči posodobitve, spremembe vsebine, nadzor in obnovitev po napaki. WordPress običajno potrebuje datoteke in podatkovno zbirko. Statična stran ima lahko ločeno storitev za obrazce. Prosite za poskus obnove v okolju, ki ni javno, in določite, kdo preveri, ali po obnovitvi delujejo glavne strani in urejanje."
+        ],
+        [
+          "V dnevnik dodajte rezultate in odgovorne osebe",
+          "Po objavi preizkusite glavno storitev, spremenjene povezave in prejem obrazca. Mesečno preglejte roke obnove domene, dostope in pomembna povpraševanja. Občasno obnovite kopijo v testnem okolju in preverite zadnjo referenco. Zapišite datum, napako, rešitev in kdo jo je preveril. Če spletna stran prinaša večino povpraševanj, določite kontakt za nujne težave."
         ]
       ]
     },
@@ -343,6 +587,18 @@
         [
           "Запишете ги резултатите",
           "Отворете ги важните и неодамна изменетите страници. За секој проблем наведете кој го решава и кога ќе ја повторите проверката."
+        ],
+        [
+          "Проверете го патот од телефонот до сандачето",
+          "Отворете ја најважната услуга, пратете означено тест-барање и забележете го времето. Проверете дали се појави потврда и дали пораката пристигна во деловното сандаче. Повторете на јазиците што користат друг образец или примач. Ако пораката недостига, проверете го записот за испорака и обезбедете друга адреса за контакт."
+        ],
+        [
+          "Што опфаќа месечната поддршка",
+          "Одделете ги ажурирањата, промените на содржина, следењето и поправката при дефект. WordPress бара копија на базата и на датотеките. Кај статична страница проверете ги одделно поставките за доменот и формуларот. Испробајте обновување во тестна околина и договорете кој потврдува дека последната објава и формуларот работат."
+        ],
+        [
+          "Направете распоред и запис за секоја проверка",
+          "По објава проверете ги главната услуга, изменетите адреси и контактот. Месечно прегледувајте ги роковите за обновување и пристапите. Периодично вратете резервна копија во тестна околина. Запишете датум, адреса, резултат и одговорно лице. Ако страницата е главен извор на барања, договорете кој реагира при прекин и како се проверува дека приемот е вратен."
         ]
       ]
     },
@@ -363,6 +619,18 @@
         [
           "Mbani shënime",
           "Hapni faqet kryesore dhe ato që sapo keni ndryshuar. Për çdo problem shënoni kush merret me të dhe kur bëhet kontrolli i radhës."
+        ],
+        [
+          "Kontrolloni marrjen e kërkesës, jo vetëm faqen",
+          "Hapni një shërbim nga telefoni, dërgoni një mesazh të shënuar TEST dhe gjeni mesazhin në kutinë e biznesit. Shënoni kohën, faqen dhe gjuhën. Për një bujtinë provoni edhe datat dhe lidhjen me kalendarin nëse përdoret. Nëse konfirmimi shfaqet por mesazhi nuk mbërrin, verifikoni dërgesën dhe vendosni një kontakt alternativ."
+        ],
+        [
+          "Krahasoni detyrat që mbulon mirëmbajtja",
+          "Kërkoni ndarje mes përditësimeve, ndryshimeve të përmbajtjes, monitorimit dhe ndërhyrjes. Në WordPress duhen kontrolluar baza e të dhënave dhe skedarët. Një faqe statike mund ta ketë formularin te një shërbim tjetër. Provoni rikthimin në mjedis privat dhe caktoni personin që vërteton se faqet dhe formulari punojnë pas rikthimit."
+        ],
+        [
+          "Mbani një regjistër që mund ta përdorë ekipi",
+          "Pas publikimit kontrolloni shërbimin kryesor dhe adresat e ndryshuara. Çdo muaj rishikoni hyrjet, afatet e rinovimit dhe marrjen e mesazheve. Herë pas here riktheni kopjen në mjedisin e provës dhe hapni një faqe të sapondryshuar. Shënoni datën, rezultatin dhe përgjegjësin. Nëse kontakti prishet, caktoni kush njoftohet dhe kush vërteton riparimin."
         ]
       ]
     }
@@ -394,6 +662,18 @@
         [
           "Provjerite nakon objave",
           "Ponovite test starih adresa i pošaljite ažurirani sitemap. Uporedite stanje ključnih stranica u Search Consoleu."
+        ],
+        [
+          "Primjer selidbe stranice usluge",
+          "Firma koja radi aluminijsku stolariju mijenja staru adresu /usluge/stolarija.html. Ako sadržaj i ponuda ostaju isti, zadržavanje adrese smanjuje broj promjena. Ako mora mijenjati URL, stara adresa treba direktno voditi na novi opis stolarije. U mapu upišite obje adrese, očekivani status i ko je provjerio rezultat."
+        ],
+        [
+          "Pratite šta se desilo s upitima",
+          "Prije objave izvezite stranice iz Search Consolea i zabilježite koje donose razgovore. Na dan objave provjerite da odredište vraća 200, ima odgovarajući canonical i da ga sitemap navodi. Prođite obrazac do sandučeta. Ako pad zahvati jednu uslugu, prvo pogledajte njene adrese, linkove i sadržaj. Ako zahvati cijeli web, provjerite dostupnost i pravila indeksiranja."
+        ],
+        [
+          "Kada je bolje vratiti staru verziju",
+          "Dogovorite ko ima pristup prethodnoj objavi i ko odlučuje o povratu. Ako cijela kategorija vraća pogrešnu stranicu ili upiti više ne stižu, popravka može biti hitna. Za jednu grešku u tekstu lakša je ispravka na postojećoj verziji. Nakon povrata ponovite test odredišta, navigacije i upita."
         ]
       ]
     },
@@ -422,6 +702,18 @@
         [
           "Proverite posle objave",
           "Ponovite test starih URL-ova, pošaljite novi sitemap i pregledajte izabrane adrese u Search Console-u."
+        ],
+        [
+          "Kada stara strana može da ostane",
+          "Servis računara menja izgled sajta. Ako strana za popravku laptopova zadržava istu svrhu, može ostati na istoj adresi. Ako se seli u drugu sekciju, upišite staru i novu adresu u mapu i postavite direktno trajno preusmerenje. Ugašenu stranu bez zamene odvojite od onih koje imaju odgovarajuće odredište."
+        ],
+        [
+          "Test koji možete ponoviti posle objave",
+          "Na starom URL-u proverite status i odredište, a zatim da novo odredište direktno vraća 200 i da canonical pokazuje na sebe. Ažurirajte interne linkove i sitemap. Snimite klikove, prikaze i pristigle upite pre objave. Posle promene odvojeno pogledajte pad za jedan šablon, jednu jezičku verziju i ceo sajt."
+        ],
+        [
+          "Dogovor za kvar posle objave",
+          "Zabeležite ko može da vrati prethodno izdanje i koji kvar opravdava tu odluku. Ako glavna forma prestane da radi ili važna grupa adresa vraća pogrešne stranice, proverite koliko brzo može da se uvede popravka. Posle vraćanja ponovite iste testove, posebno prijem upita i preusmerenja."
         ]
       ]
     },
@@ -450,6 +742,18 @@
         [
           "Provjerite objavljenu verziju",
           "Poslije objave pošaljite ažurirani sitemap i ponovite provjeru ključnih adresa. Za više jezika testirajte preusmjerenja za svaku verziju."
+        ],
+        [
+          "Preseljenje bez gubitka puta do rezervacije",
+          "Smještaj mijenja adresu stranice za apartman s pogledom na more. Stari link iz oglasa ili vodiča treba voditi na isti apartman na novoj adresi. Provjerite i englesku verziju. Ako jedinica više nije dostupna, odredite ima li relevantne zamjene. U mapu dodajte i stranice s mjestima dolaska koje gosti redovno koriste."
+        ],
+        [
+          "Šta provjeriti prve nedjelje",
+          "Na staroj adresi tražite trajno preusmjerenje u jednom koraku, a na novoj direktan 200, pravilan canonical i pristupačan opis. Pošaljite upit na oba jezika do radnog sandučeta. Zabilježite datum objave i uporedite prikaze, klikove i upite u odnosu na prethodni period, uz sezonu kao važan kontekst."
+        ],
+        [
+          "Osigurajte plan prije važnog datuma",
+          "Zakazivanje migracije dan pred kampanju ostavlja malo prostora za provjeru. Uzmite termin kada je osoba koja može vratiti prethodnu verziju dostupna. Sačuvajte evidenciju preusmjerenja i uputstvo za obrazac. Ako se kvar ne može brzo ispraviti, vratite odgovarajuću verziju i poslije provjerite najvažnije adrese i prijem upita."
         ]
       ]
     },
@@ -478,6 +782,18 @@
         [
           "Ponovite preizkus po objavi",
           "Pošljite posodobljen zemljevid in preglejte pomembne naslove v Search Console. Primerjajte prikaze in klike v naslednjih tednih."
+        ],
+        [
+          "Primer preselitve strani s storitvijo",
+          "Če podjetje pri prenovi spremeni naslov strani za servis strojev, mora stara povezava obiskovalca pripeljati na novo stran za isti servis. Za vsako pomembno stran zabeležite stari naslov, novo odredišče in pričakovani odgovor. Strani z enakim namenom lahko obdržijo svoj naslov. Odstranjene strani brez nadomestila lahko vrnejo 404 ali 410."
+        ],
+        [
+          "Preverjanje pred objavo in po njej",
+          "Izvozite strani s kliki in prikazi ter dodajte strani, ki prinašajo povpraševanja. Preverite, da preusmeritev vodi neposredno na naslov, ki vrne 200 in ima pravilen canonical. Posodobite notranje povezave in kazalo strani. Po objavi pošljite testno povpraševanje in ločeno spremljajte predloge, jezike in najpomembnejše storitve."
+        ],
+        [
+          "Pripravite postopek za vrnitev različice",
+          "Zapišite, kdo lahko obnovi prejšnjo izdajo in kdaj se za to odloči. Če po prenovi izgine pomembna skupina naslovov ali odpove glavni obrazec, primerjajte čas popravka s časom obnove. Po vrnitvi znova preverite naslove, preusmeritve in dejanski prejem povpraševanj."
         ]
       ]
     },
@@ -506,6 +822,18 @@
         [
           "Проверете по објавувањето",
           "Испратете ажурирана мапа, повторно тестирајте ги старите адреси и прегледајте ги важните страници во Search Console."
+        ],
+        [
+          "Пример за преселба на страница за услуга",
+          "Ако фирма ја менува адресата на услугата за монтажа, старите линкови треба да водат до новиот опис на истата услуга. Во табела внесете ги старата и новата адреса, очекуваниот статус и датумот на проверка. Задржете ја адресата кога содржината и намената остануваат исти."
+        ],
+        [
+          "Проверете го резултатот и по објавување",
+          "Старата адреса треба директно да пренасочи, а новата да врати 200 со правилна канонска ознака. Ажурирајте ги внатрешните врски и мапата на сајтот. Зачувајте податоци за кликови, прикази и барања пред објавата. Ако падот се јави само на еден јазик, проверете ги таму врските, ознаките и контактниот формулар."
+        ],
+        [
+          "Подгответе план за враќање",
+          "Пред објавата договорете кој може да ја врати претходната верзија. Ако важни услуги се отворат на погрешни адреси или барањата престанат да стигнуваат, проценете дали е побрза поправка или враќање. По секоја постапка повторете ги тестовите за адреси, пренасочувања и контакт."
         ]
       ]
     },
@@ -534,6 +862,18 @@
         [
           "Kontrolloni pas publikimit",
           "Dërgoni hartën e përditësuar, provoni sërish adresat e vjetra dhe shikoni faqet më të rëndësishme në Search Console."
+        ],
+        [
+          "Shembull i ndryshimit të adresës së një shërbimi",
+          "Një kompani që ndërron adresën e faqes për instalime duhet t’i dërgojë lidhjet e vjetra te shërbimi përkatës. Në një tabelë shënoni adresën e vjetër, adresën e re, përgjigjen që prisni dhe datën e provës. Kur qëllimi dhe adresa mund të ruhen, ndryshimi i pamjes nuk kërkon ndryshim URL-je."
+        ],
+        [
+          "Kontrolloni efektin gjatë publikimit",
+          "Verifikoni që adresa e vjetër ridrejton drejtpërdrejt, kurse e reja përgjigjet me 200 dhe ka canonical të saktë. Përditësoni lidhjet e brendshme dhe hartën e faqes. Ruani të dhënat para publikimit dhe provoni formularin më pas. Nëse rënia prek vetëm një gjuhë, kontrolloni përputhjen e adresave, hreflang dhe përmbajtjen në atë gjuhë."
+        ],
+        [
+          "Përgatitni një mënyrë rikthimi",
+          "Para publikimit caktoni kush mund ta rikthejë versionin e mëparshëm dhe kur duhet marrë ai vendim. Nëse formulari kryesor nuk dorëzon kërkesa ose një grup faqesh hap destinacionin e gabuar, vlerësoni sa zgjat riparimi. Pas rikthimit përsëritni provat e adresave dhe të formularit."
         ]
       ]
     }
@@ -555,6 +895,18 @@
         [
           "Provjerite upite",
           "Ako je stranica već u indeksu, filtrirajte njezinu adresu u izvještaju Performance. Uporedite upite s naslovom, opisom usluge i informacijama koje kupac treba."
+        ],
+        [
+          "Dva razloga zašto ne vidite uslugu",
+          "U Search Console unesite tačnu HTTPS adresu. Ako je stara adresa označena kao preusmjerenje, otvorite odredište i provjerite njega. Ako svježa stranica usluge još nije indeksirana, provjerite 200 odgovor, robots pravila, sitemap i da može biti pronađena iz glavnog menija ili odgovarajuće kategorije. Test uživo pokazuje stanje dohvata danas."
+        ],
+        [
+          "Kad je stranica indeksirana, pogledajte upite",
+          "Filtrirajte URL u izvještaju Performance i pogledajte prikaze po upitu i zemlji. Ako se servis stolarije prikazuje samo za naziv firme, proširite opis konkretnim vrstama radova, primjerima i područjem koje stvarno pokrivate. Ako Google izabere drugi canonical, provjerite da se vaši canonical, sitemap i interne poveznice slažu. Zatražite ponovni pregled nakon stvarne izmjene."
+        ],
+        [
+          "Pročitajte status bez nagađanja",
+          "Ako piše Discovered, provjerite unutrašnje poveznice i dostupnost. Ako piše Crawled, pogledajte da li alat vidi glavni tekst i postoji li vrlo slična adresa. Ako se status odnosi na zabranu, odlučite treba li stranica uopće biti javna prije uklanjanja noindexa. Nakon popravke provjerite primjer URL-a i zapišite kada ste ga ponovo poslali."
         ]
       ]
     },
@@ -575,6 +927,18 @@
         [
           "Pogledajte upite",
           "Ako je URL u indeksu, filtrirajte ga u izveštaju Performance. Proverite odgovara li sadržaj usluzi koju kupac traži."
+        ],
+        [
+          "Prvo proverite tačan URL u Search Console-u",
+          "Unesite HTTPS adresu stranice usluge i pogledajte da li je indeksirana. Stara adresa koja je preusmerena obično treba da ostane van indeksa. Kod nove, proverite da vraća 200, da je u sitemapu i da na nju vodi link sa javne stranice. Ako piše da je Google pregledao URL bez indeksiranja, uporedite sadržaj sa sličnom stranicom i proverite odabrani canonical."
+        ],
+        [
+          "Ako je indeksirana, analizirajte prikaze",
+          "U izveštaju Performance filtrirajte URL, pogledajte zemlju i nebrendirane upite. Sajt za servis može biti indeksiran i prikazivati se samo za ime firme. U tom slučaju kupcu pomozite da prepozna koju opremu servisirate, na kom području i šta treba da pošalje u upitu. Posle izmene proverite novi prikaz i pratite podatke kroz dovoljno dug period."
+        ],
+        [
+          "Jedan status, sledeći korak",
+          "Discovered znači da je URL poznat, pa proverite linkove, sitemap i dostupnost. Ako je Crawled, pogledajte šta Google može da pročita i da li postoji druga strana sa istom namenom. Kod isključenja zbog noindex prvo proverite da li je u pitanju javna ili probna verzija. Posle popravke pokrenite test uživo pre slanja zahteva."
         ]
       ]
     },
@@ -595,6 +959,18 @@
         [
           "Pogledajte upite kupaca",
           "Ako je stranica u indeksu, filtrirajte URL u izvještaju Performance i uporedite upite sa sadržajem koji ste objavili."
+        ],
+        [
+          "Pogledajte tačan URL i odredište",
+          "Ako stari link za smještaj vodi na novi, prvo pregledajte novi URL u Search Consoleu. Izvještaj o indeksiranju pokazuje šta je Google ranije obradio, a test uživo šta može dohvatiti sad. Provjerite 200, canonical i vidljivi sadržaj na namjeravanoj adresi. Ako je Google odabrao drugi jezik, uporedite kanonske oznake i poveznice u oba smjera."
+        ],
+        [
+          "Kad nema prikaza za željeni upit",
+          "Iz Performance izvještaja pogledajte upite i zemlje za jedan URL. Ako se stranica prikazuje za ime apartmana, ali rijetko za opšte upite, provjerite šta stvarno možete dodati o lokaciji, pristupu ili kapacitetu. Zapišite kada ste promijenili sadržaj i pregledajte podatke nakon novog pregleda, uz poređenje sa sličnim periodom sezone."
+        ],
+        [
+          "Primjer greške kod dvije verzije",
+          "Ako crnogorska stranica apartmana ima canonical na englesku naslovnicu, pregledajte da li podešavanje odgovara ponudi. Kada obje stranice treba da se prikazuju, obično imaju vlastite URL-ove i glavnu adresu na sebe, uz odgovarajuću jezičku vezu. Provjerite interne linkove, sitemap i stanje Googleovog kanonskog izbora poslije novog pregleda."
         ]
       ]
     },
@@ -614,6 +990,18 @@
         [
           "Preglejte poizvedbe",
           "Če je stran že v indeksu, v poročilu Performance filtrirajte njen naslov. Preverite, ali vsebina odgovarja na poizvedbo za pravo storitev."
+        ],
+        [
+          "Najprej preglejte točen naslov",
+          "V orodje URL Inspection vnesite naslov HTTPS z ustrezno jezikovno potjo. Stari naslov s preusmeritvijo je lahko pravilno izključen. Pri novi storitvi preverite odgovor 200, notranjo povezavo, zemljevid strani in kanonični naslov. Preizkus v živo kaže trenutni dostop, poročilo o indeksiranju pa stanje, ki ga je Google obdelal."
+        ],
+        [
+          "Če je stran že indeksirana, preverite poizvedbe",
+          "V poročilu Performance izberite točno stran in državo. Če dobiva prikaze le za ime podjetja, preverite, ali na njej jasno piše, komu je storitev namenjena, kje jo izvajate in kakšen je postopek povpraševanja. Če je Google izbral drug kanonični naslov, preglejte oznake, povezave in zemljevid. Zahtevajte ponovni pregled po odpravi napake."
+        ],
+        [
+          "Kaj storiti glede na razlog v poročilu",
+          "Pri odkriti, še ne indeksirani strani preverite povezave, kazalo in dostop. Pri pregledani, še ne indeksirani strani preverite vidno vsebino ter morebitne podvojene naslove. Če je razlog noindex, ugotovite, ali je to namerno pri testni različici. Po popravku zaženite preizkus v živo in nato zahtevajte pregled pomembnega naslova."
         ]
       ]
     },
@@ -633,6 +1021,18 @@
         [
           "Погледнете ги пребарувањата",
           "Ако адресата е индексирана, филтрирајте ја во извештајот Performance. Споредете ги пребарувањата со описот на услугата."
+        ],
+        [
+          "Внесете ја точната HTTPS адреса",
+          "Во URL Inspection проверете дали адресата е индексирана и која адреса Google ја избрал за канонска. Стара адреса што пренасочува може правилно да биде исклучена. За нова услуга проверете одговор 200, внатрешна врска и sitemap. Тестот во живо ја проверува моменталната достапност, а извештајот го покажува последното обработено состојание."
+        ],
+        [
+          "Ако е индексирана, разгледајте ги пребарувањата",
+          "Во Performance филтрирајте по страница и земја. Ако има прикази само за името на фирмата, додајте корисни податоци за услугата, опфатот и првиот чекор за клиентот. Ако Google веќе пронашол слична страница, усогласете ги сопствената канонска ознака, врските и sitemap. Побарајте нова проверка откако ќе ја отстраните причината."
+        ],
+        [
+          "Постапете според прикажаниот статус",
+          "Ако адресата е откриена, проверете ги sitemap, внатрешните врски и достапноста. Ако е прегледана без индексирање, споредете ја со слични страници и проверете дали главниот текст е видлив. Ако има noindex, прво утврдете дали е намерен. По исправката направете тест во живо и побарајте проверка на важниот URL."
         ]
       ]
     },
@@ -652,6 +1052,18 @@
         [
           "Shihni çfarë kërkojnë klientët",
           "Nëse faqja është në indeks, filtrojeni adresën në raportin Performance. Kontrolloni nëse përmbajtja i përgjigjet kërkimit për shërbimin tuaj."
+        ],
+        [
+          "Kontrolloni URL-në e saktë",
+          "Në URL Inspection futni adresën HTTPS me rrugën e gjuhës së duhur. Një adresë e vjetër që ridrejton mund të përjashtohet siç duhet. Për një shërbim të ri kontrolloni përgjigjen 200, canonical, lidhjet nga faqet e tjera dhe sitemap. Testi i drejtpërdrejtë kontrollon qasjen aktuale. Raporti tregon versionin që Google ka përpunuar."
+        ],
+        [
+          "Nëse është indeksuar, kontrolloni pyetjet",
+          "Në raportin Performance filtroni adresën, vendin dhe pyetjet. Një faqe shërbimi mund të ketë shfaqje vetëm për emrin e biznesit. Shtoni informacion që i duhet një blerësi para se të kërkojë ofertë, si zona e shërbimit ose një shembull pune. Kur Google zgjedh një adresë tjetër kanonike, kontrolloni që canonical, lidhjet dhe sitemap të tregojnë adresën e parapëlqyer."
+        ],
+        [
+          "Veproni sipas arsyes që jep raporti",
+          "Kur adresa është zbuluar, kontrolloni lidhjet e brendshme, sitemap dhe qasjen. Kur është vizituar pa u indeksuar, shihni nëse përmbajtja kryesore ngarkohet dhe nëse ka faqe shumë të ngjashme. Kur ka noindex, sqaroni nëse është vendosur qëllimisht. Pas rregullimit bëni provë të drejtpërdrejtë dhe kërkoni kontroll për URL-në me rëndësi."
         ]
       ]
     }
@@ -674,6 +1086,18 @@
         [
           "Pratite citate i upite",
           "U Bing AI Performance pogledajte citirane stranice. Odvojeno pratite posjete i upite koji dolaze preko pojedinih stranica."
+        ],
+        [
+          "Objavite primjer koji neko može provjeriti",
+          "Za pitanje „koliko košta web za malu firmu” navedite obim, valutu, datum i šta ulazi u iznos. Izračun cijene za dvije godine treba odvojiti izradu, sadržaj i održavanje. Ako opisujete javni cjenovnik, povežite original. Ako su brojevi izmišljeni radi računa, jasno to recite. Dodajte šta kupac treba poslati da dobije svoju ponudu."
+        ],
+        [
+          "Provjerite pristup i mjerite rezultat",
+          "Googleove AI funkcije traže da stranica bude indeksirana i podobna za isječak. OpenAI dokumentuje OAI-SearchBot za ChatGPT Search odvojeno od GPTBota. U Bing AI Performance pogledajte citirane URL-ove kad ima podataka. U analitici odvojite prepoznate posjete, a u sandučetu stvarne upite. Zabilježite jezik i datum pri ručnoj provjeri."
+        ],
+        [
+          "Vodite mali dnevnik provjera",
+          "Odaberite pet pitanja koja kupci stvarno postavljaju. Zapišite datum, servis, formulaciju, citirani URL i tvrdnju na koju se citat odnosi. Ponovite provjeru u sličnim uslovima. Ako imate izvještaj iz Binga, koristite ga kao poseban izvor uz analitiku. Za Googleove AI rezultate nema potrebe za posebnom oznakom preko standardnih uslova pretrage."
         ]
       ]
     },
@@ -694,6 +1118,18 @@
         [
           "Odvojite rezultate",
           "Izveštaj AI Performance u Bing Webmaster Tools prikazuje citirane adrese. Posete i upite pratite odvojeno."
+        ],
+        [
+          "Primer koji odgovara na pitanje kupca",
+          "Ako članku naslov glasi „Koliko košta sajt za firmu”, odgovor poduprite obimom: broj usluga, priprema teksta, CMS i održavanje. Navedite datum i izvor javne cene, a hipotetičke iznose označite kao ilustraciju. Dve ponude možete sabrati za isti period i pokazati kako se poređenje menja kad jedna sadrži samo tehničku podršku."
+        ],
+        [
+          "Kako proveriti vidljivost u različitim servisima",
+          "Google za AI prikaze navodi indeksiranost i podobnost za isečak. Za ChatGPT Search proverite OAI-SearchBot u javnoj dokumentaciji. Bing AI Performance prikazuje citirane adrese kada ima dovoljno podataka. Zabeležite konkretno pitanje, jezik, datum i citirani URL, pa odvojeno uporedite citate, posete i upite koje je firma stvarno primila."
+        ],
+        [
+          "Zapišite pitanja, ne samo pomen brenda",
+          "Izaberite pitanja koja kupac postavlja pre ponude. Zabeležite datum, jezik, servis, pitanje, citiranu stranu i koju tvrdnju je potkrepila. Isti odgovor ponovite u sličnim uslovima. Ako izmenite članak, pratite da li se citira nova verzija. Google navodi da za njegove AI prikaze posebna šema ili llms.txt nisu potrebni."
         ]
       ]
     },
@@ -714,6 +1150,18 @@
         [
           "Pratite različite rezultate",
           "Bing AI Performance prikazuje citirane adrese. Posjete i upite pratite posebno, po stranici kad imate taj podatak."
+        ],
+        [
+          "Primjer izvora za pitanje prije sezone",
+          "Umjesto „sajt pomaže rezervacijama” objasnite kada je dovoljan upit s datumima, a kada se prikazuje raspoloživost iz drugog sistema. Dodajte primjer za smještaj i navedite šta gost vidi ako sistem ne vrati termin. Opišite kako se oba jezika provjeravaju na telefonu. To je dio koji čitalac može provjeriti i primijeniti."
+        ],
+        [
+          "Mjerite citate i upite u odvojenim zapisima",
+          "Provjerite da javni URL vraća 200 i da su sadržaj i izvori dostupni. Googleove AI funkcije koriste osnovne uslove pretrage. Za ChatGPT Search provjerite pristup OAI-SearchBotu. Bing izvještaj može prikazati citate. Za vlastitu provjeru zapišite datum, jezik, pitanje i URL, a poslovni ishod pratite prema pristiglim upitima."
+        ],
+        [
+          "Napravite mali pregled dokaza",
+          "Za svako pitanje zapišite uslugu ili članak koji želite da posluži kao izvor, jedan konkretan dokaz i datum ažuriranja. Ako testirate prije i poslije sezone, zabilježite jezik i istu formulaciju. Google za svoje AI funkcije traži osnove pretrage. Prioritet dajte jasnom odgovoru i tačnim podacima na javnoj stranici."
         ]
       ]
     },
@@ -735,6 +1183,18 @@
         [
           "Spremljajte navedbe in obiske",
           "Bing AI Performance prikazuje navedene naslove. Obiske in povpraševanja spremljajte posebej."
+        ],
+        [
+          "Odgovor podprite s preverljivim primerom",
+          "Pri vprašanju o ceni spletne strani navedite obseg, pripravo besedil in stroške po objavi. Objavljeno ceno povežite z izvirnim cenikom in zapišite datum pregleda. Ponazoritveni izračun označite kot primer. Če primerjate dve ponudbi, uporabite isti časovni okvir in pojasnite, katere naloge vključuje mesečno vzdrževanje."
+        ],
+        [
+          "Dostop in merjenje preverite ločeno",
+          "Googlove funkcije umetne inteligence upoštevajo indeksiranje in primernost za prikaz odlomka. Za ChatGPT Search preverite navodila za OAI-SearchBot. V Bing AI Performance poiščite citirane naslove, kadar so na voljo. Pri ročnem preverjanju zapišite poizvedbo, jezik in datum. V analitiki spremljajte prepoznavne obiske in v nabiralniku prejeta povpraševanja."
+        ],
+        [
+          "Vodite seznam vprašanj in virov",
+          "Izberite pet vprašanj kupcev. Zapišite datum, jezik, iskalni sistem, citirani naslov in poved, ki jo vir podpira. Isti postopek ponovite ob naslednjem pregledu. V Googlovih smernicah za AI ni zahteve po posebni shemi ali llms.txt. Posodobite vsebino in merite obiske ter prejeta povpraševanja posebej."
         ]
       ]
     },
@@ -756,6 +1216,18 @@
         [
           "Мерете цитати и посети",
           "Bing AI Performance покажува цитирани адреси. Посетите и барањата следете ги посебно."
+        ],
+        [
+          "Дајте одговор што може да се провери",
+          "За прашањето колку чини деловна веб-страница наведете обем, подготовка на текст, јазици и одржување. За јавна цена посочете го изворот и датумот на проверката. Пример со измислени понуди означете го како илустрација. Користете ист период за двете понуди и објаснете кои трошоци се вклучени."
+        ],
+        [
+          "Одделете цитати, посети и барања",
+          "За функциите со ВИ на Google страницата треба да биде индексирана и подобна за исечок. За ChatGPT Search проверете ја документацијата за OAI-SearchBot. Bing AI Performance покажува цитирани адреси кога има податоци. Запишете прашање, јазик, датум и адреса. Посетите и примените деловни барања следете ги одделно."
+        ],
+        [
+          "Водете запис за повторлива проверка",
+          "Изберете неколку прашања што клиентите навистина ги поставуваат. Запишете датум, јазик, систем, цитирана адреса и тврдење што го поддржува. Повторете по промена на текстот. Google за своите функции со ВИ не бара посебна шема или llms.txt. Посветете време на точен, проверлив одговор."
         ]
       ]
     },
@@ -775,6 +1247,18 @@
         [
           "Matni citimet veçmas",
           "Bing AI Performance tregon adresat e cituara. Vizitat dhe kërkesat ndiqini veçmas, sipas faqes kur i keni të dhënat."
+        ],
+        [
+          "Shkruani një përgjigje që mund të verifikohet",
+          "Për pyetjen mbi koston e një faqeje biznesi, tregoni çfarë po llogaritni, kush përgatit tekstin dhe si tarifohen gjuhët e mirëmbajtja. Lidhni çmimet e botuara me burimin dhe datën. Nëse ofertat janë shembuj, shënojini si ilustrime dhe përdorni të njëjtën periudhë për të dyja."
+        ],
+        [
+          "Kontrolloni qasjen dhe matni veçmas",
+          "Për veçoritë me AI, Google kërkon që faqja të jetë e indeksuar dhe e përshtatshme për fragment në rezultate. Për ChatGPT Search shihni udhëzimet për OAI-SearchBot. Bing AI Performance mund të tregojë adresat e cituara. Në një provë shënoni datën, gjuhën, pyetjen dhe adresën. Numëroni veçmas vizitat dhe kërkesat që arrijnë te biznesi."
+        ],
+        [
+          "Mbani një regjistër të provave të përsëritura",
+          "Zgjidhni disa pyetje të klientëve para ofertës. Shënoni formulimin, gjuhën, datën, adresën e cituar dhe pohimin që mbështet burimi. Përsëriteni në kushte të ngjashme. Google shpjegon se për veçoritë e tij me AI nuk kërkohet skemë e veçantë ose llms.txt. Përqendrohuni te qasja publike dhe provat e sakta."
         ]
       ]
     }
@@ -796,6 +1280,18 @@
         [
           "Testirajte na primopredaji",
           "Neka urednik napravi nacrt, pregleda ga na telefonu i objavi. Za rijetke izmjene uporedite trošak CMS-a s dogovorenom podrškom."
+        ],
+        [
+          "Odaberite sistem prema učestalosti izmjena",
+          "Firma koja dva puta godišnje dopuni radove može koristiti statički web i dogovoriti rok izmjene. Ured koji objavljuje projekte svake sedmice treba samostalan unos. Za projekat odredite polja kao što su naziv, lokacija, godina i fotografije. Zajednički predložak čuva izgled dok urednik mijenja sadržaj."
+        ],
+        [
+          "Isprobajte objavu i izlazak",
+          "U testnom okruženju neka vaš urednik doda stvarni projekat, pregleda ga na telefonu i vrati prethodnu verziju. Provjerite ko može odobriti objavu i ko upravlja računima. Zatražite probni izvoz teksta i slika. Ako slike ostaju na tuđem hostingu, pitajte kako ćete ih preseliti i koliko vremena treba da novi izvođač preuzme rad."
+        ],
+        [
+          "Uračunajte vrijeme urednika i održavanje",
+          "Uporedite koliko vam izmjena sa izvođačem traje i ko plaća zastoje. U CMS varijanti dodajte obuku, unos sadržaja, nadogradnje, licence i vrijeme urednika. Ako tim mora mijenjati samo cijenu i fotografiju, provjerite kako izgleda baš ta radnja. Dijeljenje sadržaja između više kanala može opravdati odvojeni sistem ako ga neko može održavati."
         ]
       ]
     },
@@ -816,6 +1312,18 @@
         [
           "Tražite probu",
           "Na primopredaji neka urednik napravi nacrt, pregleda ga na telefonu i objavi. Ako su izmene retke, uporedite cenu CMS-a s povremenom podrškom."
+        ],
+        [
+          "Odaberite CMS prema poslu urednika",
+          "Studio koji povremeno dodaje slike može dogovoriti izmene sa izvođačem. Firma koja svake nedelje objavljuje reference može definisati polja: naziv projekta, godina, lokacija, naslovna slika i opis. Jedan šablon prikazuje ih na isti način. Ako postoje dva jezika, napišite ko prevodi i ko može objaviti svaku verziju."
+        ],
+        [
+          "Tražite da vaš zaposleni prođe ceo proces",
+          "U testnom okruženju neka kreira projekat, doda fotografije, pogleda nacrt i objavi. Neka druga osoba vrati prethodnu verziju. Proverite dozvole, izvoz teksta i slika i troškove održavanja. Ako CMS i javni sajt rade odvojeno, saznajte ko reaguje kad je unos objavljen u uredniku, a na sajtu ga nema."
+        ],
+        [
+          "Uporedite trošak rada i održavanja",
+          "Pored licence i hostinga računajte vreme za unos, obuku i proveru prikaza posle ažuriranja. Ako je jedina redovna promena jedna slika ili datum, isprobajte taj zadatak pre nego što ugovorite složen sistem. Ako isti sadržaj ide i na drugi kanal, proverite izvoz i ko održava objavljivanje na oba mesta."
         ]
       ]
     },
@@ -836,6 +1344,18 @@
         [
           "Provjerite rad na primopredaji",
           "Neka urednik pripremi i objavi primjer na telefonu. Ako su izmjene rijetke, uporedite cijenu CMS-a i podršku za povremeno ažuriranje."
+        ],
+        [
+          "Počnite od čestih sezonskih izmjena",
+          "Za smještaj vlasnik možda svake nedjelje osvježava fotografije i podatke o dolasku. Za druge poslove dovoljno je nekoliko izmjena godišnje. Popišite šta korisnik treba mijenjati i napravite polja za svaku jedinicu ili projekat. Struktura neka ostane stabilna na telefonu, uz ista obavezna polja na svakom jeziku."
+        ],
+        [
+          "Provjerite uređivanje pod stvarnim uslovima",
+          "Na probnoj verziji dajte zaposlenom zadatak da objavi novu jedinicu ili rad, otpremi fotografiju i ispravi pogrešan datum. Provjerite da li druga osoba može odobriti promjenu i vratiti ranije stanje. Zatražite primjer izvoza prije ugovora i popis licenci koje treba obnoviti."
+        ],
+        [
+          "Uzmite u obzir i posao poslije objave",
+          "U ponudu unesite unos starog sadržaja, obuku, licence i nadogradnje. Odlučite ko preuzima uređivanje ako je glavna osoba odsutna. Za sezonski sajt dogovorite kako se vraća staro stanje prije početka kampanje. Ako se podaci već vode u drugom sistemu, provjerite izvor prije uvođenja još jednog mjesta za uređivanje."
         ]
       ]
     },
@@ -855,6 +1375,18 @@
         [
           "Preizkusite urejanje ob predaji",
           "Naj urednik ustvari osnutek, si ga ogleda na telefonu in objavi. Za redke spremembe primerjajte strošek CMS-a z občasno podporo."
+        ],
+        [
+          "Izberite sistem glede na pogostost rednih sprememb",
+          "Podjetje, ki doda dve referenci na leto, lahko uporabi statično stran z dogovorjenim odzivom izvajalca. Ekipa, ki objavlja vsak teden, potrebuje samostojen vnos. Za referenco določite ime, leto, opis, naslovno sliko in galerijo. Skupna predloga ohranja postavitev, medtem ko urednik spreminja vsebino."
+        ],
+        [
+          "Preverite urejanje in izvoz",
+          "Urednik naj v testnem okolju vnese pravi primer, pregleda osnutek v telefonu, ga objavi in obnovi prej objavljeno različico. Preverite, kdo sme spreminjati dovoljenja in kdo skrbi za posodobitve. Zahtevajte poskusni izvoz besedila in slik. Če izvoz vsebuje samo povezave do slik, preverite, ali ostanejo dostopne po selitvi."
+        ],
+        [
+          "Primerjajte stroške urejanja in vzdrževanja",
+          "Ob licenci in gostovanju upoštevajte začetni vnos, usposabljanje, čas zaposlenih in posodobitve. Če redno menjate le datum ali fotografijo, preizkusite najprej ta korak. Če se ista vsebina uporablja drugje, se pozanimajte o povezavi, izvozu in o tem, kdo skrbi za objavo. Dogovorite se, kdo lahko prevzame urejanje ob odsotnosti."
         ]
       ]
     },
@@ -874,6 +1406,18 @@
         [
           "Тестирајте уредување",
           "При примопредавање, уредникот нека подготви нацрт, нека го прегледа на телефон и нека објави. За ретки измени споредете го CMS со повремена поддршка."
+        ],
+        [
+          "Изберете според зачестеноста на измените",
+          "Фирма што додава два проекта годишно може да користи статична страница со договорен рок за измени. Тим што објавува секоја недела има потреба од самостојно уредување. За проект одредете наслов, година, локација, опис и фотографии. Шаблонот ја чува поставеноста, а уредникот ги пополнува полињата."
+        ],
+        [
+          "Тестирајте објава и извоз пред избор",
+          "Нека вашиот уредник внесе вистински проект, отвори преглед на телефон и врати претходна верзија. Проверете кој смее да објавува и кој управува со корисници. Побарајте пробен извоз на текстови и фотографии. Ако системот за уредување е одделен од сајтот, договорете кој проверува дека објавите навистина се појавуваат."
+        ],
+        [
+          "Пресметајте го и времето на тимот",
+          "Покрај хостинг и лиценци, внесете ги почетниот внес, обуката и надградбите. Ако честа промена е само датум или фотографија, прво испробајте ја таа задача. Кога истата содржина се користи на повеќе места, прашајте кој го одржува процесот на објавување и што се случува ако врската меѓу системите не работи."
         ]
       ]
     },
@@ -893,6 +1437,18 @@
         [
           "Provojeni gjatë dorëzimit",
           "Redaktori le të krijojë një draft, ta shikojë në telefon dhe ta publikojë. Për ndryshime të rralla, krahasoni koston e CMS-it me mbështetjen sipas nevojës."
+        ],
+        [
+          "Zgjidhni sistemin sipas ndryshimeve që bëni",
+          "Një kompani që shton dy projekte në vit mund të përdorë një faqe statike me afat të përcaktuar për ndryshime. Një studio që publikon çdo javë ka nevojë për redaktim të pavarur. Për projektin përcaktoni fusha si emri, vendndodhja, viti, përshkrimi dhe fotot. Modeli ruan paraqitjen ndërsa redaktuesi vendos përmbajtjen."
+        ],
+        [
+          "Provoni publikimin dhe eksportin",
+          "Në mjedisin e provës redaktuesi të shtojë një projekt real, ta shohë në telefon dhe të rikthejë versionin e mëparshëm. Kontrolloni kush miraton ndryshimet dhe kush administron llogaritë. Kërkoni një eksport prove për tekstet dhe fotografitë. Nëse CMS-i është i ndarë nga faqja publike, sqaroni kush verifikon lidhjen midis tyre."
+        ],
+        [
+          "Llogaritni kohën e punës pas publikimit",
+          "Përveç licencës dhe hostimit llogaritni hedhjen e materialeve, trajnimin, përditësimet dhe kohën e redaktuesit. Kur ndryshoni rregullisht vetëm një datë ose foto, provojeni pikërisht atë veprim. Nëse e njëjta përmbajtje del në disa kanale, përcaktoni kush mirëmban secilin dhe si kontrollohet që publikimi ka mbërritur."
         ]
       ]
     }
@@ -916,6 +1472,18 @@
         [
           "Provjerite put do upita",
           "Promijenite jezik dok ste na usluzi, pronađite kontakt i pošaljite testni upit. Dogovorite ko održava prijevode kada se ponuda promijeni."
+        ],
+        [
+          "Pripremite prvi cjelovit put do upita",
+          "Proizvođač namještaja koji radi s kupcima u BiH i inostranstvu može početi od jedne usluge, projekta i kontakta na svakom jeziku. Kupcu trebaju mjere, područje isporuke i podaci koje treba poslati. Dogovorite ko odgovara na upit i provjerava prevod. Prevedite upute u obrascu i potvrdu, ne samo naslov."
+        ],
+        [
+          "Od adrese do primljenog upita",
+          "Stranice istog sadržaja mogu imati zaseban URL i uzajamni hreflang, uz canonical na vlastitu adresu kad je to namjeravana verzija. Klik na jezik treba otvoriti istu uslugu gdje postoji prevod. Sa telefona otvorite obje adrese direktno, promijenite jezik i pošaljite probni upit. Na kraju dogovorite ko ažurira obje verzije kada se promijeni rok."
+        ],
+        [
+          "Uredite promjene poslije prevoda",
+          "Za svaku jezičku verziju imenujte osobu za pregled. Kada se promijeni rok isporuke ili područje rada, zabilježite sve stranice na kojima se podatak pojavljuje. Izvještaj o prikazima provjeravajte po jeziku i zemlji. Pristigle upite odvojite po jeziku obrasca kada je to moguće. Tako odlučujete koji sadržaj vrijedi dalje lokalizovati."
         ]
       ]
     },
@@ -936,6 +1504,18 @@
         [
           "Proverite kontakt na svakom jeziku",
           "Promenite jezik na stranici usluge i proverite gde ste stigli. Prođite formular i dogovorite ko ažurira prevod kada se ponuda promeni."
+        ],
+        [
+          "Lokalizujte jednu celinu pre ostatka sajta",
+          "Proizvođač koji traži kupce u Srbiji i na engleskom govornom području može prvo objaviti glavnu uslugu, relevantan projekat i kontakt. Na drugom jeziku proverite jedinice mere, isporuku i terminologiju. Formu, poruku o grešci i potvrdu pripremite u oba jezika. Dodelite odgovornu osobu za jezičku proveru i odgovor na upit."
+        ],
+        [
+          "Proverite URL-ove, izbor jezika i prijem upita",
+          "Svaka verzija ima svoj javni URL i uglavnom canonical na sebe. Obeležite stvarne ekvivalente uzajamnim hreflang oznakama. Ako prevod za stranu ne postoji, nemojte naslovnu druge verzije označiti kao isti sadržaj. Otvorite oba URL-a direktno i pošaljite test s telefona. Proverite ko beleži izmene koje treba preneti u drugu verziju."
+        ],
+        [
+          "Napišite ko održava svaku verziju",
+          "Ako se promeni cena ili rok, urednik treba da zna na kojim se adresama podatak koristi. Vodite mali rečnik naziva proizvoda i kompanijskih izraza. Proveravajte prikaze po URL-u i zemlji, a upite po stvarno primljenim porukama. Rezultati mogu pomoći da izaberete sledeću uslugu za prevod i prilagodite sadržaj zahtevima tog tržišta."
         ]
       ]
     },
@@ -955,6 +1535,18 @@
         [
           "Testirajte obje verzije",
           "Otvorite uslugu, promijenite jezik i provjerite da ste stigli na istu uslugu. Prođite obrazac i provjerite potvrdu."
+        ],
+        [
+          "Primjer smještaja za domaće i strane goste",
+          "Za goste sa dva jezika objavite iste ključne informacije: tip smještaja, način dolaska, uslove i upit s datumima. Ako se usluga razlikuje po jeziku ili tržištu, jasno opišite razliku. Pitanje o dolasku treba stići osobi koja na tom jeziku može pomoći. Provjerite i potvrdu forme, upute za grešku i poslovnu adresu."
+        ],
+        [
+          "Napravite plan provjere za svaku verziju",
+          "Dajte verzijama posebne URL-ove i povežite stranice iste namjene obostrano. Odabir jezika treba otvoriti istu sobu ili uslugu ako postoji. Lokacija posjetioca može biti pogrešna zbog putovanja ili VPN-a, pa ostavite ručni odabir. Testirajte obje verzije na telefonu i dodijelite osobu za promjene pred sezonu."
+        ],
+        [
+          "Planirajte izmjene tokom sezone",
+          "Napišite ko na svakoj verziji mijenja upute za dolazak, termine ili pravila objekta. Pratite koje stranice gosti otvaraju i na kom jeziku šalju upite. Ako se traži treća verzija, prvo procijenite može li tim odgovoriti gostu. Kod naredne promjene ponovite test od rezultata pretrage do potvrđenog prijema."
         ]
       ]
     },
@@ -975,6 +1567,18 @@
         [
           "Preizkusite pot do povpraševanja",
           "Na strani storitve zamenjajte jezik, poiščite kontakt in preverite odgovor obrazca. Določite, kdo posodablja prevode ob spremembah ponudbe."
+        ],
+        [
+          "Začnite z eno sklenjeno potjo do povpraševanja",
+          "Proizvajalec, ki cilja na slovenske in nemške kupce, lahko najprej prevede eno storitev, ustrezno referenco in kontakt. Preverite tehnične izraze, enote in pogoje dobave. Prevedite polja obrazca, sporočila o napakah in potrdilo. Dogovorite se, kdo preveri prevod ter kdo odgovarja na povpraševanja v posameznem jeziku."
+        ],
+        [
+          "Tehnični in uporabniški preizkus",
+          "Vsaka različica ima svoj javni naslov. Ustrezne strani povežite z vzajemnim hreflang in preverite canonical. Jezikovni preklop naj odpre isto storitev, kjer je prevedena. Pri neposrednem obisku iz iskalnika in na telefonu pošljite testno povpraševanje. Določite odgovorno osebo za spremembe cenikov, rokov in kontaktov v obeh jezikih."
+        ],
+        [
+          "Določite postopek za poznejše spremembe",
+          "Za vsako jezikovno različico določite urednika. Ob spremembi roka, cene ali pogojev odprite nalogo za vse ustrezne strani. V Search Consolu primerjajte prikaze po URL-jih in državah. Prejeta povpraševanja zabeležite posebej. Podatki lahko pokažejo, katero storitev je smiselno lokalizirati naslednjo in katere informacije v obstoječi različici manjkajo."
         ]
       ]
     },
@@ -994,6 +1598,18 @@
         [
           "Проверете го целиот процес",
           "Сменете го јазикот додека сте на страница за услуга, проверете ја новата адреса и испробајте го формуларот. Договорете кој ги ажурира преводите."
+        ],
+        [
+          "Почнете со една целосна патека за клиентот",
+          "Производител што работи во Македонија и со странски купувачи може прво да објави една услуга, соодветен проект и контакт на двата јазика. Проверете единици мерки, рокови и терминологија. Преведете ги полињата, грешките и потврдата. Договорете кој го проверува преводот и кој одговара на барањата."
+        ],
+        [
+          "Проверете адреси, избор на јазик и прием",
+          "Секоја верзија треба да има своја јавна адреса. Поврзете ги вистинските еквиваленти со заемни hreflang ознаки и проверете го canonical. Рачниот избор нека ја отвори истата услуга кога има превод. Испратете тест-барање од телефон на двата јазика и одредете кој ги усогласува верзиите по промена."
+        ],
+        [
+          "Одредете кој ги одржува јазичните верзии",
+          "Ако се смени цена, рок или област на работа, запишете ги сите адреси каде се споменува тој податок. Доделете уредник за секој јазик и краток речник за термините. Во Search Console споредете ги приказите според адреса и земја, а примените барања следете ги засебно. Според тие податоци одлучете која услуга следна да ја локализирате."
         ]
       ]
     },
@@ -1013,6 +1629,18 @@
         [
           "Provoni rrugën deri te kontakti",
           "Ndërroni gjuhën në një faqe shërbimi dhe provoni formularin. Caktoni kush përditëson përkthimin kur oferta ndryshon."
+        ],
+        [
+          "Filloni me një rrugë të plotë deri te kontakti",
+          "Për një biznes që punon në Shqipëri dhe me klientë jashtë vendit, përktheni së pari një shërbim, një shembull pune dhe faqen e kontaktit. Kontrolloni termat, njësitë matëse dhe kushtet e punës. Përktheni fushat, gabimet dhe konfirmimin e formularit. Caktoni kush kontrollon përkthimin dhe kush i përgjigjet kërkesës."
+        ],
+        [
+          "Kontrolloni adresat, ndërrimin e gjuhës dhe formularin",
+          "Çdo version gjuhësor duhet të ketë adresë publike. Lidhni faqet përkatëse me hreflang në të dy drejtimet dhe kontrolloni canonical. Ndërrimi i gjuhës duhet të hapë të njëjtin shërbim kur ka përkthim. Hapni të dyja adresat në telefon dhe dërgoni kërkesa prove. Caktoni përgjegjësin për përditësimet në secilin version."
+        ],
+        [
+          "Përcaktoni si do të përditësohen gjuhët",
+          "Kur ndryshon çmimi, afati ose zona e shërbimit, caktoni një redaktues për çdo version që e përmend. Mbani një fjalor të shkurtër për termat e biznesit. Në Search Console shikoni shfaqjet sipas adresës dhe vendit, ndërsa kërkesat e mbërritura mbajini veçmas. Kjo ndihmon për zgjedhjen e shërbimit që ia vlen të lokalizohet më pas."
         ]
       ]
     }

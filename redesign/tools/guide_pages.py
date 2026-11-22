@@ -59,6 +59,36 @@ LABELS = {
     ),
 }
 TOPICS = ("planning", "search", "operations")
+CONTENTS_LABELS = {
+    "hr": "U ovom vodiču", "en": "In this guide", "bs": "U ovom vodiču",
+    "sr-rs": "U ovom vodiču", "sr-me": "U ovom vodiču", "sl": "V tem vodniku",
+    "mk": "Во овој водич", "sq": "Në këtë udhëzues",
+}
+RELATED_GUIDES = {
+    "koliko-košta-web-stranica-2026": ("što-znati-prije-kupnje-web-stranice", "održavanje-web-stranice-zašto-je-bitno"),
+    "što-znati-prije-kupnje-web-stranice": ("koliko-košta-web-stranica-2026", "treba-li-web-stranici-cms"),
+    "održavanje-web-stranice-zašto-je-bitno": ("što-znati-prije-kupnje-web-stranice", "zasto-web-stranica-nije-na-googleu"),
+    "redizajn-web-stranice-bez-gubitka-seo": ("zasto-web-stranica-nije-na-googleu", "plan-visejezicne-web-stranice"),
+    "zasto-web-stranica-nije-na-googleu": ("redizajn-web-stranice-bez-gubitka-seo", "kako-da-se-web-pojavi-u-ai-pretrazivanju"),
+    "kako-da-se-web-pojavi-u-ai-pretrazivanju": ("zasto-web-stranica-nije-na-googleu",),
+    "treba-li-web-stranici-cms": ("što-znati-prije-kupnje-web-stranice", "održavanje-web-stranice-zašto-je-bitno"),
+    "plan-visejezicne-web-stranice": ("treba-li-web-stranici-cms", "redizajn-web-stranice-bez-gubitka-seo"),
+}
+
+
+def example_table(table):
+    caption = escape(table["caption"])
+    columns = "".join(f'<th scope="col">{escape(column)}</th>' for column in table["columns"])
+    rows = "".join(
+        f'<tr><th scope="row">{escape(label)}</th>' +
+        "".join(f"<td>{escape(cell)}</td>" for cell in cells) + "</tr>"
+        for label, *cells in table["rows"]
+    )
+    return (
+        f'<div class="guide-table-wrap" id="guide-example" role="region" tabindex="0" aria-label="{caption}">'
+        f'<table class="guide-table"><caption>{caption}</caption>'
+        f'<thead><tr>{columns}</tr></thead><tbody>{rows}</tbody></table></div>'
+    )
 
 def guide_links(links):
     return "".join(
@@ -79,12 +109,13 @@ def language_links(slug, lang, entry, locales):
     return f'<nav class="guide-topics guide-languages" aria-label="{LABELS[lang][4]}">{"".join(links)}</nav>'
 
 
-def render_guide(root, origin, slug, lang, entry, locales):
+def render_guide(root, origin, slug, lang, entry, locales, guides):
     _, _, _, _, _, all_guides, related, sources_heading = LABELS[lang]
     locale = locales[lang]
     guide = entry[lang]
     url = origin + guide_path(slug, lang, entry)
     title = escape(guide["title"])
+    summary = escape(guide["summary"])
     description = escape(guide.get("meta_description", guide["summary"]))
     links = guide.get("links")
     if links:
@@ -96,12 +127,20 @@ def render_guide(root, origin, slug, lang, entry, locales):
         contact = path + "#contact"
         links = ((locale["services"][service]["label"], path), (locale["labels"]["enquiry"], contact))
 
-    article = "".join(
-        f'<section class="journal-block"><h2>{escape(heading)}</h2>'
-        + "".join(f"<p>{escape(paragraph)}</p>" for paragraph in body.split("\n\n"))
-        + "</section>"
-        for heading, body in guide["sections"]
+    guide_links_in_locale = tuple(
+        (guides[key][lang]["title"], guide_path(key, lang, guides[key])) for key in RELATED_GUIDES[slug]
     )
+    contents_label = CONTENTS_LABELS[lang]
+    contents = []
+    sections = []
+    for index, (heading, body) in enumerate(guide["sections"], start=1):
+        anchor = f"section-{index}"
+        contents.append((heading, f"#{anchor}"))
+        paragraphs = "".join(f"<p>{escape(p)}</p>" for p in body.split("\n\n"))
+        sections.append(f'<section class="journal-block" id="{anchor}"><h2>{escape(heading)}</h2>{paragraphs}</section>')
+    if table := guide.get("table"):
+        sections.append(example_table(table))
+        contents.append((table["caption"], "#guide-example"))
     case_markup = ""
     if case := guide.get("migration_case"):
         download = root / "assets" / "resources" / "redirect-map.csv"
@@ -117,7 +156,7 @@ def render_guide(root, origin, slug, lang, entry, locales):
         )
     modified = entry.get("modified", "2026-11-12")
     published = (entry.get("published", "2026-08-27") if lang in {"hr", "en"}
-                 else entry.get("regional_published", modified))
+                 else entry.get("regional_published", "2026-11-12"))
     sources = guide.get("sources", entry["en"].get("sources", ()))
     source_markup = (
         f'<section class="journal-block guide-links"><h2>{sources_heading}</h2>'
@@ -140,12 +179,15 @@ def render_guide(root, origin, slug, lang, entry, locales):
       <a class="journal-back" href="{guide_path(None, lang)}">← {all_guides}</a>
       <div class="journal-meta"><span>Ostrelya Studio</span><time datetime="{modified}">{modified}</time></div>
       <h1 class="editorial-heading">{title}</h1>
-      <p class="content-intro">{description}</p>
+      <p class="content-intro">{summary}</p>
       {language_links(slug, lang, entry, locales)}
+      <nav class="journal-block guide-links" aria-label="{contents_label}">
+        <h2>{contents_label}</h2><ol>{guide_links(contents)}</ol>
+      </nav>
+      {"".join(sections)}
       {case_markup}
-      {article}
       <nav class="journal-block guide-links" aria-label="{related}">
-        <h2>{related}</h2><ul>{guide_links(links)}</ul>
+        <h2>{related}</h2><ul>{guide_links((*links, *guide_links_in_locale))}</ul>
       </nav>
       {source_markup}
     </article>
@@ -225,7 +267,7 @@ def render_layout(root, origin, slug, lang, title, description, contact, body, l
   {structured_data}
   <link rel="icon" type="image/png" href="/assets/symbol-dark-small.png">
   <link rel="stylesheet" href="/assets/regional-fonts.css?v=1">
-  <link rel="stylesheet" href="/styles.css?v=regional-guides">
+  <link rel="stylesheet" href="/styles.css?v=reading-guides">
   <script src="/script.js?v=service-paths" defer></script>
 </head>
 <body id="top" class="page-editorial">

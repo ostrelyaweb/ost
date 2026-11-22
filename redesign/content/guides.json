@@ -2,13 +2,13 @@
   "redizajn-web-stranice-bez-gubitka-seo": {
     "topic": "planning",
     "published": "2026-11-12",
-    "modified": "2026-11-16",
+    "modified": "2026-11-22",
     "regional_published": "2026-11-12",
     "hr": {
       "title": "Kako pripremiti redizajn weba bez nepotrebnog gubitka SEO-a?",
-      "summary": "Prije redizajna popišite stranice koje ljudi već pronalaze, sačuvajte korisne adrese i testirajte preusmjerenja prije objave.",
+      "summary": "Prije redizajna zapišite koje stare adrese dovode kupce i kamo trebaju voditi. Zatim provjerite oba kraja svakog preusmjerenja, kanonske adrese, jezične verzije i primitak upita. Primjer migracije Ostrelye pokazuje kako provjeriti jedan pravi URL.",
       "meta_title": "Kako sačuvati SEO pri redizajnu weba?",
-      "meta_description": "Kako provjeriti SEO nakon redizajna: primjer 132 URL-a s Ostrelye, trajna preusmjerenja i besplatan CSV predložak za testiranje migracije.",
+      "meta_description": "Pripremite redizajn web stranice uz SEO plan. Mapirajte stare URL-ove, testirajte 301 preusmjerenja i pratite indeksiranje, klikove i upite nakon objave.",
       "migration_case": {
         "title": "Što smo pronašli na 132 URL-a Ostrelye",
         "paragraphs": [
@@ -19,20 +19,28 @@
       },
       "sections": [
         [
-          "Počnite popisom starih URL-ova",
-          "Izvezite sitemap i stranice koje u Search Consoleu imaju klikove ili impresije. Dodajte adrese na koje vode važni vanjski linkovi, oglasi i materijali koje već šaljete kupcima. Za svaku zabilježite čemu služi i tko odlučuje o njezinoj sudbini."
+          "Odredite koje stranice treba zaštititi",
+          "U Search Consoleu izvezite stranice s prikazima i klikovima, a u analitici pregledajte stranice na koje ljudi ulaze i s kojih šalju upite. Dodajte URL-ove s vanjskim poveznicama i ručno popišite stranice važnih usluga čak i ako nemate dovoljno podataka. Za svaki URL zabilježite jezik, namjeru posjetitelja i očekivani ishod nakon promjene."
         ],
         [
-          "Prvo odlučite što ostaje",
-          "Ako stranica i dalje služi istoj svrsi, zadržite njezinu adresu kad god možete. Ako se dvije kratke stranice spajaju u jedan potpun vodič, obje mogu voditi na taj vodič. Za trajno uklonjenu stranicu bez odgovarajuće zamjene poslužite 404 ili 410."
+          "Odlučite koji URL ostaje, seli se ili nestaje",
+          "Ako ponuda i namjera ostaju iste, zadržite URL kad je izvedivo. Ako se adresa mijenja, postavite trajno preusmjerenje na najbližu stvarnu zamjenu, po mogućnosti u jednom koraku. Više sadržajno sličnih vodiča može voditi na jedan objedinjeni vodič ako on odgovara na njihova pitanja. Zastarjela stranica bez zamjene smije vratiti 404 ili 410. Slanje svake stare adrese na naslovnicu otežava pronalazak traženog sadržaja."
         ],
         [
-          "Napravite tablicu preusmjerenja",
-          "Primjer za tvrtku koja skraćuje navigaciju: /usluge/servis-klima → /servis-klima/ (301). Stari članak o čišćenju filtra ostaje na istoj adresi. U testu otvorite stari URL i provjerite da jednim korakom vodi na stranicu koja vraća 200 i ima vlastiti canonical."
+          "Prije objave testirajte i stari i novi URL",
+          "Za stari URL provjerite status i odredište bez automatskog praćenja. Za novi očekujte 200, razumljiv naslov, glavni sadržaj, kanonsku adresu koja odgovara novom URL-u i izostanak nenamjernog noindexa. Interni linkovi i sitemap trebaju voditi na novi URL. Kod više jezika provjerite upućuju li alternativne oznake na odgovarajuće objavljene stranice i uzvraća li odredište vezu."
         ],
         [
-          "Provjerite što je Google obradio nakon objave",
-          "Pošaljite ažurirani sitemap, otvorite prioritetne stare i nove adrese te pokrenite pregled URL-a u Search Consoleu. Usporedite impresije i klikove za najvažnije stranice tijekom sljedećih tjedana. Manji pomaci tijekom ponovne obrade mogu se pojaviti i kad su tehničke provjere uredne."
+          "Sačuvajte usporedivo stanje prije objave",
+          "Zabilježite datum objave, izvezite 28 dana podataka i odvojite upite s imenom tvrtke od ostalih. Spremite najvažnije stranice po tržištu ili jeziku. Uz klikove i prikaze pratite primljene upite jer novo odredište može biti slabije za prodaju i uz sličan promet. Prije objave dogovorite tko može vratiti prethodno izdanje ako obrazac ili cijela grupa URL-ova prestane raditi."
+        ],
+        [
+          "Što provjeriti nakon prvog pada prometa",
+          "U prvim danima provjerite preusmjerenja, sitemap i dostupnost najvažnijih stranica. Privremene promjene statistike moguće su dok Google pregledava URL-ove. Ako pad zahvati samo jedan jezik, pogledajte odredišta, interne poveznice i kanonske oznake tog jezika. Ako se problem vidi u cijelom webu, prvo provjerite zabranu indeksiranja, dostupnost i mjerenje. Kod sezonskog posla razmotrite usporedivo razdoblje prethodne godine."
+        ],
+        [
+          "Kako čitati Ostrelyinu migraciju",
+          "Primjer u nastavku dokumentira tehnički rezultat, preusmjerenje iz stare verzije članka na istu temu na novoj adresi. Isti način provjere primijenite na vlastite usluge i članke. Iz rada preusmjerenja možete zaključiti da stara poveznica vodi na ispravno mjesto. Učinak na vidljivost i upite treba provjeriti podacima kroz vrijeme."
         ]
       ],
       "links": [
@@ -55,16 +63,20 @@
       ],
       "sources": [
         [
-          "Google Search Central o migraciji URL-ova",
+          "Google Search Central — site moves and URL mapping",
           "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ],
+        [
+          "Google Search Console — URL Inspection",
+          "https://support.google.com/webmasters/answer/9012289"
         ]
       ]
     },
     "en": {
       "title": "How to plan a website redesign that protects your search visibility",
-      "summary": "Inventory the pages people already find, keep useful addresses and test redirects before launching a redesigned website.",
+      "summary": "A redesign protects existing search visibility when the URLs people already find either stay in place or lead to a relevant replacement. Use the checks below to map a move, test it on launch day and diagnose changes afterwards.",
       "meta_title": "How to protect SEO during a website redesign",
-      "meta_description": "Use Ostrelya’s 132-URL redesign example and free CSV template to check old URLs, permanent redirects and their destinations before a website migration.",
+      "meta_description": "Plan an SEO-safe website redesign. Inventory existing URLs, map redirects, test canonicals and language alternates, and track enquiries after launch.",
       "migration_case": {
         "title": "What we found when we checked 132 Ostrelya URLs",
         "paragraphs": [
@@ -75,20 +87,28 @@
       },
       "sections": [
         [
-          "Inventory the current URLs",
-          "Export the sitemap and the pages with clicks or impressions in Search Console. Include destinations used in important backlinks, ads and customer documents. Record what each page is for and who can approve changes to it."
+          "Inventory URLs that matter to buyers",
+          "Export pages with clicks or impressions from Search Console. Add landing pages and enquiry paths from analytics, known backlink targets and pages that are business-critical even if their traffic is small. A local services firm might include its strongest service page and a case study linked by a partner. Record the audience, language, intended action and proposed destination."
         ],
         [
-          "Decide what stays",
-          "Keep the address when a page still serves the same purpose. If two short pages become one complete guide, both can redirect to that guide. A permanently removed page without a relevant replacement should return 404 or 410."
+          "Keep a URL where its job stays the same",
+          "If a service still answers the same need, keep its address where possible. When it must move, send a permanent redirect directly to its relevant replacement. If two pages are genuinely merged, verify the combined page answers both old intents. A removed page with no meaningful equivalent can return 404 or 410. Redirecting a dissolved service to an unrelated homepage gives people little help."
         ],
         [
-          "Make a redirect map",
-          "A company simplifying its navigation might map /services/air-conditioning-repair to /air-conditioning-repair/ with a 301. Its existing filter-cleaning guide keeps its address. Open the old URL in a test and check that it reaches a 200 response with the destination’s own canonical in one step."
+          "Test the redirect and its landing page",
+          "Inspect the original response without following redirects, then request the destination. Confirm the expected permanent redirect, a direct 200 destination, visible content, correct canonical, and no accidental indexing restriction. The sitemap and internal links should point to the new URLs. On multilingual sites check that each alternate identifies the equivalent page in the other language and that the relationship is reciprocal."
         ],
         [
-          "Check what search engines process after launch",
-          "Submit the updated sitemap, open the priority old and new URLs, and run URL Inspection in Search Console. Compare impressions and clicks on the pages that matter over the following weeks. Some movement during reprocessing is possible even when the technical checks pass."
+          "Keep a baseline and decide how to roll back",
+          "Record the release date and export pre-launch clicks, impressions and enquiry counts for your priority pages. Separate branded queries from non-branded ones. If enquiries matter more than traffic, record how you will verify actual receipt. Assign someone who can roll back the release or make a targeted correction if a whole set of redirects breaks or a contact route fails."
+        ],
+        [
+          "Investigate drops one group at a time",
+          "Check essential URLs and form delivery immediately after launch. Search signals can fluctuate while the old and new URLs are recrawled. If one market drops, check its content, canonicals and hreflang before blaming the entire redesign. If nearly everything drops, examine availability, indexing restrictions and reporting. Compare with a similar seasonal period where you have data. Look at enquiry quality alongside clicks."
+        ],
+        [
+          "What our own redirect example proves",
+          "The Ostrelya example below shows how we keep an older blog link working on the redesigned site. The legacy address points to the equivalent guide and the guide identifies itself as the canonical URL. It demonstrates a route check you can repeat. Measuring a traffic or enquiry change requires separate evidence over time."
         ]
       ],
       "links": [
@@ -107,8 +127,12 @@
       ],
       "sources": [
         [
-          "Google Search Central on URL migrations",
+          "Google Search Central — site moves and URL mapping",
           "https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes"
+        ],
+        [
+          "Google Search Console — URL Inspection",
+          "https://support.google.com/webmasters/answer/9012289"
         ]
       ],
       "slug": "website-redesign-seo-migration"
@@ -119,23 +143,35 @@
     "published": "2026-11-12",
     "hr": {
       "title": "Zašto se moja web stranica ne pojavljuje na Googleu?",
-      "summary": "Pregledajte točan URL u Search Consoleu. Provjerite može li ga Google dohvatiti, koju adresu smatra glavnom i je li već u indeksu.",
+      "summary": "Ako stranica nije na Googleu, prvo utvrdite je li URL indeksiran. Ako jest, provjerite dobiva li prikaze za upit koji vas zanima. Te dvije situacije imaju različite uzroke i zahtijevaju različite radnje.",
       "sections": [
         [
-          "Pregledajte točnu adresu",
-          "U Search Console unesite punu adresu stranice koju želite vidjeti u rezultatima. Usporedite stanje indeksirane verzije s testom javne stranice. Ako test prolazi, a indeksirano stanje je starije, provjerite datum posljednjeg obilaska."
+          "Pregledajte točnu adresu, uključujući jezik",
+          "U ispravnom Search Console svojstvu otvorite URL Inspection i unesite stvarni HTTPS URL. Provjerite puni put, završnu kosu crtu i lokalnu verziju. Zabilježite je li URL na Googleu, kada je pregledan i koji je Googleov odabrani canonical. Izvještaj opisuje ono što je Google već obradio. Test uživo provjerava što alat može dohvatiti sada. Prolazak testa uživo govori da je dohvat moguć."
         ],
         [
-          "Ako dohvat ne prolazi, riješite pristup",
-          "Otvorite stranicu bez prijave i provjerite HTTP odgovor. Za javnu stranicu koju želite u indeksu očekujete 200, bez blokade robota ili oznake noindex. Ako se adresa preusmjerava, pregledajte odredište kao zaseban URL."
+          "Odvojite namjerno izuzete adrese od problema",
+          "Stari URL koji preusmjerava na novi obično se ne treba zasebno prikazivati. Parametar kampanje koji canonicalom upućuje na čistu adresu također može biti namjeran. Ako je izuzeta javna stranica usluge koja treba rankirati, provjerite točan slijed odgovora, oznaku noindex i canonical. Zabrana u robots.txt može spriječiti Google da vidi noindex na toj stranici."
         ],
         [
-          "Ako Google bira drugu glavnu adresu, uskladite signale",
-          "Usporedite svoju canonical oznaku s adresom koju je Google odabrao. Provjerite vode li unutarnje poveznice i sitemap na istu verziju. Čest primjer su stari /usluge.html i novi /usluge/ koji i dalje istodobno poslužuju isti sadržaj."
+          "Kad Google otkrije adresu, ali je još nije pregledao",
+          "Za „Discovered – currently not indexed” provjerite da je URL u sitemapu i da do njega vodi barem jedna prirodna, vidljiva poveznica s važnog dijela weba. Provjerite dostupnost stranice i je li objava tek izašla. Za „Crawled – currently not indexed” pogledajte je li Google dohvatio glavni tekst, je li sadržaj vrlo sličan drugom URL-u i može li čitatelj dobiti samostalan odgovor. Taj status sam po sebi ne otkriva jedan precizan uzrok."
         ],
         [
-          "Ako je URL u indeksu, pogledajte upite",
-          "U izvješću Performance filtrirajte točan URL. Ako ima impresije za naziv tvrtke, a nema ih za uslugu koju ciljate, usporedite sadržaj s tim upitom. Vidi li kupac opseg usluge, za koga je i što napraviti nakon čitanja?"
+          "Kad Google izabere drugu kanonsku adresu",
+          "Usporedite svoj i Googleov canonical. Recimo da usluga za hrvatsku publiku pokazuje canonical na englesku naslovnicu. Ispravite kanonsku oznaku na odgovarajuću adresu, poveznice i sitemap tako da daju usklađen signal. Ako ste namjerno spojili dvije stranice, provjerite indeksiranje željenog odredišta. Google i dalje sam bira kanonsku verziju."
+        ],
+        [
+          "Kad je stranica indeksirana, ali gotovo bez prikaza",
+          "U izvještaju Performance filtrirajte URL, zatim pregledajte upite i zemlje. Ako stranica o tehničkom održavanju dobiva prikaze samo za ime tvrtke, dopunite što usluga obuhvaća, kada je potrebna i kako klijent provjerava isporuku. Ako se pojavljuje za relevantne upite uz nekoliko prikaza, produžite razdoblje prije zaključka. Usporedite stranicu s rezultatima za konkretni upit i pogledajte koji posao najbolje odgovara namjeri pretrage."
+        ],
+        [
+          "Što napraviti nakon stvarnog ispravka",
+          "Pokrenite test uživo. Ako ključan URL sada vraća očekivanu stranicu, zatražite indeksiranje i zabilježite datum. U sitemapu ostavite čiste kanonske adrese. Za veći broj URL-ova popravite zajednički uzrok u predlošku, provjerite uzorak i koristite odgovarajuću validaciju u Search Consoleu kada je dostupna."
+        ],
+        [
+          "Kako smo provjerili upozorenje na Ostrelyi",
+          "U Bing Webmaster Toolsu vidjeli smo upozorenje na identične naslove i opise. Obje prijavljene adrese bile su naslovnica, jedna na HTTP-u i druga na HTTPS-u. Umjesto mijenjanja naslova provjerili smo prvi odgovor starih adresa. HTTP je vratio trajno preusmjerenje 308 na HTTPS, a odredište je vratilo 200 i navelo vlastiti canonical. Zatim smo pregledali svih 158 adresa iz tadašnjeg sitemapa i potvrdili da su naslovi i opisi jedinstveni.\n\nAko vidite sličnu prijavu, najprije zapišite koje je URL-ove alat stvarno naveo. Stare adrese mogu ostati u izvještaju i nakon što preusmjerenje radi. Provjerite live odgovor i sačuvajte datum kada ste ga provjerili. Tražilica treba ponovo pregledati adrese da bi se njezin izvještaj promijenio."
         ]
       ],
       "links": [
@@ -154,30 +190,47 @@
       ],
       "sources": [
         [
-          "Googleova uputa za pregled URL-a",
+          "Google Search Console — URL Inspection",
           "https://support.google.com/webmasters/answer/9012289"
+        ],
+        [
+          "Google Search Console — Page indexing report",
+          "https://support.google.com/webmasters/answer/7440203"
         ]
-      ]
+      ],
+      "meta_description": "Provjerite zašto web stranica nije na Googleu. Koristite URL Inspection, protumačite razloge iz izvještaja i utvrdite je li problem indeksiranje ili vidljivost."
     },
     "en": {
       "title": "Why isn't my website showing up on Google?",
-      "summary": "Inspect the exact URL in Search Console to see whether Google can fetch it, which address it treats as canonical and whether it is indexed.",
+      "summary": "Check whether Google has indexed the exact URL before rewriting it. An excluded page, an indexed page with few impressions and a page Google considers a duplicate call for different fixes.",
       "sections": [
         [
-          "Inspect the exact address",
-          "Enter the full address you want to appear in Search Console. Compare the indexed status with a live test. If the live test passes while the indexed report describes an older problem, check the last crawl date."
+          "Inspect the precise live URL",
+          "Enter the full HTTPS address under the right Search Console property, including the language path and trailing slash where relevant. Note the index status, last crawl and Google-selected canonical. The indexed view describes the version Google already knows. A live test is useful after a fix, when you want to see what Google can retrieve now. A passing live test establishes eligibility for crawling and indexing checks, while actual index status is a separate result."
         ],
         [
-          "Fix access when the fetch fails",
-          "Open the page without signing in and check the HTTP response. A public page intended for indexing should return 200 without a crawler block or noindex directive. If the address redirects, inspect the destination separately."
+          "Identify exclusions you intended",
+          "An old URL that redirects to an equivalent new one can appropriately be excluded. A tracking URL can be consolidated into a clean canonical. For an important service page, confirm the response, robots directives and canonical before requesting a recrawl. If robots.txt prevents Google from crawling a URL, it may be unable to read a noindex directive on that URL. Work out whether you want the URL crawled, indexed or excluded before changing the rule."
         ],
         [
-          "Align the signals if Google picks a different canonical",
-          "Compare your canonical tag with the URL Google selected. Check whether internal links and the sitemap point to the same version. An old /services.html and a newer /services/ can both keep serving the same content after a redesign."
+          "Read discovered and crawled statuses differently",
+          "For Discovered – currently not indexed, check that a permanent internal link reaches the page, it is in the sitemap and the server responds reliably. A recently published page may still be waiting to be crawled. For Crawled – currently not indexed, inspect what Google could see and compare against similar pages. Does the page have a task of its own, enough useful information and a reason for the visitor to stay? The status alone does not diagnose the cause."
         ],
         [
-          "If the URL is indexed, review its queries",
-          "In Performance, filter by the exact page. If it has impressions for the company name and little visibility for the service, compare its content with the intended query. Check whether a customer can see what is included, who it is for and how to take the next step."
+          "Follow the canonical, then decide whether it is correct",
+          "If Google selected the location directory instead of a genuinely distinct local service page, check the page’s canonical, internal links, sitemap and unique local evidence. Give Google a coherent set of signals about the preferred URL. If a campaign parameter is consolidated into the clean service page, inspect that service page. You may already have the intended result."
+        ],
+        [
+          "Separate ranking and discovery from indexing",
+          "If the inspected page is indexed, filter the Performance report by page. Review queries and countries before changing the text. A maintenance page showing for the company name but few non-brand queries may need clearer deliverables, a practical example and an answer to what is included. A few impressions in a new market are a starting signal. Compare against a longer period and the actual results for the query before deciding which changes helped."
+        ],
+        [
+          "Review the fix on a representative sample",
+          "Run a live test on a corrected page and request indexing when the important URL is ready. If a template affected many URLs, verify several instances and their language versions. Submit or update the canonical sitemap and use issue validation when the report offers it. Record the change and inspect it again once Google has had time to recrawl."
+        ],
+        [
+          "A reporting discrepancy we checked on Ostrelya",
+          "Bing Webmaster Tools listed duplicate titles and descriptions for our homepage. Its two examples were the HTTP and HTTPS addresses. The first request to HTTP returned a permanent 308 redirect and the HTTPS destination returned 200 with a self-referencing canonical. We also checked the 158 URLs in the sitemap at the time and found that their titles and descriptions were unique.\n\nIf a tool reports this on your site, open the specific URLs it lists. Test the first response as well as the final page. Older addresses can remain visible in a report after their live behaviour has changed. Record when you checked each one. Compare the next report after a recrawl with the same list of URLs."
         ]
       ],
       "links": [
@@ -196,35 +249,49 @@
       ],
       "sources": [
         [
-          "Google's URL Inspection guide",
+          "Google Search Console — URL Inspection",
           "https://support.google.com/webmasters/answer/9012289"
+        ],
+        [
+          "Google Search Console — Page indexing report",
+          "https://support.google.com/webmasters/answer/7440203"
         ]
       ],
-      "slug": "why-website-not-showing-on-google"
-    }
+      "slug": "why-website-not-showing-on-google",
+      "meta_description": "Diagnose why a website is not showing on Google with URL Inspection. Check redirects, indexability, canonicals and search impressions before changing the page."
+    },
+    "modified": "2026-11-22"
   },
   "kako-da-se-web-pojavi-u-ai-pretrazivanju": {
     "topic": "search",
     "published": "2026-11-12",
     "hr": {
       "title": "Kako pripremiti web za citiranje u AI pretraživanju?",
-      "summary": "Objavite stranicu koju tražilica može dohvatiti i koja daje precizan odgovor s primjerom ili izvorom. Učinak pratite kroz citate i posjete.",
+      "summary": "Za AI pretraživanje prvo provjerite može li sustav dohvatiti stranicu i može li čitatelj na njoj provjeriti odgovor. Na primjeru pitanja o cijeni weba pokazujemo što pretvara općenitu tvrdnju u upotrebljiv izvor i kako mjeriti stvarno citiranje.",
       "sections": [
         [
-          "Odaberite pitanje s jasnom namjerom",
-          "Za pitanje „Koliko košta redizajn weba?” odgovorite što utječe na cijenu pa pokažite kako usporediti dvije ponude. Kupcu će pomoći podatak o broju predložaka, pisanju sadržaja i migraciji URL-ova. Svaku brojku povežite s metodom ili stvarnim primjerom."
+          "Provjerite pravila sustava koji vas zanima",
+          "Za Googleove AI rezultate Google navodi iste temeljne uvjete kao za pretraživanje: stranica mora biti indeksirana i podobna za prikaz isječka. Za ChatGPT Search provjerite OAI-SearchBot prema OpenAI dokumentaciji. GPTBot je zaseban crawler s drugom namjenom. U Bingu se za podatke o citiranim stranicama i temama koristi AI Performance kad su podaci dostupni. Provjerite pravila na stvarnom članku i na servisu koji ga poslužuje."
         ],
         [
-          "Objavite odgovor u dostupnom HTML-u",
-          "Stavite odgovor na javni URL koji vraća 200 i povežite ga s relevantnom uslugom. Naslov neka odgovara pitanju, a tablica ili kratka lista može pomoći kad uspoređujete opcije. Dodajte autora, datum ažuriranja i poveznice na primarne izvore kad citirate tehničke činjenice."
+          "Napravite odgovor s uvjetima i dokazom",
+          "Na pitanje koliko košta poslovni web odgovor „ovisi” ostavlja kupcu isti problem. Navedite primjer konkretnog opsega, odvojite jednokratni i mjesečni trošak, prikažite račun za 24 mjeseca i objasnite što se mijenja za drugi jezik. Kad koristite javni cjenik, navedite ponuđača, datum provjere i što cijena obuhvaća. Kad radite ilustraciju, to jasno označite. Tako drugi mogu citirati provjerljivu tvrdnju."
         ],
         [
-          "Provjerite pristup po tražilici",
-          "Za Google AI Overviews i AI Mode provjerite indeksiranje i može li se prikazati sažetak rezultata. Za ChatGPT Search provjerite dopušta li robots.txt OAI-SearchBot te prolazi li njegov verificirani promet kroz CDN. GPTBot je odvojeni crawler za treniranje."
+          "Uredite stranicu za čitatelja koji dolazi iz odgovora",
+          "Ispod naslova dajte sažet odgovor. U odvojenim odjeljcima objasnite uvjete, iznimke i sljedeći korak. Uključite čitljivu tablicu kad je lakše usporediti stupce i povežite originalne izvore blizu relevantne tvrdnje ili u jasno označenom popisu. Ako screenshot pokazuje jedini dokaz, objasnite nalaz i kao tekst. Povežite vodič s odgovarajućom uslugom za čitatelja koji želi pomoć."
         ],
         [
-          "Odvojite citate, posjete i upite",
-          "U Bing Webmaster Tools izvještaj AI Performance prikazuje citirane URL-ove na podržanim AI površinama. U izvještaju o prometu tražite posjete iz AI servisa, a upite pratite po odredišnoj stranici gdje imate podatak. Stranica može dobiti citat i kad čitatelj ne klikne."
+          "Provjerite dohvat i sve jezične varijante",
+          "Otvorite javnu adresu bez prijave. Provjerite status 200, vidljiv glavni sadržaj, canonical i pravila koja utječu na indeksiranje i isječke. Ako su hrvatski i engleski članak odvojeni, svaki treba imati svoju adresu i povezanu alternativu. Prioritet su pristup i kvalitetan sadržaj. Google navodi da za njegovu AI pretragu nisu potrebni posebna shema ni llms.txt."
+        ],
+        [
+          "Mjerite citate, posjete i upite odvojeno",
+          "U Bing AI Performance pogledajte koje su stranice citirane i koje teme ili fraze izvještaj prikazuje. Citati mogu postojati bez posjeta. Analitika bilježi dio dolazaka s AI izvora kad je referer ili oznaka dostupna. Googleovi AI rezultati ulaze u agregirane podatke web pretrage u Search Consoleu. Za poslovnu odluku posebno pratite upite koji su došli do sandučića."
+        ],
+        [
+          "Ponovite test s istim pitanjima",
+          "Zabilježite datum, jezik i formulaciju pitanja, primjerice „što ponuditelj treba uključiti u redizajn weba bez gubitka SEO-a?”. Spremite koji je URL prikazan kao izvor i na koji dio tvrdnje se odnosio. Jedan ručni test može varirati po sesiji, tržištu ili formulaciji. Tražite ponovljiv signal i koristite ga da ojačate dijelove članka kojima nedostaje konkretnog objašnjenja."
         ]
       ],
       "links": [
@@ -243,38 +310,51 @@
       ],
       "sources": [
         [
-          "Google Search Central o AI značajkama",
+          "Google Search Central — AI features and your website",
           "https://developers.google.com/search/docs/appearance/ai-features"
         ],
         [
-          "OpenAI dokumentacija o crawlerima",
+          "Google Search Central — generative AI optimisation guide",
+          "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+        ],
+        [
+          "OpenAI — crawler documentation",
           "https://developers.openai.com/api/docs/bots"
         ],
         [
-          "Bing Webmaster Tools AI Performance",
-          "https://www.bing.com/webmasters/help/ai-performance-9f8e7d6c"
+          "Microsoft Bing — AI Performance reporting",
+          "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
         ]
-      ]
+      ],
+      "meta_description": "Pripremite web za Googleove AI rezultate, ChatGPT Search i Bing. Provjerite pristup, obogatite odgovor dokazima i pratite citirane URL-ove i upite."
     },
     "en": {
       "title": "How to make a website eligible for citations in AI search",
-      "summary": "Publish a crawlable page with a direct answer, a practical example or a primary source. Track citations separately from visits and enquiries.",
+      "summary": "Start with an accessible page that gives a complete, verifiable answer. The example below turns a vague claim about website costs into a source someone can use, then shows how to distinguish citations from visits and enquiries.",
       "sections": [
         [
-          "Choose a question with clear intent",
-          "For “How much does a website redesign cost?”, explain what drives the cost and show how to compare two quotes. The number of templates, content work and URL migration help the buyer understand the difference. Tie any figures to a method or a real example."
+          "Check eligibility with each platform",
+          "Google says pages eligible for its AI search features need to be indexed and eligible for a snippet in Search. OpenAI documents OAI-SearchBot for ChatGPT Search and GPTBot separately for its other crawling purpose. Microsoft Bing offers AI Performance reports on supported surfaces when data is available. Check the actual page’s status, index controls and server access alongside robots.txt. A working visit from your own browser alone does not establish crawler access."
         ],
         [
-          "Put the answer in accessible HTML",
-          "Publish it at a public URL that returns 200 and link to it from the relevant service. Use headings that describe the actual question and a table or short list when comparing options. Include an author, an update date and links to primary sources for technical claims."
+          "Write a claim somebody else can verify",
+          "Consider the question “How much does a small business website cost?”. An explanation becomes useful when it says which scope it describes, what is paid up front, what recurs, and how two totals are calculated. Cite the supplier and date for public prices. Label sample quotes and state what they exclude. A page with a worked calculation and clear boundaries can be reused by a buyer even if they arrive directly."
         ],
         [
-          "Check access for each search service",
-          "For Google AI Overviews and AI Mode, check indexing and eligibility to appear with a search snippet. For ChatGPT Search, check whether robots.txt permits OAI-SearchBot and whether verified requests can pass your CDN. GPTBot is a separate crawler for training."
+          "Give the source a stable, readable home",
+          "Put the short answer near the start and give each supporting question its own heading. Keep critical evidence available as HTML rather than only in pictures or behind an interaction. Link to documentation the reader can check and add a precise description to each example. Publish each language version on its own URL and use reciprocal alternates where appropriate. Google says special schema and llms.txt are unnecessary for its AI search features."
         ],
         [
-          "Track citations, visits and enquiries separately",
-          "Bing Webmaster Tools AI Performance reports cited URLs across supported AI surfaces. Check referral traffic for visits from AI services and attribute enquiries to landing pages when you have that information. A page can earn a citation even when nobody clicks it."
+          "Provide experience you can substantiate",
+          "Show a before-and-after process you can independently verify, for example the original URL, redirect status, final URL and inspection date from your own migration. Explain the decision that led to it, the test and the limitations. A fictional illustration can clarify a concept if labelled. Avoid turning a redirect check into a claim about a client’s revenue or assuming citation proves the answer supported your conclusion."
+        ],
+        [
+          "Keep citations separate from business results",
+          "In Bing AI Performance look at cited URLs and available grounding queries or topic summaries. Google Search Console aggregates traffic from its AI search features into Web reporting, so changes there do not isolate their impact. Analytics can count some identifiable referrals when a referrer or tagged link is available. Record received enquiries separately. A citation, a visit and an enquiry each measure a different step."
+        ],
+        [
+          "Run a repeatable check over time",
+          "Pick a set of real buyer questions and record the wording, market, language, date, cited URL and claim it supported. Repeat under comparable conditions. Results can vary between sessions. Use repeated observations and first-party reporting where available. If a pricing article is cited for a numerical example, keep that example current and review whether it also sends qualified visitors to the relevant service."
         ]
       ],
       "links": [
@@ -293,43 +373,53 @@
       ],
       "sources": [
         [
-          "Google Search Central on AI features",
+          "Google Search Central — AI features and your website",
           "https://developers.google.com/search/docs/appearance/ai-features"
         ],
         [
-          "OpenAI crawler documentation",
+          "Google Search Central — generative AI optimisation guide",
+          "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide"
+        ],
+        [
+          "OpenAI — crawler documentation",
           "https://developers.openai.com/api/docs/bots"
         ],
         [
-          "Bing Webmaster Tools AI Performance",
-          "https://www.bing.com/webmasters/help/ai-performance-9f8e7d6c"
+          "Microsoft Bing — AI Performance reporting",
+          "https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/"
         ]
       ],
-      "slug": "website-visibility-in-ai-search"
-    }
+      "slug": "website-visibility-in-ai-search",
+      "meta_description": "Improve website eligibility for citations in AI search. Check Google, OAI-SearchBot and Bing requirements, publish evidence and measure citations and visits."
+    },
+    "modified": "2026-11-22"
   },
   "treba-li-web-stranici-cms": {
     "topic": "operations",
     "published": "2026-11-12",
     "hr": {
       "title": "Treba li vašoj web stranici CMS?",
-      "summary": "CMS ima smisla kad tim često uređuje sadržaj. Prije odabira popišite što ljudi mijenjaju, koliko često i tko odobrava objavu.",
+      "summary": "CMS ima smisla kad vaš tim redovito objavljuje ili kad izmjena mora biti gotova isti dan. Sastavite popis stvarnih uredničkih zadataka, isprobajte ih na demonstraciji i provjerite kako preuzimate sadržaj ako jednog dana mijenjate sustav.",
       "sections": [
         [
-          "Krenite od uredničkih zadataka",
-          "Zapišite tri promjene koje je tim zadnji put morao tražiti od izvođača. Mogu to biti objava projekta, promjena cijene usluge i zamjena fotografije. Za svaku odredite tko je radi i treba li provjera prije objave."
+          "Počnite s onim što se mijenja u normalnom tjednu",
+          "Građevinska tvrtka može dodati dva projekta godišnje i rijetko mijenjati usluge. Njoj može odgovarati statični web s dogovorenim izmjenama. Agencija koja svaki tjedan mijenja termine obilazaka ili arhitektonski ured koji redovito objavljuje projekte ima drukčiju potrebu. Za svaki tip izmjene napišite učestalost, koliko brzo mora biti objavljena i tko je radi."
         ],
         [
-          "Tražite polja koja odgovaraju sadržaju",
-          "Za projekt arhitektonskog studija predložak može imati naslov, lokaciju, godinu, opis, galeriju i opis slike. Urednik unosi te podatke, a dizajn određuje gdje se prikazuju. Tako novi projekt može izgledati dosljedno na naslovnici, u arhivi i na svojoj stranici."
+          "Povežite vrstu sadržaja s predloškom",
+          "Za projekt možete definirati naziv, lokaciju, opis, godinu, naslovnu fotografiju i galeriju. Urednik unosi ta polja, a zajednički predložak odlučuje kako izgledaju. Tako novi projekt zadržava tipografiju i razmake, a sadržaj možete prikazati i na popisu radova. Ako svaka objava treba poseban raspored, dogovorite koji su blokovi fleksibilni i kako se provjerava izgled na mobitelu."
         ],
         [
-          "Provjerite uređivanje na primopredaji",
-          "Zatražite da urednik napravi nacrt, promijeni sliku s opisom, pregleda rezultat na telefonu i objavi članak. Ako radite u više jezika, ponovite test za prijevod i provjerite ostaje li druga verzija dostupna dok je prijevod u nacrtu."
+          "Odaberite koliko sustava možete održavati",
+          "Statični web ima malo uredničkih dijelova, ali izmjena može ovisiti o izvođaču. Upravljani sustav može spojiti upravljanje stranicama i hosting uz pretplatu i uvjete izvoza. Odvojeni CMS uz zaseban frontend može imati smisla kad isti sadržaj koristite na više mjesta ili vam treba poseban dizajn. Provjerite tko održava dva sustava i što se događa ako objava u uredniku ne dođe do javne stranice."
         ],
         [
-          "U ponudi razjasnite što tim preuzima",
-          "Navedite koja polja smije mijenjati, tko ima ovlasti za objavu i tko postupa ako nešto ne radi. Za web koji mijenjate jednom godišnje usporedite trošak CMS-a i obuke s dogovorenom podrškom za povremene izmjene."
+          "Tražite demonstraciju s vlastitim sadržajem",
+          "Neka osoba koja će uređivati stranicu doda stvarni primjer projekta, alternativni opis slike i skicu drugog jezika. Neka druga osoba pregleda skicu, objavi je i vrati prethodnu verziju. Provjerite tko smije mijenjati korisnike i predloške. Ako je pet minuta posla za svaku fotografiju tijekom demonstracije, procijenite hoće li taj tijek biti prihvatljiv svaki tjedan."
+        ],
+        [
+          "Razriješite izlazak prije nego uđete",
+          "Zatražite probni izvoz projekata, tekstova i medija. Provjerite jesu li fotografije u izvozu ili dobivate samo adrese prema starom sustavu. Odvojeno dogovorite vlasništvo nad domenom, licencama i dizajnom. U trošak uključite unos, obuku, nadogradnje i vrijeme urednika. Prije odabira zapišite tko će provjeriti da sustav i dalje odgovara načinu rada nakon tri mjeseca."
         ]
       ],
       "links": [
@@ -345,27 +435,63 @@
           "Opišite što vaš tim želi uređivati",
           "/hr/usluge/web-development/#contact"
         ]
-      ]
+      ],
+      "meta_description": "Odlučite treba li web stranici CMS. Usporedite statični web, upravljani urednik i povezani CMS prema uredničkim zadacima, trošku i primopredaji.",
+      "sources": [
+        [
+          "WordPress — roles and capabilities",
+          "https://wordpress.org/documentation/article/roles-and-capabilities/"
+        ]
+      ],
+      "table": {
+        "caption": "Odabir prema uredničkoj potrebi",
+        "columns": [
+          "Potreba",
+          "Opcija za test",
+          "Provjera prije odabira"
+        ],
+        "rows": [
+          [
+            "Nekoliko izmjena godišnje",
+            "Statični web uz podršku",
+            "Dogovoren rok izmjene i mogućnost povrata"
+          ],
+          [
+            "Redovite objave projekata",
+            "CMS s predloškom projekta",
+            "Skica, pregled i objava bez izvođača"
+          ],
+          [
+            "Sadržaj na više mjesta",
+            "Odvojeni CMS i frontend",
+            "Provjera objave, izvoza i održavanja oba sustava"
+          ]
+        ]
+      }
     },
     "en": {
       "title": "Does your website need a CMS?",
-      "summary": "A CMS helps when your team edits content regularly. List what people change, how often they change it and who approves publication.",
+      "summary": "Choose a CMS if your staff need to publish independently or if routine changes cannot wait for a developer. Describe the edits first, then test the workflow, handover and export before choosing a platform.",
       "sections": [
         [
-          "Start with editorial tasks",
-          "List the last three changes you had to ask a developer to make. They might include publishing a project, changing a service price or replacing a photo. For each one, decide who should make the change and whether someone needs to review it."
+          "List the edits your staff actually make",
+          "An engineering consultancy that publishes two case studies a year might be happy with a static site and agreed support. A venue that updates event information each week may need direct access. List who makes each change, how urgently it must appear and what happens when that person is away. If your staff need to swap just a single image or date, test that task before choosing a more flexible editor."
         ],
         [
-          "Ask for fields that fit your content",
-          "An architecture studio’s project template might include a title, location, year, description, gallery and image descriptions. The editor enters those details and the design controls where they appear. The same project can then display consistently on the home page, in the archive and on its own page."
+          "Give common pages a repeatable structure",
+          "A case study might have a project name, year, location, scope, cover image and gallery. Separate fields let an editor publish that content without rebuilding a layout, and let the site display the same entry in a project index. Discuss where page-specific layouts are valid. A flexible page builder still needs guidance for headings, images and phone layouts."
         ],
         [
-          "Test editing at handover",
-          "Ask an editor to create a draft, replace an image with descriptive text, preview the result on a phone and publish it. If you work in several languages, repeat the test for a translation and check that the other version remains available while the translation is in draft."
+          "Choose a setup you can support",
+          "A static site has a smaller publishing surface, but changes may need a developer or release. A hosted CMS can simplify editing and hosting under one account. A separate CMS and frontend can make sense when several channels share content or the design needs more control. Ask who maintains each part and how you diagnose an edit that appears in the CMS but never reaches the public site."
         ],
         [
-          "Define the scope the team takes over",
-          "Specify which fields editors can change, who can publish and who handles problems. For a site that changes once a year, compare the cost of a CMS and training with an agreement for occasional changes."
+          "Test a draft, approval, publication and rollback",
+          "Have your editor enter a real case study with photographs and an appropriate image description. Ask a reviewer to preview it, publish, and restore the earlier version on staging. If you have language versions, test whether one can remain a draft while the other is live. Give editors the permissions required to do their work. Confirm that billing, all-user administration and system configuration remain available to the relevant owners."
+        ],
+        [
+          "Request an export and compare the cost of leaving",
+          "Ask for a sample export covering content and media. Check whether exported image URLs still rely on the original service, and whether revisions, translations and redirects can be transferred. Confirm who controls the domain separately. Compare ongoing hosting and licenses, training, maintenance and time your staff will spend editing. The cheapest editor to purchase may take the longest to use."
         ]
       ],
       "links": [
@@ -382,31 +508,68 @@
           "/services/#contact"
         ]
       ],
-      "slug": "does-your-website-need-a-cms"
-    }
+      "slug": "does-your-website-need-a-cms",
+      "meta_description": "Decide whether your website needs a CMS. Compare static and managed options, test editing with real content, and verify roles, hosting and export.",
+      "sources": [
+        [
+          "WordPress — roles and capabilities",
+          "https://wordpress.org/documentation/article/roles-and-capabilities/"
+        ]
+      ],
+      "table": {
+        "caption": "Match the editing setup to the workload",
+        "columns": [
+          "Need",
+          "Option to test",
+          "Acceptance check"
+        ],
+        "rows": [
+          [
+            "Occasional updates",
+            "Static site with support",
+            "Agreed turnaround and rollback path"
+          ],
+          [
+            "Regular project publishing",
+            "CMS with a case study template",
+            "Editor drafts, previews and publishes alone"
+          ],
+          [
+            "Content for several channels",
+            "Separate CMS and frontend",
+            "Publish, export and maintain both systems"
+          ]
+        ]
+      }
+    },
+    "modified": "2026-11-22"
   },
   "plan-visejezicne-web-stranice": {
     "topic": "planning",
     "published": "2026-11-12",
     "hr": {
       "title": "Kako planirati višejezičnu web stranicu?",
-      "summary": "Odaberite tržišta, popišite stranice koje svako treba i dogovorite tko provjerava prijevode. Svaka jezična verzija treba trajnu adresu.",
+      "summary": "Višejezični web kreće od odluke koju radnju kupac može završiti na svakom jeziku. Odaberite početne stranice, dodijelite urednika i provjerite posebne URL-ove, izmjenu jezika i isporuku upita prije širenja.",
       "sections": [
         [
-          "Prvo odaberite kupce i stranice",
-          "Za svako tržište zapišite koja se usluga stvarno nudi, na kojem jeziku tim može odgovoriti i koja pitanja kupci postavljaju. Za početak lokalizirajte ključnu uslugu, kontakt i vodič koji im pomaže odlučiti. Izbornik, poruke obrasca i potvrda dio su iste verzije."
+          "Odaberite jezike prema poslu koji možete preuzeti",
+          "Ako turistička agencija želi upite iz Hrvatske i Njemačke, prvo odaberite izlete i informacije koje ured zaista može isporučiti na oba jezika. Za svakog kupca napišite što mu treba prije kontakta. Domaći kupac možda traži mjesto polaska, a gost iz inozemstva način dolaska i podršku na svom jeziku. Dogovorite tko odgovara na upite i može li se ponuda razlikovati po tržištu."
         ],
         [
-          "Dajte svakom jeziku vlastiti URL",
-          "Primjerice, /hr/usluge/web-dizajn/ i /sl/storitve/izdelava-spletnih-strani/ mogu predstavljati ekvivalentnu ponudu na različitim jezicima. Povežite stvarne ekvivalente oznakama hreflang u oba smjera. Svaka javna verzija namijenjena indeksiranju treba vlastiti canonical."
+          "Zapišite najmanju cjelinu koja radi",
+          "Za smještaj to može biti pregled smještaja, pojedinačna jedinica, praktične informacije i upit. Za B2B primijenite isto na prioritetnu uslugu, primjer rada i kontakt. Prevedite i potvrdu slanja, poruke pogreške, polja i upute, a ne samo početak stranice. Složite rječnik naziva usluga, mjerila i ton obraćanja. Lokalni pregled neka obavi netko tko poznaje jezik i proizvod."
         ],
         [
-          "Ostavite kupcu izbor jezika",
-          "Povežite verzije vidljivim izbornikom. Ako posjetitelj otvori slovenski opis usluge iz rezultata pretraživanja, ta stranica treba ostati dostupna i kad preglednik ili IP adresa upućuju na drugu državu. Na Ostrelyi svaka regionalna usluga ima svoju adresu i poveznice na ekvivalente."
+          "Dajte svakoj verziji zasebnu adresu",
+          "Primjer: hrvatska usluga živi na /hr/usluge/…, engleska na /en/services/…. Svaka vrijedi kao samostalna odredišna stranica i u pravilu ima canonical na vlastiti URL. Odgovarajuće verzije povežite uzajamnim hreflang oznakama. x-default može voditi do dogovorene neutralne verzije. Za stranicu bez prijevoda nemojte označiti naslovnicu drugog jezika kao ekvivalent članka."
         ],
         [
-          "Testirajte cijeli put u svakom jeziku",
-          "Počnite na jednoj usluzi, promijenite jezik i provjerite jeste li ostali na ekvivalentnoj usluzi. Pročitajte naslov, kontakt i potvrdu obrasca. Provjerite i tko ažurira pojedinu verziju kad se opseg usluge promijeni."
+          "Neka posjetitelj može preskočiti pogodak o jeziku",
+          "Ponudite vidljiv ručni odabir. Klik na drugi jezik, kad prijevod postoji, vodi na istu uslugu, a zatim se izbor može zapamtiti. IP i postavke preglednika mogu pomoći kao signal, ali putovanje i VPN lako mijenjaju ono što sustav vidi. Korisnici i tražilice trebaju moći otvoriti javnu adresu svakog jezika izravno."
+        ],
+        [
+          "Testirajte grupu prije dodavanja sljedećeg jezika",
+          "Prođite put od rezultata pretrage do primljenog upita na svakom jeziku. Provjerite 200 odgovor, vidljiv tekst, alat za izbor jezika, hreflang u oba smjera i isporuku obrasca. Dodijelite odgovornu osobu koja kod promjene cijene ili rokova otvara zadatak za sve objavljene verzije. Mjerite prikaze i upite po URL-u i tržištu pa širite sadržaj kad postoje kapacitet i razlog."
         ]
       ],
       "links": [
@@ -429,34 +592,39 @@
       ],
       "sources": [
         [
-          "Google o višejezičnim stranicama",
-          "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites"
+          "Google Search Central — localized versions of a page",
+          "https://developers.google.com/search/docs/specialty/international/localized-versions"
         ],
         [
-          "Googleova uputa za hreflang",
-          "https://developers.google.com/search/docs/specialty/international/localized-versions"
+          "Google Search Central — multilingual and multi-regional sites",
+          "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites"
         ]
-      ]
+      ],
+      "meta_description": "Isplanirajte višejezičnu web stranicu. Odaberite sadržaj za prvo izdanje, postavite URL-ove i hreflang te provjerite prijevod, jezike i dostavu upita."
     },
     "en": {
       "title": "How to plan a multilingual website",
-      "summary": "Choose your markets, map the pages each needs and agree who reviews translations. Give each language version a stable address.",
+      "summary": "Launch a complete buyer journey in each supported language. Give each version its own URL, make the language switch predictable and assign someone to keep translations current after launch.",
       "sections": [
         [
-          "Start with customers and pages",
-          "For each market, write down the service you actually offer, the languages your team can reply in and the questions customers ask. Begin with a key service, the contact journey and a guide that helps people decide. Menus, form messages and confirmations belong to the same language version."
+          "Start with a real buyer and a market you can serve",
+          "A Croatian tour operator adding German may decide to localise three tours with German-speaking guides. A consultancy adding English may prioritise one service and the evidence an overseas buyer needs. Identify what changes by market, such as terminology, meeting times or travel details. Confirm that someone can answer enquiries in the advertised language before inviting them."
         ],
         [
-          "Give each language its own URL",
-          "For example, /hr/usluge/web-dizajn/ and /sl/storitve/izdelava-spletnih-strani/ can describe an equivalent offer in different languages. Link true equivalents with reciprocal hreflang annotations. Give each public version intended for indexing its own canonical."
+          "Localise a complete path",
+          "For an accommodation site, include the listing, room details, transport information and enquiry. For a service business, prioritise the service, a relevant example and the contact path. Translate form labels, error messages, confirmation and follow-up where applicable. Build a short glossary with local terms, formats and examples, and arrange a review by someone who understands both the language and business."
         ],
         [
-          "Let customers choose the language",
-          "Link the versions through a visible menu. A person who opens a Slovenian service page from search should be able to read it even when the browser or IP address suggests a different country. On Ostrelya, each regional service has its own address and links to equivalent pages."
+          "Give each language a distinct public URL",
+          "For example, a Croatian service may live under /hr/usluge/ and the English equivalent under /en/services/. A language edition intended for indexing generally has a self-referencing canonical. Use reciprocal hreflang that points to the corresponding page, with x-default where you have a fallback. Avoid presenting an untranslated page or another language’s homepage as the precise equivalent of an article."
         ],
         [
-          "Test the full journey in each language",
-          "Start on a service page, switch languages and check that you land on the equivalent service. Read the heading, contact fields and confirmation. Decide who updates each version when the service scope changes."
+          "Make language selection reversible",
+          "When an equivalent exists, the switch should take users to that equivalent rather than dropping them on a homepage. A visitor in the wrong language should be able to change it directly. A location or browser setting can be misleading while travelling or using a VPN. Keep each language link accessible to people and crawlers on its own public address."
+        ],
+        [
+          "Check the whole journey before adding new versions",
+          "Open each page directly, verify its index controls, use the language switch in both directions, and send one labelled test enquiry per form destination. Compare search data by page and country. Decide how an edit to opening times or pricing gets propagated to every language. A small set of complete, maintained translations gives you a clearer starting point for expansion."
         ]
       ],
       "links": [
@@ -475,15 +643,17 @@
       ],
       "sources": [
         [
-          "Google on multilingual sites",
-          "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites"
+          "Google Search Central — localized versions of a page",
+          "https://developers.google.com/search/docs/specialty/international/localized-versions"
         ],
         [
-          "Google's hreflang guide",
-          "https://developers.google.com/search/docs/specialty/international/localized-versions"
+          "Google Search Central — multilingual and multi-regional sites",
+          "https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites"
         ]
       ],
-      "slug": "plan-a-multilingual-website"
-    }
+      "slug": "plan-a-multilingual-website",
+      "meta_description": "Plan a multilingual business website. Decide what to localise first, map URLs and hreflang, and test language switching and enquiry delivery."
+    },
+    "modified": "2026-11-22"
   }
 }

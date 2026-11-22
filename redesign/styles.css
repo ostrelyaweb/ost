@@ -4685,9 +4685,24 @@ body:has(.editorial-dialog[open]) {
   overflow-wrap: anywhere;
 }
 .guide-group .journal-read { margin: 0; }
-.guide-links ul { margin-top: .55rem; padding-inline-start: 1.1rem; }
+.guide-links ul, .guide-links ol { margin-top: .55rem; padding-inline-start: 1.3rem; }
 .guide-links li + li { margin-top: .45rem; }
 .guide-links a { color: var(--editorial-violet); text-decoration: underline; text-underline-offset: .17em; }
+.guide-links ol { list-style: decimal; }
+.guide-table-wrap {
+  margin-block: 1.5rem;
+  overflow-x: auto;
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+.guide-table { width: 100%; min-width: 29rem; border-collapse: collapse; line-height: 1.5; }
+.guide-table caption { padding: .65rem 0; text-align: start; font-weight: 800; }
+.guide-table th, .guide-table td {
+  padding: .7rem;
+  border-block-end: 1px solid var(--editorial-rule);
+  text-align: start;
+  vertical-align: top;
+}
+.guide-table thead { background: #eee8fb; }
 
 @media (max-width: 760px) {
   .about-hero, .about-section, .journal-card { grid-template-columns: minmax(0, 1fr); }
