@@ -26,7 +26,8 @@ def configure_analytics(root, output, privacy_routes):
     css_version = version("assets/analytics.css")
     form_version = version("script.js")
     service_paths = {path for path, (_, service) in region_routes(read_regions(root)).items() if service}
-    service_paths.add("/services/")
+    # The Albanian market offer hosts its service enquiry on the market page itself.
+    service_paths.update(("/services/", "/sq-al/"))
     urls = ElementTree.parse(output / "sitemap.xml").findall(".//{*}loc")
     paths = [urlsplit(item.text).path for item in urls]
 
