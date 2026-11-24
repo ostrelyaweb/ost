@@ -1,6 +1,7 @@
 """Check the HTML and alternate links represented in the production sitemap."""
 
 from html.parser import HTMLParser
+from hashlib import sha256
 from urllib.parse import quote, unquote, urlsplit
 from xml.etree import ElementTree
 
@@ -57,7 +58,7 @@ def page_url(url):
     return parts._replace(path=quote(unquote(parts.path), safe="/")).geturl()
 
 
-def check_indexable(output, origin):
+def check_indexable(output, origin, fingerprints=None):
     urls = [page_url(item.text) for item in ElementTree.parse(output / "sitemap.xml").findall(".//{*}loc")]
     pages = {}
     errors = []
@@ -74,7 +75,10 @@ def check_indexable(output, origin):
         if not target.is_file():
             errors.append(f"{url}: missing HTML file")
             continue
-        page = SearchPage(target.read_text(encoding="utf-8"))
+        html = target.read_text(encoding="utf-8")
+        page = SearchPage(html)
+        if fingerprints is not None:
+            fingerprints[url] = sha256(html.encode("utf-8")).hexdigest()
         pages[url] = page
         if [page_url(value) for value in page.canonicals] != [url]:
             errors.append(f"{url}: canonical must point to itself")

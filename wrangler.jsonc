@@ -1,10 +1,13 @@
 {
   "name": "ostrelya-main",
-  "main": "redesign/tools/locale_worker.js",
+  "main": "deployment/worker.js",
   "compatibility_date": "2026-11-10",
   "workers_dev": true,
   "preview_urls": true,
   "keep_vars": true,
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "durable_objects": { "bindings": [{ "name": "INDEXNOW", "class_name": "IndexNowPublisher" }] },
+  "migrations": [{ "tag": "indexnow-v1", "new_sqlite_classes": ["IndexNowPublisher"] }],
   "send_email": [{ "name": "CONTACT_MAIL", "allowed_sender_addresses": ["hello@ostrelya.com"] }],
   "ratelimits": [
     { "name": "CONTACT_LIMIT", "namespace_id": "764230", "simple": { "limit": 3, "period": 60 } },

@@ -1,5 +1,6 @@
 """Build the production Worker assets from the audited redesign and published archive."""
 
+import json
 import re
 from datetime import date
 from pathlib import Path
@@ -219,7 +220,11 @@ def main():
         configure_analytics(REDESIGN, staging, PRIVACY_ROUTES.values())
         indexnow_key = read_key()
         (staging / f"{indexnow_key}.txt").write_text(indexnow_key, encoding="utf-8")
-        indexable_count = check_indexable(staging, ORIGIN)
+        fingerprints = {}
+        indexable_count = check_indexable(staging, ORIGIN, fingerprints)
+        (staging / "indexnow-pages.json").write_text(
+            json.dumps({"key": indexnow_key, "pages": fingerprints}, sort_keys=True), encoding="utf-8"
+        )
         previous = Path(temporary) / "previous"
         if destination.exists():
             if not destination.is_dir():
